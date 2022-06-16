@@ -1,6 +1,3 @@
 [submodule "connectbook"]
 	path = connectbook
 	url = https://github.com/OSGConnect/connectbook.git
-[submodule "tutorials"]
-	path = tutorials
-	url = https://github.com/OSGConnect/tutorial-quickstart
