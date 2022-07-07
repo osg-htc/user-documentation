@@ -1,48 +1,45 @@
-[submodule "connectbook"]
-	path = connectbook
-	url = https://github.com/OSGConnect/connectbook.git
 [submodule "tutorials/tutorial-quickstart"]
-	path = tutorials/tutorial-quickstart
+	path = documentation/tutorials/tutorial-quickstart
 	url = https://github.com/OSGConnect/tutorial-quickstart
 [submodule "tutorials/tutorial-organizing"]
-	path = tutorials/tutorial-organizing
+	path = documentation/tutorials/tutorial-organizing
 	url = https://github.com/OSGConnect/tutorial-organizing
 [submodule "tutorials/tutorial-error101"]
-	path = tutorials/tutorial-error101
+	path = documentation/tutorials/tutorial-error101
 	url = https://github.com/OSGConnect/tutorial-error101
 [submodule "tutorials/tutorial-osg-locations"]
-	path = tutorials/tutorial-osg-locations
+	path = documentation/tutorials/tutorial-osg-locations
 	url = https://github.com/OSGConnect/tutorial-osg-locations
 [submodule "tutorials/tutorial-pegasus"]
-	path = tutorials/tutorial-pegasus
+	path = documentation/tutorials/tutorial-pegasus
 	url = https://github.com/OSGConnect/tutorial-pegasus
 [submodule "tutorials/tutorial-blast-split"]
-	path = tutorials/tutorial-blast-split
+	path = documentation/tutorials/tutorial-blast-split
 	url = https://github.com/OSGConnect/tutorial-blast-split
 [submodule "tutorials/tutorial-bwa"]
-	path = tutorials/tutorial-bwa
+	path = documentation/tutorials/tutorial-bwa
 	url = https://github.com/OSGConnect/tutorial-bwa
 [submodule "tutorials/tutorial-AutoDockVina"]
-	path = tutorials/tutorial-AutoDockVina
+	path = documentation/tutorials/tutorial-AutoDockVina
 	url = https://github.com/OSGConnect/tutorial-AutoDockVina
 [submodule "tutorials/tutorial-tensorflow-containers"]
-	path = tutorials/tutorial-tensorflow-containers
+	path = documentation/tutorials/tutorial-tensorflow-containers
 	url = https://github.com/OSGConnect/tutorial-tensorflow-containers
 [submodule "tutorials/tutorial-matlab-HelloWorld"]
-	path = tutorials/tutorial-matlab-HelloWorld
+	path = documentation/tutorials/tutorial-matlab-HelloWorld
 	url = https://github.com/OSGConnect/tutorial-matlab-HelloWorld
 [submodule "tutorials/tutorial-ScalingUp-Python"]
-	path = tutorials/tutorial-ScalingUp-Python
+	path = documentation/tutorials/tutorial-ScalingUp-Python
 	url = https://github.com/OSGConnect/tutorial-ScalingUp-Python
 [submodule "tutorials/tutorial-wordfreq"]
-	path = tutorials/tutorial-wordfreq
+	path = documentation/tutorials/tutorial-wordfreq
 	url = https://github.com/OSGConnect/tutorial-wordfreq
 [submodule "tutorials/tutorial-R-addlibSNA"]
-	path = tutorials/tutorial-R-addlibSNA
+	path = documentation/tutorials/tutorial-R-addlibSNA
 	url = https://github.com/OSGConnect/tutorial-R-addlibSNA
 [submodule "tutorials/tutorial-R"]
-	path = tutorials/tutorial-R
+	path = documentation/tutorials/tutorial-R
 	url = https://github.com/OSGConnect/tutorial-R
 [submodule "tutorials/tutorial-ScalingUp-R"]
-	path = tutorials/tutorial-ScalingUp-R
+	path = documentation/tutorials/tutorial-ScalingUp-R
 	url = https://github.com/OSGConnect/tutorial-ScalingUp-R
