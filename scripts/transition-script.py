@@ -79,13 +79,13 @@ def build_url_frontmatter():
     """Build the frontmatter for the pages"""
 
     for doc_path in glob.glob("/Users/clock/PycharmProjects/user-documentation/documentation/**/*.md", recursive=True):
-        with open(doc_path, "rw") as fp:
+        with open(doc_path, "w+") as fp:
             doc = frontmatter.load(fp)
 
             doc['osgconnect'] = {}
             doc['osgconnect']['path'] = doc_path.replace("/Users/clock/PycharmProjects/user-documentation/documentation/", "")
 
-            frontmatter.dump(doc, fp)
+            fp.write(frontmatter.dumps(doc))
 
 def map_connectbook_to_mkdocs():
     """One off function to map the readmes to their correct locations"""
@@ -142,4 +142,4 @@ def freshdesk_to_mkdocs():
     for path in CONNECTBOOK_MAP:
         pass
 
-symlink_connectbook_to_mkdocs()
+build_url_frontmatter()
