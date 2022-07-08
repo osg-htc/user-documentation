@@ -9,13 +9,22 @@ Please update the documentation in the previous repo when making changes to this
 ## Guides
 
 - [Adding Documentation](#adding-documentation)
-- [Updating Documentation](#updating-documentation)
 
 ## Adding Documentation
 
-All documentation is created using [Markdown](https://www.markdownguide.org/cheat-sheet/).
+Add your new documentation to the 'documentation' directory.
 
-To add a new page 
+For frontmatter use the following template:
 
-## Updating Documentation
+```yaml
+    ---
+    osgconnect:
+      path: <location where this file should be served from in osgconnect>
+    ---
+```
 
+The path that you add can be different from the location where the file is stored in documentation, 
+the current file hierarchy is purely organizational. It is best that the path aligns with the names in the
+navigation config.
+
+Then add the path you added above to the navigation hosted in 'data/configs' in the appropriate section.
