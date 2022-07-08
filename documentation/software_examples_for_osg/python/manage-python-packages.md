@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: software_examples_for_osg/python/manage-python-packages.md
+---
+
 Run Python Scripts on the OSPool 
 ====================================
 

@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: overview/welcome_and_account_setup/generate-add-sshkey.md
+---
+
 Generate SSH Keys and Activate Your OSG Login 
 ====================================
 
@@ -167,4 +172,3 @@ On older versions of Windows, you can use the [Putty program](https://www.chiark
 ## Getting Help 
 
 For assistance or questions, please email the OSG Research Facilitation team  at <mailto:support@opensciencegrid.org> or visit the [help desk and community forums](http://support.opensciencegrid.org).
-

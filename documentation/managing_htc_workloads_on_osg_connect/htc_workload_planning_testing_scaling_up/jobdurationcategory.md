@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/jobdurationcategory.md
+---
+
 Indicate the Duration Category of Your Jobs 
 ====================================
 

@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/managing_data_for_jobs/scp.md
+---
+
 Use scp To Transfer Files To and From OSG Connect 
 ====================================
 
@@ -71,4 +76,3 @@ full path on the other server to your file.
 # Get Help
 
 For assistance or questions, please email the OSG Research Facilitation team  at [support@opensciencegrid.org](mailto:support@opensciencegrid.org) or visit the [help desk and community forums](http://support.opensciencegrid.org).
-

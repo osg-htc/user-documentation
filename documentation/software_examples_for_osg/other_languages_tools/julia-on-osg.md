@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: software_examples_for_osg/other_languages_tools/julia-on-osg.md
+---
+
 Using Julia on the OSPool 
 ====================================
 

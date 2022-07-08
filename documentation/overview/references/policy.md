@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: overview/references/policy.md
+---
+
 Policies for Using OSG Connect and the OSPool 
 ====================================
 

@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-docker.md
+---
+
 Create/Register a Docker Container Image 
 ====================================
 
@@ -197,4 +202,3 @@ Singularity image in the Open Science Pool. [Email us](mailto:support@openscienc
 to preserve these attributes. 
 
 [osg-containers]: 12000024676
-

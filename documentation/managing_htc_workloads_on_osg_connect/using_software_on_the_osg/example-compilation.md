@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/using_software_on_the_osg/example-compilation.md
+---
+
 Example Software Compilation 
 ====================================
 
@@ -483,4 +488,3 @@ to "untar" the Samtools and XZ Util tar archives, modify the `PATH` and
 
 	# run samtools commands
 	...
-

@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-command.md
+---
+
 Use OSG Connect Tutorials 
 ====================================
 
@@ -68,4 +73,3 @@ to it, and invoke the command:
 This command will clone the tutorial repository to your current working directory.
 `cd` to the repository directory and follow the steps described in the `readme.md` file.
 Alternatively, you can view the `readme.md` file at the tutorial's corresponding GitHub page.
-

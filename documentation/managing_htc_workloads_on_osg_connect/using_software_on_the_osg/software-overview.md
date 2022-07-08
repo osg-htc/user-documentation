@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-overview.md
+---
+
 Using Software on the Open Science Pool 
 ====================================
 
@@ -71,4 +76,3 @@ If you are not sure which of the above options might be best for your software, 
 **Watch this video from the 2021 OSG Virtual School** for more information about using software on OSG:
 
 [<img src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/Software_Video_Thumbnail.png" width="500">](https://www.youtube.com/embed/xUeIQbVXOMQ)
-

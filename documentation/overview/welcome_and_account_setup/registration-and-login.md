@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: overview/welcome_and_account_setup/registration-and-login.md
+---
+
 Registration and Login for OSG Connect 
 ====================================
 
@@ -121,4 +126,3 @@ password or a public key. We'll discuss how to connect further on.
 
 [ssh-key]: 12000027675
 [projects]: 5000634360
-

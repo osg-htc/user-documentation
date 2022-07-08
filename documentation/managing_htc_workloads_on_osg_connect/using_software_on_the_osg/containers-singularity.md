@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-singularity.md
+---
+
 Create a Singularity Container Image 
 ====================================
 
@@ -95,4 +100,3 @@ and use it in your HTCondor jobs. This is all described in the
 [container guide][osg-containers].
 
 [osg-containers]: 12000024676
-

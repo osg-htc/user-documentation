@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/managing_data_for_jobs/file-transfer-via-http.md
+---
+
 Transfer HTTP-available Files up to 1GB In Size 
 ====================================
 
@@ -50,4 +55,3 @@ files from `/home` directory can be provided in a comma separated list. For exam
 # Get Help
 
 For assistance or questions, please email the OSG Research Facilitation team  at [support@opensciencegrid.org](mailto:support@opensciencegrid.org) or visit the [help desk and community forums](http://support.opensciencegrid.org).
-

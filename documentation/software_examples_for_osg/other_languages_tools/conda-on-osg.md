@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: software_examples_for_osg/other_languages_tools/conda-on-osg.md
+---
+
 Using conda to Run Python on the OSPool 
 ====================================
 
@@ -147,4 +152,3 @@ If you are developing software on your local computer for eventual use on the Op
 2. Once you are ready to run on the Open Science pool, create an `environment.yml` file from your local environment (e.g., `conda env export > environment.yml`).
 3. Move your `environment.yml` file from your local computer to the submit machine and create an environment from it (e.g., `conda env create -f environment.yml`), then pack it for use in your jobs, as per [Create Software Package](#3-create-software-package).
 More information on conda environments can be found in [their documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#).
-

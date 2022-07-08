@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/managing_data_for_jobs/stashcache.md
+---
+
 Transfer Larger Input and Output Files 
 ====================================
 

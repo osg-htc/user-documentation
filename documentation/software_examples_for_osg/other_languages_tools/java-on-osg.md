@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: software_examples_for_osg/other_languages_tools/java-on-osg.md
+---
+
 Using Java in Jobs 
 ====================================
 
@@ -47,4 +52,4 @@ like:
 	**Note that the exact name of the unzipped JDK folder and the JDK tar.gz file will 
 	vary depending on the version you downloaded.** You should unzip the JDK tar.gz 
 	file in your home directory to find out the correct directory name to add to 
-	the script. 
+	the script.

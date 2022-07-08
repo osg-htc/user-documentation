@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: hpc_administration/osg_for_hpc_administrators/osg-xsede.md
+---
+
 Running OSG jobs on XSEDE
 =========================
 

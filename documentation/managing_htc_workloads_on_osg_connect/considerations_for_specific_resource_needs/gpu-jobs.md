@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/gpu-jobs.md
+---
+
 Using GPUs on the OSPool 
 ====================================
 
@@ -82,4 +87,4 @@ As with any kind of job submission, check your data sizes (per job) before submi
 jobs and choose the appropriate file transfer method for your data. 
 
 See our [Data Staging and Transfer guide](https://support.opensciencegrid.org/support/solutions/articles/12000002985-overview-data-staging-and-transfer-to-jobs#transferring-data-tofrom-jobs) for
-details and contact the Research Computing Facilitation team with questions. 
+details and contact the Research Computing Facilitation team with questions.

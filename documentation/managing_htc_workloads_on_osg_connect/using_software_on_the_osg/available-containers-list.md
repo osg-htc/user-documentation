@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list.md
+---
+
 View Existing OSPool-Supported Containers 
 ====================================
 
@@ -55,4 +60,3 @@ or not described well enough to make this list.
 
 [container-intro]: 12000024676
 [container-howto]: 12000058245
-

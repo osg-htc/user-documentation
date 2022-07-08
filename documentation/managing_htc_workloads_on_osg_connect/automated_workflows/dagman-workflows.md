@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/automated_workflows/dagman-workflows.md
+---
+
 Submit Workflows with HTCondor's DAGMan 
 ====================================
 

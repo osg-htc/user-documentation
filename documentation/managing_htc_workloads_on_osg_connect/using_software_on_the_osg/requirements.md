@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/using_software_on_the_osg/requirements.md
+---
+
 Control Where Your Jobs Run / Job Requirements 
 ====================================
 
@@ -115,4 +120,3 @@ and only at that site, use:
 Note that you should only specify one of `+DESIRED_Sites`/`+UNDESIRED_Sites`
 in the submit file. Using both at the same time will prevent the job from
 running.
-

@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/large-memory-jobs.md
+---
+
 Large Memory Jobs 
 ====================================
 
@@ -21,4 +26,3 @@ We recommend always explictly defining the byte units in your *request_memory* s
 
 Please note that the OSG has limited resources available for large memory jobs. Requesting jobs with 
 higher memory needs will results in longer than average queue times for these jobs.
-

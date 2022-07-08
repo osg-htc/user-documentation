@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: support_and_training_resources/get_help!/getting-help-from-RCFs.md
+---
+
 Email, Office Hours, and 1-1 Meetings 
 ====================================
 

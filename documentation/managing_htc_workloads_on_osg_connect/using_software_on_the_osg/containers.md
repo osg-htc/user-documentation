@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers.md
+---
+
 Use Containers on the OSG 
 ====================================
 
@@ -186,4 +191,3 @@ and  Singularity, please see:
 [stash]: 12000002775
 [docker-guide]: 12000058245
 [singularity-guide]: 12000086275
-

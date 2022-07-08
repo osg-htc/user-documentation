@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: overview/references/acknowledgeOSG.md
+---
+
 Acknowledge the OSG 
 ====================================
 

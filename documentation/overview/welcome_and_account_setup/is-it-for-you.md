@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: overview/welcome_and_account_setup/is-it-for-you.md
+---
+
 Computation on the Open Science Pool 
 ====================================
 

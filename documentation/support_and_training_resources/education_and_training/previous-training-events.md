@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: support_and_training_resources/education_and_training/previous-training-events.md
+---
+
 Other Past Training Events 
 ====================================
 
@@ -25,4 +30,4 @@ The below were offered on-site at OSG All-Hands Meetings. Note that the last on-
 
   * [User/Facilitator Training at the OSG All Hands Meeting, University of Oklahoma (OU), March 2020](https://opensciencegrid.org/UserTraining-AHM-2020/)
   * [User Training at the OSG All Hands Meeting, Thomas Jefferson National Accelerator Facility (JLAB), March 2019](https://swc-osg-workshop.github.io/OSG-UserTraining-JLab-2019/)
-  * [User Training at the OSG All Hands Meeting, University of Utah, March 2018](https://swc-osg-workshop.github.io/OSG-UserTraining-AHM18/)  
+  * [User Training at the OSG All Hands Meeting, University of Utah, March 2018](https://swc-osg-workshop.github.io/OSG-UserTraining-AHM18/)

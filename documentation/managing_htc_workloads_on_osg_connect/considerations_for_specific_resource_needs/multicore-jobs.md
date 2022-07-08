@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs.md
+---
+
 Multicore Jobs 
 ====================================
 
@@ -18,4 +23,3 @@ When submitting multicore jobs please note that you will also have to tell
 your code or application to use the number of cpus requested in your submit 
 file. Do not use core auto-detection as it might detect more cores than what 
 were actually assigned to your job.
-

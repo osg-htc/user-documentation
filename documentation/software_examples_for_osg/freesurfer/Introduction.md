@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: software_examples_for_osg/freesurfer/Introduction.md
+---
+
 Introduction to FreeSurfer on the OSPool 
 ====================================
 
@@ -33,4 +38,3 @@ visit the [help desk and community forums](http://support.opensciencegrid.org).
 ## Acknowledging the OSG Consortium
 
 We gratefully request your acknowledgement of the OSG in publications benefiting from this service as described [here](https://support.opensciencegrid.org/support/solutions/articles/5000640421-acknowledging-the-open-science-grid).
-

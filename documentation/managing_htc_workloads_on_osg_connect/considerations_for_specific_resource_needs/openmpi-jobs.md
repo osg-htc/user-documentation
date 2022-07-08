@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/openmpi-jobs.md
+---
+
 OpenMPI Jobs 
 ====================================
 
@@ -58,4 +63,3 @@ transferred using the `transfer_input_files` mechanism.
 
 Please make sure that the number of cores specified in the submit file via
 `request_cpus` match the `-n` argument in the `wrapper.sh` file.
-

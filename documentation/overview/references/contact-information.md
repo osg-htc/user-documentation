@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: overview/references/contact-information.md
+---
+
 Contact OSG for non-Support Inquiries 
 ====================================
 

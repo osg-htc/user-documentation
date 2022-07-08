@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/checkpointing-on-OSPool.md
+---
+
 Checkpointing Jobs 
 ====================================
 
@@ -135,4 +140,4 @@ You can explore the checkpointed files in `/spool` by navigating to `/home/condo
 
 # More Information
 
-More information on checkpointing HTCondor jobs can be found in HTCondor's manual: https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html This documentation contains additional features available to checkpointing jobs, as well as additional examples such as a python checkpointing job. 
+More information on checkpointing HTCondor jobs can be found in HTCondor's manual: https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html This documentation contains additional features available to checkpointing jobs, as well as additional examples such as a python checkpointing job.

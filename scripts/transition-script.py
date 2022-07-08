@@ -79,12 +79,13 @@ def build_url_frontmatter():
     """Build the frontmatter for the pages"""
 
     for doc_path in glob.glob("/Users/clock/PycharmProjects/user-documentation/documentation/**/*.md", recursive=True):
-        with open(doc_path, "w+") as fp:
+        with open(doc_path, "r") as fp:
             doc = frontmatter.load(fp)
 
             doc['osgconnect'] = {}
             doc['osgconnect']['path'] = doc_path.replace("/Users/clock/PycharmProjects/user-documentation/documentation/", "")
 
+        with open(doc_path, "w") as fp:
             fp.write(frontmatter.dumps(doc))
 
 def map_connectbook_to_mkdocs():

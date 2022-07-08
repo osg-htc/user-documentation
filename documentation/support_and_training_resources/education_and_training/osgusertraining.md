@@ -1,3 +1,8 @@
+---
+osgconnect:
+  path: support_and_training_resources/education_and_training/osgusertraining.md
+---
+
 OSG User Training (regular/monthly) 
 ====================================
 
@@ -34,4 +39,4 @@ In development (see above, and register!).
 
 ### Additional Topics
 
-As we introduce new training topics, we will add materials to this page. 
+As we introduce new training topics, we will add materials to this page.
