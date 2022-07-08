@@ -1,0 +1,15 @@
+---
+
+remove_frontmatter: true
+osgconnect:
+    path: stylesheets/code-highlight.css
+
+---
+
+span.hll {
+    background-color: rgba(255,255,0,.5)
+}
+
+button.md-clipboard.md-icon {
+    display: none;
+}
