@@ -18,4 +18,13 @@ def link_in_documentation():
 
         os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
+    for doc_path in glob.glob("../documentation/assets/**/*.*", recursive=True):
+        destination_path = f"../data/docs/osgconnect/assets/{doc_path.replace('../documentation/assets/', '')}"
+
+        # Build path if not their
+        if not os.path.exists(os.path.dirname(destination_path)):
+            os.makedirs(os.path.dirname(destination_path))
+
+        os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
+
 link_in_documentation()
