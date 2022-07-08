@@ -1,1 +1,0 @@
-../../../../../documentation/tutorials/tutorial-osg-locations/README.md
