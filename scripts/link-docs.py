@@ -1,7 +1,7 @@
 import glob
 import frontmatter
 import os
-
+import pathlib
 
 def link_in_documentation():
     """Build the frontmatter for the pages"""
@@ -16,6 +16,6 @@ def link_in_documentation():
         if not os.path.exists(os.path.dirname(destination_path)):
             os.makedirs(os.path.dirname(destination_path))
 
-        os.symlink(src=doc_path, dst=destination_path)
+        os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
 link_in_documentation()

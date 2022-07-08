@@ -1,1 +1,0 @@
-../documentation/managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-command.md

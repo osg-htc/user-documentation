@@ -1,1 +1,0 @@
-../documentation/managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs.md
