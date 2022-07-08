@@ -1,0 +1,24 @@
+name: Link docs to the correct locations
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate-mkdocs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+      - run: python scripts/link-docs.py
+
+      - name: Pull down submodules
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Link Files"
+          git push --set-upstream origin main
