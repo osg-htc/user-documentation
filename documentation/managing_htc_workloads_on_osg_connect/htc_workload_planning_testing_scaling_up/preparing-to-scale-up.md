@@ -172,6 +172,7 @@ Gathering information about how, what, and where a job ran can be important for 
 
 
 Additional `condor_q` flags involved in optimizing and troubleshooting jobs include:
+
 | Flag      | Description |
 | ----------- | ----------- |
 | -nobatch | Combined with `condor_q`, this flag will list jobs individually and not by batch. |
