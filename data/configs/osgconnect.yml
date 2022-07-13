@@ -54,6 +54,7 @@ nav:
       - "Multicore Jobs ": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs.md
       - "Using GPUs on the OSPool ": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/gpu-jobs.md
       - "Large Memory Jobs ": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/large-memory-jobs.md
+      - "Running OSG jobs on XSEDE": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/osg-xsede.md
     - Automated Workflows:
       - "Submit Workflows with HTCondor's DAGMan ": managing_htc_workloads_on_osg_connect/automated_workflows/dagman-workflows.md
       - "Use Pegasus to Manage Workflows on OSG Connect": managing_htc_workloads_on_osg_connect/automated_workflows/tutorial-pegasus/README.md
@@ -81,7 +82,4 @@ nav:
       - "Using Julia on the OSPool ": software_examples_for_osg/other_languages_tools/julia-on-osg.md
       - "Using conda to Run Python on the OSPool ": software_examples_for_osg/other_languages_tools/conda-on-osg.md
       - "Using Java in Jobs ": software_examples_for_osg/other_languages_tools/java-on-osg.md
-  - HPC Administration:
-    - OSG For HPC Administrators:
-      - "Submit Node Flocking to OSG ": hpc_administration/osg_for_hpc_administrators/osg-flock.md
-      - "Running OSG jobs on XSEDE": hpc_administration/osg_for_hpc_administrators/osg-xsede.md
+
