@@ -17,7 +17,7 @@ nav:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training_resources/get_help!/getting-help-from-RCFs.md
     - Education And Training:
       - "Annual, Week-Long OSG User School ": support_and_training_resources/education_and_training/osg-user-school.md
-      - "Other Past Training Events ": support_and_training_resources/education_and_training/previous-training-events.md
+      - "Other Past Training Events ": support_and_trainingresources/education_and_training/previous-training-events.md
       - "OSG User Training (regular/monthly) ": support_and_training_resources/education_and_training/osgusertraining.md
   - Managing HTC Workloads On OSG Connect:
     - HTC Workload Planning Testing Scaling Up:
