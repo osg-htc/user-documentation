@@ -3,6 +3,7 @@
     --md-primary-fg-color: #F1A52C;
     --md-primary-bg-color: #3a3a3a;
     --md-accent-fg-color: #FFC364;
+    --md-default-fg-color--light: #000000;
 }
 
 :root>* {
