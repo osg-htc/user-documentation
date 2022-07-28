@@ -22,7 +22,7 @@ nav:
   - Managing HTC Workloads On OSG Connect:
     - HTC Workload Planning Testing Scaling Up:
       - "Roadmap to HTC Workload Submission via OSG Connect ": managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap.md
-      - "Indicate the Duration Category of Your Jobs" : managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap.md
+      - "Indicate the Duration Category of Your Jobs" : managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/jobdurationcategory.md
       - "Determining the Amount of Resources to Request in a Submit File ": managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up.md
     - Submitting HTC Workloads With HTCondor:
       - "Quickstart-Submit Example HTCondor Jobs": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-quickstart/README.md
