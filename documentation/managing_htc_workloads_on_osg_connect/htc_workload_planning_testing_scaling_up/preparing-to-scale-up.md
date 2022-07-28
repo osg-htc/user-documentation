@@ -67,7 +67,7 @@ and `submit` files meaningful names so you know which results refer to which tes
 
 In the HTCondor submit file, you must explicitly request the number of 
 CPUs (i.e. cores), and the amount of disk and memory that the job needs 
-to complete successfully, and you may need to identify a [JobDurationCategory](12000083468). 
+to complete successfully, and you may need to identify a [JobDurationCategory](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/). 
 When you submit a job for the 
 first time, you may not know just how much to request and that's OK. 
 Below are some suggestions for making resource requests for initial test 
@@ -88,7 +88,7 @@ and use multiple cpus.
     [Multicore Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs/)
     
     - Depending on how long you expect your test jobs to take on a single core, you may need to identify a
-    non-default [JobDurationCategory](12000083468), or consider implementing self-checkpointing (email us!).
+    non-default [JobDurationCategory](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/), or consider implementing self-checkpointing (email us!).
 
 - To inform initial **disk requests** always look at the size of your input 
 files. At a minimum, you need to request enough disk to support all 

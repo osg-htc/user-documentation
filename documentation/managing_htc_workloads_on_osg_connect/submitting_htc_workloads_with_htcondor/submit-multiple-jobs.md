@@ -202,7 +202,7 @@ second job `$(state)` will be `nebraska.data`, and so on. For example:
 	
 	queue state from states.txt
 
-For a working example of this kind of job submission, see our [Word Frequency Tutorial](12000079856).
+For a working example of this kind of job submission, see our [Word Frequency Tutorial](../../../software_examples_for_osg/python/tutorial-wordfreq/).
 
 ### Use multiple variables for each job
 

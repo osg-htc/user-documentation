@@ -28,7 +28,7 @@ cleaning up old data, please send a request to
 [support@opensciencegrid.org](mailto:support@opensciencegrid.org)!**
 
 For additional data information, see also the "Data Storage and Transfer" section of 
-our [FAQ](5000634384#data-storage-and-transfer). 
+our [FAQ](../../../overview/references/frequently-asked-questions-faq-/#data-storage-and-transfer). 
 
 **Note: OSG Connect staff reserve the right to monitor and/or remove 
 data without notice to the user IF doing so is necessary for ensuring 

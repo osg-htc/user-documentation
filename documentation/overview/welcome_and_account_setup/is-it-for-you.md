@@ -61,7 +61,7 @@ using its resources include:
 
 [<img src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/Intro_OSG_Video_Thumbnail.png" width="500">](https://www.youtube.com/embed/vpJPPjoQ3QU)
 
-**[Full OSG User Documentation](https://support.opensciencegrid.org/support/home)** including our [Roadmap to HTC Workload Submission](12000081596-roadmap-to-htc-workload-submission-via-osg-connect)
+**[Full OSG User Documentation](https://support.opensciencegrid.org/support/home)** including our [Roadmap to HTC Workload Submission](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/-roadmap-to-htc-workload-submission-via-osg-connect)
 
 **[OSG User Training materials](../../../support_and_training_resources/education_and_training/osgusertraining/-osg-user-training)** . Live training sessions are advertised/open to those with active accounts on OSG Connect.
 

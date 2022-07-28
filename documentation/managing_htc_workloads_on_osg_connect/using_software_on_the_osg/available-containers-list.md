@@ -58,5 +58,5 @@ or not described well enough to make this list.
 | <span style="white-space: nowrap">TensorFlow GPU</span> | <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/tensorflow-gpu:2.2-cuda-10.1</span><br><span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/tensorflow-gpu:2.3-cuda-10.1</span><br><span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/tensorflow-gpu:latest</span> | TensorFlow image with GPU support<br>[Project Website](https://www.tensorflow.org/)<br>[Container Definition](https://github.com/opensciencegrid/osgvo-tensorflow-gpu) |
 
 
-[container-intro]: 12000024676
-[container-howto]: 12000058245
+[container-intro]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/
+[container-howto]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list/

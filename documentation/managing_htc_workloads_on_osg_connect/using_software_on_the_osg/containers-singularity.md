@@ -99,4 +99,4 @@ Once the image is built, you can upload it to Stash, test it on OSGConenct,
 and use it in your HTCondor jobs. This is all described in the
 [container guide][osg-containers].
 
-[osg-containers]: 12000024676
+[osg-containers]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/
