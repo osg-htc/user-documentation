@@ -77,9 +77,9 @@ of the following types of GPUs:
 For GPU-enabled machine learning libraries, we recommend using 
 containers to set up your software for jobs: 
 
-  * [Using Containers on the OSPool](https://support.opensciencegrid.org/solution/articles/12000024676-singularity-containers)
+  * [Using Containers on the OSPool](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/-singularity-containers)
   * [Sample TensorFlow GPU Container Image Definition](https://github.com/opensciencegrid/osgvo-tensorflow-gpu/blob/master/Dockerfile)
-  * [TensorFlow Example Job](https://support.opensciencegrid.org/solution/articles/12000028940-tensorflow)
+  * [TensorFlow Example Job](../../../software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/-tensorflow)
 
 ## Data Needs for GPU Jobs
 
