@@ -23,7 +23,7 @@ All of our training materials are public, and with recent video recordings avail
 The most recent version of our New User Training materials are here: 
 
 * [Slides](https://docs.google.com/presentation/d/1z-f81xtk_ZXeJcA1kX60JoScXdGfe-xgsB9g5YemrqI/edit#slide=id.g10662d3fe4f_0_0), [Video](https://www.youtube.com/watch?v=D14eMrkZ2gQ)
-* [Wordcount Frequency Tutorial](https://support.opensciencegrid.org/support/solutions/articles/12000079856)
+* [Wordcount Frequency Tutorial](../../software_examples_for_osg/python/tutorial-wordfreq/)
 
 ## Special Topics (at least one per month)
 
@@ -49,5 +49,5 @@ The most recent version of these training materials are here:
 * [Slides](https://docs.google.com/presentation/d/1Ym5piDoEkDPpInnyYgeqUkV-VWQoBTkI0RXJNG7_LK4/edit#slide=id.g120009588c4_0_0), 
 [List of Commands](https://docs.google.com/document/d/1-lfpv7AO7cLZ2yiZQIuiQbb1lyBqh2CB5Ix51cKZ1bk/edit#)
 * Tutorials (used in part)
-    * [Using Julia on the OSPool](https://support.opensciencegrid.org/support/solutions/articles/12000078187-using-julia-on-the-ospool)
-    * [High Throughput BWA Read Mapping](https://support.opensciencegrid.org/support/solutions/articles/12000085928-high-throughput-bwa-read-mapping)
+    * [Using Julia on the OSPool](../../software_examples_for_osg/other_languages_tools/julia-on-osg/-using-julia-on-the-ospool)
+    * [High Throughput BWA Read Mapping](../../software_examples_for_osg/bioinformatics/tutorial-bwa/-high-throughput-bwa-read-mapping)

@@ -320,7 +320,7 @@ can be found in `/opt/sample-jobs/pegasus/` .
 Singularity containers provide a great solution for complex software
 stacks or OS requirements, and OSG has easy to use integrated support
 for such containers. Full details can be found in the
-[Singularity Containers](https://support.opensciencegrid.org/support/solutions/articles/12000024676).
+[Singularity Containers](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/).
 
 
 ## Distribute data with Stash

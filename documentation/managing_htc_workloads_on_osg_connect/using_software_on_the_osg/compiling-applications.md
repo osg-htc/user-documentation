@@ -15,7 +15,7 @@ Due to the distributed nature of the Open Science Pool, you will always need to
 ensure that your jobs have access to the software that will be executed. This guide provides 
 useful information for compiling and using your software in OSG Connect. A detailed 
 example of performing software compilation is additionally available 
-at [OSG Connect Example Compilation Guide](https://support.opensciencegrid.org/support/solutions/articles/12000074984). 
+at [OSG Connect Example Compilation Guide](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/example-compilation/). 
 
 
 > *What is compiling?*
@@ -47,7 +47,7 @@ versions of GCC may also be available - to learn more please contact <support@op
 
 CMake is a commonly used compilation platform. Your software may have dependencies for 
 specific `cmake` versions. Currently the login nodes have two versions of CMake, `3.12.3` 
-and `3.13.0` available as [modules](https://support.opensciencegrid.org/support/solutions/articles/12000048518). 
+and `3.13.0` available as [modules](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/). 
 
 ### Static versus dynamic linking during compilation
 
@@ -83,7 +83,7 @@ before software compilation, you'll also need to add these same libraries to
 your `LD_LIBRARY_PATH` as a step in your job's executable bash script before executing 
 your software.
 
-The [distributed environment modules system](https://support.opensciencegrid.org/support/solutions/articles/12000048518) 
+The [distributed environment modules system](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/) 
 available on OSG Connect also provides several commonly used software libraries 
 (lapack, atlas, hdf5, netcdf, etc.) that can be used for your software compilation and 
 execution. The appropriate modules should be loaded before performing your software 
@@ -127,7 +127,7 @@ path to the directory you created for your software installation.
 
 When submitting jobs, you will need to transfer a copy of your compiled software, 
 and any dynamically-linked dependencies that you also installed. Our 
-[Introduction to Data Management on OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/12000002985) 
+[Introduction to Data Management on OSG Connect](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) 
 guide is a good starting point for more information for selecting the appropriate
 methods for transferring you software. Depending on your job workflow, it may be possible 
 to directly specify your executable binary as the `executable` in your HTCondor 

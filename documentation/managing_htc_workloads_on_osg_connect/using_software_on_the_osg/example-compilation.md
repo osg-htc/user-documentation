@@ -18,7 +18,7 @@ a detailed example of compiling software for use in OSG Connect.
 For this example, we will be compiling Samtools which is a very common bioinformatics 
 software for working with aligned sequencing data. However, the steps described in this 
 example are applicable to many other software. For a general introduction to software 
-compilation in OSG Connect, please see [Compiling Software for OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/5000652099).
+compilation in OSG Connect, please see [Compiling Software for OSG Connect](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/compiling-applications/).
 
 Specifically, this guide provides two examples of compiling Samtools, [one without CRAM file 
 support](#compile-samtools-without-cram-support) and [one with CRAM file support](#compile-samtools-with-cram-support). 
@@ -223,7 +223,7 @@ First move to `my-software/`, then create the tar archive:
 The last command in the above example returns the size of our tar archive. This is 
 important for determine the appropriate method that we should use for transferring 
 this file along with our subsequent jobs. To learn more, please see 
-[Introduction to Data Management on OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/12000002985).
+[Introduction to Data Management on OSG Connect](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/).
 
 To clean up and clear out space in your home directory, we recommend deleting the Samtools source 
 code directory.
@@ -309,7 +309,7 @@ will fail without additional steps.
 Luckily for us, bzip2 version 1.0.6 is available as a module and this module 
 includes access to a `.a` library file. We will use this module for our Samtools compilation. 
 To learn more about using modules, please see 
-[Accessing Software using Distributed Environment Modules](https://support.opensciencegrid.org/support/solutions/articles/12000048518). 
+[Accessing Software using Distributed Environment Modules](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/). 
 `liblzma` however is not currently available as a module and our next step 
 will be to install `liblzma`.
 
@@ -359,7 +359,7 @@ Loading this module will further modify some of your environment variables
 so that Samtools is able to locate the bzip2 library files.
 
 To learn more about using modules, please see 
-[Accessing Software using Distributed Environment Modules](https://support.opensciencegrid.org/support/solutions/articles/12000048518). 
+[Accessing Software using Distributed Environment Modules](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/). 
 
 ### Step 5. Compile Samtools
 
@@ -425,7 +425,7 @@ First move to `my-software/`, then create the tar archive:
 The last command in the above example returns the size of our tar archive. This is 
 important for determine the appropriate method that we should use for transferring 
 this file along with our subsequent jobs. To learn more, please see 
-[Introduction to Data Management on OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/12000002985).
+[Introduction to Data Management on OSG Connect](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/).
 
 Follow the these same steps for creating a tar archive of the xz-5.2.5 library as well. 
 
