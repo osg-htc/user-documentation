@@ -37,7 +37,7 @@ are not a good fit for the OSPool**. *If your jobs are self-checkpointing,
 see “Self-Checkpointing Jobs”, further below.*
  
 ## Test Jobs for Expected Duration
-As part of the [preparation for running a full-scale job batch](https://support.opensciencegrid.org/support/solutions/articles/12000076552-always-test-a-few-jobs-before-submitting-many), 
+As part of the [preparation for running a full-scale job batch](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up/-always-test-a-few-jobs-before-submitting-many), 
 users should test a subset (first ~10, then 100 or 1000) of their jobs with the **Medium** or **Long** categories, 
 and then review actual job execution durations in the job log files. 
 If the user expects potentially significant variation in job durations within a single batch, a longer JobDurationCategory may be warranted relative to the duration of test jobs. Or, if variations in job duration may be predictable, the user may choose to submit different 

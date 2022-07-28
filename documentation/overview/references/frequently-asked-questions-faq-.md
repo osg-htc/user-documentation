@@ -23,17 +23,17 @@ Please follow the steps outlined in the [Sign Up process](http://osgconnect.net/
    
 **What software packages are available?**
 
-In general, we support most software that fit the distributed high throughput computing model. Users are encouraged to download and install their own software. For some software, we support distributed software modules listed [here](https://support.opensciencegrid.org/support/solutions/articles/12000048518). Software can be added to the modules upon request. 
+In general, we support most software that fit the distributed high throughput computing model. Users are encouraged to download and install their own software. For some software, we support distributed software modules listed [here](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/). Software can be added to the modules upon request. 
  
-Additionally, users may install their software into a Docker container which can run on OSG as a Singularity image.  See [this guide](https://support.opensciencegrid.org/support/solutions/articles/12000024676-docker-and-singularity-containers) for more information. 
+Additionally, users may install their software into a Docker container which can run on OSG as a Singularity image.  See [this guide](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/-docker-and-singularity-containers) for more information. 
 
 **How do I access a specific software application?**
 
-We have implemented modules within OSG Connect to manage the software that is available to users. Modules allow for easy access to a number of software and version options. Our [Accessing Software using Distributed Environment Modules](https://support.opensciencegrid.org/support/solutions/articles/12000048518) page provides more details on how to use modules in OSG Connect.
+We have implemented modules within OSG Connect to manage the software that is available to users. Modules allow for easy access to a number of software and version options. Our [Accessing Software using Distributed Environment Modules](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/) page provides more details on how to use modules in OSG Connect.
  
 **Are there any restrictions on installing commercial softwares?**
 
-We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running [MATLAB standalone executables](https://support.opensciencegrid.org/support/solutions/articles/5000660751-basics-of-compiled-matlab-applications-hello-world-example) which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's /home directory with HTCondor transferring to jobs, but should not be staged in OSG's public data staging locations (see https://support.opensciencegrid.org/support/solutions/articles/12000002985-data-management-and-policies). Please get in touch with any questions about licensed software.
+We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running [MATLAB standalone executables](../../../software_examples_for_osg/matlab_runtime/tutorial-matlab-HelloWorld/-basics-of-compiled-matlab-applications-hello-world-example) which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's /home directory with HTCondor transferring to jobs, but should not be staged in OSG's public data staging locations (see ../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/-data-management-and-policies). Please get in touch with any questions about licensed software.
 
  
 **Can I request for system wide installation of the open source software useful for my research?**
@@ -46,7 +46,7 @@ Yes. Please contact <support@opensciencegrid.org>.
 
 OSG Connect is a high throughput computing system. You can get the most of out OSG Connect resources by breaking up a 
 single large computational task into many smaller tasks for the fastest overall turnaround. This approach can be 
-invaluable in accelerating your computational work and thus your research. Please see our ["Is OSG for You?"](https://support.opensciencegrid.org/support/solutions/articles/5000632058) page for more details on how to determine if your work matches up well with OSG Connect's model.
+invaluable in accelerating your computational work and thus your research. Please see our ["Is OSG for You?"](../../../overview/welcome_and_account_setup/is-it-for-you/) page for more details on how to determine if your work matches up well with OSG Connect's model.
 
 **What job scheduler is being used on OSG Connect?**
 
@@ -72,7 +72,7 @@ Use the Stash data system to stage large volumes of data. Please refer the secti
  
 **How do I transfer my data to and from OSG Connect?**
 
-You can transfer data using scp or rsync. See [Using scp To Transfer Files To OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/5000634376) for more details.
+You can transfer data using scp or rsync. See [Using scp To Transfer Files To OSG Connect](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/scp/) for more details.
 
 **How public is /public?**
 

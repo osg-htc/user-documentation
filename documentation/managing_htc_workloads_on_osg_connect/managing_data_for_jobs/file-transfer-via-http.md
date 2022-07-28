@@ -15,7 +15,7 @@ you can have such files transferred by HTCondor using the appropriate HTTP addre
 
 # Important Considerations
 
-While our [Overview of Data Mangement on OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/12000002985) 
+While our [Overview of Data Mangement on OSG Connect](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) 
 describes how you can stage data, files, or even software in OSG Connect locations, 
 any web-accessible file can be transferred directly to your jobs **IF**:
 

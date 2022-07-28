@@ -24,7 +24,7 @@ regional data caches in the OSG Data Federation, while preserving login node per
 
 # Important Considerations and Best Practices
 
-1. As described in OSG Connect's [Introduction to Data Management on OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/12000002985), 
+1. As described in OSG Connect's [Introduction to Data Management on OSG Connect](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/), 
 the `/public` location **must** be used for:
 
 	- Any **input data or software larger than 100MB** for 
@@ -67,7 +67,7 @@ of the submit file:
 1. Upload your larger input and/or software files to your `/public` directory 
 which is accessible via your OSG Connect login node at `/public/username` 
 for which our 
-[Using scp To Transfer Files To OSG Connect](https://support.opensciencegrid.org/support/solutions/articles/5000634376) 
+[Using scp To Transfer Files To OSG Connect](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/scp/) 
 guide may be helpful.
 
 	**Because of the way your files in `/public` are cached across the Open Science Pool, 

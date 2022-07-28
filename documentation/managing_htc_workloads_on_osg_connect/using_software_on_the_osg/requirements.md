@@ -16,7 +16,7 @@ on a node with a specific operating system.
 HTCondor provides several options for "steering" your jobs to appropriate
 nodes and system environments. The `request_cpus`, `request_gpus`, `request_memory`, and `request_disk`
 submit file attributes should be used to specify the hardware needs of your jobs.
-Please see our guides [Multicore Jobs](https://support.opensciencegrid.org/support/solutions/articles/5000653862-multicore-jobs) and [Large Memory Jobs](https://support.opensciencegrid.org/support/solutions/articles/5000652304-large-memory-jobs)
+Please see our guides [Multicore Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs/-multicore-jobs) and [Large Memory Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/large-memory-jobs/-large-memory-jobs)
 for more details.
 
 HTCondor also provides a `requirements` attribute and feature-specific

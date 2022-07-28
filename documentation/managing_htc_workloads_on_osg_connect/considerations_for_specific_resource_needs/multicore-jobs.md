@@ -27,4 +27,4 @@ were actually assigned to your job.
 
 **MPI Jobs**
 
-For jobs that require MPI, see our [OpenMPI Jobs](https://support.opensciencegrid.org/support/solutions/articles/12000054297-openmpi-jobs) guide. 
+For jobs that require MPI, see our [OpenMPI Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/openmpi-jobs/-openmpi-jobs) guide. 
