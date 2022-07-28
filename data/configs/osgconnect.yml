@@ -3,73 +3,62 @@ nav:
   - Overview:
     - Welcome And Account Setup:
       - "Computation on the Open Science Pool ": overview/welcome_and_account_setup/is-it-for-you.md
+      - "Registration and Login for OSG Connect ": overview/welcome_and_account_setup/registration-and-login.md
       - "Generate SSH Keys and Activate Your OSG Login ": overview/welcome_and_account_setup/generate-add-sshkey.md
       - "Join and Use a Project in OSG Connect ": overview/welcome_and_account_setup/starting-project.md
-      - "Registration and Login for OSG Connect ": overview/welcome_and_account_setup/registration-and-login.md
     - References:
-      - "Contact OSG for non-Support Inquiries": overview/references/contact-information.md
+      - "Policies for Using OSG Connect and the OSPool ": overview/references/policy.md
       - "Frequently Asked Questions": overview/references/frequently-asked-questions-faq-.md
       - "Acknowledge the OSG": overview/references/acknowledgeOSG.md
+      - "Contact OSG for non-Support Inquiries": overview/references/contact-information.md
       - "OSG Accounting (GRACC)": overview/references/gracc.md
-      - "Policies for Using OSG Connect and the OSPool ": overview/references/policy.md
   - Support And Training Resources:
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training_resources/get_help!/getting-help-from-RCFs.md
     - Education And Training:
+      - "Bi-Monthly OSG User Training (registration+materials)": support_and_training_resources/education_and_training/osgusertraining.md
       - "Annual, Week-Long OSG User School ": support_and_training_resources/education_and_training/osg-user-school.md
       - "Other Past Training Events ": support_and_trainingresources/education_and_training/previous-training-events.md
-      - "OSG User Training (regular/monthly) ": support_and_training_resources/education_and_training/osgusertraining.md
   - Managing HTC Workloads On OSG Connect:
     - HTC Workload Planning Testing Scaling Up:
-      - "Determining the Amount of Resources to Request in a Submit File ": managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up.md
       - "Roadmap to HTC Workload Submission via OSG Connect ": managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap.md
+      - "Determining the Amount of Resources to Request in a Submit File ": managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up.md
     - Submitting HTC Workloads With HTCondor:
-      - "Easily Submit Multiple Jobs": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/submit-multiple-jobs.md
-      - "Checkpointing Jobs": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/checkpointing-on-OSPool.md
-      - "Use OSG Connect Tutorials": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-command.md
       - "Quickstart-Submit Example HTCondor Jobs": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-quickstart/README.md
+      - "Easily Submit Multiple Jobs": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/submit-multiple-jobs.md
       - "Organizing and Submitting HTC Workloads": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-organizing/README.md
-      - "Troubleshooting Job Errors": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-error101/README.md
       - "Finding OSG Locations": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-osg-locations/README.md
+      - "Troubleshooting Job Errors": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-error101/README.md
+      - "Use OSG Connect Tutorials": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-command.md
+      - "Checkpointing Jobs": managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/checkpointing-on-OSPool.md
     - Using Software On The OSG:
+      - "Using Software on the Open Science Pool": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-overview.md
       - "Control Where Your Jobs Run/Job Requirements": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/requirements.md
       - "Compiling Software for OSG Connect": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/compiling-applications.md
-      - "Using Software on the Open Science Pool": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-overview.md
       - "Example Software Compilation": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/example-compilation.md
-      - "Create/Register a Docker Container Image": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-docker.md
-      - "Request Help with Your Software": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request.md
-      - "Access Software using Distributed Environment Modules": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list.md
       - "View Existing OSPool-Supported Containers": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list.md
+      - "Create/Register a Docker Container Image": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-docker.md
+      - "Access Software using Distributed Environment Modules": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list.md
+      - "Request Help with Your Software": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request.md
       - "Create a Singularity Container Image": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-singularity.md
       - "Use Containers on the OSG": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers.md
     - Managing Data For Jobs:
-      - "Transfer Input Files Up To 100MB In Size": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/file-transfer-via-htcondor.md
+      - "Overview: Data Staging and Transfer to Jobs": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage.md
       - "Use scp To Transfer Files To and From OSG Connect": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/scp.md
+      - "Transfer Input Files Up To 100MB In Size": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/file-transfer-via-htcondor.md
+      - "Transfer Job Output Files Up To 1GB In Size": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/output-file-transfer-via-htcondor.md
       - "Transfer Larger Input and Output Files": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/stashcache.md
       - "Transfer HTTP-available Files up to 1GB In Size": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/file-transfer-via-http.md
-      - "Transfer Job Output Files Up To 1GB In Size": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/output-file-transfer-via-htcondor.md
-      - "Overview: Data Staging and Transfer to Jobs": managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage.md
     - Considerations For Specific Resource Needs:
-      - "OpenMPI Jobs": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/openmpi-jobs.md
-      - "Multicore Jobs": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs.md
       - "Using GPUs on the OSPool": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/gpu-jobs.md
       - "Large Memory Jobs": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/large-memory-jobs.md
+      - "Multicore Jobs": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs.md
+      - "OpenMPI Jobs": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/openmpi-jobs.md
       - "Running OSG jobs on XSEDE": managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/osg-xsede.md
     - Automated Workflows:
       - "Submit Workflows with HTCondor's DAGMan ": managing_htc_workloads_on_osg_connect/automated_workflows/dagman-workflows.md
       - "Use Pegasus to Manage Workflows on OSG Connect": managing_htc_workloads_on_osg_connect/automated_workflows/tutorial-pegasus/README.md
   - Software Examples For OSG:
-    - Bioinformatics:
-      - "High-Throughput BLAST": software_examples_for_osg/bioinformatics/tutorial-blast-split/README.md
-      - "High-Throughput BWA Read Mapping": software_examples_for_osg/bioinformatics/tutorial-bwa/README.md
-    - Drug Discovery:
-      - "Running a Molecule Docking Job with AutoDock Vina": software_examples_for_osg/drug_discovery/tutorial-AutoDockVina/README.md
-    - Freesurfer:
-      - "Introduction to FreeSurfer on the OSPool ": software_examples_for_osg/freesurfer/Introduction.md
-    - Machine Learning:
-      - "Working with Tensorflow, GPUs, and containers": software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/README.md
-    - Matlab Runtime:
-      - "Basics of compiled MATLAB applications - Hello World example": software_examples_for_osg/matlab_runtime/tutorial-matlab-HelloWorld/README.md
     - Python:
       - "Run Python Scripts on the OSPool ": software_examples_for_osg/python/manage-python-packages.md
       - "Scaling Up With HTCondor’s Queue Command": software_examples_for_osg/python/tutorial-ScalingUp-Python/README.md
@@ -78,8 +67,18 @@ nav:
       - "Use External Packages in your R Jobs": software_examples_for_osg/r/tutorial-R-addlibSNA/README.md
       - "Run R scripts on the OSPool": software_examples_for_osg/r/tutorial-R/README.md
       - "Scaling up compute resources": software_examples_for_osg/r/tutorial-ScalingUp-R/README.md
-    - Other Languages Tools:
+    - Bioinformatics:
+      - "High-Throughput BLAST": software_examples_for_osg/bioinformatics/tutorial-blast-split/README.md
+      - "High-Throughput BWA Read Mapping": software_examples_for_osg/bioinformatics/tutorial-bwa/README.md
+    - Drug Discovery:
+      - "Running a Molecule Docking Job with AutoDock Vina": software_examples_for_osg/drug_discovery/tutorial-AutoDockVina/README.md
+    - Matlab Runtime:
+      - "Basics of compiled MATLAB applications - Hello World example": software_examples_for_osg/matlab_runtime/tutorial-matlab-HelloWorld/README.md
+    - Other Languages and Tools:
       - "Using Julia on the OSPool ": software_examples_for_osg/other_languages_tools/julia-on-osg.md
       - "Using conda to Run Python on the OSPool ": software_examples_for_osg/other_languages_tools/conda-on-osg.md
       - "Using Java in Jobs ": software_examples_for_osg/other_languages_tools/java-on-osg.md
-
+    - Machine Learning:
+      - "Working with Tensorflow, GPUs, and containers": software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/README.md
+    - Freesurfer:
+      - "Introduction to FreeSurfer on the OSPool ": software_examples_for_osg/freesurfer/Introduction.md
