@@ -163,5 +163,5 @@ than what you requested, make sure you adjust your requests.
 For assistance or questions, please email the OSG Research Facilitation
 team  at [support@opensciencegrid.org](mailto:support@opensciencegrid.org) or visit the [help desk and community forums](http://support.opensciencegrid.org).
 
-[module-guide]: 12000048518
-[data-intro]: 12000002985
+[module-guide]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/
+[data-intro]: ../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/

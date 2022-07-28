@@ -24,7 +24,7 @@ As the below do not cover every possible scenario of potentially disruptive prac
 
 5. The following actions may be taken automatedly or by OSG staff to stop or prevent jobs from causing problems. Please contact us if you’d like help understanding why your jobs were held or removed, and so we can help you avoid problems in the future.
 	 - **Jobs using more memory or disk than requested** may be automatically held (see [Scaling Up after Test Jobs](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up/) for tips on requesting the ‘right’ amount of job resources in your submit file).
-	 - **Jobs running longer than their JobDurationCategory allows for** will be held (see [Indicate the Job Duration Category of Your Jobs](12000083468)).
+	 - **Jobs running longer than their JobDurationCategory allows for** will be held (see [Indicate the Job Duration Category of Your Jobs](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/)).
 	 - **Jobs that have executed more than 30 times without completing** may be automatically held (likely because [they’re too long](../../../overview/welcome_and_account_setup/is-it-for-you/) for OSG).
 	 - **Jobs that have been held more than 14 days** may be automatically removed.
 	 - **Jobs queued for more than three months** may be automatically removed.

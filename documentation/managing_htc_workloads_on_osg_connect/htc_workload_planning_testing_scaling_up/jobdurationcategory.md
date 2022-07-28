@@ -12,7 +12,7 @@ To maximize the value of the capacity contributed by the different organizations
 users are requested to identify one of three duration categories for their jobs. These categories should be selected based upon test 
 jobs (run on the OSPool) and allow for more effective scheduling of the capacity contributed to the pool,
 honoring the community’s shared responsibility for efficient use of the contributed resources. As a reminder, 
-[jobs with single executions longer than 20 hours in tests on the OSPool should not be submitted](5000632058), without 
+[jobs with single executions longer than 20 hours in tests on the OSPool should not be submitted](../../../overview/welcome_and_account_setup/is-it-for-you/), without 
 self-checkpointing (see further below).
 
 Every job submitted via an OSG Connect access point must 

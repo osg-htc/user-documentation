@@ -54,4 +54,4 @@ We are happy to arrange meetings outside of designated Office Hours, per your pr
 ## Training Opportunities
 
 The RCF team runs regular new user training on the first Tuesday of the month. See upcoming 
-training dates, registration information, and materials on the [OSG Training page](12000084444).
+training dates, registration information, and materials on the [OSG Training page](../../../support_and_training_resources/education_and_training/osgusertraining/).

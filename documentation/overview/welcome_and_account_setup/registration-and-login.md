@@ -124,5 +124,5 @@ the submit node for the OSG Connect job scheduler, or to transfer data in and
 out of Stash. Submit node logins are typically via Secure Shell (SSH) using a
 password or a public key. We'll discuss how to connect further on.
 
-[ssh-key]: 12000027675
-[projects]: 5000634360
+[ssh-key]: ../../../overview/welcome_and_account_setup/generate-add-sshkey/
+[projects]: ../../../overview/welcome_and_account_setup/starting-project/

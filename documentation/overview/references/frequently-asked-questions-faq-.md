@@ -54,7 +54,7 @@ We use use the task scheduling software called HTCondor to schedule and run jobs
  
 **How do I submit a computing job?**
 
-Jobs are submitted via HTCondor scheduler. Please see our [QuickStart](http://support.opensciencegrid.org/support/solutions/articles/5000633410) guide for more details on submitting and managing jobs.
+Jobs are submitted via HTCondor scheduler. Please see our [QuickStart](http://support.opensciencegrid.org/support/solutions/articles/../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-quickstart/) guide for more details on submitting and managing jobs.
 
 **How many jobs can I have in the queue?**
 

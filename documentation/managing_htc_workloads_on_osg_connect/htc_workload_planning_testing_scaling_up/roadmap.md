@@ -31,7 +31,7 @@ in the [Getting Help](#getting-help) section below.
 The OSG's Open Science Pool is best-suited for computing work that can be run as many, independent 
 tasks, in an approach called "high throughput computing." For more information 
 on what kind of work is a good fit for the OSG, 
-see [Is the Open Science Pool for You?](5000632058). 
+see [Is the Open Science Pool for You?](../../../overview/welcome_and_account_setup/is-it-for-you/). 
 
 Learn more about the services provided by the OSG that can support your HTC workload: 
 
@@ -103,7 +103,7 @@ discussed the relevant approaches, when to use them, and where to stage data for
 
 ## Assign the Appropriate Job Duration Category
 
-Jobs running in the OSPool may be interrupted at any time, and will be re-run by HTCondor, unless a single execution of a job exceeds the allowed duration. Jobs expected to take longer than 10 hours will need to identify themselves as 'Long' according to our [Job Duration policies](12000083468). Remember that jobs expected to take longer than 20 hours are not a good fit for the OSPool (see [Is the Open Science Pool for You?](5000632058)) without implementing self-checkpointing (further below).
+Jobs running in the OSPool may be interrupted at any time, and will be re-run by HTCondor, unless a single execution of a job exceeds the allowed duration. Jobs expected to take longer than 10 hours will need to identify themselves as 'Long' according to our [Job Duration policies](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/). Remember that jobs expected to take longer than 20 hours are not a good fit for the OSPool (see [Is the Open Science Pool for You?](../../../overview/welcome_and_account_setup/is-it-for-you/)) without implementing self-checkpointing (further below).
 
 # 5. Scale Up
 
@@ -123,19 +123,19 @@ If you think any of the below applies to you,
 please [get in touch](mailto:support@opensciencegrid.org)
 and our facilitation team will be happy to discuss your individual case. 
 
-- Run sequential workflows of jobs: [Workflows with HTCondor's DAGMan](12000079038)
+- Run sequential workflows of jobs: [Workflows with HTCondor's DAGMan](../../../managing_htc_workloads_on_osg_connect/automated_workflows/dagman-workflows/)
 - Implement self-checkpointing for long jobs: [HTCondor Checkpointing Guide](https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html)
-- Build your own Docker container: [Creating a Docker Container Image](12000058245)
-- Submit more than 10,000 jobs at once: [FAQ, search for 'max_idle'](5000634384)
+- Build your own Docker container: [Creating a Docker Container Image](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list/)
+- Submit more than 10,000 jobs at once: [FAQ, search for 'max_idle'](../../../overview/references/frequently-asked-questions-faq-/)
 - Larger or speciality resource requests: 
-	- GPUs: [GPU Jobs](5000653025)
-	- Multiple CPUs: [Multicore Jobs](5000653862)
-	- Large Memory: [Large Memory Jobs](5000652304)
+	- GPUs: [GPU Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/gpu-jobs/)
+	- Multiple CPUs: [Multicore Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs/)
+	- Large Memory: [Large Memory Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/large-memory-jobs/)
 
 # Getting Help 
 
 The OSG Facilitation team is here to help with questions and issues that come up as you work 
 through these roadmap steps. We are available via email, office hours, appointments, and offer 
-regular training opportunities. See our [Get Help page](12000084585) and [OSG Training page](12000084444)
+regular training opportunities. See our [Get Help page](../../../support_and_training_resources/get_help%21/getting-help-from-RCFs/) and [OSG Training page](../../../support_and_training_resources/education_and_training/osgusertraining/)
 for all the different ways you can reach us. Our purpose 
 is to assist you with achieving your computational goals, so we want to hear from you!
