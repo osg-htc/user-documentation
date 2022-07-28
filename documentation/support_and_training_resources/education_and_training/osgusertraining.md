@@ -49,5 +49,5 @@ The most recent version of these training materials are here:
 * [Slides](https://docs.google.com/presentation/d/1Ym5piDoEkDPpInnyYgeqUkV-VWQoBTkI0RXJNG7_LK4/edit#slide=id.g120009588c4_0_0), 
 [List of Commands](https://docs.google.com/document/d/1-lfpv7AO7cLZ2yiZQIuiQbb1lyBqh2CB5Ix51cKZ1bk/edit#)
 * Tutorials (used in part)
-    * [Using Julia on the OSPool](../../../software_examples_for_osg/other_languages_tools/julia-on-osg/-using-julia-on-the-ospool)
-    * [High Throughput BWA Read Mapping](../../../software_examples_for_osg/bioinformatics/tutorial-bwa/-high-throughput-bwa-read-mapping)
+    * [Using Julia on the OSPool](../../../software_examples_for_osg/other_languages_tools/julia-on-osg/)
+    * [High Throughput BWA Read Mapping](../../../software_examples_for_osg/bioinformatics/tutorial-bwa/)

@@ -86,5 +86,5 @@ containers to set up your software for jobs:
 As with any kind of job submission, check your data sizes (per job) before submitting 
 jobs and choose the appropriate file transfer method for your data. 
 
-See our [Data Staging and Transfer guide](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/#transferring-data-tofrom-jobs) for
+See our [Data Staging and Transfer guide](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) for
 details and contact the Research Computing Facilitation team with questions.
