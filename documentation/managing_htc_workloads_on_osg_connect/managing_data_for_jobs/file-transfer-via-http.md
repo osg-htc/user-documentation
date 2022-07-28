@@ -15,12 +15,12 @@ you can have such files transferred by HTCondor using the appropriate HTTP addre
 
 # Important Considerations
 
-While our [Overview of Data Mangement on OSG Connect](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) 
+While our [Overview of Data Mangement on OSG Connect](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) 
 describes how you can stage data, files, or even software in OSG Connect locations, 
 any web-accessible file can be transferred directly to your jobs **IF**:
 
 - the file is accessible via an HTTP address
-- the file is less than 1GB in size (if larger, you'll need to pre-stage them for [stash-based transfer](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/stashcache/)
+- the file is less than 1GB in size (if larger, you'll need to pre-stage them for [stash-based transfer](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/stashcache/)
 - the server or website they're on can handle large numbers of your jobs accessing them simultaneously
 
 Importantly, you'll also want to make sure your job executable knows how to handle the file 

@@ -185,9 +185,9 @@ and  Singularity, please see:
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/DA87Ba2dpNM" frameborder="0" allowfullscreen></iframe>
 
-[container-howto]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list/
-[container-list]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-docker/
-[data-staging]: ../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/
-[stash]: ../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/stashcache/
-[docker-guide]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list/
-[singularity-guide]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers/
+[container-howto]: ../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list/
+[container-list]: ../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-docker/
+[data-staging]: ../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/
+[stash]: ../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/stashcache/
+[docker-guide]: ../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list/
+[singularity-guide]: ../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers/
