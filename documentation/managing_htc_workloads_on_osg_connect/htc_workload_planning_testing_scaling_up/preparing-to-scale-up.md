@@ -168,7 +168,7 @@ Gathering information about how, what, and where a job ran can be important for 
 | `condor_q <JobID> -l` | Prints all information related to a job including attributes and run information about a job in the queue. Output includes `JobDurationCategory`, `ServerTime`, `SubmitFile`, etc. Also works with `condor_history`. |
 | `condor_q <JobID> -af <AttributeName1> <AttributeName2>` | Prints information about an attribute or list of attributes for a single job using the autoformat `-af` flag. The list of possible attributes can be found using `condor_q <JobID> -l`. Also works with `condor_history`.  |
 | `condor_q -constraint '<Attribute> == "<value>"' `  | The `-constraint` flag allows users to find all jobs with a certain value for a given parameter. This flag supports searching by more than one parameter and different operators (e.g. `=!=`). Also works with `condor_history`.  |
-| `condor_q -better-analyze <JobID> -pool <PoolName>` | Shows a list of the number of slots matching a job's requirements. For more information, see [Troubleshooting Job Errors](../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-error101/-troubleshooting-job-errors). |
+| `condor_q -better-analyze <JobID> -pool <PoolName>` | Shows a list of the number of slots matching a job's requirements. For more information, see [Troubleshooting Job Errors](../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-error101/). |
 
 
 Additional `condor_q` flags involved in optimizing and troubleshooting jobs include:
@@ -201,7 +201,7 @@ to remove intermediate and/or unnecessary files as part of your job.
 
 To help manage complicated workflows, consider a workflow manager such 
 as HTCondor's built-in [DAGman](https://research.cs.wisc.edu/htcondor/dagman/dagman.html)
-or the HTCondor-compatible [Pegasus](../../../managing_htc_workloads_on_osg_connect/automated_workflows/tutorial-pegasus/-pegasus) 
+or the HTCondor-compatible [Pegasus](../../../managing_htc_workloads_on_osg_connect/automated_workflows/tutorial-pegasus/) 
 workflow tool.
 
 # Get Help

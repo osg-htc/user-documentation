@@ -25,7 +25,7 @@ Please follow the steps outlined in the [Sign Up process](http://osgconnect.net/
 
 In general, we support most software that fit the distributed high throughput computing model. Users are encouraged to download and install their own software. For some software, we support distributed software modules listed [here](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/). Software can be added to the modules upon request. 
  
-Additionally, users may install their software into a Docker container which can run on OSG as a Singularity image.  See [this guide](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/-docker-and-singularity-containers) for more information. 
+Additionally, users may install their software into a Docker container which can run on OSG as a Singularity image.  See [this guide](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/) for more information. 
 
 **How do I access a specific software application?**
 
@@ -33,7 +33,7 @@ We have implemented modules within OSG Connect to manage the software that is av
  
 **Are there any restrictions on installing commercial softwares?**
 
-We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running [MATLAB standalone executables](../../../software_examples_for_osg/matlab_runtime/tutorial-matlab-HelloWorld/-basics-of-compiled-matlab-applications-hello-world-example) which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's /home directory with HTCondor transferring to jobs, but should not be staged in OSG's public data staging locations (see ../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/-data-management-and-policies). Please get in touch with any questions about licensed software.
+We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running [MATLAB standalone executables](../../../software_examples_for_osg/matlab_runtime/tutorial-matlab-HelloWorld/) which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's /home directory with HTCondor transferring to jobs, but should not be staged in OSG's public data staging locations (see ../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/-data-management-and-policies). Please get in touch with any questions about licensed software.
 
  
 **Can I request for system wide installation of the open source software useful for my research?**

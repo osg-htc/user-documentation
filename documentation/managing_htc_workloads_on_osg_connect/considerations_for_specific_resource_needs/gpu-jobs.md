@@ -77,14 +77,14 @@ of the following types of GPUs:
 For GPU-enabled machine learning libraries, we recommend using 
 containers to set up your software for jobs: 
 
-  * [Using Containers on the OSPool](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/-singularity-containers)
+  * [Using Containers on the OSPool](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/)
   * [Sample TensorFlow GPU Container Image Definition](https://github.com/opensciencegrid/osgvo-tensorflow-gpu/blob/master/Dockerfile)
-  * [TensorFlow Example Job](../../../software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/-tensorflow)
+  * [TensorFlow Example Job](../../../software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/)
 
 ## Data Needs for GPU Jobs
 
 As with any kind of job submission, check your data sizes (per job) before submitting 
 jobs and choose the appropriate file transfer method for your data. 
 
-See our [Data Staging and Transfer guide](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/-overview-data-staging-and-transfer-to-jobs#transferring-data-tofrom-jobs) for
+See our [Data Staging and Transfer guide](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/#transferring-data-tofrom-jobs) for
 details and contact the Research Computing Facilitation team with questions.
