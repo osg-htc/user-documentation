@@ -1,11 +1,11 @@
-name: Link docs to the correct locations
+name: Deploy self
 on:
   push:
     branches:
       - main
 
 jobs:
-  validate-mkdocs:
+  Run-Build-Scripts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -24,3 +24,19 @@ jobs:
           git add .
           git commit -m "Link Files"
           git push --set-upstream origin main
+
+  Trigger-New-Documentation-Release:
+    runs-on: ubuntu-latest
+    if: startsWith(github.repository, 'osg-htc/')
+    env:
+      OWNER: osg-htc
+      REPO: osg-portal-documentation
+      WORKFLOW_ID: update-documentation.yml
+    steps:
+      - name: Trigger Documentation Release
+        run: |
+          curl \
+            -X POST \
+            -H "Accept: application/vnd.github+json" \ 
+            -H "Authorization: Bearer ${{ secrets.REPO_ACCESS_TOKEN }}" \
+            https://api.github.com/repos/${{secrets.OWNER}}/${{secrets.REPO}}/actions/workflows/${{secrets.WORKFLOW_ID}}/dispatches
