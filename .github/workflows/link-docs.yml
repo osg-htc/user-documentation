@@ -33,6 +33,7 @@ jobs:
   Trigger-New-Documentation-Release:
     runs-on: ubuntu-latest
     if: startsWith(github.repository, 'osg-htc/')
+    needs: Run-Build-Scripts
     env:
       OWNER: osg-htc
       REPO: osg-portal-documentation
@@ -44,4 +45,5 @@ jobs:
             -X POST \
             -H "Accept: application/vnd.github+json" \ 
             -H "Authorization: Bearer ${{ secrets.REPO_ACCESS_TOKEN }}" \
-            https://api.github.com/repos/${{env.OWNER}}/${{env.REPO}}/actions/workflows/${{env.WORKFLOW_ID}}/dispatches
+            https://api.github.com/repos/${{env.OWNER}}/${{env.REPO}}/actions/workflows/${{env.WORKFLOW_ID}}/dispatches \
+            -d '{"ref":"master"}'
