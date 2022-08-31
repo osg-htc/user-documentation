@@ -12,7 +12,7 @@ To maximize the value of the capacity contributed by the different organizations
 users are requested to identify one of three duration categories for their jobs. These categories should be selected based upon test 
 jobs (run on the OSPool) and allow for more effective scheduling of the capacity contributed to the pool,
 honoring the community’s shared responsibility for efficient use of the contributed resources. As a reminder, 
-[jobs with single executions longer than 20 hours in tests on the OSPool should not be submitted](../../../overview/welcome_and_account_setup/is-it-for-you/), without 
+[jobs with single executions longer than 20 hours in tests on the OSPool should not be submitted](../../overview/welcome_and_account_setup/is-it-for-you/), without 
 self-checkpointing (see further below).
 
 Every job submitted via an OSG Connect access point must 
@@ -37,7 +37,7 @@ are not a good fit for the OSPool**. *If your jobs are self-checkpointing,
 see “Self-Checkpointing Jobs”, further below.*
  
 ## Test Jobs for Expected Duration
-As part of the [preparation for running a full-scale job batch](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up/), 
+As part of the [preparation for running a full-scale job batch](../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up/), 
 users should test a subset (first ~10, then 100 or 1000) of their jobs with the **Medium** or **Long** categories, 
 and then review actual job execution durations in the job log files. 
 If the user expects potentially significant variation in job durations within a single batch, a longer JobDurationCategory may be warranted relative to the duration of test jobs. Or, if variations in job duration may be predictable, the user may choose to submit different 

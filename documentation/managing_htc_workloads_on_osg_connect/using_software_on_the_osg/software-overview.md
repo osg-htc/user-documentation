@@ -27,13 +27,13 @@ make your jobs more distributable, allowing you to run jobs at more locations.
 
 Installing your own software can be performed interactively on your assigned login server. More 
 information about how to install your own software from source code can be found at 
-[Compiling Software for the OSPool](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/compiling-applications/). 
+[Compiling Software for the OSPool](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/compiling-applications/). 
 When installing software on an OSG Connect login node, your software will be specifically compiled against 
 the Red Hat Enterprise Linux (RHEL) 7 OS used on these nodes. In most cases, subsequent 
 jobs that use this software will also need to run on a RHEL 7 OS, which can be specified by the 
 `requirements` attribute of your HTCondor submit files - an example is provided in the software 
 compilation guide linked above. Be sure to also review our 
-[Introduction to Data Management on OSG Connect](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) 
+[Introduction to Data Management on OSG Connect](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) 
 guide to determine the appropriate method for transferring software with your jobs.
 
 ## Use Precompiled Binaries and Prebuilt Executables
@@ -55,7 +55,7 @@ environments. The Open Science Pool is compatible with both Singularity and Dock
 latter will be converted to a Singularity image and added to the OSG container image 
 repository. Users can choose from a set of pre-defined containers already available within OSG, 
 or can use published or custom made containers. More details on how to use containers on the OSPool can be found in our 
-[Docker and Singularity Containers](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/) guide. 
+[Docker and Singularity Containers](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/) guide. 
 
 ## Access Software In Distributed Modules 
 
@@ -66,7 +66,7 @@ software. To run jobs that use modules, your HTCondor submit files must include 
 `requirements` to direct your jobs to appropriate compute nodes within OSG.
 
 More details about using modules can be found 
-[here](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/). 
+[here](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/). 
 
 ## Ask for Helpk
 

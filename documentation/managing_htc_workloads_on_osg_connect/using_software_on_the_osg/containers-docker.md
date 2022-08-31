@@ -201,4 +201,4 @@ aspects of the Docker container are deleted when it is converted to a
 Singularity image in the Open Science Pool. [Email us](mailto:support@opensciencegrid.org) if you would like 
 to preserve these attributes. 
 
-[osg-containers]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/
+[osg-containers]: ../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/

@@ -21,9 +21,9 @@ needed to run the script.
 If you are using many Julia packages or have other software dependencies as 
 part of your job, you may want to manage your software via a container instead 
 of using the tar.gz file method described in this guide. The OSG Connect team 
-maintains a [Julia container](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-docker/) that can be used as a starting point 
+maintains a [Julia container](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-docker/) that can be used as a starting point 
 for creating a customized container with added packages. See 
-our [Docker and Singularity Guide](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/) for more details. 
+our [Docker and Singularity Guide](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/) for more details. 
 
 # Quickstart Instructions
 
@@ -199,7 +199,7 @@ After creating a bash script to run Julia, then create a submit file
 to submit the job. 
 
 More details about setting up a submit file, including a submit file template, 
-can be found in our quickstart guide: [Quickstart Tutorial](../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-quickstart/)
+can be found in our quickstart guide: [Quickstart Tutorial](../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-quickstart/)
 
 	# julia-job.sub
 	

@@ -22,7 +22,7 @@ input files that are <100MB in size via the HTCondor submit file.**
 
 # Important Considerations
 
-As described in the [Introduction to Data Management on OSG Connect](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) 
+As described in the [Introduction to Data Management on OSG Connect](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) 
 any data, files, or even software that is <100MB should be staged in 
 your `/home` directory on your login node. Files in your 
 `/home` directory can be transferred to jobs via your HTCondor submit file.
