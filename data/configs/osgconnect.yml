@@ -6,12 +6,6 @@ nav:
       - "Registration and Login for OSG Connect ": overview/welcome_and_account_setup/registration-and-login.md
       - "Generate SSH Keys and Activate Your OSG Login ": overview/welcome_and_account_setup/generate-add-sshkey.md
       - "Join and Use a Project in OSG Connect ": overview/welcome_and_account_setup/starting-project.md
-    - References:
-      - "Policies for Using OSG Connect and the OSPool ": overview/references/policy.md
-      - "Frequently Asked Questions": overview/references/frequently-asked-questions-faq-.md
-      - "Acknowledge the OSG": overview/references/acknowledgeOSG.md
-      - "Contact OSG for non-Support Inquiries": overview/references/contact-information.md
-      - "OSG Accounting (GRACC)": overview/references/gracc.md
   - Support And Training Resources:
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training_resources/get_help!/getting-help-from-RCFs.md
@@ -83,3 +77,10 @@ nav:
       - "Working with Tensorflow, GPUs, and containers": software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/README.md
     - Freesurfer:
       - "Introduction to FreeSurfer on the OSPool ": software_examples_for_osg/freesurfer/Introduction.md
+  - Additional Resources:
+    - References:
+      - "Policies for Using OSG Connect and the OSPool ": overview/references/policy.md
+      - "Frequently Asked Questions": overview/references/frequently-asked-questions-faq-.md
+      - "Acknowledge the OSG": overview/references/acknowledgeOSG.md
+      - "Contact OSG for non-Support Inquiries": overview/references/contact-information.md
+      - "OSG Accounting (GRACC)": overview/references/gracc.md
