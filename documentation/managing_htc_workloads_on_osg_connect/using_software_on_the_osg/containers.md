@@ -3,7 +3,7 @@ osgconnect:
   path: managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers.md
 ---
 
-Use Containers on the OSG 
+Use Software Containers
 ====================================
 
 
