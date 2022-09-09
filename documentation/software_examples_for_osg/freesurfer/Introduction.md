@@ -37,4 +37,4 @@ visit the [help desk and community forums](http://support.opensciencegrid.org).
 
 ## Acknowledging the OSG Consortium
 
-We gratefully request your acknowledgement of the OSG in publications benefiting from this service as described [here](../../overview/references/acknowledgeOSG/).
+We gratefully request your acknowledgement of the OSG in publications benefiting from this service as described [here](../../../overview/references/acknowledgeOSG/).

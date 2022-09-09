@@ -19,9 +19,9 @@ output files back to your `/home` directory on your OSG Connect login node.
 
 # Important Considerations
 
-As described in the [Introduction to Data Management on OSG Connect](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/), 
+As described in the [Introduction to Data Management on OSG Connect](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/), 
 any output <1GB should be staged in your `/home` directory. For output files >1GB, 
-please refer to our [Transfer Large Input and Output Files >1GB In Size](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/stashcache/) guide.
+please refer to our [Transfer Large Input and Output Files >1GB In Size](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/stashcache/) guide.
 
 **If your jobs use any input files >1GB that are transferred from your `/public` directory 
 using StacheCash, it is important that these files get deleted from the job's working directory or moved to a 

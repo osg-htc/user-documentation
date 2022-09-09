@@ -67,7 +67,7 @@ and `submit` files meaningful names so you know which results refer to which tes
 
 In the HTCondor submit file, you must explicitly request the number of 
 CPUs (i.e. cores), and the amount of disk and memory that the job needs 
-to complete successfully, and you may need to identify a [JobDurationCategory](../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/). 
+to complete successfully, and you may need to identify a [JobDurationCategory](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/). 
 When you submit a job for the 
 first time, you may not know just how much to request and that's OK. 
 Below are some suggestions for making resource requests for initial test 
@@ -85,10 +85,10 @@ and use multiple cpus.
 
     - There is limited support for multicore work in OSG. To learn more, 
     see our guide on 
-    [Multicore Jobs](../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs/)
+    [Multicore Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs/)
     
     - Depending on how long you expect your test jobs to take on a single core, you may need to identify a
-    non-default [JobDurationCategory](../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/), or consider implementing self-checkpointing (email us!).
+    non-default [JobDurationCategory](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/), or consider implementing self-checkpointing (email us!).
 
 - To inform initial **disk requests** always look at the size of your input 
 files. At a minimum, you need to request enough disk to support all 
@@ -152,7 +152,7 @@ For example:
 
 Once you have a single test job that completes successfully, the next 
 step is to submit a small batch of test jobs (e.g. 5 or 10 jobs) 
-[**using a single submit file**](../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/submit-multiple-jobs/). Use this small-scale 
+[**using a single submit file**](../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/submit-multiple-jobs/). Use this small-scale 
 multi-job submission test to ensure that all jobs complete successfully, produce the 
 desired output, and do not conflict with each other when submitted together. Once 
 you are confident that the jobs will complete as desired, then scale up to submitting 
@@ -168,7 +168,7 @@ Gathering information about how, what, and where a job ran can be important for 
 | `condor_q <JobID> -l` | Prints all information related to a job including attributes and run information about a job in the queue. Output includes `JobDurationCategory`, `ServerTime`, `SubmitFile`, etc. Also works with `condor_history`. |
 | `condor_q <JobID> -af <AttributeName1> <AttributeName2>` | Prints information about an attribute or list of attributes for a single job using the autoformat `-af` flag. The list of possible attributes can be found using `condor_q <JobID> -l`. Also works with `condor_history`.  |
 | `condor_q -constraint '<Attribute> == "<value>"' `  | The `-constraint` flag allows users to find all jobs with a certain value for a given parameter. This flag supports searching by more than one parameter and different operators (e.g. `=!=`). Also works with `condor_history`.  |
-| `condor_q -better-analyze <JobID> -pool <PoolName>` | Shows a list of the number of slots matching a job's requirements. For more information, see [Troubleshooting Job Errors](../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-error101/). |
+| `condor_q -better-analyze <JobID> -pool <PoolName>` | Shows a list of the number of slots matching a job's requirements. For more information, see [Troubleshooting Job Errors](../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-error101/). |
 
 
 Additional `condor_q` flags involved in optimizing and troubleshooting jobs include:
@@ -201,7 +201,7 @@ to remove intermediate and/or unnecessary files as part of your job.
 
 To help manage complicated workflows, consider a workflow manager such 
 as HTCondor's built-in [DAGman](https://research.cs.wisc.edu/htcondor/dagman/dagman.html)
-or the HTCondor-compatible [Pegasus](../../managing_htc_workloads_on_osg_connect/automated_workflows/tutorial-pegasus/) 
+or the HTCondor-compatible [Pegasus](../../../managing_htc_workloads_on_osg_connect/automated_workflows/tutorial-pegasus/) 
 workflow tool.
 
 # Get Help

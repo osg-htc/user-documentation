@@ -31,7 +31,7 @@ in the [Getting Help](#getting-help) section below.
 The OSG's Open Science Pool is best-suited for computing work that can be run as many, independent 
 tasks, in an approach called "high throughput computing." For more information 
 on what kind of work is a good fit for the OSG, 
-see [Is the Open Science Pool for You?](../../overview/welcome_and_account_setup/is-it-for-you/). 
+see [Is the Open Science Pool for You?](../../../overview/welcome_and_account_setup/is-it-for-you/). 
 
 Learn more about the services provided by the OSG that can support your HTC workload: 
 
@@ -44,8 +44,8 @@ Learn more about the services provided by the OSG that can support your HTC work
 After your OSG account has been approved, go through the following guides to 
 complete your access to the login node and to enable your account to submit jobs. 
 
-- [Generate ssh keys and login](../../overview/welcome_and_account_setup/generate-add-sshkey/)
-- [Set your default project](../../overview/welcome_and_account_setup/starting-project/)
+- [Generate ssh keys and login](../../../overview/welcome_and_account_setup/generate-add-sshkey/)
+- [Set your default project](../../../overview/welcome_and_account_setup/starting-project/)
 
 # 3. Learn to Submit HTCondor Jobs
 
@@ -57,8 +57,8 @@ understand how HTCondor job submission works. The following guides show
 how to submit basic HTCondor jobs. The second example allows you to see
 where in the OSPool your jobs run. 
 
-- [OSG Connect Quickstart](../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-quickstart/)
-- [Finding OSG Locations](../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-osg-locations/)
+- [OSG Connect Quickstart](../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-quickstart/)
+- [Finding OSG Locations](../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-osg-locations/)
 
 # 4. Test a First Job
 
@@ -71,26 +71,26 @@ recommend doing this using a single test job.
 
 Software is an integral part of your HTC workflow.  Whether you’ve written it yourself, inherited it from your research group, or use common open-source packages, any required executables and libraries will need to be made available to your jobs if they are to run on the OSPool. 
 
-Read through [this overview of Using Software in OSG Connect](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-overview/) to help you determine the best way to provide your software.  We also have the following guides/tutorials for each major software portability approach:
+Read through [this overview of Using Software in OSG Connect](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-overview/) to help you determine the best way to provide your software.  We also have the following guides/tutorials for each major software portability approach:
 
-- To **install your own software**, begin with the guide on [Compiling Software for OSG Connect](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/compiling-applications/) and then complete the [Example Software Compilation tutorial](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/example-compilation/).
-- To **use precompiled binaries**, try the example presented in the [AutoDock Vina tutorial](../../software_examples_for_osg/drug_discovery/tutorial-AutoDockVina/) and/or the [Julia tutorial](../../software_examples_for_osg/other_languages_tools/julia-on-osg/).
-- To **use Docker containers** for your jobs, start with the [Docker and Singularity Containers guide](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/), and (optionally) work through the [Tensorflow tutorial](../../software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/) (which uses Docker/Singularity)
-- To **use Distributed Environment Modules** for your jobs, start with [this Modules guide](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/) and then complete the Module example in [this R tutorial](../../software_examples_for_osg/r/tutorial-R-addlibSNA/)
+- To **install your own software**, begin with the guide on [Compiling Software for OSG Connect](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/compiling-applications/) and then complete the [Example Software Compilation tutorial](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/example-compilation/).
+- To **use precompiled binaries**, try the example presented in the [AutoDock Vina tutorial](../../../software_examples_for_osg/drug_discovery/tutorial-AutoDockVina/) and/or the [Julia tutorial](../../../software_examples_for_osg/other_languages_tools/julia-on-osg/).
+- To **use Docker containers** for your jobs, start with the [Docker and Singularity Containers guide](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/), and (optionally) work through the [Tensorflow tutorial](../../../software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/) (which uses Docker/Singularity)
+- To **use Distributed Environment Modules** for your jobs, start with [this Modules guide](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/) and then complete the Module example in [this R tutorial](../../../software_examples_for_osg/r/tutorial-R-addlibSNA/)
 
 Finally, here are some additional guides specific to some of the most common scripting languages and software tools used on OSG\*\*:
 
-- [Python](../../software_examples_for_osg/python/manage-python-packages/)
-- [R](../../software_examples_for_osg/r/tutorial-R/)
-- [Machine Learning](../../software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/)
-- [BLAST](../../software_examples_for_osg/bioinformatics/tutorial-blast-split/)
+- [Python](../../../software_examples_for_osg/python/manage-python-packages/)
+- [R](../../../software_examples_for_osg/r/tutorial-R/)
+- [Machine Learning](../../../software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/)
+- [BLAST](../../../software_examples_for_osg/bioinformatics/tutorial-blast-split/)
 
 \*\*This is not a complete list.  Feel free to search for your software in our [Knowledge base](https://support.opensciencegrid.org/support/solutions/). 
 
 ## Manage your data
 
 The data for your jobs will need to be transferred to each job that runs in the OSPool, 
-and HTCondor has built-in features for getting data to jobs. Our [Data Management Policies](../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) guide
+and HTCondor has built-in features for getting data to jobs. Our [Data Management Policies](../../../managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage/) guide
 discussed the relevant approaches, when to use them, and where to stage data for each.
 <!--
 - Pick a tutorial?
@@ -103,7 +103,7 @@ discussed the relevant approaches, when to use them, and where to stage data for
 
 ## Assign the Appropriate Job Duration Category
 
-Jobs running in the OSPool may be interrupted at any time, and will be re-run by HTCondor, unless a single execution of a job exceeds the allowed duration. Jobs expected to take longer than 10 hours will need to identify themselves as 'Long' according to our [Job Duration policies](../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/). Remember that jobs expected to take longer than 20 hours are not a good fit for the OSPool (see [Is the Open Science Pool for You?](../../overview/welcome_and_account_setup/is-it-for-you/)) without implementing self-checkpointing (further below).
+Jobs running in the OSPool may be interrupted at any time, and will be re-run by HTCondor, unless a single execution of a job exceeds the allowed duration. Jobs expected to take longer than 10 hours will need to identify themselves as 'Long' according to our [Job Duration policies](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/roadmap/). Remember that jobs expected to take longer than 20 hours are not a good fit for the OSPool (see [Is the Open Science Pool for You?](../../../overview/welcome_and_account_setup/is-it-for-you/)) without implementing self-checkpointing (further below).
 
 # 5. Scale Up
 
@@ -112,8 +112,8 @@ up in one or two steps (first run several jobs, before running ALL of them).
 HTCondor has many useful features that make it easy to submit
 multiple jobs with the same submit file.  
 
-- [Easily submit multiple jobs](../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/submit-multiple-jobs/)
-- [Scaling up after success with test jobs](../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up/) discusses how to test your jobs for duration, memory and disk usage, and the total amount of space you might need on the 
+- [Easily submit multiple jobs](../../../managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/submit-multiple-jobs/)
+- [Scaling up after success with test jobs](../../../managing_htc_workloads_on_osg_connect/htc_workload_planning_testing_scaling_up/preparing-to-scale-up/) discusses how to test your jobs for duration, memory and disk usage, and the total amount of space you might need on the 
 
 <!-- TODO: Making jobs resilient* -->
 
@@ -123,19 +123,19 @@ If you think any of the below applies to you,
 please [get in touch](mailto:support@opensciencegrid.org)
 and our facilitation team will be happy to discuss your individual case. 
 
-- Run sequential workflows of jobs: [Workflows with HTCondor's DAGMan](../../managing_htc_workloads_on_osg_connect/automated_workflows/dagman-workflows/)
+- Run sequential workflows of jobs: [Workflows with HTCondor's DAGMan](../../../managing_htc_workloads_on_osg_connect/automated_workflows/dagman-workflows/)
 - Implement self-checkpointing for long jobs: [HTCondor Checkpointing Guide](https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html)
-- Build your own Docker container: [Creating a Docker Container Image](../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list/)
-- Submit more than 10,000 jobs at once: [FAQ, search for 'max_idle'](../../overview/references/frequently-asked-questions-faq-/)
+- Build your own Docker container: [Creating a Docker Container Image](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list/)
+- Submit more than 10,000 jobs at once: [FAQ, search for 'max_idle'](../../../overview/references/frequently-asked-questions-faq-/)
 - Larger or speciality resource requests: 
-	- GPUs: [GPU Jobs](../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/gpu-jobs/)
-	- Multiple CPUs: [Multicore Jobs](../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs/)
-	- Large Memory: [Large Memory Jobs](../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/large-memory-jobs/)
+	- GPUs: [GPU Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/gpu-jobs/)
+	- Multiple CPUs: [Multicore Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/multicore-jobs/)
+	- Large Memory: [Large Memory Jobs](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/large-memory-jobs/)
 
 # Getting Help 
 
 The OSG Facilitation team is here to help with questions and issues that come up as you work 
 through these roadmap steps. We are available via email, office hours, appointments, and offer 
-regular training opportunities. See our [Get Help page](../../support_and_training_resources/get_help%21/getting-help-from-RCFs/) and [OSG Training page](../../support_and_training_resources/education_and_training/osgusertraining/)
+regular training opportunities. See our [Get Help page](../../../support_and_training_resources/get_help%21/getting-help-from-RCFs/) and [OSG Training page](../../../support_and_training_resources/education_and_training/osgusertraining/)
 for all the different ways you can reach us. Our purpose 
 is to assist you with achieving your computational goals, so we want to hear from you!
