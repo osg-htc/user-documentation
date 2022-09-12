@@ -120,7 +120,7 @@ In your submit file, make sure to have the following:
 * Your executable should be the the bash script you created in [step 5](#5-create-a-job-executable).
 * Remember to transfer your Python script and the environment `tar.gz` file to the job. If the `tar.gz` file is larger than 100MB, please use the `stash:///` file delivery mechanism as described above. 
       
-# Specificying Exact Dependency Versions
+# Specifying Exact Dependency Versions
 
 An important part of improving reproducibility and consistency between runs is to ensure that you use the correct/expected versions of your dependencies.
 
