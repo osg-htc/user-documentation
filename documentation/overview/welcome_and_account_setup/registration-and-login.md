@@ -54,13 +54,6 @@ and if it looks familiar that's because it's exactly the same web site.  Sign i
 using your campus credentials. When done, you'll return automatically to the
 OSG Connect portal and can carry on with signup.
 
-> **Returning to OSG Connect**?
-> 
-> If you already have an OSG Connect account and are not being taken to your 
-> profile page after logging in with your institution's credentials, 
-> see our [transition guide](12000065909#action-items) for 
-> how to proceed.
-
 After continuing, and allowing certain permissions in the next screen, you'll be 
 asked to create a profile and save changes. If this works successfully, you should 
 see that your membership to OSG is "pending" on the right hand side of the screen. 

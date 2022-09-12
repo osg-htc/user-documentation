@@ -26,9 +26,6 @@ To create the smallest, most portable Python installation possible, we recommend
 
 To use a Miniconda installation on OSG, create your installation environment on the submit server and send a zipped version to your jobs.
 
-* [Pre-Install Miniconda and Transfer to Jobs](#pre-install-miniconda-and-transfer-to-jobs)
-This guide also discusses how to [“pin” your conda environment](#specifying-exact-dependency-versions) to create a more consistent and reproducible environment with specified versions of packages.
-
 # Install Miniconda and Package for Jobs
 In this approach, we will create an entire software installation inside Miniconda and then use a tool called `conda pack` to package it up for running jobs.
 
