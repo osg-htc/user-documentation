@@ -86,7 +86,7 @@ Below is a list of common attributes that you can include in your submit file `r
 - **HAS_CVMFS_oasis_opensciencegrid_org** - Attribute specifying
   the need to access specific oasis /cvmfs file system repositories.
 
-- **CUDACapability** - For GPU jobs, specifies the CUDA compute capability.
+- **GPUs_Capability** - For GPU jobs, specifies the GPUs' compute capability.
   See our [GPU guide](../../../managing_htc_workloads_on_osg_connect/considerations_for_specific_resource_needs/gpu-jobs/) for more details.
 
 # Specifying Sites / Avoiding Sites
