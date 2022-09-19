@@ -159,7 +159,7 @@ To get your images included, please create a git pull request with the
 container identifier in `docker_images.txt` in the
 [cvmfs-singularity-sync repository](https://github.com/opensciencegrid/cvmfs-singularity-sync),
 or contact
-[support@opensciencegrid.org](mailto:support@opensciencegrid.org)
+[support@osg-htc.org](mailto:support@osg-htc.org)
 and we can help you.
 
 Once your submission has been accepted, it will be automatically
@@ -198,7 +198,7 @@ in the container, please add `+SingularityBindCVMFS = False` to your job submit 
 Two options that can be used in the Dockerfile to set the environment or 
 default command are `ENTRYPOINT` and `ENV`. Unfortunately, both of these 
 aspects of the Docker container are deleted when it is converted to a 
-Singularity image in the Open Science Pool. [Email us](mailto:support@opensciencegrid.org) if you would like 
+Singularity image in the Open Science Pool. [Email us](mailto:support@osg-htc.org) if you would like 
 to preserve these attributes. 
 
 [osg-containers]: ../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list/

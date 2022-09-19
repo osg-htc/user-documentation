@@ -54,4 +54,4 @@ files from `/home` directory can be provided in a comma separated list. For exam
 
 # Get Help
 
-For assistance or questions, please email the OSG Research Facilitation team  at [support@opensciencegrid.org](mailto:support@opensciencegrid.org) or visit the [help desk and community forums](http://support.opensciencegrid.org).
+For assistance or questions, please email the OSG Research Facilitation team  at [support@osg-htc.org](mailto:support@osg-htc.org) or visit the [help desk and community forums](http://support.opensciencegrid.org).

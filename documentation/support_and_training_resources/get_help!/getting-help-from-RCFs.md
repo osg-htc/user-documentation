@@ -27,11 +27,11 @@ We don’t expect that you should be able to address all of your questions by co
 
 
 ## Get an Account
-If you don’t have an account yet, please [Sign Up](https://www.osgconnect.net/), and we’ll follow up quickly to set up a meeting time and create accounts. If you don’t have an account but just have general questions, feel free to send an email to support@opensciencegrid.org (see below).
+If you don’t have an account yet, please [Sign Up](https://www.osgconnect.net/), and we’ll follow up quickly to set up a meeting time and create accounts. If you don’t have an account but just have general questions, feel free to send an email to support@osg-htc.org (see below).
 
 
 ## Help via Email
-We provide ongoing support via email to support@opensciencegrid.org, and it’s never a bad idea to start by sending questions or issues via email. You can typically expect a first response within a few business hours.
+We provide ongoing support via email to support@osg-htc.org, and it’s never a bad idea to start by sending questions or issues via email. You can typically expect a first response within a few business hours.
 
 
 ## Virtual Office Hours
@@ -48,7 +48,7 @@ Cancellations will be announced via email. As always, if the times above don’t
 
 
 ## Make an Appointment
-We are happy to arrange meetings outside of designated Office Hours, per your preference. Simply email us at support@opensciencegrid.org, and we will set up a time to meet!
+We are happy to arrange meetings outside of designated Office Hours, per your preference. Simply email us at support@osg-htc.org, and we will set up a time to meet!
 
 
 ## Training Opportunities
