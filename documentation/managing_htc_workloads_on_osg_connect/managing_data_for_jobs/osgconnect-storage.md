@@ -3,10 +3,7 @@ osgconnect:
   path: managing_htc_workloads_on_osg_connect/managing_data_for_jobs/osgconnect-storage.md
 ---
 
-Overview: Data Staging and Transfer to Jobs 
-====================================
-
-
+# Overview: Data Staging and Transfer to Jobs 
 
 # Overview
 
