@@ -45,10 +45,6 @@ of a compiler which should be noted in the installation instructions or system d
 documention. Currently the login nodes have `GCC 4.8.5` as the default version, but newer 
 versions of GCC may also be available - to learn more please contact <support@osg-htc.org>.
 
-CMake is a commonly used compilation platform. Your software may have dependencies for 
-specific `cmake` versions. Currently the login nodes have two versions of CMake, `3.12.3` 
-and `3.13.0` available as [modules](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/). 
-
 ### Static versus dynamic linking during compilation
 
 Binary code often depends on additional information (i.e. instructions) from other software, 
@@ -82,15 +78,6 @@ in the installtion instructions of your software. For any libraries added to `LI
 before software compilation, you'll also need to add these same libraries to 
 your `LD_LIBRARY_PATH` as a step in your job's executable bash script before executing 
 your software.
-
-The [distributed environment modules system](../../../managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request/) 
-available on OSG Connect also provides several commonly used software libraries 
-(lapack, atlas, hdf5, netcdf, etc.) that can be used for your software compilation and 
-execution. The appropriate modules should be loaded before performing your software 
-compilation. The process of loading a module will modify all appropriate 
-environment variables (e.g. `CPATH` and `LIBRARY_PATH`) for you. If you do use modules 
-from the modules system, you will need to modify your job scripts to load the appropriate 
-modules before running you software.
 
 ## Perform your compilation
 

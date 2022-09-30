@@ -33,7 +33,6 @@ nav:
       - "Example Software Compilation": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/example-compilation.md
       - "View Existing OSPool-Supported Containers": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/available-containers-list.md
       - "Create/Register a Docker Container Image": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-docker.md
-      - "Access Software using Distributed Environment Modules": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/new_modules_list.md
       - "Request Help with Your Software": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/software-request.md
       - "Create a Singularity Container Image": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers-singularity.md
       - "Use Containers on the OSG": managing_htc_workloads_on_osg_connect/using_software_on_the_osg/containers.md

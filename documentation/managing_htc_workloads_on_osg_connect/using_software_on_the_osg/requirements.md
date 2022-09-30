@@ -87,9 +87,6 @@ Below is a list of common attributes that you can include in your submit file `r
 
 - **HAS_SINGULARITY** - Boolean specifying the need to use Singularity containers in your job.
 
-- **HAS_MODULES** - Boolean specifying the need to use modules in your job.
-  _module load ..._ or not.
-
 - **OSGVO_OS_NAME** - The name of the operating system of the compute node. 
   The most common name is _RHEL_
 
