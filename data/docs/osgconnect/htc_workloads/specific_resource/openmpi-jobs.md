@@ -1,0 +1,1 @@
+../../../../../documentation/htc_workloads/specific_resources/openmpi-jobs.md
