@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: htc_workloads/automated_workflows/dagman-workflows.md
 ---
 

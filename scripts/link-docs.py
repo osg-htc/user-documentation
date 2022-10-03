@@ -27,51 +27,63 @@ def build_path(path: str):
 def link_in_documentation(file_map: dict):
     """Build the frontmatter for the pages"""
 
-    # Remove the directory first
-    os.system("rm -rf data/docs/osgconnect")
+    portal_keys = ["path", "ospool"]
 
-    non_tutorial_docs = set(glob.glob("documentation/**/*.md", recursive=True)) - set(glob.glob("documentation/**/README.md", recursive=True))
+    for portal_key in portal_keys:
 
-    for doc_path in non_tutorial_docs:
-        with open(doc_path, "r") as fp:
-            doc = frontmatter.load(fp)
+        # Remove the directory first
+        os.system(f"rm -rf data/docs/{portal_key}")
 
-        destination_path = f"data/docs/osgconnect/{doc['osgconnect']['path']}"
+        non_tutorial_docs = set(glob.glob("documentation/**/*.md", recursive=True)) - set(glob.glob("documentation/**/README.md", recursive=True))
 
-        # Build path if not there
-        build_path(destination_path)
+        for doc_path in non_tutorial_docs:
+            with open(doc_path, "r") as fp:
+                doc = frontmatter.load(fp)
 
-        os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
+            if portal_key in doc:
+                destination_path = f"data/docs/{portal_key}/{doc[portal_key]['path']}"
 
-    for doc_path in glob.glob("documentation/assets/**/*.*", recursive=True):
-        destination_path = f"data/docs/osgconnect/assets/{doc_path.replace('documentation/assets/', '')}"
+                # Build path if not there
+                build_path(destination_path)
 
-        # Build path if not their
-        if not os.path.exists(os.path.dirname(destination_path)):
-            os.makedirs(os.path.dirname(destination_path))
+                os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
-        os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
+        for doc_path in glob.glob("documentation/assets/**/*.*", recursive=True):
+            destination_path = f"data/docs/{portal_key}/assets/{doc_path.replace('documentation/assets/', '')}"
 
-    for doc_path in glob.glob("documentation/stylesheets/**/*.css", recursive=True):
-        with open(doc_path, "r") as fp:
-            doc = frontmatter.load(fp)
+            # Build path if not their
+            if not os.path.exists(os.path.dirname(destination_path)):
+                os.makedirs(os.path.dirname(destination_path))
 
-        destination_path = f"data/docs/osgconnect/{doc['osgconnect']['path']}"
+            os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
-        # Build path if not their
-        build_path(destination_path)
+        for doc_path in glob.glob("documentation/stylesheets/**/*.css", recursive=True):
+            with open(doc_path, "r") as fp:
+                doc = frontmatter.load(fp)
 
-        with open(destination_path, "w") as fp:
-            fp.write(doc.content)
+            if portal_key in doc:
 
-    for doc_path, destination_path in file_map.items():
+                destination_path = f"data/docs/{portal_key}/{doc[portal_key]['path']}"
 
-        destination_path = f"data/docs/osgconnect/{destination_path}"
+                # Build path if not their
+                build_path(destination_path)
 
-        # Build path if not their
-        build_path(destination_path)
+                with open(destination_path, "w") as fp:
+                    fp.write(doc.content)
 
-        os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
+        for doc_path, destination_path in file_map.items():
+
+            destination_path = f"data/docs/{portal_key}/{destination_path}"
+
+            # Build path if not their
+            build_path(destination_path)
+
+            os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
 
-link_in_documentation(TUTORIALS_OSGCONNECT_FILE_MAP)
+if __name__ == "__main__":
+
+    if os.environ["DEBUG"]:
+        os.chdir("../")
+
+    link_in_documentation(TUTORIALS_OSGCONNECT_FILE_MAP)

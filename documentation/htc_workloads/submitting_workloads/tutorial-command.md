@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: htc_workloads/submitting_workloads/tutorial-command.md
 ---
 

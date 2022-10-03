@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: htc_workloads/workload_planning/jobdurationcategory.md
 ---
 

@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: overview/references/policy.md
 ---
 

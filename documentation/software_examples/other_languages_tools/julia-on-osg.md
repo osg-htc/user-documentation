@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: software_examples/other_languages_tools/julia-on-osg.md
 ---
 

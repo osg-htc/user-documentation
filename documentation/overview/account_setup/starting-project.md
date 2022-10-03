@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: overview/account_setup/starting-project.md
 ---
 

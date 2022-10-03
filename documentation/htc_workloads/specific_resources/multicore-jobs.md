@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: htc_workloads/specific_resource/multicore-jobs.md
 ---
 

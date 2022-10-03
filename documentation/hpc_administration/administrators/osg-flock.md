@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: hpc_administration/administrators/osg-flock.md
 ---
 

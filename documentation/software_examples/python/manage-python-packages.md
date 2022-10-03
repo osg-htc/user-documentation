@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: software_examples/python/manage-python-packages.md
 ---
 

@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: support_and_training/training/previous-training-events.md
 ---
 

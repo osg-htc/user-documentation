@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: overview/references/frequently-asked-questions-faq-.md
 ---
 

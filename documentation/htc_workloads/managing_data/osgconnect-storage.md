@@ -1,5 +1,5 @@
 ---
-osgconnect:
+ospool:
   path: htc_workloads/managing_data/osgconnect-storage.md
 ---
 
