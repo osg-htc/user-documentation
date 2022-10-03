@@ -83,7 +83,7 @@ def link_in_documentation(file_map: dict):
 
 if __name__ == "__main__":
 
-    if os.environ["DEBUG"]:
+    if "DEBUG" in os.environ and os.environ["DEBUG"]:
         os.chdir("../")
 
     link_in_documentation(TUTORIALS_OSGCONNECT_FILE_MAP)
