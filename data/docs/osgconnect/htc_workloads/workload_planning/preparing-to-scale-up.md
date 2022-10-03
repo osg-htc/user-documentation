@@ -1,1 +1,0 @@
-../../../../../documentation/htc_workloads/workload_planning/preparing-to-scale-up.md

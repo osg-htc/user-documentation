@@ -1,1 +1,0 @@
-../../../../../documentation/software_examples/freesurfer/Introduction.md
