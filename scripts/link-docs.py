@@ -2,22 +2,22 @@ import glob
 import frontmatter
 import os
 
-OSGCONNECT_FILE_MAP = {
-    'documentation/tutorials/tutorial-tensorflow-containers/README.md': 'software_examples_for_osg/machine_learning/tutorial-tensorflow-containers/README.md',
-    'documentation/tutorials/tutorial-ScalingUp-Python/README.md': 'software_examples_for_osg/python/tutorial-ScalingUp-Python/README.md',
-    'documentation/tutorials/tutorial-quickstart/README.md': 'managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-quickstart/README.md',
-    'documentation/tutorials/tutorial-blast-split/README.md': 'software_examples_for_osg/bioinformatics/tutorial-blast-split/README.md',
-    'documentation/tutorials/tutorial-bwa/README.md': 'software_examples_for_osg/bioinformatics/tutorial-bwa/README.md',
-    'documentation/tutorials/tutorial-organizing/README.md': 'managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-organizing/README.md',
-    'documentation/tutorials/tutorial-AutoDockVina/README.md': 'software_examples_for_osg/drug_discovery/tutorial-AutoDockVina/README.md',
-    'documentation/tutorials/tutorial-R-addlibSNA/README.md': 'software_examples_for_osg/r/tutorial-R-addlibSNA/README.md',
-    'documentation/tutorials/tutorial-wordfreq/README.md': 'software_examples_for_osg/python/tutorial-wordfreq/README.md',
-    'documentation/tutorials/tutorial-error101/README.md': 'managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-error101/README.md',
-    'documentation/tutorials/tutorial-pegasus/README.md': 'managing_htc_workloads_on_osg_connect/automated_workflows/tutorial-pegasus/README.md',
-    'documentation/tutorials/tutorial-osg-locations/README.md': 'managing_htc_workloads_on_osg_connect/submitting_htc_workloads_with_htcondor/tutorial-osg-locations/README.md',
-    'documentation/tutorials/tutorial-matlab-HelloWorld/README.md': 'software_examples_for_osg/matlab_runtime/tutorial-matlab-HelloWorld/README.md',
-    'documentation/tutorials/tutorial-R/README.md': 'software_examples_for_osg/r/tutorial-R/README.md',
-    'documentation/tutorials/tutorial-ScalingUp-R/README.md': 'software_examples_for_osg/r/tutorial-ScalingUp-R/README.md'
+TUTORIALS_OSGCONNECT_FILE_MAP = {
+    'documentation/tutorials/tutorial-tensorflow-containers/README.md': 'software_examples/machine_learning/tutorial-tensorflow-containers/README.md',
+    'documentation/tutorials/tutorial-ScalingUp-Python/README.md': 'software_examples/python/tutorial-ScalingUp-Python/README.md',
+    'documentation/tutorials/tutorial-quickstart/README.md': 'htc_workloads/submitting_workloads/tutorial-quickstart/README.md',
+    'documentation/tutorials/tutorial-blast-split/README.md': 'software_examples/bioinformatics/tutorial-blast-split/README.md',
+    'documentation/tutorials/tutorial-bwa/README.md': 'software_examples/bioinformatics/tutorial-bwa/README.md',
+    'documentation/tutorials/tutorial-organizing/README.md': 'htc_workloads/submitting_workloads/tutorial-organizing/README.md',
+    'documentation/tutorials/tutorial-AutoDockVina/README.md': 'software_examples/drug_discovery/tutorial-AutoDockVina/README.md',
+    'documentation/tutorials/tutorial-R-addlibSNA/README.md': 'software_examples/r/tutorial-R-addlibSNA/README.md',
+    'documentation/tutorials/tutorial-wordfreq/README.md': 'software_examples/python/tutorial-wordfreq/README.md',
+    'documentation/tutorials/tutorial-error101/README.md': 'htc_workloads/submitting_workloads/tutorial-error101/README.md',
+    'documentation/tutorials/tutorial-pegasus/README.md': 'htc_workloads/automated_workflows/tutorial-pegasus/README.md',
+    'documentation/tutorials/tutorial-osg-locations/README.md': 'htc_workloads/submitting_workloads/tutorial-osg-locations/README.md',
+    'documentation/tutorials/tutorial-matlab-HelloWorld/README.md': 'software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md',
+    'documentation/tutorials/tutorial-R/README.md': 'software_examples/r/tutorial-R/README.md',
+    'documentation/tutorials/tutorial-ScalingUp-R/README.md': 'software_examples/r/tutorial-ScalingUp-R/README.md'
 }
 
 def build_path(path: str):
@@ -74,4 +74,4 @@ def link_in_documentation(file_map: dict):
         os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
 
-link_in_documentation(OSGCONNECT_FILE_MAP)
+link_in_documentation(TUTORIALS_OSGCONNECT_FILE_MAP)

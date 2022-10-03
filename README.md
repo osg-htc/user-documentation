@@ -75,6 +75,6 @@ You should follow these rules when adding your document:
 nav:
   - Overview:
     - Welcome And Account Setup:
-      - "Computation on the Open Science Pool ": overview/welcome_and_account_setup/is-it-for-you.md
+      - "Computation on the Open Science Pool ": overview/account_setup/is-it-for-you.md
 ```
 
