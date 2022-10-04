@@ -7,7 +7,7 @@ path:
 
 The major steps to getting started using compute resources at the PATh Facility are:
 
-* applying for [PATh compute credits](https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp) and being approved by the NSF
+* applying for <a href="http://example.com/" target="_blank">example</a> and being approved by the NSF
 * applying for an account 
 * meeting with a PATh staff member for a short consultation and orientation
 * uploading your SSH key
@@ -18,23 +18,22 @@ This guide will discuss how to apply for an account and login to the PATh Facili
 To register with the PATh facility, submit an application using the following steps:
 
 1. Go to the account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:263). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login.
+
+      ![CILOGIN](../files/cilogon.png)
    
-   {: .border .border-5 }
-   <img src="{{ '/images/cilogon.png' | relative_url }}" class="img-fluid"/>
-   
-   If you have issues signing in using your institutional credentials, contact us at [support@opensciencegrid.org](mailto:support@opensciencegrid.org).
+      If you have issues signing in using your institutional credentials, contact us at [support@opensciencegrid.org](mailto:support@opensciencegrid.org).
 
 
 1. Once you sign in, you will be redirected to the "PATh Facility User Enrollment for New Users" page. Click "Begin" and enter your name, and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT".
 
-   {: .border .border-5 }
-   <img src="{{ '/images/comanage-enrollment-form.png' | relative_url }}" class="img-fluid"/>
+   
+      ![](../files/comanage-enrollment-form.png)
 
 
 1. After submitting your application, you will receive an email from [registry@cilogon.org](mailto:registry@cilogon.org) to verify your email address. Click the link listed in the email to be redirected to a page confirm your invitation details. Click the "ACCEPT" button to complete this step.
 
-   {: .border .border-5 }
-   <img src="{{ '/images/comanage-email-verification-form.png' | relative_url }}" class="img-fluid"/>
+   
+      ![](../files/comanage-email-verification-form.png)
 
 ## Meet with a Research Computing Facilitator
 
@@ -56,13 +55,13 @@ To authenticate using this approach:
 
 1. Open a terminal and type `ssh username@ap1.facility.path-cc.io`, being sure to replace `username` with your PATh access point username. Upon hitting enter, the following text should appear with a unique, but similar, URL: 
 
-   ```
-   Authenticate at
-   -----------------
-   https://cilogon.org/device/?user_code=FF4-ZX6-9LK
-   -----------------
-   Type 'Enter' when you authenticate.
-   ```
+
+         Authenticate at
+         -----------------
+         https://cilogon.org/device/?user_code=FF4-ZX6-9LK
+         -----------------
+         Type 'Enter' when you authenticate.
+
 
 2. Copy the `https://` link, paste it into a web browser, and hit enter.  
 
@@ -81,23 +80,19 @@ The process below describes how to upload a public key to the registration websi
 
 1. Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button.
 
-   {: .border .border-5 }
-   <img src="{{ '/images/ssh-homepage-dropdown.png' | relative_url }}" class="img-fluid"/>
+      ![](../files/ssh-homepage-dropdown.png)
 
 1. On the right hand side of your profile, click "Authenticators" link.
 
-   {: .border .border-5 }
-   <img src="{{ '/images/ssh-edit-profile.png' | relative_url }}" class="img-fluid"/>
+      ![](../files/ssh-edit-profile.png)
 
 1. On the authenticators page, click the "Manage" button.
 
-   {: .border .border-5 }
-   <img src="{{ '/images/ssh-authenticator-select.png' | relative_url }}" class="img-fluid"/>
+      ![](../files/ssh-authenticator-select.png)
 
 1. On the new SSH Keys page, click "Add SSH Key" and browse your computer to upload your public SSH key.
-   
-   {: .border .border-5 }
-   <img src="{{ '/images/ssh-key-list.png' | relative_url }}" class="img-fluid"/>
+
+      ![](../files/sh-key-list.png)
 
 
 ## Get Help
