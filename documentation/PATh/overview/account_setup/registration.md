@@ -19,7 +19,7 @@ To register with the PATh facility, submit an application using the following st
 
 1. Go to the account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:263). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login.
 
-      ![CILOGIN](../files/cilogon.png)
+      ![CILOGIN](../../assets/PATh/registration/cilogon.png)
    
       If you have issues signing in using your institutional credentials, contact us at [support@opensciencegrid.org](mailto:support@opensciencegrid.org).
 
@@ -27,13 +27,13 @@ To register with the PATh facility, submit an application using the following st
 1. Once you sign in, you will be redirected to the "PATh Facility User Enrollment for New Users" page. Click "Begin" and enter your name, and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT".
 
    
-      ![](../files/comanage-enrollment-form.png)
+      ![](../../assets/PATh/registration/comanage-enrollment-form.png)
 
 
 1. After submitting your application, you will receive an email from [registry@cilogon.org](mailto:registry@cilogon.org) to verify your email address. Click the link listed in the email to be redirected to a page confirm your invitation details. Click the "ACCEPT" button to complete this step.
 
    
-      ![](../files/comanage-email-verification-form.png)
+      ![](../../assets/PATh/registration/comanage-email-verification-form.png)
 
 ## Meet with a Research Computing Facilitator
 
@@ -80,19 +80,19 @@ The process below describes how to upload a public key to the registration websi
 
 1. Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button.
 
-      ![](../files/ssh-homepage-dropdown.png)
+      ![](../../assets/PATh/registration/ssh-homepage-dropdown.png)
 
 1. On the right hand side of your profile, click "Authenticators" link.
 
-      ![](../files/ssh-edit-profile.png)
+      ![](../../assets/PATh/registration/ssh-edit-profile.png)
 
 1. On the authenticators page, click the "Manage" button.
 
-      ![](../files/ssh-authenticator-select.png)
+      ![](../../assets/PATh/registration/ssh-authenticator-select.png)
 
 1. On the new SSH Keys page, click "Add SSH Key" and browse your computer to upload your public SSH key.
 
-      ![](../files/sh-key-list.png)
+      ![](../../assets/PATh/registration/sh-key-list.png)
 
 
 ## Get Help
