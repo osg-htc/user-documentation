@@ -2,6 +2,7 @@ nav:
   - "Home": index.md
   - Overview:
     - Welcome And Account Setup:
+      - "Getting Started": overview/account_setup/getting_started.md
       - "Registration": overview/account_setup/registration.md
     - References:
       - "Credit Account Charges": overview/references/credit-account-charges.md
