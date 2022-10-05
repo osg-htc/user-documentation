@@ -86,6 +86,6 @@ To update the tutorial submodules after pushing a change to them you should run 
 
 The action should be run on the main branch. 
 
-After the action has completed you will find that the branch you can now create a PR on branch [update-submodules-reserved](https://github.com/osg-htc/user-documentation/compare/main...update-submodules-reserved).
+After the action has completed you should create a PR on branch [update-submodules-reserved](https://github.com/osg-htc/user-documentation/compare/main...update-submodules-reserved) as it now the main branch with its submodules updated.
 
 
