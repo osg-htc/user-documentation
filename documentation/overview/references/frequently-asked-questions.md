@@ -1,6 +1,6 @@
 ---
 ospool:
-  path: overview/references/frequently-asked-questions-faq-.md
+  path: overview/references/frequently-asked-questions.md
 ---
 
 Frequently Asked Questions 
