@@ -11,6 +11,7 @@ Please update the documentation in the previous repo when making changes to this
 - [Repository Layout](#repository-layout)
 - [Editing Documentation](#editing-documentation)
 - [Adding Documentation](#adding-documentation)
+- [Updating Submodules](#updating-submodules)
 
 ## Repository Layout
 
@@ -77,4 +78,14 @@ nav:
     - Welcome And Account Setup:
       - "Computation on the Open Science Pool ": overview/account_setup/is-it-for-you.md
 ```
+
+## Updating Submodules
+
+To update the tutorial submodules after pushing a change to them you should run the 
+[Update Submodules Action](https://github.com/osg-htc/user-documentation/actions/workflows/update-submodules.yml).
+
+The action should be run on the main branch. 
+
+After the action has completed you will find that the branch you can now create a PR on branch [update-submodules-reserved](https://github.com/osg-htc/user-documentation/compare/main...update-submodules-reserved).
+
 
