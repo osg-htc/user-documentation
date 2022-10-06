@@ -1,3 +1,14 @@
+"""
+This script parses the documentation content and turns it into a /doc folder that can be parsed by mkdocs.
+
+Markdown is parsed using the path in the frontmatter
+
+CSS is parsed using the same with the caveat that the frontmatter is deleted
+
+All image assets are expected to be in the assets folder.
+
+"""
+
 import glob
 import frontmatter
 import os

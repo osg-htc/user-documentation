@@ -1,3 +1,13 @@
+"""
+This script was created to facilitate the moving of the website from freshdesk to portal.
+
+I am keeping it because I don't have a good reason to delete it, but don't care/it won't effect anything if
+it is deleted in the future.
+
+Author: Cannon Lock
+GH: CannonLock
+"""
+
 import difflib
 import os
 import glob

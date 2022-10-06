@@ -10,6 +10,9 @@ Please update the documentation in the previous repo when making changes to this
 
 - [Repository Layout](#repository-layout)
 - [Editing Documentation](#editing-documentation)
+  - [Creating the document](#creating-the-document)
+  - [Adding it to the Navigation](#adding-it-to-the-navigation)
+  - [Adding Images](#adding-images)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
 
@@ -78,6 +81,23 @@ nav:
     - Welcome And Account Setup:
       - "Computation on the Open Science Pool ": overview/account_setup/is-it-for-you.md
 ```
+
+### Adding Images
+
+All images should be placed in ```./docs/assets```, this is because without frontmatter to know where to place the image
+it will not be added to the websites documentation. 
+
+Because of this all of the images should be added to the MD using the following markdown. 
+
+```![](../../assets/<your-image-path>)```
+
+For instance if you wanted to use the OSG_logo it would be:
+
+```![](../../assets/OSG_Logo.png)```
+
+**Note:** This is only valid if the documentation is triply nested. If this pattern is deviated from the solution will
+vary. 
+
 
 ## Updating Submodules
 
