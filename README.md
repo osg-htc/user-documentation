@@ -10,7 +10,11 @@ Please update the documentation in the previous repo when making changes to this
 
 - [Repository Layout](#repository-layout)
 - [Editing Documentation](#editing-documentation)
+  - [Creating the document](#creating-the-document)
+  - [Adding it to the Navigation](#adding-it-to-the-navigation)
+  - [Adding Images](#adding-images)
 - [Adding Documentation](#adding-documentation)
+- [Updating Submodules](#updating-submodules)
 
 ## Repository Layout
 
@@ -75,6 +79,33 @@ You should follow these rules when adding your document:
 nav:
   - Overview:
     - Welcome And Account Setup:
-      - "Computation on the Open Science Pool ": overview/welcome_and_account_setup/is-it-for-you.md
+      - "Computation on the Open Science Pool ": overview/account_setup/is-it-for-you.md
 ```
+
+### Adding Images
+
+All images should be placed in ```./docs/assets```, this is because without frontmatter to know where to place the image
+it will not be added to the websites documentation. 
+
+Because of this all of the images should be added to the MD using the following markdown. 
+
+```![](../../assets/<your-image-path>)```
+
+For instance if you wanted to use the OSG_logo it would be:
+
+```![](../../assets/OSG_Logo.png)```
+
+**Note:** This is only valid if the documentation is triply nested. If this pattern is deviated from the solution will
+vary. 
+
+
+## Updating Submodules
+
+To update the tutorial submodules after pushing a change to them you should run the 
+[Update Submodules Action](https://github.com/osg-htc/user-documentation/actions/workflows/update-submodules.yml).
+
+The action should be run on the main branch. 
+
+After the action has completed you should create a PR on branch [update-submodules-reserved](https://github.com/osg-htc/user-documentation/compare/main...update-submodules-reserved) as it now the main branch with its submodules updated.
+
 

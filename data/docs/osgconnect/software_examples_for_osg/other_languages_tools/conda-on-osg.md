@@ -1,1 +1,0 @@
-../../../../../documentation/software_examples_for_osg/other_languages_tools/conda-on-osg.md
