@@ -306,13 +306,6 @@ the `.a` type of library file for both `libbz2` and `liblzma` and the absence of
 this type of library file in `/usr/lib64` is why compilation 
 will fail without additional steps.
 
-Luckily for us, bzip2 version 1.0.6 is available as a module and this module 
-includes access to a `.a` library file. We will use this module for our Samtools compilation. 
-To learn more about using modules, please see 
-[Accessing Software using Distributed Environment Modules](../../../htc_workloads/using_software/software-request/). 
-`liblzma` however is not currently available as a module and our next step 
-will be to install `liblzma`.
-
 ### Step 3. Compile liblzma
 
 To compile Samtools with CRAM support requires that we first compile 
@@ -357,9 +350,6 @@ load the bzip2 module:
 
 Loading this module will further modify some of your environment variables 
 so that Samtools is able to locate the bzip2 library files.
-
-To learn more about using modules, please see 
-[Accessing Software using Distributed Environment Modules](../../../htc_workloads/using_software/software-request/). 
 
 ### Step 5. Compile Samtools
 
@@ -451,7 +441,7 @@ for a job that will use Samtools with a Fasta file `genome.fa' and CRAM file nam
 	should_transfer_files = YES
 	when_to_transfer_output = ON_EXIT
 	
-	requirements = (OSGVO_OS_STRING == "RHEL 7") && (HAS_MODULES =?= TRUE)
+	requirements = (OSGVO_OS_STRING == "RHEL 7")
 	request_memory = 1.3GB
 	request_disk = 1.5GB
 	request_cpus = 1
@@ -461,9 +451,8 @@ for a job that will use Samtools with a Fasta file `genome.fa' and CRAM file nam
 The above submit file will transfer a complete copy of the Samtools tar archive 
 created in [Step 6](#step-6-make-our-software-portable) as well as a copy of XZ Utils installation from 
 [Step 3](#step-3-compile-liblzma). This submit file 
-also includes two important `requirements` which tell HTCondor to run our job on 
-execute nodes running Red Hat Linux version 7 operating system and which has 
-access to OSG Connect software modules.
+also includes an important `requirements` which tell HTCondor to run our job on 
+execute nodes running Red Hat Linux version 7 operating system/
 
 > The resource requests for your jobs may differ from what is shown in the 
 > above example. Always run tests to determine the appropriate requests for your jobs.

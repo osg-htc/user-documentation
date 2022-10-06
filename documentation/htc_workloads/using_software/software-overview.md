@@ -16,8 +16,7 @@ high throughput computing model. At present, we do not have or support most comm
 due to licensing issues. 
 
 Here we review options, and provide links to additonal information, for using software 
-installed by users, software available as precompiled binaries or via containers, and 
-preinstalled software via modules.
+installed by users, software available as precompiled binaries or via containers.
 
 ## Install Your Own Software
 
@@ -57,18 +56,7 @@ repository. Users can choose from a set of pre-defined containers already availa
 or can use published or custom made containers. More details on how to use containers on the OSPool can be found in our 
 [Docker and Singularity Containers](../../../htc_workloads/using_software/available-containers-list/) guide. 
 
-## Access Software In Distributed Modules 
-
-Currently, the OSPool provides over 200 preinstalled software, libraries, and 
-compiliers via distributed environment modules. Modules provide a streamlined option 
-for working with different software versions as well as managing library dependencies for 
-software. To run jobs that use modules, your HTCondor submit files must include additional 
-`requirements` to direct your jobs to appropriate compute nodes within OSG.
-
-More details about using modules can be found 
-[here](../../../htc_workloads/using_software/software-request/). 
-
-## Ask for Helpk
+## Ask for Help
 
 If you are not sure which of the above options might be best for your software, we're happy to help! Just contact us at 
 [support@osg-htc.org](mailto:support@osg-htc.org).

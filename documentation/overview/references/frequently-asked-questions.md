@@ -23,14 +23,10 @@ Please follow the steps outlined in the [Sign Up process](http://osgconnect.net/
    
 **What software packages are available?**
 
-In general, we support most software that fit the distributed high throughput computing model. Users are encouraged to download and install their own software. For some software, we support distributed software modules listed [here](../../../htc_workloads/using_software/software-request/). Software can be added to the modules upon request. 
+In general, we support most software that fit the distributed high throughput computing model. Users are encouraged to download and install their own software. 
  
 Additionally, users may install their software into a Docker container which can run on OSG as a Singularity image.  See [this guide](../../../htc_workloads/using_software/available-containers-list/) for more information. 
 
-**How do I access a specific software application?**
-
-We have implemented modules within OSG Connect to manage the software that is available to users. Modules allow for easy access to a number of software and version options. Our [Accessing Software using Distributed Environment Modules](../../../htc_workloads/using_software/software-request/) page provides more details on how to use modules in OSG Connect.
- 
 **Are there any restrictions on installing commercial softwares?**
 
 We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running [MATLAB standalone executables](../../../software_examples/matlab_runtime/tutorial-matlab-HelloWorld/) which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's /home directory with HTCondor transferring to jobs, but should not be staged in OSG's public data staging locations (see ../../../htc_workloads/managing_data/osgconnect-storage/-data-management-and-policies). Please get in touch with any questions about licensed software.
