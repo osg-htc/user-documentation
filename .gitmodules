@@ -43,3 +43,9 @@
 [submodule "tutorials/tutorial-ScalingUp-R"]
 	path = documentation/tutorials/tutorial-ScalingUp-R
 	url = https://github.com/OSGConnect/tutorial-ScalingUp-R
+[submodule "documentation/tutorials/ACE-bwa"]
+	path = documentation/tutorials/ACE-bwa
+	url = https://github.com/OSGConnect/ACE-bwa.git
+[submodule "documentation/tutorials/ACE-wordfreq"]
+	path = documentation/tutorials/ACE-wordfreq
+	url = https://github.com/OSGConnect/ACE-wordfreq

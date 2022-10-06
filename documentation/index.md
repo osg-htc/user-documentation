@@ -1,7 +1,9 @@
 ---
 template: home.html
 title: Home
-osgconnect:
+ospool:
+    path: index.md
+path: 
     path: index.md
 ---
 
