@@ -1,1 +1,0 @@
-../../../../../documentation/htc_workloads/specific_resources/multicore-jobs.md

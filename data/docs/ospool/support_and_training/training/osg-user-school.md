@@ -1,1 +1,0 @@
-../../../../../documentation/support_and_training/training/osg-user-school.md

@@ -1,1 +1,0 @@
-../../../../../documentation/PATh/overview/account_setup/getting-started.md

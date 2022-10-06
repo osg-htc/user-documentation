@@ -1,1 +1,0 @@
-../../../../../documentation/overview/account_setup/registration-and-login.md
