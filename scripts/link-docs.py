@@ -2,29 +2,12 @@ import glob
 import frontmatter
 import os
 
-TUTORIALS_OSGCONNECT_FILE_MAP = {
-    'documentation/tutorials/tutorial-tensorflow-containers/README.md': 'software_examples/machine_learning/tutorial-tensorflow-containers/README.md',
-    'documentation/tutorials/tutorial-ScalingUp-Python/README.md': 'software_examples/python/tutorial-ScalingUp-Python/README.md',
-    'documentation/tutorials/tutorial-quickstart/README.md': 'htc_workloads/submitting_workloads/tutorial-quickstart/README.md',
-    'documentation/tutorials/tutorial-blast-split/README.md': 'software_examples/bioinformatics/tutorial-blast-split/README.md',
-    'documentation/tutorials/tutorial-bwa/README.md': 'software_examples/bioinformatics/tutorial-bwa/README.md',
-    'documentation/tutorials/tutorial-organizing/README.md': 'htc_workloads/submitting_workloads/tutorial-organizing/README.md',
-    'documentation/tutorials/tutorial-AutoDockVina/README.md': 'software_examples/drug_discovery/tutorial-AutoDockVina/README.md',
-    'documentation/tutorials/tutorial-R-addlibSNA/README.md': 'software_examples/r/tutorial-R-addlibSNA/README.md',
-    'documentation/tutorials/tutorial-wordfreq/README.md': 'software_examples/python/tutorial-wordfreq/README.md',
-    'documentation/tutorials/tutorial-error101/README.md': 'htc_workloads/submitting_workloads/tutorial-error101/README.md',
-    'documentation/tutorials/tutorial-pegasus/README.md': 'htc_workloads/automated_workflows/tutorial-pegasus/README.md',
-    'documentation/tutorials/tutorial-osg-locations/README.md': 'htc_workloads/submitting_workloads/tutorial-osg-locations/README.md',
-    'documentation/tutorials/tutorial-matlab-HelloWorld/README.md': 'software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md',
-    'documentation/tutorials/tutorial-R/README.md': 'software_examples/r/tutorial-R/README.md',
-    'documentation/tutorials/tutorial-ScalingUp-R/README.md': 'software_examples/r/tutorial-ScalingUp-R/README.md'
-}
 
 def build_path(path: str):
     if not os.path.exists(os.path.dirname(path)):
         os.makedirs(os.path.dirname(path))
 
-def link_in_documentation(file_map: dict):
+def link_in_documentation():
     """Build the frontmatter for the pages"""
 
     portal_keys = ["path", "ospool"]
@@ -34,7 +17,7 @@ def link_in_documentation(file_map: dict):
         # Remove the directory first
         os.system(f"rm -rf data/docs/{portal_key}")
 
-        non_tutorial_docs = set(glob.glob("documentation/**/*.md", recursive=True)) - set(glob.glob("documentation/**/README.md", recursive=True))
+        non_tutorial_docs = glob.glob("documentation/**/*.md", recursive=True)
 
         for doc_path in non_tutorial_docs:
             with open(doc_path, "r") as fp:
@@ -71,14 +54,6 @@ def link_in_documentation(file_map: dict):
                 with open(destination_path, "w") as fp:
                     fp.write(doc.content)
 
-        for doc_path, destination_path in file_map.items():
-
-            destination_path = f"data/docs/{portal_key}/{destination_path}"
-
-            # Build path if not their
-            build_path(destination_path)
-
-            os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
 
 if __name__ == "__main__":
@@ -86,4 +61,4 @@ if __name__ == "__main__":
     if "DEBUG" in os.environ and os.environ["DEBUG"]:
         os.chdir("../")
 
-    link_in_documentation(TUTORIALS_OSGCONNECT_FILE_MAP)
+    link_in_documentation()
