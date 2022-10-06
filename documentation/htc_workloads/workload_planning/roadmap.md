@@ -126,7 +126,7 @@ and our facilitation team will be happy to discuss your individual case.
 - Run sequential workflows of jobs: [Workflows with HTCondor's DAGMan](../../../htc_workloads/automated_workflows/dagman-workflows/)
 - Implement self-checkpointing for long jobs: [HTCondor Checkpointing Guide](https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html)
 - Build your own Docker container: [Creating a Docker Container Image](../../../htc_workloads/using_software/new_modules_list/)
-- Submit more than 10,000 jobs at once: [FAQ, search for 'max_idle'](../../../overview/references/frequently-asked-questions-faq-/)
+- Submit more than 10,000 jobs at once: [FAQ, search for 'max_idle'](../../../overview/references/frequently-asked-questions/)
 - Larger or speciality resource requests: 
 	- GPUs: [GPU Jobs](../../../htc_workloads/specific_resource/gpu-jobs/)
 	- Multiple CPUs: [Multicore Jobs](../../../htc_workloads/specific_resource/multicore-jobs/)
