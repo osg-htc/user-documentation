@@ -1,1 +1,0 @@
-../../../../../../documentation/tutorials/tutorial-blast-split/README.md

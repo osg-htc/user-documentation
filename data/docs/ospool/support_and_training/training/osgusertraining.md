@@ -1,0 +1,1 @@
+../../../../../documentation/support_and_training/training/osgusertraining.md
