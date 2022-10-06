@@ -1,0 +1,1 @@
+../../../../../documentation/PATh/overview/account_setup/registration.md
