@@ -2,10 +2,6 @@
 
 This repository holds the documentation for the PATh Facility and OSGConnect.
 
-**NOTE: This documentation is being manually mirrored from the [previous repo](https://github.com/OSGConnect/connectbook)**
-
-Please update the documentation in the previous repo when making changes to this repo until the previous repo is deprecated.
-
 ## Guides
 
 - [Repository Layout](#repository-layout)
