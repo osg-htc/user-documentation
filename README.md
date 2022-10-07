@@ -52,13 +52,9 @@ osgconnect:
 ---
 ```
 
-:question: 
-
 ***Note:** The path declared in the frontmatter is where this documentation will be available on its respective site. 
 
 To keep things organized you should choose a path that aligns with documentation in its grouping. 
-
-:question:
 
 ### Adding it to the Navigation
 
