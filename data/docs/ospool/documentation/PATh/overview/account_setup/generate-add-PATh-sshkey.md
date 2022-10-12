@@ -1,1 +1,0 @@
-../../../../../../../documentation/PATh/overview/account_setup/generate-add-PATh-sshkey.md
