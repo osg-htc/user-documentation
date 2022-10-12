@@ -1,9 +1,9 @@
 ---
-ospool:
-  path: documentation/PATh/overview/account_setup/generate-add-PATh-sshkey.md
+path:
+  path: PATh/overview/account_setup/generate-add-PATh-sshkey.md
 ---
 
-Generate SSH Keys and Activate Your PATh Login 
+Generate SSH Keys and Activate Your PATh Facility Login 
 ====================================
 
 ## Overview
