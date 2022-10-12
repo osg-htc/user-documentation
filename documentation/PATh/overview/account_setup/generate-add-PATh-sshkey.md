@@ -84,7 +84,7 @@ When the progress bar is full, PuTTYgen generates your key pair.
 5. Type a passphrase in the "Key passphrase" field. Type the same passphrase in the "Confirm passphrase" field. You 
 can use a key without a passphrase, but this is not recommended.
 
-6. Click the "Save private key" and "Save public key" buttons to save the private key. **You must save both keys.** You will need them to successfully login from your machine. 
+6. Click the "Save private key" and "Save public key" buttons to save both keys. **You must save both keys.** You will need them to successfully login from your machine. 
 
 ![alt text](https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/puttygen_ssh_key.png "PuttyGen Window")
 
