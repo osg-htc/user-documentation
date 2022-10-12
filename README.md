@@ -43,18 +43,30 @@ When you are content you can make a PR and on merge your changes will be deploye
 To add documentation, you should add a new file to the ```./documentation``` folder. 
 
 All documentation in this repo should have frontmatter at the top to declare where you would like that document to live on 
-its respective site. You can/should use the template below. 
+its respective site. You can/should use the template below. Either can be omitted to have it not published to the site. 
 
 ```yaml
 ---
-osgconnect:
-  path: <location where this file should be served from in osgconnect>
+ospool:
+  path: <location where this file should be served from in osgconnect>/filename.md
+path:
+  path: <location where this file should be served from in the path portal>/filename.md
 ---
 ```
 
-***Note:** The path declared in the frontmatter is where this documentation will be available on its respective site. 
+**Note:** The path declared in the frontmatter is where this documentation will be available on its respective site. 
 
 To keep things organized you should choose a path that aligns with documentation in its grouping. 
+
+For example the following would be available at portal.osg-htc.org/path0/path1/filename.md and portal.path-cc.io/path2/filename.md.
+
+```yaml
+ospool:
+  path: path0/path1/filename.md
+path:
+  path: path2/filename.md
+---
+```
 
 ### Adding it to the Navigation
 
