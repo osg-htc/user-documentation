@@ -61,6 +61,7 @@ To keep things organized you should choose a path that aligns with documentation
 For example the following would be available at portal.osg-htc.org/path0/path1/filename.md and portal.path-cc.io/path2/filename.md.
 
 ```yaml
+---
 ospool:
   path: path0/path1/filename.md
 path:
