@@ -157,7 +157,7 @@ On older versions of Windows, you can use the [Putty program](https://www.chiark
 
 4. Click "Auth" in the "SSH" menu.
 
-5. Click "Browse" and specify the private key file you used above.
+5. Click "Browse" and specify the private key file you saved in Step 1.
 
 6. Return to "Session".    
    a. Name your session    
