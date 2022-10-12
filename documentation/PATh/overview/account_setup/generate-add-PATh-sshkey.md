@@ -1,6 +1,6 @@
 ---
 path:
-  path: PATh/overview/account_setup/generate-add-PATh-sshkey.md
+  path: overview/account_setup/generate-add-PATh-sshkey.md
 ---
 
 Generate SSH Keys and Activate Your PATh Facility Login 
