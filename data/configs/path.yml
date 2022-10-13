@@ -2,7 +2,7 @@ nav:
   - "Home": index.md
   - Overview:
     - Welcome And Account Setup:
-      - "Getting Started": overview/account_setup/getting_started.md
+      - "Getting Started": overview/account_setup/getting-started.md
       - "Registration": overview/account_setup/registration.md
       - "Generate SSH Keys": overview/account_setup/generate-add-PATh-sshkey.md
     - References:

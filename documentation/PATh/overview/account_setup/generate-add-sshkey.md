@@ -1,6 +1,6 @@
 ---
 path:
-  path: PATh/overview/account_setup/generate-add-PATh-sshkey.md
+  path: overview/account_setup/generate-add-sshkey.md
 ---
 
 Generate SSH Keys and Activate Your PATh Facility Login 
@@ -12,7 +12,7 @@ Logging into a PATh Facility Access Point requires authenticating your credienti
 
 To use this approach, you need to follow a two-step process to associate your SSH key to your PATh Facility account. 
 
-1. Generate a SSH key pair.  
+1. Generate an SSH key pair.  
 
 2. Add your public key to the PATh Access Point by uploading it to 
 your user profile on the [PATh Facility registration website](https://registry.cilogon.org/registry/co_petitions/start/coef:263).

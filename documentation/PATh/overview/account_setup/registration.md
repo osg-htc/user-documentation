@@ -74,26 +74,8 @@ To authenticate using this approach:
 
 It is also possible to authenticate using an SSH key pair, if you prefer. Logging in using SSH keys does not require access to an internet browser to login into the PATh access point, `ap1.facility.path-cc.io`. 
 
-The process below describes how to upload a public key to the registration website. It assumes that a private/public key pair has already been generated. If you need to generate a key pair, see the "Step 1: Generate SSH Keys" section of this [OSG guide](https://support.opensciencegrid.org/support/solutions/articles/12000027675-generate-ssh-keys-and-activate-your-osg-login). 
-
-1. Return to the [Registration Page](https://registry.cilogon.org/registry/co_petitions/start/coef:263) and login using CILogon if prompted.
-
-1. Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button.
-
-      ![](../../assets/PATh/registration/ssh-homepage-dropdown.png)
-
-1. On the right hand side of your profile, click "Authenticators" link.
-
-      ![](../../assets/PATh/registration/ssh-edit-profile.png)
-
-1. On the authenticators page, click the "Manage" button.
-
-      ![](../../assets/PATh/registration/ssh-authenticator-select.png)
-
-1. On the new SSH Keys page, click "Add SSH Key" and browse your computer to upload your public SSH key.
-
-      ![](../../assets/PATh/registration/sh-key-list.png)
-
+Full details across multiple configurations are explained in our 
+[SSH Authentication guide](/overview/account_setup/generate-add-sshkey.md).
 
 ## Get Help
 
