@@ -75,7 +75,7 @@ To authenticate using this approach:
 It is also possible to authenticate using an SSH key pair, if you prefer. Logging in using SSH keys does not require access to an internet browser to login into the PATh access point, `ap1.facility.path-cc.io`. 
 
 Full details across multiple configurations are explained in our 
-[SSH Authentication guide](/overview/account_setup/generate-add-sshkey.md).
+[SSH Authentication guide](../../overview/account_setup/generate-add-sshkey.md).
 
 ## Get Help
 
