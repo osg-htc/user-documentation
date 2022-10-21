@@ -3,7 +3,7 @@ ospool:
   path: software_examples/other_languages_tools/conda-on-osg.md
 ---
 
-Using conda to Run Python on the OSPool 
+Using Conda
 ====================================
 
 

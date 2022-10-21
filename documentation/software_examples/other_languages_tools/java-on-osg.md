@@ -3,7 +3,7 @@ ospool:
   path: software_examples/other_languages_tools/java-on-osg.md
 ---
 
-Using Java in Jobs 
+Using Java
 ====================================
 
 

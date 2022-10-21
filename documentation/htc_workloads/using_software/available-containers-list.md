@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/using_software/available-containers-list.md
 ---
 
-View Existing OSPool-Supported Containers 
+Containers - Predefined List
 ====================================
 
 

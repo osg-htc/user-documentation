@@ -3,7 +3,7 @@ ospool:
   path: support_and_training/training/osgusertraining.md
 ---
 
-OSG User Training (regular/monthly) 
+User Training - Bi-Monthly
 ====================================
 
 # Sign Up for Upcoming Trainings!

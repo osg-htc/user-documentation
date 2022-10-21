@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/specific_resource/multicore-jobs.md
 ---
 
-Multicore Jobs 
+Running Multicore Jobs 
 ====================================
 
 Please note, the OSG has limited support for multicore jobs. Multicore jobs

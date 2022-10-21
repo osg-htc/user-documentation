@@ -3,7 +3,7 @@ ospool:
   path: overview/account_setup/generate-add-sshkey.md
 ---
 
-Generate SSH Keys and Activate Your OSG Login 
+Generating an SSH Keys and Activating Your Login 
 ====================================
 
 

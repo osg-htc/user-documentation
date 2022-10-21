@@ -3,7 +3,7 @@ ospool:
   path: overview/account_setup/is-it-for-you.md
 ---
 
-Computation on the Open Science Pool 
+Computation on the Open Science Pool (OSPool)
 ====================================
 
 

@@ -3,12 +3,8 @@ ospool:
   path: htc_workloads/using_software/software-overview.md
 ---
 
-Using Software on the Open Science Pool 
+Overview - Using Software
 ====================================
-
-
-
-# Overview of Software Options
 
 There are several options available for managing the software needs of your work within the Open Science Pool (OSPool). 
 In general, the OSPool can support most popular, open source software that fit the distributed 

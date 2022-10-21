@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/automated_workflows/dagman-workflows.md
 ---
 
-Submit Workflows with HTCondor's DAGMan 
+Submitting Workflows with HTCondor's DAGMan
 ====================================
 
 

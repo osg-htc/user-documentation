@@ -3,11 +3,8 @@ ospool:
   path: htc_workloads/using_software/example-compilation.md
 ---
 
-Example Software Compilation 
+Example - Software Compilation 
 ====================================
-
-
-# Example of Compilng Software For Use In OSG Connect
 
 ## Introduction
 

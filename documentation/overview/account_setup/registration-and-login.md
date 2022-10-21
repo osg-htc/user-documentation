@@ -3,7 +3,7 @@ ospool:
   path: overview/account_setup/registration-and-login.md
 ---
 
-Registration and Login for OSG Connect 
+Registering and Logging into OSGConnect
 ====================================
 
 

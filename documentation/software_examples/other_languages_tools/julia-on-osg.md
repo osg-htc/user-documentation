@@ -3,7 +3,7 @@ ospool:
   path: software_examples/other_languages_tools/julia-on-osg.md
 ---
 
-Using Julia on the OSPool 
+Using Julia
 ====================================
 
 

@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/using_software/software-request.md
 ---
 
-Request Help with Your Software 
+Requesting Help with Software
 ====================================
 
 A large number of software packages can be used by compiling a portable installation or using a container 

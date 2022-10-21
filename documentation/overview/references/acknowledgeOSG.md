@@ -3,7 +3,7 @@ ospool:
   path: overview/references/acknowledgeOSG.md
 ---
 
-Acknowledge the OSG 
+Acknowledging the OSG 
 ====================================
 
 This page has been moved to the [OSG Website](https://osg-htc.org/acknowledging).

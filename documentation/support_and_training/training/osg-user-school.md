@@ -3,7 +3,7 @@ ospool:
   path: support_and_training/training/osg-user-school.md
 ---
 
-Annual, Week-Long OSG User School 
+OSG User School - Annual
 ====================================
 
 

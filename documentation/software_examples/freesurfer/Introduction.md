@@ -3,7 +3,7 @@ ospool:
   path: software_examples/freesurfer/Introduction.md
 ---
 
-Introduction to FreeSurfer on the OSPool 
+Using FreeSurfer
 ====================================
 
 

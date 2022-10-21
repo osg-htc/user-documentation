@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/specific_resource/openmpi-jobs.md
 ---
 
-OpenMPI Jobs 
+Running OpenMPI Jobs 
 ====================================
 
 Even though the Open Science Pool is a high throughput computing system, sometimes

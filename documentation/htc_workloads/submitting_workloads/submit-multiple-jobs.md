@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/submitting_workloads/submit-multiple-jobs.md
 ---
 
-Easily Submit Multiple Jobs 
+Submitting Multiple Jobs 
 ====================================
 
 

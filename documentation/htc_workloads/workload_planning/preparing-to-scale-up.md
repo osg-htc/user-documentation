@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/workload_planning/preparing-to-scale-up.md
 ---
 
-Determining the Amount of Resources to Request in a Submit File 
+Determining Resource Requests
 ====================================
 
 # Learning Objectives

@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/workload_planning/jobdurationcategory.md
 ---
 
-Indicate the Duration Category of Your Jobs 
+Indicating your Job Duration
 ====================================
 
 

@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/submitting_workloads/tutorial-command.md
 ---
 
-Use OSG Connect Tutorials 
+Using Tutorials
 ====================================
 
 

@@ -11,6 +11,7 @@ This repository holds the documentation for the PATh Facility and OSGConnect.
   - [Adding Images](#adding-images)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
+- [Running Locally](#running-locally)
 
 ## Repository Layout
 
@@ -112,3 +113,14 @@ To update the tutorial submodules after pushing a change to them you should run 
 The action should be run on the main branch. 
 
 After the action has completed you should create a PR on branch [update-submodules-reserved](https://github.com/osg-htc/user-documentation/compare/main...update-submodules-reserved) as it now the main branch with its submodules updated.
+
+
+## Running Locally
+
+```shell
+cd scripts
+pip3 install -r requirements.txt
+python3 link-docs.py
+
+docker run --rm -it -p 8001:8000 -v ${PWD}:/docs/user-documentation --entrypoint /bin/sh osg-portal-docs
+```

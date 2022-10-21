@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/using_software/containers-singularity.md
 ---
 
-# Create an Apptainer/Singularity Container Image
+Containers - Apptainer/Singularity
 
 This guide is meant to accompany the instructions for using containers
 in the Open Science Pool. You can use your own custom container to run

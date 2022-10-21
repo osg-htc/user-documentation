@@ -3,7 +3,7 @@ ospool:
   path: overview/references/gracc.md
 ---
 
-OSG Accounting (GRACC)
+OSPool Accounting (GRACC)
 ======================
 
 GRACC is the Open Science Pool's accounting system. If you need graphs or high level statistics

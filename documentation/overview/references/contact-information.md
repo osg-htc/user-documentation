@@ -3,7 +3,7 @@ ospool:
   path: overview/references/contact-information.md
 ---
 
-Contact OSG for non-Support Inquiries 
+Contacting the OSG Consortium for non-Support Inquiries
 ====================================
 
 For media contact, leadership, or general questions about OSG, please see our

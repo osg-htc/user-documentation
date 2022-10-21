@@ -3,7 +3,7 @@ ospool:
   path: software_examples/python/manage-python-packages.md
 ---
 
-Run Python Scripts on the OSPool 
+Running Python 
 ====================================
 
 # Overview

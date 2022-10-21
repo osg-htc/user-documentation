@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/specific_resource/gpu-jobs.md
 ---
 
-Using GPUs on the OSPool 
+Using GPUs
 ====================================
 
 

@@ -3,7 +3,7 @@ ospool:
   path: overview/account_setup/starting-project.md
 ---
 
-Join and Use a Project in OSG Connect 
+Joining and Setting your Project
 ====================================
 
 
