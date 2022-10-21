@@ -7,3 +7,10 @@ nav:
       - "Log in with SSH Keys": overview/account_setup/generate-add-sshkey.md
     - References:
       - "Credit Account Charges": overview/references/credit-account-charges.md
+  - Support And Training Resources:
+    - Get Help!:
+      - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
+  - Managing HTC Workloads On OSG Connect:
+    - Submitting HTC Workloads With HTCondor:
+      - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/quickstart.md
+      - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
