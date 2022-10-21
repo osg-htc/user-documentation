@@ -19,4 +19,4 @@ jobs:
           git submodule update --remote --merge
           git add .
           git commit -m "Update Submodules"
-          git push -f --set-upstream origin update-submodules-reserved
+          git push -f --set-upstream origin HEAD:update-submodules-reserved
