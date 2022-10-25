@@ -52,7 +52,7 @@ Click [here](https://docs.google.com/forms/d/e/1FAIpQLSd3K78Xx1Vo-KjqW_2y0YKcUMX
 ## Make an Appointment
 
 We are happy to arrange meetings outside of designated Office Hours, per
-your preference. Simply email us at support@osg-htc.org, and we will set
+your preference. Simply email us at support@path-cc.io, and we will set
 up a time to meet!
 
 
