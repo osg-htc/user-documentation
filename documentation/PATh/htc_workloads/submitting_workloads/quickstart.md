@@ -25,7 +25,7 @@ First create a `short.sh` file to use as en executable for our sample job:
 
 Now, make the script executable.
 
-	chmod +x short.sh
+	$ chmod +x short.sh
 
 
 ### Run the job locally
