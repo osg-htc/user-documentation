@@ -323,7 +323,7 @@ Look at the output files in the log directory and notice how each job received i
     job.1444786.7.output  job.1444786.8.output  job.1444786.9.output
 
 
-Removing jobs
+## Removing jobs from HTCondor's queue
 --------------
 
 On occasion, jobs will need to be removed for a variety of reasons
