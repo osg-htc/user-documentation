@@ -121,11 +121,26 @@ vary.
 You can preview the documentation locally by running the below line at the root of this directory. You will have to 
 rerun the container on each change but if you say something to Cannon he will put in the effort to add a file watcher. 
 
+Use the links to go to the served website, the console will say to go to port 8000 but to prevent clashing you should use
+ports 8010 and 8011 and specified below. 
+
+
+**OSG**
 ```shell
 docker run -it -p 8010:8000 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/osg-portal-documentation:latest
 ```
 
 [localhost:8010](http://0.0.0.0:8010/documentation/)
+
+**PATh**
+```shell
+docker run -it -p 8011:8000 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/path-portal-documentation:latest
+```
+
+[localhost:8011](http://0.0.0.0:8011/documentation/)
+
+
+
 
 
 ## Updating Submodules
