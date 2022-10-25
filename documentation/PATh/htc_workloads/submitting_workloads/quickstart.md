@@ -322,26 +322,6 @@ Look at the output files in the log directory and notice how each job received i
     job.1444786.4.output  job.1444786.5.output  job.1444786.6.output
     job.1444786.7.output  job.1444786.8.output  job.1444786.9.output
 
-### Where did jobs run? 
-
-It might be interesting to see where our jobs actually ran. To get that
-information for a single job, we can use the command `condor_history`.
-First, select a job you want to investigate and then run `condor_history
--long jobid`. In this example, we will investigate the job ID 1444786.9.
-Again the output is quite long:
-
-	$ condor_history -limit 1 -long 1444786.9
-	BlockWriteKbytes = 0
-	BlockReads = 0
-	DiskUsage_RAW = 36
-	... 
-	MATCH_EXP_JOBGLIDEIN_ResourceName = "Georgia_Tech_PACE_CE_2"
-	...
-	
-Looking through here for a hostname, we can see that the parameter
-`MATCH_EXP_JOBGLIDEIN_ResourceName`. The output of this parameter is
-the slot our job ran on. In this example, our job ran on a slot at the
-Georgia Institute of Technology.
 
 Removing jobs
 --------------
