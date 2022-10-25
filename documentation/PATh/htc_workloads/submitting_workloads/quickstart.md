@@ -30,8 +30,9 @@ Now, make the script executable.
 
 ### Run the job locally
 
-When setting up a new job submission, it's important to test your job outside
-of HTCondor before submitting into pool. 
+When possible, it is important to first test your job on your local resorces prior to submitting the job to HTCondor to run on the PATh Facility execution points.  This will help identify potential errors within the code prior to queuing many HTCondor jobs. 
+
+For example, we can run this executable on our local terminal by typing: 
 
 	$ ./short.sh
 	Start time: Wed Aug 21 09:21:35 CDT 2013
