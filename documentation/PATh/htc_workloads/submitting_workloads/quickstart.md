@@ -91,7 +91,7 @@ Submit the job using `condor_submit`:
 
 ### Check the job status
 
-The `condor_q` command tells the status of currently running jobs.
+The `condor_q` command tells the status of your jobs currently in the queue.
 Generally you will want to limit it to your own jobs: 
 
 	$ condor_q netid
