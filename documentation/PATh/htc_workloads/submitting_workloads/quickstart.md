@@ -76,7 +76,7 @@ have to add an attribute to your submit file to indicate which
 project to charge. The attribtute name is `accounting_group`.
 For example, if your project is `AmazingScience`, the line in
 the submit file (somewhere before the `queue` line) should
-be (and note that the double quotes are required):
+be:
 
     accounting_group = AmazingScience
 
