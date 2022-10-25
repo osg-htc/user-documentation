@@ -8,7 +8,7 @@ path:
 
 ## Job 1: A simple, nonparallel job
 
-First create a `short.sh` file to use as en executable for our sample job:
+First, using a text editing program (e.g. Nano, Vim), create a file called `short.sh` to use as an executable for our sample job:
 
 
 	#!/bin/bash
