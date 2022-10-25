@@ -10,7 +10,7 @@ nav:
   - Support And Training Resources:
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
-  - Managing HTC Workloads On OSG Connect:
+  - Managing HTC Workloads On the PATh Facility:
     - Submitting HTC Workloads With HTCondor:
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/quickstart.md
       - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
