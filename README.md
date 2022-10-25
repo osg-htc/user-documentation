@@ -104,6 +104,16 @@ For instance if you wanted to use the OSG_logo it would be:
 vary. 
 
 
+### Adding videos
+
+[Video Demo](https://youtu.be/3xHFCpglNxA)
+
+- Go to the Youtube page and click share under the video player
+- Click embed and enable privacy-enhanced mode 
+- Copy and paste the html where you want the video to be
+- Change the width value to 100% so it spans the document viewport
+
+
 ## Updating Submodules
 
 To update the tutorial submodules after pushing a change to them you should run the 
