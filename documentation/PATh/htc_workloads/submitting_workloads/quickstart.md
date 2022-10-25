@@ -185,7 +185,7 @@ Now, edit the file to include the added lines below:
 
 	#!/bin/bash
 	# short.sh: a short discovery job
-    set -e
+        set -e
 	printf "Start time: "; /bin/date
 	printf "Job is running on node: "; /bin/hostname
 	printf "Job running as user: "; /usr/bin/id
