@@ -44,7 +44,7 @@ For example, we can run this executable on our local terminal by typing:
 
 ### Create an HTCondor submit file
 
-So far, so good! Let's create a simple (if verbose) HTCondor submit file. Name it `tutorial01.submit`.
+So far, so good! Let's create a simple (if verbose) HTCondor submit file by using a text editing program. Name it `tutorial01.submit`.
 
 	# Our executable is the main program or script that we've created
 	# to do the 'work' of a single job.
