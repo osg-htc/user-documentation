@@ -30,7 +30,7 @@ needs. For example, RCFs can:
 
 ## Help via Email
 
-We provide ongoing support via email to support@osg-htc.org, and it’s
+We provide ongoing support via email to support@path-cc.io, and it’s
 never a bad idea to start by sending questions or issues via email. You
 can typically expect a first response within a few business hours.
 
