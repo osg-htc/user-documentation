@@ -126,7 +126,7 @@ at two-second intervals:
 	$ condor_submit tutorial01.submit
 	Submitting job(s). 
 	1 job(s) submitted to cluster 1441272
-	$ watch -n2 condor_q netid 
+	$ condor_watch_q
 	... 
 
 When your job has completed, it will disappear from the list. 
