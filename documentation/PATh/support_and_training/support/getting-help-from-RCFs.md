@@ -37,7 +37,7 @@ can typically expect a first response within a few business hours.
 
 ## Virtual Office Hours
 
-Drop-in for live help, starting January 11, 2022!
+Drop-in for live help, available every Tuesday and Thursday:
 
 - Tuesdays, 4-5:30pm ET / 1-2:30pm PT
 - Thursdays, 11:30am-1pm ET / 8:30-10am PT
