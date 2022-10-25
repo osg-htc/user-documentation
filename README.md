@@ -9,6 +9,8 @@ This repository holds the documentation for the PATh Facility and OSGConnect.
   - [Creating the document](#creating-the-document)
   - [Adding it to the Navigation](#adding-it-to-the-navigation)
   - [Adding Images](#adding-images)
+  - [Adding Videos](#adding-videos)
+- [Previewing Documentation](#previewing-documentation)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
 
@@ -114,6 +116,18 @@ vary.
 - Change the width value to 100% so it spans the document viewport
 
 
+## Previewing your Work
+
+You can preview the documentation locally by running the below line at the root of this directory. You will have to 
+rerun the container on each change but if you say something to Cannon he will put in the effort to add a file watcher. 
+
+```shell
+docker run -it -p 8010:8000 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/osg-portal-documentation:latest
+```
+
+[localhost:8010](http://0.0.0.0:8010/documentation/)
+
+
 ## Updating Submodules
 
 To update the tutorial submodules after pushing a change to them you should run the 
@@ -122,3 +136,4 @@ To update the tutorial submodules after pushing a change to them you should run 
 The action should be run on the main branch. 
 
 After the action has completed you should create a PR on branch [update-submodules-reserved](https://github.com/osg-htc/user-documentation/compare/main...update-submodules-reserved) as it now the main branch with its submodules updated.
+
