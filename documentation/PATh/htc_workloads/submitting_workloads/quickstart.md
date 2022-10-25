@@ -13,7 +13,7 @@ First create a `short.sh` file to use as en executable for our sample job:
 
 	#!/bin/bash
 	# short.sh: a short discovery job
-    set -e
+        set -e
 	printf "Start time: "; /bin/date
 	printf "Job is running on node: "; /bin/hostname
 	printf "Job running as user: "; /usr/bin/id
