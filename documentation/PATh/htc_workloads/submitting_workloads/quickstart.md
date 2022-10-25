@@ -38,7 +38,7 @@ For example, we can run this executable on our local terminal by typing:
 	Start time: Wed Aug 21 09:21:35 CDT 2013
 	Job is running on node: ap1.path-facility
 	Job running as user: uid=54161(username) gid=1000(users)
-	Job is running in directory: /home/netid/quickstart
+	Job is running in directory: /home/username/quickstart
 	Working hard...
 	Science complete!
 
