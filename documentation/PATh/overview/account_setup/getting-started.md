@@ -14,7 +14,16 @@ Composed of current gen hardware, consisting of 30,000 cores and 36 A100 GPUs th
 run your high throughput computing workloads. Managed by the HTCondor Suite's Access Point the PATh facility is 
 managed to make running these workloads easy.
 
-## 1. Submit Credit Request
+## 1. Set up a Consultation 
+
+The PATh team is here to help! As part of the consulting services offered to any researcher, our team can help you 
+decompose your workload to ensembles of jobs and generate resource estimates for the various tasks in the ensemble. 
+
+Interested Investigators are encouraged to reach out the PATh support staff at 
+[credit-accounts@path-cc.io](credit-accounts@path-cc.io) with questions regarding PATh resources, 
+using HTC or estimating credit needs.
+
+## 2. Submit Credit Request
 
 The opportunity to use PATh Facility resources is available to all PIs submitting, or having submitted, proposals to the
 following Programs as per the [Dear Colleagues Letter](https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp):
@@ -34,17 +43,22 @@ following Programs as per the [Dear Colleagues Letter](https://www.nsf.gov/pubs/
 * [Arctic Research Opportunities](https://beta.nsf.gov/funding/opportunities/arctic-research-opportunities), GEO/OPP, POs: Marc Stieglitz, [mstiegli@nsf.gov](mailto:mstiegli@nsf.gov), Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)
 * [Antarctic Research](https://beta.nsf.gov/funding/opportunities/antarctic-research), GEO/OPP, PO: Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)
 
-Interested Investigators are encouraged to reach out the PATh support staff at 
-[credit-accounts@path-cc.io](credit-accounts@path-cc.io) with questions regarding PATh resources, 
-using HTC or estimating credit needs.
-
 !!! info
     
     More details can be found in the [Dear Colleagues Letter](https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp) provided by the NSF.
 
-## 2. Provide PATh with User Information
+## 3. Provide PATh with User Information
 
-To help use manage the users of the PATh facility we require that all PI's rewarded with credits complete the 
-form here. After completion of this form PATh support will contact you to set up your credit accounts. 
+To help use manage the users of the PATh facility we require that all PI's rewarded with credits complete a 
+quick form. After completion of this form PATh support will contact you to set up your credit accounts. 
 
-## 3. Register?
+[PATh User Application](/application){ .md-button }
+
+## 4. Registering and Logging into PATh Facility Account
+
+Now that you have credits, and have met with our facilitation staff, you are ready to start using your allocation. Follow
+our [Registration and Login Guide](../../overview/account_setup/registration/) to access your account and start running
+your workloads!
+
+
+

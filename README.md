@@ -118,11 +118,11 @@ vary.
 
 ## Previewing your Work
 
-You can preview the documentation locally by running the below line at the root of this directory. You will have to 
-rerun the container on each change but if you say something to Cannon he will put in the effort to add a file watcher. 
+You can develop the documentation locally by running the below line at the root of this directory. As you alter files they 
+will change in the website so there is no need to rebuild for each change.
 
 Use the links to go to the served website, the console will say to go to port 8000 but to prevent clashing you should use
-ports 8010 and 8011 and specified below. 
+ports 8010 and 8011 as specified below. 
 
 
 **OSG**
