@@ -7,7 +7,7 @@ path:
 
 The major steps to getting started using compute resources at the PATh Facility are:
 
-* applying for <a href="https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp" target="_blank">https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp</a> and being approved by the NSF
+* applying for <a href="https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp" target="_blank">PATh Facility Credits</a> and being approved by the NSF
 * applying for an account 
 * meeting with a PATh staff member for a short consultation and orientation
 * uploading your SSH key
