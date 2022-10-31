@@ -1,6 +1,6 @@
 ---
 ospool:
-  path: TODO.md
+  path: overview/account_setup/ap7-access.md
 ---
 
 # Control Where Your Jobs Run / Job Requirements
@@ -20,8 +20,8 @@ To request access to `ap7.ospool.osg-htc.org`, submit an application using the f
 
 1. Go to the account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:297). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
    
-   {: .border .border-5 }
-   <img src="ap7-images/cilogon.png" class= "img-fluid"/>
+   
+      <img src="../../../assets/ap7-images/cilogon.png" class= "img-fluid"/>
    
    
    If you have issues signing in using your institutional credentials, contact us at [support@osg-htc.org](mailto:support@osg-htc.org).
@@ -29,13 +29,13 @@ To request access to `ap7.ospool.osg-htc.org`, submit an application using the f
 
 2. Once you sign in, you will be redirected to the "User Enrollment for OSPool ap7.ospool.osg-htc.org Access Point" page. Click "Begin" and enter your name and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT".
 
-   {: .border .border-5 }
-   <img src="ap7-images/comanage-enrollment-form.png" class= "img-fluid"/>
+
+      <img src="../../../assets/ap7-images/comanage-enrollment-form.png" class= "img-fluid"/>
 
 3. After submitting your application, you will receive an email from [registry@cilogon.org](mailto:registry@cilogon.org) to verify your email address. Click the link listed in the email to be redirected to a page confirm your invitation details. Click the "ACCEPT" button to complete this step.
 
-   {: .border .border-5 }
-   <img src="ap7-images/comanage-email-verification-form.png" class= "img-fluid"/>
+
+      <img src="../../../assets/ap7-images/comanage-email-verification-form.png" class= "img-fluid"/>
    
 
 ## Account Approval by a Research Computing Facilitator
@@ -58,13 +58,13 @@ To authenticate using this approach:
 
 1. Open a terminal and type `ssh username@ap7.ospool.osg-htc.org`, being sure to replace `username` with your `ap7.ospool.osg-htc.org` username. Upon hitting enter, the following text should appear with a unique, but similar, URL: 
 
-   ```
-   Authenticate at
-   -----------------
-   https://cilogon.org/device/?user_code=FF4-ZX6-9LK
-   -----------------
-   Type 'Enter' when you authenticate.
-   ```
+
+        Authenticate at
+        -----------------
+        https://cilogon.org/device/?user_code=FF4-ZX6-9LK
+        -----------------
+        Type 'Enter' when you authenticate.
+
 
 2. Copy the `https://` link, paste it into a web browser, and hit enter.  
 
@@ -83,23 +83,19 @@ The process below describes how to upload a public key to the registration websi
 
 2. Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button.
 
-   {: .border .border-5}
-   <img src="ap7-images/ssh-homepage-dropdown.png" class= "img-fluid"/>
+      <img src="../../../assets/ap7-images/ssh-homepage-dropdown.png" class= "img-fluid"/>
 
 3. On the right hand side of your profile, click "Authenticators" link.
 
-   {: .border .border-5 }
-   <img src="ap7-images/ssh-edit-profile.png" class= "img-fluid"/>
+      <img src="../../../assets/ap7-images/ssh-edit-profile.png" class= "img-fluid"/>
 
 4. On the authenticators page, click the "Manage" button.
 
-   {: .border .border-5 }
-   <img src="ap7-images/ssh-authenticator-select.png" class= "img-fluid"/>
+      <img src="../../../assets/ap7-images/ssh-authenticator-select.png" class= "img-fluid"/>
 
 5. On the new SSH Keys page, click "Add SSH Key" and browse your computer to upload your public SSH key.
-   
-   {: .border .border-5 }
-   <img src="ap7-images/ssh-key-list.png" class= "img-fluid"/>
+
+      <img src="../../../assets/ap7-images/ssh-key-list.png" class= "img-fluid"/>
 
 You can now log in to Access Point, ap7.ospool.osg-htc.org from the terminal, using `ssh username@submit6.chtc.wisc.edu`. When you log in, instead of being prompted with a web link, you should either authenticate automatically or be asked for your ssh key passphrase to complete logging in.
 
