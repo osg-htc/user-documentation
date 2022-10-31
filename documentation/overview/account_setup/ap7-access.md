@@ -3,7 +3,7 @@ ospool:
   path: overview/account_setup/ap7-access.md
 ---
 
-# Control Where Your Jobs Run / Job Requirements
+# Requesting an OSPool ap7.ospool.osg-htc.org Account
 
 *This guide is for users who were **notified by a member of the OSG team** that they will be working on the `ap7.ospool.osg-htc.org` Access Point.*
 
