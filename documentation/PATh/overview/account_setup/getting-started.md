@@ -49,8 +49,8 @@ following Programs as per the [Dear Colleagues Letter](https://www.nsf.gov/pubs/
 
 ## 3. Provide PATh with User Information
 
-To help use manage the users of the PATh facility we require that all PI's rewarded with credits complete a 
-quick form. After completion of this form PATh support will contact you to set up your credit accounts. 
+To help use manage the users of the PATh facility we require that all PI's awarded with credits complete a 
+quick account details form. After completion of this form PATh support will contact you to set up your credit accounts. 
 
 [PATh User Application](/application){ .md-button }
 
