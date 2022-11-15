@@ -52,24 +52,20 @@ If you need to join an existing project (you can be a member of more than one), 
 OSG team (support@osg-htc.org) with your name and the project 
 you wish to join, with PI in CC to confirm.
 
-## "Set" your OSG Connect project
+## Charing usage to your OSG Connect project
 
-Job submission on OSG Connect requires a project be assigned to your account 
-on the login node. This can be set after you have been added to a project as 
-described above.
- 
-* **Option 1 (preferred)**: To set your default project, sign in to your login node and type 
+Job submission on OSG Connect requires that the usage will be charged
+to a project. If you only belong to a single project, that project will
+be charged automatically. Run the following command to see a list of
+projects you belong to:
 
-		$ connect project 
+    $ grep $USER /etc/condor/UserToProjectMap.txt
 
-You should see a list of projects that you have joined. Most often there will 
-only be one option! Make sure the right project is highlighted and press "enter" 
-to save that choice. 
+If need to run jobs under a different project you are a member of, you
+can manually set the project for those jobs by putting this option in
+the submit file:
 
-* **Option 2**: If need to run jobs under a different project you are a member of (not your default), you can manually 
-set the project for those jobs by putting this option in the submit file: 
-
-	    +ProjectName="ProjectName"
+    +ProjectName="ProjectName"
 
 ## View Metrics For Your Project
 
