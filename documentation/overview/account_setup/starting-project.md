@@ -52,9 +52,9 @@ If you need to join an existing project (you can be a member of more than one), 
 OSG team (support@osg-htc.org) with your name and the project 
 you wish to join, with PI in CC to confirm.
 
-## Charing usage to your OSG Connect project
+## Charging usage to your OSG Connect project
 
-Job submission on OSG Connect requires that the usage will be charged
+Job submission on OSG Connect requires that the job usage will be charged
 to a project. If you only belong to a single project, that project will
 be charged automatically. Run the following command to see a list of
 projects you belong to:
