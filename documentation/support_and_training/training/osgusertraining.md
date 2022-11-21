@@ -41,7 +41,7 @@ The most recent version of these training materials are here:
 
 The most recent version of these training materials are here:
 
-* [Slides](https://docs.google.com/presentation/d/1HdsGCEm9TcGwehh9MDapbjYvtVrZhQCJfSC7C4_ridY)
+* [Slides](https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing)
 
 ### Software Portability on the Open Science Pool
 
