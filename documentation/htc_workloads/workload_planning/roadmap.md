@@ -45,7 +45,6 @@ After your OSG account has been approved, go through the following guides to
 complete your access to the login node and to enable your account to submit jobs. 
 
 - [Generate ssh keys and login](../../../overview/account_setup/generate-add-sshkey/)
-- [Set your default project](../../../overview/account_setup/starting-project/)
 
 # 3. Learn to Submit HTCondor Jobs
 
@@ -76,7 +75,6 @@ Read through [this overview of Using Software in OSG Connect](../../../htc_workl
 - To **install your own software**, begin with the guide on [Compiling Software for OSG Connect](../../../htc_workloads/using_software/compiling-applications/) and then complete the [Example Software Compilation tutorial](../../../htc_workloads/using_software/example-compilation/).
 - To **use precompiled binaries**, try the example presented in the [AutoDock Vina tutorial](../../../software_examples/drug_discovery/tutorial-AutoDockVina/) and/or the [Julia tutorial](../../../software_examples/other_languages_tools/julia-on-osg/).
 - To **use Docker containers** for your jobs, start with the [Docker and Singularity Containers guide](../../../htc_workloads/using_software/available-containers-list/), and (optionally) work through the [Tensorflow tutorial](../../../software_examples/machine_learning/tutorial-tensorflow-containers/) (which uses Docker/Singularity)
-- To **use Distributed Environment Modules** for your jobs, start with [this Modules guide](../../../htc_workloads/using_software/software-request/) and then complete the Module example in [this R tutorial](../../../software_examples/r/tutorial-R-addlibSNA/)
 
 Finally, here are some additional guides specific to some of the most common scripting languages and software tools used on OSG\*\*:
 
