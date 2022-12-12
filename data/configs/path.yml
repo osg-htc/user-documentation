@@ -7,6 +7,7 @@ nav:
       - "Log in with SSH Keys": overview/account_setup/generate-add-sshkey.md
     - References:
       - "Credit Account Charges": overview/references/credit-account-charges.md
+      - "HTC Workload Overview": overview/references/workload-overview.md
   - Support And Training Resources:
     - Get Help!:
       - "Email, Office Hours, and Individual Consultations": support_and_training/support/getting-help-from-RCFs.md
