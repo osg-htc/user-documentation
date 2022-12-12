@@ -40,15 +40,16 @@ def link_in_documentation():
                 # Build path if not there
                 build_path(destination_path)
 
+                print(f"Linking Destination Path: {destination_path}")
                 os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
         for doc_path in glob.glob("documentation/assets/**/*.*", recursive=True):
             destination_path = f"data/docs/{portal_key}/assets/{doc_path.replace('documentation/assets/', '')}"
 
-            # Build path if not their
-            if not os.path.exists(os.path.dirname(destination_path)):
-                os.makedirs(os.path.dirname(destination_path))
+            # Build path if not there
+            build_path(destination_path)
 
+            print(f"Linking Destination Path: {destination_path}")
             os.symlink(src=os.path.relpath(doc_path, os.path.dirname(destination_path)), dst=destination_path)
 
         for doc_path in glob.glob("documentation/stylesheets/**/*.css", recursive=True):
@@ -59,9 +60,10 @@ def link_in_documentation():
 
                 destination_path = f"data/docs/{portal_key}/{doc[portal_key]['path']}"
 
-                # Build path if not their
+                # Build path if not there
                 build_path(destination_path)
 
+                print(f"Copying to Destination Path: {destination_path}")
                 with open(destination_path, "w") as fp:
                     fp.write(doc.content)
 
