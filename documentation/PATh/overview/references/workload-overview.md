@@ -82,7 +82,7 @@ To help provide an idea of how you might update your existing workload to the HT
 
 !!! tip
 
-      The PATh team has alot of experience updating workloads to fit the HTC environment. Please contact support if you
+      The PATh team has significant of experience updating workloads to fit the HTC environment. Please contact support if you
       have any questions with the process!
 
       Contact PATh Support at [support@path-cc.io](mailto:support@path-cc.io)
