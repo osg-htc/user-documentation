@@ -6,8 +6,8 @@ path:
 # PATh Workload Overview
 
 To get the most of your PATh Credit Allocation your computational workload will need to be updated to a High 
-Throughput Computing (HTC) model. The goal of adopting the HTC model is to minimize the resource usage of each job you
-run, and running 1000s of those jobs in parallel across all of our resources. 
+Throughput Computing (HTC) model. The result of adopting the HTC model is a workload that can be run and managed on 
+distributed resources in parallel. 
 
 ## HTC Workload Composition
 
@@ -25,7 +25,7 @@ the entire set of tasks.
 
 ###### Tasks
 
-A set of tasks working towards a common goal. All tasks in this set have access to the 
+A set of tasks working towards a common goal. All tasks in this set have access to this
 Ensembles [Shared Files](#shared-files).
 
 ###### Shared Files
@@ -34,35 +34,35 @@ A set of files that can be accessed the [tasks](#task) in this ensemble.
 
 ### Task
 
-Tasks are the smallest component of the HTC workload, representing a set of jobs with unique inputs, and similar
-resource requirements. In the case of simulations, the unique inputs might involve randomness in the jobs themselves. 
+Tasks are the smallest component of the HTC workload and are grouped by function.
+All tasks of the same function are expected to use similar resource requirements,
+with their differences laying in input variables or randomness in the function itself.
 
 #### Task Attributes
 
 ##### Unique Inputs/Simulations
-
-The number of unique inputs, translates directly to number of tasks. Typically, will be the size of the input space or in the case of simulations the
-number of simulations to run. 
+ 
+Either the number of unique inputs into a task, or in the case of simulation, the number of simulations to run
 
 ##### CPU Cores
 
-The number of cores needed to run one job
+The number of cores needed to run one task
 
 ##### GPUs
 
-The number of A100 GPUs needed to run one job
+The number of A100 GPUs needed to run one task
 
 ##### Memory ( in GB )
 
-The amount of memory in gigabytes needed to run one job
+The amount of memory in gigabytes needed to run one task
 
 ##### Disk  ( in GB )
 
-The amount of disk in gigabytes needed to run one job
+The amount of disk in gigabytes needed to run one task
 
 ##### Walltime ( in hours )
 
-The amount of time in hours required to run one job
+The amount of time in hours required to run one task
 
 ### Shared Files
 
@@ -92,46 +92,88 @@ To help provide an idea of how you might update your existing workload to the HT
 A researcher would like to clean their data, then train and test 3 different prediction models. Following the HTC workload
 model they have set up the following composition.
 
-![](../../assets/PATh/workload-overview/Workload_Composition_Overview.png)
+![](../../assets/PATh/workload-overview/Ensemble-Overview.png)
 
-### Ensemble - Sanitize Data
+### Ensemble - Remove Outliers
 
-Since the data only needs to be sanitized once it has been put in its own ensemble. To maximize its ability to 
-be run in parallel the researcher has split the pipeline in two parts: Standardization, which can be run in parallel and 
-Outlier Removal, which needs to be run with the entire dataset. 
+The goal of this Ensemble is to remove outliers from a dataset.
+Since this involves context from the entire dataset, this ensemble we will run our task only once using the entire dataset as input. 
 
-#### Shared File - Un-sanitized Data
+#### Shared File - Starting Data
 
-Un-standardized tabular data that has 10,000 rows
+Since our Task will be using the entire dataset we can consider it a Shared File. 
 
-#### Task - Standardize Data
+#### Shared File - Code
 
-The researcher has decided to break up their dataset into 100 groups of 100 rows so that they can run 100 standardization
-jobs in parallel.
-
-![](../../assets/PATh/workload-overview/Workload_Composition_Standardize.png)
+Since our Task will be using a Code file we will include that as a Shared File. 
 
 #### Task - Remove Outliers
 
-There is no option to run outlier removal with independent inputs so this is run once with the entire dataset. 
+![](../../assets/PATh/workload-overview/Ensemble-Remove.png)
 
-### Ensemble - Run Model 
+Each Task will use the code and data shared files, and run only once per Ensemble. 
 
-The researcher has 3 different prediction models they would like to run, so they have decided to create one general ensemble
-of tasks and run it 3 times with each prediction model in parallel.
+### Ensemble - Standardize Data
 
-#### Shared File - Dataset 
+The goal of this ensemble is to standardize our dataset. This includes updating the units, converting to a common language, and standardizing empty values. 
 
-The dataset sanitized in the previous ensemble
+Since this can be done one row at time, we have organized the task in this ensemble to be run many times, using a segment
+of the dataset as input to each run. 
+
+#### Shared File - Code
+
+Our only Shared File will be Code for this Ensemble as each task will only require a small segment of the data for each run.
+
+#### Task - Standardize Data
+
+![](../../assets/PATh/workload-overview/Ensemble-Standardize.png)
+
+Using the HTC model we run this task many times with each run of the task using a small segment of data and the Shared Code
+file. 
+
+### Ensemble - Train/Select Model
+
+The goal of this ensemble is to train a prediction model using a set of different hyper-parameters and select the best one. To 
+achieve this goal we will use k-fold Cross-Validation as a method to select the best performing parameters. 
+
+Additionally, since the researcher is looking to try out 3 different types of prediction model, we will be running
+this ensemble 3 times, once for each type of model.
+
+#### Shared File - Code
+
+Since our Task will be using a Code file we will include that as a Shared File. 
+
+#### Shared File - Data 
+
+The dataset provided from our previous ensembles work. Since each task will be using this entire dataset we have included
+it as a Shared File. 
 
 #### Task - Train Model
 
-![](../../assets/PATh/workload-overview/Workload_Composition_Train_Model.png)
+![](../../assets/PATh/workload-overview/Ensemble-Train.png)
 
-Step one for them is to decide what of the 16 sets of parameters is the best, which they will use 100-fold Cross-Validation
-to decide. Since each of iteration of the cross validation can happen in parallel they have decided to split this into 
-**1,600 jobs**, where each job is one iteration of Cross-Validation using one of the 16 sets of inputs. 
+Each Task will use the code and data shared files, as well as one set of the hyper-parameters we wish to test. Each Task 
+with a unique set of hyper-parameters will then be run k times to Cross-Validate.
 
-### Task - Test Model
+The resulting number of runs will be *Number of Hyper-Parameter Sets* x *Cross-Validation Iterations (k)*.
 
-Using the set of parameters that performed the best in training, the researcher will now test on their testing data.
+### Ensemble - Test Model
+
+The goal of this ensemble is to test our best performing models from the previous ensemble.
+
+Since we ran the previous ensemble once for each of the 3 types of model we will run this ensemble 3 times as well. 
+
+#### Shared File - Code
+
+Since our Task will be using a Code file we will include that as a Shared File. 
+
+#### Shared File - Data 
+
+The dataset provided from our Standardize Data Ensemble. Since each task will be using this entire dataset we have included
+it as a Shared File. 
+
+#### Task - Test Model
+
+![](../../assets/PATh/workload-overview/Ensemble-Test.png)
+
+Each Task will use the code and data shared files, and run only once per Ensemble. 
