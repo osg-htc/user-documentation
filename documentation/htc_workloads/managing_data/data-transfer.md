@@ -140,6 +140,7 @@ transfer_output_remaps = "file1.txt = $(STASH_LOCATION)/file1.txt; file2.txt = $
 
 # Usage And Policies¶
 
+## Right to Delete Data
 OSG staff reserve the right to monitor and/or remove data without notice to the user if doing so is necessary for ensuring proper use or to quickly fix a performance or security issue. Additionally, users should not use OSG resources or services for long-term data storage. Files and directories that have not been accessed for over six months may be deleted by OSG staff with or without notifying the user. See Policies for Using OSG via OSG Connect Submit Servers for more details.
 
 * `/home`: ALL JOBS MUST ALWAYS BE SUBMITTED FROM WITHIN /home. Users are also prohibited from making their `/home` directory world-readable due to security concerns. 
