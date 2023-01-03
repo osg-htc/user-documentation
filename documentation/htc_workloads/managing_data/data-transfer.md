@@ -95,7 +95,7 @@ transfer_output_remaps = "Output.txt = stash:///ospool/protected/<username>/Outp
 ```
 
 
-## Submit File Example for /protected` Input/Output Files
+## Submit File Example for `/protected` Input/Output Files
 
 ```
 log = my_job.$(Cluster).$(Process).log
