@@ -3,7 +3,10 @@ ospool:
   path: htc_workloads/managing_data/data-transfer.md
 ---
 # Data Staging and Transfer to Jobs¶
+This guide describes where OSG Connect users can store jobs on OSG-operatated Access Points, and how to use this data within jobs. 
 
+Table of Contents: 
+[TOC]
 
 
 ## Overview
