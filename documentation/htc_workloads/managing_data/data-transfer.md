@@ -13,7 +13,9 @@ Table of Contents:
 
 OSG-managed Access Points have two locations for uploading data and software files that are needed for running  your jobs, `/home` and `/protected`. Where you store your files and how your files are made accessible to your jobs depends on how much data is needed or produced by your jobs.
 
-In general, users are responsible for managing data in these folders and for using appropriate mechanisms for delivering data to/from jobs, as detailed below. Each is controlled with a quota and should be treated as temporary storage for active job execution. OSG Connect has no routine backup of data in these locations, and users should remove old data after jobs complete.
+In general, users are responsible for managing data in these folders and for using appropriate mechanisms for delivering data to/from jobs, as detailed below. Each is controlled with a quota and should be treated as temporary storage for *active* job execution. OSG Connect has no routine backup of data in these locations, and users should remove old data after jobs complete. If you think you'll need more space for a set of concurrently-queued jobs, even after cleaning up old data, please send a request to [support@osg-htc.org](mailto:support@osg-htc.org)!
+
+**Note: OSG Connect staff reserve the right to monitor and/or remove data without notice to the user if doing so is necessary for ensuring proper use or to quickly fix a performance or security issue.**
 
 
 
