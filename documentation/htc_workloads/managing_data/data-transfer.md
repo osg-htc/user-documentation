@@ -83,7 +83,7 @@ Use the following table to determine where to stage input files for jobs and whe
 
 For output, users can use the `transfer_output_remaps` option within their job's submit file, which will transfer the user's specified file to a different location than the default `/home/username`. 
 
-By using `transfer_output_remaps`, it is possible to specify what path to save a file to and what name to save it under. Using this approach, it is possible to save files back to specific locations in `/public` (as well as your `/home` directory, if desired).
+By using `transfer_output_remaps`, it is possible to specify what (1) path to save a file to and/ or (2) what name to save it under. Using this approach, it is possible to save files back to specific locations in `/public` (as well as your `/home` directory, if desired).
 
 The syntax for transfer_output_remaps is:
 
