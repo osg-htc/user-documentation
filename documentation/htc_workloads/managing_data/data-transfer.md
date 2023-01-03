@@ -88,7 +88,7 @@ By using `transfer_output_remaps`, it is possible to specify what (1) path to sa
 The syntax for transfer_output_remaps is:
 
 ```
-transfer_output_remaps = "Output.txt = path/to/save/file/under/output.txt; Output.txt = path/to/save/file/under/RenamedOutput.txt"
+transfer_output_remaps = "Output.txt = path/to/save/file/under/Output.txt"
 When saving large output files back to `/protected`, it is necessary to combine `transfer_output_remaps` with a stash transfer mechanism. Therefore, the path provided will look like:
 
 ```
