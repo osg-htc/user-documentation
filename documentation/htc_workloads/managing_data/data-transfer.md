@@ -13,7 +13,6 @@ OSG-managed Access Points have two locations for uploading data and software fil
 In general, users are responsible for managing data in these folders and for using appropriate mechanisms for delivering data to/from jobs, as detailed below. Each is controlled with a quota and should be treated as temporary storage for active job execution. OSG Connect has no routine backup of data in these locations, and users should remove old data after jobs complete.
 
 
-# Data Locations
 
 # Check Your Quota and Available Space
 
