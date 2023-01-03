@@ -196,4 +196,3 @@ Files placed within a user's /public directory are publicly accessible, discover
 
 Is there any support for private data?¶
 
-If you do not want your data to be downloadable by anyone, and it's small enough for HTCondor file transfer, then it should be staged in your /home directory and transferred to jobs with HTCondor file transfer (transfer_input_files in the submit file). If it cannot be public (cannot use http or stash for job delivery), and is too large for HTCondor file transfer, then it's not a good fit for the open environment of the Open Science Pool, and another resource will likely be more appropriate. 
