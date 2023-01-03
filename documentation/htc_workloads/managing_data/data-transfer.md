@@ -4,8 +4,6 @@ output: html_document
 ---
 # Data Staging and Transfer to Jobs¶
 
-Purpose
-This guide introduces the three 
 
 
 # Overview¶
