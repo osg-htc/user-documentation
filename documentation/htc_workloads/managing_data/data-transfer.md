@@ -32,7 +32,7 @@ There are two primary ways to check your remaining disk space:
 Your quota status will be automatically displayed when you login:
 
 Disk utilization for username:
-/public   : [                        ] 0% (0/500000 MB)
+/protected   : [                        ] 0% (0/500000 MB)
 /home     : [ #                      ] 4% (2147/53687 MB)
 
 
