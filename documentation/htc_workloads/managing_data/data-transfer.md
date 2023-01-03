@@ -112,7 +112,7 @@ transfer_output_remaps = "Output.txt = stash:///osgconnect/public/<username>/Out
 
 
 
-## Submit File Example for many /protected` Input/Output Files
+## Submit File Example for many `/protected` Input/Output Files per Job
 
 If you have several output files being sent to `/protected`, you may wish to define a new submit file variable to avoid having to re-write the stash:/// path repeatedly. For example,
 
