@@ -1,6 +1,6 @@
 ---
-title: "Data Transfer to Jobs - OSG Guide"
-output: html_document
+ospool:
+  path: htc_workloads/managing_data/data-transfer.md
 ---
 # Data Staging and Transfer to Jobs¶
 
