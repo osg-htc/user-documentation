@@ -76,7 +76,7 @@ Use the following table to determine where to stage input files for jobs and whe
 /protected: 
   * Only job input and output data greater than 500 MB should be stored in `/protected`
   * *Job Input files*: Transfer files from /protected using `transfer_input_files = stash:///ospool/protected/<username>/InFile.txt`. This combines HTCondor's `transfer_input_files` with a file transfer protocol, `stash:///ospool/protected/<username>/`. 
-  * *Job Output files*: If you would like a job to transfer a large file back to your /protected directory, in your HTCondor submit file, use `transfer_output_remaps = stash:///ospool/protected/<username>/OutFile.txt`. 
+  * *Job Output files*: If you would like a job to transfer a large file back to your /protected directory, in your HTCondor submit file, use `transfer_output_remaps with the stash transfer mechanism (stash:///ospool/protected/<username>). For example, `transfer_output_remaps = stash:///ospool/protected/<username>/OutFile.txt`. 
   
 
 # HTCondor's Transfer_output_remaps 
