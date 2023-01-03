@@ -136,7 +136,7 @@ transfer_output_remaps = "file1.txt = $(STASH_LOCATION)/file1.txt; file2.txt = $
 
 * As of Fall 2022, it is recommended that users use the new /protected file storage location instead of `/public`. 
 
-* Historically, output files could be transferred from a job to a `/public` location using the stashcp command within the job's executable, however, this mechanism is no longer encouraged for OSPool users. Instead, jobs should use `transfer_output_remaps` (an HTCondor feature) to transfer output files to `/public`. By using `transfer_output_remaps`, HTCondor will manage the output data transfer for your jobs. Data transferred via HTCondor is more likely to be transferred successfully and errors with transfer are more likely to be reported to the user.
+* Historically, output files could be transferred from a job to a `/public` location using the stashcp command within the job's executable, however, this mechanism is no longer encouraged for OSPool users. Instead, jobs should use `transfer_output_remaps` (an HTCondor feature) to transfer output files to `/protected`. By using `transfer_output_remaps`, HTCondor will manage the output data transfer for your jobs. Data transferred via HTCondor is more likely to be transferred successfully and errors with transfer are more likely to be reported to the user. Additionally, users should no longer use `/public`, as it is being replaced by `/protected` and will be depreciated in the future. 
 
 
 # Usage And Policies¶
