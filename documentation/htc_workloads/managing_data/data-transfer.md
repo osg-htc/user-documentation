@@ -6,7 +6,7 @@ output: html_document
 
 
 
-# Overview¶
+## Overview
 
 OSG-managed Access Points have two locations for uploading data and software files that are needed for running  your jobs, `/home` and `/protected`. Where you store your files and how your files are made accessible to your jobs depends on how much data is needed or produced by your jobs.
 
