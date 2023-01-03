@@ -48,7 +48,7 @@ Contact us at support@osg-htc.org if you think you need a quota increase. We can
 
 # Uploading/Downloading Data to/from OSG-operated Access Points
 
-In general, common Unix tools such as rsync, scp, Putty, WinSCP, gFTP, etc. can be used to upload data from your computer to your OSG Access Point (e.g. `login05.osgconnect.net`), or to download files from your OSG Access Point. Files should be uploaded/created and staged in `/home` or `/public` for preparation to use in jobs. 
+In general, common Unix tools such as rsync, scp, PuTTY, WinSCP, gFTP, etc. can be used to upload data from your computer to your OSG Access Point (e.g. `login05.osgconnect.net`), or to download files from your OSG Access Point. Files should be uploaded/created and staged in `/home` or `/protected` for preparation to use in jobs. 
 
 # Transferring Data To/From Jobs¶
 Use the following table to determine where to stage input files for jobs and where to store output files from jobs:  
