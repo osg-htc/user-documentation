@@ -21,8 +21,11 @@ In general, users are responsible for managing data in these folders and for usi
 
 Users have the following default quotas: 
 
-/home 50 GB
-/protected 500 GB
+`/home/username`:  50 GB
+`/protected/username`: 500 GB
+
+*Note: Depreciation of `/public`*
+Prior to January 2023, OSG Connect users stored files in `/home` and `/public` directories. Users with accounts created prior to 2023 are highly encouraged to move files in `/public` to`/protected` to prepare for the eventual depreciation of `/public`. Users with accounts created in January 2023 and after should only use `/home` and `/protected`.
 
 There are two primary ways to check your remaining disk space: 
 
