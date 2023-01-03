@@ -44,7 +44,6 @@ You can also display your quota usage at any time using the command `quota` whil
 
 Contact us at support@osg-htc.org if you think you need a quota increase. We can support very large amounts of data!
 
-
 # Uploading/Downloading Data to/from OSG-operated Access Points
 
 In general, common Unix tools such as rsync, scp, Putty, WinSCP, gFTP, etc. can be used to upload data from your computer to your OSG Access Point (e.g. `login05.osgconnect.net`), or to download files from your OSG Access Point. Files should be uploaded/created and staged in `/home` or `/public` for preparation to use in jobs. 
