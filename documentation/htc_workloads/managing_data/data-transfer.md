@@ -1,3 +1,5 @@
+The /public location is a mount of the OSG Connect origin filesystem. It is mounted to the OSG Connect login nodes only so that users can appropriately stage large job inputs or retrieve outputs via the login nodes.
+
 ---
 ospool:
   path: htc_workloads/managing_data/data-transfer.md
