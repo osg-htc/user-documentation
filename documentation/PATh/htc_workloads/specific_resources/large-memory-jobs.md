@@ -24,5 +24,5 @@ Alternatively, you can define a memory request using standard units
 
 We recommend always explictly defining the byte units in your *request_memory* statement.
 
-Please note that the OSG has limited resources available for large memory jobs. Requesting jobs with 
+Please note that the PATh Facility has limited resources available for large memory jobs. Requesting jobs with 
 higher memory needs will results in longer than average queue times for these jobs.
