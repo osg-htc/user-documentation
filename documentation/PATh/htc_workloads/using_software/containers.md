@@ -81,7 +81,7 @@ the file with the job is ok:
     transfer_input_files = my-custom-image-v1.sif
     +SingularityImage = "my-custom-image-v1.sif"
 
-**NOTE: Stash functionallity will soon come to the PATh Facility**: 
+**NOTE: Open Science Data Federation (OSDF) functionality will soon come to the PATh Facility**: 
 For larger workloads, the image will be resused for
 each job, and thus the preferred transfer method is Stash.
 Store the .sif file under `/protected/$USERNAME/`, and then use the stash
