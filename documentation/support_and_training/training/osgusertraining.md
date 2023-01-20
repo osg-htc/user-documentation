@@ -8,12 +8,11 @@ User Training - Bi-Monthly
 
 # Sign Up for Upcoming Trainings!
 
-All User Training sessions are offered from 2:30-4pm ET (and usually on Tuesdays). New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. It's best to already have an active account on an OSG Connect login node (or other access point that submits to the Open Science Pool) to follow along with hands-on examples, but anyone can listen in by registering.
+All User Training sessions are offered from 2:30-4pm ET (and usually on Tuesdays). New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. 
 
-* Tuesday, October 4: New User Training, [Register here](https://docs.google.com/forms/d/e/1FAIpQLSdj3XT7I0SM4k9jBvST7YX5wsCH_er1HLA7VqRj9ICoEvf2GA/viewform)
-* Tuesday, October 18: Bioinformatics Analyses on the OSPool: A BWA Example, [Register here](https://docs.google.com/forms/d/e/1FAIpQLSdj3XT7I0SM4k9jBvST7YX5wsCH_er1HLA7VqRj9ICoEvf2GA/viewform)
-* Tuesday, November 1: New User Training, [Register here](https://docs.google.com/forms/d/e/1FAIpQLSdj3XT7I0SM4k9jBvST7YX5wsCH_er1HLA7VqRj9ICoEvf2GA/viewform)
-* Tuesday, November 15: Using R on the OSPool, registration coming soon.
+* Tuesday, January 17: New User Training, [Register here](https://osgfacilitation.setmore.com/bookclass)
+
+Our full 2023 training schedule will appear soon! 
 
 # Materials
 
@@ -41,7 +40,7 @@ The most recent version of these training materials are here:
 
 The most recent version of these training materials are here:
 
-* [Slides](https://docs.google.com/presentation/d/1HdsGCEm9TcGwehh9MDapbjYvtVrZhQCJfSC7C4_ridY)
+* [Slides](https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing)
 
 ### Software Portability on the Open Science Pool
 
@@ -52,3 +51,4 @@ The most recent version of these training materials are here:
 * Tutorials (used in part)
     * [Using Julia on the OSPool](../../../software_examples/other_languages_tools/julia-on-osg/)
     * [High Throughput BWA Read Mapping](../../../software_examples/bioinformatics/tutorial-bwa/)
+

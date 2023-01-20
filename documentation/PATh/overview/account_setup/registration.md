@@ -7,7 +7,7 @@ path:
 
 The major steps to getting started using compute resources at the PATh Facility are:
 
-* applying for <a href="http://example.com/" target="_blank">example</a> and being approved by the NSF
+* applying for <a href="https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp" target="_blank">PATh Facility Credits</a> and being approved by the NSF
 * applying for an account 
 * meeting with a PATh staff member for a short consultation and orientation
 * uploading your SSH key
@@ -21,7 +21,8 @@ To register with the PATh facility, submit an application using the following st
 
       ![CILOGIN](../../assets/PATh/registration/cilogon.png)
    
-      If you have issues signing in using your institutional credentials, contact us at [support@opensciencegrid.org](mailto:support@opensciencegrid.org).
+      If you have issues signing in using your institutional credentials, contact us 
+at [support@path-cc.io](mailto:support@path-cc.io).
 
 
 1. Once you sign in, you will be redirected to the "PATh Facility User Enrollment for New Users" page. Click "Begin" and enter your name, and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT".
@@ -79,4 +80,5 @@ Full details across multiple configurations are explained in our
 
 ## Get Help
 
-For questions regarding logging in or creating an account, contact us at  [support@opensciencegrid.org](mailto:support@opensciencegrid.org).
+For questions regarding logging in or creating an account, contact us at  
+[support@path-cc.io](mailto:support@path-cc.io).

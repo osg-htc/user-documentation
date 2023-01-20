@@ -168,4 +168,5 @@ On older versions of Windows, you can use the [Putty program](https://www.chiark
 
 ## Get Help
 
-For questions regarding logging in or creating an account, contact us at  [support@opensciencegrid.org](mailto:support@opensciencegrid.org).
+For questions regarding logging in or creating an account, contact us at  
+[support@path-cc.io](mailto:support@path-cc.io).

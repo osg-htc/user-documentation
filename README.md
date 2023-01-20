@@ -9,6 +9,8 @@ This repository holds the documentation for the PATh Facility and OSGConnect.
   - [Creating the document](#creating-the-document)
   - [Adding it to the Navigation](#adding-it-to-the-navigation)
   - [Adding Images](#adding-images)
+  - [Adding Videos](#adding-videos)
+- [Previewing Documentation](#previewing-documentation)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
 - [Running Locally](#running-locally)
@@ -105,6 +107,43 @@ For instance if you wanted to use the OSG_logo it would be:
 vary. 
 
 
+### Adding videos
+
+[Video Demo](https://youtu.be/3xHFCpglNxA)
+
+- Go to the Youtube page and click share under the video player
+- Click embed and enable privacy-enhanced mode 
+- Copy and paste the html where you want the video to be
+- Change the width value to 100% so it spans the document viewport
+
+
+## Previewing your Work
+
+You can develop the documentation locally by running the below line at the root of this directory. As you alter files they 
+will change in the website so there is no need to rebuild for each change.
+
+Use the links to go to the served website, the console will say to go to port 8000 but to prevent clashing you should use
+ports 8010 and 8011 as specified below. 
+
+
+**OSG**
+```shell
+docker run -it -p 8010:8000 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/osg-portal-documentation:latest
+```
+
+[localhost:8010](http://0.0.0.0:8010/documentation/)
+
+**PATh**
+```shell
+docker run -it -p 8011:8000 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/path-portal-documentation:latest
+```
+
+[localhost:8011](http://0.0.0.0:8011/documentation/)
+
+
+
+
+
 ## Updating Submodules
 
 To update the tutorial submodules after pushing a change to them you should run the 
@@ -124,3 +163,4 @@ python3 link-docs.py
 
 docker run --rm -it -p 8001:8000 -v ${PWD}:/docs/user-documentation --entrypoint /bin/sh osg-portal-docs
 ```
+

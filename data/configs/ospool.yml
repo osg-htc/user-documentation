@@ -6,6 +6,7 @@ nav:
       - "Registering and Logging into OSGConnect": overview/account_setup/registration-and-login.md
       - "Generating SSH Key and Activating Your Login": overview/account_setup/generate-add-sshkey.md
       - "Joining and Setting up your Project": overview/account_setup/starting-project.md
+      - "Requesting an OSPool ap7.ospool.osg-htc.org Account": overview/account_setup/ap7-access.md
   - Support And Training Resources:
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings": support_and_training/support/getting-help-from-RCFs.md
