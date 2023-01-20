@@ -6,7 +6,7 @@ ospool:
 Multicore Jobs 
 ====================================
 
-Please note, the OSG has limited support for multicore jobs. Multicore jobs
+Please note, the PATh Facility has limited support for multicore jobs. Multicore jobs
 can be submitted for threaded or OpenMP applications. To request multiple cores
 (aka cpus) use the HTCondor *request_cpus* attribute in your submit file. 
 
