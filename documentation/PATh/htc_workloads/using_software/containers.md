@@ -84,7 +84,7 @@ the file with the job is ok:
 **NOTE: Open Science Data Federation (OSDF) functionality will soon come to the PATh Facility**: 
 For larger workloads, the image will be resused for
 each job, and thus the preferred transfer method is an OSDF tool.
-Store the .sif file under `/protected/$USERNAME/`, and then use the stash
+Store the .sif file under `/mnt/stash/ospool/PROTECTED/$USER/`, and then use the stash
 url directly in the `+SingularityImage` attribute. Note that you can not
 use shell variable expansion in the submit file - be sure to replace the
 username with your actual OSG Connect username. Example:
