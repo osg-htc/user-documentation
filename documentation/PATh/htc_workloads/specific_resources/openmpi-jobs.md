@@ -7,7 +7,7 @@ OpenMPI Jobs
 ====================================
 
 Even though the PATh Facility is a high throughput computing system, sometimes
-there is a need to run small OpenMPI based jobs. OSG has limited support for
+there is a need to run small OpenMPI based jobs. The PATh Facility has limited support for
 this, as long as the core count is small (4 is known to work well, 8 and 16 
 becomes more difficult due to the limited number of resources).
 
