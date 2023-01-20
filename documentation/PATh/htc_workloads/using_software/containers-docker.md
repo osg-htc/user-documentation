@@ -157,7 +157,7 @@ To get your images included, please create a git pull request with the
 container identifier in `docker_images.txt` in the
 [cvmfs-singularity-sync repository](https://github.com/opensciencegrid/cvmfs-singularity-sync),
 or contact
-[support@osg-htc.org](mailto:support@osg-htc.org)
+[support@path-cc.io](mailto:support@path-cc.io)
 and we can help you.
 
 Once your submission has been accepted, it will be automatically
