@@ -89,7 +89,7 @@ url directly in the `+SingularityImage` attribute. Note that you can not
 use shell variable expansion in the submit file - be sure to replace the
 username with your actual OSG Connect username. Example:
 
-    +SingularityImage = "stash:///osgconnect/protected/USERNAME/my-custom-image-v1.sif"
+    +SingularityImage = "stash:///ospool/PROTECTED/USERNAME/my-custom-image-v1.sif"
 
     <other usual submit file lines>
     queue
