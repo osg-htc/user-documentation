@@ -111,7 +111,7 @@ To add your public key to the [PATh Facility registration website](https://regis
 
 5. On the new SSH Keys page, click "Add SSH Key" and browse your computer to upload your public SSH key. The expected key is a single line, with three fields looking something like `ssh-rsa ASSFFSAF... user@host`.
 
-      ![](../../assets/PATh/registration/sh-key-list.png)
+      ![](../../assets/PATh/registration/ssh-key-list.png)
       **Mac Operating Systems**: When you click "browse", your Mac Finder window will appear. At the top of the Finder window, open the drop-down box and select "Macintosh HD". Then navigate to "Users" and select your username. Using your keyboard, type `Command + Shift + . ` to reveal hidden files and directories. Open the `.ssh` directory, and select the `id_rsa.pub` file. Click the "Upload" box to upload your public SSH key. 
       
       **Windows Operating Systems**: When you click "browse", an Explorer window will appear. Navigate to the directory where you saved your _public_ key file. Select it and click the "Upload" box to upload your public SSH key. 
