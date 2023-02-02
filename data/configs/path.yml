@@ -14,3 +14,6 @@ nav:
     - Submitting HTC Workloads With HTCondor:
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/quickstart.md
       - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
+    - Software
+      - "Using conda to Run Python on the OSPool": 
+software_tools/local_installation/conda-environments.md
