@@ -6,13 +6,24 @@ ospool:
 OSG User Training (regular/monthly) 
 ====================================
 
-# Sign Up for Upcoming Trainings!
+All User Training sessions are offered on Tuesdays from 2:30-4pm ET (11:30am - 1pm PT). New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. 
 
-All User Training sessions are offered from 2:30-4pm ET (and usually on Tuesdays). New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. 
+Registration opens a month before the training date. You can register for all of our trainings via setmore: [Register here](https://osgfacilitation.setmore.com/bookclass)
 
-* Tuesday, January 17: New User Training, [Register here](https://osgfacilitation.setmore.com/bookclass)
+## Spring 2023 Training Schedule
 
-Our full 2023 training schedule will appear soon! 
+* Tuesday, February 7: New User Training
+* Tuesday, February 21: Access the OSPool via Jupyter Hub
+* Tuesday, March 7: New User Training
+* Tuesday, March 21: Containers on the OSPool
+* Tuesday, April 4: New User Training
+* Tuesday, April 18: Workflows with Pegasus
+* Tuesday, May 2: New User Training
+* Tuesday, May 16: R on the OSPool
+
+For a calendar version of these events see: 
+* [Google Calendar](https://calendar.google.com/calendar/embed?src=c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com&ctz=America%2FChicago)
+* [Download and add to your calendar app](https://calendar.google.com/calendar/ical/c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com/public/basic.ics)
 
 # Materials
 
