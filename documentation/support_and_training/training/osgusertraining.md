@@ -13,13 +13,13 @@ Registration opens a month before the training date. You can register for all of
 ## Spring 2023 Training Schedule
 
 * Tuesday, February 7: New User Training
-* Tuesday, February 21: Using the OSPool via Jupyter
+* Tuesday, February 21: Access the OSPool via Jupyter Hub
 * Tuesday, March 7: New User Training
-* Tuesday, March 21: Use Containers on the OSPool
+* Tuesday, March 21: Containers on the OSPool
 * Tuesday, April 4: New User Training
 * Tuesday, April 18: Workflows with Pegasus
 * Tuesday, May 2: New User Training
-* Tuesday, May 16: Use R on the OSPool
+* Tuesday, May 16: R on the OSPool
 
 For a calendar version of these events see: 
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com&ctz=America%2FChicago)
