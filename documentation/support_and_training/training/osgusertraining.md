@@ -6,7 +6,7 @@ ospool:
 OSG User Training (regular/monthly) 
 ====================================
 
-All User Training sessions are offered on Tuesdays from 2:30-4pm ET (11:30am - 1pm PT). New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. 
+All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am - 1pm PT)**. New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. 
 
 Registration opens a month before the training date. You can register for all of our trainings via setmore: [Register here](https://osgfacilitation.setmore.com/bookclass)
 
@@ -22,6 +22,7 @@ Registration opens a month before the training date. You can register for all of
 * Tuesday, May 16: R on the OSPool
 
 For a calendar version of these events see: 
+
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com&ctz=America%2FChicago)
 * [Download and add to your calendar app](https://calendar.google.com/calendar/ical/c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com/public/basic.ics)
 
