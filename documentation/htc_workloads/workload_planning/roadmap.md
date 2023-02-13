@@ -101,7 +101,7 @@ discussed the relevant approaches, when to use them, and where to stage data for
 
 ## Assign the Appropriate Job Duration Category
 
-Jobs running in the OSPool may be interrupted at any time, and will be re-run by HTCondor, unless a single execution of a job exceeds the allowed duration. Jobs expected to take longer than 10 hours will need to identify themselves as 'Long' according to our [Job Duration policies](../../../htc_workloads/workload_planning/roadmap/). Remember that jobs expected to take longer than 20 hours are not a good fit for the OSPool (see [Is the Open Science Pool for You?](../../../overview/account_setup/is-it-for-you/)) without implementing self-checkpointing (further below).
+Jobs running in the OSPool may be interrupted at any time, and will be re-run by HTCondor, unless a single execution of a job exceeds the allowed duration. Jobs expected to take longer than 10 hours will need to identify themselves as 'Long' according to our [Job Duration policies](../../../htc_workloads/workload_planning/jobdurationcategory/). Remember that jobs expected to take longer than 20 hours are not a good fit for the OSPool (see [Is the Open Science Pool for You?](../../../overview/account_setup/is-it-for-you/)) without implementing self-checkpointing (further below).
 
 # 5. Scale Up
 
