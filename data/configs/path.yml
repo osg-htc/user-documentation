@@ -14,3 +14,14 @@ nav:
     - Submitting HTC Workloads With HTCondor:
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/quickstart.md
       - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
+      - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing.md
+    - Specific Resource Needs:
+      - "GPUs": htc_workloads/specific_resources/gpus.md
+    - Software:
+      - "Containers - Overview": htc_workloads/using_software/containers.md
+      - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
+      - "Containers - Docker": htc_workloads/using_software/containers-docker.md
+      - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
+    - Automated Workflows:
+      - "Submit Workflows with HTCondor's DAGMan ": htc_workloads/automated_workflows/dagman-workflows.md
+
