@@ -20,7 +20,7 @@ The PATh team is here to help! As part of the consulting services offered to any
 decompose your workload to ensembles of jobs and generate resource estimates for the various tasks in the ensemble. 
 
 Interested Investigators are encouraged to reach out the PATh support staff at 
-[credit-accounts@path-cc.io](credit-accounts@path-cc.io) with questions regarding PATh resources, 
+[credit-accounts@path-cc.io](mailto:credit-accounts@path-cc.io) with questions regarding PATh resources, 
 using HTC or estimating credit needs.
 
 ## 2. Submit Credit Request
