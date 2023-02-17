@@ -1,173 +1,164 @@
-The /public location is a mount of the OSG Connect origin filesystem. It is mounted to the OSG Connect login nodes only so that users can appropriately stage large job inputs or retrieve outputs via the login nodes.
-
 ---
-ospool:
-  path: htc_workloads/managing_data/data-transfer.md
+path:
+  path: htc_workloads/using_data/data-transfer.md
 ---
 
-# Data Staging and Transfer to Jobs¶
-
-Due to the distributed configuration of the OSG, more often than not, your jobs will need to bring along a copy (i.e. transfer a copy) of data, code, packages, software, etc. from the Access Point (e.g. login04.osgconnect.net) where the job is submitted to the OSPool execute node where the job will run. This requirement applies to all files that are needed to successfully execute and complete your job that do not otherwise exist on OSG execute servers. This guide describes where OSG Connect users can store files on OSG-operatated Access Points, and how to use these files within jobs. 
+# Data Staging and Transfer to Jobs
 
 Table of Contents: 
 [TOC]
 
 ## Overview
 
-OSG-managed Access Points have two locations for uploading data and software files that are needed for running  your jobs, `/home` and `/protected`. Where you store your files and how your files are made accessible to your jobs depends on how much data is needed or produced by your jobs.
+As a distributed system, jobs in the PATh Facility can run in different physical  locations, where the computers that are executing jobs don't have direct access to the files placed on the Access Point (e.g. in a home directory on ap1.facility.path-cc.io). In order to run on this kind of distributed system, jobs need to "bring along" the data, code, packages, and other files from the Access Point (where the job is submitted) to the PATh Facility execute points (where the job will run).  HTCondor's file transfer tools and plugins make this possible; input and output files are specified as part of the job submission and then moved to and from the execution location. 
+
+This guide describes where to place files on PATh Facility Access Points, and how to use these files within jobs. 
+
+# Transferring Data To/From HTCondor Jobs
+
+There are two spaces for placing files on the PATh Facility Access Point, and each has a corresponding transfer method for referencing files in the submit file. 
+
+<table>
+<tr>
+  <th>Location</th>
+  <th>File Sizes</th>
+  <th>Transfer Method</th>
+  <th>Initial Quota</th>
+</tr>
+<tr>
+  <td rowspan="2"><code>/home/$USER</code></td>
+  <td>Input: less than 200Mb / file / job</td>
+  <td rowspan="2"> </td>
+  <td rowspan="2">50GB</td>
+</tr>
+<tr>
+  <td>Output: less than 1-2Gb / file / job</td>
+</tr>
+<tr>
+  <td rowspan="2"><code>/data/$USER</code></td>
+  <td>greater than 200Mb / file / job OR shared files used by many jobs </td>
+  <td rowspan="2"> </td>
+  <td rowspan="2">500GB / 250k items</td>
+</tr>
+<tr>
+  <td> greater than 1-2Gb / file / job</td>
+</tr>
+</table>
+
+## Transfer Smaller Job Input and Output Files to/from /home 
+
+You should use your `/home` directory to stage job files where: 
+* individual input files per job are less than 200MB per file, and if there 
+are multiple files, they total less than 500MB
+* output files per job are less than 1-2GB per file
+
+### Input Files
+
+To transfer input files from `/home`, list the files by name in the `transfer_input_files` submit file option. You can use either absolute or relative paths to your input files. Multiple files can be specified using a comma-separated list. 
+
+Some examples: 
+
+* Transferring multiple files from the submission directory
+	```
+	transfer_input_files = my_data.csv, my_software.tar.gz, my_script.py
+	```
+* Transferring a file using an absolute path, useful if a file is not in the same directory tree as your submit file: 
+	```
+	transfer_input_files = /home/username/path/to/my_software.tar.gz
+	```
+
+### Output Files
+
+By default, files created by your job will automatically be returned to your `/home` directory. If you would like a file to return to a diffrent subfolder within your `/home` directory, use HTCondor's `transfer_output_remaps` option. 
+
+<!--For more information, see below.
+Link to different guide??? --> 
+
+## Transfer Larger Job Input and Output Files to/from `/path-facility/data`
+
+You should use your `/path-facility/data` directory to stage job files where: 
+* individual input files per job are greater than 200MB per file
+* an input file (of any size) is used by many jobs
+* output files per job are greater than 1-2GB per file
+
+> **Important Note:** 
+> Large files stored in `/path-facility` are cached, so it is important to use a 
+> descriptive file name (possibly using version names or dates within the file name), or 
+> a directory structure with unique names to 
+> ensure you know what version of the file you are using within your job. 
+
+### Input Files
+
+To transfer input files from `/path-facility/data`, use the `stash:///` plugin syntax as part of the `transfer_input_files` submit file option. 
+
+Some examples: 
+* Transferring one file from `/path-facility/data`
+	```
+	transfer_input_files = stash:///path-facility/data/<username>/InFile.txt
+	```
+* When using multiple files from `/path-facility/data`, it can be useful to use 
+HTCondor submit file variables to make your list of files more readable: 
+	```
+	#Define a variable (example: STASH_LOCATION) equal to the path you would like 
+	files pulled from, and call this variable using $(variable) 
+	STASH_LOCATION = stash:///ospool/protected/<username>
+	transfer_input_files = $(STASH_LOCATION)/InputFile.txt, $(STASH_LOCATION)/database.sql
+	```
+
+### Output Files
+
+If you would like a job to transfer a large file back to your `/path-facility/data` directory, in your HTCondor submit file, use the same `stash:///` plugin syntax as for input files, but with the HTCondor `transfer_output_remaps` submit file option. When 
+transferring multiple files back to `/path-facility/data` in this way, you will separate
+the different files/remaps with a semi-colon. 
+
+Some examples: 
+* Transferring one output file (`OutFile.txt`) back to `/path-facility/data`: 
+	```
+	transfer_output_remaps = "OutFile.txt=stash:///ospool/protected/<username>/OutFile.txt"
+	```
+* When using multiple files from `/path-facility/data`, it can be useful to use 
+HTCondor submit file variables to make your list of files more readable. Also note 
+the semi-colon separator in the list of output files. 
+	```
+	#Define a variable (example: STASH_LOCATION) equal to the path you would like 
+	files transferred to, and call this variable using $(variable)
+	STASH_LOCATION = stash:///ospool/protected/<username>
+	transfer_output_remaps = "file1.txt = $(STASH_LOCATION)/file1.txt; file2.txt = $(STASH_LOCATION)/file2.txt; file3.txt = $(STASH_LOCATION)/file3.txt"
+	```
+
+# Moving Data to/from PATh Facility Access Points
+
+In general, common Unix tools such as rsync, scp, PuTTY, WinSCP, gFTP, etc. can be used to upload data from your computer or another server to your PATh Facility Access Point or to download files. Files should be uploaded/created and staged in `/home` or `/path-facility` for preparation to use in jobs (as described above). 
+
+# Check Your Quota and Available Space
+
+## `/home`
+
+To check your home quota and usage, run: 
+
+	$ quota -vs
+
+## `/path-facility/data`
+
+*coming soon!*
+
+
+## Request Quota Increase
+
+Contact us at support@path-cc.io if you think you need a quota increase. We have space for substantial workloads when communicated with in advance. 
+
+# Data Policies
+
+  * *Jobs should only be submitted with condor_submit from /home*, so HTCondor submit files should only be created in `/home`
+
 
 In general, users are responsible for managing data in these folders and for using appropriate mechanisms for delivering data to/from jobs. Each is controlled with a quota and should be treated as temporary storage for *active* job execution. OSG Connect has no routine backup of data in these locations, and users should remove old data after jobs complete. **If you think you'll need more space for a set of concurrently-queued jobs, even after cleaning up old data, please send a request to [support@osg-htc.org](mailto:support@osg-htc.org)!**
 
-**Notice: Depreciation of `/public`**
-Prior to January 2023, OSG Connect users stored files in `/home` and `/public` directories. Users with accounts created prior to 2023 are highly encouraged to move files in `/public` to `/protected` to prepare for the eventual depreciation of `/public`. Users with accounts created in January 2023 and after should only use `/home` and `/protected`.
-
-# Uploading/Downloading Data to/from OSG-operated Access Points
-In general, common Unix tools such as rsync, scp, PuTTY, WinSCP, gFTP, etc. can be used to upload data from your computer or another server to your OSG Access Point (e.g. `login05.osgconnect.net`), or to download files from your OSG Access Point. Files should be uploaded/created and staged in `/home` or `/protected` for preparation to use in jobs. 
-
-# Transferring Data To/From HTCondor Jobs
-Use the following table to determine where to stage input files for jobs and where to store output files from jobs:  
-
-|  Location  | Job Input/Output Data Sizes   | Transfer to/from Jobs | Initial Quota |
-| :---------- | :----------------------------------- | :------ | :------ |
-| `/home`    | Less than 500 MB per job  | **Input Files**:`transfer_input_files = InFile.txt`<br>**Output Files**: Files created in job return to `/home` by default. |  50 GB |
-| `/protected` | Greater than 500 MB per job | **Input Files**: `transfer_input_files = stash:///ospool/protected/<username>/InFile.txt`<br>**Output Files**: `transfer_output_remaps = stash:///stash:///ospool/protected/<username>/OutFile.txt` | 500 GB |
-
-**Important Details:** 
 * Data stored within `/home` and `/protected` is available only to your jobs, but highly sensitive data (e.g. HIPPA) should never be uploaded to OSG resources. 
-* Large files stored in `/protected` are cached, so it is important to use a descriptive file name (possibly using version names or dates within the file name) to ensure you know what version of the file you are using within your job. 
 
 
-## Transfer Job Input and Output Files to/from /home 
-
-**`/home`**
-  * *Jobs should only be submitted with condor_submit from /home*, so HTCondor submit files should only be created in `/home`
-  * *Job Input Files*: use HTCondor's `transfer_input_files` submit file option with either absolute or relative paths to your input files. For example, `transfer_input_files = /home/<username>/InFile.txt`
-
-Multiple files can be specified using a comma-separated list, for example:
-
-```
-transfer_input_files = my_data.csv, my_software.tar.gz, my_script.py
-```
-
-When using transfer_input_files to transfer files located in `/home`, keep in mind that the path to the file is relative to the location of the submit file. If you have files located in a different /home subdirectory, we recommend specifying the full path to those files, which is also a matter of good practice, for example:
-
-```
-transfer_input_files = /home/username/path/to/my_software.tar.gz
-```
-
-
-
-
-
-
-
-  * *Job Output Files*: By default, files created by your job will automatically be returned to your `/home` directory. If you would like a file to return to a diffrent subfolder within your `/home` directory, use HTCondor's `transfer_output_remaps` option. For more information, see below. 
-
-## Transfer Job Input and Output Files to/from `/protected`
-
-**`/protected`** 
-  * *Job Input Files*: Transfer files from /protected using `transfer_input_files = stash:///ospool/protected/<username>/InFile.txt`. This combines HTCondor's `transfer_input_files` with a stash file transfer protocol, `stash:///`. 
-  * *Job Output Files*: If you would like a job to transfer a large file back to your `/protected` directory, in your HTCondor submit file, use `transfer_output_remaps` with the stash transfer mechanism (`stash:///ospool/protected/<username>`). For example, `transfer_output_remaps = stash:///ospool/protected/<username>/OutFile.txt`. 
-
-# HTCondors Transfer_output_remaps 
-For output, users can use the `transfer_output_remaps` option in their job's submit file to specify what (1) path to save a file to and/ or (2) what name to save it under. Using this approach, it is possible to save files back to specific locations in `/home` or `/protected`. 
-
-The syntax for `transfer_output_remaps` is:
-
-```
-transfer_output_remaps = "Output.txt = path/to/save/file/under/Output.txt"
-```
-
-When saving large output files back to `/protected`, it is necessary to combine `transfer_output_remaps` with a stash transfer mechanism. Therefore, the path provided will look like:
-
-```
-transfer_output_remaps = "Output.txt = stash:///ospool/protected/<username>/Output.txt"
-```
-
-# Submit File Examples for transferring data in/out of /home and /protected
-
-## Submit File Example for `/protected` Input/Output Files
-
-```
-#Example submit file tranferring data to/from /protected
-executable = myscript.sh
-
-# Transfer an input file from /protected to a job
-transfer_input_files = stash:///ospool/protected/<username>/InputFile.txt
-
-# Transfer a job output file from a job to /protectedd
-transfer_output_remaps = "Output.txt = stash:///osgconnect/public/<username>/Output.txt"
-
-error = job.error
-output = job.output
-log = job.log
-
-requirements = (OSGVO_OS_STRING =?= "RHEL 7")
-
-request_cpus = 1
-request_memory = 1 MB
-request_disk = 1 MB
-
-queue 1
-```
-
-## Submit File Example for many `/protected` Input/Output Files per Job
-
-If you have several output files being sent to `/protected`, you may wish to define a new submit file variable to avoid having to re-write the stash:/// path repeatedly. For example,
-
-```
-#Example submit file tranferring *many* files to/from /protected
-executable = myscript.sh
-
-#Define a variable (example: STASH_LOCATION) equal to the path you would like files saved to/pulled from, and call this variable using $(variable) to transfer input and/or output files  
-STASH_LOCATION = stash:///ospool/protected/<username>
-transfer_input_files = $(STASH_LOCATION)/InputFile.txt
-transfer_output_remaps = "file1.txt = $(STASH_LOCATION)/file1.txt; file2.txt = $(STASH_LOCATION)/file2.txt; file3.txt = $(STASH_LOCATION)/file3.txt"
-
-error = job.error
-output = job.output
-log = job.log
-
-requirements = (OSGVO_OS_STRING =?= "RHEL 7")
-
-request_cpus = 1
-request_memory = 1 MB
-request_disk = 1 MB
-
-queue 1
-```
-
-# Check Your Quota and Available Space
-There are two primary ways to check your remaining `/home` and `/protected` disk space: 
-
-## Option 1: Quota Usage Displayed Upon Login
-Your quota status will be automatically displayed when you login:
-
-Disk utilization for username:
-/protected   : [                        ] 0% (0/500000 MB)
-/home     : [ #                      ] 4% (2147/53687 MB)
-
-
-## Option 2: Display usage with `quota` command 
-You can also display your quota usage at any time using the command `quota` while connected to your login node.
-
-## Request Quota Increase
-Contact us at support@osg-htc.org if you think you need a quota increase. We can support very large amounts of data!
-  
-# Data Policies
 * **Right to Delete Data:**
 OSG staff reserve the right to monitor and/or remove data without notice to the user if doing so is necessary for ensuring proper use or to quickly fix a performance or security issue. Additionally, users should not use OSG resources or services for long-term data storage. Files and directories that have not been accessed for over six months may be deleted by OSG staff with or without notifying the user. 
 * **Jobs should only be submitted from /home:** Jobs should only ever be submitted from /home, never /protected. Users are also prohibited from making their `/home` directory world-readable due to security concerns. 
-  
-# Phase Out of /public and Stashcp Command
-* **/public phase out:** As of Fall 2022, it is recommended that users use the new `/protected` file storage location instead of `/public`. `/protected` users will still have access to the same amount of data storage space as `/public`, but files will not be publically accessable, will have enhanced security, and other benefits. `/public` will be deprecated in the future. 
-* **Stashcp command phase out:** Historically, output files could be transferred from a job to a `/public` location using the stashcp command within the job's executable, however, this mechanism is no longer encouraged for OSPool users. Instead, jobs should use `transfer_output_remaps` (an HTCondor feature) to transfer output files to `/protected`. By using `transfer_output_remaps`, HTCondor will manage the output data transfer for your jobs. Data transferred via HTCondor is more likely to be transferred successfully and errors with transfer are more likely to be reported to the user. Additionally, users should no longer use `/public`, as it is being replaced by `/protected` and will be depreciated in the future. 
 
 
-
-
-
-# Questions and Get Help
-For additional data information, see the "Data Storage and Transfer" section of our FAQ.
-
-For assistance or questions, please email the OSG Research Facilitation team at support@osg-htc.org.
