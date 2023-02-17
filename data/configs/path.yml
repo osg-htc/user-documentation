@@ -22,6 +22,6 @@ nav:
       - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
       - "Containers - Docker": htc_workloads/using_software/containers-docker.md
       - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
-      - "Using conda to Run Python on the PATh Facility": software_tools/local_installation/conda-environments.md
+      - "Using conda to Run Python on the PATh Facility": htc_workloads/using_software/conda-environments.md
     - Automated Workflows:
       - "Submit Workflows with HTCondor's DAGMan ": htc_workloads/automated_workflows/dagman-workflows.md
