@@ -151,7 +151,7 @@ From here, if you're planning to use this container in OSG, return to our
 Once your Docker image has been published on Docker Hub,
 it needs to be submitted to the OSG Singularity repository
 (`/cvmfs/singularity.opensciencegrid.org/`), which also hosts the
-OSG-provided default images.
+OSG/PATh-provided default images.
 
 To get your images included, please create a git pull request with the
 container identifier in `docker_images.txt` in the
