@@ -73,4 +73,4 @@ The project's resource usage appears in the OSG accounting system, [GRACC](https
 You can see the main OSG Connect dashboard here: [Link to OSG Connect Dashboard](https://gracc.opensciencegrid.org/d/000000099/osg-connect-summary-osgconnect-net-submit-hosts-only?orgId=1)
 
 At the top of that dashboard, there is a set of filters that you can use to examine 
-the number of hours used by your project, specific users, or your institution.
+the number of hours used by your project, or your institution.

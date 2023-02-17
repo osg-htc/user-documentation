@@ -11,10 +11,9 @@ on your OSG usage, please go to:
 
 [https://gracc.opensciencegrid.org/](https://gracc.opensciencegrid.org/)
 
-To drill down on your own project and/or user, go to _Payload Jobs_.
+To drill down on your own project, go to _Payload Jobs_.
 
-Under the _Project_ or _User_ drop-downs, find your project/user. You can select multiple 
-ones.
+Under the _Project_ drop-down, find your project. You can select multiple ones.
 
 In the upper right corner, you can select a different time period. You can then select a
 different _Group By_ time range. For example, if you want data for the last year grouped
