@@ -1,11 +1,10 @@
 ---
 path:
-    path: software_tools/local_installation/conda-environments.md
+    path: htc_workloads/using_software/conda-environments.md
 ---
 
 Using conda to Run Python on the OSPool 
 ====================================
-
 
 The Anaconda/Miniconda distribution of Python is a common tool for installing and managing Python-based software and other tools. 
 
@@ -28,7 +27,7 @@ To use a Miniconda installation on the PATh Facility, create your installation e
 
 # Install Miniconda and Package for Jobs
 
-In this approach, we will create an entire software installation inside Miniconda and then use a tool called `conda pack` to package it up for running jobs.
+This section of the guide goes through the steps needed to create a software installation inside Miniconda and then use a tool called `conda pack` to package it up for running jobs.
 
 ## 1. Create a Miniconda Installation
 
@@ -74,6 +73,7 @@ Once everything is installed, deactivate the environment to go back to the Minic
 > See the [official conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for more information on creating and managing environments with **conda**.
 
 ## 3. Create Software Package
+
 Make sure that your job’s Miniconda environment is created, but deactivated, so that you’re in the “base” Miniconda environment:
 
       (base)[alice@ap1]$ 
@@ -90,8 +90,9 @@ Finally, use `conda pack` to create a zipped tar.gz file of your environment (su
 When this step finishes, you should see a file in your current directory named `env-name.tar.gz`.
 
 ## 4. Check Size of Conda Environment Tar Archive
+
 The tar archive, `env-name.tar.gz`, created in the previous step will be used as input for subsequent job submission. As with all job input files, you should check the size of this Conda environment file. **If >100MB in size, you should NOT transfer the tar ball using `transfer_input_files` from your home directory**. Instead, you should plan to use the 
-`/path-facility/data/$USER` folder, and an `osdf:///` link. 
+`/path-facility/data/$USER` folder, and a `stash:///` link. 
 
 <!--as described in [this guide](../../../htc_workloads/managing_data/stashcache/). Please contact a research computing facilitator at support@osg-htc.org if you have questions about the best option for your jobs.
 
@@ -99,6 +100,7 @@ More information is available at [File Availability with Squid Web Proxy](../../
 -->
 
 ## 5. Create a Job Executable
+
 The job will need to go through a few steps to use this “packed” conda environment; first, setting the `PATH`, then unzipping the environment, then activating it, and finally running whatever program you like. The script below is an example of what is needed (customize as indicated to match your choices above).
 
       #!/bin/bash
@@ -122,10 +124,11 @@ The job will need to go through a few steps to use this “packed” conda envir
       python3 hello.py
 
 ## 6. Submit Jobs
+
 In your submit file, make sure to have the following:
 
 * Your executable should be the the bash script you created in [step 5](#5-create-a-job-executable).
-* Remember to transfer your Python script and the environment `tar.gz` file to the job. If the `tar.gz` file is larger than 100MB, please use the `osdf:///` file delivery mechanism as described above. 
+* Remember to transfer your Python script and the environment `tar.gz` file to the job. If the `tar.gz` file is larger than 100MB, please use the `stash:///` file delivery mechanism as described above. 
       
 # Specifying Exact Dependency Versions
 
