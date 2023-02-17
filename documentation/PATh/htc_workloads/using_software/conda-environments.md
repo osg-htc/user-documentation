@@ -3,7 +3,7 @@ path:
     path: htc_workloads/using_software/conda-environments.md
 ---
 
-Using conda to Run Python on the OSPool 
+Using conda to Run Python on the PATh Facility 
 ====================================
 
 The Anaconda/Miniconda distribution of Python is a common tool for installing and managing Python-based software and other tools. 
