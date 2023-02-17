@@ -72,7 +72,7 @@ Once your build spec is ready, you can "build" the container image by running th
 
     $ apptainer build my-container.sif image.def
 
-Once the image is built, you can copy it to Stash, test it on the login host,
+Once the image is built, you can copy it to a data directory, test it on the Access Point,
 and use it in your HTCondor jobs. This is all described in
 [Containers - Overview][osg-containers].
 
