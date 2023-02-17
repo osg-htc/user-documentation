@@ -1,6 +1,6 @@
 ---
 path:
-    path: htc_workloads/using_software/containers-docker.md
+    path: htc_workloads/containers/containers-docker.md
 ---
 
 Create/Register a Docker Container Image 

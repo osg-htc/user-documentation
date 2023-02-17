@@ -1,12 +1,10 @@
 ---
-ospool:
-  path: htc_workloads/specific_resource/large-memory-jobs.md
+path:
+    path: htc_workloads/specific_resources/large-memory.md
 ---
 
-Large Memory Jobs 
-====================================
-
-
+Large Memory
+============
 
 By default, 2 GB of RAM (aka memory) will be assigned to your jobs. However, some jobs will require 
 additional memory to complete successfully. To request more memory, use the HTCondor *request_memory* 

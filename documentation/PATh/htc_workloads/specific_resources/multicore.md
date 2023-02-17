@@ -1,10 +1,10 @@
 ---
-ospool:
-  path: htc_workloads/specific_resource/multicore-jobs.md
+path:
+    path: htc_workloads/specific_resources/multicore.md
 ---
 
-Multicore Jobs 
-====================================
+Multicore
+=========
 
 Please note, the PATh Facility has limited support for multicore jobs. Multicore jobs
 can be submitted for threaded or OpenMP applications. To request multiple cores
@@ -23,8 +23,3 @@ When submitting multicore jobs please note that you will also have to tell
 your code or application to use the number of cpus requested in your submit 
 file. Do not use core auto-detection as it might detect more cores than what 
 were actually assigned to your job.
-
-
-**MPI Jobs**
-
-For jobs that require MPI, see our [OpenMPI Jobs](../../../htc_workloads/specific_resource/openmpi-jobs/) guide. 

@@ -1,6 +1,6 @@
 ---
 path:
-    path: htc_workloads/using_software/containers.md
+    path: htc_workloads/containers/containers.md
 ---
 
 Software Containers
@@ -36,6 +36,9 @@ container.
 
 ### Exploring Images on the Access Points
 
+** NOTE: as of Feb 17, 2023, /cvmfs is not yet enabled on the access point, and
+the following example will not work. **
+
 Just like it is important to test your codes and jobs at a small scale,
 you should make sure that your container is working correctly. One way
 to explore how OSG sees your container images, is to explore them on
@@ -44,10 +47,6 @@ Apptainer/Singularity "shell" mode. The recommended command line, similar
 to how containers are started for jobs, is:
 
     apptainer shell \
-                --home $PWD:/srv \
-                --pwd /srv \
-                --bind /cvmfs \
-                --contain --ipc --pid \
                 /cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-20.04:latest/
 
 This will give you an interactive shell in an Ubuntu 20.04 container,
