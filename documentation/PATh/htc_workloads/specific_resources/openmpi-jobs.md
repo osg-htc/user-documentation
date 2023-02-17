@@ -1,5 +1,5 @@
 ---
-ospool:
+path:
   path: htc_workloads/specific_resource/openmpi-jobs.md
 ---
 
