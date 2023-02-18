@@ -1,6 +1,6 @@
 ---
 path:
-    path: htc_workloads/using_software/containers-singularity.md
+    path: htc_workloads/containers/containers-singularity.md
 ---
 
 # Apptainer/Singularity Container Images
