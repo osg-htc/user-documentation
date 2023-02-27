@@ -64,7 +64,7 @@ Some examples:
 	```
 	transfer_input_files = my_data.csv, my_software.tar.gz, my_script.py
 	```
-* Transferring a file using an absolute path, useful if a file is not in the same directory tree as your submit file: 
+* Transferring a file using an absolute path is useful if a file is not in the same directory tree as your submit file: 
 	```
 	transfer_input_files = /home/username/path/to/my_software.tar.gz
 	```
