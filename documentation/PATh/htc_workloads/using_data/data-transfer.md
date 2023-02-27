@@ -10,7 +10,7 @@ Table of Contents:
 
 # Overview
 
-As a distributed system, jobs in the PATh Facility can run in different physical  locations, where the computers that are executing jobs don't have direct access to the files placed on the Access Point (e.g. in a home directory on ap1.facility.path-cc.io). In order to run on this kind of distributed system, jobs need to "bring along" the data, code, packages, and other files from the Access Point (where the job is submitted) to the PATh Facility execute points (where the job will run).  HTCondor's file transfer tools and plugins make this possible; input and output files are specified as part of the job submission and then moved to and from the execution location. 
+As a distributed system, jobs in the PATh Facility can run in different physical locations, where the computers that are executing jobs don't have direct access to the files placed on the Access Point (e.g. in a /home directory on ap1.facility.path-cc.io). In order to run on this kind of distributed system, jobs need to "bring along" the data, code, packages, and other files from the Access Point (where the job is submitted) to the PATh Facility execute points (where the job will run).  HTCondor's file transfer tools and plugins make this possible; input and output files are specified as part of the job submission and then moved to and from the execution location. 
 
 This guide describes where to place files on PATh Facility Access Points, and how to use these files within jobs. 
 
