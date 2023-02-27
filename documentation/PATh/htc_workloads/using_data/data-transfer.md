@@ -153,7 +153,7 @@ Contact us at support@path-cc.io if you think you need a quota increase. We have
 
 In general, users are responsible for managing data and for using appropriate mechanisms for delivering data to/from jobs. Each is controlled with a quota and should be treated as temporary storage for *active* job execution. The PATh Facility has no routine backup of data in these locations, and users should remove old data after jobs complete. 
 
-Data stored within `/home` and `/protected` is available only to your jobs, but highly sensitive data (e.g. HIPPA) should never be uploaded to OSG resources. 
+Data stored within `/home` and `/path-facility` is available only to your jobs, but highly sensitive data (e.g. HIPPA) should never be uploaded to OSG resources. 
 
 PATh staff reserve the right to monitor and/or remove data without notice to the user if doing so is necessary for ensuring proper use or to quickly fix a performance or security issue. Additionally, users should not use PATh resources or services for long-term data storage (see above). 
 
