@@ -27,25 +27,25 @@ There are two spaces for placing files on the PATh Facility Access Point, and ea
 </tr>
 <tr>
   <td rowspan="2"><code>/home/$USER</code></td>
-  <td>Input: less than 200Mb / file / job</td>
+  <td>Input: less than 1Gb per job</td>
   <td rowspan="2">file paths in <code>transfer_input_files</code></td>
   <td rowspan="2">50GB</td>
 </tr>
 <tr>
-  <td>Output: less than 1-2Gb / file / job</td>
+  <td>Output: less than 1Gb per job</td>
 </tr>
 <tr>
   <td rowspan="2"><code>/data/$USER</code></td>
-  <td>greater than 200Mb / file / job <br> OR shared files used by many jobs </td>
+  <td>greater than 1Gb per job <br> OR shared files used by many jobs </td>
   <td rowspan="2"><code>stash:///</code> links in <code>transfer_input_files</code></td>
   <td rowspan="2">500GB / 250k items</td>
 </tr>
 <tr>
-  <td> greater than 1-2Gb / file / job</td>
+  <td> greater than 1Gb per job</td>
 </tr>
 </table>
 
-Regardless of where data is placed, jobs should only be submitted with `condor_submit` from `/home`. 
+**Regardless of where data is placed, jobs should only be submitted with `condor_submit` from `/home`.**
 
 ## Transfer Smaller Job Input and Output Files to/from /home 
 
@@ -144,17 +144,15 @@ To check your home quota and usage, run:
 
 *coming soon!*
 
-
 ## Request Quota Increase
 
 Contact us at support@path-cc.io if you think you need a quota increase. We have space for substantial workloads when communicated with in advance. 
 
 # Data Policies
 
-In general, users are responsible for managing data and for using appropriate mechanisms for delivering data to/from jobs. Each is controlled with a quota and should be treated as temporary storage for *active* job execution. The PATh Facility has no routine backup of data in these locations, and users should remove old data after jobs complete. 
+In general, users are responsible for managing data and for using appropriate mechanisms for delivering data to/from jobs. Each space for data is controlled with a quota and should be treated as temporary storage for *active* job execution. The PATh Facility has no routine backup of data in these locations, and users should remove old data after jobs complete. 
 
-Data stored within `/home` and `/path-facility` is available only to your jobs, but highly sensitive data (e.g. HIPPA) should never be uploaded to OSG resources. 
+Data stored within `/home` and `/path-facility/data` is available only to your jobs, but highly sensitive data (e.g. HIPPA) should never be uploaded to OSG resources. 
 
 PATh staff reserve the right to monitor and/or remove data without notice to the user if doing so is necessary for ensuring proper use or to quickly fix a performance or security issue. Additionally, users should not use PATh resources or services for long-term data storage (see above). 
-
 
