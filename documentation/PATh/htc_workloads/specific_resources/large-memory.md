@@ -1,11 +1,10 @@
 ---
-ospool:
-  path: htc_workloads/specific_resource/large-memory-jobs.md
+path:
+    path: htc_workloads/specific_resources/large-memory.md
 ---
 
 Large Memory Jobs 
 ====================================
-
 
 
 By default, 2 GB of RAM (aka memory) will be assigned to your jobs. However, some jobs will require 
@@ -24,5 +23,3 @@ Alternatively, you can define a memory request using standard units
 
 We recommend always explictly defining the byte units in your *request_memory* statement.
 
-Please note that the PATh Facility has limited resources available for large memory jobs. Requesting jobs with 
-higher memory needs will results in longer than average queue times for these jobs.

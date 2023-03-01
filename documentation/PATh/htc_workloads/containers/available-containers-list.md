@@ -1,6 +1,6 @@
 ---
 path:
-    path: htc_workloads/using_software/available-containers-list.md
+    path: htc_workloads/containers/available-containers-list.md
 ---
 
 Predefined Containers 

@@ -41,6 +41,7 @@ The most recent version of our New User Training materials are here:
 
 As we introduce new training topics, we will add materials to this page. 
 
+
 ### Organizing and Submitting HTC Workloads
 
 The most recent version of these training materials are here: 
@@ -48,11 +49,13 @@ The most recent version of these training materials are here:
 * [Slides](https://docs.google.com/presentation/d/1auCJfqzc0ZckeTr-QCILaDizsKPsPTli0wTCbluSswY)
 * [Wordcount Frequency Tutorial](https://github.com/OSGConnect/tutorial-organizing)
 
+
 ### Using Containerized Software on the Open Science Pool
 
 The most recent version of these training materials are here:
 
 * [Slides](https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing)
+
 
 ### Software Portability on the Open Science Pool
 
@@ -64,3 +67,23 @@ The most recent version of these training materials are here:
     * [Using Julia on the OSPool](../../../software_examples/other_languages_tools/julia-on-osg/)
     * [High Throughput BWA Read Mapping](../../../software_examples/bioinformatics/tutorial-bwa/)
 
+
+### Access the OSPool via Jupyter Interface
+
+The most recent version of these training materials are here:
+
+* [Slides](https://docs.google.com/presentation/d/1UCpS1iQ3tTaIIdm2OaF1kYbKaAsFz-vN/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true)
+
+
+### Bioinformatics Analyses on the OSPool: A BWA Example
+
+The most recent version of these training materials are here:
+
+* [Slides](https://docs.google.com/presentation/d/1_6uI7qG2nHHOynal8tinrHy2MCTkTbac/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true)
+
+
+### HTCondor Tips & Tricks: Using condor_q and condor_history to Learn about Your Jobs
+
+The most recent version of these training materials are here:
+
+* [Slides](https://docs.google.com/presentation/d/1AWAOmtwJ68KBSJPYtp6agnB2d-2iTCG5/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true)
