@@ -50,9 +50,9 @@ Regardless of where data is placed, jobs should only be submitted with `condor_s
 ## Transfer Smaller Job Input and Output Files to/from /home 
 
 You should use your `/home` directory to stage job files where: 
-* individual input files per job are less than 200MB per file, and if there 
-are multiple files, they total less than 500MB
-* output files per job are less than 1-2GB per file
+* individual input files per job are less than 1GB per file, and if there 
+are multiple files, they total less than 1GB
+* output files per job are less than 1GB per file
 
 ### Input Files from `/home`
 
@@ -79,9 +79,9 @@ Link to different guide??? -->
 ## Transfer Larger Job Input and Output Files to/from `/path-facility/data`
 
 You should use your `/path-facility/data` directory to stage job files where: 
-* individual input files per job are greater than 200MB per file
+* individual input files per job are greater than 1GB per file
 * an input file (of any size) is used by many jobs
-* output files per job are greater than 1-2GB per file
+* output files per job are greater than 1GB per file
 
 > **Important Note:** 
 > Large files stored in `/path-facility/data` are cached, so it is important to use a 
