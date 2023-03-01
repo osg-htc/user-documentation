@@ -26,5 +26,7 @@ nav:
       - "Containers - Apptainer/Singularity": htc_workloads/containers/containers-singularity.md
       - "Containers - Docker": htc_workloads/containers/containers-docker.md
       - "Containers - Predefined List": htc_workloads/containers/available-containers-list.md
+    - Using Data and Job Files: 
+      - "Data Staging and Transfer to Jobs": htc_workloads/using_data/data-transfer.md
     - Automated Workflows:
       - "Submit Workflows with HTCondor's DAGMan ": htc_workloads/automated_workflows/dagman-workflows.md
