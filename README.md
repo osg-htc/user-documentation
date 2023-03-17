@@ -134,7 +134,7 @@ docker run -it -p 8010:8000 -v ${PWD}:/docs/user-documentation hub.opensciencegr
 
 **PATh**
 ```shell
-docker run -it -p 8011:8000 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/path-portal-documentation:latest
+docker run -it -p 8011:8011 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/path-portal-documentation:latest
 ```
 
 [localhost:8011](http://0.0.0.0:8011/documentation/)
