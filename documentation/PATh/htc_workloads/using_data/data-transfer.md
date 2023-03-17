@@ -61,13 +61,9 @@ To transfer input files from `/home`, list the files by name in the `transfer_in
 Some examples: 
 
 * Transferring multiple files from the submission directory
-	```
-	transfer_input_files = my_data.csv, my_software.tar.gz, my_script.py
-	```
+		transfer_input_files = my_data.csv, my_software.tar.gz, my_script.py
 * Transferring a file using an absolute path is useful if a file is not in the same directory tree as your submit file: 
-	```
-	transfer_input_files = /home/username/path/to/my_software.tar.gz
-	```
+		transfer_input_files = /home/username/path/to/my_software.tar.gz
 
 ### Output Files to `/home`
 
@@ -94,18 +90,19 @@ You should use your `/path-facility/data` directory to stage job files where:
 To transfer input files from `/path-facility/data`, use the `stash:///` plugin syntax as part of the `transfer_input_files` submit file option. 
 
 Some examples: 
+
 * Transferring one file from `/path-facility/data`
-	```
-	transfer_input_files = stash:///path-facility/data/<username>/InFile.txt
-	```
+
+		transfer_input_files = stash:///path-facility/data/<username>/InFile.txt
+
 * When using multiple files from `/path-facility/data`, it can be useful to use 
-HTCondor submit file variables to make your list of files more readable: 
-	```
-	# Define a variable (example: STASH_LOCATION) equal to the path you would like 
-	# files pulled from, and call this variable using $(variable) 
-	STASH_LOCATION = stash:///ospool/protected/<username>
-	transfer_input_files = $(STASH_LOCATION)/InputFile.txt, $(STASH_LOCATION)/database.sql
-	```
+	HTCondor submit file variables to make your list of files more readable: 
+
+		# Define a variable (example: STASH_LOCATION) equal to the 
+		# path you would like files transferred to, and call this 
+		# variable using $(variable)
+		STASH_LOCATION = stash:///path-facility/data/<username>
+		transfer_input_files = $(STASH_LOCATION)/InputFile.txt, $(STASH_LOCATION)/database.sql
 
 ### Output Files to `/path-facility/data`
 
@@ -114,19 +111,20 @@ transferring multiple files back to `/path-facility/data` in this way, you will 
 the different files/remaps with a semi-colon. 
 
 Some examples: 
+	
 * Transferring one output file (`OutFile.txt`) back to `/path-facility/data`: 
-	```
-	transfer_output_remaps = "OutFile.txt=stash:///ospool/protected/<username>/OutFile.txt"
-	```
+
+		transfer_output_remaps = "OutFile.txt=stash:///ospool/protected/<username>/OutFile.txt"
+
 * When using multiple files from `/path-facility/data`, it can be useful to use 
-HTCondor submit file variables to make your list of files more readable. Also note 
-the semi-colon separator in the list of output files. 
-	```
-	# Define a variable (example: STASH_LOCATION) equal to the path you would like 
-	# files transferred to, and call this variable using $(variable)
-	STASH_LOCATION = stash:///ospool/protected/<username>
-	transfer_output_remaps = "file1.txt = $(STASH_LOCATION)/file1.txt; file2.txt = $(STASH_LOCATION)/file2.txt; file3.txt = $(STASH_LOCATION)/file3.txt"
-	```
+	HTCondor submit file variables to make your list of files more readable. Also note 
+	the semi-colon separator in the list of output files. 
+
+		# Define a variable (example: STASH_LOCATION) equal to the 
+		# path you would like files transferred to, and call this 
+		# variable using $(variable)
+		STASH_LOCATION = stash:///path-facility/data/<username>
+		transfer_output_remaps = "file1.txt = $(STASH_LOCATION)/file1.txt; file2.txt = $(STASH_LOCATION)/file2.txt; file3.txt = $(STASH_LOCATION)/file3.txt"
 
 # Moving Data to/from PATh Facility Access Points
 
