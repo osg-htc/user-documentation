@@ -92,11 +92,15 @@ To transfer input files from `/path-facility/data`, use the `stash:///` plugin s
 Some examples: 
 
 * Transferring one file from `/path-facility/data`
+
 		transfer_input_files = stash:///path-facility/data/<username>/InFile.txt
+
 * When using multiple files from `/path-facility/data`, it can be useful to use 
 	HTCondor submit file variables to make your list of files more readable: 
-		# Define a variable (example: STASH_LOCATION) equal to the path you would like 
-		# files pulled from, and call this variable using $(variable) 
+
+		# Define a variable (example: STASH_LOCATION) equal to the 
+		# path you would like files transferred to, and call this 
+		# variable using $(variable)
 		STASH_LOCATION = stash:///path-facility/data/<username>
 		transfer_input_files = $(STASH_LOCATION)/InputFile.txt, $(STASH_LOCATION)/database.sql
 
@@ -109,12 +113,16 @@ the different files/remaps with a semi-colon.
 Some examples: 
 	
 * Transferring one output file (`OutFile.txt`) back to `/path-facility/data`: 
+
 		transfer_output_remaps = "OutFile.txt=stash:///ospool/protected/<username>/OutFile.txt"
+
 * When using multiple files from `/path-facility/data`, it can be useful to use 
 	HTCondor submit file variables to make your list of files more readable. Also note 
 	the semi-colon separator in the list of output files. 
-		# Define a variable (example: STASH_LOCATION) equal to the path you would like 
-		# files transferred to, and call this variable using $(variable)
+
+		# Define a variable (example: STASH_LOCATION) equal to the 
+		# path you would like files transferred to, and call this 
+		# variable using $(variable)
 		STASH_LOCATION = stash:///path-facility/data/<username>
 		transfer_output_remaps = "file1.txt = $(STASH_LOCATION)/file1.txt; file2.txt = $(STASH_LOCATION)/file2.txt; file3.txt = $(STASH_LOCATION)/file3.txt"
 
