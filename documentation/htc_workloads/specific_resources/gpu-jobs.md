@@ -25,10 +25,6 @@ attributes). For example:
 
 Currently, a job can only use 1 GPU at the time.
 
-You should only request a GPU if your software has been written to use a GPU. It is 
-also worth running test jobs on a GPU versus CPUs-only, to observe the amount of 
-speed up. 
-
 ## Specific GPU Requests
 
 HTCondor records different GPU attributes that can be used to select 
@@ -57,16 +53,31 @@ in order to access the greatest amount of computing capacity.**
 
 # Available GPUs
 
-Just like CPUs, GPUs are shared with the OSG community only when the
-resource is idle. Therefore, we do not know exactly what resources are
-available at what time. When requesting a GPU job, you might land on one
-of the following types of GPUs:
+## Capacity
+
+There are multiple OSPool contributors providing GPUs on a regular basis to the OSPool. 
+Some of these contributors will make their GPUs available only when there is demand 
+in the job queue, so after initial small-scale job testing, we strongly recommend 
+submitting a signficant batch of test jobs to explore 
+how much throughput you can get in the system as a whole. 
+
+Also, **some members of the OSPool will only run GPU jobs if the job 
+uses a container** (see note about software below). 
+
+## GPU Types
+
+Because the composition of the OSPool can change from day to day, 
+we do not know exactly what specific GPUs are
+available at any given time. Based on previous GPU job executions, 
+you might land on one of the following types of GPUs:
 
 * GeForce GTX 1080 Ti (GPUs\_Capability: 6.1)
 * V100 (GPUs\_Capability: 7.0)
+* GeForce GTX 2080 Ti (GPUs\_Capability: 7.5)
 * Quadro RTX 6000 (GPUs\_Capability: 7.5)
 * A100 (GPUs\_Capability: 8.0)
 * A40 (GPUs\_Capability: 8.6)
+* GeForce RTX 3090 (GPUs\_Capability: 8.6)
 
 # Software and Data Considerations
 
