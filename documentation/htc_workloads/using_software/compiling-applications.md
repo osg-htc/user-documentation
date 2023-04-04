@@ -3,11 +3,8 @@ ospool:
   path: htc_workloads/using_software/compiling-applications.md
 ---
 
-Compiling Software for OSG Connect 
+Compiling Software
 ====================================
-
-
-# Compiling Software for OSG Connect
 
 ## Introduction
 
