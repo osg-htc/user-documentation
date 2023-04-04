@@ -18,7 +18,7 @@ started with your first workload, with helpful links to our documentation pages.
 
 This guide assumes that you have applied for an OSG account and 
 have been approved after meeting with an OSG Research Computing Facilitator. 
-If you don't yet have an account, you can apply for one at **<osgconnect.net>**
+If you don't yet have an account, you can apply for one at <https://portal.osg-htc.org/application>
 or [contact us](mailto:support@osg-htc.org) with any questions you have. 
 
 Learning how to get started on the OSG does not need to end with this document or 
