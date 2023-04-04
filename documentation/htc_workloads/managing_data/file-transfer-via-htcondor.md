@@ -3,31 +3,15 @@ ospool:
   path: htc_workloads/managing_data/file-transfer-via-htcondor.md
 ---
 
-Transfer Input Files Up To 100MB In Size 
-====================================
+Transfer to/from /home
+=======================
 
- 
-
-# Overview
-
-Due to the distributed configuration of the OSG, more often than not, 
-your jobs will need to bring along a copy (i.e. transfer a copy) of 
-data, code, packages, software, etc. from the login node where the job 
-is submitted to the execute node where the job will run. This requirement 
-applies to any and all files that are needed to successfully execute and 
-complete your job that do not otherwise exist on OSG execute servers.
-
-**This guide will describe steps and important considerations for transferring 
-input files that are <100MB in size via the HTCondor submit file.**   
-
-# Important Considerations
-
-As described in the [Introduction to Data Management on OSG Connect](../../../htc_workloads/managing_data/osgconnect-storage/) 
-any data, files, or even software that is <100MB should be staged in 
+As described in the [Overview: Data Staging and Transfer to Jobs](../overview/) 
+any data, files, or even software that is <1GB should be staged in 
 your `/home` directory on your login node. Files in your 
 `/home` directory can be transferred to jobs via your HTCondor submit file.
 
-# Transfer Files From `/home` Using HTCondor
+## Transfer Files From `/home` Using HTCondor
 
 To transfer files from your `/home` directory use the `transfer_input_files` 
 statement in your HTCondor submit file. For example:
@@ -56,10 +40,84 @@ of good practice, for example:
 
 	transfer_input_files = /home/username/path/to/my_software.tar.gz
 
-Where `username` refers to your OSG Connect username.
+Note that the path is not replicated on the remote side. The job will only
+see `my_software.tar.gz` in the top level job directory.
 
-# Get Help
+Where `username` refers to your access point username.
 
-For assistance or questions, please email the OSG Research Facilitation team
-at [support@osg-htc.org](mailto:support@osg-htc.org) or visit the 
-[help desk and community forums](http://support.opensciencegrid.org).
+
+## Use HTCondor To Transfer Outputs
+
+By default, HTCondor will transfer any new or modified files in the     
+job's top-level directory back to your `/home` directory location from  
+which the `condor_submit` command was performed. **This behavior only   
+applies to files in the top-level directory of where your job executes, 
+meaning HTCondor will ignore any files created in subdirectories of the 
+job's top-level directory.** Several options exist for modifying this   
+default output file transfer behavior, including those described in     
+this guide.                                                             
+
+### What is the top-level directory of a job?
+
+Before executing a job, HTCondor will create a new directory on the execute 
+node just for your job - this is the top-level directory of the job and the 
+path is stored in the environment variable `_CONDOR_SCRATCH_DIR`. All of the 
+input files transferred via `transfer_input_files` will first be written to 
+this directory and it is from this path that a job starts to execute. After 
+a job has completed the top-level directory and all of it's contents are 
+deleted.
+
+### What if my output file(s) are not written to the top-level directory?
+
+If your output files are written to a subdirectory, use the steps described 
+[below](#group-multiple-output-files-for-convenience) to convert the output 
+directory to a "tarball" that is written to the top-level directory. 
+
+Alternatively, you can include steps in the executable bash script of 
+your job to move (i.e. `mv`) output files from a subdirectory to 
+the top-level directory. For example, if there is an output file that 
+needs to be transferred back to the login node named `job_output.txt` 
+written to `job_output/`:
+
+	#! /bin/bash
+	
+	# various commands needed to run your job
+	
+	# move csv files to scratch dir
+	mv job_output/job_output.txt $_CONDOR_SCRATCH_DIR
+
+### Group Multiple Output Files For Convenience
+
+If your jobs will generate multiple output files, we recommend combining
+all output into a compressed tar archive for convenience, particularly
+when transferring your results to your local computer from your login
+node. To create a compressed tar archive, include commands in your your
+bash executable script to create a new subdirectory, move all of the
+output to this new subdirectory, and create a tar archive. For example:
+
+	#! /bin/bash
+	
+	# various commands needed to run your job
+	
+	# create output tar archive
+	mkdir my_output
+	mv my_job_output.csv my_job_output.svg my_output/
+	tar -czf my_job.output.tar.gz my_ouput/
+
+The example above will create a file called `my_job.output.tar.gz` that
+contains all the output that was moved to `my_output`. Be sure to create
+`my_job.output.tar.gz` in the top-level directory of where your job
+executes and HTCondor will automatically transfer this tar archive back
+to your `/home` directory.
+
+### Select Specific Output Files To Transfer to `/home` Using HTCondor
+
+As described above, HTCondor will, by default, transfer any files
+that are generated during the execution of your job(s) back to your
+`/home` directory. If your job(s) will produce multiple output files but
+you only need to retain a subset of these output files, we recommend
+deleting the unrequired output files or moving them to a subdirectory as
+a step in the bash executable script of your job - only the output files
+that remain in the top-level directory will be transferred back to your
+`/home` directory.
+

@@ -82,18 +82,18 @@ within our EL8 container:
 If you already have software in the form of a `.sif` Apptainer/Singuilarity file,
 and that file is within the [supported data sizes][data-staging], you
 can stage the .sif file with your job. The image will be resused for
-each job, and thus the preferred transfer method is [Stash][stash].
-Store the .sif file under `/protected/$USERNAME/`, and then use the stash
+each job, and thus the preferred transfer method is [OSDF][osdf].
+Store the .sif file under `/protected/$USERNAME/`, and then use the OSDF
 url directly in the `+SingularityImage` attribute. Note that you can not
 use shell variable expansion in the submit file - be sure to replace the
 username with your actual OSG Connect username. Example:
 
-    +SingularityImage = "stash:///osgconnect/protected/USERNAME/my-custom-image-v1.sif"
+    +SingularityImage = "osdf:///osgconnect/protected/USERNAME/my-custom-image-v1.sif"
 
     <other usual submit file lines>
     queue
 
-Be aware that Stash aggressively caches the image based on file naming.
+Be aware that OSDF aggressively caches the image based on file naming.
 If you need to do quick changes, please use versioning of the .sif file
 so that the caches see a "new" name. In this example, replacing
 `my-custom-image-v1.sif` with new content will probably mean that some
@@ -136,7 +136,7 @@ Users on non-OSG Connect access points can use all the container
 functionality described above, but will have to use slightly more
 complex job submit files. This is because the OSG Connect access points
 uses job transforms to update the jobs based on the `+SingularityImage`
-attribute, and OSG Connect users also have direct access to Stash.
+attribute, and OSG Connect users also have direct access to OSDF.
 
 To run a Apptainer/Singularity image from a non-OSG Connect access point, include
 a job `requirements`, and specify a method for image transfer. For example:
@@ -186,6 +186,6 @@ Apptainer/ Singularity has become the preferred containerization method in scien
 [container-howto]: ../../../htc_workloads/using_software/new_modules_list/
 [container-list]: ../../../htc_workloads/using_software/containers-docker/
 [data-staging]: ../../../htc_workloads/managing_data/osgconnect-storage/
-[stash]: ../../../htc_workloads/managing_data/stashcache/
+[osdf]: ../../../htc_workloads/managing_data/osdf/
 [docker-guide]: ../../../htc_workloads/using_software/new_modules_list/
 [singularity-guide]: ../../../htc_workloads/using_software/containers/
