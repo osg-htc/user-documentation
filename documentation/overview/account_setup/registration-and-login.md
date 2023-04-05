@@ -12,11 +12,10 @@ The major steps to get started on the OSPool are:
 * apply for access to the OSPool
 * meet with a facilitation team member for an short consultation and orientation. 
 * register for a specific OSPool Access Point
-* log in to your designated access point
+* log in to your designated Access Point
 
 Each of these is detailed in the guide below. 
-Once you've gone through these steps, you should be able to login to 
-your designated OSPool Access Point and beginning running work! 
+Once you've gone through these steps, you should be able to begin running work! 
 
 ## Apply for OSPool Access
 
@@ -24,7 +23,7 @@ To start, fill out the interest form on this OSG Portal site:
 
 [OS Pool Account Request](https://portal.osg-htc.org/application)
 
-This will send the OSG facilitation team an email and someone will be in 
+This will send the Research Facilitation team an email. We will be in 
 touch to set up an orientation meeting, and confirm if you are joining 
 an existing project on the OSPool or starting a new one. 
 
@@ -37,7 +36,7 @@ fit on the OSPool, and some practical next steps for getting started.
 ## Register for an Access Point
 
 Before or during the orientation meeting, you will be prompted to register 
-for an account on a specific OSPool Access Point. The current default are the 
+for an account on a specific OSPool Access Point. The current default is the 
 "OSG Manage" Access Points, with registration via https://registry.cilogon.org. 
 You will be directed to follow instructions on [this page](../ap7-access) to register 
 for an account here. 

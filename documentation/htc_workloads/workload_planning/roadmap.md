@@ -43,11 +43,11 @@ Learn more about the services provided by the OSG that can support your HTC work
 If you have not done so, apply for an account at <https://portal.osg-htc.org/application>. A Research Computing Facilitator will contact you within one business day to arrange a meeting to discuss your computational goals and to activate your account. 
 
 Users with accounts created starting in Spring 2023 have their accounts managed through a new account management service. To learn how to login to your account, visit: 
-- [Requesting an OSPool ap7.ospool.osg-htc.org Account](../../../overview/account_setup/ap7-access.md)
+- [Join and Log In to OSG Manage Access Points](../../../overview/account_setup/ap7-access.md)
 
 Historically, OSG accounts were created and managed through a service called OSG Connect. If you are unsure if you have an account on this service, contact a [Research Computing Facilitator](mailto:support@osg-htc.org), who will provide you with your account details. If your account was created through OSG Connect, go through the following guides to complete your access to the login node and to enable your account to submit jobs. 
 
-- [Generate ssh keys and login](../../../overview/account_setup/generate-add-sshkey/)
+- [Join and Log In to OSG Connect Access Points](../../../overview/account_setup/connect-access/)
 
 # 3. Learn to Submit HTCondor Jobs
 

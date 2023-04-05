@@ -3,7 +3,7 @@ ospool:
   path: overview/account_setup/generate-add-sshkey.md
 ---
 
-Generate and SSH Keys For Login
+Generate SSH Keys For Login
 ====================================
 
 ## Overview
