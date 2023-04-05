@@ -35,7 +35,6 @@ nav:
       - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
       - "Containers - Docker": htc_workloads/using_software/containers-docker.md
       - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
-      - "Request Help with Your Software": htc_workloads/using_software/software-request.md
     - Managing Data For Jobs:
       - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/osgconnect-storage.md
       - "Use scp To Transfer Files To and From OSG Connect": htc_workloads/managing_data/scp.md
