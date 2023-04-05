@@ -13,14 +13,18 @@ your `/home` directory on your Access Point. Files in your
 
 ## Transfer Files From `/home` Using HTCondor
 
+
+### Input Files from `/home`
+
+To transfer input files from `/home`, list the files by name in the
+`transfer_input_files` submit file option. You can use either absolute
+or relative paths to your input files. Multiple files can be specified
+using a comma-separated list.
+
 To transfer files from your `/home` directory use the `transfer_input_files` 
 statement in your HTCondor submit file. For example:
 
 	# submit file example
-	
-	log = my_job.$(Cluster).$(Process).log
-	error = my_job.$(Cluster).$(Process).err
-	output = my_job.$(Cluster).$(Process).out
 	
 	# transfer small file from /home 
 	transfer_input_files = my_data.csv
@@ -67,6 +71,30 @@ this directory and it is from this path that a job starts to execute. After
 a job has completed the top-level directory and all of it's contents are 
 deleted.
 
+### Select Specific Output Files To Transfer to `/home` Using HTCondor
+
+As described above, HTCondor will, by default, transfer any files
+that are generated during the execution of your job(s) back to your
+`/home` directory. If your job(s) will produce multiple output files but
+you only need to retain a subset of these output files, you can use a submit
+file option to only transfer back this file: 
+
+	transfer_output_files = output.svg
+
+Alternatively, you can delete the unrequired output files or move them to a subdirectory as
+a step in the bash executable script of your job - only the output files
+that remain in the top-level directory will be transferred back to your
+`/home` directory.
+
+### Organize Output Files in `/home`
+
+By default, output files will be copied back to the directory in `/home`
+where you ran the `condor_submit` command. To modify these behavior, 
+you can use the `transfer_output_remaps` option in the HTCondor submit file. 
+The syntax for `transfer_output_remaps` is: 
+
+    transfer_output_remaps = "Output1.txt = path/to/save/file/under/output.txt; Output2.txt = path/to/save/file/under/RenamedOutput.txt"
+
 ### What if my output file(s) are not written to the top-level directory?
 
 If your output files are written to a subdirectory, use the steps described 
@@ -110,14 +138,6 @@ contains all the output that was moved to `my_output`. Be sure to create
 executes and HTCondor will automatically transfer this tar archive back
 to your `/home` directory.
 
-### Select Specific Output Files To Transfer to `/home` Using HTCondor
 
-As described above, HTCondor will, by default, transfer any files
-that are generated during the execution of your job(s) back to your
-`/home` directory. If your job(s) will produce multiple output files but
-you only need to retain a subset of these output files, we recommend
-deleting the unrequired output files or moving them to a subdirectory as
-a step in the bash executable script of your job - only the output files
-that remain in the top-level directory will be transferred back to your
-`/home` directory.
+
 

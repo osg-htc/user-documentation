@@ -20,9 +20,9 @@ data caches in the OSG Data Federation, while preserving login node
 performance.
 
 Data origins and local mount points varies between the different
-access points. Please see the table under the 
+access points. **Please see the table under the 
 [Overview: Data Staging and Transfer to Jobs](../overview/) for the
-details on your assigned access point.
+details on your assigned access point.**
 
 ## Important Considerations and Best Practices
 
@@ -49,9 +49,10 @@ details on your assigned access point.
 Jobs will transfer data from the origin when files are indicated
 with an appropriate `osdf://` URL (or the older `stash://`) in the
 `transfer_input_files` line of the submit file. Make sure to customize the 
-data path based on your Access Point, as described in the [Data Overview](../overview/)
+data path based on your Access Point, as described in the [Data Overview](../overview/). 
 
-1. Upload your larger files to the mounted OSDF directory. This will be something like `/protected` or `/ospool/ap40/data`.
+1. Upload your larger files to the local OSDF directory path. This will be something 
+like `/protected` or `/ospool/ap40/data`.
 
 2. Add the necessary details to your HTCondor submit file to tell 
    HTCondor which files to transfer, and that your jobs must run on executes nodes that 
@@ -59,16 +60,12 @@ data path based on your Access Point, as described in the [Data Overview](../ove
 
 		# Submit file example of large input/software transfer
 		
-		log = my_job.$(Cluster).$(Process).log
-		error = my_job.$(Cluster).$(Process).err
-		output = my_job.$(Cluster).$(Process).out
-		
 		#Transfer input files
 		transfer_input_files = osdf:///ospool/protected/<username>/<dir>/<filename>, <other files>
 		
 		...other submit file details...
 
-## Use `transfer_output_remaps` for Outputs
+## Use `transfer_output_remaps` and 'osdf://' URL for Outputs
 
 To move output files into an OSDF data origin, users should use the **`transfer_output_remaps`** option
 within their job's submit file, which will transfer the user's
@@ -93,12 +90,6 @@ When saving large output files back to `/protected`, the path provided will look
 
 		# submit file example for large output
 		
-		log = my_job.$(Cluster).$(Process).log
-		error = my_job.$(Cluster).$(Process).err
-		output = my_job.$(Cluster).$(Process).out
-		
-		requirements = (OSGVO_OS_STRING =?= "RHEL 7")
-		
 		transfer_output_remaps = "Output.txt = stash:///ospool/protected/<username>/Output.txt"
 		
 		...other submit file details...
@@ -108,12 +99,6 @@ When saving large output files back to `/protected`, the path provided will look
    the `osdf:///` path repeatedly. For example,
 
 		# submit file example for large output
-		
-		log = my_job.$(Cluster).$(Process).log
-		error = my_job.$(Cluster).$(Process).err
-		output = my_job.$(Cluster).$(Process).out
-		
-		requirements = (OSGVO_OS_STRING =?= "RHEL 7")
 		
 		OSDF_LOCATION = osdf:///ospool/protected/<username>
 		transfer_output_remaps = "file1.txt = $(OSDF_LOCATION)/file1.txt; file2.txt = $(OSDF_LOCATION)/file2.txt; file3.txt = $(OSDF_LOCATION)/file3.txt"

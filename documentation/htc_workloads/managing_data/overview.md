@@ -25,39 +25,22 @@ points, and how to use these files within jobs.
 
 **Regardless of where data is placed, jobs should only be submitted with `condor_submit` from `/home`**
 
+## Use HTCondor File Transfer for Smaller Job Files
+
 You should use your `/home` directory to stage job files where:
 
   * individual input files per job are less than 1GB per file, and if there 
     are multiple files, they total less than 1GB
   * output files per job are less than 1GB per file
 
-### Input Files from `/home`
+Files can to be transferred to and from the `/home` directory
+using HTCondor's file transfer mechanism.  Input files can be 
+specified in the submit file and by default, 
+files created by your job will automatically be returned
+to your `/home` directory. 
 
-To transfer input files from `/home`, list the files by name in the
-`transfer_input_files` submit file option. You can use either absolute
-or relative paths to your input files. Multiple files can be specified
-using a comma-separated list.
-
-Some examples:
-
-  * Transferring multiple files from the submission directory
-        
-        transfer_input_files = my_data.csv, my_software.tar.gz, my_script.py
-
-  * Transferring a file using an absolute path is useful if a file is not in
-    the same directory tree as your submit file, but note that the path
-    will not be replicated - the file will appear as `my_software.tar.gz`
-    in the remote job directory):
-
-        transfer_input_files = /home/username/path/to/my_software.tar.gz
-
-### Output Files to `/home`
-
-By default, files created by your job will automatically be returned
-to your `/home` directory. If you would like a file to return to a
-diffrent subfolder within your `/home` directory, use HTCondor's
-`transfer_output_remaps` option. See
-[Transfer to/from /home](../file-transfer-via-htcondor/)
+See our [Transfer Files To and From /home guide](../file-transfer-via-htcondor/)
+for complete details on managing your files this way. 
 
 ## Use OSDF for Larger Files and Containers
 
@@ -68,11 +51,17 @@ to stage job files where:
   * an input file (of any size) is used by many jobs
   * output files per job are greater than 1GB per file
 
+You should also always use the OSDF to stage Singularity/Apptainer container 
+files (`.sif`) for jobs. 
+
 > **Important Note:**
 > Files in OSDF are cached, so it is important to use a
 > descriptive file name (possibly using version names or dates within the file name), or
 > a directory structure with unique names to
 > ensure you know what version of the file you are using within your job.
+
+To use the OSDF, files are placed (or returned to) a local path, and moved to 
+and from the job using a URL notation in the submit file. 
 
 The local path and the base URL for the OSDF transfer varies by access point.
 Please find the access point entry below. *Protected* means that data is
@@ -123,8 +112,8 @@ publicly discoverable and accessible to anyone.
 </tr>
 </table>
 
-OSDF URLs can be used directly in `transfer_input_files` and
-`transfer_output_files`. For more details, please see the [OSDF](osdf/) guide.
+To see how to use OSDF URLs in `transfer_input_files` and
+`transfer_output_files`, please see the [OSDF](../osdf) guide.
 
 
 ## Quotas
@@ -144,6 +133,8 @@ justification to the ticket system [support@osg-htc.org](mailto:support@osg-htc.
 In general, common Unix tools such as `rsync`, `scp`, Putty, WinSCP,
 `gFTP`, etc. can be used to upload data from your computer to access
 point, or to download files from the access point.
+
+See our [Data Transfer Guide](../scp) for more details. 
 
 
 ## FAQ
