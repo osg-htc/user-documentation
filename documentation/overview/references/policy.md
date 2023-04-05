@@ -6,7 +6,7 @@ ospool:
 Policies for Using OSG Services and the OSPool 
 ====================================
 
-Access to OSG systems and the Open Science Pool (OSPool) is contingent on compliance with the below and with any requests from OSG staff to change practices that cause issues for OSG systems and/or users. **Please contact us if you have any questions! We can often help with exceptions to default policies and/or identify available alternative approaches to help you with a perceived barrier.**
+Access to OSG services and the Open Science Pool (OSPool) is contingent on compliance with the below and with any requests from OSG staff to change practices that cause issues for OSG systems and/or users. **Please contact us if you have any questions! We can often help with exceptions to default policies and/or identify available alternative approaches to help you with a perceived barrier.**
 
 As the below do not cover every possible scenario of potentially disruptive practices, OSG staff reserve the right to take any necessary corrective actions to ensure performance and resource availability for all users from OSG-managed Access Points. This may include the hold or removal of jobs, deletion of user data, deactivation of accounts, etc. In some cases, these actions may need to be taken without notifying the user.
 
@@ -18,7 +18,7 @@ As the below do not cover every possible scenario of potentially disruptive prac
 
 4. **Data Policies**: *OSG-managed filesystems are not backed up and should be treated as temporary (“scratch”-like) space for active work, only*, following [OSG policies for data storage and per-job transfers](../../../htc_workloads/managing_data/osgconnect-storage/). Some OSG-managed storage spaces are truly ‘open’ with data available to be downloaded publicly. Of note:
 	 - Users should keep copies of essential data and software in non-OSG locations, as OSG staff reserve the right to remove data at any time in order to ensure and/or restore system availability, and without prior notice to users.
-	 - Proprietary data, HIPAA, and data with any other privacy concerns should not be stored on any OSG-managed filesystems or computed on using OSG resources. Similarly, users should follow all licensing requirements when storing and executing software via OSG-managed Access Points.
+	 - Proprietary data, HIPAA, and data with any other privacy concerns should not be stored on any OSG-managed filesystems or computed on using OSG-managed resources. Similarly, users should follow all licensing requirements when storing and executing software via OSG-managed Access Points.
 	 - Users should keep their /home directory privileges restricted to their user or group, and should not add ‘global’ permissions, which will allow other users to potentially make your data public.
 	 - User-created ‘open’ network ports are [disallowed](https://github.com/opensciencegrid/security/blob/master/docs/policy/OSG_Connect_Login_Server_Open_Port_Policy.md), unless explicitly permitted following an accepted justification to support@osg-htc.org. (If you’re not sure whether something you want to do will open a port, just get in touch!)
 
