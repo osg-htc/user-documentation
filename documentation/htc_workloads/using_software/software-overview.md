@@ -6,34 +6,18 @@ ospool:
 Using Software on the Open Science Pool 
 ====================================
 
+## Overview of Software Options
 
-
-# Overview of Software Options
-
-There are several options available for managing the software needs of your work within the Open Science Pool (OSPool). 
-In general, the OSPool can support most popular, open source software that fit the distributed 
-high throughput computing model. At present, we do not have or support most commercial software 
+There are several options available for managing the software needs of your work within the Open Science Pool (OSPool). For most cases, it will be advantageous for you to install the software needed for your jobs. This not only gives you the greatest control over your computing environment, but will also make your jobs more distributable, allowing you to run jobs at more locations.
+* The OSPool can support most popular, open source software that fit the distributed 
+high throughput computing model. 
+* We do not have or support most commercial software 
 due to licensing issues. 
 
 Here we review options, and provide links to additonal information, for using software 
 installed by users, software available as precompiled binaries or via containers.
 
-## Install Your Own Software
-
-For most cases, it will be advantageous for you to install the software needed for your jobs. 
-This not only gives you the greatest control over your computing environment, but will also
-make your jobs more distributable, allowing you to run jobs at more locations.
-
-Installing your own software can be performed interactively on your assigned login server. More 
-information about how to install your own software from source code can be found at 
-[Compiling Software for the OSPool](../../../htc_workloads/using_software/compiling-applications/). 
-When installing software on an OSG Connect login node, your software will be specifically compiled against 
-the Red Hat Enterprise Linux (RHEL) 7 OS used on these nodes. In most cases, subsequent 
-jobs that use this software will also need to run on a RHEL 7 OS, which can be specified by the 
-`requirements` attribute of your HTCondor submit files - an example is provided in the software 
-compilation guide linked above. Be sure to also review our 
-[Introduction to Data Management on OSG Connect](../../../htc_workloads/managing_data/osgconnect-storage/) 
-guide to determine the appropriate method for transferring software with your jobs.
+**More details and instructions on installing software from source code, precompiled binaries/prebuilt executables, and on creating and using containers can be found on the [OSPool documentation website](https://portal.osg-htc.org/documentation/), under the "Software" section.**
 
 ## Use Precompiled Binaries and Prebuilt Executables
 
@@ -42,24 +26,41 @@ which provides a quick and easy way to run a program without the need for instal
 from source code. Binaries and executables are software files that are ready to 
 run as is, however binaries should always be tested beforehand. There are several 
 important considerations for using precompiled binaries on the OSPool: 
-1.) only binary files compiled against a Linux operating system are suitable 
-for use on the OSPool, 2.) some softwares have system and hardware dependencies that must 
-be met in order to run properly, and 3.) the available binaries may not have been 
+1) only binary files compiled against a Linux operating system are suitable 
+for use on the OSPool, 
+2) some softwares have system and hardware dependencies that must 
+be met in order to run properly, and 
+3) the available binaries may not have been 
 compiled with the feaures or configuration needed for your work.
 
-## Use Docker and Singularity Containers
+## Install Software from Source Code
+
+When installing software from source code on an OSPool Access Point, your software will be specifically compiled against 
+the **Red Hat Enterprise Linux (RHEL) 7 operating system** used on these nodes. In most cases, subsequent 
+jobs that use this software will also need to run on a RHEL 7 OS, which can be specified by the 
+`requirements` attribute of your HTCondor submit files as described in the guide linked above. 
+
+## Use Docker and Apptainer Containers
 
 Container systems provide users with customizable and reproducable computing and software 
-environments. The Open Science Pool is compatible with both Singularity and Docker containers - the 
-latter will be converted to a Singularity image and added to the OSG container image 
-repository. Users can choose from a set of pre-defined containers already available within OSG, 
-or can use published or custom made containers. More details on how to use containers on the OSPool can be found in our 
-[Docker and Singularity Containers](../../../htc_workloads/using_software/available-containers-list/) guide. 
+environments. The Open Science Pool is compatible with both Apptainer and Docker containers - the 
+latter will be converted to a Apptainer image and added to the OSG container image 
+repository. 
 
-## Ask for Help
+Users can choose from a set of [pre-defined containers already available within OSG](../../../htc_workloads/using_software/available-containers-list/), 
+or can use published or custom made containers. 
 
-If you are not sure which of the above options might be best for your software, we're happy to help! Just contact us at 
-[support@osg-htc.org](mailto:support@osg-htc.org).
+## Request Help with Installing Software
+
+If you believe none of the options described above are applicable for your software, send an email to
+[support@osg-htc.org](mailto:support@osg-htc.org) that describes:
+1. the software name, version, and/or website with download and install instructions
+2. what science each job does, using the software
+3. what you've tried so far (if anything), and what indications of issues you've experienced
+
+We will do our best to help you create a portable installation.
+
+## Additional Resources
 
 **Watch this video from the 2021 OSG Virtual School** for more information about using software on OSG:
 
