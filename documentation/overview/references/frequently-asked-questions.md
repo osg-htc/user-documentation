@@ -6,122 +6,172 @@ ospool:
 Frequently Asked Questions 
 ====================================
 
-
-
 ## Getting Started
    
-**Who is eligible to become the user of OSG Connect?**
+<details>
+<summary>Who is eligible to request an OSG account?</summary>
+<br>
+Any researcher affiliated with a U.S. institution (college, university, national laboratory or research foundation) is eligible to use OSG resources for their work. Researchers outside of the U.S. with affiliations to U.S. groups may be eligible for membership if they are sponsored by a collaborator within the U.S. 
+</details>
 
-Any researcher affiliated with a U.S. institution (college, university, national laboratory or research foundation) is eligible to become an OSG Connect user. Researchers outside of the U.S. with affiliations to U.S. groups may be eligible for membership if they are sponsored by a collaborator within the U.S. Researchers outside of the U.S. are asked to first
-[contact us](mailto:support@osg-htc.org) directly to discuss membership.
+<details>
+<summary>How do I request an OSG account?</summary>
+<br>
+Please visit our website for the most up-to-date information on requesting an account. Once your account request has been received, a Research Computing Facilitator will contact you within one business day to arrange a meeting to learn about your computational goals and to create your account. 
+</details>
 
-**How do I become an user of OSG Connect?**
+<details>
+<summary>How do I change the project my jobs are affiliated with?</summary>
+<br>
+The OSG team assigns individual user accounts to "projects" upon account creation. These projects are a way to track usage hours and capture information about the types of research running on OSG resources. A project typically corresponds to a research group headed by a single PI, but can sometimes represent a long-term multi-institutional project or some other grouping. If you only belong to a single project, that project will be charged automatically when you submit jobs. Run the following command to see a list of projects you belong to:
 
-Please follow the steps outlined in the [Sign Up process](http://osgconnect.net/signup). 
+    $ grep $USER /etc/condor/UserToProjectMap.txt
+  
+If need to run jobs under a different project you are a member of, you can manually set the project for those jobs by putting this option in the submit file:
+
+    +ProjectName="ProjectName"
+</details>
+
+
+## Workshops and Training
+   
+<details>
+<summary>Do you offer training sessions and workshops?</summary>
+<br>
+We offer virtual trainings twice-a-month, as well as an annual, week-long summer school for OSG users. We also participate in additional external conferences and events throughout the year. Information about upcoming and past events, including workshop dates and locations, is available on our website. 
+</details>
+  
+<details>
+<summary>Who may attend OSG workshops?</summary>
+<br>
+Workshops are available to any researcher affiliated with a U.S. academic, non-profit, or government institution.
+</details>
+
+<details>
+<summary>How to cite or acknowledge OSG?</summary>
+<br>
+Whenever you make use of OSG resources, services or tools, we request you acknowledge OSG in your presentations and publications using the informtion provided on the [Acknowledging the OSG Consortium](https://osg-htc.org/acknowledging.html) page. 
+</details>
 
 ## Software
    
-**What software packages are available?**
-
-In general, we support most software that fit the distributed high throughput computing model. Users are encouraged to download and install their own software. 
+<details>
+<summary>What software packages are available?</summary>
+<br>
+In general, we support most software that fits the distributed high throughput computing model (e.g., open source). Users are encouraged to download and install their own software on our Access Points. 
  
-Additionally, users may install their software into a Docker container which can run on OSG as a Singularity image.  See [this guide](../../../htc_workloads/using_software/available-containers-list/) for more information. 
+Additionally, users may install their software into a Docker container which can run on OSG as an Apptainer image or use one of our existing containers.  See [this guide](../../../htc_workloads/using_software/available-containers-list/) for more information. 
+</details>
 
-**Are there any restrictions on installing commercial softwares?**
-
-We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running [MATLAB standalone executables](../../../software_examples/matlab_runtime/tutorial-matlab-HelloWorld/) which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's /home directory with HTCondor transferring to jobs, but should not be staged in OSG's public data staging locations (see ../../../htc_workloads/managing_data/osgconnect-storage/-data-management-and-policies). Please get in touch with any questions about licensed software.
-
+<details>
+<summary>Are there any restrictions on installing commercial softwares?</summary>
+<br>
+We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running [MATLAB standalone executables](../../../software_examples/matlab_runtime/tutorial-matlab-HelloWorld/) which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's `/home` directory with HTCondor transferring to jobs, but should not be staged in OSG's public data staging locations (see ../../../htc_workloads/managing_data/osgconnect-storage/-data-management-and-policies). Please get in touch with any questions about licensed software.
+</details>
  
-**Can I request for system wide installation of the open source software useful for my research?**
-
-Yes. Please contact <support@osg-htc.org>.  
-   
+<details>
+<summary>Can I request for system wide installation of the open source software useful for my research?</summary>
+<br>
+We recommend users use Docker or Apptainer containers if jobs require system wide installations of software. Visit the [OSPool Documentation](https://portal.osg-htc.org/documentation/) website to learn more about creating your own container. 
+</details>
+  
 ## Running Jobs
    
-**What type of computation is a good match or NOT a good match for OSG Connect?**
+<details>
+<summary>What type of computation is a good match or NOT a good match for the OSG's Open Science Pool?</summary>
+<br>
+The OSG provides computing resources through the Open Science Pool for high throughput computing workloads. You can get the most of out OSG resources by breaking up a single large computational task into many smaller tasks for the fastest overall turnaround. This approach can be 
+invaluable in accelerating your computational work and thus your research. Please see our ["Is OSG for You?"](../../../overview/account_setup/is-it-for-you/) page for more details on how to determine if your work matches up well with OSG's high throughput computing model.
+</details>
+  
+<details>
+<summary>What job scheduler is being used on the Open Science Pool?</summary>
+<br>
+We use a task scheduling software called HTCondor to schedule and run jobs.
+</details>
 
-OSG Connect is a high throughput computing system. You can get the most of out OSG Connect resources by breaking up a 
-single large computational task into many smaller tasks for the fastest overall turnaround. This approach can be 
-invaluable in accelerating your computational work and thus your research. Please see our ["Is OSG for You?"](../../../overview/account_setup/is-it-for-you/) page for more details on how to determine if your work matches up well with OSG Connect's model.
-
-**What job scheduler is being used on OSG Connect?**
-
-We use use the task scheduling software called HTCondor to schedule and run jobs.
- 
-**How do I submit a computing job?**
-
-Jobs are submitted via HTCondor scheduler. Please see our [QuickStart](http://support.opensciencegrid.org/support/solutions/articl../../../../htc_workloads/submitting_workloads/tutorial-quickstart/) guide for more details on submitting and managing jobs.
-
-**How many jobs can I have in the queue?**
-
-The number of jobs that are submitted to the queue by any one user should not exceed 10,000. If you have more jobs than that, we ask that you include the following statement in your submit file: 
+<details>
+<summary>How do I submit a computing job?</summary>
+<br>
+Jobs are submitted via HTCondor scheduler. Please see our [Roadmap to HTC Workload Submission](https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/roadmap/) guide for more details on submitting and managing jobs.
+</details>
+  
+<details>
+<summary>How many jobs can I have in the queue?</summary>
+<br>
+The number of jobs that are submitted to the queue by any one user cannot not exceed 10,000 without adding a special statement to the submit file. If you have more jobs than that, we ask that you include the following statement in your submit file: 
 
 `max_idle = 2000`  
 
 This is the maximum number of jobs that you will have in the "Idle" or "Held" state for the submitted batch of jobs at any given time.  Using a value of 2000 will ensure that your jobs continue to apply a constant pressure on the queue, but will not fill up the queue unnecessarily (which helps the scheduler to perform optimally).  
+</details>
 
+<details>
+<summary>How do I view usage metrics for my project?</summary>
+<br>
+The project's resource usage appears in the OSG accounting system, [GRACC](https://gracc.opensciencegrid.org/d/000000033/osg-project-accounting?orgId=1). Additional dashboards are available to help filter information of interest. 
+
+At the top of that dashboard, there is a set of filters that you can use to examine the number of hours used by your project, or your institution. 
+</details>
+
+  
 ## Data Storage and Transfer
    
-**What is the best way to process large volume of data?**
-
-Use the Stash data system to stage large volumes of data. Please refer the section [Data Solutions](http://support.opensciencegrid.org/support/solutions/folders/5000262152) for more details. 
+<details>
+<summary>What is the best way to process large volume of data?</summary>
+<br>
+There may be more than one solution that is available to researchers to process large amounts of data. Contact a Facilitator at <support@osg-htc.org> for a free, individual consulation to learn about your options. 
+</details>
  
-**How do I transfer my data to and from OSG Connect?**
-
-You can transfer data using scp or rsync. See [Using scp To Transfer Files To OSG Connect](../../../htc_workloads/managing_data/scp/) for more details.
-
-**How public is /public?**
-
+<details>
+<summary>How do I transfer my data to and from OSG Access Points?</summary>
+<br>
+You can transfer data using scp, rsync, or other common Unix tools. See [Using scp To Transfer Files](../../../htc_workloads/managing_data/scp/) for more details.
+</details>
+  
+<details>
+<summary>How public is /public?</summary>
+<br>
 The data under your `/public` location is discoverable and readable by anyone in the world. Data in `/public` is made public over http/https (via `https://stash.osgconnect.net/public/`) and mirrored to `/cvmfs/stash.osgstorage.org/osgconnect/public/` (for use with `stashcp`) which is mounted on a large number of systems around the world.
+  
+Store data in `/protected` or `/home` if you do not want it to be publicly accessible. 
+</details>
+  
+<details>
+<summary>Is there any support for private data?</summary>
+<br>
+Data stored in `/protected` and in `/home` is not publically accessible. **Sensitive data, such as HIPPA data, is not allowed to be uploaded or analyzed using OSG resources.** 
+</details>
 
-**Is there any support for private data?**
-
->**OSG currently has no storage appropriate for HIPAA data.**
-
-If you do not want your data to be downloadable by anyone, and it’s small enough for HTCondor file transfer (i.e. <100MB per file and <500MB total per job), then it should be staged in your `/home` directory and transferred to jobs with HTCondor file transfer (`transfer_input_files`, in the submit file). If your data must remain private and is too large for HTCondor file transfer, then it’s not a good fit for the “open” environment of the Open Science Pool, and another resource will likely be more appropriate. As a reminder, if the data is not being used for active computing work on OSG Connect, it should not be stored on OSG Connect systems. Lastly, our data storage locations are not backed up nor are they intended for long-term storage.
-
-**Can I get a quota increase?**
-
-[Contact us](mailto:support@osg-htc.org) if you think you'll need a quota increase for `/home` or `/public` to accommodate a set of concurrently-running jobs. We can suppport very large amounts of data, the default quotas are just a starting point.
-
-**Will I get notified about hitting quota limits?**
-
-The only place you can currently see your quota status is in the login messages.
-    
+<details>
+<summary>Is data backed up on OSG resources?</summary> 
+<br>
+Our data storage locations are not backed up nor are they intended for long-term storage. If the data is not being used for active computing work, it should not be stored on OSG systems.
+</details>
+  
+<details>
+<summary>Can I get a quota increase?</summary>
+<br>
+Yes. Contact support@osg-htc.org if you think you'll need a quota increase for `/home`, `/public`, or `/protected` to accommodate a set of concurrently-running jobs. We can suppport very large amounts of data, the default quotas are just a starting point.
+</details>
+  
+<details>
+<summary>Will I get notified about hitting quota limits?</summary>
+<br>
+The best place to see your quota status is in the login message.
+</details>
+  
 ## Workflow Management
 
-**How do I run and manage complex workflows?**
-
-For workflows that have multiple steps and/or multiple files to, we advise using a workflow management system. A workflow management system allows you to define different computational steps in your workflow and indicate how inputs and outputs should be transferred between these steps. Once you define a workflow, the workflow management system will then run your workflow, automatically retrying failed jobs and transferrring files between different steps.
-
-**What workflow management systems are recommended on OSG?**
-
-We support and distribute DAGMan, Pegasus, and Swift for workflow management.
-
-## Workshops and Training
-   
-**Do you plan to offer training sessions and workshop?**
-
-We plan to offer workshops for the researchers on multiple locations, including an annual, week-long summer school for OSG users. Please check our [events page](https://support.opensciencegrid.org/support/solutions/5000161177) for further information about workshop dates and locations. 
- 
-**Who may attend OSG workshops?**
-
-Workshops are typically open to students, post docs, staff and faculty.
- 
-**What are the topics covered in a typical workshop?**
-
-We typically cover shell scripting, python (or R) programming, version control with git and distributed high throughout computing.  
-
-**How to cite or acknowledge OSG?**
-
-Whenever you make use of OSG resources, services or tools, we would be grateful to have you acknowledge OSG in your presentations and publications. 
-
-For example, you can add the following in your acknowledgements section:
- 
-> "This research was done using resources provided by the OSG, which is supported by the National Science Foundation and the U.S. Department of Energy's Office of Science." 
-
-We recommend the following references for citations
-
-> 1) Pordes, R. et al. (2007). "The Open Science Grid", J. Phys. Conf. Ser. 78, 012057.doi:10.1088/1742-6596/78/1/012057.
-
-> 2) Sfiligoi, I., Bradley, D. C., Holzman, B., Mhashilkar, P., Padhi, S. and Wurthwein, F. (2009). "The Pilot Way to Grid Resources Using glideinWMS", 2009 WRI World Congress on Computer Science and Information Engineering, Vol. 2, pp. 428–432. doi:10.1109/CSIE.2009.950.
+<details>
+<summary>How do I run and manage complex workflows?</summary>
+<br>
+For workflows that have multiple steps and/or multiple files, we advise using a workflow management system. A workflow management system allows you to define different computational steps in your workflow and indicate how inputs and outputs should be transferred between these steps. Once you define a workflow, the workflow management system will then run your workflow, automatically retrying failed jobs and transferrring files between different steps.
+</details>
+  
+<details>
+<summary>What workflow management systems are recommended on OSG?</summary>
+<br>
+We support DAGMan and Pegasus for workflow management.
+</details>
+  
