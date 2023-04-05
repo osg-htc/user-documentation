@@ -25,7 +25,7 @@ nav:
       - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
       - "Finding OSG Locations": htc_workloads/submitting_workloads/tutorial-osg-locations/README.md
       - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md
-      - "Use OSG Connect Tutorials": htc_workloads/submitting_workloads/tutorial-command.md
+      - "Workflow Tutorials": htc_workloads/submitting_workloads/tutorial-command.md
       - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing-on-OSPool.md
     - Using Software On The OSG:
       - "Using Software on the Open Science Pool": htc_workloads/using_software/software-overview.md
