@@ -21,7 +21,7 @@ Please visit our website for the most up-to-date information on requesting an ac
 </details>
 
 <details>
-<summary>How do I change the project my jobs are affilaited with?</summary>
+<summary>How do I change the project my jobs are affiliated with?</summary>
 <br>
 The OSG team assigns individual user accounts to "projects" upon account creation. These projects are a way to track usage hours and capture information about the types of research running on OSG resources. A project typically corresponds to a research group headed by a single PI, but can sometimes represent a long-term multi-institutional project or some other grouping. If you only belong to a single project, that project will be charged automatically when you submit jobs. Run the following command to see a list of projects you belong to:
 
@@ -72,7 +72,7 @@ We can only *directly* support software that is freely distributable. At present
 <details>
 <summary>Can I request for system wide installation of the open source software useful for my research?</summary>
 <br>
-We recommend users use Docker or Apptainer containers if jobs require system wide instillations of software. Visit the [OSPool Documentation](https://portal.osg-htc.org/documentation/) website to learn more about creating your own container. 
+We recommend users use Docker or Apptainer containers if jobs require system wide installations of software. Visit the [OSPool Documentation](https://portal.osg-htc.org/documentation/) website to learn more about creating your own container. 
 </details>
   
 ## Running Jobs
