@@ -36,11 +36,10 @@ nav:
       - "Containers - Docker": htc_workloads/using_software/containers-docker.md
       - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
     - Managing Data For Jobs:
-      - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/osgconnect-storage.md
-      - "Use scp To Transfer Files To and From OSG Connect": htc_workloads/managing_data/scp.md
-      - "Transfer Input Files Up To 100MB In Size": htc_workloads/managing_data/file-transfer-via-htcondor.md
-      - "Transfer Job Output Files Up To 1GB In Size": htc_workloads/managing_data/output-file-transfer-via-htcondor.md
-      - "Transfer Larger Input and Output Files": htc_workloads/managing_data/stashcache.md
+      - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/overview.md
+      - "Use scp To Transfer Files To and From OSG Managed Access Points": htc_workloads/managing_data/scp.md
+      - "Transfer to/from /home": htc_workloads/managing_data/file-transfer-via-htcondor.md
+      - "Transfer Larger Files and Containers (OSDF)": htc_workloads/managing_data/osdf.md
       - "Transfer HTTP-available Files up to 1GB In Size": htc_workloads/managing_data/file-transfer-via-http.md
     - Considerations For Specific Resource Needs:
       - "Using GPUs on the OSPool": htc_workloads/specific_resource/gpu-jobs.md
