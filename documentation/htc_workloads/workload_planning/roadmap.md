@@ -16,7 +16,7 @@ The steps listed here apply to any new workload
 submission, whether you are a long-time OSG user or just getting 
 started with your first workload, with helpful links to our documentation pages. 
 
-This guide assumes that you have applied for an OSG account and 
+This guide assumes that you have applied for an OSG Access Point account and 
 have been approved after meeting with an OSG Research Computing Facilitator. 
 If you don't yet have an account, you can apply for one at <https://portal.osg-htc.org/application>
 or [contact us](mailto:support@osg-htc.org) with any questions you have. 
