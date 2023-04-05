@@ -3,30 +3,29 @@ ospool:
   path: htc_workloads/workload_planning/roadmap.md
 ---
 
-Roadmap to HTC Workload Submission via OSG Connect 
+Roadmap to HTC Workload Submission
 ====================================
 
 
 
 # Overview
 
-This guide lays out the steps needed to go from logging in to an OSG 
-Connect login node to running a full scale high throughput computing 
+This guide lays out the steps needed to go from logging in to an OSG Access Point to running a full scale high throughput computing 
 (HTC) workload on OSG's [Open Science Pool (OSPool)](https://opensciencegrid.org/about/open_science_pool/). 
 The steps listed here apply to any new workload 
 submission, whether you are a long-time OSG user or just getting 
 started with your first workload, with helpful links to our documentation pages. 
 
-This guide assumes that you have applied for an account on the OSG Connect service and 
+This guide assumes that you have applied for an OSG Access Point account and 
 have been approved after meeting with an OSG Research Computing Facilitator. 
-If you don't yet have an account, you can apply for one at <osgconnect.net>
+If you don't yet have an account, you can apply for one at <https://portal.osg-htc.org/application>
 or [contact us](mailto:support@osg-htc.org) with any questions you have. 
 
 Learning how to get started on the OSG does not need to end with this document or 
 our guides! Learn about our training opportunities and personal facilitation support 
 in the [Getting Help](#getting-help) section below. 
 
-# 1. Introduction to the OSPool and OSG Connect
+# 1. Introduction to the OSPool and OSG Resources
 
 The OSG's Open Science Pool is best-suited for computing work that can be run as many, independent 
 tasks, in an approach called "high throughput computing." For more information 
@@ -39,10 +38,14 @@ Learn more about the services provided by the OSG that can support your HTC work
 
 <!-- Diagram/cartoon showing how jobs are distributed to multiple sites across the U.S.-->
 
-# 2. Get on OSG Connect
+# 2. Log on to an OSG Access Point
 
-After your OSG account has been approved, go through the following guides to 
-complete your access to the login node and to enable your account to submit jobs. 
+If you have not done so, apply for an account at <https://portal.osg-htc.org/application>. A Research Computing Facilitator will contact you within one business day to arrange a meeting to discuss your computational goals and to activate your account. 
+
+Users with accounts created starting in Spring 2023 have their accounts managed through a new account management service. To learn how to login to your account, visit: 
+- [Requesting an OSPool ap7.ospool.osg-htc.org Account](../../../overview/account_setup/ap7-access.md)
+
+Historically, OSG accounts were created and managed through a service called OSG Connect. If you are unsure if you have an account on this service, contact a [Research Computing Facilitator](mailto:support@osg-htc.org), who will provide you with your account details. If your account was created through OSG Connect, go through the following guides to complete your access to the login node and to enable your account to submit jobs. 
 
 - [Generate ssh keys and login](../../../overview/account_setup/generate-add-sshkey/)
 
@@ -56,7 +59,7 @@ understand how HTCondor job submission works. The following guides show
 how to submit basic HTCondor jobs. The second example allows you to see
 where in the OSPool your jobs run. 
 
-- [OSG Connect Quickstart](../../../htc_workloads/submitting_workloads/tutorial-quickstart/)
+- [Quickstart](../../../htc_workloads/submitting_workloads/tutorial-quickstart/)
 - [Finding OSG Locations](../../../htc_workloads/submitting_workloads/tutorial-osg-locations/)
 
 # 4. Test a First Job
@@ -70,9 +73,9 @@ recommend doing this using a single test job.
 
 Software is an integral part of your HTC workflow.  Whether you’ve written it yourself, inherited it from your research group, or use common open-source packages, any required executables and libraries will need to be made available to your jobs if they are to run on the OSPool. 
 
-Read through [this overview of Using Software in OSG Connect](../../../htc_workloads/using_software/software-overview/) to help you determine the best way to provide your software.  We also have the following guides/tutorials for each major software portability approach:
+Read through [this overview of Using Software](../../../htc_workloads/using_software/software-overview/) to help you determine the best way to provide your software.  We also have the following guides/tutorials for each major software portability approach:
 
-- To **install your own software**, begin with the guide on [Compiling Software for OSG Connect](../../../htc_workloads/using_software/compiling-applications/) and then complete the [Example Software Compilation tutorial](../../../htc_workloads/using_software/example-compilation/).
+- To **install your own software**, begin with the guide on [Compiling Software](../../../htc_workloads/using_software/compiling-applications/) and then complete the [Example Software Compilation tutorial](../../../htc_workloads/using_software/example-compilation/).
 - To **use precompiled binaries**, try the example presented in the [AutoDock Vina tutorial](../../../software_examples/drug_discovery/tutorial-AutoDockVina/) and/or the [Julia tutorial](../../../software_examples/other_languages_tools/julia-on-osg/).
 - To **use Docker containers** for your jobs, start with the [Docker and Singularity Containers guide](../../../htc_workloads/using_software/available-containers-list/), and (optionally) work through the [Tensorflow tutorial](../../../software_examples/machine_learning/tutorial-tensorflow-containers/) (which uses Docker/Singularity)
 
