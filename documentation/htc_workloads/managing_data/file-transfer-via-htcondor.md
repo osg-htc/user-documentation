@@ -3,12 +3,12 @@ ospool:
   path: htc_workloads/managing_data/file-transfer-via-htcondor.md
 ---
 
-Transfer to/from /home
+Transfer Job Files To and From /home
 =======================
 
 As described in the [Overview: Data Staging and Transfer to Jobs](../overview/) 
 any data, files, or even software that is <1GB should be staged in 
-your `/home` directory on your login node. Files in your 
+your `/home` directory on your Access Point. Files in your 
 `/home` directory can be transferred to jobs via your HTCondor submit file.
 
 ## Transfer Files From `/home` Using HTCondor
@@ -43,7 +43,7 @@ of good practice, for example:
 Note that the path is not replicated on the remote side. The job will only
 see `my_software.tar.gz` in the top level job directory.
 
-Where `username` refers to your access point username.
+Above, `username` refers to your access point username.
 
 
 ## Use HTCondor To Transfer Outputs

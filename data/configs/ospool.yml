@@ -39,7 +39,7 @@ nav:
       - "Request Help with Your Software": htc_workloads/using_software/software-request.md
     - Managing Data For Jobs:
       - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/overview.md
-      - "Use scp To Transfer Files To and From OSG Connect": htc_workloads/managing_data/scp.md
+      - "Use scp To Transfer Files To and From OSG Managed Access Points": htc_workloads/managing_data/scp.md
       - "Transfer to/from /home": htc_workloads/managing_data/file-transfer-via-htcondor.md
       - "Transfer Larger Files and Containers (OSDF)": htc_workloads/managing_data/osdf.md
       - "Transfer HTTP-available Files up to 1GB In Size": htc_workloads/managing_data/file-transfer-via-http.md

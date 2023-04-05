@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/managing_data/osdf.md
 ---
 
-Transfer Larger Files and Containers (OSDF)
+Transfer Larger Job Files and Containers (OSDF)
 ===========================================
 
 For input files >1GB and output files >1GB in size, the default HTCondor
@@ -44,13 +44,14 @@ details on your assigned access point.
    version number to directories or file names is strongly encouraged to
     manage your files uniqness.
 
-## Use a 'osdf://' URL to Transfer Large Files
+## Use a 'osdf://' URL to Transfer Large Files To Jobs
 
 Jobs will transfer data from the origin when files are indicated
 with an appropriate `osdf://` URL (or the older `stash://`) in the
-`transfer_input_files` line of the submit file:
+`transfer_input_files` line of the submit file. Make sure to customize the 
+data path based on your Access Point, as described in the [Data Overview](../overview/)
 
-1. Upload your larger files to the mounted OSDF directory 
+1. Upload your larger files to the mounted OSDF directory. This will be something like `/protected` or `/ospool/ap40/data`.
 
 2. Add the necessary details to your HTCondor submit file to tell 
    HTCondor which files to transfer, and that your jobs must run on executes nodes that 
@@ -69,7 +70,7 @@ with an appropriate `osdf://` URL (or the older `stash://`) in the
 
 ## Use `transfer_output_remaps` for Outputs
 
-For output, users should use the **`transfer_output_remaps`** option
+To move output files into an OSDF data origin, users should use the **`transfer_output_remaps`** option
 within their job's submit file, which will transfer the user's
 specified file to the specific location in the data origin.
 
@@ -80,7 +81,7 @@ it is possible to save files back to specific locations in for example
 
 The syntax for `transfer_output_remaps` is: 
 
-    transfer_output_remaps = "Output.txt = path/to/save/file/under/output.txt; Output.txt = path/to/save/file/under/RenamedOutput.txt"
+    transfer_output_remaps = "Output1.txt = path/to/save/file/under/output.txt; Output2.txt = path/to/save/file/under/RenamedOutput.txt"
 
 When saving large output files back to `/protected`, the path provided will look like: 
 
@@ -134,5 +135,5 @@ reported to the user.
 
 `osdf://` is the new format for these kind of transfers, and is 
 equivalent of the old `stash://` format (which will keep on being
-supported).
+supported for the short term).
 

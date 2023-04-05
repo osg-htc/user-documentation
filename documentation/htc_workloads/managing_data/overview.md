@@ -61,7 +61,7 @@ diffrent subfolder within your `/home` directory, use HTCondor's
 
 ## Use OSDF for Larger Files and Containers
 
-You should use OSDF ([Open Science Data Federation](https://osg-htc.org/services/osdf.html))
+You should use the OSDF ([Open Science Data Federation](https://osg-htc.org/services/osdf.html))
 to stage job files where:
 
   * individual input files per job are greater than 1GB per file
