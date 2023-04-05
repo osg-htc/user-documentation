@@ -3,29 +3,17 @@ ospool:
   path: overview/account_setup/generate-add-sshkey.md
 ---
 
-Generate SSH Keys and Activate Your OSG Login 
+Generate and SSH Keys For Login
 ====================================
-
-
 
 ## Overview
 
-OSG Connect requires SSH-key-based logins. You need to follow 
-a two-step process to set up the SSH key to your account. 
+One way to connect to an OSG-managed Access Point is an 
+SSH key. This guide details how to create an SSH key. 
+Once created, it needs to be added to your web profile 
+in order to enable log in to an Access Point. 
 
-1. Generate a SSH key pair.  
-
-2. Add your public key to the submit host by uploading it to 
-your OSG Connect user profile (via the OSG Connect website).
-
-After completing the process, you can log in from a local computer 
-(your laptop or desktop) to the OSG Connect login node assigned
-using either ssh or an ssh program like Putty -- see below for 
-more details on logging in. 
-
-NOTE: Please do not edit the authorized keys file on the login node.
-
-## Step 1: Generate SSH Keys
+## Generate SSH Keys
 
 We will discuss how to generate a SSH key pair for two cases: 
 
@@ -95,81 +83,13 @@ can use a key without a passphrase, but this is not recommended.
 
 ![alt text](https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/puttygen_ssh_key.png "PuttyGen Window")
 
-## Step 2: Add the public SSH key to login node
+## Next Steps
 
-To add your public key to the OSG Connect log in node: 
+After generating the key, you will need to upload it to a web profile. 
 
-1. Go to www.osgconnect.net and sign in with the institutional identity you used when requesting an OSG Connect account. 
+* If your account has been created using XX, follow the instructions here: [](../ap7-access.md)
+* If your account has been created using YY, follow the instructions here: [](../connect-access.md)
 
-2. Click "Profile" in the top right corner.
-
-3. Click the "Edit Profile" button located after the user information in the left hand box.
-
-4. Copy/paste the public key which is found in the `.pub` file into the "SSH Public Key" text box. 
-The expected key is a single line, with three fields looking something like 
-`ssh-rsa ASSFFSAF... user@host`. If you used the first set of key-generating 
-instructions it is the content of `~/.ssh/id_rsa.pub` and for the second (using 
-PuTTYgen), it is the content from step 7 above.
-
-6. Click "Update Profile"
-
-The key is now added to your profile in the OSG Connect website. This will automatically
-be added to the login nodes within a couple hours.
-
-> ### Can I Use Multiple Keys?
-> Yes! If you want to log into OSG Connect from multiple computers, you can do so by generating
-> a keypair on each computer you want to use, and then adding the public key to your OSG 
-> Connect profile. 
-
-## Logging In
-
-After following the steps above to upload your key and it's been a few hours, you should 
-be able to log in to OSG Connect. 
-
-### Determine which login node to use
-
-Before you can connect, you will need to know which login node your account is assigned to. You can find 
-this information on your profile from the OSG Connect website.
-
-1. Go to www.osgconnect.net and sign in with your CILogin. 
-
-2. Click "Profile" in the top right corner.
-
-3. The assigned login nodes are listed in the left side box. Make note of the address of 
-your assigned login node as you will use this to connect to OSG Connect.
-
-![Identify Login Node](https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/find_osgconnect_login_node.png "OSG Connect Profile")
-
-### For Mac, Linux, or newer versions of Windows
-
-Open a terminal and type in: 
-
-    ssh <your_osg_connect_username>@<your_osg_login_node>
-
-It will ask for the passphrase for your ssh key (if you set one) and then you 
-should be logged in. 
-
-### For older versions of Windows
-
-On older versions of Windows, you can use the [Putty program](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to log in. 
-
-<img src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
-
-1. Open the `PutTTY` program. If necessary, you can download PuTTY from the website here [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
-
-2. Type the address of your assigned login node as the hostname (see "Determine which login node to use" above).
-
-3. In the left hand menu, click the "+" next to "SSH" to expand the menu.
-
-4. Click "Auth" in the "SSH" menu.
-
-5. Click "Browse" and specify the private key file you saved in step 5 above.
-
-6. Return to "Session".    
-&nbsp;&nbsp;&nbsp;&nbsp;a. Name your session    
-&nbsp;&nbsp;&nbsp;&nbsp;b. Save session for future use     
-7. Click "Open" to launch shell. Provide your ssh-key passphrase (created at Step 4 in PuTTYgen) when prompted to do so.
-The following video demonstrates the key generation and login process from the [Putty](https://www.youtube.com/watch?v=zk1uo1nA2HA&t=210s&ab_channel=OSG) 
 
 ## Getting Help 
 

@@ -3,89 +3,58 @@ ospool:
   path: overview/account_setup/registration-and-login.md
 ---
 
-Registration and Login for OSG Connect 
+Registration and Login for OSPool Access
 ====================================
 
 
+The major steps to get started on the OSPool are: 
 
-## Registration and Login for OSG Connect
-
-The major steps to getting started on OSG Connect are: 
-
-* apply for an OSG Connect account
-* meet with an OSG Connect staff member for an short consultation and orientation. 
-* join and set your default "project"
-* upload `.ssh` keys to the OSG Connect website
+* apply for access to the OSPool
+* meet with a facilitation team member for an short consultation and orientation. 
+* register for a specific OSPool Access Point
+* log in to your designated access point
 
 Each of these is detailed in the guide below. 
+Once you've gone through these steps, you should be able to login to 
+your designated OSPool Access Point and beginning running work! 
 
-Once you've gone through these steps, you should be able to login to the OSG Connect
-submit node.  
+## Apply for OSPool Access
 
-## Account Creation
+To start, fill out the interest form on this OSG Portal site: 
 
-### Sign in to or create an account
+[OS Pool Account Request](https://portal.osg-htc.org/application)
 
-Start by creating an OSG Connect account. Visit the [OSG Connect web
-site](<https://osgconnect.net/>), then click on the **Sign Up** button. You 
-will need to agree to our Acceptable Use Policy in order to get to the 
-main log in screen. 
+This will send the OSG facilitation team an email and someone will be in 
+touch to set up an orientation meeting, and confirm if you are joining 
+an existing project on the OSPool or starting a new one. 
 
-The main log in screen will prompt you to sign in via your primary institutional 
-affiliation. You'll be directed to a discovery
-service which asks you what your home institution is. (If you've used CILogon
-before it may already know your home institution and skip this step.) Locate
-your institution in the list, or type its name to find matches. 
+## Orientation Meeting
 
-> **No Institutional Identity?**
-> 
-> If you don't have an institutional identity or can't find your institution 
-> on the provided list, either (separately) sign up for a Globus ID and follow 
-> the link for that option on this page, or contact the OSG Connect support 
-> team for guidance at support@osg-htc.org
+The orientation meeting generally takes about 20-30 minutes and is a chance to 
+talk about your work, how it will 
+fit on the OSPool, and some practical next steps for getting started. 
 
-Note that this is the identity that will get linked to your OSG Connect account, 
-so be sure to pick the institution (if you have multiple affiliations) that 
-you would like to associate with your OSG Connect account. 
+## Register for an Access Point
 
-After selecting your institution in the discovery service, you'll be taken to
-your own institution's local sign-in screen. You've probably used it before,
-and if it looks familiar that's because it's exactly the same web site.  Sign in
-using your campus credentials. When done, you'll return automatically to the
-OSG Connect portal and can carry on with signup.
-
-After continuing, and allowing certain permissions in the next screen, you'll be 
-asked to create a profile and save changes. If this works successfully, you should 
-see that your membership to OSG is "pending" on the right hand side of the screen. 
-
-### Orientation Meeting
-
-Once you've applied to join OSG Connect as described above, an OSG Connect support 
-team member will contact you to arrange an initial orientation meeting. This meeting 
-generally takes about 20-30 minutes and is a chance to talk about your work, how it will 
-fit on the OSG, and some practical next steps for getting started. Some of these 
-next steps are also listed below. 
-
-### Join a Project
-
-As part of the sign up and meeting process, you'll be asked for information related 
-to your research group so that you can be assigned to an accounting project. For 
-more information about this process, see this guide: [Start or Join a Project in OSG Connect][projects]
-
-### Generate and Add an SSH key
-
-Once your account is created and you're approved, you can generate and upload an 
-SSH key to the OSG Connect website; this key will be duplicated on the OSG Connect 
-login node so that you're able to log in there and submit jobs. 
-
-To see how to generate and add an SSH key, please visit this 
-page: [Step by step instructions to generate and adding an SSH key][ssh-key]
+Before or during the orientation meeting, you will be prompted to register 
+for an account on a specific OSPool Access Point. The current default are the 
+"OSG Manage" Access Points, with registration via https://registry.cilogon.org. 
+You will be directed to follow instructions on [this page](../ap7-access) to register 
+for an account here. 
 
 ## Log In
 
-Once you've gone through the steps above, you should be able to log in to the OSG Connect 
-login node. See the second half of the SSH key guide for details: 
-[How to Log Into the OSG Connect Login Node][ssh-key]
+Once you've gone through the steps above, you should have an account on 
+on OSPool Access Point. 
+
+If your account is on the "OSG Manage" Access Points (registration via 
+https://registry.cilogon.org, accounts on `ap40.uw.osg-htc.org`), follow instructions 
+in this guide for logging in: [Registration and Log In to OSG Manage Access Points](../ap7-access.md)
+
+If your account is on the "OSG Connect" Access Points (registration via 
+https://www.osgconnect.net/, accounts on `login04.osgconnect.net`, `login05.osgconnect.net`), 
+follow instructions 
+in this guide for logging in: [Registration and Log In to OSG Connect Access Points](../connect-access.md)
 
 ## Overview of access procedure and accounting
 
@@ -118,4 +87,3 @@ out of Stash. Submit node logins are typically via Secure Shell (SSH) using a
 password or a public key. We'll discuss how to connect further on.
 
 [ssh-key]: ../../../overview/account_setup/generate-add-sshkey/
-[projects]: ../../../overview/account_setup/starting-project/
