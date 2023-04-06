@@ -85,10 +85,11 @@ can use a key without a passphrase, but this is not recommended.
 
 ## Next Steps
 
-After generating the key, you will need to upload it to a web profile. 
+After generating the key, you will need to upload it to a web profile to use it 
+for log in. 
 
-* If your account was created through "OSG Manage", follow the instructions here: [](../ap7-access.md)
-* If your account was created through "OSG Connect" follow the instructions here: [](../connect-access.md)
+* If you have an account on an `uw.osg-htc.org` Access Point follow the instructions here: [Log In to `uw.osg-htc.org` Access Points](../ap7-access.md#log-in)
+* If you have an account on "OSG Connect" Access Points, follow the instructions here: [Log In to OSG Connect Access Points](../connect-access.md#log-in)
 
 
 ## Getting Help 

@@ -3,14 +3,14 @@ ospool:
   path: overview/account_setup/connect-access.md
 ---
 
-# Join and Log In to "OSG Connect" Access Points
+# Log In to "OSG Connect" Access Points
 
 **This guide is for users who were notified by a member of the OSG team that they 
 will be using the "OSG Connect" Access Points. Do not go through the steps of this 
 guide until advised to by a Research Computing Facilitator**
 
 To join and use the "OSG Connect" Access Points (`login04.osgconnect.net`, 
-`login05.osgconnect.net`,`ap20.uc.osg-htc.org`), you will go through the following steps: 
+`login05.osgconnect.net`), you will go through the following steps: 
 
 1. Apply for an OSG Connect Access Point account 
 2. Have your account approved by an OSG Team member
@@ -19,7 +19,7 @@ To join and use the "OSG Connect" Access Points (`login04.osgconnect.net`,
 
 ## Apply for an OSG Connect Access Point account 
 
-If prompted by a Research Computing Facilitator, you can apply for OSG Connect here: 
+If prompted by a Research Computing Facilitator, you can apply for OSG Connect Access Points here: 
 
 [OSG Connect Account Request](https://www.osgconnect.net/signup)
 

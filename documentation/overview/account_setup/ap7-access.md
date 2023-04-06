@@ -3,19 +3,19 @@ ospool:
   path: overview/account_setup/ap7-access.md
 ---
 
-# Join and Log In to "OSG Manage" Access Points
+# Log In to `uw.osg-htc.org` Access Points
 
 **This guide is for users who were notified by a member of the OSG team that they 
-will be using the "OSG Manage" Access Points. Do not go through the steps of this 
+will be using the `uw.osg-htc.org` Access Points. Do not go through the steps of this 
 guide until advised to by a Research Computing Facilitator**
 
-To join and use the "OSG Manage" Access Points (`ap40.uw.osg-htc.org`), you will go through the following steps: 
+To join and use the `uw.osg-htc.org` Access Points (`ap40.uw.osg-htc.org`), you will go through the following steps: 
 
-1. Apply for an OSG Manage Access Point account 
+1. Apply for a `uw.osg-htc.org` Access Point account 
 2. Have your account approved by an OSG Team member
 3. Log in to `ap40.uw.osg-htc.org`
 
-## Request Access to "OSG Manage" Access Points
+## Request Access to `uw.osg-htc.org` Access Points
 
 To request access to `ap40.uw.osg-htc.org`, submit an application using the following steps:
 
@@ -56,7 +56,7 @@ Logging in via web authentication requires no preparatory steps beyond having ac
 
 To authenticate using this approach: 
 
-1. Open a terminal and type `ssh username@ap7.ospool.osg-htc.org`, being sure to replace `username` with your `ap7.ospool.osg-htc.org` username. Upon hitting enter, the following text should appear with a unique, but similar, URL: 
+1. Open a terminal and type `ssh username@ap40.uw.osg-htc.org`, being sure to replace `username` with your `uw.osg-htc.org` username. Upon hitting enter, the following text should appear with a unique, but similar, URL: 
 
 
         Authenticate at
@@ -97,7 +97,7 @@ The process below describes how to upload a public key to the registration websi
 
       <img src="../../../assets/ap7-images/ssh-key-list.png" class= "img-fluid"/>
 
-You can now log in to Access Point, ap7.ospool.osg-htc.org from the terminal, using `ssh username@ap7.ospool.osg-htc.org`. When you log in, instead of being prompted with a web link, you should either authenticate automatically or be asked for your ssh key passphrase to complete logging in.
+You can now log in to `ap40.uw.osg-htc.org` from the terminal, using `ssh username@ap40.uw.osg-htc.org`. When you log in, instead of being prompted with a web link, you should either authenticate automatically or be asked for your ssh key passphrase to complete logging in.
 
 
 ## Get Help
