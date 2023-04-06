@@ -3,9 +3,10 @@ nav:
   - Overview:
     - Welcome And Account Setup:
       - "Computation on the Open Science Pool ": overview/account_setup/is-it-for-you.md
-      - "Registration and Login for OSG Connect ": overview/account_setup/registration-and-login.md
-      - "Generate SSH Keys and Activate Your OSG Login ": overview/account_setup/generate-add-sshkey.md
-      - "Requesting an OSPool ap7.ospool.osg-htc.org Account": overview/account_setup/ap7-access.md
+      - "Start Here: Overview of Requesting OSPool Access": overview/account_setup/registration-and-login.md
+      - "Log In to uw.osg-htc.org Access Points": overview/account_setup/ap7-access.md
+      - "Log In to OSG Connect Access Points": overview/account_setup/connect-access.md
+      - "Generate SSH Keys": overview/account_setup/generate-add-sshkey.md
   - Support And Training Resources:
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
