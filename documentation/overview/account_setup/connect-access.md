@@ -19,7 +19,7 @@ To join and use the "OSG Connect" Access Points (`login04.osgconnect.net`,
 
 ## Apply for an OSG Connect Access Point account 
 
-If prompted by a research computing facilitator, you can apply for OSG Connect here: 
+If prompted by a Research Computing Facilitator, you can apply for OSG Connect here: 
 
 [OSG Connect Account Request](https://www.osgconnect.net/signup)
 
@@ -70,7 +70,7 @@ be able to log in to OSG Connect.
 Before you can connect, you will need to know which login node your account is assigned to. You can find 
 this information on your profile from the OSG Connect website.
 
-1. Go to www.osgconnect.net and sign in with your CILogin. 
+1. Go to www.osgconnect.net and sign in with your institution credentials that you used to request an account. 
 
 2. Click "Profile" in the top right corner.
 

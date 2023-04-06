@@ -13,11 +13,11 @@ To join and use the "OSG Manage" Access Points (`ap40.uw.osg-htc.org`), you will
 
 1. Apply for an OSG Manage Access Point account 
 2. Have your account approved by an OSG Team member
-3. Log in to `ap7.ospool.osg-htc.org`
+3. Log in to `ap40.uw.osg-htc.org`
 
 ## Request Access to "OSG Manage" Access Points
 
-To request access to `ap7.ospool.osg-htc.org`, submit an application using the following steps:
+To request access to `ap40.uw.osg-htc.org`, submit an application using the following steps:
 
 1. Go to the account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:297). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
    
@@ -43,11 +43,11 @@ To request access to `ap7.ospool.osg-htc.org`, submit an application using the f
 
 If a meeting has not already been scheduled with a Research Computing Facilitator, one of the facilitation team will contact you about arranging a short consultation. 
 
-Following the meeting, the Facilitator will approve your account and add your profile to any relevant OSG ‘project’ names. Once your account is ready, the Facilitator will email you with your account details including the 'username' you will use to log in to the `ap7.ospool.osg-htc.org` access point. 
+Following the meeting, the Facilitator will approve your account and add your profile to any relevant OSG ‘project’ names. Once your account is ready, the Facilitator will email you with your account details including the 'username' you will use to log in to the `ap40.uw.osg-htc.org` access point. 
 
 ## Log in
 
-Once your account has been added to the `ap7.ospool.osg-htc.org` access point, you will be able to log in using a terminal or SSH program. Logging in requires authenticating your credientials using one of two options: __web authentication__ or __SSH key pair authentication__. Additional information on this process will be provided during and/or following your discussion with a Research Computing Facilitator.
+Once your account has been added to the `ap40.uw.osg-htc.org` access point, you will be able to log in using a terminal or SSH program. Logging in requires authenticating your credientials using one of two options: __web authentication__ or __SSH key pair authentication__. Additional information on this process will be provided during and/or following your discussion with a Research Computing Facilitator.
 
 
 ### Option 1: Log in via Web Authentication
@@ -75,7 +75,7 @@ To authenticate using this approach:
 
 ### Option 2: Log in via SSH Key Pair Authentication
 
-It is also possible to authenticate using an SSH key pair, if you prefer. Logging in using SSH keys does not require access to an internet browser to log in into the OSG Access Point, `ap7.ospool.osg-htc.org`. 
+It is also possible to authenticate using an SSH key pair, if you prefer. Logging in using SSH keys does not require access to an internet browser to log in into the OSG Access Point, `ap40.uw.osg-htc.org`. 
 
 The process below describes how to upload a public key to the registration website. It assumes that a private/public key pair has already been generated. If you need to generate a key pair, see this [OSG guide](../generate-add-sshkey). 
 

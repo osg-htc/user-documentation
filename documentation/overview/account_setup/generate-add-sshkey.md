@@ -87,8 +87,8 @@ can use a key without a passphrase, but this is not recommended.
 
 After generating the key, you will need to upload it to a web profile. 
 
-* If your account has been created using XX, follow the instructions here: [](../ap7-access.md)
-* If your account has been created using YY, follow the instructions here: [](../connect-access.md)
+* If your account was created through "OSG Manage", follow the instructions here: [](../ap7-access.md)
+* If your account was created through "OSG Connect" follow the instructions here: [](../connect-access.md)
 
 
 ## Getting Help 
