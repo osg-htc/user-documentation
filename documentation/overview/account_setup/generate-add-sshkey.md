@@ -88,8 +88,8 @@ can use a key without a passphrase, but this is not recommended.
 After generating the key, you will need to upload it to a web profile to use it 
 for log in. 
 
-* If you have an account on an `uw.osg-htc.org` Access Point follow the instructions here: [Log In to `uw.osg-htc.org` Access Points](../ap7-access.md#log-in)
-* If you have an account on "OSG Connect" Access Points, follow the instructions here: [Log In to OSG Connect Access Points](../connect-access.md#log-in)
+* If you have an account on an `uw.osg-htc.org` Access Point (account created through https://registry.cilogon.org/registry/) follow the instructions here: [Log In to `uw.osg-htc.org` Access Points](../ap7-access#log-in)
+* If you have an account on "OSG Connect" Access Points (account created through https://www.osgconnect.net/), follow the instructions here: [Log In to OSG Connect Access Points](../connect-access#log-in)
 
 
 ## Getting Help 
