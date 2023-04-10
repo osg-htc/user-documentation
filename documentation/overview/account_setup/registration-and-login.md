@@ -48,11 +48,11 @@ on OSPool Access Point.
 
 If your account is on the `uw.osg-htc.org` Access Points (registration via 
 https://registry.cilogon.org, accounts on `ap40.uw.osg-htc.org`), follow instructions 
-in this guide for logging in: [Log In to uw.osg-htc.org Access Points](../ap7-access.md#log-in)
+in this guide for logging in: [Log In to uw.osg-htc.org Access Points](../ap7-access#log-in)
 
 If your account is on the "OSG Connect" Access Points (registration via 
 https://www.osgconnect.net/, accounts on `login04.osgconnect.net`, `login05.osgconnect.net`), 
 follow instructions 
-in this guide for logging in: [Log In to OSG Connect Access Points](../connect-access.md#log-in)
+in this guide for logging in: [Log In to OSG Connect Access Points](../connect-access#log-in)
 
 [ssh-key]: ../../../overview/account_setup/generate-add-sshkey/
