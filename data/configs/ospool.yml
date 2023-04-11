@@ -15,7 +15,7 @@ nav:
       - "Annual, Week-Long OSG User School ": support_and_training/training/osg-user-school.md
       - "Other Past Training Events ": support_and_training/training/previous-training-events.md
   - Managing HTC Workloads:
-    - HTC Workload Planning Testing Scaling Up:
+    - HTC Workload Planning, Testing, & Scaling Up:
       - "Roadmap to HTC Workload Submission": htc_workloads/workload_planning/roadmap.md
       - "Indicate the Duration Category of Your Jobs" : htc_workloads/workload_planning/jobdurationcategory.md
       - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
