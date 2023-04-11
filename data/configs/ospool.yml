@@ -16,7 +16,7 @@ nav:
       - "Other Past Training Events ": support_and_training/training/previous-training-events.md
   - Managing HTC Workloads:
     - HTC Workload Planning Testing Scaling Up:
-      - "Roadmap to HTC Workload Submission via OSG Connect ": htc_workloads/workload_planning/roadmap.md
+      - "Roadmap to HTC Workload Submission": htc_workloads/workload_planning/roadmap.md
       - "Indicate the Duration Category of Your Jobs" : htc_workloads/workload_planning/jobdurationcategory.md
       - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
     - Submitting HTC Workloads With HTCondor:
