@@ -15,7 +15,7 @@ honoring the community’s shared responsibility for efficient use of the contri
 [jobs with single executions longer than 20 hours in tests on the OSPool should not be submitted](../../../overview/account_setup/is-it-for-you/), without 
 self-checkpointing (see further below).
 
-Every job submitted via an OSG Connect access point must 
+Every job submitted from an OSG-managed access point must 
 be labeled with a **Job Duration Category** upon submission.
 By knowing the expected duration, the OSG is working to be able to direct longer-running jobs to resources that are 
 faster and are interrupted less, while shorter jobs can run across more of the OSPool for better overall throughput.
