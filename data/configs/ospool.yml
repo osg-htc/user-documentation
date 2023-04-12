@@ -27,7 +27,7 @@ nav:
       - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md
       - "Workflow Tutorials": htc_workloads/submitting_workloads/tutorial-command.md
       - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing-on-OSPool.md
-    - Using Software On The OSG:
+    - Using Software:
       - "Using Software on the Open Science Pool": htc_workloads/using_software/software-overview.md
       - "Control Where Your Jobs Run/Job Requirements": htc_workloads/using_software/requirements.md
       - "Compiling Software": htc_workloads/using_software/compiling-applications.md
@@ -51,7 +51,7 @@ nav:
     - Automated Workflows:
       - "Submit Workflows with HTCondor's DAGMan ": htc_workloads/automated_workflows/dagman-workflows.md
       - "Use Pegasus to Manage Workflows on OSG Connect": htc_workloads/automated_workflows/tutorial-pegasus/README.md
-  - Software Examples For OSG:
+  - Software Examples:
     - Python:
       - "Run Python Scripts on the OSPool ": software_examples/python/manage-python-packages.md
       - "Scaling Up With HTCondor’s Queue Command": software_examples/python/tutorial-ScalingUp-Python/README.md
