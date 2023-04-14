@@ -66,7 +66,6 @@ output = hello-ospool_$(Cluster)_$(Process).out
 #  computer where each job runs. The last of these lines *would* be
 #  used if there were any other files needed for the executable to use.
 should_transfer_files = YES
-when_to_transfer_output = ON_EXIT
 # transfer_input_files = file1,/absolute/pathto/file2,etc
 
 # Specify Job duration category as "Medium" (expected runtime <10 hr) or "Long" (expected runtime <20 hr). 
