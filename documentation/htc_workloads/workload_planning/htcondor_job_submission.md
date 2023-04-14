@@ -76,7 +76,7 @@ when_to_transfer_output = ON_EXIT
 #  each job will need on the computer where it runs, and any other job requirements (e.g., operating system). 
 request_cpus = 1
 request_memory = 1GB
-request_disk = 1MB
+request_disk = 5GB
 requirements = (OSGVO_OS_STRING == "RHEL 7")
 #
 # Tell HTCondor to run 3 instances of our job:
