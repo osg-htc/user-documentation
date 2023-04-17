@@ -56,6 +56,12 @@ The most recent version of these training materials are here:
 
 * [Slides](https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing)
 
+### Pegasus Workflow Management System on the Open Science Pool
+
+The most recent version of these training materials are here:
+
+* [Slides](https://docs.google.com/presentation/d/1XQjkq8pxbrXvMYU7zDihkgk2bOy4FNXHINWkhmkNqHQ/edit?usp=sharing)
+
 
 ### Software Portability on the Open Science Pool
 
