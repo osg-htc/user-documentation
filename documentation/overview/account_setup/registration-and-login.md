@@ -35,24 +35,33 @@ fit on the OSPool, and some practical next steps for getting started.
 
 ## Register for an Access Point
 
+![](../../assets/Access-Point.svg)
+
 Before or during the orientation meeting, you will be prompted to register 
-for an account on a specific OSPool Access Point. The current default is are the
-`uw.osg-htc.org` Access Points, with registration via https://registry.cilogon.org. 
+for an account on a specific OSPool Access Point. The current default are
+`uw.osg-htc.org` Access Points. 
+
 You will be directed to follow instructions on [this page](../ap7-access) to register 
-for an account here. 
+for an account. 
 
 ## Log In
 
 Once you've gone through the steps above, you should have an account on 
-on OSPool Access Point. 
+on OSPool Access Point! 
 
-If your account is on the `uw.osg-htc.org` Access Points (registration via 
-https://registry.cilogon.org, accounts on `ap40.uw.osg-htc.org`), follow instructions 
-in this guide for logging in: [Log In to uw.osg-htc.org Access Points](../ap7-access#log-in)
+Follow the instructions below to learn how to log in to you OSPool Access Point. 
 
-If your account is on the "OSG Connect" Access Points (registration via 
-https://www.osgconnect.net/, accounts on `login04.osgconnect.net`, `login05.osgconnect.net`), 
-follow instructions 
-in this guide for logging in: [Log In to OSG Connect Access Points](../connect-access#log-in)
+**Accounts for all new users are created on `uw.osg-htc.org` Access Points unless otherwise specified.** 
 
-[ssh-key]: ../../../overview/account_setup/generate-add-sshkey/
+<details>
+<summary>Log In to `uw.osg-htc.org` Access Points (e.g., ap40.uw.osg-htc.org)</summary>
+<br>
+If your account is on the uw.osg-htc.org Access Points (e.g., accounts on ap40.uw.osg-htc.org), follow instructions in this guide for logging in: [Log In to uw.osg-htc.org Access Points](../ap7-access#log-in)
+</details>
+
+<details>
+<summary>Log In to `OSG Connect` Access Points (e.g., login04.osgconnect.net)</summary>
+<br>
+If your account is on the (e.g., accounts on login04.osgconnect.net, login05.osgconnect.net), follow instructions in this guide for logging in: [Log In to OSG Connect Access Points](../connect-access#log-in)
+</details>
+
