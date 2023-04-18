@@ -54,14 +54,18 @@ Follow the instructions below to learn how to log in to you OSPool Access Point.
 **Accounts for all new users are created on `uw.osg-htc.org` Access Points unless otherwise specified.** 
 
 <details>
-<summary>Log In to `uw.osg-htc.org` Access Points (e.g., ap40.uw.osg-htc.org)</summary>
+<summary>Log In to "uw.osg-htc.org" Access Points (e.g., ap40.uw.osg-htc.org)</summary>
 <br>
-If your account is on the uw.osg-htc.org Access Points (e.g., accounts on ap40.uw.osg-htc.org), follow instructions in this guide for logging in: [Log In to uw.osg-htc.org Access Points](../ap7-access#log-in)
+If your account is on the uw.osg-htc.org Access Points (e.g., accounts on ap40.uw.osg-htc.org), follow instructions in this guide for logging in:
+<a href="https://portal.osg-htc.org/documentation/overview/account_setup/ap7-access/">Log In to uw.osg-htc.org Access Points</a>
 </details>
 
 <details>
-<summary>Log In to `OSG Connect` Access Points (e.g., login04.osgconnect.net)</summary>
+<summary>Log In to "OSG Connect" Access Points (e.g., login04.osgconnect.net)</summary>
 <br>
-If your account is on the (e.g., accounts on login04.osgconnect.net, login05.osgconnect.net), follow instructions in this guide for logging in: [Log In to OSG Connect Access Points](../connect-access#log-in)
+If your account is on the (e.g., accounts on login04.osgconnect.net, login05.osgconnect.net), follow instructions in this guide for logging in: 
+<a href="https://portal.osg-htc.org/documentation/overview/account_setup/connect-access/">Log In to OSG Connect Access Points</a>
 </details>
+
+
 
