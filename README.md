@@ -127,7 +127,7 @@ ports 8010 and 8011 as specified below.
 
 **OSG**
 ```shell
-docker run -it -p 8010:8000 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/osg-portal-documentation:latest
+docker run -it -p 8010:8010 -v ${PWD}:/docs/user-documentation hub.opensciencegrid.org/opensciencegrid/osg-portal-documentation:latest
 ```
 
 [localhost:8010](http://0.0.0.0:8010/documentation/)
