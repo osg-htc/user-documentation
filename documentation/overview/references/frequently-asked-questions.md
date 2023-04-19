@@ -24,12 +24,15 @@ Please visit our website for the most up-to-date information on requesting an ac
 <summary>How do I change the project my jobs are affiliated with?</summary>
 <br>
 The OSG team assigns individual user accounts to "projects" upon account creation. These projects are a way to track usage hours and capture information about the types of research running on OSG resources. A project typically corresponds to a research group headed by a single PI, but can sometimes represent a long-term multi-institutional project or some other grouping. If you only belong to a single project, that project will be charged automatically when you submit jobs. Run the following command to see a list of projects you belong to:
-
-    $ grep $USER /etc/condor/UserToProjectMap.txt
-  
+<br>
+<br>
+<code>$ grep $USER /etc/condor/UserToProjectMap.txt</code>
+<br>
+<br>
 If need to run jobs under a different project you are a member of, you can manually set the project for those jobs by putting this option in the submit file:
-
-    +ProjectName="ProjectName"
+<br>
+<br>
+<code>+ProjectName="ProjectName"</code>
 </details>
 
 
@@ -50,7 +53,7 @@ Workshops are available to any researcher affiliated with a U.S. academic, non-p
 <details>
 <summary>How to cite or acknowledge OSG?</summary>
 <br>
-Whenever you make use of OSG resources, services or tools, we request you acknowledge OSG in your presentations and publications using the informtion provided on the [Acknowledging the OSG Consortium](https://osg-htc.org/acknowledging.html) page. 
+Whenever you make use of OSG resources, services or tools, we request you acknowledge OSG in your presentations and publications using the informtion provided on the <a href="https://osg-htc.org/acknowledging.html">Acknowledging the OSG Consortium</a> page.   
 </details>
 
 ## Software
@@ -59,21 +62,23 @@ Whenever you make use of OSG resources, services or tools, we request you acknow
 <summary>What software packages are available?</summary>
 <br>
 In general, we support most software that fits the distributed high throughput computing model (e.g., open source). Users are encouraged to download and install their own software on our Access Points. 
- 
-Additionally, users may install their software into a Docker container which can run on OSG as an Apptainer image or use one of our existing containers.  See [this guide](../../../htc_workloads/using_software/available-containers-list/) for more information. 
+<br>
+<br>  
+Additionally, users may install their software into a Docker container which can run on OSG as an Apptainer image or use one of our existing containers.  See the Software guides on the OSPool documentation website for more information. 
 </details>
 
 <details>
 <summary>Are there any restrictions on installing commercial softwares?</summary>
 <br>
-We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running [MATLAB standalone executables](../../../software_examples/matlab_runtime/tutorial-matlab-HelloWorld/) which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's `/home` directory with HTCondor transferring to jobs, but should not be staged in OSG's public data staging locations (see ../../../htc_workloads/managing_data/osgconnect-storage/-data-management-and-policies). Please get in touch with any questions about licensed software.
+We can only *directly* support software that is freely distributable. At present, we do not have or support most commercial software due to licensing issues. (One exception is running <a href="https://osg-htc.org/acknowledging.html](https://portal.osg-htc.org/documentation/software_examples/matlab_runtime/tutorial-matlab-HelloWorld/">MATLAB standalone executables</a> which have been compiled with the MATLAB Compiler Runtime).  Software that is licensed to individual users (and not to be shared between users) can be staged within the user's `/home` or  `/protected` directories, but should not be staged in OSG's `/public` data staging locations. See  <a href="https://portal.osg-htc.org/documentation/overview/references/policy/">OSPool policies</a> for more information. Please get in touch with any questions about licensed software.
 </details>
  
 <details>
 <summary>Can I request for system wide installation of the open source software useful for my research?</summary>
 <br>
-We recommend users use Docker or Apptainer containers if jobs require system wide installations of software. Visit the [OSPool Documentation](https://portal.osg-htc.org/documentation/) website to learn more about creating your own container. 
+We recommend users use Docker or Apptainer containers if jobs require system wide installations of software. Visit the <a href="https://portal.osg-htc.org/documentation/">OSPool Documentation website</a> to learn more about creating your own container. 
 </details>
+
   
 ## Running Jobs
    
@@ -81,7 +86,7 @@ We recommend users use Docker or Apptainer containers if jobs require system wid
 <summary>What type of computation is a good match or NOT a good match for the OSG's Open Science Pool?</summary>
 <br>
 The OSG provides computing resources through the Open Science Pool for high throughput computing workloads. You can get the most of out OSG resources by breaking up a single large computational task into many smaller tasks for the fastest overall turnaround. This approach can be 
-invaluable in accelerating your computational work and thus your research. Please see our ["Is OSG for You?"](../../../overview/account_setup/is-it-for-you/) page for more details on how to determine if your work matches up well with OSG's high throughput computing model.
+invaluable in accelerating your computational work and thus your research. Please see our <a href="https://portal.osg-htc.org/documentation/overview/account_setup/is-it-for-you/">Computation on the Open Science Pool</a> page for more details on how to determine if your work matches up well with OSG's high throughput computing model.
 </details>
   
 <details>
@@ -93,27 +98,29 @@ We use a task scheduling software called HTCondor to schedule and run jobs.
 <details>
 <summary>How do I submit a computing job?</summary>
 <br>
-Jobs are submitted via HTCondor scheduler. Please see our [Roadmap to HTC Workload Submission](https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/roadmap/) guide for more details on submitting and managing jobs.
+Jobs are submitted via HTCondor scheduler. Please see our <a href="https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/roadmap/">Roadmap to HTC Workload Submission</a> guide for more details on submitting and managing jobs.
 </details>
-  
+
 <details>
 <summary>How many jobs can I have in the queue?</summary>
 <br>
 The number of jobs that are submitted to the queue by any one user cannot not exceed 10,000 without adding a special statement to the submit file. If you have more jobs than that, we ask that you include the following statement in your submit file: 
-
-`max_idle = 2000`  
-
+<br>
+<br>
+<code>max_idle = 2000</code>
+<br>
+<br>
 This is the maximum number of jobs that you will have in the "Idle" or "Held" state for the submitted batch of jobs at any given time.  Using a value of 2000 will ensure that your jobs continue to apply a constant pressure on the queue, but will not fill up the queue unnecessarily (which helps the scheduler to perform optimally).  
 </details>
 
 <details>
 <summary>How do I view usage metrics for my project?</summary>
 <br>
-The project's resource usage appears in the OSG accounting system, [GRACC](https://gracc.opensciencegrid.org/d/000000033/osg-project-accounting?orgId=1). Additional dashboards are available to help filter information of interest. 
-
+The project's resource usage appears in the OSG accounting system, <a href="https://gracc.opensciencegrid.org/d/000000033/osg-project-accounting?orgId=1">GRid ACcounting Collector (GRACC)</a>. Additional dashboards are available to help filter information of interest. 
+<br>
+<br>  
 At the top of that dashboard, there is a set of filters that you can use to examine the number of hours used by your project, or your institution. 
 </details>
-
   
 ## Data Storage and Transfer
    
@@ -126,21 +133,23 @@ There may be more than one solution that is available to researchers to process 
 <details>
 <summary>How do I transfer my data to and from OSG Access Points?</summary>
 <br>
-You can transfer data using scp, rsync, or other common Unix tools. See [Using scp To Transfer Files](../../../htc_workloads/managing_data/scp/) for more details.
+You can transfer data using `scp`, `rsync`, or other common Unix tools. See <a href="https://portal.osg-htc.org/documentation/htc_workloads/managing_data/scp/">Using scp To Transfer Files</a> for more details.
 </details>
+    
   
 <details>
 <summary>How public is /public?</summary>
 <br>
-The data under your `/public` location is discoverable and readable by anyone in the world. Data in `/public` is made public over http/https (via `https://stash.osgconnect.net/public/`) and mirrored to `/cvmfs/stash.osgstorage.org/osgconnect/public/` (for use with `stashcp`) which is mounted on a large number of systems around the world.
-  
+The data under your `/public` location is discoverable and readable by anyone in the world. Data in `/public` is made public over http/https (via https://stash.osgconnect.net/public/) and mirrored to `/cvmfs/stash.osgstorage.org/osgconnect/public/` which is mounted on a large number of systems around the world.
+<br>
+<br>  
 Store data in `/protected` or `/home` if you do not want it to be publicly accessible. 
 </details>
   
 <details>
 <summary>Is there any support for private data?</summary>
 <br>
-Data stored in `/protected` and in `/home` is not publically accessible. **Sensitive data, such as HIPPA data, is not allowed to be uploaded or analyzed using OSG resources.** 
+Data stored in `/protected` and in `/home` is not publically accessible. <b>Sensitive data, such as HIPPA data, is not allowed to be uploaded or analyzed using OSG resources.</b>
 </details>
 
 <details>
