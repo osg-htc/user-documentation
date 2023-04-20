@@ -29,5 +29,23 @@ Please visit our other guides-especially the [easily submit multiple job page](.
 
 # General considerations about HTCondor in OSPool
 - HTCondor on **OSPool** does not have a **module** and a **shared file system**. User needs to identify every component of their jobs and transfer them from their access point to the execute node. The slides of the [new user training](https://docs.google.com/presentation/d/1z-f81xtk_ZXeJcA1kX60JoScXdGfe-xgsB9g5YemrqI/edit#slide=id.g10c0fd09133_0_7) contians more detils about it.
-- Instead of relying on modules, please use the [different conatiners](../../using_software/available-containers-list.md) available on the OSPool or make your own [container](../../using_software/containers-singularity.md). Please remember the faciliation team is here to [support you](../../../support_and_training/support/getting-help-from-RCFs.md).
-- By default the [wall time limit](../../workload_planning/jobdurationcategory.md) set on HTCondor jobs are 20 hours on the OSPool.
+- Instead of relying on modules, please use the [different conatiners](../../using_software/available-containers-list/) available on the OSPool or make your own [container](../../using_software/containers-singularity.md). Please remember the faciliation team is here to [support you](../../../support_and_training/support/getting-help-from-RCFs/).
+- By default the [wall time limit](../../workload_planning/jobdurationcategory/) set on HTCondor jobs are 20 hours on the OSPool.
+
+# Sample SLURM Scripts
+A sample Slurm scripts is presented here with the equivalent HTCondor transformation is shown in the comments.  
+
+  #!/bin/bash
+  #SBATCH --nodes=1                              
+  #SBATCH --ntasks-per-node=8          
+  #SBATCH --mem-per-cpu=2gb            
+  #SBATCH --time=160:00:00       
+  #SBATCH --job-name=abaqus_test	     
+  #SBATCH --error=job.%J.err	    
+  #SBATCH --output=job.%J.out          
+  #SBATCH --partition=batch   
+
+  module load matlab/r2020a		     
+  matlab -nodisplay -r "matlab_program(input_arguments),quit"
+
+	
