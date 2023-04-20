@@ -22,7 +22,7 @@ some similarities. For both program the user needs to specify the computing reso
 - The **queue** statement in HTCondor can be modified (include variables) to make it behave like an array job in Slurm.
 - Basic job submission and queue checking command starts with a **condor_** prefix in HTCondor. Slurm does not have a specific prefix for this regard.
 - HTCondor can have thousands of jobs **running within minutes**. The wait time in the queue for many Slurm jobs is usually much longer.
-- Slurm is good for managing MPI jobs; HTCondor is efficient in running MPI jobs. The parallelization using HTCondor can be achevied without using any specific tools.  
+- Slurm is good for managing MPI jobs; HTCondor is efficient in running HTC jobs. The parallelization using HTCondor can be achieved without using any specific tools, but requires codes to be pleasantly parallel (no inter-node communication)
 
 To know more about Slurm please visit their [website](https://slurm.schedmd.com/documentation.html) and for HTCondor take a look at the HTCondor [manual page](https://htcondor.readthedocs.io/en/latest/users-manual/index.html)
 Please visit our other guides-especially the [easily submit multiple job page](../submit-multiple-jobs.md) to know more about the modularity of HTCondor scripts.
