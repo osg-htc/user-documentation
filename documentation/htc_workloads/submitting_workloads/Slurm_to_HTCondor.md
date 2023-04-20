@@ -10,7 +10,7 @@ Convert your workflow from Slurm to HTCondor
 # Introduction
 
 [Slurm](https://slurm.schedmd.com/documentation.html) is one of the most popular workload manager for high performance computing (HPC) system while HTCondor
-is the scheduler program developed for high throughput computing (HTC) environment. Both being part of the scheduler/workload manager program, they do have
+is the scheduler program developed for high throughput computing (HTC) environment. Both being implementations of scheduler/workload managers, they do have
 some similarities. For both program the user needs to specify the computing resources required for a job but the syntaxes used for this purposes are different
 
 # Common Diffences between Slurm and HTCondor
