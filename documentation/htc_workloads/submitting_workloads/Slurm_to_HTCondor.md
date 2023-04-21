@@ -40,14 +40,14 @@ A sample Slurm scripts is presented here with the equivalent HTCondor transforma
 <td>
 <pre>
 #!/bin/bash
-#SBATCH --nodes=1                              
+#SBATCH --nodes=1              #HTCondor equivalent does not exist                     
 #SBATCH --ntasks-per-node=8          
 #SBATCH --mem-per-cpu=2gb            
 #SBATCH --time=160:00:00       
-#SBATCH --job-name=abaqus_test	     
-#SBATCH --error=job.%J.err	    
+#SBATCH --job-name=sample_slurm	 #Optional in HTCondor     
+#SBATCH --error=job.%J.error	    
 #SBATCH --output=job.%J.out          
-#SBATCH --partition=batch   
+#SBATCH --partition=batch     #HTCondor equivalent does not exist
 
 module load matlab/r2020a		     
 matlab -nodisplay -r "matlab_program(input_arguments),quit"
@@ -55,17 +55,20 @@ matlab -nodisplay -r "matlab_program(input_arguments),quit"
 </td>
 <td>
 <pre>
-+SingularityImage = ""
-executable = short.sh
 
-error = .error
-output = short.output
-log = short.log
 
-request_cpus = 1
-request_memory = 1 MB
-request_disk = 1 MB
+request_cpus = 8
+request_memory = 16 GB
++JobDurationCategory = "Long" #The maximum allowed time is 40 hours
 
+error = job.$(ProcID).error
+output = job.$(ProcID).out
+log = job.$(ProcID).log
+
+
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-matlab-runtime:R2020a"
+executable = matlab_program
+arguments = input_arguments
 queue 1
 </pre>
 </td>
