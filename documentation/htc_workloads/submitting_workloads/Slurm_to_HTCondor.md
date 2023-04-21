@@ -51,25 +51,34 @@ A sample Slurm scripts is presented here with the equivalent HTCondor transforma
 
 module load matlab/r2020a		     
 matlab -nodisplay -r "matlab_program(input_arguments),quit"
+
+%%%%%%%%%%%%%%%%%highlights for submitting an array jobs %%%%%%%%%%%%%%%%%%%%%%%%%%%
+#SBATCH --array =1-10
+module load matlab/r2020a	
+matlab -nodisplay -r "matlab_program(input_arguments,$SLURM_ARRAY_TASK_ID),quit"
 </pre>
 </td>
 <td>
 <pre>
-
++SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-matlab-runtime:R2020a"
+executable = matlab_program
+arguments = input_arguments
 
 request_cpus = 8
 request_memory = 16 GB
+request_disk = 2 GB
 +JobDurationCategory = "Long" #The maximum allowed time is 40 hours
 
 error = job.$(ProcID).error
 output = job.$(ProcID).out
 log = job.$(ProcID).log
 
-
-+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-matlab-runtime:R2020a"
-executable = matlab_program
-arguments = input_arguments
 queue 1
+
+%%%%%%%%%%%%%%% equivalent changes to HTCondor for array jobs%%%%%%%%%%%%%%%%%%%%%%%%%%
+executable = matlab_program
+arguments = input_arguments, $(ProcID)
+queue 10
 </pre>
 </td>
 </tr>
