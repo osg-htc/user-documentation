@@ -25,15 +25,15 @@ some similarities. For both program the user needs to specify the computing reso
 - Slurm is good for managing MPI jobs; HTCondor is efficient in running HTC jobs. The parallelization using HTCondor can be achieved without using any specific tools, but requires codes to be pleasantly parallel (no inter-node communication)
 
 To know more about Slurm please visit their [website](https://slurm.schedmd.com/documentation.html) and for HTCondor take a look at the HTCondor [manual page](https://htcondor.readthedocs.io/en/latest/users-manual/index.html)
-Please visit our other guides-especially the [easily submit multiple job page](../submit-multiple-jobs.md) to know more about the modularity of HTCondor scripts.
+Please visit our other guides-especially the [easily submit multiple job page](../submit-multiple-jobs/) to know more about the modularity of HTCondor scripts.
 
 # General considerations about HTCondor in OSPool
 - HTCondor on **OSPool** does not have a **module** and a **shared file system**. User needs to identify every component of their jobs and transfer them from their access point to the execute node. The slides of the [new user training](https://docs.google.com/presentation/d/1z-f81xtk_ZXeJcA1kX60JoScXdGfe-xgsB9g5YemrqI/edit#slide=id.g10c0fd09133_0_7) contians more detils about it.
-- Instead of relying on modules, please use the [different conatiners](../../using_software/available-containers-list/) available on the OSPool or make your own [container](../../using_software/containers-singularity.md). Please remember the faciliation team is here to [support you](../../../support_and_training/support/getting-help-from-RCFs/).
+- Instead of relying on modules, please use the [different conatiners](../../using_software/available-containers-list/) available on the OSPool or make your own [container](../../using_software/containers-singularity/). Please remember the faciliation team is here to [support you](../../../support_and_training/support/getting-help-from-RCFs/).
 - By default the [wall time limit](../../workload_planning/jobdurationcategory/) set on HTCondor jobs are 20 hours on the OSPool.
 
-# Sample SLURM Scripts
-A sample Slurm scripts is presented here with the equivalent HTCondor transformation is shown in the comments.  
+# Sample Slurm Scripts
+A sample Slurm scripts is presented below with the equivalent HTCondor transformation.    
 
 <table>
 <tr>
@@ -67,8 +67,8 @@ arguments = input_arguments
 request_cpus = 8
 request_memory = 16 GB
 request_disk = 2 GB
-+JobDurationCategory = "Long" #The maximum allowed time is 40 hours
 
++JobDurationCategory = "Long" #The maximum allowed time is 40 hours
 error = job.$(ProcID).error
 output = job.$(ProcID).out
 log = job.$(ProcID).log
