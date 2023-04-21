@@ -1,8 +1,11 @@
 nav:
   - "Home": index.md
-  - Overview:
-    - Welcome And Account Setup:
-      - "Computation on the Open Science Pool ": overview/account_setup/is-it-for-you.md
+  - Get Started on the OSPool:
+    - Welcome:
+      - "Computation on the Open Science Pool": overview/account_setup/is-it-for-you.md
+      - "Policies for Using OSG Services and the OSPool ": overview/references/policy.md
+      - "Frequently Asked Questions": overview/references/frequently-asked-questions.md
+- Account Setup:
       - "Start Here: Overview of Requesting OSPool Access": overview/account_setup/registration-and-login.md
       - "Log In to uw.osg-htc.org Access Points": overview/account_setup/ap7-access.md
       - "Log In to OSG Connect Access Points": overview/account_setup/connect-access.md
@@ -14,44 +17,46 @@ nav:
       - "Bi-Monthly OSG User Training (registration+materials)": support_and_training/training/osgusertraining.md
       - "Annual, Week-Long OSG User School ": support_and_training/training/osg-user-school.md
       - "Other Past Training Events ": support_and_training/training/previous-training-events.md
-  - Managing HTC Workloads:
-    - HTC Workload Planning, Testing, & Scaling Up:
+  - Submit High Throughput Computing (HTC) Workloads:
+    - How to Use the OSPool:
       - "Roadmap to HTC Workload Submission": htc_workloads/workload_planning/roadmap.md
-      - "Indicate the Duration Category of Your Jobs" : htc_workloads/workload_planning/jobdurationcategory.md
-      - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
-    - Submitting HTC Workloads With HTCondor:
-      - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/tutorial-quickstart/README.md
-      - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
-      - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
-      - "Finding OSG Locations": htc_workloads/submitting_workloads/tutorial-osg-locations/README.md
-      - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md
-      - "Workflow Tutorials": htc_workloads/submitting_workloads/tutorial-command.md
-      - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing-on-OSPool.md
+    - HTC Workload Planning, Testing, and Scaling Up:
+      - "Overview: Submit OSPool Jobs using HTCondor" : htc_workloads/workload_planning/htcondor_job_submission.md 
+      - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md    
+      - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md      
+    - Managing Data For Jobs:
+      - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/overview.md
+      - "Use scp To Transfer Files To and From OSG Managed Access Points": htc_workloads/managing_data/scp.md
+      - "Transfer to/from /home": htc_workloads/managing_data/file-transfer-via-htcondor.md
+      - "Transfer Larger Files and Containers (OSDF)": htc_workloads/managing_data/osdf.md
+      - "Transfer HTTP-available Files up to 1GB In Size": htc_workloads/managing_data/file-transfer-via-http.md         
     - Using Software:
-      - "Using Software on the Open Science Pool": htc_workloads/using_software/software-overview.md
+      - "Overview: Software on the Open Science Pool": htc_workloads/using_software/software-overview.md
       - "Control Where Your Jobs Run/Job Requirements": htc_workloads/using_software/requirements.md
       - "Compiling Software": htc_workloads/using_software/compiling-applications.md
       - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
       - "Containers - Overview": htc_workloads/using_software/containers.md
       - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
       - "Containers - Docker": htc_workloads/using_software/containers-docker.md
-      - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
-    - Managing Data For Jobs:
-      - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/overview.md
-      - "Use scp To Transfer Files To and From OSG Managed Access Points": htc_workloads/managing_data/scp.md
-      - "Transfer to/from /home": htc_workloads/managing_data/file-transfer-via-htcondor.md
-      - "Transfer Larger Files and Containers (OSDF)": htc_workloads/managing_data/osdf.md
-      - "Transfer HTTP-available Files up to 1GB In Size": htc_workloads/managing_data/file-transfer-via-http.md
+      - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md 
+    - Troubleshooting:      
+      - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md      
     - Considerations For Specific Resource Needs:
       - "Using GPUs on the OSPool": htc_workloads/specific_resource/gpu-jobs.md
+      - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing-on-OSPool.md      
       - "Large Memory Jobs": htc_workloads/specific_resource/large-memory-jobs.md
       - "Multicore Jobs": htc_workloads/specific_resource/multicore-jobs.md
       - "OpenMPI Jobs": htc_workloads/specific_resource/openmpi-jobs.md
-      - "Running OSG jobs on XSEDE": htc_workloads/specific_resource/osg-xsede.md
+      - "Running OSG jobs on XSEDE": htc_workloads/specific_resource/osg-xsede.md      
     - Automated Workflows:
       - "Submit Workflows with HTCondor's DAGMan ": htc_workloads/automated_workflows/dagman-workflows.md
-      - "Use Pegasus to Manage Workflows on OSG Connect": htc_workloads/automated_workflows/tutorial-pegasus/README.md
-  - Software Examples:
+      - "Use Pegasus to Manage Workflows on OSG Connect": htc_workloads/automated_workflows/tutorial-pegasus/README.md    
+  - Tutorials and Software Examples:
+    - Workflow Tutorials:  
+      - "List of Available Tutorials": htc_workloads/submitting_workloads/tutorial-command.md        
+      - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/tutorial-quickstart/README.md
+      - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
+      - "Finding OSG Locations": htc_workloads/submitting_workloads/tutorial-osg-locations/README.md
     - Python:
       - "Run Python Scripts on the OSPool ": software_examples/python/manage-python-packages.md
       - "Scaling Up With HTCondor’s Queue Command": software_examples/python/tutorial-ScalingUp-Python/README.md
@@ -60,25 +65,24 @@ nav:
       - "Use External Packages in your R Jobs": software_examples/r/tutorial-R-addlibSNA/README.md
       - "Run R scripts on the OSPool": software_examples/r/tutorial-R/README.md
       - "Scaling up compute resources": software_examples/r/tutorial-ScalingUp-R/README.md
+    - Conda/Miniconda:      
+      - "Using conda to Run Python on the OSPool ": software_examples/other_languages_tools/conda-on-osg.md
+    - Matlab Runtime:
+      - "Basics of compiled MATLAB applications - Hello World example": software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md
+    - Julia and Java:
+      - "Using Julia on the OSPool ": software_examples/other_languages_tools/julia-on-osg.md
+      - "Using Java in Jobs ": software_examples/other_languages_tools/java-on-osg.md      
+    - Machine Learning:
+      - "Working with Tensorflow, GPUs, and containers": software_examples/machine_learning/tutorial-tensorflow-containers/README.md      
     - Bioinformatics:
       - "High-Throughput BLAST": software_examples/bioinformatics/tutorial-blast-split/README.md
       - "High-Throughput BWA Read Mapping": software_examples/bioinformatics/tutorial-bwa/README.md
+    - Freesurfer:
+      - "Introduction to FreeSurfer on the OSPool ": software_examples/freesurfer/Introduction.md      
     - Drug Discovery:
       - "Running a Molecule Docking Job with AutoDock Vina": software_examples/drug_discovery/tutorial-AutoDockVina/README.md
-    - Matlab Runtime:
-      - "Basics of compiled MATLAB applications - Hello World example": software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md
-    - Other Languages and Tools:
-      - "Using Julia on the OSPool ": software_examples/other_languages_tools/julia-on-osg.md
-      - "Using conda to Run Python on the OSPool ": software_examples/other_languages_tools/conda-on-osg.md
-      - "Using Java in Jobs ": software_examples/other_languages_tools/java-on-osg.md
-    - Machine Learning:
-      - "Working with Tensorflow, GPUs, and containers": software_examples/machine_learning/tutorial-tensorflow-containers/README.md
-    - Freesurfer:
-      - "Introduction to FreeSurfer on the OSPool ": software_examples/freesurfer/Introduction.md
   - Additional Resources:
     - References:
-      - "Policies for Using OSG Services and the OSPool ": overview/references/policy.md
-      - "Frequently Asked Questions": overview/references/frequently-asked-questions.md
       - "Acknowledge the OSG": overview/references/acknowledgeOSG.md
       - "Contact OSG for non-Support Inquiries": overview/references/contact-information.md
       - "OSG Accounting (GRACC)": overview/references/gracc.md
