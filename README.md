@@ -10,6 +10,7 @@ This repository holds the documentation for the PATh Facility and OSGConnect.
   - [Adding it to the Navigation](#adding-it-to-the-navigation)
   - [Adding Images](#adding-images)
   - [Adding Videos](#adding-videos)
+  - [Linking Documentation](#linking-documentation)
 - [Previewing Documentation](#previewing-documentation)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
@@ -115,6 +116,33 @@ vary.
 - Copy and paste the html where you want the video to be
 - Change the width value to 100% so it spans the document viewport
 
+
+### Linking Documentation
+
+#### Other Portal Documentation
+
+All links to other portal documentation should be a relative link ( prepended with ../ ). 
+
+For instance, starting on the OSG User School Page:
+
+[https://portal.osg-htc.org/documentation/support_and_training/training/osg-user-school/](https://portal.osg-htc.org/documentation/support_and_training/training/osg-user-school/) 
+
+To link to a page in the same directory you would use:
+
+[../previous-training-events/](https://portal.osg-htc.org/documentation/support_and_training/training/osg-user-school/../previous-training-events/)
+
+To link to a document in another directory farther up the tree you can use:
+
+[../../../software_examples/python/tutorial-wordfreq/](https://portal.osg-htc.org/documentation/support_and_training/training/osg-user-school/../../../software_examples/python/tutorial-wordfreq/)
+
+#### Tutorials
+
+Use the full documentation path, this way the tutorial will still have valid links if
+used as a standalone later on. 
+
+For instance to link to Office Hours from a tutorial use:
+
+[https://portal.osg-htc.org/documentation/support_and_training/support/getting-help-from-RCFs/](https://portal.osg-htc.org/documentation/support_and_training/support/getting-help-from-RCFs/)
 
 ## Previewing your Work
 
