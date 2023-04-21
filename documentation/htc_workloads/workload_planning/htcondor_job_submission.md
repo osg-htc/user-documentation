@@ -62,33 +62,61 @@ log = hello-ospool_$(Cluster)_$(Process).log
 error = hello-ospool_$(Cluster)_$(Process).err
 output = hello-ospool_$(Cluster)_$(Process).out
 
-# Specify that HTCondor should transfer files to and from the
-#  computer where each job runs. The last of these lines *would* be
-#  used if there were any other files needed for the executable to use.
-should_transfer_files = YES
+# This lines *would* be used if there were any other files
+# needed for the executable to use.
 # transfer_input_files = file1,/absolute/pathto/file2,etc
 
 # Specify Job duration category as "Medium" (expected runtime <10 hr) or "Long" (expected runtime <20 hr). 
-+JobDurationCategory = “Long”
++JobDurationCategory = “Medium”
 
-# Tell HTCondor what amount of compute resources
-#  each job will need on the computer where it runs, and any other job requirements (e.g., operating system). 
+# Tell HTCondor requirements (e.g., operating system) your job needs, 
+# what amount of compute resources each job will need on the computer where it runs.
+requirements = (OSGVO_OS_STRING == "RHEL 7")
 request_cpus = 1
 request_memory = 1GB
 request_disk = 5GB
-requirements = (OSGVO_OS_STRING == "RHEL 7")
-#
+
 # Tell HTCondor to run 3 instances of our job:
 queue 3
 ```
 
 By using the "$1" variable in our hello-ospool.shexecutable, we are telling HTCondor to fetch the value of the argument in the first position in the submit file and to insert it in location of "$1" in our executable file.
+
 Therefore, when HTCondor runs this executable, it will pass the $(Process) value for each job and hello-ospool.sh will insert that value for "$1" in hello-ospool.sh.
 
 More information on special variables like "$1", "$2", and "$@" can be found [here](https://swcarpentry.github.io/shell-novice/06-script/index.html).
 
+Additionally, the JobDurationCategory must be listed anywhere prior to the final ‘queue’ statement of the submit file, as below:
 
+    +JobDurationCategory = “Medium”
+   
+| **JobDurationCategory** | **Expected Job Duration** | Maximum Allowed Duration |
+|:---------|:------------|:-------------|
+| <span style="white-space: nowrap">Medium (default)</span> | <span style="white-space: nowrap"><10 hrs</span> | 20 hrs |
+| <span style="white-space: nowrap">Long</span> | <span style="white-space: nowrap"><20 hrs</span> | 40 hrs |
+
+If the user does not indicate a JobDurationCategory in the submit file, the relevant job(s) will be 
+labeled as **Medium** by default. **Batches with jobs that individually execute for longer than 20 hours
+are not a good fit for the OSPool**. We encourage users with long jobs to implement [self-checkpoint](../submitting_workloads/checkpointing-on-OSPool.md) when possible. 
+
+<details>
+<summary>Why Job Duration Categories?</summary>
+<br>
+To maximize the value of the capacity contributed by the different organizations to the OSPool, 
+users are requested to identify a duration categories for their jobs. These categories should be selected based upon test 
+jobs (run on the OSPool) and allow for more effective scheduling of the capacity contributed to the pool. 
+<br>	
+<br>		
+Every job submitted from an OSG-managed access point must be labeled with a Job Duration Category upon submission.
+<b>By knowing the expected duration, the OSG is working to be able to direct longer-running jobs to resources that are 
+faster and are interrupted less, while shorter jobs can run across more of the OSPool for better overall throughput.</b>
+<br>
+<br>		
+<a href="https://portal.osg-htc.org/documentation/overview/account_setup/is-it-for-you/">Jobs with single executions longer than 20 hours in tests on the OSPool should not be submitted</a>, without <a href="https://portal.osg-htc.org/documentation/htc_workloads/submitting_workloads/checkpointing-on-OSPool/">self-checkpointing</a>.
+</details>
+	
 3. Now, submit your job to HTCondor’s queue using `condor_submit`:
+
 ```[alice@ap40]$ condor_submit hello-ospool.sub```
 
 The `condor_submit` command actually submits your jobs to HTCondor. If all goes well, you will see output from the `condor_submit` command that appears as:
@@ -98,6 +126,7 @@ Submitting job(s)...
 ```
 
 4. To check on the status of your jobs in the queue, run the following command:
+
 ```
 [alice@ap40]$ condor_q
 
@@ -109,7 +138,7 @@ Alice ID: 3606214   4/14 12:31      2     1      _      3 36062145.0-2
 3 jobs; 2 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 ```
 
-You can run the `condor_q` command periodically to see the progress of your jobs. By default, `condor_q` shows jobs grouped into batches by batch name (if provided), or executable name. To show all of your jobs on individual lines, add the -nobatch option. For more details on this option, and other options to `condor_q`, see our [condor_q guide](LINK).
+You can run the `condor_q` command periodically to see the progress of your jobs. By default, `condor_q` shows jobs grouped into batches by batch name (if provided), or executable name. To show all of your jobs on individual lines, add the -nobatch option. 
 
 5. When your jobs complete after a few minutes, they'll leave the queue. If you do a listing of your `/home` directory with the command `ls -l`, you should see something like:
 
@@ -160,14 +189,15 @@ HTCondor creates a transaction log of everything that happens to your jobs. Look
 ## Important Workflow Elements
 **A. Removing Jobs** 
 To remove a specific job, use `condor_rm <JobID, ClusterID, Username>`. Example:
+	
 `[alice@ap40]$ condor_rm 845638.0`
 
 **B. Importance of Testing & Resource Optimization** 
-1. **Examine Job Success** Within the log file, you can see information about the completion of each job, 	including a system error code (as seen in "return value 0"). You can use this code, as well as information in your ".err" file and other output files, to determine what issues your job(s) may have had, if any.
-2. 
-3. **Improve Efficiency** Researchers with input and output files greater than 1GB, should store them in their `/protected` directory instead of `/home` to improve file transfer efficiency. See our data transfer guides to learn more. 
-4. 
-5. **Get the Right Resource Requests**
+1. **Examine Job Success** Within the log file, you can see information about the completion of each job, including a system error code (as seen in "return value 0"). You can use this code, as well as information in your ".err" file and other output files, to determine what issues your job(s) may have had, if any.
+
+2. **Improve Efficiency** Researchers with input and output files greater than 1GB, should store them in their `/protected` directory instead of `/home` to improve file transfer efficiency. See our data transfer guides to learn more. 
+
+3. **Get the Right Resource Requests**
 Be sure to always add or modify the following lines in your submit files, as appropriate, and after running a few tests.
 
 <table>
@@ -193,4 +223,4 @@ Be sure to always add or modify the following lines in your submit files, as app
 When you request too much, your jobs may not match to as many available "slots" as they could otherwise, and your overall throughput will suffer.
 
 ## You Have the Basics, Now Run Your OWN Jobs
-Check out the [HTCondor Job Submission Intro video](https://www.youtube.com/watch?v=p2X6s_7e51k&list=PLO7gMRGDPNumCuo3pCdRk23GDLNKFVjHn&index=3), which introduces various ways to specify differences between jobs (e.g. parameters, different input filenames, etc.), ways to organize your data, etc. and our full set of [OSPool User Guides]((https://portal.osg-htc.org/documentation/) to begin submitting your own jobs. 
+Check out the [HTCondor Job Submission Intro video](https://www.youtube.com/watch?v=p2X6s_7e51k&list=PLO7gMRGDPNumCuo3pCdRk23GDLNKFVjHn&index=3), which introduces various ways to specify differences between jobs (e.g. parameters, different input filenames, etc.), ways to organize your data, etc. and our full set of [OSPool User Guides](https://portal.osg-htc.org/documentation/) to begin submitting your own jobs. 
