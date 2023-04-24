@@ -35,6 +35,20 @@ If need to run jobs under a different project you are a member of, you can manua
 <code>+ProjectName="ProjectName"</code>
 </details>
 
+<details>
+<summary>Can I use my ACCESS allocation?</summary>
+<br>
+There are two ways OSG interfaces with ACCESS:
+<ol>
+  <li>You can get an allocation for the OSPool. This will allow you to run
+      OSPool jobs and have the usage charged to your ACCESS credits, and can
+      be useful if you already have an allocation. If you only need to use
+      OSG resources, we recommend you come directly to our system.</li>
+  <li>You can manage your workloads on the OSPool access points, and run those
+      jobs on other ACCESS resources. This is a capability still in
+      development.</li>
+</ol>
+</details>
 
 ## Workshops and Training
    
