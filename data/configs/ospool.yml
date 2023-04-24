@@ -24,6 +24,7 @@ nav:
       - "Overview: Submit OSPool Jobs using HTCondor" : htc_workloads/workload_planning/htcondor_job_submission.md
       - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
       - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
+      - "Convert your workflow from Slurm to HTCondor": htc_workloads/submitting_workloads/Slurm_to_HTCondor.md     
     - Managing Data For Jobs:
       - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/overview.md
       - "Use scp To Transfer Files To and From OSG Managed Access Points": htc_workloads/managing_data/scp.md
