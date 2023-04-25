@@ -3,8 +3,8 @@ ospool:
   path: htc_workloads/workload_planning/htcondor_job_submission.md
 ---
 
-Overview: Submit OSPool Jobs using HTCondor
-====================================
+# Overview: Submit OSPool Jobs using HTCondor
+
 ## Purpose
 This guide discusses how to run jobs on the OSPool using HTCondor.
 
@@ -14,9 +14,9 @@ The process of running computational workflows on OSG resources follows the foll
 <img src="../../../assets/overview_htcondor_job_submission.png" class= "img-fluid"/>
 
 **Terminology:**
-* **Access point** is where you login and stage your data, executables/scripts, and software to use in jobs. 
-* **HTCondor** is a job scheduling software that will run your jobs out on the OSPool execution points. All jobs must be submitted to HTCondor to run out on the OSPool. 
-* The **Open Science Pool (OSPool)** is the set of resources your job runs on. It is composed of execution points, as well as other technologies, that compose the cpus, memory, and disk space that will run the computations of your jobs. 
+- **Access point** is where you login and stage your data, executables/scripts, and software to use in jobs. 
+- **HTCondor** is a job scheduling software that will run your jobs out on the OSPool execution points. All jobs must be submitted to HTCondor to run out on the OSPool. 
+- The **Open Science Pool (OSPool)** is the set of resources your job runs on. It is composed of execution points, as well as other technologies, that compose the cpus, memory, and disk space that will run the computations of your jobs. 
 
 ## Run Jobs on the OSPool using HTCondor
 We are going to run the traditional 'hello world' program with a OSPool twist. In order to demonstrate the distributed resource nature of OSPool HTC System, we will produce a 'Hello CHTC' message 3 times, where each message is produced within is its own 'job'. Since you will not run execution commands yourself (HTCondor will do it for you), you need to tell HTCondor how to run the jobs for you in the form of a submit file, which describes the set of jobs.
