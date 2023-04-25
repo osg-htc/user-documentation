@@ -7,7 +7,7 @@ Contact OSG for non-Support Inquiries
 ====================================
 
 For media contact, leadership, or general questions about OSG, please see our
-[main website](https://osg-htc.org/contact) or send an email to osg-contact@opensciencegrid.org.
+[main website](https://osg-htc.org/contact) or send an email to webmaster@osg-htc.org.
 
 For OSG policies and executive information, email [Frank Wuerthwein](fkw@ucsd.edu) (OSG Executive Director).
 
