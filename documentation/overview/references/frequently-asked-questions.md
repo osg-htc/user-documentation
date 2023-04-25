@@ -157,7 +157,7 @@ At the top of that dashboard, there is a set of filters that you can use to exam
 To maximize the value of the capacity contributed by the different organizations to the OSPool, users are requested to identify a duration categories for their jobs. These categories should be selected based upon test jobs (run on the OSPool) and allow for more effective scheduling of the capacity contributed to the pool.
 <br>
 <br>  
-Every job submitted from an OSG-managed access point must be labeled with a Job Duration Category upon submission. By knowing the expected duration, the OSG is working to be able to direct longer-running jobs to resources that are faster and are interrupted less, while shorter jobs can run across more of the OSPool for better overall throughput.
+Every job submitted from an OSG-managed access point must be labeled with a Job Duration Category upon submission. By knowing the expected job duration, OSG will be able to direct longer-running jobs to resources that are faster and are interrupted less, while shorter jobs can run across more of the OSPool for better overall throughput.
 <br>
 <br>  
 Jobs with single executions longer than 20 hours in tests on the OSPool should not be submitted, without self-checkpointing.  
