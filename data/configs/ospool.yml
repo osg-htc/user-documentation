@@ -40,7 +40,8 @@ nav:
       - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
       - "Containers - Docker": htc_workloads/using_software/containers-docker.md
       - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
-    - Troubleshooting:
+    - Monitor, Review and Troubleshoot Jobs:
+      - "Monitor and Review Jobs With condor_q and condor_history": htc_workloads/submitting_workloads/monitor_review_jobs.md  
       - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md
     - Considerations For Specific Resource Needs:
       - "Using GPUs on the OSPool": htc_workloads/specific_resource/gpu-jobs.md
