@@ -3,15 +3,13 @@ ospool:
   path: software_examples/freesurfer/Introduction.md
 ---
 
-Introduction to FreeSurfer on the OSPool 
-====================================
-
+# Introduction to FreeSurfer
 
 ## Overview
 
 [FreeSurfer](http://freesurfer.net/) is a software package to analyze MRI scans
-of human brains. The OSG used to have a service called
-Fsurf, which is now discontinued. Instead we have community supported 
+of human brains. In the past, we had a service called
+Fsurf, which is now discontinued. Instead, we currently utalize a community supported 
 FreeSurfer container image and workflow. Please see:
 
 * [https://github.com/pegasus-isi/freesurfer-osg-workflow](https://github.com/pegasus-isi/freesurfer-osg-workflow) - scroll down to see the documentaion on this page.
@@ -19,22 +17,12 @@ FreeSurfer container image and workflow. Please see:
 
 ## Prerequisites
 
-To use the FreeSurfer on OSG, you need:
+To use the FreeSurfer on the Open Science Pool (OSPool), you need:
 
 * Your own FreeSurfer license file (see: [https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall#License](https://surfer.nmr.mgh.harvard.edu/fswiki/DownloadAndInstall#License))
-* A regular OSG Connect account.
+* An account on an OSPool access point. 
 
 ## Privacy and Confidentiality of Subjects
 
-In order to protect the privacy of your participants’ scans, we request that you
-submit only defaced and fully deidentified scans for processing.
-
-## Getting Help
-
-For assistance or questions, please email the OSG Research Facilitation team  at
-[support@osg-htc.org](mailto:support@osg-htc.org) or
-visit the [help desk and community forums](http://support.opensciencegrid.org).
-
-## Acknowledging the OSG Consortium
-
-We gratefully request your acknowledgement of the OSG in publications benefiting from this service as described [here](../../../overview/references/acknowledgeOSG/).
+In order to protect the privacy of your participants’ scans, we **require that you
+submit only defaced and fully deidentified scans for processing**.
