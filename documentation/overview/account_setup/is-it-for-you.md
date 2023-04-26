@@ -7,15 +7,14 @@ Computation on the Open Science Pool
 ====================================
 
 
-The [OSG][osg] is a nationally-funded consortium of computing resources 
+The [OSG](https://osg-htc.org) is a nationally-funded consortium of computing resources 
 at more than one hundred institutional partners that, together, offer a strategic 
 advantage for computing work that can be run as numerous short tasks that can execute 
 independent of one another. For researchers
 who are not part of an organization with their own pool in the OSG, we offer the 
 [Open Science Pool (OSPool)](https://opensciencegrid.org/about/open_science_pool/), with dozens 
 of campuses contributing excess computing capacity in support of open science. The OSPool is available 
-for US-affiliated research projects and groups via the [OSG Connect](https://www.osgconnect.net/) service, which the documentation 
-on this site is specific to.
+for US-affiliated academic, government, and non-profit research projects and groups for their High Throughput Computing (HTC) workflows.
 
 Learn more about the services provided by the OSG that can support your HTC workload: 
 
@@ -52,21 +51,15 @@ using its resources include:
 - hyper/parameter sweeps
 - Monte Carlo methods and other model optimization
 
-**Learn more and chat with a Research Computing Facilitator by [signing up for OSG Connect][account-request]**
-
-
 ## Resources to Quickly Learn More
 
 **Introduction to OSG the Distributed High Throughput Computing framework** from the annual [OSG User School](https://opensciencegrid.org/outreach/):
 
 [<img src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/Intro_OSG_Video_Thumbnail.png" width="500">](https://www.youtube.com/embed/vpJPPjoQ3QU)
 
-**[Full OSG User Documentation](https://support.opensciencegrid.org/support/home)** including our [Roadmap to HTC Workload Submission](../../../htc_workloads/workload_planning/roadmap/)
+**[Full OSG User Documentation](https://portal.osg-htc.org/documentation/)** including our [Roadmap to HTC Workload Submission](../../../htc_workloads/workload_planning/roadmap/)
 
-**[OSG User Training materials](../../../support_and_training/training/osgusertraining/)** . Live training sessions are advertised/open to those with active accounts on OSG Connect.
+**[OSG User Training materials](../../../support_and_training/training/osgusertraining/)** . Any researcher affiliated with an academic, non-profit, or government US-based research project is welcome to attend our trainings. 
 
 
-**Learn more and chat with a Research Computing Facilitator by [signing up for OSG Connect][account-request]**
-
-[osg]: https://opensciencegrid.org/
-[account-request]: https://osgconnect.net/signup
+**Learn more and chat with a Research Computing Facilitator by [signing up for OSPool account](../registration-and-login.md)**
