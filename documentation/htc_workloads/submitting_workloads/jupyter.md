@@ -64,7 +64,7 @@ JupyterLab is run on only our <code>uw.osg-htc.org access points</code>. This me
 </details>
 
 <details>
-<summary>For researchers with no account on an OSPool access point</summary>
+<summary>For researchers with guest access on an OSPool access point</summary>
 <br>
 <b>Our JupyterLab instance is a great way to see if you would like to request an account on an OSPool access point or to practice small High Throughput Computing workflows without needing an OSPool account. </b>  
 <br>  
