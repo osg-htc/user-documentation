@@ -9,7 +9,7 @@ ospool:
 
 [FreeSurfer](http://freesurfer.net/) is a software package to analyze MRI scans
 of human brains. In the past, we had a service called
-Fsurf, which is now discontinued. Instead, we currently utalize a community supported 
+Fsurf, which is now discontinued. Instead, we currently utilize a community supported 
 FreeSurfer container image and workflow. Please see:
 
 * [https://github.com/pegasus-isi/freesurfer-osg-workflow](https://github.com/pegasus-isi/freesurfer-osg-workflow) - scroll down to see the documentaion on this page.
