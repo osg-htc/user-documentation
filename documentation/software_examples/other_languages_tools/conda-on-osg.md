@@ -3,10 +3,7 @@ ospool:
   path: software_examples/other_languages_tools/conda-on-osg.md
 ---
 
-Using conda to Run Python on the OSPool 
-====================================
-
-
+# Using conda to Run Python on the OSPool 
 
 The Anaconda/Miniconda distribution of Python is a common tool for installing and managing Python-based software and other tools. 
 
@@ -18,27 +15,29 @@ When should you use Miniconda as an installation method in OSG?
 
 Notes on terminology:
 
-* **conda** is a Python package manager and package ecosystem that exists in parallel with `pip` and [PyPI](https://pypi.org/).
-* **Miniconda** is a slim Python distribution, containing the minimum amount of packages necessary for a Python installation that can use conda.
-* **Anaconda** is a pre-built scientific Python distribution based on Miniconda that has many useful scientific packages pre-installed.
+- **conda** is a Python package manager and package ecosystem that exists in parallel with `pip` and [PyPI](https://pypi.org/).
+- **Miniconda** is a slim Python distribution, containing the minimum amount of packages necessary for a Python installation that can use conda.
+- **Anaconda** is a pre-built scientific Python distribution based on Miniconda that has many useful scientific packages pre-installed.
 
-To create the smallest, most portable Python installation possible, we recommend starting with Miniconda and installing only the packages you actually require.
+<p style="color:blue;">To create the smallest, most portable Python installation possible, we recommend starting with Miniconda and installing only the packages you actually require.</p>
 
-To use a Miniconda installation on OSG, create your installation environment on the submit server and send a zipped version to your jobs.
+To use a Miniconda installation for your jobs, create your installation environment on the access point and send a zipped version to your jobs.
 
-# Install Miniconda and Package for Jobs
+## Install Miniconda and Package for Jobs
 In this approach, we will create an entire software installation inside Miniconda and then use a tool called `conda pack` to package it up for running jobs.
 
-## 1. Create a Miniconda Installation
+### 1. Create a Miniconda Installation
 
-On the submit server, download the latest Linux [miniconda installer](https://docs.conda.io/en/latest/miniconda.html) and run it.
+After logging into your access point, download the latest Linux [miniconda installer](https://docs.conda.io/en/latest/miniconda.html) and run it. For example, 
 
       [alice@login05]$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
       [alice@login05]$ sh Miniconda3-latest-Linux-x86_64.sh
       
-Accept the license agreement and default options. At the end, you can choose whether or not to “initialize Miniconda3 by running conda init?” The default is no; you would then run the **eval** command listed by the installer to “activate” Miniconda. If you choose “no” you’ll want to save this command so that you can reactivate the Miniconda installation when needed in the future.
+Accept the license agreement and default options. At the end, you can choose whether or not to “initialize Miniconda3 by running conda init?” 
+- If you enter "no", you would then run the **eval** command listed by the installer to “activate” Miniconda. If you choose “no” you’ll want to save this command so that you can reactivate the Miniconda installation when needed in the future. 
+- If you enter "yes", miniconda will edit your .bashrc file and PATH environment variable so that you do not need to define a path to Miniconda each time you log in. If you choose "yes", before proceeding, you must log off and close your terminal for these changes to go into effect. Once you close your terminal, you can reopen it, log in to your access point, and proceed with the rest of the instructions below.  
 
-## 2. Create a conda "Environment" With Your Packages
+### 2. Create a conda "Environment" With Your Packages
 
 (If you are using an `environment.yml` file as described [later](#specifying-exact-dependency-versions), you should instead create the environment from your `environment.yml` file. If you don’t have an `environment.yml` file to work with, follow the install instructions in this section. We recommend switching to the `environment.yml` method of creating environments once you understand the “manual” method presented here.)
 
@@ -49,7 +48,7 @@ To create an environment, use the `conda create` command and then activate the e
 
       (base)[alice@login05]$ conda create -n env-name
       (base)[alice@login05]$ conda activate env-name
-Then, run the `conda install` command to install the different packages and software you want to include in the installation. How this should look is often listed in the installation examples for software (e.g. [Qiime2](https://docs.qiime2.org/2020.2/install/native/#install-qiime-2-within-a-conda-environment), [Pytorch](https://pytorch.org/get-started/locally/)).
+Then, run the `conda install` command to install the different packages and software you want to include in the installation. How this should look is often listed in the installation examples for software (e.g. [Qiime2](https://docs.qiime2.org/2023.2/install/), [Pytorch](https://pytorch.org/get-started/locally/)).
 
       (env-name)[alice@login05]$ conda install pkg1 pkg2
 Some Conda packages are only available via specific Conda channels which serve as repositories for hosting and managing packages. If Conda is unable to locate the requested packages using the example above, you may need to have Conda search other channels. More detail are available at [https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html.](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)
@@ -70,7 +69,7 @@ For example, if you wanted to create an installation with `pandas` and `matplotl
 > ### More About Miniconda
 > See the [official conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for more information on creating and managing environments with **conda**.
 
-## 3. Create Software Package
+### 3. Create Software Package
 Make sure that your job’s Miniconda environment is created, but deactivated, so that you’re in the “base” Miniconda environment:
 
       (base)[alice@login05]$ 
@@ -86,15 +85,14 @@ Finally, use `conda pack` to create a zipped tar.gz file of your environment (su
       (base)[alice@login05]$ ls -sh env-name.tar.gz
 When this step finishes, you should see a file in your current directory named `env-name.tar.gz`.
 
-## 4. Check Size of Conda Environment Tar Archive
-The tar archive, `env-name.tar.gz`, created in the previous step will be used as input for subsequent job submission. As with all job input files, you should check the size of this Conda environment file. **If >100MB in size, you should NOT transfer the tar ball using `transfer_input_files` from your home directory**. Instead, you should plan to use OSG Connect's `/public` folder, and a `stash:///` link, as described in [this guide](../../../htc_workloads/managing_data/stashcache/). Please contact a research computing facilitator at support@osg-htc.org if you have questions about the best option for your jobs.
+### 4. Check Size of Conda Environment Tar Archive
+The tar archive, `env-name.tar.gz`, created in the previous step will be used as input for subsequent job submission. As with all job input files, you should check the size of this Conda environment file. **If >1GB in size, you should move the file to either your `/public` or `/protected` folder, and transfer it to/from jobs using the `osdf:///` link, as described in [Overview: Data Staging and Transfer to Jobs](../../../htc_workloads/managing_data/overview.md).** This is the most efficient way to transfer large files to/from jobs. 
 
-More information is available at [File Availability with Squid Web Proxy](../../../htc_workloads/using_software/requirements/) and [Managing Large Data in HTC Jobs](../../../htc_workloads/managing_data/osgconnect-storage/).
-
-## 5. Create a Job Executable
-The job will need to go through a few steps to use this “packed” conda environment; first, setting the `PATH`, then unzipping the environment, then activating it, and finally running whatever program you like. The script below is an example of what is needed (customize as indicated to match your choices above).
+### 5. Create a Job Executable
+The job will need to go through a few steps to use this “packed” conda environment; first, setting the `PATH`, then unzipping the environment, then activating it, and finally running whatever program you like. The script below is an example of what is needed (customize as indicated to match your choices above). For future reference, let's call this executable `conda_science.sh`. 
 
       #!/bin/bash
+      # File Name: science_with_conda.sh
 
       # have job exit if any command returns with non-zero exit status (aka failure)
       set -e
@@ -114,13 +112,49 @@ The job will need to go through a few steps to use this “packed” conda envir
       # modify this line to run your desired Python script and any other work you need to do
       python3 hello.py
 
-## 6. Submit Jobs
-In your submit file, make sure to have the following:
+### 6. Submit Jobs
+In your HTCondor submit file, make sure to have the following:
 
 * Your executable should be the the bash script you created in [step 5](#5-create-a-job-executable).
-* Remember to transfer your Python script and the environment `tar.gz` file to the job. If the `tar.gz` file is larger than 100MB, please use the `stash:///` file delivery mechanism as described above. 
+* Remember to transfer your Python script and the environment `tar.gz` file to the job. If the `tar.gz` file is larger than 1GB, please move the file to either your `/protected` or `/public` directories and use the `osdf:///` file delivery mechanism as described above. 
+
+An example submit file could look like: 
+
+```
+# File Name: conda_submission.sub
+
+# Specify your executable (single binary or a script that runs several
+#  commands) and arguments to be passed to jobs. 
+#  $(Process) will be a integer number for each job, starting with "0"
+#  and increasing for the relevant number of jobs.
+executable = science_with_conda.sh
+arguments = $(Process)
+
+# Specify the name of the log, standard error, and standard output (or "screen output") files.
+
+log = science_with_conda.log
+error = science_with_conda.err
+output = science_with_conda.out
+
+# Transfer any file needed for our job to complete. 
+transfer_input_files = osdf:///ospool/PROTECTED/alice/env-name.tar.gz, hello.py
+
+# Specify Job duration category as "Medium" (expected runtime <10 hr) or "Long" (expected runtime <20 hr). 
++JobDurationCategory = “Medium”
+
+# Tell HTCondor requirements (e.g., operating system) your job needs, 
+# what amount of compute resources each job will need on the computer where it runs.
+requirements = (OSGVO_OS_STRING == "RHEL 7")
+request_cpus = 1
+request_memory = 1GB
+request_disk = 5GB
+
+# Tell HTCondor to run 1 instance of our job:
+queue 1
+```
+
       
-# Specifying Exact Dependency Versions
+## Specifying Exact Dependency Versions
 
 An important part of improving reproducibility and consistency between runs is to ensure that you use the correct/expected versions of your dependencies.
 
@@ -143,9 +177,11 @@ By default, the name of the environment will be whatever the name of the source 
 
 If you use a source control system like `git`, we recommend checking your `environment.yml` file into source control and making sure to recreate it when you make changes to your environment. Putting your environment under source control gives you a way to track how it changes along with your own code.
 
-If you are developing software on your local computer for eventual use on the Open Science pool, your workflow might look like this:
+If you are developing software on your local computer for eventual use on the Open Science Pool, your workflow might look like this:
 
 1. Set up a conda environment for local development and install packages as desired (e.g., `conda create -n science; conda activate science; conda install numpy`).
-2. Once you are ready to run on the Open Science pool, create an `environment.yml` file from your local environment (e.g., `conda env export > environment.yml`).
-3. Move your `environment.yml` file from your local computer to the submit machine and create an environment from it (e.g., `conda env create -f environment.yml`), then pack it for use in your jobs, as per [Create Software Package](#3-create-software-package).
+2. Once you are ready to run on the Open Science Pool, create an `environment.yml` file from your local environment (e.g., `conda env export > environment.yml`).
+3. Move your `environment.yml` file from your local computer to the submit machine and create an environment from it (e.g., `conda env create -f environment.yml`), then pack it for use in your jobs, as per [Create Software Package](#3-create-software-package) above.
+
+
 More information on conda environments can be found in [their documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#).
