@@ -74,7 +74,7 @@ publicly discoverable and accessible to anyone.
   <th>OSDF Origin</th>
 </tr>
 <tr>
-  <td>ap20.uw.osg-htc.org</td>
+  <td>ap40.uw.osg-htc.org</td>
   <td>Protected:
       <ul>
         <li><nobr>Local Path: <code>/mnt/stash/ospool/PROTECTED/[USERNAME]</code></nobr></li>
