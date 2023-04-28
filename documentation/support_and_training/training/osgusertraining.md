@@ -46,7 +46,7 @@ As we introduce new training topics, we will add materials to this page.
 
 The most recent version of these training materials are here: 
 
-* [Slides](https://docs.google.com/presentation/d/1auCJfqzc0ZckeTr-QCILaDizsKPsPTli0wTCbluSswY), [Video](https://www.youtube.com/watch?v=0JQ8or3lue0&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=6&ab_channel=OSG)
+* [Slides](https://docs.google.com/presentation/d/1auCJfqzc0ZckeTr-QCILaDizsKPsPTli0wTCbluSswY)
 * [Wordcount Frequency Tutorial](https://github.com/OSGConnect/tutorial-organizing)
 
 
@@ -54,7 +54,7 @@ The most recent version of these training materials are here:
 
 The most recent version of these training materials are here:
 
-* [Slides](https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing), [Video](https://www.youtube.com/watch?v=vu5EZccxgdo&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=5&ab_channel=OSG)
+* [Slides](https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing)
 
 ### Pegasus Workflow Management System on the Open Science Pool
 
