@@ -8,10 +8,9 @@ Determining the Amount of Resources to Request in a Submit File
 
 # Learning Objectives
 This guide discuses the following: 
+
 - Best practices for testing jobs and scaling up your analysis. 
 - How to determine the amount of resources (CPU, memory, disk space) to request in a submit file.
-
-
 
 # Overview
 
@@ -22,10 +21,6 @@ only request the amount of memory, disk, and cpus truly needed.
 This is an important practice that will maximize your throughput by optimizing the 
 number of potential 'slots' in the OSPool that your jobs can match to, reducing the overall 
 turnaround time for completing a whole batch.
-
-If you have questions 
-or are unsure if and how your work can be broken up, please contact us at 
-[support@osg-htc.org](mailto:support@osg-htc.org)
 
 This guide will describe best practices and general tips for testing 
 your job resource requests **before** scaling up to submit your full set of jobs. 
@@ -39,11 +34,9 @@ Pilot School lecture video:
 
 Submitting test jobs is an important first step for optimizing 
 the resource requests of your jobs. We always recommend submitting a few (3-10)
-test jobs first before scaling up, whether this is your first time 
-using OSG or you're an experienced user starting a new workflow. If you plan to submit
+test jobs first before scaling up. If you plan to submit
 thousands of jobs, you may even want to run an intermediate test of 100-1,000 jobs to catch any 
-failures or holds that mean your jobs have additional `requirements` they need to specify 
-(and which OSG staff can help you to identify, based upon your tests).
+failures or holds that mean your jobs have additional `requirements` they need to specify.
 
 Some general tips for test jobs:
 
@@ -67,7 +60,7 @@ and `submit` files meaningful names so you know which results refer to which tes
 
 In the HTCondor submit file, you must explicitly request the number of 
 CPUs (i.e. cores), and the amount of disk and memory that the job needs 
-to complete successfully, and you may need to identify a [JobDurationCategory](../../../htc_workloads/workload_planning/roadmap/). 
+to complete successfully, and identify a [JobDurationCategory](../../../htc_workloads/workload_planning/roadmap/). 
 When you submit a job for the 
 first time, you may not know just how much to request and that's OK. 
 Below are some suggestions for making resource requests for initial test 
@@ -88,7 +81,7 @@ and use multiple cpus.
     [Multicore Jobs](../../../htc_workloads/specific_resource/multicore-jobs/)
     
     - Depending on how long you expect your test jobs to take on a single core, you may need to identify a
-    non-default [JobDurationCategory](../../../htc_workloads/workload_planning/roadmap/), or consider implementing self-checkpointing (email us!).
+    non-default [JobDurationCategory](../../../htc_workloads/workload_planning/roadmap/), or consider implementing self-checkpointing.
 
 - To inform initial **disk requests** always look at the size of your input 
 files. At a minimum, you need to request enough disk to support all 
@@ -125,8 +118,8 @@ in your submit files.
 **As always, reviewing the HTCondor `log` file from past jobs is 
 a great way to learn about the resource needs of your jobs.** Optimizing the resources requested for each job may help your job run faster and achieve more throughput. 
 
-Save the HTCondor `log` files from your jobs. HTCondor will report 
-the memory, disk, and cpu usage of your jobs at the end of this file. The amount of each resource requested in the submit file is listed under the "Request" column and information about the amount of each resource actually utilized to complete the job is provided in the "Usage" column. 
+HTCondor will report 
+the memory, disk, and cpu usage of your jobs at the end of the HTCondor `.log` file. The amount of each resource requested in the submit file is listed under the "Request" column and information about the amount of each resource actually utilized to complete the job is provided in the "Usage" column. 
 
 For example:
 
@@ -182,13 +175,7 @@ Additional `condor_q` flags involved in optimizing and troubleshooting jobs incl
 
 More information about the commands and flags above can be found in the [HTCondor manual](https://htcondor.readthedocs.io/en/latest/). 
 
-## Avoid Exceeding Disk Quotas in /home and /public
-
-Each OSG Connect user is granted 50 GB of storage in their `/home` directory and 
-
-500 GB of storage in their `/public` directory. This may seem like a lot, but 
-when running 100's or 1,000's of jobs, even small output can add up quickly. If 
-these quotas are exceeded, jobs will fail or go on hold when attempting returning output.
+## Avoid Exceeding Disk Quotas in /home and /protected
 
 To prevent errors or workflow interruption, be sure to estimate the 
 input and output needed for all of your concurrently running 
@@ -203,7 +190,4 @@ To help manage complicated workflows, consider a workflow manager such
 as HTCondor's built-in [DAGman](https://research.cs.wisc.edu/htcondor/dagman/dagman.html)
 or the HTCondor-compatible [Pegasus](../../../htc_workloads/automated_workflows/tutorial-pegasus/) 
 workflow tool.
-
-# Get Help
-
-For assistance or questions, please email the OSG Research Facilitation team  at [support@osg-htc.org](mailto:support@osg-htc.org).
+ 
