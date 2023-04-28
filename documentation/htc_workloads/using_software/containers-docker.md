@@ -6,8 +6,6 @@ ospool:
 Create/Register a Docker Container Image 
 ====================================
 
-
-
 This guide is meant to accompany the instructions for using containers 
 in the Open Science Pool.  You can use your own custom container to run jobs in the 
 Open Science Pool, and we assume that those containers are built using Docker.  This 
@@ -172,6 +170,29 @@ Once your container has been added to CVMFS, if you update your original
 Docker image, new versions pushed to Docker Hub will automatically be
 detected and the version on the OSG (in the CVMFS filesystem) will be
 updated accordingly.
+
+## Using Docker Images in Jobs
+
+Once your Docker image is pushed to the OSG Singularity repository and converted to a Singularity/Apptainer image, a synchronized copy of the Singularity/Apptainer image will be distributed by CVMFS and available under
+`/cvmfs/singularity.opensciencegrid.org/` which is cached and available
+to the execution nodes.
+
+To run a job with a Docker image, use the `+SingularityImage` to
+specify the image the job should be using. Example:
+
+    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-el8:latest"
+
+    <other usual submit file lines>
+    queue
+
+Another example would be if your Docker Hub username is `alice` and you
+created a container called `ncbi-blast`, and tag `v1`, added to the OSG
+Singularity repository, your submit file will include:
+
+    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/alice/ncbi-blast:v1"
+
+    <other usual submit file lines>
+    queue
 
 ## Special Cases
 
