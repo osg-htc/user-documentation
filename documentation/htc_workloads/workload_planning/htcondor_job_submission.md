@@ -67,7 +67,7 @@ output = hello-ospool_$(Cluster)_$(Process).out
 # transfer_input_files = file1,/absolute/pathto/file2,etc
 
 # Specify Job duration category as "Medium" (expected runtime <10 hr) or "Long" (expected runtime <20 hr). 
-+JobDurationCategory = “Medium”
++JobDurationCategory = "Medium"
 
 # Tell HTCondor requirements (e.g., operating system) your job needs, 
 # what amount of compute resources each job will need on the computer where it runs.
