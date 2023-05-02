@@ -37,7 +37,6 @@ nav:
       - "Control Where Your Jobs Run/Job Requirements": htc_workloads/using_software/requirements.md
       - "Compiling Software": htc_workloads/using_software/compiling-applications.md
       - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
-      - "Containers - Introduction": htc_workloads/using_software/containers.md
       - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
       - "Containers - Docker": htc_workloads/using_software/containers-docker.md
       - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
