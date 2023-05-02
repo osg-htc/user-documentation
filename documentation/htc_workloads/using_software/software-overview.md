@@ -26,6 +26,7 @@ which provides a quick and easy way to run a program without the need for instal
 from source code. Binaries and executables are software files that are ready to 
 run as is, however binaries should always be tested beforehand. There are several 
 important considerations for using precompiled binaries on the OSPool: 
+
 1) only binary files compiled against a Linux operating system are suitable 
 for use on the OSPool, 
 2) some softwares have system and hardware dependencies that must 
@@ -47,8 +48,34 @@ environments. The Open Science Pool is compatible with both Apptainer and Docker
 latter will be converted to a Apptainer image and added to the OSG container image 
 repository. 
 
+For more information about Docker, please see:
+
+* [Docker Home Page](https://www.docker.com/)
+
+and Apptainer/Singularity, please see:
+
+ * [Apptainer Home Page](https://apptainer.org/)
+ 
+Apptainer/ Singularity has become the preferred containerization method in scientific computing. This <a href="//www.youtube.com/embed/DA87Ba2dpNM">talk</a> is an example of how  containers are used in scientific computing. 
+
 Users can choose from a set of [pre-defined containers already available within OSG](../../../htc_workloads/using_software/available-containers-list/), 
 or can use published or custom made containers. 
+
+For jobs submitted to the OSPool, it does not matter whether you provide a Docker or
+Apptainer/Singularity image. Either is compatible with our system and can be
+used with little to no modification. Determining factors on when to
+use Apptainer/Singularity images over Docker images include if an image already
+exists and if you have
+experience building images in one for format and not the other. 
+
+When using a container for your jobs, the container image is
+automatically started up when HTCondor matches your job to a slot. The
+executable provided in the submit script will be run within the context
+of the container image, having access to software and libraries that
+were installed to the image, as if they were already on the server where
+the job is running. <b>Job executables do not need to run any
+commands to start the container.</b>
+
 
 ## Request Help with Installing Software
 
