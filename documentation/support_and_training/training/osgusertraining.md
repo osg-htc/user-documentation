@@ -16,9 +16,9 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 * Tuesday, May 16: R on the OSPool
 * Tuesday, June 6: New User Training
 * Tuesday, June 20: Matlab on the OSPool
-* Tuesday, July 18: Bioinformatics Analyses on the OSPool: A BWA Example
+* Tuesday, July 18: Containers on the OSPool
 * Tuesday, August 1: New User Training
-* Tuesday, August 15: Containers on the OSPool
+* Tuesday, August 15: Bioinformatics Analyses on the OSPool: A BWA Example
 
 For a calendar version of these events see: 
 
