@@ -8,18 +8,17 @@ OSG User Training (regular/monthly)
 
 All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am - 1pm PT)**. New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. 
 
-Registration opens a month before the training date. You can register for all of our trainings via setmore: [Register here](https://osgfacilitation.setmore.com/bookclass)
+### Registration opens a month before the training date. You can register for all of our trainings via setmore: [Register here](https://osgfacilitation.setmore.com/bookclass)
 
 ## Spring 2023 Training Schedule
 
-* Tuesday, February 7: New User Training
-* Tuesday, February 21: Access the OSPool via Jupyter Hub
-* Tuesday, March 7: New User Training
-* Tuesday, March 21: Containers on the OSPool
-* Tuesday, April 4: New User Training
-* Tuesday, April 18: Workflows with Pegasus
 * Tuesday, May 2: New User Training
 * Tuesday, May 16: R on the OSPool
+* Tuesday, June 6: New User Training
+* Tuesday, June 20: Matlab on the OSPool
+* Tuesday, July 18: Containers on the OSPool
+* Tuesday, August 1: New User Training
+* Tuesday, August 15: Bioinformatics Analyses on the OSPool: A BWA Example
 
 For a calendar version of these events see: 
 
