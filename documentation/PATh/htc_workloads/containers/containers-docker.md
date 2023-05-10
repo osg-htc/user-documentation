@@ -7,8 +7,8 @@ Create/Register a Docker Container Image
 ========================================
 
 This guide is meant to accompany the instructions for using containers 
-in the Open Science Pool.  You can use your own custom container to run jobs in the 
-Open Science Pool, and we assume that those containers are built using Docker.  This 
+in the PATh Facility.  You can use your own custom container to run jobs in the 
+PATh Facility, and we assume that those containers are built using Docker.  This 
 guide describes how to create your own Docker container "image" (the blueprint for 
 the container). Once you have created your custom image, 
 you will need to register the image as described further down in this guide.
@@ -149,7 +149,7 @@ From here, if you're planning to use this container in OSG, return to our
 ## Submit your Docker Container to the OSG Repository
 
 Once your Docker image has been published on Docker Hub,
-it needs to be submitted to the OSG Singularity repository
+it needs to be submitted to the shared Singularity repository
 (`/cvmfs/singularity.opensciencegrid.org/`), which also hosts the
 OSG/PATh-provided default images.
 
