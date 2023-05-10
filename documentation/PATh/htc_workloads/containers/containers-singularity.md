@@ -10,7 +10,7 @@ under the PATh Facility. You can use your own custom container to run
 jobs. This guide describes how to create your
 own Apptainer/Singularity container "image" (the blueprint for the container).
 
-For an overview and how to execute images on OSG, please see
+For an overview and how to execute images on the PATh Facility, please see
 [Containers - Overview][osg-containers]
 
 ## Identify Components
