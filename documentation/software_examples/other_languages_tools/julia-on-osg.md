@@ -20,10 +20,10 @@ needed to run the script.
 
 If you are using many Julia packages or have other software dependencies as 
 part of your job, you may want to manage your software via a container instead 
-of using the tar.gz file method described in this guide. The OSG Connect team 
-maintains a [Julia container](../../../htc_workloads/using_software/containers-docker/) that can be used as a starting point 
+of using the tar.gz file method described in this guide. The Research Computing Facilitation (RCF) team 
+maintains a [Julia container](../../../htc_workloads/using_software/available-containers-list/) that can be used as a starting point 
 for creating a customized container with added packages. See 
-our [Docker and Singularity Guide](../../../htc_workloads/using_software/available-containers-list/) for more details. 
+our [Docker and Singularity/Apptainer Guide](../../../htc_workloads/using_software/containers-docker/) for more details. 
 
 # Quickstart Instructions
 
@@ -32,9 +32,9 @@ You will need the 64-bit, tarball compiled for general use on a Linux x86 system
 file name will resemble something like `julia-#.#.#-linux-x86_64.tar.gz`.
 
     * Tip: use `wget` to download directly to your `/home` directory on the 
-login node, **OR** use `transfer_input_files = url` in your HTCondor submit files.
+access point, **OR** use `transfer_input_files = url` in your HTCondor submit files.
 
-1. Install your Julia packages on the login node, else skip to the next step.
+1. Install your Julia packages on the access point, else skip to the next step.
 
     * For more details, see the section on installing Julia 
     packages below: [Installing Julia Packages](#install-julia-packages)
@@ -195,13 +195,12 @@ the Julia Standard library) use the example script directly below.
 
 ## Create HTCondor Submit File 
 
-After creating a bash script to run Julia, then create a submit file 
-to submit the job. 
+After creating a bash script named `julia-job.sh` to run Julia, then create a submit file to submit the job. 
 
 More details about setting up a submit file, including a submit file template, 
 can be found in our quickstart guide: [Quickstart Tutorial](../../../htc_workloads/submitting_workloads/tutorial-quickstart/)
 
-	# julia-job.sub
+	# File Name = julia-job.sub
 	
 	executable = julia-job.sh
 
@@ -212,6 +211,8 @@ can be found in our quickstart guide: [Quickstart Tutorial](../../../htc_workloa
 	output        = job.$(Cluster).$(Process).out
 	error         = job.$(Cluster).$(Process).error
 	log           = job.$(Cluster).$(Process).log
+	
+	+JobDurationCategory = "Medium"
 
 	requirements   = (OSGVO_OS_STRING == "RHEL 7")
 	request_cpus   = 1
@@ -222,7 +223,7 @@ can be found in our quickstart guide: [Quickstart Tutorial](../../../htc_workloa
 
 If your Julia script needs to use packages installed for a project, 
 be sure to include `my-project.tar.gz` as an input file in `julia-job.sub`. 
-For project tarballs that are <100MB, you can follow the below example:
+For project tarballs that are <1 GB, you can follow the below example:
 
 	transfer_input_files = julia-#.#.#-linux-x86_64.tar.gz, script.jl, my-project.tar.gz
 
