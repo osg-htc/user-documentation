@@ -42,3 +42,22 @@
 .md-ellipsis {
     font-weight: 700;
 }
+
+pre.term {
+    border-left: 0px solid #323232;
+    background: #484848;
+    color: #F0F0F0;
+}
+
+pre.term > code {
+    background: #484848;
+    color: #F0F0F0;
+}
+
+pre.sub {
+    border-left: 5px solid var(--md-primary-fg-color);
+}
+
+pre.file {
+    border-left: 5px solid var(--md-default-fg-color);
+}
