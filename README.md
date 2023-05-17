@@ -152,7 +152,7 @@ There are three options for styled code blocks: terminal (term), submit file (su
 To use these styles you have to use html, view the example below to convert a markdown block to styled html. 
 
 ```markdown
-    requirements = (OSGVO_OS_STRING == "RHEL 7")
+	requirements = (OSGVO_OS_STRING == "RHEL 7")
 ```
 
 ```html
