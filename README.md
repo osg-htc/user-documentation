@@ -11,6 +11,7 @@ This repository holds the documentation for the PATh Facility and OSGConnect.
   - [Adding Images](#adding-images)
   - [Adding Videos](#adding-videos)
   - [Linking Documentation](#linking-documentation)
+  - [Creating Styled Code Blocks](#creating-styled-code-blocks)
 - [Previewing Documentation](#previewing-documentation)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
@@ -143,6 +144,34 @@ used as a standalone later on.
 For instance to link to Office Hours from a tutorial use:
 
 [https://portal.osg-htc.org/documentation/support_and_training/support/getting-help-from-RCFs/](https://portal.osg-htc.org/documentation/support_and_training/support/getting-help-from-RCFs/)
+
+### Creating Styled Code Blocks
+
+There are three options for styled code blocks: terminal (term), submit file (sub), file (file).
+
+To use these styles you have to use html, view the example below to convert a markdown block to styled html. 
+
+```markdown
+    requirements = (OSGVO_OS_STRING == "RHEL 7")
+```
+
+```html
+<pre class="file"><code>requirements = (OSGVO_OS_STRING == "RHEL 7")</code></pre>
+```
+
+**Note**: Tabs and Newlines are preserved, if you don't want them don't include them in the html block
+
+```markdown
+	./configure
+	make
+	make install
+```
+
+```html
+<pre class="file"><code>./configure
+make
+make install<pre class="file"><code>
+```
 
 ## Previewing your Work
 
