@@ -60,7 +60,6 @@ Requests can be submitted to the following program officers, based on domain:
 * [Arctic Research Opportunities](https://beta.nsf.gov/funding/opportunities/arctic-research-opportunities), GEO/OPP, POs: Marc Stieglitz, [mstiegli@nsf.gov](mailto:mstiegli@nsf.gov), Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)
 * [Antarctic Research](https://beta.nsf.gov/funding/opportunities/antarctic-research), GEO/OPP, PO: Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)
 
-!!! info
     
     More details can be found in the [Dear Colleagues Letter](https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp) provided by the NSF.
 
