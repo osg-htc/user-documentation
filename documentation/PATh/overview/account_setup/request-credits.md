@@ -1,6 +1,6 @@
 ---
 path:
-    path: overview/account_setup/request-allocation.md
+    path: overview/account_setup/request-credits.md
 ---
 
 # Request PATh Facility Credits
