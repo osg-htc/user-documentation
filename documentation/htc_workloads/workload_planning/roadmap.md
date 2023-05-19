@@ -18,7 +18,7 @@ started with your first workload, with helpful links to our documentation pages.
 
 This guide assumes that you have applied for an OSG Access Point account and 
 have been approved after meeting with an OSG Research Computing Facilitator. 
-If you don't yet have an account, you can apply for one at <https://portal.osg-htc.org/application>
+If you don't yet have an account, you can apply for one [here](https://portal.osg-htc.org/application)
 or [contact us](mailto:support@osg-htc.org) with any questions you have. 
 
 Learning how to get started on the OSG does not need to end with this document or 
@@ -32,7 +32,7 @@ tasks, in an approach called "high throughput computing." For more information
 on what kind of work is a good fit for the OSG, 
 see [Is the Open Science Pool for You?](../../../overview/account_setup/is-it-for-you/). 
 
-Learn more about the services provided by the OSG that can support your HTC workload: 
+Learn more about the services provided by the OSG in this video: 
 
 <a href="https://www.youtube.com/watch?v=5FMAFxROGv0"><img alt="OSG Introduction" src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/osg-intro-video-screenshot.png" width="360" height="204"></a>
 
@@ -40,11 +40,26 @@ Learn more about the services provided by the OSG that can support your HTC work
 
 # 2. Log on to an OSG Access Point
 
-If you have not done so, apply for an account at <https://portal.osg-htc.org/application>. A Research Computing Facilitator will contact you within one business day to arrange a meeting to discuss your computational goals and to activate your account. 
+If you have not done so, apply for an account [here](https://portal.osg-htc.org/application). A Research Computing Facilitator will contact you within one business day to arrange a meeting to discuss your computational goals and to activate your account. 
 
-Users with accounts created starting in Spring 2023 have their accounts managed through a new account management service. To learn how to login to your account, visit: [Join and Log In to uw.osg-htc.org Access Points](../../../overview/account_setup/connect-access/)
+Note that there are multiple classes of access points provided.
+When your account was activated, you should have been told which 
+access point your account belongs to:
 
-Historically, OSG accounts were created and managed through a service called OSG Connect. If you are unsure if you have an account on this service, contact a [Research Computing Facilitator](mailto:support@osg-htc.org), who will provide you with your account details. If your account was created through OSG Connect, visit the following guide to learn how to access OSPool resources: [Join and Log In to OSG Connect Access Points](../../../overview/account_setup/connect-access/)
+<details>
+<summary>Log In to "uw.osg-htc.org" Access Points (e.g., ap40.uw.osg-htc.org)</summary>
+<br>
+If your account is on the uw.osg-htc.org Access Points (e.g., accounts on ap40.uw.osg-htc.org), follow instructions in this guide for logging in:
+<a href="https://portal.osg-htc.org/documentation/overview/account_setup/ap7-access/">Log In to uw.osg-htc.org Access Points</a>
+</details>
+
+<details>
+<summary>Log In to "OSG Connect" Access Points (e.g., login04.osgconnect.net)</summary>
+<br>
+If your account is on the (e.g., accounts on login04.osgconnect.net, login05.osgconnect.net), follow instructions in this guide for logging in:
+<a href="https://portal.osg-htc.org/documentation/overview/account_setup/connect-access/">Log In to OSG Connect Access Points</a>
+</details>
+
 
 # 3. Learn to Submit HTCondor Jobs
 
@@ -53,11 +68,9 @@ HTCondor scheduler. Jobs submitted to HTCondor are then scheduled and
 run on different resources that are part of the Open Science Pool.
 Before submitting your own computational work, it is important to
 understand how HTCondor job submission works. The following guides show
-how to submit basic HTCondor jobs. The second example allows you to see
-where in the OSPool your jobs run. 
+how to submit basic HTCondor jobs.
 
-- [Quickstart](../../../htc_workloads/submitting_workloads/tutorial-quickstart/)
-- [Finding OSG Locations](../../../htc_workloads/submitting_workloads/tutorial-osg-locations/)
+- [Overview: Submit OSPool Jobs using HTCondor](../../../htc_workloads/workload_planning/htcondor_job_submission/)
 
 # 4. Test a First Job
 
@@ -74,7 +87,7 @@ Read through [this overview of Using Software](../../../htc_workloads/using_soft
 
 - To **install your own software**, begin with the guide on [Compiling Software](../../../htc_workloads/using_software/compiling-applications/) and then complete the [Example Software Compilation tutorial](../../../htc_workloads/using_software/example-compilation/).
 - To **use precompiled binaries**, try the example presented in the [AutoDock Vina tutorial](../../../software_examples/drug_discovery/tutorial-AutoDockVina/) and/or the [Julia tutorial](../../../software_examples/other_languages_tools/julia-on-osg/).
-- To **use Docker containers** for your jobs, start with the [Docker and Singularity Containers guide](../../../htc_workloads/using_software/available-containers-list/), and (optionally) work through the [Tensorflow tutorial](../../../software_examples/machine_learning/tutorial-tensorflow-containers/) (which uses Docker/Singularity)
+- To **use Apptainer/Singularity/Docker containers** for your jobs, see the [Create an Apptainer/Singularity Container Image](../../../htc_workloads/using_software/containers-singularity/)
 
 Finally, here are some additional guides specific to some of the most common scripting languages and software tools used on OSG\*\*:
 
@@ -88,7 +101,7 @@ Finally, here are some additional guides specific to some of the most common scr
 ## Manage your data
 
 The data for your jobs will need to be transferred to each job that runs in the OSPool, 
-and HTCondor has built-in features for getting data to jobs. Our [Data Management Policies](../../../htc_workloads/managing_data/osgconnect-storage/) guide
+and HTCondor has built-in features for getting data to jobs. Our [Data Management](../../../htc_workloads/managing_data/overview/) guide
 discussed the relevant approaches, when to use them, and where to stage data for each.
 <!--
 - Pick a tutorial?
@@ -123,7 +136,7 @@ and our facilitation team will be happy to discuss your individual case.
 
 - Run sequential workflows of jobs: [Workflows with HTCondor's DAGMan](../../../htc_workloads/automated_workflows/dagman-workflows/)
 - Implement self-checkpointing for long jobs: [HTCondor Checkpointing Guide](https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html)
-- Build your own Docker container: [Creating a Docker Container Image](../../../htc_workloads/using_software/new_modules_list/)
+- Build your own Apptainer container: [Create an Apptainer/Singularity Container Image](../../../htc_workloads/using_software/containers-singularity/)
 - Submit more than 10,000 jobs at once: [FAQ, search for 'max_idle'](../../../overview/references/frequently-asked-questions/)
 - Larger or speciality resource requests: 
 	- GPUs: [GPU Jobs](../../../htc_workloads/specific_resource/gpu-jobs/)
@@ -134,6 +147,6 @@ and our facilitation team will be happy to discuss your individual case.
 
 The OSG Facilitation team is here to help with questions and issues that come up as you work 
 through these roadmap steps. We are available via email, office hours, appointments, and offer 
-regular training opportunities. See our [Get Help page](../../../support_and_training/get_help%21/getting-help-from-RCFs/) and [OSG Training page](../../../support_and_training/training/osgusertraining/)
+regular training opportunities. See our [Get Help page](../../../support_and_training/support/getting-help-from-RCFs/) and [OSG Training page](../../../support_and_training/training/osgusertraining/)
 for all the different ways you can reach us. Our purpose 
 is to assist you with achieving your computational goals, so we want to hear from you!
