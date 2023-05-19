@@ -5,16 +5,19 @@ path:
 
 # Registration and Login for the PATh Facility
 
-The major steps to getting started using compute resources at the PATh Facility are:
+This guide is for users who have already contacted PATh Staff about accessing the 
+PATh Facility and have been directed to these instructions. If you have not been 
+sent this information by PATh staff, please contact us at support@path-cc.io or 
+fill out the [PATh User Application](/application). 
 
-* applying for <a href="https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp" target="_blank">PATh Facility Credits</a> and being approved by the NSF
-* applying for an account 
-* meeting with a PATh staff member for a short consultation and orientation
-* uploading your SSH key
+To join and use the PATh Facility Access Point (ap1.facility.path-cc.io), you will go through the following steps:
 
-This guide will discuss how to apply for an account and login to the PATh Facility once you have been granted credits by the NSF.
+1. Apply for a PATh Facility Access Point account
+1. Have your account approved by an PATh Team member
+1. Log in to ap1.facility.path-cc.io
 
-## Get a PATh Facility Account
+## Apply for a PATh Facility Access Point Account
+
 To register with the PATh facility, submit an application using the following steps:
 
 1. Go to the account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:263). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login.
@@ -36,17 +39,15 @@ at [support@path-cc.io](mailto:support@path-cc.io).
    
       ![](../../assets/PATh/registration/comanage-email-verification-form.png)
 
-## Meet with a Research Computing Facilitator
+## Account Approval by a Research Computing Facilitator¶
 
-Once PATh staff receive your email verification, a Research Computing Facilitator will contact you within one business day to arrange a short consultation and introduction to PATh resources. During this meeting, our staff will provide personalized start-up guidance per your specific computational research goals and activate your account.
+If a meeting has not already been scheduled with a Research Computing Facilitator, one of the facilitation team will contact you about arranging a short consultation.
 
-Following the meeting, the Facilitator will approve your account, add your profile to any relevant PATh 'project' names, and ensure that you have access to the PATh Facility. (You will receive automated emails for some of these actions, which you can otherwise ignore.)
-
+Following the meeting, the Facilitator will approve your account and add your profile to any relevant PATh Facility ‘project’ names. Once your account is ready, the Facilitator will email you with your account details including the username you will use to log in to the ap1.facility.path-cc.io access point.  
 
 ## Login
 
 Once your account has been added to a PATh access point, you will be able to log in using a terminal or SSH program. Logging in requires authenticating your credientials using one of two options: __web authentication__ or __SSH key pair authentication__. Additional information on this process will be provided during and/or following your meeting with a Research Computing Facilitator.
-
 
 ### Option 1: Login via Web Authentication
 
@@ -78,7 +79,7 @@ It is also possible to authenticate using an SSH key pair, if you prefer. Loggin
 Full details across multiple configurations are explained in our 
 [SSH Authentication guide](../../overview/account_setup/generate-add-sshkey.md).
 
-## Get Help
+# Get Help
 
 For questions regarding logging in or creating an account, contact us at  
 [support@path-cc.io](mailto:support@path-cc.io).

@@ -14,12 +14,23 @@ Composed of current gen hardware, consisting of 30,000 cores and 36 A100 GPUs th
 run your high throughput computing workloads. Managed by the HTCondor Suite's Access Point the PATh facility is 
 managed to make running these workloads easy. 
 
-To get started on the PATh Facility, you need an account and a credit allocation. **PATh
-Staff can provide immediate startup allocations for basic workflow prototyping.**
+To get started on the PATh Facility, 
+* Confirm that you meet PATh Facility criteria
+* Request an account
+* Apply for credits (PATh Staff can provide immediate startup allocations for basic workflow prototyping.)
 
-## Get an Account
+These steps are described below: 
 
-To request an account on the PATh Facility, fill out the interest form here: 
+## Meet PATh Facility Criteria
+
+Groups are eligible to use the PATh Facility if: 
+
+- they have an accepted or active NSF award
+- they have an NSF proposal in preparation or pending review
+
+## Request an Account
+
+To request an account on the PATh Facility, fill out the request form here: 
 
 [PATh User Application](/application){ .md-button }
 
@@ -31,7 +42,7 @@ your account.
 
 All compute time on the PATh Facility is charged using a credit system. Credits 
 are allocated from the NSF via the relevant program officer. See 
-our [Request PATh Facility Credits](../account_setup/request-allocation) guide 
+our [Request PATh Facility Credits](../account_setup/request-credits) guide 
 for detailed information and templates on submitting a credit request. 
 
 If you have not already applied for a credit allocation at the time of requesting 
