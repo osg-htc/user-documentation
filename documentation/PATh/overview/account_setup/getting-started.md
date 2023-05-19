@@ -12,53 +12,65 @@ to the NSF Science and Engineering community.
 
 Composed of current gen hardware, consisting of 30,000 cores and 36 A100 GPUs the PATh facility is built to 
 run your high throughput computing workloads. Managed by the HTCondor Suite's Access Point the PATh facility is 
-managed to make running these workloads easy.
+managed to make running these workloads easy. 
 
-## 1. Set up a Consultation 
+To get started on the PATh Facility, 
+* Confirm that you meet PATh Facility criteria
+* Request an account
+* Apply for credits (PATh Staff can provide immediate startup allocations for basic workflow prototyping.)
 
-The PATh team is here to help! As part of the consulting services offered to any researcher, our team can help you 
-decompose your workload to ensembles of jobs and generate resource estimates for the various tasks in the ensemble. 
+These steps are described below: 
 
-Interested Investigators are encouraged to reach out the PATh support staff at 
-[credit-accounts@path-cc.io](mailto:credit-accounts@path-cc.io) with questions regarding PATh resources, 
-using HTC or estimating credit needs.
+## Meet PATh Facility Criteria
 
-## 2. Submit Credit Request
+Groups are eligible to use the PATh Facility if: 
 
-The opportunity to use PATh Facility resources is available to all PIs submitting, or having submitted, proposals to the
-following Programs as per the [Dear Colleagues Letter](https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp):
+- they have an accepted or active NSF award with one of the affiliated programs below
+- they have an NSF proposal in preparation or pending review with one of the programs listed below
 
-* [Computational and Data-Enabled Science and Engineering](https://beta.nsf.gov/funding/opportunities/computational-and-data-enabled-science-and-engineering-cdse-0) (CDS&E), NSF, PO: Christina Payne, [cpayne@nsf.gov](mailto:cpayne@nsf.gov)
-* [Cyberinfrastructure for Sustained Scientific Innovation](https://beta.nsf.gov/funding/opportunities/cyberinfrastructure-sustained-scientific-innovation-cssi) (CSSI), CISE/OAC, PO: Tevfik Kosar, [tkosar@nsf.gov](mailto:tkosar@nsf.gov)
-* [Innovation: Bioinformatics](https://beta.nsf.gov/funding/opportunities/innovation-bioinformatics), BIO/DBI, PO: Jean X. Gao, [jgao@nsf.gov](mailto:jgao@nsf.gov)
-* [Neural Systems](https://beta.nsf.gov/funding/opportunities/neural-systems-0), BIO/IOS, PO: Evan Balaban, [ebalaban@nsf.gov](mailto:ebalaban@nsf.gov)
-* [Collaborative Research in Computational Neuroscience](https://beta.nsf.gov/funding/opportunities/collaborative-research-computational-neuroscience-crcns) (CRCNS), CISE/IIS, PO: Kenneth Whang, [kwhang@nsf.gov](mailto:kwhang@nsf.gov) ‒ see also [NSF DCL 22-022](https://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf22022)
-* [Astronomy and Astrophysics Research Grants](https://beta.nsf.gov/funding/opportunities/astronomy-and-astrophysics-research-grants-aag) (AAG), MPS/AST, PO: Andreas Berlind, [aberlind@nsf.gov](mailto:aberlind@nsf.gov)
-* [Chemical Theory, Models, and Computational Methods](https://beta.nsf.gov/funding/opportunities/chemical-theory-models-and-computational-methods-ctmc-0) (CTMC), MPS/CHE, PO: Richard Dawes, [rdawes@nsf.gov](mailto:rdawes@nsf.gov)
-* [Condensed Matter and Materials Theory](https://beta.nsf.gov/funding/opportunities/condensed-matter-and-materials-theory-cmmt-0) (CMMT), MPS/DMR, PO: Daryl Hess, [dhess@nsf.gov](mailto:dhess@nsf.gov)
-* [Atomic, Molecular and Optical Physics ‒ Theory](https://beta.nsf.gov/funding/opportunities/atomic-molecular-and-optical-physics-theory-0), MPS/PHY, PO: Robert Forrey, [rforrey@nsf.gov](mailto:rforrey@nsf.gov)
-* [Nuclear Physics ‒ Theory](https://beta.nsf.gov/funding/opportunities/nuclear-physics-theory-0), MPS/PHY, PO: Bogdan Mihaila, MPS/PHY, [bmihaila@nsf.gov](mailto:bmihaila@nsf.gov)
-* [Geoinformatics (GI),](https://beta.nsf.gov/funding/opportunities/geoinformatics-gi) GEO/EAR, PO: Raleigh Martin, [ramartin@nsf.gov](mailto:ramartin@nsf.gov)
-* [Geophysics (PH)](https://beta.nsf.gov/funding/opportunities/geophysics-ph-0), GEO/EAR, PO: Eva Zanzerkia, [ezanzerk@nsf.gov](mailto:ezanzerk@nsf.gov)
-* [Arctic Research Opportunities](https://beta.nsf.gov/funding/opportunities/arctic-research-opportunities), GEO/OPP, POs: Marc Stieglitz, [mstiegli@nsf.gov](mailto:mstiegli@nsf.gov), Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)
-* [Antarctic Research](https://beta.nsf.gov/funding/opportunities/antarctic-research), GEO/OPP, PO: Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)
+NSF Programs: 
+* Computational and Data-Enabled Science and Engineering
+* Cyberinfrastructure for Sustained Scientific Innovation
+* Innovation: Bioinformatics
+* Neural Systems
+* Collaborative Research in Computational Neuroscience
+* Astronomy and Astrophysics Research Grants
+* Chemical Theory, Models, and Computational Methods
+* Condensed Matter and Materials Theory
+* Atomic, Molecular and Optical Physics ‒ Theory
+* Nuclear Physics ‒ Theory
+* Geoinformatics (GI)
+* Geophysics (PH)
+* Arctic Research Opportunities
+* Antarctic Research
 
-!!! info
-    
-    More details can be found in the [Dear Colleagues Letter](https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp) provided by the NSF.
+## Request an Account
 
-## 3. Provide PATh with User Information
-
-To help use manage the users of the PATh facility we require that all PI's awarded with credits complete a 
-quick account details form. After completion of this form PATh support will contact you to set up your credit accounts. 
+To request an account on the PATh Facility, fill out the request form here: 
 
 [PATh User Application](/application){ .md-button }
 
-## 4. Registering and Logging into PATh Facility Account
+After filling out this form, a member of our Facilitation team will be in touch 
+to arrange a short consultation and provide additional information about activating 
+your account. 
 
-Now that you have credits, and have met with our facilitation staff, you are ready to start using your allocation. Follow
-our [Registration and Login Guide](../../overview/account_setup/registration/) to access your account and start running
-your workloads!
+## Request Credits
 
+All compute time on the PATh Facility is charged using a credit system. Credits 
+are allocated from the NSF via the relevant program officer. See 
+our [Request PATh Facility Credits](../account_setup/request-credits) guide 
+for detailed information and templates on submitting a credit request. 
 
+If you have not already applied for a credit allocation at the time of requesting 
+an account, PATh staff can provide a small startup allocation for initial testing. 
 
+If you have already applied for a credit allocation at the time of requesting 
+an account, let us know that information and we will add credits to your 
+project account. 
+
+# Reach Out
+
+If you're not sure where to start or are not sure if the PATh Facility is for you, 
+we recommend either filling out the User 
+Application form linked above or emailing PATh support staff at 
+[credit-accounts@path-cc.io](mailto:credit-accounts@path-cc.io) with any questions. 
