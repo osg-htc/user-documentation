@@ -25,8 +25,24 @@ These steps are described below:
 
 Groups are eligible to use the PATh Facility if: 
 
-- they have an accepted or active NSF award
-- they have an NSF proposal in preparation or pending review
+- they have an accepted or active NSF award with one of the affiliated programs below
+- they have an NSF proposal in preparation or pending review with one of the programs listed below
+
+NSF Programs: 
+* Computational and Data-Enabled Science and Engineering
+* Cyberinfrastructure for Sustained Scientific Innovation
+* Innovation: Bioinformatics
+* Neural Systems
+* Collaborative Research in Computational Neuroscience
+* Astronomy and Astrophysics Research Grants
+* Chemical Theory, Models, and Computational Methods
+* Condensed Matter and Materials Theory
+* Atomic, Molecular and Optical Physics ‒ Theory
+* Nuclear Physics ‒ Theory
+* Geoinformatics (GI)
+* Geophysics (PH)
+* Arctic Research Opportunities
+* Antarctic Research
 
 ## Request an Account
 
