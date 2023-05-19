@@ -5,6 +5,7 @@ nav:
       - "Getting Started": overview/account_setup/getting-started.md
       - "Registration": overview/account_setup/registration.md
       - "Log in with SSH Keys": overview/account_setup/generate-add-sshkey.md
+      - "Request PATh Facility Credits": overview/account_setup/request-credits.md
     - References:
       - "Credit Account Charges": overview/references/credit-account-charges.md
   - Support And Training Resources:
