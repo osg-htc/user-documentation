@@ -14,7 +14,8 @@ Composed of current gen hardware, consisting of 30,000 cores and 36 A100 GPUs th
 run your high throughput computing workloads. Managed by the HTCondor Suite's Access Point the PATh facility is 
 managed to make running these workloads easy. 
 
-To get started on the PATh Facility, 
+To get started on the PATh Facility: 
+
 * Confirm that you meet PATh Facility criteria
 * Request an account
 * Apply for credits (PATh Staff can provide immediate startup allocations for basic workflow prototyping.)
