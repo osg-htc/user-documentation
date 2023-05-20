@@ -30,6 +30,7 @@ Groups are eligible to use the PATh Facility if:
 - they have an NSF proposal in preparation or pending review with one of the programs listed below
 
 NSF Programs: 
+
 * Computational and Data-Enabled Science and Engineering
 * Cyberinfrastructure for Sustained Scientific Innovation
 * Innovation: Bioinformatics
@@ -59,7 +60,7 @@ your account.
 
 All compute time on the PATh Facility is charged using a credit system. Credits 
 are allocated from the NSF via the relevant program officer. See 
-our [Request PATh Facility Credits](../account_setup/request-credits) guide 
+our [Request PATh Facility Credits](../request-credits) guide 
 for detailed information and templates on submitting a credit request. 
 
 If you have not already applied for a credit allocation at the time of requesting 
