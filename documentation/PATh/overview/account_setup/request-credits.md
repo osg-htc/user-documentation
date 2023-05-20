@@ -45,6 +45,7 @@ or more of the following:
 ### Program Officers
 
 Requests can be submitted to the following program officers, based on domain: 
+
 * [Computational and Data-Enabled Science and Engineering](https://beta.nsf.gov/funding/opportunities/computational-and-data-enabled-science-and-engineering-cdse-0) (CDS&E), NSF, PO: Christina Payne, [cpayne@nsf.gov](mailto:cpayne@nsf.gov)
 * [Cyberinfrastructure for Sustained Scientific Innovation](https://beta.nsf.gov/funding/opportunities/cyberinfrastructure-sustained-scientific-innovation-cssi) (CSSI), CISE/OAC, PO: Tevfik Kosar, [tkosar@nsf.gov](mailto:tkosar@nsf.gov)
 * [Innovation: Bioinformatics](https://beta.nsf.gov/funding/opportunities/innovation-bioinformatics), BIO/DBI, PO: Jean X. Gao, [jgao@nsf.gov](mailto:jgao@nsf.gov)
@@ -59,9 +60,8 @@ Requests can be submitted to the following program officers, based on domain:
 * [Geophysics (PH)](https://beta.nsf.gov/funding/opportunities/geophysics-ph-0), GEO/EAR, PO: Eva Zanzerkia, [ezanzerk@nsf.gov](mailto:ezanzerk@nsf.gov)
 * [Arctic Research Opportunities](https://beta.nsf.gov/funding/opportunities/arctic-research-opportunities), GEO/OPP, POs: Marc Stieglitz, [mstiegli@nsf.gov](mailto:mstiegli@nsf.gov), Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)
 * [Antarctic Research](https://beta.nsf.gov/funding/opportunities/antarctic-research), GEO/OPP, PO: Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)
-
-    
-    More details can be found in the [Dear Colleagues Letter](https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp) provided by the NSF.
+  
+> More details can be found in the [Dear Colleagues Letter](https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp) provided by the NSF.
 
 ## PATh Facility Credit Guide
 
