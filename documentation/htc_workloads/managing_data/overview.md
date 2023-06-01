@@ -83,6 +83,44 @@ publicly discoverable and accessible to anyone.
   <td>
 </tr>
 <tr>
+  <td>ap20.uc.osg-htc.org</td>
+  <td>Protected:
+      <ul>
+        <li><nobr>Local Path: <code>/ospool/ap20/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Base URL: <code>osdf:///ospool/ap20/data/[USERNAME]</code></nobr></li>
+      </ul>
+      Protected Project:
+      <ul>
+        <li><nobr>Local Path: <code>/ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
+        <li><nobr>Base URL: <code>osdf:///ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
+      </ul>
+      Public Project:
+      <ul>
+        <li><nobr>Local Path: <code>/ospool/uc-shared/public/[PROJECT]</code></nobr></li>
+        <li><nobr>Base URL: <code>osdf:///ospool/uc-shared/public/[PROJECT]</code></nobr></li>
+      </ul>
+  <td>
+</tr>
+<tr>
+  <td>ap21.uc.osg-htc.org</td>
+  <td>Protected:
+      <ul>
+        <li><nobr>Local Path: <code>/ospool/ap20/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Base URL: <code>osdf:///ospool/ap20/data/[USERNAME]</code></nobr></li>
+      </ul>
+      Protected Project:
+      <ul>
+        <li><nobr>Local Path: <code>/ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
+        <li><nobr>Base URL: <code>osdf:///ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
+      </ul>
+      Public Project:
+      <ul>
+        <li><nobr>Local Path: <code>/ospool/uc-shared/public/[PROJECT]</code></nobr></li>
+        <li><nobr>Base URL: <code>osdf:///ospool/uc-shared/public/[PROJECT]</code></nobr></li>
+      </ul>
+  <td>
+</tr>
+<tr>
   <td>login04.osgconnect.net</td>
   <td>Protected:
       <ul>
