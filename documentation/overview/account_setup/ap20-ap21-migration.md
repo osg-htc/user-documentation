@@ -39,7 +39,7 @@ your OSG Connect account to use it. Please see detailed instructions
 
 ## Step 3: Migrate Data
 
-Any existing data will have to be migrated by you. The filesystems from 
+**You are responsible for migrating your own data.** The filesystems from 
 login04.osgconnect.net and login05.osgconnect.net will be mounted **temporarily**
 on the new access points. Please ensure that you have copied all data you need
 by the August 15th deadline.
