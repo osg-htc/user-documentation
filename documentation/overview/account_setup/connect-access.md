@@ -60,7 +60,7 @@ be added to the login nodes within a couple hours.
 > a keypair on each computer you want to use, and then adding the public key to your OSG 
 > Connect profile. 
 
-## Add multi factory authentication to your web profile
+## Add multi factor authentication to your web profile
 
 Multi factory authentication means that you will use 2 different methods to authenticate
 when you log in. The first factor is the ssh key you added above. The second factory
