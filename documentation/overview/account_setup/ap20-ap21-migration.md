@@ -44,7 +44,7 @@ login04.osgconnect.net and login05.osgconnect.net will be mounted **temporarily*
 on the new access points. Please ensure that you have copied all data you need
 by the August 15th deadline.
 
-Once logged in to the new access points, you will find the old data at:
+Once logged in to the new access points, you will find your files from login04/login05 at the following locations:
 
   * Your old home directory under `/mnt/login04/home/[USERNAME]` or `/mnt/login05/home/[USERNAME]`
   * Your old /public directory under `/mnt/public/[USERNAME]`
