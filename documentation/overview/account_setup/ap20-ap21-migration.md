@@ -35,7 +35,7 @@ Your new access point assignment will be based on your current access point:
 An important change is that the new access points will require multi factor authentication.
 As part of the migration process, ensure that you install a TOTP client and configure
 your OSG Connect account to use it. Please see detailed instructions 
-[here](../connect-access/#add-multi-factory-authentication-to-your-web-profile).
+[here](../connect-access/#add-multi-factor-authentication-to-your-web-profile).
 
 ## Step 3: Migrate Data
 
