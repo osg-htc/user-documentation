@@ -60,10 +60,34 @@ be added to the login nodes within a couple hours.
 > a keypair on each computer you want to use, and then adding the public key to your OSG 
 > Connect profile. 
 
+## Add multi factor authentication to your web profile
+
+Multi factor authentication means that you will use 2 different methods to authenticate
+when you log in. The first factor is the ssh key you added above. The second factor
+is a 6 digit code from one of your devices. OSGConnect uses the TOTP
+(Time-based One-time Password) standard - any TOTP client should work. Some common
+clients include:
+
+  * [FreeOTP](https://freeotp.github.io/)
+  * [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
+  * [DUO](https://duo.com/product/multi-factor-authentication-mfa/authentication-methods/tokens-and-passcodes)
+
+Once you have a TOTP client, configure it to be used with OSG Connect: 
+
+1. Go to [https://osgconnect.net](https://osgconnect.net) and sign in with the institutional identity you used when requesting an OSG Connect account. 
+
+2. Click "Profile" in the top right corner.
+
+3. Click the "Edit Profile" button located after the user information in the left hand box.
+
+4. Check the "Set up Multi-Factor Authentication" at the bottom and hit Apply.
+
+5. In the Multi-Factor Authentication box, follow the instructions (scan the QR code with your TOTP client)
+
 ## Logging In
 
-After following the steps above to upload your key and it's been about fifteen minutes, you should 
-be able to log in to OSG Connect. 
+After following the steps above to upload your key, set up multi factor authentication, and it has
+been about fifteen minutes, you should be able to log in to OSG Connect. 
 
 ### Determine which login node to use
 
