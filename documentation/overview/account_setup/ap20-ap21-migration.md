@@ -6,12 +6,20 @@ ospool:
 **This guide is for users who are migrating from login04.osgconnect.net / login05.osgconnect.net
 to the new access points ap20.uc.osg-htc.org / ap21.uc.osg-htc.org**
 
-Due to a hardware refresh, and the need for improved performance, an access point
-migration will be necessary during the summer of 2023. The new access points
-will have larger and faster filesystems, and be connected to the Internet
-with 100 Gb links.
+We are pleased to announce an important update planned for our system
+during the summer of 2023. To continue delivering reliable and efficient
+service, we will be implementing an essential hardware refresh and
+access point migration.
 
-Users will have to complete the following steps before July 15th.
+Our new access points are set to elevate your experience, with a focus
+on capacity and speed. These enhanced systems will boast larger and
+faster file systems, paving the way for improved data handling and
+operations. Moreover, we are taking our connectivity a step further by
+integrating 100 Gb internet links. This enhancement will ensure a robust
+and swift connection, reducing latency and facilitating smoother data
+transfers.
+
+Users will have to complete the following steps before August 15th.
 
 ## Step 1: Determine Your Assigned Access Point
 
@@ -34,7 +42,7 @@ your OSG Connect account to use it. Please see detailed instructions
 Any existing data will have to be migrated by you. The filesystems from 
 login04.osgconnect.net and login05.osgconnect.net will be mounted **temporarily**
 on the new access points. Please ensure that you have copied all data you need
-by the July 15th deadline.
+by the August 15th deadline.
 
 Once logged in to the new access points, you will find the old data at:
 
