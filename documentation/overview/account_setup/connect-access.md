@@ -82,7 +82,7 @@ Once you have a TOTP client, configure it to be used with OSG Connect:
 
 4. Check the "Set up Multi-Factor Authentication" at the bottom and hit Apply.
 
-5. In the Multi-Factory Authentication box, follow the instructions (scan the QR code with your TOTP client)
+5. In the Multi-Factor Authentication box, follow the instructions (scan the QR code with your TOTP client)
 
 ## Logging In
 
