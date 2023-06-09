@@ -86,7 +86,7 @@ Once you have a TOTP client, configure it to be used with OSG Connect:
 
 ## Logging In
 
-After following the steps above to upload your key, set up multi factory authentication, and it's
+After following the steps above to upload your key, set up multi factor authentication, and it has
 been about fifteen minutes, you should be able to log in to OSG Connect. 
 
 ### Determine which login node to use
