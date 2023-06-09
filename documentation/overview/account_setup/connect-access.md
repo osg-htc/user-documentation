@@ -62,7 +62,7 @@ be added to the login nodes within a couple hours.
 
 ## Add multi factor authentication to your web profile
 
-Multi factory authentication means that you will use 2 different methods to authenticate
+Multi factor authentication means that you will use 2 different methods to authenticate
 when you log in. The first factor is the ssh key you added above. The second factory
 is a 6 digit code from one of your devices. OSGConnect uses the TOTP
 (Time-based One-time Password) standard - any TOTP client should work. Some common
