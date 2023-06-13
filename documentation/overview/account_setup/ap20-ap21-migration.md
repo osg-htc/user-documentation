@@ -19,7 +19,7 @@ integrating 100 Gb internet links. This enhancement will ensure a robust
 and swift connection, reducing latency and facilitating smoother data
 transfers.
 
-Users will have to complete the following steps before July 21st.
+Users will have to complete the following steps before August 1st.
 
 ## Step 1: Determine Your Assigned Access Point
 
@@ -42,7 +42,7 @@ your OSG Connect account to use it. Please see detailed instructions
 **You are responsible for migrating your own data.** The filesystems from 
 login04.osgconnect.net and login05.osgconnect.net will be mounted **temporarily**
 on the new access points. Please ensure that you have copied all data you need
-by the July 21st deadline.
+by the August 1st deadline.
 
 Once logged in to the new access points, you will find your files from login04/login05 at the following locations:
 
