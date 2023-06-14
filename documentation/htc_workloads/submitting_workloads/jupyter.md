@@ -22,7 +22,7 @@ Go to this link to start an OSPool Notebooks instance:
 - Select your desired server option and click "Start" to launch your instance. This process can take several minutes to complete. You will be redirected automatically when your instance is ready.
 
 If you have an existing account on the `ap40.uw.osg-htc.org` Access Point, the 
-started Jupyter instance will connect to your account on that AP. If you don't have 
+started Jupyter instance will connect to your account on that Access Point. If you don't have 
 an existing OSPool account, your Jupyter instance will be running on a temporary 
 Access Point as the "joyvan" user.  For more details on the differences between 
 these instances, see [Working with your OSPool Notebooks Instance](#working-with-your-ospool-notebooks-instance)
@@ -53,7 +53,7 @@ using the same interface to work with the full OSPool.
 # Working with your OSPool Notebooks Instance
 
 There will be slight differences in your OSPool Notebook instance, depending 
-on whether you have an existing OSPool account and where it is. Click on 
+on whether you have an existing OSPool account and what Access Point it is on. Click on 
 the section below that applies to you to learn more. 
 
 For more information about the JupyterLab interface in general, see the [JupyterLab manual](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html).
