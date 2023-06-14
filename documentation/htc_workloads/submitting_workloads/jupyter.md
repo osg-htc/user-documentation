@@ -52,19 +52,30 @@ using the same interface to work with the full OSPool.
 
 # Working with your OSPool Notebooks Instance
 
+## Needed Submit File Options
+
+When submitting jobs from the terminal in the OSPool Notebooks interface, make sure 
+to always include this option in your submit file: 
+
+	should_transfer_input = YES
+
+This option is needed for jobs to start and run successfully. 
+
+## OSPool Notebook Experience
+
 There will be slight differences in your OSPool Notebook instance, depending 
 on whether you have an existing OSPool account and what Access Point it is on. Click on 
 the section below that applies to you to learn more. 
 
-For more information about the JupyterLab interface in general, see the [JupyterLab manual](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html).
+<b>For all users, notebooks will time out after an hour an inactivity and may run for a maximum of four hours. Timing out will not impact jobs submitted to the OSPool.</b>
 
 <details>
 <summary>For researchers with accounts on a uw.osg-htc.org access point</summary>
 <br>
-<b>Working in JupyterLab, your account will be tied to your account on your uw.osg-htc.org access point.</b> This means you will be able to interact with files in your <code>/home</code> directory, execute code, and save files, similar to like you would if you were logged into your access point via a terminal. If you submit jobs to HTCondor, by default, your jobs will run on the Open Science Pool. As of right now, these HTCondor jobs will not be able to access any data you have stored in `/protected`.
+<b>Working in OSPool Notebooks, your account will be tied to your account on your uw.osg-htc.org access point.</b> This means you will be able to interact with files in your <code>/home</code> directory, execute code, and save files, similar to like you would if you were logged into your access point via a terminal. If you submit jobs to HTCondor, by default, your jobs will run on the Open Science Pool. As of right now, these HTCondor jobs will not be able to access any data you have stored in `/protected`.
 <br>
 <br>
-Unlike logging into your access point through a terminal, when you log in through a JupyterLab instance, you can run computionally intensive tasks in your <code>/home</code> directory. This is because each researcher has a total of 8 CPUs and 16 GB memory available to their JupyterLab instance's <code>/home</code> directory. 
+Unlike logging into your access point through a terminal, when you log in through an OSPool Notebooks instance, you can run computionally intensive tasks in your <code>/home</code> directory. This is because each researcher has a total of 8 CPUs and 16 GB memory available to their OSPool Notebook instance's <code>/home</code> directory. 
 <br>
 <br>
 If you would like your HTCondor jobs to run inside your Jupyter container and not on the OSPool, you can copy/paste these lines to your submit file:
@@ -81,22 +92,23 @@ If you would like your HTCondor jobs to run inside your Jupyter container and no
 <details>
 <summary>For researchers with accounts on login0N.osgconnect.net access point</summary>
 <br>
-<b>Working in JupyterLab, your account will <b>not</b> be tied to your account on your login0N.osgconnect.net access point.</b> 
+<b>Working in OSPool Notebooks, your account will <b>not</b> be tied to your account on your login0N.osgconnect.net access point.</b> 
 <br>
 <br>
-JupyterLab is run on only our <code>uw.osg-htc.org access points</code>. This means your OSPool account will not be recognized. Therefore, while you are welcome to upload data to your JupyterLab instance and to use the 8 CPUs and 16 GB memory available to your instance to submit HTCondor jobs and analyze data, <b>we recommend you request an account on a <code>uw.osg-htc.org access points</code> access point to be able to run full OSPool workflows and to avoid having data deleted upon logging out.</b>
+OSPool Notebooks are run on only our <code>uw.osg-htc.org access points</code>. This means your OSPool account will not be recognized. Therefore, while you are welcome to upload data to your OSPool Notebooks instance and to use the 8 CPUs and 16 GB memory available to your instance to submit HTCondor jobs and analyze data, <b>we recommend you request an account on a <code>uw.osg-htc.org access points</code> access point to be able to run full OSPool workflows and to avoid having data deleted upon logging out.</b>
 <br>
 </details>
 
 <details>
 <summary>For researchers with guest access on an OSPool access point</summary>
 <br>
-<b>Our JupyterLab instance is a great way to see if you would like to request an account on an OSPool access point or to practice small High Throughput Computing workflows without needing an OSPool account. </b>  
+<b>Our OSPool Notebooks instance is a great way to see if you would like to request an account on an OSPool access point or to practice small High Throughput Computing workflows without needing an OSPool account. </b>  
 <br>  
 <br>
-Your instance has HTCondor pre-installed, which allows you to practice the job submission process required to use OSG resources. Your instance will have 8 CPUs and 16 GB of memory available to your computations. We encourage you to also attend our twice-a-month trainings (where you can use your Jupyter instance to follow along). At any time, you are welcome to request a full account that will allow you to submit jobs to the OSPool using a JupyterLab interface.
+Your instance has HTCondor pre-installed, which allows you to practice the job submission process required to use OSG resources. Your instance will have 8 CPUs and 16 GB of memory available to your computations. We encourage you to also attend our twice-a-month trainings (where you can use your OSPool Notebooks instance to follow along). At any time, you are welcome to request a full account that will allow you to submit jobs to the OSPool using a Jupyter-based interface.
 <br>
 </details>
 
-<b>For all users, notebooks will time out after an hour an inactivity and may run for a maximum of four hours. Timing out will not impact jobs submitted to the OSPool.</b>
+## Read More
 
+For more information about the JupyterLab interface in general, see the [JupyterLab manual](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html).
