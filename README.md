@@ -120,7 +120,7 @@ vary.
 
 ### Linking Documentation
 
-#### Other Portal Documentation
+#### Other Portal Documentation 
 
 All links to other portal documentation should be a relative link ( prepended with ../ ). 
 
