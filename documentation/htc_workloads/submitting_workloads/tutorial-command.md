@@ -24,6 +24,7 @@ The following tutorials are available and are compatible with OSG-provided Acces
 	Currently available tutorials:
 	R ...................... Estimate Pi using the R programming language
 	R-addlibSNA ............ Shows how to add R external libraries for the R jobs on the OSG
+	ScalingUp-R ............ Scaling up compute resources - R example 
 	ScalingUp-Python ....... Scaling up compute resources - Python example to optimize a function on grid points
 	blast-split ............ How to run BLAST on the OSG by splitting a large input file
 	dagman-wordfreq ........ DAGMan based wordfreq example
