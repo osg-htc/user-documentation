@@ -10,7 +10,7 @@ The OSPool provides a ***free, ready-to-use*** platform for instructors who are 
 
 Instructors can choose for their students to have Guest or Full Accounts on the OSPool. For Guest Accounts, students/attendees can launch an OSPool Notebook at any time and practice job submission with smaller workflows. For Full Accounts, students/attendees will need to request an account (which will be approved within one business day), but then are able to submit large scale high throughput computing workflows free of charge. 
 
-See the table below to learn more about how to use OSPool resources for your event.
+The table below outlines suggested steps for bringing OSPool resources to your training or event. Please reach out to the facilitation team at any time if you have questions or want to chat about your goals.
 
 <table>
   <tr>
