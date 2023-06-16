@@ -6,7 +6,7 @@ ospool:
 OSPool Resources for Teaching & Education
 ====================================
 
-The OSPool provides a ***free, ready-to-use*** platform for instructors to use when teaching high throughput computing concepts for academic courses, conference workshops, and other events. 
+The OSPool provides a ***free, ready-to-use*** platform for instructors who are teaching high throughput computing concepts for academic courses, conference workshops, and other events. 
 
 Instructors can choose for their students to have Guest or Full Accounts on the OSPool. For Guest Accounts, students/attendees can launch an OSPool Notebook at any time and practice job submission with smaller workflows. For Full Accounts, students/attendees will need to request an account (which will be approved within one business day), but then are able to submit large scale high throughput computing workflows free of charge. 
 
