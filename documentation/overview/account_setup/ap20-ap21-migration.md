@@ -6,20 +6,18 @@ ospool:
 **This guide is for users who are migrating from login04.osgconnect.net / login05.osgconnect.net
 to the new access points ap20.uc.osg-htc.org / ap21.uc.osg-htc.org**
 
-We are pleased to announce an important update planned for our system
-during the summer of 2023. To continue delivering reliable and efficient
-service, we will be implementing an essential hardware refresh and
-access point migration.
+We are replacing the login04/login05.osgconnect.net access points with
+new improved access points.  All users with accounts on login04/login05
+must migrate to the new servers by Tuesday, August 1.
 
-Our new access points are set to elevate your experience, with a focus
-on capacity and speed. These enhanced systems will boast larger and
-faster file systems, paving the way for improved data handling and
-operations. Moreover, we are taking our connectivity a step further by
-integrating 100 Gb internet links. This enhancement will ensure a robust
-and swift connection, reducing latency and facilitating smoother data
-transfers.
+Our dedicated infrastructure team has put in considerable effort to
+improve the user experience. The new access points have larger and
+faster file systems as well as improved network connectivity (100Gb
+links), which will improve data handling capabilities. We are also
+moving to a newer version of Linux.
 
-Users will have to complete the following steps before August 1st.
+To encourage a speedy migration, jobs on the new access points will have
+higher priority than jobs on the old access points.
 
 ## Step 1: Determine Your Assigned Access Point
 
@@ -33,8 +31,9 @@ Your new access point assignment will be based on your current access point:
 ## Step 2: Set Up Multi Factor Authentication
 
 An important change is that the new access points will require multi factor authentication.
-As part of the migration process, ensure that you install a TOTP client and configure
-your OSG Connect account to use it. Please see detailed instructions 
+As part of the migration process, please install a TOTP client and connect your
+account. When connecting to an access point via ssh, you will be asked to provide the
+generated 6 digit verification code when logging in. Please see detailed instructions
 [here](../connect-access/#add-multi-factor-authentication-to-your-web-profile).
 
 ## Step 3: Migrate Data
@@ -59,11 +58,8 @@ that most data from the old `/public/` or `/protected/` move into the new access
 specific "protected" areas (`/ospool/ap20/data/` or `/ospool/ap21/data` based on which access
 point you are assigned to). This will offer the the best performance.
 
-For project data you want to make available without authentication, you can use the new
-`/ospool/uc-shared/public/[PROJECT]` location.
-
-
-
+** After the migration deadline, all data will be deleted from login04 / login05 under
+   `$HOME`, `/public`, and `/protected` **
 
 
 
