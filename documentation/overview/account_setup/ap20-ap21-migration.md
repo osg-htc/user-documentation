@@ -31,7 +31,7 @@ Your new access point assignment will be based on your current access point:
 ## Step 2: Set Up Multi Factor Authentication
 
 An important change is that the new access points will require multi factor authentication.
-As part of the migration process, please install a TOTP client and connect your
+As part of the migration process, you will connect to your account to a time-based one-time password (TOTP) client. 
 account. When connecting to an access point via ssh, you will be asked to provide the
 generated 6 digit verification code when logging in. Please see detailed instructions
 [here](../connect-access/#add-multi-factor-authentication-to-your-web-profile).
