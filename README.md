@@ -15,7 +15,7 @@ This repository holds the documentation for the PATh Facility and OSGConnect.
 - [Previewing Documentation](#previewing-documentation)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
- 
+  
 ## Repository Layout
 
 ### ./data
