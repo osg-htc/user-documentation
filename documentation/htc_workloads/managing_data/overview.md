@@ -75,76 +75,76 @@ publicly discoverable and accessible to anyone.
 </tr>
 <tr>
   <td>ap40.uw.osg-htc.org</td>
-  <td>Protected:
+  <td>Accessible to user only:
       <ul>
         <li><nobr>Local Path: <code>/mnt/stash/ospool/PROTECTED/[USERNAME]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///ospool/PROTECTED/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/PROTECTED/[USERNAME]</code></nobr></li>
       </ul>
   <td>
 </tr>
 <tr>
   <td>ap20.uc.osg-htc.org</td>
-  <td>Protected:
+  <td>Accessible to user only:
       <ul>
         <li><nobr>Local Path: <code>/ospool/ap20/data/[USERNAME]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///ospool/ap20/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap20/data/[USERNAME]</code></nobr></li>
       </ul>
-      Protected Project:
+      Accessible to project group only:
       <ul>
         <li><nobr>Local Path: <code>/ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
       </ul>
-      Public Project:
+      Public space for projects:
       <ul>
         <li><nobr>Local Path: <code>/ospool/uc-shared/public/[PROJECT]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///ospool/uc-shared/public/[PROJECT]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/public/[PROJECT]</code></nobr></li>
       </ul>
   <td>
 </tr>
 <tr>
   <td>ap21.uc.osg-htc.org</td>
-  <td>Protected:
+  <td>Accessible to user only:
       <ul>
         <li><nobr>Local Path: <code>/ospool/ap20/data/[USERNAME]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///ospool/ap20/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap20/data/[USERNAME]</code></nobr></li>
       </ul>
-      Protected Project:
+      Accessible to project group only:
       <ul>
         <li><nobr>Local Path: <code>/ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
       </ul>
-      Public Project:
+      Public space for projects:
       <ul>
         <li><nobr>Local Path: <code>/ospool/uc-shared/public/[PROJECT]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///ospool/uc-shared/public/[PROJECT]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/public/[PROJECT]</code></nobr></li>
       </ul>
   <td>
 </tr>
 <tr>
   <td>login04.osgconnect.net</td>
-  <td>Protected:
+  <td>Accessible to user only:
       <ul>
         <li><nobr>Local Path: <code>/protected/[USERNAME]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///osgconnect/protected/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///osgconnect/protected/[USERNAME]</code></nobr></li>
       </ul>
       Public:
       <ul>
         <li><nobr>Local Path: <code>/public/[USERNAME]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///osgconnect/public/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///osgconnect/public/[USERNAME]</code></nobr></li>
       </ul>
   </td>
 </tr>
 <tr>
   <td>login05.osgconnect.net</td>
-  <td>Protected:
+  <td>Accessible to user only:
       <ul>
         <li><nobr>Local Path: <code>/protected/[USERNAME]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///osgconnect/protected/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///osgconnect/protected/[USERNAME]</code></nobr></li>
       </ul>
       Public:
       <ul>
         <li><nobr>Local Path: <code>/public/[USERNAME]</code></nobr></li>
-        <li><nobr>Base URL: <code>osdf:///osgconnect/public/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///osgconnect/public/[USERNAME]</code></nobr></li>
       </ul>
   </td>
 </tr>

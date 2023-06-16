@@ -72,6 +72,10 @@ clients include:
   * [Google Authenticator](https://en.wikipedia.org/wiki/Google_Authenticator)
   * [DUO](https://duo.com/product/multi-factor-authentication-mfa/authentication-methods/tokens-and-passcodes)
 
+> TOTP clients are most commonly used from smartphones. If you do not have 
+> a smartphone or are otherwise struggling to access or use a TOTP client, 
+> please contact the facilitation team: support@osg-htc.org
+
 Once you have a TOTP client, configure it to be used with OSG Connect: 
 
 1. Go to [https://osgconnect.net](https://osgconnect.net) and sign in with the institutional identity you used when requesting an OSG Connect account. 
@@ -86,8 +90,8 @@ Once you have a TOTP client, configure it to be used with OSG Connect:
 
 ## Logging In
 
-After following the steps above to upload your key, set up multi factor authentication, and it has
-been about fifteen minutes, you should be able to log in to OSG Connect. 
+After following the steps above to upload your key and set up multi factor authentication, once 
+about fifteen minutes have passed, you should be able to log in to OSG Connect. 
 
 ### Determine which login node to use
 
@@ -109,8 +113,13 @@ Open a terminal and type in:
 
     ssh <your_osg_connect_username>@<your_osg_login_node>
 
-It will ask for the passphrase for your ssh key (if you set one) and then you 
-should be logged in. 
+It will ask for the passphrase for your ssh key (if you set one), then for 
+a "Verification code" which you should get by going to the TOTP client you 
+used to set up two factor authentication above. After entering the six digit 
+code, you should be logged in. 
+
+Note that when you are typing your passphrase and verification code, your typing will 
+NOT appear on the terminal, but the information is being entered! 
 
 ### For older versions of Windows
 
@@ -132,4 +141,8 @@ On older versions of Windows, you can use the [Putty program](https://www.chiark
 &nbsp;&nbsp;&nbsp;&nbsp;a. Name your session    
 &nbsp;&nbsp;&nbsp;&nbsp;b. Save session for future use     
 7. Click "Open" to launch shell. Provide your ssh-key passphrase (created at Step 4 in PuTTYgen) when prompted to do so.
+8. When prompted for a "Verification Code", go to the TOTP client you used to set up 
+two-factor authentication, above, and enter the six digit code from the client into 
+your PuTTY terminal prompt. 
+
 The following video demonstrates the key generation and login process from the [Putty](https://www.youtube.com/watch?v=zk1uo1nA2HA&t=210s&ab_channel=OSG) 
