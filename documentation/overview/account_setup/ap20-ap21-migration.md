@@ -56,9 +56,13 @@ by the August 1st deadline.
 
 We recommend you use `cp` or `rsync` to duplicate the data to the new locations. Your `$HOME`
 directory is still the primary location for jobs, so data you had in your old `$HOME`
-directory should likely just be copied to the new `$HOME`. The following rsync examples
-copies the all your data from the old access points (please replace `NN` with 04 or 05).
-$DATA is the new OSDF location. Run these on the new access point:
+directory should likely just be copied to the new `$HOME`. 
+
+For example, the following commands would copy all your data from your $HOME directory
+on one of login04 or login05 to your home directory on your new access point, and
+data from the old /public and /protected into the new OSDF location. In the commands,
+please replace `NN` with 04 or 05, and make sure you run the commands on the new
+access point.
 
 ```
 rsync -av /mnt/loginNN/home/$USER/. /home/$USER/.
