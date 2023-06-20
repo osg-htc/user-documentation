@@ -88,6 +88,9 @@ Once you have a TOTP client, configure it to be used with OSG Connect:
 
 5. In the Multi-Factor Authentication box, follow the instructions (scan the QR code with your TOTP client)
 
+**Important: after setting up multi-factor authentication using your TOTP client, you will 
+need to wait 15 minutes before logging in.**
+
 ## Logging In
 
 After following the steps above to upload your key and set up multi factor authentication, once 
