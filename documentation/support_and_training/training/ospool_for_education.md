@@ -28,7 +28,7 @@ The table below outlines suggested steps for bringing OSPool resources to your t
       <td colspan="2"><b>Using the Guest Account, we recommend conducting initial testing of your event materials to help inform next steps.</b>
         <br>
         <br>
-         We provide supplementary materials that you may use to help teach high throughput computing and OSPool-related concepts.  
+         We provide supplementary materials <a href="#supplementary-resources">supplementary materials</a> that you may use to help teach high throughput computing and OSPool-related concepts.  
       </td>
   </tr>
   <tr>
