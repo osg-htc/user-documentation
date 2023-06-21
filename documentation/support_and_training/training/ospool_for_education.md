@@ -17,7 +17,7 @@ The table below outlines suggested steps for bringing OSPool resources to your t
       <th>Explore our Tools</th>
       <td colspan="2"><b>Explore HTCondor job submission with a OSPool Guest Account</b>
         <br>
-        - To launch a guest account, go to <a href="https://notebook.ospool.osg-htc.org">https://notebook.ospool.osg-htc.org</a> using an internet browser.
+        - To launch a guest OSPool Notebook, go to <a href="https://notebook.ospool.osg-htc.org">https://notebook.ospool.osg-htc.org</a> using an internet browser. 
         <br>
         - Visit our <a href="https://portal.osg-htc.org/documentation/htc_workloads/submitting_workloads/jupyter/">OSPool Jupyter Notebooks guide</a> to learn about Guest and Full Accounts
         <br>
