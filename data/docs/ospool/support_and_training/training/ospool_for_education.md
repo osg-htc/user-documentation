@@ -1,0 +1,1 @@
+../../../../../documentation/support_and_training/training/ospool_for_education.md
