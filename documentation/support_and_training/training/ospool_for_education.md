@@ -83,7 +83,7 @@ The table below outlines suggested steps for bringing OSPool resources to your t
     <td colspan="2">We require all events to provide a short (~5 minute) <a href="https://docs.google.com/presentation/d/1T-n7CkMKftjglfm2aD6iVCCMMOknbpjP/edit#slide=id.p1">introduction to OSG Policies</a>.</td>
   <tr>
     <th>Feedback</th>
-    <td colspan="2">After your event, please email us to let us know how it went.
+    <td colspan="2">After your event, please email us to let us know how it went, and the number of participants. 
     </td>
   </tr>
 </table>
