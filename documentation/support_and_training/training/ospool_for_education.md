@@ -104,6 +104,7 @@ The table below outlines suggested steps for bringing OSPool resources to your t
 
 <a href="https://www.youtube.com/watch?v=oMAvxsFJaw4&list=PLO7gMRGDPNumCuo3pCdRk23GDLNKFVjHn">HTCondor User Tutorials</a>
 
+<a href="https://www.youtube.com/@partnershiptoadvancethroug3036">Partnership to Advance Throughput Computing YouTube channel</a>
 
 ## Frequently Asked Questions (FAQs)
 <details>
