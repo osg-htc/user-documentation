@@ -33,7 +33,7 @@ The table below outlines suggested steps for bringing OSPool resources to your t
   </tr>
   <tr>
     <th>Discuss your event goals with a Research Computing Facilitator (Optional)</th>
-    <td colspan="2">The Facilitation team is here to help discuss your event goals and guide you through the process of using OSG resources. Fill out this form {LINK} and a Facilitator will contact you within one business day about scheduling a short virtual meeting.
+    <td colspan="2">The Facilitation team is here to help discuss your event goals and provide guidance about how to best leverage existing OSG services and resources. Fill out this form {LINK} and a Facilitator will contact you within one business day about scheduling a short virtual meeting.
     </td>
   </tr>
   <tr>
