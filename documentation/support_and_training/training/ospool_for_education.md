@@ -51,7 +51,6 @@ The table below outlines suggested steps for bringing OSPool resources to your t
       <br>
       - run less than 4 hours, or can easily recreate files that may be lost upon session time out (4 hours)
       <br>
-      - would like jobs to access the full capacity of the OSPool
       <br>
       - want to only use a notebook interface
     </td>
