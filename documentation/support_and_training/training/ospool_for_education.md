@@ -91,6 +91,7 @@ The table below outlines suggested steps for bringing OSPool resources to your t
 
 
 ## Teaching Resources
+<a id="supplementary-resources">Here are some resources you can use for your event:</a>
 ### Worksheets for Public Use
 <a href="https://docs.google.com/presentation/d/1_7d-qW7uRV-lPJ9iYqt8JPVacXYkY0k_aocoFzwXlzY/edit#slide=id.p">Scale Out My Computing Brainstorming Worksheet</a>
 
