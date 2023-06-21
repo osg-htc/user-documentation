@@ -69,6 +69,7 @@ The table below outlines suggested steps for bringing OSPool resources to your t
       <br>
       - with more than 50 participants
       <br>
+      - would like jobs to access the full capacity of the OSPool
       - would like to submit jobs using a notebook or classic terminal interface
     </td>
   </tr>
