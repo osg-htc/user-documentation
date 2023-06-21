@@ -76,7 +76,7 @@ The table below outlines suggested steps for bringing OSPool resources to your t
   <tr>
     <th>Prior to the Event</th>
     <td colspan="2"> 
-      Participants requesting full accounts should request an account a few days in advance of the event (does not apply to guest accounts). It is also good practice to test your full workshop code and any software on your account of choice. 
+      If using full accounts, the instructor will provide a list of participants to the OSG Research Facilitation Team, and participants should request an account a few days in advance of the event (does not apply to guest accounts). It is also good practice to test your full workshop code and any software on your account of choice. 
     </td>
   </tr>
     <th>Start of Event</th>
