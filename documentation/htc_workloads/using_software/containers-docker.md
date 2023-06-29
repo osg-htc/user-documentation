@@ -3,44 +3,34 @@ ospool:
   path: htc_workloads/using_software/containers-docker.md
 ---
 
-Create/Register a Docker Container Image 
-====================================
+Containers - Docker
+===================
 
-This guide is meant to accompany the instructions for using containers 
-in the Open Science Pool.  You can use your own custom container to run jobs in the 
-Open Science Pool, and we assume that those containers are built using Docker.  This 
-guide describes how to create your own Docker container "image" (the blueprint for 
-the container). Once you have created your custom image, 
-you will need to register the image as described further down in this guide.
+The OSPool is using Apptainer/Singularity to execute containers. It is recommended
+that if you are building your own custom container, you use the 
+[Apptainer/Singularity image defintion format](../containers-singularity). 
+However, Docker images can also be used on the OSPool and a Docker image is 
+sometimes the more appropriate choice. For example:
 
-For an overview and how to execute images on OSG, please see
-[Use Containers on the OSG][osg-containers]
+ * There is an existing image on Docker Hub
+ * You found a Dockerfile which meets your requirements
+ * You have Docker installed on your own machine and want to 
+   develop the code/image locally before using it on OSG
 
-## Install Docker and Get a Docker Hub Account
+This guide contains examples on how to build your own Docker image, how
+to convert a Docker image to Apptainer/Singularity, and how to import a
+Docker image from the Docker Hub.
 
-You'll need a Docker Hub account in order to download Docker and share your 
-Docker container images with the OSG: [DockerHub](https://hub.docker.com/)
+## Building Your Own Docker Image
 
-Install Docker Desktop to your computer using the appropriate version for your 
-operating system. Note that OSG does not provide any container build hosts.
-
-## Identify Components
+### Identify Components
 
 What software do you want to install? Make sure that you have either the source 
 code or a command that can be used to install it through Linux (like `apt-get` or 
-`yum`). 
+`yum`). You'll also need to choose a "base" container, on which to add your particular 
+software or tools.
 
-You'll also need to choose a "base" container, on which to add your particular 
-software or tools. *We strongly recommend using one of the OSG's published containers 
-as your starting point.* See the available containers on Docker Hub here: 
-[OSG Docker Containers](https://hub.docker.com/u/opensciencegrid)
-The best candidates for you will be containers that have "osgvo" in the name. 
-
-If you prefer, you can base your image on images not already published 
-by OSG, but if you do this, we recommend that as one of the creation steps you 
-create the `/cvmfs` directory. See [Special Cases](#special-cases) below. 
-
-## Build a Container
+### Building
 
 There are two main methods for generating your own container image. 
 
@@ -50,24 +40,24 @@ There are two main methods for generating your own container image.
 We recommend the first option, as it is more reproducible, but the second option 
 can be useful for troubleshooting or especially tricky installs. 
 
-### Editing the `Dockerfile`
+#### Dockerfile
 
 Create a folder on your computer and inside it, create a blank text file 
 called `Dockerfile`.  
 
 The first line of this file should include the keyword `FROM` and then 
 the name of a Docker image (from Docker Hub) you want 
-to use as your starting point. If using the OSG's Ubuntu Xenial image that 
+to use as your starting point. If using the OSG's Ubuntu 20.04 image that 
 would look like this: 
 
-	FROM opensciencegrid/osgvo-ubuntu-xenial
+	FROM opensciencegrid/osgvo-ubuntu-20.04:latest
 
 Then, for each command you want to run to add libraries or software, use the 
 keyword `RUN` and then the command. Sometimes it makes sense to string 
 commands together using the `&&` operator and line breaks `\`, like so:
 
-	RUN apt-get update && \
-	    apt-get install -yy build-essentials
+	RUN apt-get update -y && \
+	    apt-get install -y build-essentials
 
 or
 
@@ -96,17 +86,17 @@ is `alice` and I created an image with the NCBI `blast` tool, I might use this n
     $ docker build -t alice/NCBI-blast .
 
 
-### Editing the default image using local Docker
+#### Editing an Image Interactively
 
 You can also build an image interactively, without a Dockerfile. First, get 
 the desired starting image from Docker Hub. Again, we will
-look at the OSG Ubuntu Xenial image. 
+look at the OSG Ubuntu 20.04 image. 
 
-    $ docker pull opensciencegrid/osgvo-ubuntu-xenial
+    $ docker pull opensciencegrid/osgvo-ubuntu-20.04:latest
 
 We will run the image in a docker interactive session
 
-    $ docker run -it --name <docker_session_name_here> opensciencegrid/osgvo-ubuntu-xenial /bin/bash
+    $ docker run -it --name <docker_session_name_here> opensciencegrid/osgvo-ubuntu-20.04:latest /bin/bash
 
 Giving the session a name is important because it will make it easier to 
 reattach the session later and commit the changes later on. Now you will 
@@ -130,25 +120,40 @@ Now you can commit the changes to the image and give it a name:
 You can also use the session's hash as found in the command prompt (`740b9db736a1` 
 in the above example) in place of the docker session name. 
 
-## Upload Docker Container to Docker Hub
 
-Once your container is complete and tagged, it should appear in the list of local Docker 
-container images, which you can see by running:
+## Converting from Docker to Apptainer/Singularity SIF format
 
-	$ docker images
+If you have built a Docker image on your own host, you can save it as a 
+tar file and then convert it to an Apptainer/Singularity SIF image. First
+find the image id:
 
-From there, you need to put it in Docker Hub, which can be done via the `docker push` 
-command:
+    $ docker image list
+    REPOSITORY              IMAGE ID
+    awesome/science         f1e7972c55bc
 
-	$ docker push namespace/repository_name
+Using the image id, save the image to a tar file:
 
-From here, if you're planning to use this container in OSG, return to our 
-[Containers in OSG Guide][osg-containers] to learn how to upload your container to the OSG's container repository. 
+    $ docker save f1e7972c55bc -o my-container.tar
+
+Transfer `my-container.tar` to the OSPool access point, and use
+Apptainer to convert it to a SIF image:
+
+    $ apptainer build my-container.sif docker-archive://my-container.tar
+
+You may now use the image in your job as described in the
+[Apptainer/Singularity Guide](../containers-singularity)
 
 
-## Submit your Docker Container to the OSG Repository
+## Syncronize from Docker Hub to /cvmfs (deprecated)
 
-Once your Docker image has been published on Docker Hub,
+OSG provide a mechanism for synchronizing images from Docker Hub to
+the global /cvmfs filesystem. The method is still available, but the
+preferred approach is now to save/import the image as desribed in the
+previous section.
+
+### Register Container with the OSG CVMFS Repository
+
+When you have found an image on Docker Hub,
 it needs to be submitted to the OSG Singularity repository
 (`/cvmfs/singularity.opensciencegrid.org/`), which also hosts the
 OSG-provided default images.
@@ -171,7 +176,7 @@ Docker image, new versions pushed to Docker Hub will automatically be
 detected and the version on the OSG (in the CVMFS filesystem) will be
 updated accordingly.
 
-## Using Docker Images in Jobs
+### Using /cvmfs based Images in Jobs
 
 Once your Docker image is pushed to the OSG Singularity repository and converted to a Singularity/Apptainer image, a synchronized copy of the Singularity/Apptainer image will be distributed by CVMFS and available under
 `/cvmfs/singularity.opensciencegrid.org/` which is cached and available
@@ -194,32 +199,30 @@ Singularity repository, your submit file will include:
     <other usual submit file lines>
     queue
 
+
+
 ## Special Cases
-
-### Accessing CVMFS
-
-If you want your jobs to access CVMFS, make sure that you either: 
-
-1. Use one of the base containers provided by the Open Science Pool
-
-or
-
-2. Add a `/cvmfs` folder to your container: 
-  1. If using a Dockerfile, you can do this with the line `RUN mkdir /cvmfs`
-  2. If building your container interactively, run `$ mkdir -p /cvmfs`
-
-This will enable the container to access 
-tools and data published on `/cvmfs`. 
-
-If you do not want `/cvmfs` mounted 
-in the container, please add `+SingularityBindCVMFS = False` to your job submit file.
 
 ### ENTRYPOINT and ENV
 
 Two options that can be used in the Dockerfile to set the environment or 
 default command are `ENTRYPOINT` and `ENV`. Unfortunately, both of these 
 aspects of the Docker container are deleted when it is converted to a 
-Singularity image in the Open Science Pool. [Email us](mailto:support@osg-htc.org) if you would like 
-to preserve these attributes. 
+Singularity image in the Open Science Pool.
+
+### Apptainer/Singularity Environment
+
+One approach for setting up the environment for an image which will
+be converted to Apptainer/Singularity, is to put a file under
+`/.singularity.d/env/`. These files will be sourced when the container
+get instantiated. For example, if you have Conda environment, add this
+to the end of your Dockerfile:
+
+    # set up environment for when using the container, this is for when 
+    # we invoke the container with Apptainer/Singularity
+    RUN mkdir -p /.singularity.d/env && \
+        echo ". /opt/conda/etc/profile.d/conda.sh" >>/.singularity.d/env/91-environment.sh && \
+        echo "conda activate" >>/.singularity.d/env/91-environment.sh
+
 
 [osg-containers]: ../../../htc_workloads/using_software/available-containers-list/
