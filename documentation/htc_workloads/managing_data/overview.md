@@ -105,8 +105,8 @@ publicly discoverable and accessible to anyone.
   <td>ap21.uc.osg-htc.org</td>
   <td>Accessible to user only:
       <ul>
-        <li><nobr>Local Path: <code>/ospool/ap20/data/[USERNAME]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap20/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Local Path: <code>/ospool/ap21/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap21/data/[USERNAME]</code></nobr></li>
       </ul>
       Accessible to project group only:
       <ul>
