@@ -197,7 +197,7 @@ Store data in `/protected` or `/home` if you do not want it to be publicly acces
 <details>
 <summary>Is there any support for private data?</summary>
 <br>
-Data stored in `/protected` and in `/home` is not publically accessible. <b>Sensitive data, such as HIPPA data, is not allowed to be uploaded or analyzed using OSG resources.</b>
+Data stored in `/protected` and in `/home` is not publically accessible. <b>Sensitive data, such as HIPAA data, is not allowed to be uploaded or analyzed using OSG resources.</b>
 <br>
 </details>
 

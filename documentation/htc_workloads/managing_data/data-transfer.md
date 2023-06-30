@@ -33,7 +33,7 @@ Use the following table to determine where to stage input files for jobs and whe
 | `/protected` | Greater than 500 MB per job | **Input Files**: `transfer_input_files = stash:///ospool/protected/<username>/InFile.txt`<br>**Output Files**: `transfer_output_remaps = stash:///stash:///ospool/protected/<username>/OutFile.txt` | 500 GB |
 
 **Important Details:** 
-* Data stored within `/home` and `/protected` is available only to your jobs, but highly sensitive data (e.g. HIPPA) should never be uploaded to OSG resources. 
+* Data stored within `/home` and `/protected` is available only to your jobs, but highly sensitive data (e.g. HIPAA) should never be uploaded to OSG resources. 
 * Large files stored in `/protected` are cached, so it is important to use a descriptive file name (possibly using version names or dates within the file name) to ensure you know what version of the file you are using within your job. 
 
 
