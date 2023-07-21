@@ -7,7 +7,7 @@ ospool:
 
 The Anaconda/Miniconda distribution of Python is a common tool for installing and managing Python-based software and other tools. 
 
-There are two ways of using Conda on the OSPool: with a tarball as described in this guide, or via a
+There are two ways of using Conda on the OSPool: with a tarball as described in this guide, or by installing Conda inside a
 [custom Apptainer/Singularity container](../conda-container/). Either works well, but the container
 solution might be better if your Conda environment contains non-Python tools.
 
