@@ -15,7 +15,7 @@ sometimes the more appropriate choice. For example:
  * There is an existing image on Docker Hub
  * You found a Dockerfile which meets your requirements
  * You have Docker installed on your own machine and want to 
-   develop the code/image locally before using it on OSG
+   develop the code/image locally before using it on the OSPool
 
 This guide contains examples on how to build your own Docker image, how
 to convert a Docker image to Apptainer/Singularity, and how to import a
