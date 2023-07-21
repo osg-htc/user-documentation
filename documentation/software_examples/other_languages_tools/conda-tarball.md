@@ -9,7 +9,7 @@ The Anaconda/Miniconda distribution of Python is a common tool for installing an
 
 There are two ways of using Conda on the OSPool: with a tarball as described in this guide, or by installing Conda inside a
 [custom Apptainer/Singularity container](../conda-container/). Either works well, but the container
-solution might be better if your Conda environment contains non-Python tools.
+solution might be better if your Conda environment requires access to non-Python tools.
 
 # Overview
 When should you use Miniconda as an installation method in OSG?
