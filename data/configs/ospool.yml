@@ -69,7 +69,8 @@ nav:
       - "Run R scripts on the OSPool": software_examples/r/tutorial-R/README.md
       - "Scaling up compute resources": software_examples/r/tutorial-ScalingUp-R/README.md
     - Conda/Miniconda:
-      - "Using conda to Run Python on the OSPool ": software_examples/other_languages_tools/conda-on-osg.md
+      - "Conda with Tarballs": software_examples/other_languages_tools/conda-tarball.md
+      - "Conda with Containers": software_examples/other_languages_tools/conda-container.md
     - Matlab Runtime:
       - "Basics of compiled MATLAB applications - Hello World example": software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md
     - Julia and Java:

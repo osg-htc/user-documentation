@@ -1,17 +1,22 @@
 ---
 ospool:
-  path: software_examples/other_languages_tools/conda-on-osg.md
+  path: software_examples/other_languages_tools/conda-tarball.md
 ---
 
-# Using conda to Run Python on the OSPool 
+# Conda with Tarballs
 
 The Anaconda/Miniconda distribution of Python is a common tool for installing and managing Python-based software and other tools. 
 
+There are two ways of using Conda on the OSPool: with a tarball as described in this guide, or by installing Conda inside a
+[custom Apptainer/Singularity container](../conda-container/). Either works well, but the container
+solution might be better if your Conda environment requires access to non-Python tools.
+
 # Overview
 When should you use Miniconda as an installation method in OSG?
-* Your software has specific conda-centric installation instructions.
-* The above is true and the software has a lot of dependencies.
-* You mainly use Python to do your work.
+
+ * Your software has specific conda-centric installation instructions.
+ * The above is true and the software has a lot of dependencies.
+ * You mainly use Python to do your work.
 
 Notes on terminology:
 
