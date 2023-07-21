@@ -51,4 +51,4 @@
 	url = https://github.com/OSGConnect/ACE-wordfreq
 [submodule "documentation/tutorials/tutorial-Matlab-ScalingUp"]
 	path = documentation/tutorials/tutorial-Matlab-ScalingUp
-	url = https://github.com/OSGConnect/tutorial-Matlab-ScalingUp.git
+	url = https://github.com/OSGConnect/tutorial-Matlab-ScalingUp
