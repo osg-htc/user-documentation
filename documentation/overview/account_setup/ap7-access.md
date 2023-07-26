@@ -6,8 +6,7 @@ ospool:
 # Log In to `uw.osg-htc.org` Access Points
 
 **This guide is for users who were notified by a member of the OSG team that they 
-will be using the `uw.osg-htc.org` Access Points. Do not go through the steps of this 
-guide until advised to by a Research Computing Facilitator**
+will be using the `uw.osg-htc.org` Access Points.**
 
 To join and use the `uw.osg-htc.org` Access Points (`ap40.uw.osg-htc.org`), you will go through the following steps: 
 
@@ -19,7 +18,7 @@ To join and use the `uw.osg-htc.org` Access Points (`ap40.uw.osg-htc.org`), you 
 
 To request access to `ap40.uw.osg-htc.org`, submit an application using the following steps:
 
-1. Go to the account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:297). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
+1. General OSPool users not involved in the 2023 OSG School, please visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:297); Researchers accepted into the 2023 OSG User School should use this [User School Registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:415). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
    
    
       <img src="../../../assets/ap7-images/cilogon.png" class= "img-fluid"/>
@@ -28,7 +27,7 @@ To request access to `ap40.uw.osg-htc.org`, submit an application using the foll
    If you have issues signing in using your institutional credentials, contact us at [support@osg-htc.org](mailto:support@osg-htc.org).
 
 
-2. Once you sign in, you will be redirected to the "User Enrollment for OSPool uw.osg-htc.org Access Point" page. Click "Begin" and enter your name and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT".
+2. Once you sign in, you will be redirected to the User Enrollment page. Click "Begin" and enter your name and email address in the following page. In many cases, this information will be automatically populated. If desired, it is possible to manually edit any information automatically filled in. Once you have entered your information, click "SUBMIT".
 
 
       <img src="../../../assets/ap7-images/comanage-enrollment-form.png" class= "img-fluid"/>
