@@ -172,7 +172,7 @@ for organizing all compiled software in the `home` directory:
 
 > As a best practice, always include the version name of your software in the directory name.
 
-Next we'll change to the Samtools source code direcory that was created in 
+Next we'll change to the Samtools source code directory that was created in 
 [Step 1](#step-1-acquire-samtools-source-code). You should see the `INSTALL` and `README` files 
 as well as a file called `configure`.
 
@@ -213,7 +213,7 @@ Our subsequent job submissions on OSG Connect will need a copy of our software. 
 convenience, we recommend converting your software directory to a tar archive. 
 First move to `my-software/`, then create the tar archive:
 
-	[user@login ~]$ mv my-software/
+	[user@login ~]$ cd my-software/
 	[user@login my-software]$ tar -czf samtools-1.10.tar.gz samtools-1.10/
 	[user@login my-software]$ ls samtools-1.10*
 	samtools-1.10/ samtools-1.10.tar.gz
@@ -365,7 +365,7 @@ for organizing all compiled software in the `home` directory:
 
 > As a best practice, always include the version name of your software in the directory name.
 
-Next, we will change our directory to the Samtools source code direcory that was created in 
+Next, we will change our directory to the Samtools source code directory that was created in 
 [Step 1](#step-1-acquire-samtools-source-code). You should see the `INSTALL` and `README` files 
 as well as a file called `configure`.
 
@@ -415,7 +415,7 @@ First move to `my-software/`, then create the tar archive:
 The last command in the above example returns the size of our tar archive. This is 
 important for determine the appropriate method that we should use for transferring 
 this file along with our subsequent jobs. To learn more, please see 
-[Introduction to Data Management on OSG Connect](../../../htc_workloads/managing_data/osgconnect-storage/).
+[Introduction to Data Management on OSG](../../../htc_workloads/managing_data/overview/).
 
 Follow the these same steps for creating a tar archive of the xz-5.2.5 library as well. 
 
