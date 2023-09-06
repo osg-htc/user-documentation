@@ -8,7 +8,9 @@ OSG User Training (regular/monthly)
 
 All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am - 1pm PT)**. New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. 
 
-### Registration opens a month before the training date. You can register for all of our trainings via setmore: [Register here](https://osgfacilitation.setmore.com/bookclass)
+**Registration opens a month before the training date. You can register for all of our trainings via setmore:**
+
+<font size="20">[Register Here](https://osgfacilitation.setmore.com/bookclass)</font>
 
 ## Fall 2023 Training Schedule
 
