@@ -10,15 +10,11 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 
 ### Registration opens a month before the training date. You can register for all of our trainings via setmore: [Register here](https://osgfacilitation.setmore.com/bookclass)
 
-## Spring 2023 Training Schedule
+## Fall 2023 Training Schedule
 
-* Tuesday, May 2: New User Training
-* Tuesday, May 16: R on the OSPool
-* Tuesday, June 6: New User Training
-* Tuesday, June 20: Matlab on the OSPool
-* Tuesday, July 18: Containers on the OSPool
-* Tuesday, August 1: New User Training
-* Tuesday, August 15: Bioinformatics Analyses on the OSPool: A BWA Example
+* Tuesday, September 19: Requesting GPUs and Other Specific Resources on the OSPool
+* Tuesday, October 17: DAGMan: HTCondor's Workflow Manager
+* Tuesday, November 28th: Running Long Jobs with Self-Checkpointing
 
 For a calendar version of these events see: 
 
