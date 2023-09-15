@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/managing_data/file-transfer-via-htcondor.md
 ---
 
-Transfer Job Files To and From /home
+Transfer Smaller Job Files To and From /home
 =======================
 
 As described in the [Overview: Data Staging and Transfer to Jobs](../overview/) 
@@ -13,8 +13,7 @@ your `/home` directory on your Access Point. Files in your
 
 ## Transfer Files From `/home` Using HTCondor
 
-
-### Input Files from `/home`
+### Transfer Input Files from `/home`
 
 To transfer input files from `/home`, list the files by name in the
 `transfer_input_files` submit file option. You can use either absolute
@@ -28,8 +27,6 @@ statement in your HTCondor submit file. For example:
 	
 	# transfer small file from /home 
 	transfer_input_files = my_data.csv
-	
-	...other submit file details...
 
 Multiple files can be specified using a comma-separated list, for example:
 
@@ -48,7 +45,6 @@ Note that the path is not replicated on the remote side. The job will only
 see `my_software.tar.gz` in the top level job directory.
 
 Above, `username` refers to your access point username.
-
 
 ## Use HTCondor To Transfer Outputs
 
