@@ -6,9 +6,7 @@ ospool:
 Control Where Your Jobs Run / Job Requirements 
 ====================================
 
-
-
-By default, your jobs will match any available spot in the OSG. This is fine
+By default, your jobs will match any available slot in the OSG. This is fine
 for very generic jobs. However, in some cases a job may have one or more system
 requirements in order to complete successfully. For instance, your job may need to run
 on a node with a specific operating system.
@@ -31,21 +29,30 @@ either focus on, or avoid, certain execution sites.
 The `requirements` attribute is formatted as an expression, so you can use logical
 operators to combine multiple requirements where `&&` is used for AND and
 `||` used for OR. For example, the following `requirements` statement will direct
-jobs only to 64 bit RHEL (Red Hat Enterprise Linux) 8 nodes.
+jobs only to 64 bit RHEL (Red Hat Enterprise Linux) 9 nodes.
 
-    requirements = OSGVO_OS_STRING == "RHEL 8" && Arch == "X86_64"
+    requirements = OSGVO_OS_STRING == "RHEL 9" && Arch == "X86_64"
 
-Alternatively, if you have code which can run on either RHEL 7 or 8, you can use OR:
+Alternatively, if you have code which can run on either RHEL 8 or 9, you can use OR:
 
-    requirements = (OSGVO_OS_STRING == "RHEL 7" || OSGVO_OS_STRING == "RHEL 8") && Arch == "X86_64"
+    requirements = (OSGVO_OS_STRING == "RHEL 8" || OSGVO_OS_STRING == "RHEL 9") && Arch == "X86_64"
 
 Note that parentheses placement is important for controling how the logical operations
-are interpreted by HTCondor.
+are interpreted by HTCondor. If you are interested in seeing a list of currently
+available operating systems (these are just the default ones, you can create a custom
+container image if you want something else):
+
+    $ condor_status -autoformat OSGVO_OS_STRING | sort | uniq -c
+        439 DEBIAN 12
+       8479 RHEL 7
+      20666 RHEL 8
+       3407 RHEL 9
+        608 UBUNTU 22
  
 Another common requirement is to land on a node which has CVMFS.
 Then the `requirements` would be:
 
-	requirements = HAS_oasis_opensciencegrid_org == True
+    requirements = HAS_oasis_opensciencegrid_org == True
 
 ## AVX (segfault / illegal instruction) and Other Hardware Attributes
 
@@ -66,24 +73,43 @@ or
 
     requirements = HAS_AVX2 == True
 
+
+## x86\_64 Micro Architechture Levels
+
+The x86\_64 set of CPUs contains a large number of different CPUs with 
+different capabilities. Instead of trying to match on on individual attributes
+like the AVX/AVX2 ones in the previous section, it can be useful to match
+against a family of CPUs. There are currently 4 levels to chose from:
+x86\_64-v1, x86\_64-v2, x86\_64-v3, and x86\_64-v4. A description of the levels
+is available on [Wikipedia](https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels).
+
+HTCondor advertises an attribute named `Microarch`. An example on how make jobs
+running on the two highest levels is:
+
+    requirements = (Microarch == "x86_64-v3" || Microarch == "x86_64-v4")
+
+
 ## Additional Feature-Specific Attributes
 
 There are many attributes that you can use with `requirements`. To see what values
 you can specify for a given attribute you can run the following command while
 connected to your login node:
 
-	$ condor_status -af {ATTR_NAME} | sort -u
-	
-For example, to see what values you can specify for the OSGVO_OS_STRING attribute run:
-	
-	$ condor_status -af OSGVO_OS_STRING | sort -u
-    RHEL 7
-    RHEL 8
+    $ condor_status -af {ATTR_NAME} | sort -u
 
-This means that we can specify an OS version of `RHEL 7` or `RHEL 8`. Alternatively
-you will find many attributes will take the boolean values `true` or `false`.
+For example, to see what values you can specify for the `Microarch` attribute run:
+
+    $ condor_status -af Microarch | sort -u
+    x86_64-v1
+    x86_64-v2
+    x86_64-v3
+    x86_64-v4
+
+You will find many attributes will take the boolean values `true` or `false`.
 
 Below is a list of common attributes that you can include in your submit file `requirements` statement. 
+
+- **Microarch** - See above. x86\_64-v1, x86\_64-v2, x86\_64-v3, and x86\_64-v4
 
 - **HAS_SINGULARITY** - Boolean specifying the need to use Singularity containers in your job.
 
@@ -92,9 +118,8 @@ Below is a list of common attributes that you can include in your submit file `r
 
 - **OSGVO_OS_VERSION** - Version of the operating system
 
-- **OSGVO_OS_STRING** - Combined OS name and version. Common values are
-  _RHEL 7_ and _RHEL 8_. Please see the requirements string above on the
-  recommended setup.
+- **OSGVO_OS_STRING** - Combined OS name and version. Please see the
+  requirements string above on the recommended setup.
 
 - **OSGVO_CPU_MODEL** - The CPU model identifier string as presented in
   /proc/cpuinfo
