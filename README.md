@@ -170,7 +170,7 @@ To use these styles you have to use html, view the example below to convert a ma
 ```html
 <pre class="file"><code>./configure
 make
-make install<pre class="file"><code>
+make install</code></pre>
 ```
 
 ## Previewing your Work
