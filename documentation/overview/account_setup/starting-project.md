@@ -3,16 +3,13 @@ ospool:
   path: overview/account_setup/starting-project.md
 ---
 
-Join and Use a Project in OSG Connect 
-====================================
-
-
+# Set and View Project Usage
 
 ## Background
 
-The OSG Connect team assigns individual user accounts to "projects". These projects 
+The OSG team assigns individual user accounts to "projects". These projects 
 are a way to track usage hours and capture information about the types of 
-research using OSG Connect. 
+research using the OSPool. 
 
 A project typically corresponds to a research group headed by a single PI, but can 
 sometimes represent a long-term multi-institutional project or some other grouping. 
@@ -20,52 +17,24 @@ sometimes represent a long-term multi-institutional project or some other groupi
 You must be a member of a project before you can use OSG Connect to submit jobs. 
 The next section of this guide describes the process for joining an OSG Connect project. 
 
-## Joining a Project
+## Default Behavior (one project)
 
-### Project Membership via Account Creation Process (Default)
+By default, you are added to a project when your OSG account is created. This 
+project will be automatically added to your job submissions for tracking usage. 
 
-You will be added to a project when going through the typical 
-OSG Connect account setup process. After applying for an OSG Connect account, 
-you will receive an email to set up a consultation meeting and confirm which 
-'OSG Project' your usage should be associated with. You will be prompted to provide information 
-based on the following two scenarios: 
+## Choose a Project (multiple projects)
 
-- **If you are the first member of your research group / team to use the OSG through 
-OSG Connect**, a new project will be created for you. You will need to provide the following information to do so: 
-	-    Project Name
-	-    PI Name
-	-    PI Email
-	-    PI Organization
-	-    PI Department
-	-    Field of Science: (out of https://osp.unm.edu/pi-resources/nsf-research-classifications.html)
-	-    Project Description
-- **If you know that other members of your research group have used OSG Connect** in the past, 
-you can likely join a pre-existing group. Provide the name of your institution and PI 
-to the OSG Connect team (if you haven't already) and we can confirm. 
+If you are affiliated with multiple groups using the OSPool and are a member of 
+multiple projects, you will want to set the project name in your submit file. 
 
-Based on this information, OSG Connect support staff will either create a project and 
-add you to it, or add you to an existing project when your account is approved. 
+Run the following command to see a list of projects you belong to:
 
-### Join a Project
+<pre class="term"><code>grep $USER /etc/condor/UserToProjectMap.txt</code></pre>
 
-If you need to join an existing project (you can be a member of more than one), please email the 
-OSG team (support@osg-htc.org) with your name and the project 
-you wish to join, with PI in CC to confirm.
-
-## Charging usage to your OSG Connect project
-
-Job submission on OSG Connect requires that the job usage will be charged
-to a project. If you only belong to a single project, that project will
-be charged automatically. Run the following command to see a list of
-projects you belong to:
-
-    $ grep $USER /etc/condor/UserToProjectMap.txt
-
-If need to run jobs under a different project you are a member of, you
-can manually set the project for those jobs by putting this option in
+You can manually set the project for a set of jobs by putting this option in
 the submit file:
 
-    +ProjectName="ProjectName"
+<pre class="sub"><code>+ProjectName="ProjectName"</code></pre>
 
 ## View Metrics For Your Project
 
