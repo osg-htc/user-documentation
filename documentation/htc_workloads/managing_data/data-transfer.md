@@ -7,7 +7,7 @@ ospool:
 
 # Data Staging and Transfer to Jobs¶
 
-Due to the distributed configuration of the OSG, more often than not, your jobs will need to bring along a copy (i.e. transfer a copy) of data, code, packages, software, etc. from the Access Point (e.g. login04.osgconnect.net) where the job is submitted to the OSPool execute node where the job will run. This requirement applies to all files that are needed to successfully execute and complete your job that do not otherwise exist on OSG execute servers. This guide describes where OSG Connect users can store files on OSG-operatated Access Points, and how to use these files within jobs. 
+Due to the distributed configuration of the OSG, more often than not, your jobs will need to bring along a copy (i.e. transfer a copy) of data, code, packages, software, etc. from the Access Point (e.g. ap20, ap21, or ap40) where the job is submitted to the OSPool execute node where the job will run. This requirement applies to all files that are needed to successfully execute and complete your job that do not otherwise exist on OSG execute servers. This guide describes where OSG Connect users can store files on OSG-operatated Access Points, and how to use these files within jobs. 
 
 Table of Contents: 
 [TOC]

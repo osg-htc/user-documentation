@@ -9,8 +9,8 @@ ospool:
 will be using the "OSG Connect" Access Points. Do not go through the steps of this 
 guide until advised to by a Research Computing Facilitator**
 
-To join and use the "OSG Connect" Access Points (`login04.osgconnect.net`, 
-`login05.osgconnect.net`), you will go through the following steps: 
+To join and use the "OSG Connect" Access Points (`ap20.uc.osg-htc.org`, 
+`ap21.uc.osg-htc.org`), you will go through the following steps: 
 
 1. Apply for an OSG Connect Access Point account 
 2. Have your account approved by an OSG Team member

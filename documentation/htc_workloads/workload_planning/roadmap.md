@@ -54,9 +54,9 @@ If your account is on the uw.osg-htc.org Access Points (e.g., accounts on ap40.u
 </details>
 
 <details>
-<summary>Log In to "OSG Connect" Access Points (e.g., login04.osgconnect.net)</summary>
+<summary>Log In to "OSG Connect" Access Points (e.g., ap20.uc.osg-htc.org)</summary>
 <br>
-If your account is on the (e.g., accounts on login04.osgconnect.net, login05.osgconnect.net), follow instructions in this guide for logging in:
+If your account is on the OSG Connect Access points (e.g., accounts on ap20.uc.osg-htc.org, ap21.uc.osg-htc.org), follow instructions in this guide for logging in:
 <a href="https://portal.osg-htc.org/documentation/overview/account_setup/connect-access/">Log In to OSG Connect Access Points</a>
 </details>
 
