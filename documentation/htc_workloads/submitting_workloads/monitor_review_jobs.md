@@ -18,7 +18,7 @@ The default behavior of `condor_q` is to list all of a user's jobs currently in 
 ```
 $ condor_q
 
--- Schedd: login05.osgconnect.net : <192.170.227.146:9618?... @ 03/04/22 12:31:45
+-- Schedd: ap40.uw.osg-htc.org : <192.170.227.146:9618?... @ 03/04/22 12:31:45
 OWNER     BATCH_NAME  SUBMITTED    DONE   RUN    IDLE  TOTAL JOB_IDS
 alice ID: 21562536   3/4  12:31      _      _      5      5 21562536.0-4
 
@@ -37,7 +37,7 @@ Additionally, the flag `-nobatch` can be used to list individual jobs instead of
 ```
 $ condor_q alice -nobatch
 
--- Schedd: login05.osgconnect.net : <192.170.227.146:9618?... @ 03/04/22 12:52:22
+-- Schedd: ap40.uw.osg-htc.org : <192.170.227.146:9618?... @ 03/04/22 12:52:22
  ID          OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 21562638.0   alice            3/4  12:52   0+00:00:00 I  0    0.0 soilModel.py parameter1.csv
 21562638.1   alice            3/4  12:52   0+00:00:00 I  0    0.0 soilModel.py parameter2.csv
