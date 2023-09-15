@@ -74,12 +74,12 @@ correct allocation. If you only have one project, you do not need to
 worry about this - the system will map your jobs automatically to 
 that one project. However, if you have multiple ones, you will
 have to add an attribute to your submit file to indicate which 
-project to charge. The attribtute name is `accounting_group`.
+project to charge. The attribute name is `ProjectName`.
 For example, if your project is `AmazingScience`, the line in
 the submit file (somewhere before the `queue` line) should
 be:
 
-    accounting_group = AmazingScience
+    +ProjectName = AmazingScience
 
 ### Submit the job 
 

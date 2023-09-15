@@ -10,6 +10,7 @@ nav:
       - "Log In to uw.osg-htc.org Access Points": overview/account_setup/ap7-access.md
       - "Log In to OSG Connect Access Points": overview/account_setup/connect-access.md
       - "Generate SSH Keys": overview/account_setup/generate-add-sshkey.md
+      - "Set and View Project Usage": overview/account_setup/starting-project.md
       - "Migrating to ap20/ap21.uc.osg-htc.org": overview/account_setup/ap20-ap21-migration.md
   - Support And Training Resources:
     - Get Help!:
