@@ -13,7 +13,7 @@ you can have such files transferred by HTCondor using the appropriate HTTP addre
 
 # Important Considerations
 
-While our [Overview of Data Mangement on OSG Connect](../../../htc_workloads/managing_data/osgconnect-storage/) 
+While our [Overview of Data Mangement on the OSPool](../../../htc_workloads/managing_data/overview/) 
 describes how you can stage data, files, or even software on OSG data locations, 
 any web-accessible file can be transferred directly to your jobs **IF**:
 
