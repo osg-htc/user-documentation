@@ -88,8 +88,8 @@ access points. See the list below for the "Local Path" to use, based on your acc
       </ul>
       Accessible to project group only:
       <ul>
-        <li><nobr>Local Path: <code>/ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
+        <li><nobr>Local Path: <code>/ospool/uc-shared/project/[PROJECT]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/project/[PROJECT]</code></nobr></li>
       </ul>
       Public space for projects:
       <ul>
