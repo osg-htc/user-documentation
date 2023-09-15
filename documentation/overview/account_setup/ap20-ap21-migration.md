@@ -3,34 +3,26 @@ ospool:
   path: overview/account_setup/ap20-ap21-migration.md
 ---
 
-**This guide is for users who are migrating from login04.osgconnect.net / login05.osgconnect.net
-to the new access points ap20.uc.osg-htc.org / ap21.uc.osg-htc.org**
+# Migrating to New Access Points From `login04`, `login05`
 
-We are replacing the login04/login05.osgconnect.net access points with
-new improved access points.  
-
-**All users with accounts on login04/login05
-must migrate to the new servers by Tuesday, August 1.**
-
-Our dedicated infrastructure team has put in considerable effort to
-improve the user experience. The new access points have larger and
-faster file systems as well as improved network connectivity (100Gb
-links), which will improve data handling capabilities. We are also
-moving to a newer version of Linux.
-
-To encourage a speedy migration, jobs on the new access points will have
-higher priority than jobs on the old access points.
+The `login04`/`login05.osgconnect.net` access points were replaced with
+new improved access points during July and August of 2023. If you did not 
+migrate your account or data during this time, you can likely still access 
+the new access points, following these steps. Please contact the facilitation 
+team with any questions. 
 
 # Migration Steps
 
 ## Step 1: Determine Your Assigned Access Point
 
-Your new access point assignment will be based on your current access point:
+Your new access point assignment will be based on your former access point:
 
  * If your current assigment is `login04.osgconnect.net`, your new access point
    will be `ap20.uc.osg-htc.org`
  * If your current assigment is `login05.osgconnect.net`, your new access point
    will be `ap21.uc.osg-htc.org`
+
+You can also see this information on your profile page on [osgconnect.net](https://www.osgconnect.net)
 
 ## Step 2: Set Up Multi Factor Authentication
 
@@ -40,43 +32,10 @@ When connecting to an access point via ssh, you will be asked to provide the
 generated 6 digit verification code when logging in. Please see detailed instructions
 [here](../connect-access/#add-multi-factor-authentication-to-your-web-profile).
 
-## Step 3: Migrate Data
-
-**You are responsible for migrating your own data from login04/login05 to the 
-new Access Points.** The filesystems from `login04.osgconnect.net` and `login05.osgconnect.net` 
-will be mounted **temporarily** on the new access points for ease of data transfer. 
-Please ensure that you have copied all data you need
-by the August 1st deadline.
-
-**Once logged in to the new access points**, you will find your files from login04/login05 at the following locations:
-
-  * Your old home directory under `/mnt/login04/home/[USERNAME]` or `/mnt/login05/home/[USERNAME]`
-  * Your old /public directory under `/mnt/public/[USERNAME]`
-  * Your old /protected directory under `/mnt/protected/[USERNAME]`
-
-We recommend you use `cp` or `rsync` to duplicate the data to the new locations. Your `$HOME`
-directory is still the primary location for jobs, so data you had in your old `$HOME`
-directory should likely just be copied to the new `$HOME`. 
-
-For example, the following commands would copy all your data from your $HOME directory
-on one of login04 or login05 to your home directory on your new access point, and
-data from the old /public and /protected into the new OSDF location. In the commands,
-please replace `NN` with 04 or 05, and make sure you run the commands on the new
-access point.
-
-```
-rsync -av /mnt/loginNN/home/$USER/. /home/$USER/.
-mkdir -p $DATA/old-public $DATA/old-protected
-rsync -av /mnt/public/$USER/. $DATA/old-public/.
-rsync -av /mnt/protected/$USER/. $DATA/old-protected/.
-```
-
-**After the migration deadline, all data will be deleted from login04 / login05 under `$HOME`, `/public`, and `/protected`**
-
-## Step 4 (If Needed): Modify Workflows to Use New Data Paths
+## Step 3 (If Needed): Modify Workflows to Use New Data Paths
 
 [OSDF](../../../htc_workloads/managing_data/overview/) locations have changed. We recommend
-that most data from the old `/public/` or `/protected/` folders move into the new access point-
+that most data from the old `/public/` or `/protected/` folders transition to the new access point-
 specific user-only areas (`/ospool/ap20/data/` or `/ospool/ap21/data` based on which access
 point you are assigned to). This will offer the the best performance. You will also 
 need to upload submit files and scripts to use these new data locations.  Consult the 
@@ -89,5 +48,4 @@ Facilitation team with any questions.
 We understand transitions may raise questions or difficulties. Should you require 
 any assistance, please feel free to reach out to us via email, or join one of 
 our [office hours sessions](../../../support_and_training/support/getting-help-from-RCFs/#virtual-office-hours )
-).  We are happy to walk through the migration steps online so that you have minimal
- interruptions to your work. 
+). 
