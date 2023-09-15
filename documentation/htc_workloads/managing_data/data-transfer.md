@@ -1,5 +1,3 @@
-The /public location is a mount of the OSG Connect origin filesystem. It is mounted to the OSG Connect login nodes only so that users can appropriately stage large job inputs or retrieve outputs via the login nodes.
-
 ---
 ospool:
   path: htc_workloads/managing_data/data-transfer.md
@@ -7,7 +5,7 @@ ospool:
 
 # Data Staging and Transfer to Jobs¶
 
-Due to the distributed configuration of the OSG, more often than not, your jobs will need to bring along a copy (i.e. transfer a copy) of data, code, packages, software, etc. from the Access Point (e.g. login04.osgconnect.net) where the job is submitted to the OSPool execute node where the job will run. This requirement applies to all files that are needed to successfully execute and complete your job that do not otherwise exist on OSG execute servers. This guide describes where OSG Connect users can store files on OSG-operatated Access Points, and how to use these files within jobs. 
+Due to the distributed configuration of the OSG, more often than not, your jobs will need to bring along a copy (i.e. transfer a copy) of data, code, packages, software, etc. from the Access Point (e.g. ap20, ap21, or ap40) where the job is submitted to the OSPool execute node where the job will run. This requirement applies to all files that are needed to successfully execute and complete your job that do not otherwise exist on OSG execute servers. This guide describes where OSG Connect users can store files on OSG-operatated Access Points, and how to use these files within jobs. 
 
 Table of Contents: 
 [TOC]
@@ -22,7 +20,7 @@ In general, users are responsible for managing data in these folders and for usi
 Prior to January 2023, OSG Connect users stored files in `/home` and `/public` directories. Users with accounts created prior to 2023 are highly encouraged to move files in `/public` to `/protected` to prepare for the eventual depreciation of `/public`. Users with accounts created in January 2023 and after should only use `/home` and `/protected`.
 
 # Uploading/Downloading Data to/from OSG-operated Access Points
-In general, common Unix tools such as rsync, scp, PuTTY, WinSCP, gFTP, etc. can be used to upload data from your computer or another server to your OSG Access Point (e.g. `login05.osgconnect.net`), or to download files from your OSG Access Point. Files should be uploaded/created and staged in `/home` or `/protected` for preparation to use in jobs. 
+In general, common Unix tools such as rsync, scp, PuTTY, WinSCP, gFTP, etc. can be used to upload data from your computer or another server to your OSG Access Point (e.g. `ap40.uw.osg-htc.org`), or to download files from your OSG Access Point. Files should be uploaded/created and staged in `/home` or `/protected` for preparation to use in jobs. 
 
 # Transferring Data To/From HTCondor Jobs
 Use the following table to determine where to stage input files for jobs and where to store output files from jobs:  

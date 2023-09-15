@@ -120,34 +120,6 @@ publicly discoverable and accessible to anyone.
       </ul>
   <td>
 </tr>
-<tr>
-  <td>login04.osgconnect.net</td>
-  <td>Accessible to user only:
-      <ul>
-        <li><nobr>Local Path: <code>/protected/[USERNAME]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///osgconnect/protected/[USERNAME]</code></nobr></li>
-      </ul>
-      Public:
-      <ul>
-        <li><nobr>Local Path: <code>/public/[USERNAME]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///osgconnect/public/[USERNAME]</code></nobr></li>
-      </ul>
-  </td>
-</tr>
-<tr>
-  <td>login05.osgconnect.net</td>
-  <td>Accessible to user only:
-      <ul>
-        <li><nobr>Local Path: <code>/protected/[USERNAME]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///osgconnect/protected/[USERNAME]</code></nobr></li>
-      </ul>
-      Public:
-      <ul>
-        <li><nobr>Local Path: <code>/public/[USERNAME]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///osgconnect/public/[USERNAME]</code></nobr></li>
-      </ul>
-  </td>
-</tr>
 </table>
 
 To see how to use OSDF URLs in `transfer_input_files` and
