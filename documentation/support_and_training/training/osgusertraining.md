@@ -90,3 +90,9 @@ The most recent version of these training materials are here:
 The most recent version of these training materials are here:
 
 * [Slides](https://docs.google.com/presentation/d/1AWAOmtwJ68KBSJPYtp6agnB2d-2iTCG5/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true)
+
+### Special Environments, GPUs
+
+The most recent version of these training materials are here:
+
+* [Slides](https://docs.google.com/presentation/d/1QZnX-VeXHdqWcmgF8EiMac_nl4hHXPvxCvCH-vxBySU/edit?usp=sharing)
