@@ -23,7 +23,8 @@ attributes). For example:
     request_memory = 4 GB
     request_disk = 2 GB
 
-Currently, a job can only use 1 GPU at the time.
+Users can request one or multiple GPU cores on a single GPU machine.
+
 
 ## Specific GPU Requests
 
