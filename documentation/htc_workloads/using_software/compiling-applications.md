@@ -10,10 +10,9 @@ Compiling Software
 
 Due to the distributed nature of the Open Science Pool, you will always need to 
 ensure that your jobs have access to the software that will be executed. This guide provides 
-useful information for compiling and using your software in OSG Connect. A detailed 
-example of performing software compilation is additionally available 
-at [OSG Connect Example Compilation Guide](../../../htc_workloads/using_software/example-compilation/). 
-
+general information for compiling and using your software in the OSPool. A detailed 
+example of a specific software compilation process is additionally available 
+at [Example Compilation Guide](../../../htc_workloads/using_software/example-compilation/). 
 
 > *What is compiling?*
 > The process of compiling converts human readable code into binary, 
@@ -39,7 +38,7 @@ Collection (GCC) is a common, open source collection of compilers with support f
 fotran, and other languages, and includes important libraries for supporting your compilation 
 and sometimes software execution. Your software compilation may require certain versions 
 of a compiler which should be noted in the installation instructions or system dependencies 
-documention. Currently the login nodes have `GCC 4.8.5` as the default version, but newer 
+documention. Currently the Access Points have `GCC 8.5.0` as the default version, but newer 
 versions of GCC may also be available - to learn more please contact <support@osg-htc.org>.
 
 ### Static versus dynamic linking during compilation
@@ -49,7 +48,7 @@ known as libraries, for proper execution. The default behavior when compiling, i
 final binary to be "dynamically linked" to libraries that it depends on, such that when 
 the binary is executed, it will look for these library files on the system that it is 
 running on. Thus a copy of the appropriate library files will need to be available to your 
-software wherever it runs. OSG Connect users can transfer a copy of the necessary 
+software wherever it runs. OSPool users can transfer a copy of the necessary 
 libraries along with with their jobs to manage such dependencies if not supported by the 
 execute node that your jobs run on.
 
@@ -78,16 +77,17 @@ your software.
 
 ## Perform your compilation
 
-Software compilation is easiest to perform interactively, and OSG Connect users are 
-welcome to compile software directly on their assigned login node. This will ensure
+Software compilation is easiest to perform interactively, and OSPool users are 
+welcome to compile software directly on their assigned Access Point. This will ensure
 that your application is built on an environment that is similar to the majority
-of the compute nodes on OSG. Because OSG Connect login nodes currently use the 
-Red Hat Enterprise Linux 7 operating system, your software will, generally, only be 
-compatible for execution on RHEL 7 or similar operating systems. You can use the 
+of the compute nodes on OSG. Because OSG Access Points currently use the 
+Alma/CentOS Linux 8 operating system (which are similar to the  
+more general Red Hat Enterprise Linux, or RHEL distribution), your software will, generally, only be 
+compatible for execution on RHEL 8 or similar operating systems. You can use the 
 `requirements` statement of your HTCondor submit file to direct your jobs to execute 
 nodes with specific operating systems, for instance:
 
-	requirements = (OSGVO_OS_STRING == "RHEL 7")
+	requirements = (OSGVO_OS_STRING == "RHEL 8")
 
 Software installation typically includes three steps: 1.) configuration, 2.) compilation, and 3.) 
 "installation" which places the compiled code in a specific location. In most cases, 
@@ -97,14 +97,14 @@ these steps will be achieved with the following commands:
 	make
 	make install
 
-**Most software is written to install to a default location, however your OSG Connect 
+**Most software is written to install to a default location, however your OSG Access Point
 account is not authorized to write to these default system locations.** Instead, you will want to 
 create a folder for your software installation in your `home` directory and use an option in the 
 configuration step that will install the software to this folder:
 
 	./configure --prefix=/home/username/path
 
-where `username` should be replaced with your OSG Connect username and `path` replaced with the 
+where `username` should be replaced with your OSG username and `path` replaced with the 
 path to the directory you created for your software installation.
 
 ## Watch out for hardware feature detection
@@ -115,7 +115,7 @@ aware that not all execution endpoints on OSG are the same. If your software pic
 hardware features such as AVX/AVX2, you might have to ensure the jobs are running on
 hardware with those features. For example, if your software requires AVX2:
 
-    requirements = (OSGVO_OS_STRING == "RHEL 7") && (HAS_AVX2 == True)
+    requirements = (OSGVO_OS_STRING == "RHEL 8") && (HAS_AVX2 == True)
 
 Please see [Control Where Your Jobs Run / Job Requirements](../../../htc_workloads/using_software/requirements/)
 
@@ -123,7 +123,7 @@ Please see [Control Where Your Jobs Run / Job Requirements](../../../htc_workloa
 
 When submitting jobs, you will need to transfer a copy of your compiled software, 
 and any dynamically-linked dependencies that you also installed. Our 
-[Introduction to Data Management on OSG Connect](../../../htc_workloads/managing_data/osgconnect-storage/) 
+[Introduction to Data Management on OSG](../../../htc_workloads/managing_data/overview) 
 guide is a good starting point for more information for selecting the appropriate
 methods for transferring you software. Depending on your job workflow, it may be possible 
 to directly specify your executable binary as the `executable` in your HTCondor 
