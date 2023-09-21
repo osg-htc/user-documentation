@@ -31,10 +31,10 @@ nav:
       - "Launch a JupyterLab Instance": htc_workloads/submitting_workloads/jupyter.md            
     - Managing Data For Jobs:
       - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/overview.md
-      - "Use scp To Transfer Files To and From OSG Managed Access Points": htc_workloads/managing_data/scp.md
-      - "Transfer to/from /home": htc_workloads/managing_data/file-transfer-via-htcondor.md
-      - "Transfer Larger Files and Containers (OSDF)": htc_workloads/managing_data/osdf.md
+      - "Transfer Smaller Job Files to and from /home": htc_workloads/managing_data/file-transfer-via-htcondor.md
+      - "Transfer Larger Job Files and Containers Using OSDF": htc_workloads/managing_data/osdf.md
       - "Transfer HTTP-available Files up to 1GB In Size": htc_workloads/managing_data/file-transfer-via-http.md
+      - "Use scp To Transfer Files To and From OSG Managed Access Points": htc_workloads/managing_data/scp.md
     - Using Software:
       - "Overview: Software on the Open Science Pool": htc_workloads/using_software/software-overview.md
       - "Control Where Your Jobs Run/Job Requirements": htc_workloads/using_software/requirements.md
