@@ -33,6 +33,7 @@ The most recent version of our New User Training materials are here:
 
 * [Slides](https://docs.google.com/presentation/d/1z-f81xtk_ZXeJcA1kX60JoScXdGfe-xgsB9g5YemrqI/edit#slide=id.g10662d3fe4f_0_0), [Video](https://www.youtube.com/watch?v=D14eMrkZ2gQ)
 * [Wordcount Frequency Tutorial](../../../software_examples/python/tutorial-wordfreq/)
+* [Interactive Lesson](https://github.com/OSGConnect/lesson-intro-ospool)
 
 ## Special Topics (at least one per month)
 
