@@ -23,19 +23,20 @@ The following tutorials are available and are compatible with OSG-provided Acces
 
 	Currently available tutorials:
 	R ...................... Estimate Pi using the R programming language
-	R-addlibSNA ............ Shows how to add R external libraries for the R jobs on the OSG
+	R-addlibSNA ............ Shows how to add R external libraries for the R jobs
 	ScalingUp-Python ....... Scaling up compute resources - Python example to optimize a function on grid points
-	blast-split ............ How to run BLAST on the OSG by splitting a large input file
+	blast-split ............ How to run BLAST on the OSPool by splitting a large input file
+ 	fastqc ................. How to run FastQC on the OSPool
 	dagman-wordfreq ........ DAGMan based wordfreq example
 	error101 ............... Use condor_q -better-analyze to analyze stuck jobs
 	matlab-HelloWorld ...... Creating standalone MATLAB application - Hello World 
-	osg-locations .......... Tutorial based on OSG location exercise from the User School
+	osg-locations .......... Tutorial based on OSPool location exercise from the User School
 	pegasus ................ An introduction to the Pegasus job workflow manager
-	quickstart ............. How to run your first OSG job
+	quickstart ............. How to run your first OSPool job
 	scaling ................ Learn to steer jobs to particular resources
 	scaling-up-resources ... A simple multi-job demonstration
 	software ............... Software access tutorial
-	tensorflow-matmul ...... Tensorflow math operations as a singularity container job on the OSG - matrix multiplication
+	tensorflow-matmul ...... Tensorflow math operations as a singularity container job on the OSPool - matrix multiplication
   
 Install and setup a tutorial
 ----------------------------
