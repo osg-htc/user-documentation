@@ -12,6 +12,7 @@ This repository holds the documentation for the PATh Facility and OSGConnect.
   - [Adding Videos](#adding-videos)
   - [Linking Documentation](#linking-documentation)
   - [Creating Styled Code Blocks](#creating-styled-code-blocks)
+  - [Adding a Tutorial](#adding-a-tutorial)
 - [Previewing Documentation](#previewing-documentation)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
@@ -172,6 +173,22 @@ To use these styles you have to use html, view the example below to convert a ma
 make
 make install</code></pre>
 ```
+
+### Adding a Tutorial 
+
+To add a tutorial you need to do two things:
+
+#### Add the tutorial as a submodule in the tutorial directory
+
+```
+# From repo root
+# Replace <git-url> and <tutorial-name> before running
+git submodule add <git-url> ./documentation/tutorials/<tutorial-name>
+```
+
+#### Add the appropriate frontmatter so the the README is linked correctly 
+
+Read more [above](#creating-the-document)
 
 ## Previewing your Work
 
