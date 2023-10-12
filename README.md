@@ -213,10 +213,6 @@ docker run -it -p 8011:8011 -v ${PWD}:/docs/user-documentation hub.opensciencegr
 
 [localhost:8011](http://0.0.0.0:8011/documentation/)
 
-
-
-
-
 ## Updating Submodules
 
 To update the tutorial submodules after pushing a change to them you should run the 
