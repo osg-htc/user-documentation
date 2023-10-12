@@ -78,7 +78,7 @@ It is also possible to authenticate using an SSH key pair, if you prefer. Loggin
 
 The process below describes how to upload a public key to the registration website. It assumes that a private/public key pair has already been generated. If you need to generate a key pair, see this [OSG guide](../generate-add-sshkey). 
 
-1. Return to the [Registration Page](https://registry.cilogon.org/registry/co_petitions/start/coef:297) and login using your institutional credentials if prompted.
+1. Return to the [Registration Page](https://registry.cilogon.org/registry/co_petitions/start/coef:211) and login using your institutional credentials if prompted.
 
 2. Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button.
 
