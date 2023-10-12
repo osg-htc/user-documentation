@@ -18,7 +18,7 @@ To join and use the `uw.osg-htc.org` Access Points (`ap40.uw.osg-htc.org`), you 
 
 To request access to `ap40.uw.osg-htc.org`, submit an application using the following steps:
 
-1. General OSPool users not involved in the 2023 OSG School, please visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:297); Researchers accepted into the 2023 OSG User School should use this [User School Registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:415). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
+1. To request an OSPool account, visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:211) You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
    
    
       <img src="../../../assets/ap7-images/cilogon.png" class= "img-fluid"/>
@@ -101,4 +101,4 @@ You can now log in to `ap40.uw.osg-htc.org` from the terminal, using `ssh userna
 
 ## Get Help
 
-For questions regarding logging in or creating an account, contact us at  [support@osg-htc.org](mailto:support@osg-htc.org).
+For questions regarding logging in or creating an account, contact us at [support@osg-htc.org](mailto:support@osg-htc.org).
