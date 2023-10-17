@@ -40,6 +40,13 @@ The most recent version of our New User Training materials are here:
 As we introduce new training topics, we will add materials to this page. 
 
 
+## DAGMan: HTCondor's Workflow Manager
+
+The most recent version of these training materials are here:
+* [Slides](https://docs.google.com/presentation/d/1FbTo_18LL03D41v6DYOfOOooNAy06Vzm/edit?usp=drive_web&ouid=114892809919385436869&rtpof=true)
+* [DAGMan Tutorial](https://github.com/OSGConnect/tutorial-dagman-intro)
+
+
 ### Organizing and Submitting HTC Workloads
 
 The most recent version of these training materials are here: 
