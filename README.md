@@ -218,7 +218,7 @@ docker run -it -p 8011:8011 -v ${PWD}:/docs/user-documentation hub.opensciencegr
 To update the tutorial submodules after pushing a change to them you should run the 
 [Update Submodules Action](https://github.com/osg-htc/user-documentation/actions/workflows/update-submodules.yml):
 
-1. Click on the "Actions" tab in the navigation bar at the top of the repository.
+1. Click on the "Actions" tab in the navigation bar at the top of the repository. 
 2. Click on "Update Submodules" in the left-hand navigation sidebar.
 3. In the blue banner is a "Run workflow" dropdown button. Click the dropdown and then click "Run Workflow" (make sure the action is run on the main branch).
 
