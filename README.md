@@ -13,6 +13,7 @@ This repository holds the documentation for the PATh Facility and OSGConnect.
   - [Linking Documentation](#linking-documentation)
   - [Creating Styled Code Blocks](#creating-styled-code-blocks)
   - [Adding a Tutorial](#adding-a-tutorial)
+  - [Documentation Style Guide](#documentation-style-guide)
 - [Previewing Documentation](#previewing-documentation)
 - [Adding Documentation](#adding-documentation)
 - [Updating Submodules](#updating-submodules)
@@ -189,6 +190,27 @@ git submodule add <git-url> ./documentation/tutorials/<tutorial-name>
 #### Add the appropriate frontmatter so the the README is linked correctly 
 
 Read more [above](#creating-the-document)
+
+### Documentation Style Guide
+
+#### One top level header per page
+
+Use only one h1 ( # value ) to indicate the title. All other header elements should be >= h2 ( ##... value ).
+
+**Good**
+```
+# Title
+
+## Subtitle
+```
+
+**Bad**
+```
+# Title
+
+# Subtitle
+```
+
 
 ## Previewing your Work
 
