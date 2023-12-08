@@ -7,8 +7,8 @@ ospool:
 
 scikit-learn is a machine learning toolkit for Python.
 
-Below you will find an example on how to use an OSG provided
-scikit-learn image. However, it is good to keep in mind that
+Below you will find an example on how to use an OSG-provided software container that contains 
+scikit-learn. However, it is good to keep in mind that
 you have two options when it comes to integrating your own
 code:
 
