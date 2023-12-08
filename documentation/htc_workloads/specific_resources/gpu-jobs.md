@@ -86,7 +86,7 @@ basis to the OSPool. Some of these contributors will make their GPUs
 available only when there is demand in the job queue, so after initial
 small-scale job testing, we strongly recommend submitting a signficant
 batch of test jobs to explore how much throughput you can get in the
-system as a whole.
+system as a whole. As a reminder, because the OSPool is dynamic, the more jobs submitted requesting GPUs, the more GPU machines will be pulled into the OSPool as execution points.
 
 ### GPU Types
 
