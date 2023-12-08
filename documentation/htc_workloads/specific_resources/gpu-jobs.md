@@ -35,7 +35,7 @@ other special requirement, there is a special submit file line to
 request these capabilities, `require_gpus`. A few attributes that may
 be useful: 
 
-  * `Capability`: this is NOT the GPU library, but rather a measure of the GPU's "Compute Capability"
+  * `Capability`: this is NOT the GPU library, but rather a measure of the GPU's "Compute Capability," which is relted to hardware generation
   * `DriverVersion`: maximum version of the GPU libraries that can be supported
   * `GlobalMemoryMb`: amount of GPU memory available on the GPU device
 
