@@ -81,6 +81,8 @@ An example TensorFlow executable that builds a machine learning model and evalua
 
 ## Submit File
 
+To run this TensorFlow script, create an HTCondor submit file to tell HTCondor how you would like it run on your behalf. An example HTCondor submit file for this job is below. Because TensorFlow is optimized to run with GPUs, make sure to tell HTCondor to assign your job to a GPU machine: 
+
     universe = container
     container_image = /cvmfs/singularity.opensciencegrid.org/htc/tensorflow:2.15
 
