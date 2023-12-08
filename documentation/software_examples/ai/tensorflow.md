@@ -79,7 +79,7 @@ An example TensorFlow executable that builds a machine learning model and evalua
     model.evaluate(x_test,  y_test, verbose=2)
 
 
-## Submit File
+## HTCondor Submit File
 
 To run this TensorFlow script, create an HTCondor submit file to tell HTCondor how you would like it run on your behalf. An example HTCondor submit file for this job is below. Because TensorFlow is optimized to run with GPUs, make sure to tell HTCondor to assign your job to a GPU machine: 
 
