@@ -108,7 +108,7 @@ following types of GPUs:
 ### Software for GPUs
 
 For GPU-enabled machine learning libraries, we recommend using 
-containers to set up your software for jobs: 
+software containers to set up your software for jobs: 
 
   * [Containers - Apptainer/Singularity](../../../htc_workloads/using_software/containers-singularity/)
   * [Sample TensorFlow GPU Container Image Definition](https://github.com/opensciencegrid/osgvo-tensorflow-gpu/blob/master/Dockerfile)
