@@ -40,7 +40,7 @@ be useful:
   * `GlobalMemoryMB`: amount of GPU memory available on the GPU device in megabytes (MB)
 
 If you want a certain type or family of GPUs, we usually recommend using the GPU's 
-'Compute Capability', known as the `Capability` by HTCondor. An A100 GPU has a 
+'Compute Capability', known as the `Capability` by HTCondor. For example, an NVIDIA A100 GPU has a 
 Compute Capability of 8.0, so if you wanted to run on an A100 GPU specifically, 
 the submit file requirement would be: 
 
