@@ -66,7 +66,7 @@ in order to access the greatest amount of computing capacity.**
     executable = run_gpu_job.py
     #arguments = 
    
-    # specify both general requirements and gpu requirements 
+    # specify both general requirements and gpu requirements if there are any
     requirements = True
     require_gpus = (Capability > 7.5)
     
