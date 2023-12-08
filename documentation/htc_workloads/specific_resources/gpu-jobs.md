@@ -37,7 +37,7 @@ be useful:
 
   * `Capability`: this is NOT the GPU library, but rather a measure of the GPU's "Compute Capability," which is relted to hardware generation
   * `DriverVersion`: maximum version of the GPU libraries that can be supported
-  * `GlobalMemoryMb`: amount of GPU memory available on the GPU device
+  * `GlobalMemoryMB`: amount of GPU memory available on the GPU device in megabytes (MB)
 
 If you want a certain type or family of GPUs, we usually recommend using the GPU's 
 'Compute Capability', known as the `Capability` by HTCondor. An A100 GPU has a 
