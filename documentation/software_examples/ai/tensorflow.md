@@ -21,12 +21,9 @@ The OSPool enables AI (Artificial Intelligence) workloads by providing
 > and deep neural networks research, but the system is general enough to
 > be applicable in a wide variety of other domains as well.
 
-The OSPool enables AI (Artificial Intelligence) workloads by providing
-access to GPUs and custom software stacks via containers. Tensorflow
-is a good example here as the software is too complex to bundle up
-and ship with your job. Containers solve this problem by defining a
-full OS image, containing not only the complex software package, but
-dependencies and environment configuration as well. GPUs and
+TensorFlow can be a complicated software to install as it requires many dependencies and specific environmental configurations. Software ontainers solve this problem by defining a
+full operating system image, containing not only the complex software package, but
+dependencies and environment configuration as well. Working with GPUs and
 containers are detailed in the general documentation:
 
   * [GPU Jobs](../../../htc_workloads/specific_resource/gpu-jobs/)
