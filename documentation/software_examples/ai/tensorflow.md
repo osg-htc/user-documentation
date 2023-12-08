@@ -104,4 +104,9 @@ To run this TensorFlow script, create an HTCondor submit file to tell HTCondor h
     
     queue 1
 
+## Run TensorFlow
+
+Since we have prepared our executable, submit file, and are using an OSG-provided TensorFlow container, we are ready to submit this job to run on one of the OSPool GPU machines. 
+
+To submit this job to run, type `condor_submit TensorFlow.submit`. The status of your job can be checked at any time by running `condor_q`. 
 
