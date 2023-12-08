@@ -48,7 +48,7 @@ the submit file requirement would be:
 
 Multiple requirements can be specified by using && statements:
 
-    require_gpus = (Capability >= 7.5) && (GlobalMemoryMb >= 11000)
+    require_gpus = (Capability >= 7.5) && (GlobalMemoryMB >= 11000)
 
 **Note that the more requirements you include, the fewer resources will be available 
 to you! It's always better to set the minimal possible requirements (ideally, none!) 
