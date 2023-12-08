@@ -47,7 +47,7 @@ nav:
       - "Monitor and Review Jobs With condor_q and condor_history": htc_workloads/submitting_workloads/monitor_review_jobs.md  
       - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md
     - Considerations For Specific Resource Needs:
-      - "Using GPUs on the OSPool": htc_workloads/specific_resource/gpu-jobs.md
+      - "GPU Jobs": htc_workloads/specific_resource/gpu-jobs.md
       - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing-on-OSPool.md
       - "Large Memory Jobs": htc_workloads/specific_resource/large-memory-jobs.md
       - "Multicore Jobs": htc_workloads/specific_resource/multicore-jobs.md
@@ -61,6 +61,9 @@ nav:
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/tutorial-quickstart/README.md
       - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
       - "Finding OSG Locations": htc_workloads/submitting_workloads/tutorial-osg-locations/README.md
+    - Artificial Intelligence:
+      - "scikit-learn": software_examples/ai/scikit-learn.md
+      - "TensorFlow": software_examples/ai/tensorflow.md
     - Python:
       - "Run Python Scripts on the OSPool ": software_examples/python/manage-python-packages.md
       - "Scaling Up With HTCondor’s Queue Command": software_examples/python/tutorial-ScalingUp-Python/README.md
@@ -78,8 +81,6 @@ nav:
     - Julia and Java:
       - "Using Julia on the OSPool ": software_examples/other_languages_tools/julia-on-osg.md
       - "Using Java in Jobs ": software_examples/other_languages_tools/java-on-osg.md
-    - Machine Learning:
-      - "Working with Tensorflow, GPUs, and containers": software_examples/machine_learning/tutorial-tensorflow-containers/README.md
     - Bioinformatics:
       - "High-Throughput BLAST": software_examples/bioinformatics/tutorial-blast-split/README.md
       - "High-Throughput BWA Read Mapping": software_examples/bioinformatics/tutorial-bwa/README.md
