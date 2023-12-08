@@ -66,5 +66,3 @@ An example scikit-learn machine learning executable is:
     request_disk = 4GB
     
     queue 1
-
-
