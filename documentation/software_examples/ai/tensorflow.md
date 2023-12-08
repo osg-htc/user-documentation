@@ -29,7 +29,10 @@ containers are detailed in the general documentation:
   * [GPU Jobs](../../../htc_workloads/specific_resource/gpu-jobs/)
   * [Containers - Apptainer/Singularity](../../../htc_workloads/using_software/containers-singularity/)
 
-## Python Code
+## TensorFlow Python Code
+
+An example TensorFlow executable that builds a machine learning model and evaluates it is:
+
 
     #!/usr/bin/env python3
     
