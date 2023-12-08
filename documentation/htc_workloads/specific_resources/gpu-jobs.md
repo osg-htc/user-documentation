@@ -67,7 +67,7 @@ in order to access the greatest amount of computing capacity.**
     #arguments = 
    
     # specify both general requirements and gpu requirements if there are any
-#    requirements =
+    # requirements =
     require_gpus = (Capability > 7.5)
     
     request_gpus = 1
