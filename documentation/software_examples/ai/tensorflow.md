@@ -88,8 +88,8 @@ containers are detailed in the general documentation:
     executable = run-tf.py
     #arguments = 
    
-    # specify both general requirements and gpu requirements 
-    requirements = True
+    # specify both general requirements and gpu requirements if needed
+    # requirements = True
     require_gpus = (Capability > 7.5)
     
     request_gpus = 1
