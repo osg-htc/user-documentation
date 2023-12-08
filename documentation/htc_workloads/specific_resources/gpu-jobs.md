@@ -44,7 +44,7 @@ If you want a certain type or family of GPUs, we usually recommend using the GPU
 Compute Capability of 8.0, so if you wanted to run on an A100 GPU specifically, 
 the submit file requirement would be: 
 
-    require_gpus = (Capability >= 8.0)
+    require_gpus = (Capability == 8.0)
 
 Multiple requirements can be specified by using && statements:
 
