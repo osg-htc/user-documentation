@@ -3,6 +3,8 @@ ospool:
   path: software_examples/ai/tensorflow.md
 ---
 
+The OSPool enables AI (Artificial Intelligence) workloads by providing
+ access to GPUs and custom software stacks via containers. An example of this support is the machine learning platform TensorFlow.
 # TensorFlow
 
 [https://www.tensorflow.org/](https://www.tensorflow.org/) desribes TensorFlow as:
