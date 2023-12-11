@@ -105,27 +105,52 @@ condor_submit_dag input.dag
 ```
 
 where `input.dag` is the name of your DAG input file containing the `JOB` and `PARENT`-`CHILD` definitions for your workflow.
+This will create and submit a "DAGMan job" that will in turn be responsible for submitting and monitoring the job nodes described in your DAG input file.
 
 A set of files is created for every DAG submission, and the output of the `condor_submit_dag` lists the files with a brief description.
-For a DAG input file called `input.dag`, these files correspond to
+For the above submit command, the output will look like:
 
 ```
-input.dag.condor.sub
-input.dag
+-----------------------------------------------------------------------
+File for submitting this DAG to HTCondor           : input.dag.condor.sub
+Log of DAGMan debugging messages                 : input.dag.dagman.out
+Log of HTCondor library output                     : input.dag.lib.out
+Log of HTCondor library error messages             : input.dag.lib.err
+Log of the life of condor_dagman itself          : input.dag.dagman.log
+
+Submitting job(s).
+1 job(s) submitted to cluster ######.
+-----------------------------------------------------------------------
 ```
-
-
 
 ### 2. Monitoring the DAG
 
+The DAGMan job is actually a "scheduler" job (described by `input.dag.condor.sub`) and the status and progress of the DAGMan job is saved to `input.dag.dagman.out`.
+Using `condor_q` or `condor_watch_q`, the DAGMan job will be under the name `input.dag+######`, where `######` is the Cluster ID of the DAGMan scheduler job. 
+Each job submitted by DAGMan, however, will be assigned a separate Cluster ID.
 
+For a more detailed status display, you can use
 
+```
+condor_q -dag -nobatch
+```
 
+For even more details about the execution of the DAG workflow, you can examine the contents of the `input.dag.dagman.out` file. 
+The file contains timestamped log information of the execution and status of nodes in the DAG, along with statistics.
+As the DAG progresses, it will also create the files `input.dag.metrics` and `input.dag.nodes.log`, where the metrics file contains the current statistics of the DAG and the log file is an aggregate of the individual nodes' user log files.
+
+### 3. Removing the DAG
+
+To remove the DAG, you need to `condor_rm` the Cluster ID corresponding to the DAGMan scheduler job. 
+This will also remove the jobs that the DAGMan scheduler job submitted as part of executing the DAG workflow.
+A removed DAG is almost always marked as a failed DAG, and as such will generate a rescue DAG (see below).
 
 
 ## DAGMan Features
 
 ### 1. Pre- and post-processing for DAG jobs
+
+
 
 ### 2. Rescue DAGs
 
