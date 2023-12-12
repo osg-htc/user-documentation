@@ -150,7 +150,77 @@ A removed DAG is almost always marked as a failed DAG, and as such will generate
 
 ### 1. Pre- and post-processing for DAG jobs
 
+You can tell DAGMan to execute a script before or after it submits the HTCondor job for a particular node. 
+Such a script will be executed on the submit server itself and can be used to set up the files needed for the HTCondor job, or to clean up or validate the files after a successful HTCondor job.
 
+The instructions for executing these scripts are placed in the input `.dag` file. 
+You must specify the name of the node the script is attached to and whether the script is to be executed before (`PRE`) or after (`POST`) the HTCondor job. 
+Here is a simple example:
 
-### 2. Rescue DAGs
+```
+# Define the node (required) (example node named "my_node")
+JOB my_node run.sub
+
+# Define the script for executing before submitting run.sub (optional)
+SCRIPT PRE my_node setup.sh
+
+# Define a script for executing after run.sub has completed (optional)
+SCRIPT POST my_node cleanup.sh
+```
+
+In this example, when it is time for DAGMan to execute the node `my_node`, it will take the following steps:
+
+1. Execute `setup.sh` (the `PRE` script)
+2. Submit the HTCondor job `run.sub` (the node's `JOB`)
+3. Wait for the HTCondor job to complete
+4. Execute `cleanup.sh` (the `POST` script) 
+
+All of these steps count as part of DAGMan's attempt to execute the node `my_node` and may affect whether DAGMan considers the node to have succeeded or failed. For more information on `PRE` and `POST` scripts as well as other scripts that DAGMan can use, see the [HTCondor documentation](https://htcondor.readthedocs.io/en/latest/automated-workflows/dagman-scripts.html).
+
+### 2. Retrying failed nodes
+
+You can tell DAGMan to automatically retry a node if it fails.
+This way you don't have to manually restart the DAG if the job failed due to a transient issue.
+
+The instructions for how many times to retry a node go in the input `.dag` file.
+You must specify the node and the maximum number of times that DAGMan should attempt to retry that node.
+Here is a simple example:
+
+```
+# Define the node (required) (example node named "my_node")
+JOB my_node run.sub
+
+# Define the number of times to retry "my_node"
+RETRY my_node 2
+```
+
+In this example, if the job associated with node `my_node` fails for some reason, then DAGMan will resubmit `run.sub` up to 2 more times.
+
+You can also apply the retry for statement to all nodes in the DAG by specifying `ALL_NODES` instead of a specific node name.
+For example,
+
+```
+RETRY ALL_NODES 2
+```
+
+As a general rule, you should not set the number of retry attempts to more than 1 or 2 times. 
+If a job is failing repeatedly, it is better to troubleshoot the cause of that failure.
+This is especially true when you applying the `RETRY` statement to all of the nodes in your DAG.
+
+DAGMan considers the exit code of the last executed step when it considers the success or failure of the node overall.
+There are various possible combinations that can determine the success or failure of the node itself, as discussed in the HTCondor documentation [here](https://htcondor.readthedocs.io/en/latest/automated-workflows/node-pass-or-fail.html#).
+DAGMan only considers the success/failure of the node as a whole when deciding if it needs to attempt a retry.
+
+Finally, note that DAGMan does not consider an HTCondor job with a "hold" status as being completed. 
+In that case, you can include a command in the submit file to automatically remove a held job from the queue. 
+When a job is removed from the queue, DAGMan considers that job to be failed (though as noted above, failure of the HTCondor job does not necessarily mean the node has failed).
+
+For more information on the `RETRY` statement, see the [HTCondor documentation](https://htcondor.readthedocs.io/en/latest/automated-workflows/node-pass-or-fail.html#retrying-failed-nodes).
+
+### 3. Restarting a failed DAG
+
+Generally, a DAG is considered failed if any one of its component nodes has failed.
+That does not mean, however, that DAGMan immediately stops the DAG.
+Instead, when DAGMan encounters a failed node, it will attempt to complete as much of the DAG as possible that does not require that node.
+Only then will DAGMan stop running the workflow.
 
