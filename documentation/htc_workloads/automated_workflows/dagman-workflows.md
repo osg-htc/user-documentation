@@ -210,6 +210,7 @@ This is especially true when you applying the `RETRY` statement to all of the no
 DAGMan considers the exit code of the last executed step when it considers the success or failure of the node overall.
 There are various possible combinations that can determine the success or failure of the node itself, as discussed in the HTCondor documentation [here](https://htcondor.readthedocs.io/en/latest/automated-workflows/node-pass-or-fail.html#).
 DAGMan only considers the success/failure of the node as a whole when deciding if it needs to attempt a retry.
+Importantly, if the `.sub` file for a node submits multiple HTCondor jobs, when any one of those jobs fails, DAGMan considers all of the jobs to have failed and will remove them from queue.
 
 Finally, note that DAGMan does not consider an HTCondor job with a "hold" status as being completed. 
 In that case, you can include a command in the submit file to automatically remove a held job from the queue. 
@@ -223,4 +224,31 @@ Generally, a DAG is considered failed if any one of its component nodes has fail
 That does not mean, however, that DAGMan immediately stops the DAG.
 Instead, when DAGMan encounters a failed node, it will attempt to complete as much of the DAG as possible that does not require that node.
 Only then will DAGMan stop running the workflow.
+
+When the DAGMan job exits from a failed DAG, it generates a report of the status of the nodes in a file called a "Rescue DAG" with the extension `.rescue###`, 
+starting from `.rescue001` and counting up each time a Rescue DAG is generated.
+The Rescue DAG can then be used by DAGMan to restart the DAG, skipping over nodes that are marked as completed successfully and jumping directly to the failed nodes that need to be resubmitted.
+The power of this feature is that DAGMan will not duplicate the work of already completed nodes, which is especially useful when there is an issue at the end of a large DAG.
+
+DAGMan will automatically use a Rescue DAG if it exists when you use `condor_submit_dag` to submit the original `.dag` input file.
+If more than one Rescue DAG exists for a given `.dag` input file, then DAGMan will use the most recent Rescue DAG 
+(the one with the highest number at the end of `.rescue###`).
+
+```
+# Automatically use the Rescue DAG if it exists
+condor_submit_dag input.dag
+```
+
+> If you do NOT want DAGMan to use an existing Rescue DAG, then you can use the `-force` option to start the DAG completely from scratch:
+>
+> ```
+> # Do NOT use the Rescue DAG if it exists
+> condor_submit_dag -force input.dag
+> ```
+
+For more information on Rescue DAGs and how to explicitly control them, see the [HTCondor documentation](https://htcondor.readthedocs.io/en/latest/automated-workflows/dagman-resubmit-failed.html).
+
+> If the DAGMan scheduler job itself crashes (or is placed on hold) and is unable to write a Rescue DAG, then when the DAGMan job is resubmitted (or released), DAGMan will go into "recovery mode". 
+> Essentially this involves DAGMan reconstructing the Rescue DAG that should have been written, but wasn't due to the job interruption.
+> DAGMan will then resume the DAG based on its analysis of the files that do exist.
 
