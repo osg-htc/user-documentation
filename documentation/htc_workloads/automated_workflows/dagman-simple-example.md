@@ -189,6 +189,9 @@ Submitting job(s).
 ```
 
 The output shows the list of standard files that are created with every DAG submission along with brief descriptions. 
+A couple of additional files will be created during the lifetime of the DAG.
 
+## 6. Monitoring the Simple DAG
 
+You can see the status of the DAG in your queue just like any other HTCondor job submission.
 
