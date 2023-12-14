@@ -14,6 +14,7 @@ In this guide:
 * [The Basics of the DAG Input File](#the-basics-of-the-dag-input-file)
 * [Running a DAG Workflow](#running-a-dag-workflow)
 * [DAGMan Features](#dagman-features)
+* [More Resources](#more-resources)
 
 ## Introduction
 
@@ -36,7 +37,7 @@ how to implement it using HTCondor's DAGMan.
 
 For the full details on various DAGMan features, see the HTCondor manual pages: 
 
-* [DAGMan Manual Page](https://htcondor.readthedocs.io/en/latest/automated-workflows/index.html)
+* [HTCondor's DAGMan Documentation](https://htcondor.readthedocs.io/en/latest/automated-workflows/index.html)
 
 ## What is DAGMan?
 
@@ -252,3 +253,25 @@ For more information on Rescue DAGs and how to explicitly control them, see the 
 > Essentially this involves DAGMan reconstructing the Rescue DAG that should have been written, but wasn't due to the job interruption.
 > DAGMan will then resume the DAG based on its analysis of the files that do exist.
 
+## More Resources
+
+### Tutorials
+
+If you are interested in using DAGMan to automatically run a workflow, we highly recommend that you first go through our tutorial [Simple Example of a DAG Workflow](dagman-simple-example). 
+This tutorial takes you step by step through the mechanics of creating and submitting a DAG.
+
+Once you've understood the basics from the simple tutorial, you are ready to explore more examples and scenarios in our [Intermediate DAGMan Tutorial](../../tutorials/tutorial-DAGMan-intermediate).
+
+### Trainings & Videos
+
+A recent live training covering the materials in the Intermediate DAGMan Tutorial was held by the current lead developer for HTCondor's DAGMan utility: [DAGMan: HTCondor's Workflow Manager](../../support_and_training/training/osgusertraining/#dagman-htcondors-workflow-manager).
+
+An introductory tutorial to DAGMan previously presented at HTCondor Week was recorded and is available on YouTube: [HTCondor DAGMan Workflows tutorial](https://www.youtube.com/watch?v=1MvVHxRs7iU).
+
+More recently, the current lead developer of HTCondor's DAGMan utility gave an intermediate tutorial: [HTC23 DAGMan intermediate](https://www.youtube.com/watch?v=C2RkdxE_ph0).
+
+### Documentation
+
+[HTCondor's DAGMan Documentation](https://htcondor.readthedocs.io/en/latest/automated-workflows/index.html)
+
+The HTCondor documentation is the definitive guide to DAGMan and contains a wealth of information about DAGMan, its features, and its behaviors. 
