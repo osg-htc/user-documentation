@@ -136,9 +136,32 @@ For a more detailed status display, you can use
 condor_q -dag -nobatch
 ```
 
+If you want to see the status of just the DAGMan job proper, use
+
+```
+condor_q -dag -nobatch -constr 'JobUniverse == 7'
+```
+
+(Technically, this shows all "scheduler" type HTCondor jobs, but for most users this will only include DAGMan jobs.)
+
 For even more details about the execution of the DAG workflow, you can examine the contents of the `input.dag.dagman.out` file. 
 The file contains timestamped log information of the execution and status of nodes in the DAG, along with statistics.
 As the DAG progresses, it will also create the files `input.dag.metrics` and `input.dag.nodes.log`, where the metrics file contains the current statistics of the DAG and the log file is an aggregate of the individual nodes' user log files.
+
+If you want to see the status of a specific node, use
+
+```
+condor_q -dag -nobatch -constr 'DAGNodeName == "YourNodeName"'
+```
+
+where `YourNodeName` should be replaced with the name of the node you want to know the status of. 
+Note that this works only for jobs that are currently in the queue; if the node has not yet been submitted, or if it has completed and thus exited the queue, then you will not see the node using this command.
+To see if the node has completed, you should examine the contents of the `.dagman.out` file. 
+A simple way to see the relevant log messages is to use a command like
+
+```
+grep "Node YourNodeName" input.dag.dagman.out
+```
 
 ### 3. Removing the DAG
 
