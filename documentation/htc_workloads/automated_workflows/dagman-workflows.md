@@ -163,6 +163,15 @@ A simple way to see the relevant log messages is to use a command like
 grep "Node YourNodeName" input.dag.dagman.out
 ```
 
+If you'd like to monitor the status of the individual nodes in your DAG workflow using `condor_watch_q`, then wait long enough for the `.nodes.log` file to be generated.
+Then run
+
+```
+condor_watch_q -file input.dag.nodes.log
+```
+
+Now `condor_watch_q` will update when DAGMan submits another job.
+
 ### 3. Removing the DAG
 
 To remove the DAG, you need to `condor_rm` the Cluster ID corresponding to the DAGMan scheduler job. 
