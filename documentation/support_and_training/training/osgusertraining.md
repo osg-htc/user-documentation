@@ -6,17 +6,20 @@ ospool:
 OSG User Training (regular/monthly) 
 ====================================
 
-All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am - 1pm PT)**. New User Training is offered monthly, generally on the first Tuesday of the month, and training on various additional topics happens on the third Tuesday of the month. 
+All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am - 1pm PT)**, on the third Tuesday of the month. 
 
 **Registration opens a month before the training date. You can register for all of our trainings via setmore:**
 
 <font size="20">[Register Here](https://osgfacilitation.setmore.com/bookclass)</font>
 
-## Fall 2023 Training Schedule
+## Spring 2024 Training Schedule
 
-* Tuesday, September 19: Requesting GPUs and Other Specific Resources on the OSPool
-* Tuesday, October 17: DAGMan: HTCondor's Workflow Manager
-* Tuesday, November 28th: Running Long Jobs with Self-Checkpointing
+* Tuesday, January 16 - OSPool Basics: Get Running on the OSPool
+* Tuesday, February 20 - Learn About the PATh Facility
+* Tuesday, March 19 - GPUs and the OSPool: Best Practices
+* Tuesday, April 16 - Principles of Distributed High Throughput Computing
+* Tuesday, May 21 - OSPool Basics: Get Running on the OSPool 
+* Tuesday, June 18 - Move Your Data With Pelican
 
 For a calendar version of these events see: 
 
@@ -27,18 +30,13 @@ For a calendar version of these events see:
 
 All of our training materials are public, and with recent video recordings available:
 
-## New User Training (monthly)
+## OSPool Basics: Get Running on the OSPool
 
-The most recent version of our New User Training materials are here: 
+The most recent version of our *OSG Basics* materials are here: 
 
 * [Slides](https://docs.google.com/presentation/d/1z-f81xtk_ZXeJcA1kX60JoScXdGfe-xgsB9g5YemrqI/edit#slide=id.g10662d3fe4f_0_0), [Video](https://www.youtube.com/watch?v=D14eMrkZ2gQ)
 * [Wordcount Frequency Tutorial](../../../software_examples/python/tutorial-wordfreq/)
 * [Interactive Lesson](https://github.com/OSGConnect/lesson-intro-ospool)
-
-## Special Topics (at least one per month)
-
-As we introduce new training topics, we will add materials to this page. 
-
 
 ## DAGMan: HTCondor's Workflow Manager
 
