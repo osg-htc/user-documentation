@@ -15,11 +15,22 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 ## Spring 2024 Training Schedule
 
 * Tuesday, January 16 - OSPool Basics: Get Running on the OSPool
+
 * Tuesday, February 20 - Learn About the PATh Facility
+	* The PATh Facility provides dedicated throughput computing capacity to NSF-funded researchers for longer and larger jobs. This training will describe its features and how to get started. **If you have found your jobs need more resources (cores, memory, time, data) than is typically available in the OSPool, this resource might be for you!**
+
 * Tuesday, March 19 - GPUs and the OSPool: Best Practices
+	* This training will cover what you need to consider when transitioning your existing GPU-based code from another system to the OSPool. **This is a great workshop for those who are newer to GPU computing as we will review important GPU concepts and terminology, and requesting GPUs on the OSPool.**
+
 * Tuesday, April 16 - Principles of Distributed High Throughput Computing
+	* Have you ever wondered about the “why” of HTCondor? **Join us to hear about the “philosophy” of high throughput computing and how HTCondor has evolved to make throughput computing possible.** This workshop will be led by a core HTCondor developer, Greg Thain, and is a perfect opportunity for longer-term OSPool users to learn more about our underlying technology. 
+
+
 * Tuesday, May 21 - OSPool Basics: Get Running on the OSPool 
+
 * Tuesday, June 18 - Move Your Data With Pelican
+	*  OSG Services is excited to introduce Pelican, a platform created to enable easier data sharing - within or beyond your institution! This training will cover how Pelican is used to move data within the OSPool and also how you can use Pelican tools to host, upload and download your data. **We encourage researchers with large amounts of data, as well as campus representatives, to attend to learn about how Pelican can help with your data movement needs.**
+
 
 For a calendar version of these events see: 
 
