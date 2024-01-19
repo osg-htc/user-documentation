@@ -181,15 +181,22 @@ To add a tutorial you need to do two things:
 
 #### Add the tutorial as a submodule in the tutorial directory
 
+When running the script below confirm that that submodule gets cloned into the folder that you identify. 
+If the repo you are hoping to add does not show up please reach out to Cannon. 
+
 ```
 # From repo root
 # Replace <git-url> and <tutorial-name> before running
-git submodule add <git-url> ./documentation/tutorials/<tutorial-name>
+git submodule add <https://github-url.git> ./documentation/tutorials/<tutorial-name>
 ```
 
 #### Add the appropriate frontmatter so the the README is linked correctly 
 
 Read more [above](#creating-the-document)
+
+#### Add the document to the websites navigation 
+
+Read more [above](#adding-it-to-the-navigation)
 
 ### Documentation Style Guide
 
