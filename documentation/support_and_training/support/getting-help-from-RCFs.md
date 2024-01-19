@@ -6,28 +6,17 @@ ospool:
 Email, Office Hours, and 1-1 Meetings 
 ====================================
 
-
 *There are multiple ways to get help from OSG’s Research Computing Facilitators. Get in touch anytime!*
 
+To help researchers effectively utilize large-scale computing, our Research Computing 
+Facilitators (RCFs) are here to answer questions and provide guidance and support. 
+If we're not able to help with a specific problem, we will 
+do our best to connect you with another group or service that can. 
 
-## Research Computing Facilitators
-To help researchers effectively utilize computing resources, our Research Computing Facilitators (RCFs) not only assist you in implementing your computational work on OSG compute resources, but can also point you to other services related to research computing and data needs. For example, RCFs can:
-
-- Assist with planning your computational approach for a research problem
-- Teach you to submit jobs to the Open Science Pool
-- Help you with troubleshooting on OSG systems
-- Connect you with other researchers using similar software or methods
-- Point to learning materials for programming and software development
-- Help you identify applicable non-OSG data storage options
-- Find someone who knows the answer to your question, even if the RCF doesn’t
-- … and other helpful activities to facilitate your use of cyberinfrastructure
-
-We don’t expect that you should be able to address all of your questions by consulting our [documentation](https://portal.osg-htc.org/documentation/), attending our user trainings, or through web searches. RCFs are here to help!
-
+We don’t expect that you should be able to address all of your questions by consulting our [documentation](https://portal.osg-htc.org/documentation/), searching online, or just working through things on your own. Please utilize the methods below if you are stuck or have questions.
 
 ## Help via Email
 We provide ongoing support via email to support@osg-htc.org. You can typically expect a first response within a few business hours.
-
 
 ## Virtual Office Hours
 Drop-in for live help:
@@ -48,3 +37,5 @@ We are happy to arrange meetings outside of designated Office Hours. Email us to
 
 ## Training Opportunities
 The RCF team runs regular new user training on the first Tuesday of the month and a special topic training on the third Tuesday of the month. See upcoming training dates, registration information, and materials on the [OSPool Training page](../../../support_and_training/training/osgusertraining/).
+
+ 
