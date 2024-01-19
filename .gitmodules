@@ -54,4 +54,4 @@
 	url = https://github.com/OSGConnect/tutorial-Matlab-ScalingUp
 [submodule "documentation/tutorials/tutorial-pytorch"]
 	path = documentation/tutorials/tutorial-pytorch
-	url = git@github.com:OSGConnect/tutorial-pytorch.git
+	url = https://github.com/OSGConnect/tutorial-pytorch.git
