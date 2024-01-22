@@ -47,10 +47,10 @@ called `Dockerfile`.
 
 The first line of this file should include the keyword `FROM` and then 
 the name of a Docker image (from Docker Hub) you want 
-to use as your starting point. If using the OSG's Ubuntu 20.04 image that 
+to use as your starting point. If using the OSG's Ubuntu 22.04 image that 
 would look like this: 
 
-	FROM opensciencegrid/osgvo-ubuntu-20.04:latest
+	FROM hub.opensciencegrid.org/htc/ubuntu:22.04
 
 Then, for each command you want to run to add libraries or software, use the 
 keyword `RUN` and then the command. Sometimes it makes sense to string 
@@ -90,13 +90,13 @@ is `alice` and I created an image with the NCBI `blast` tool, I might use this n
 
 You can also build an image interactively, without a Dockerfile. First, get 
 the desired starting image from Docker Hub. Again, we will
-look at the OSG Ubuntu 20.04 image. 
+look at the OSG Ubuntu 22.04 image. 
 
-    $ docker pull opensciencegrid/osgvo-ubuntu-20.04:latest
+    $ docker pull hub.opensciencegrid.org/htc/ubuntu:22.04
 
 We will run the image in a docker interactive session
 
-    $ docker run -it --name <docker_session_name_here> opensciencegrid/osgvo-ubuntu-20.04:latest /bin/bash
+    $ docker run -it --name <docker_session_name_here> hub.opensciencegrid.org/htc/ubuntu:22.04 /bin/bash
 
 Giving the session a name is important because it will make it easier to 
 reattach the session later and commit the changes later on. Now you will 
@@ -185,7 +185,7 @@ to the execution nodes.
 To run a job with a Docker image, use the `+SingularityImage` to
 specify the image the job should be using. Example:
 
-    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-el8:latest"
+    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/htc/rocky:9"
 
     <other usual submit file lines>
     queue

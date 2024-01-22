@@ -39,7 +39,7 @@ The first lines of this file should include where to get the base image
 from. If using the OSG's Ubuntu 20.04 image that  would look like this:
 
     Bootstrap: docker
-    From: opensciencegrid/osgvo-ubuntu-20.04:latest
+    From: hub.opensciencegrid.org/htc/ubuntu:22.04
 
 Then there is a section called `%post` where you put the additional
 commands to make the image just like you need it. For example:
@@ -61,7 +61,7 @@ section is ignored when the container is executed on OSG.
 The final `image.def` looks like:
 
     Bootstrap: docker
-    From: opensciencegrid/osgvo-ubuntu-20.04:latest
+    From: hub.opensciencegrid.org/htc/ubuntu:22.04
 
     %post
         apt-get update -y
