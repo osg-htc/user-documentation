@@ -73,6 +73,7 @@ nav:
       - "Use External Packages in your R Jobs": software_examples/r/tutorial-R-addlibSNA/README.md
       - "Run R scripts on the OSPool": software_examples/r/tutorial-R/README.md
       - "Scaling up compute resources": software_examples/r/tutorial-ScalingUp-R/README.md
+      - "Analyzing .csv Data with R": software_examples/r/tutorial-spills-R/README.md
     - Conda/Miniconda:
       - "Conda with Tarballs": software_examples/other_languages_tools/conda-tarball.md
       - "Conda with Containers": software_examples/other_languages_tools/conda-container.md

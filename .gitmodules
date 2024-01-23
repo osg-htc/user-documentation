@@ -55,3 +55,6 @@
 [submodule "documentation/tutorials/tutorial-pytorch"]
 	path = documentation/tutorials/tutorial-pytorch
 	url = https://github.com/OSGConnect/tutorial-pytorch.git
+[submodule "documentation/tutorials/tutorial-spills-R"]
+	path = documentation/tutorials/tutorial-spills-R
+	url = https://github.com/OSGConnect/tutorial-spills-R
