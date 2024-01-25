@@ -290,14 +290,14 @@ For more information on Rescue DAGs and how to explicitly control them, see the 
 
 ### Tutorials
 
-If you are interested in using DAGMan to automatically run a workflow, we highly recommend that you first go through our tutorial [Simple Example of a DAG Workflow](dagman-simple-example). 
+If you are interested in using DAGMan to automatically run a workflow, we highly recommend that you first go through our tutorial [Simple Example of a DAG Workflow](../dagman-simple-example). 
 This tutorial takes you step by step through the mechanics of creating and submitting a DAG.
 
-Once you've understood the basics from the simple tutorial, you are ready to explore more examples and scenarios in our [Intermediate DAGMan Tutorial](../../tutorials/tutorial-DAGMan-intermediate).
+Once you've understood the basics from the simple tutorial, you are ready to explore more examples and scenarios in our [Intermediate DAGMan Tutorial](../tutorial-dagman-intermediate).
 
 ### Trainings & Videos
 
-A recent live training covering the materials in the Intermediate DAGMan Tutorial was held by the current lead developer for HTCondor's DAGMan utility: [DAGMan: HTCondor's Workflow Manager](../../support_and_training/training/osgusertraining/#dagman-htcondors-workflow-manager).
+A recent live training covering the materials in the Intermediate DAGMan Tutorial was held by the current lead developer for HTCondor's DAGMan utility: [DAGMan: HTCondor's Workflow Manager](../../../support_and_training/training/osgusertraining/#dagman-htcondors-workflow-manager).
 
 An introductory tutorial to DAGMan previously presented at HTCondor Week was recorded and is available on YouTube: [HTCondor DAGMan Workflows tutorial](https://www.youtube.com/watch?v=1MvVHxRs7iU).
 
