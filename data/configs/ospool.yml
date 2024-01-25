@@ -78,7 +78,7 @@ nav:
       - "Conda with Tarballs": software_examples/other_languages_tools/conda-tarball.md
       - "Conda with Containers": software_examples/other_languages_tools/conda-container.md
     - DAGMan:
-      - "Intermediate DAGMan: Uses and Features" htc_workloads/automated_workflows/tutorial-dagman-intermediate/README.md
+      - "Intermediate DAGMan: Uses and Features": htc_workloads/automated_workflows/tutorial-dagman-intermediate/README.md
     - Matlab Runtime:
       - "Basics of compiled MATLAB applications - Hello World example": software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md
       - "Scaling up MATLAB": software_examples/matlab_runtime/tutorial-Matlab-ScalingUp/README.md
