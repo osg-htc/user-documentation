@@ -269,12 +269,16 @@ If more than one Rescue DAG exists for a given `.dag` input file, then DAGMan wi
 condor_submit_dag example.dag
 ```
 
-> If you do NOT want DAGMan to use an existing Rescue DAG, then you can use the `-force` option to start the DAG completely from scratch:
->
-> ```
-> # Do NOT use the Rescue DAG if it exists
-> condor_submit_dag -force example.dag
-> ```
+<blockquote>
+  
+If you do NOT want DAGMan to use an existing Rescue DAG, then you can use the `-force` option to start the DAG completely from scratch:
+
+```
+# Do NOT use the Rescue DAG if it exists
+condor_submit_dag -force example.dag
+```
+
+</blockquote>
 
 For more information on Rescue DAGs and how to explicitly control them, see the [HTCondor documentation](https://htcondor.readthedocs.io/en/latest/automated-workflows/dagman-resubmit-failed.html).
 
