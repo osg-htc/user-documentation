@@ -5,6 +5,10 @@ ospool:
 
 # Simple Example of a DAGMan Workflow
 
+This guide walks you step-by-step through the construction and submission of a
+simple DAGMan workflow.
+We recommend this guide if you are interested in automating your job submissions.
+
 ## Overview
 
 In this guide:
@@ -239,6 +243,6 @@ After waiting enough time, this simple DAG workflow should complete without any 
 But of course, that will not be the case for every DAG, especially as you start to create your own.
 DAGMan has a lot more features for managing and submitting DAG workflows, ranging from how to handle errors, combining DAG workflows, and restarting failed DAG workflows.
 
-For now, we recommend that you continue exploring DAGMan by going through our [Intermediate DAGMan Tutorial](../../tutorials/tutorial-DAGMan-intermediate). There is also our guide [Submit Workflows with HTCondor's DAGMan](dagman-workflows), which contains links to more resources in the [More Resources](dagman-workflows#more-resources) section.
+For now, we recommend that you continue exploring DAGMan by going through our [Intermediate DAGMan Tutorial](tutorial-dagman-intermediate). There is also our guide [Submit Workflows with HTCondor's DAGMan](dagman-workflows), which contains links to more resources in the [More Resources](dagman-workflows#more-resources) section.
 
 Finally, the definitive guide to DAGMan and DAG workflows is [HTCondor's DAGMan Documentation](https://htcondor.readthedocs.io/en/latest/automated-workflows/index.html).
