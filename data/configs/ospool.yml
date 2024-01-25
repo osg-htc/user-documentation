@@ -53,7 +53,8 @@ nav:
       - "Multicore Jobs": htc_workloads/specific_resource/multicore-jobs.md
       - "OpenMPI Jobs": htc_workloads/specific_resource/openmpi-jobs.md
     - Automated Workflows:
-      - "Submit Workflows with HTCondor's DAGMan ": htc_workloads/automated_workflows/dagman-workflows.md
+      - "Submit Workflows with HTCondor's DAGMan": htc_workloads/automated_workflows/dagman-workflows.md
+      - "Simple Example of a DAGMan Workflow": htc_workloads/automated_workflows/dagman-simple-example.md
       - "Use Pegasus to Manage Workflows on OSG Connect": htc_workloads/automated_workflows/tutorial-pegasus/README.md
   - Tutorials and Software Examples:
     - Workflow Tutorials:
