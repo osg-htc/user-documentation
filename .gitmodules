@@ -58,3 +58,6 @@
 [submodule "documentation/tutorials/tutorial-spills-R"]
 	path = documentation/tutorials/tutorial-spills-R
 	url = https://github.com/OSGConnect/tutorial-spills-R
+[submodule "documentation/tutorials/tutorial-dagman-intermediate"]
+	path = documentation/tutorials/tutorial-dagman-intermediate
+	url = https://github.com/OSGConnect/tutorial-dagman-intermediate.git
