@@ -1,0 +1,131 @@
+#!/usr/bin/python3
+
+'''
+walk /cvmfs/singularity.opensciencegrid.org/ and find container metadata
+'''
+
+import os
+import json
+import re
+from string import Template
+from pprint import pprint
+import textwrap
+
+metadata = {}
+md_sorted = []
+
+
+def sort_key(entry):
+    key = ''
+    if 'category' in entry:
+        if entry['category'] == 'Base':
+            key += '0_'
+        else:
+            key += '1_'
+        key += entry['category']
+    if 'name' in entry:
+        key += entry['name']
+    return key
+
+
+def import_metadata(top_dir, identifier, tag):
+
+    global metadata
+
+    json_file = os.path.join(top_dir, identifier + ':' + tag, '.singularity.d/labels.json')
+    if os.path.getsize(json_file) < 10:
+        return
+
+    print('Processing {}...'.format(json_file))
+    
+    # first ensure it has the required metadata
+    try:
+        with open(json_file) as f:
+            fdata = json.load(f)
+    except:
+        print('  ... error accessing the metadata. Skipping.')
+        return
+
+    image_group = identifier
+    print(identifier)
+    if re.search('^htc/', identifier):
+        image_group = identifier + ':' + tag
+    if 'opensciencegrid.name' in fdata:
+        if image_group not in metadata:
+            data = {}
+            data['identifier'] = identifier
+            data['image_group'] = image_group
+            for k, v in fdata.items():
+                newk = re.sub('opensciencegrid\.', '', k)
+                data[newk] = v
+            data['cvmfs_path'] = os.path.join(top_dir, identifier)
+            data['tags'] = []
+
+            # in the base area, only allow images from /htc/
+            # this will filter out derived images which did not update
+            # the labels
+            if data['category'] == 'Base' and \
+               not re.search('singularity.opensciencegrid.org/htc/', json_file):
+                return
+
+            metadata[image_group] = data
+        metadata[image_group]['tags'].append(tag)
+
+
+def main():
+
+    top_dir = '/cvmfs/singularity.opensciencegrid.org'
+    
+    # we have two levels, first one is org
+    orgs = os.listdir(top_dir)
+    for org in orgs:
+        try:
+            images = os.listdir(os.path.join(top_dir, org))
+        except:
+            continue
+
+        for image in images:
+            if not os.path.isfile(os.path.join(top_dir, org, image, '.singularity.d/labels.json')):
+                continue
+            identifier, tag = image.split(':')
+            identifier = org + '/' + identifier 
+            import_metadata(top_dir, identifier, tag)
+
+    # convert the dict to a list and sort it
+    for k, v in metadata.items():
+        md_sorted.append(v)
+    md_sorted.sort(key=sort_key)
+    
+    pprint(md_sorted)
+
+    # write the tables
+    table = ''
+    curr_category = None
+    for entry in md_sorted:
+        if entry['category'] != curr_category:
+            curr_category = entry['category']
+            table += '\n## {}\n\n'.format(entry['category'])
+        table += '\n??? info "{} ({})"\n'.format(entry['name'], entry['image_group'])
+        details = entry['description'] + "\n<br>\n<br>\nCVMFS Locations:<br>\n"
+        for tag in sorted(entry['tags']):
+            details += '<span style="white-space: nowrap">{}:{}</span><br>\n'.format(entry['cvmfs_path'], tag)
+        if 'url' in entry:
+            details += '<br>[Project Website]({})<br>\n'.format(entry['url'])
+        if 'definition_url' in entry:
+            details += '<br>[Container Definition]({})<br>\n'.format(entry['definition_url'])
+        table += textwrap.indent(details, 4 * ' ')
+
+    
+    # the page is a simple template
+    with open('container-list.template') as f:
+        template = Template(f.read())
+   
+    with open('../../documentation/htc_workloads/using_software/available-containers-list.md', 'w') as f:
+        f.write(template.substitute(table=table))
+    
+    with open('../../documentation/PATh/htc_workloads/containers/available-containers-list.md', 'w') as f:
+        f.write(template.substitute(table=table))
+
+if __name__ == '__main__':
+    main()
+
