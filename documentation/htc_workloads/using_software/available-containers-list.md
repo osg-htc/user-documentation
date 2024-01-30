@@ -1,8 +1,6 @@
 ---
 ospool:
   path: htc_workloads/using_software/available-containers-list.md
-path:
-  path: htc_workloads/containers/available-containers-list.md
 ---
 
 Existing OSPool-Supported Containers 
