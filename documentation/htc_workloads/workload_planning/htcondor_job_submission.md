@@ -14,8 +14,8 @@ The process of running computational workflows on OSG resources follows the foll
 <img src="../../../assets/overview_htcondor_job_submission.png" class= "img-fluid"/>
 
 **Terminology:**
-- **Access point** is where you login and stage your data, executables/scripts, and software to use in jobs. 
-- **HTCondor** is a job scheduling software that will run your jobs out on the OSPool execution points. All jobs must be submitted to HTCondor to run out on the OSPool. 
+- **Access point** is where you login and stage your data, executables/scripts, and software to use in jobs. <br>
+- **HTCondor** is a job scheduling software that will run your jobs out on the OSPool execution points. All jobs must be submitted to HTCondor to run out on the OSPool. <br>
 - The **Open Science Pool (OSPool)** is the set of resources your job runs on. It is composed of execution points, as well as other technologies, that compose the cpus, memory, and disk space that will run the computations of your jobs. 
 
 ## Run Jobs on the OSPool using HTCondor
