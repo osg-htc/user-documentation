@@ -65,7 +65,7 @@ nav:
     - Artificial Intelligence:
       - "scikit-learn": software_examples/ai/scikit-learn.md
       - "TensorFlow": software_examples/ai/tensorflow.md
-      - "Pytorch": software_examples/ai/tutorial-pytorch/README.md
+      - "PyTorch": software_examples/ai/tutorial-pytorch/README.md
     - Python:
       - "Run Python Scripts on the OSPool ": software_examples/python/manage-python-packages.md
       - "Scaling Up With HTCondor’s Queue Command": software_examples/python/tutorial-ScalingUp-Python/README.md
