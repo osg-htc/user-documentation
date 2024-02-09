@@ -30,4 +30,4 @@ The OSG User School want virtual in 2020 and 2021, which means that we were able
 * [OSG User School, July 27-31, 2015](https://opensciencegrid.org/user-school-2015/)
 * [OSG User School, July 7-10, 2014](https://opensciencegrid.org/user-school-2014/)
 
-![](./docs/assets/OSGUserSchool2023.jpg)
+
