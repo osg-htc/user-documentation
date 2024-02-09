@@ -21,10 +21,13 @@ The OSG User School want virtual in 2020 and 2021, which means that we were able
 * [OSG Virtual School Pilot, July 2020](https://osg-htc.org/virtual-school-pilot-2020/#materials/)
 
 ### Past OSG User Schools
-
+* [OSG User School, August 7-11, 2023](https://osg-htc.org/user-school-2023/) 
+* [OSG User School, July 25-29, 2022](https://osg-htc.org/user-school-2022/)
 * [OSG User School, July 15-19, 2019](https://opensciencegrid.org/user-school-2019/)
 * [OSG User School, July 9-13, 2018](https://opensciencegrid.org/user-school-2018/)
 * [OSG User School, July 17-21, 2017](https://opensciencegrid.org/user-school-2017/)
 * [OSG User School, July 25-29, 2016](https://opensciencegrid.org/user-school-2016/)
 * [OSG User School, July 27-31, 2015](https://opensciencegrid.org/user-school-2015/)
 * [OSG User School, July 7-10, 2014](https://opensciencegrid.org/user-school-2014/)
+
+![](./docs/assets/OSGUserSchool2023.jpg)
