@@ -6,7 +6,7 @@ ospool:
 Run Python Scripts on the OSPool 
 ====================================
 
-# Overview
+## Overview
 
 This guide will show you two examples of how to run jobs that use Python in the Open Science Pool.
 The first example will demonstrate how to submit a job that uses base Python.
@@ -15,7 +15,7 @@ how to install a custom set of Python packages to your home directory and how to
 
 Before getting started, you should know which Python packages you need to run your job.  
 
-# Running Base Python on the Open Science Pool
+## Running Base Python on the Open Science Pool
 
 ## Create a bash script to run Python 
 To submit jobs that use a module to run base Python, first create a bash executable - for
@@ -63,7 +63,7 @@ All together, the submit file will look something like this:
 Once everything is set up, the job can be submitted in the usual way, by running 
 the `condor_submit` command with the name of the submit file. 
 
-# Running Python Jobs That Use Additional Packages
+## Running Python Jobs That Use Additional Packages
 
 It's likely that you'll need additional Python packages that are not
 present in the base Python installations. This portion of the
@@ -147,7 +147,7 @@ As an example:
 
 	queue 1
 
-# Other Considerations
+## Other Considerations
 
 This guide mainly focuses on the nuts and bolts of running Python, but it's important 
 to remember that additional files needed for your jobs (input data, setting files, etc.) 
@@ -158,7 +158,7 @@ When you've prepared a real job submission, make sure to run a test job and then
 the `log` file for disk and memory usage; if you're using significantly more or less 
 than what you requested, make sure you adjust your requests. 
 
-# Getting Help
+## Getting Help
 
 For assistance or questions, please email the OSG Research Facilitation
 team  at [support@osg-htc.org](mailto:support@osg-htc.org) or visit the [help desk and community forums](http://support.opensciencegrid.org).

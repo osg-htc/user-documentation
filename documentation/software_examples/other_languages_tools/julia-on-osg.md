@@ -8,7 +8,7 @@ Using Julia on the OSPool
 
 
 
-# Overview
+## Overview
 
 This guide provides an introduction to running Julia code on the Open 
 Science Pool. The [Quickstart Instructions](#quickstart-instructions) provide 
@@ -25,7 +25,7 @@ maintains a [Julia container](../../../htc_workloads/using_software/available-co
 for creating a customized container with added packages. See 
 our [Docker and Singularity/Apptainer Guide](../../../htc_workloads/using_software/containers-docker/) for more details. 
 
-# Quickstart Instructions
+## Quickstart Instructions
 
 1. Download the precompiled Julia software from <https://julialang.org/downloads/>. 
 You will need the 64-bit, tarball compiled for general use on a Linux x86 system. The 
@@ -57,7 +57,7 @@ the job's executable:
     * For more details on the job submission, see the section 
     below: [Submit Julia Jobs](#submit-julia-jobs)
 
-# Install Julia Packages
+## Install Julia Packages
 
 If your work requires additional Julia packages, you will need to peform a one-time 
 installation of these packages within a Julia project. A copy of the project 
@@ -139,7 +139,7 @@ to compress this folder so that it is easier to copy to jobs.
 
 	$ tar -czf my-project.tar.gz my-project/
 
-# Submit Julia Jobs
+## Submit Julia Jobs
 
 To submit a job that runs a Julia script, create a bash 
 script and HTCondor submit file following the examples in this section. These 

@@ -8,7 +8,7 @@ ospool:
 ## Purpose
 This guide discusses how to run jobs on the OSPool using HTCondor.
 
-# OSPool Workflow Overview
+## OSPool Workflow Overview
 The process of running computational workflows on OSG resources follows the following outline: 
 
 <img src="../../../assets/overview_htcondor_job_submission.png" class= "img-fluid"/>

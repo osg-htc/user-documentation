@@ -8,7 +8,7 @@ Checkpointing Jobs
 
 
 
-# What is Checkpointing?
+## What is Checkpointing?
 
 Checkpointing is a technique that provides fault tolerance for a user's analysis. It consists of saving snapshots of a job's progress so the job can be restarted without losing its progress and having to restart from the beginning. We highly encourage checkpointing as a solution for jobs that will exceed the 10 hour maximum suggested runtime on the OSPool. 
 
@@ -19,20 +19,20 @@ There are two types of checkpointing: exit driven and eviction driven. In a vast
 Note that not all software, programs, or code are capable of creating checkpoint files and knowing how to resume from them. Consult the manual for your software or program to determine if it supports checkpointing features. Some manuals will refer this ability as "checkpoint" features, as the ability to "resume" mid-analysis if a job is interrupted, or as "checkpoint/restart" capabilities. Contact a Research Computing Facilitator if you would like help determining if your software, program, or code is able to checkpoint. 
 
 
-# Why Checkpoint? 
+## Why Checkpoint? 
 
 Checkpointing allows a job to automatically resume from approximately where it left off instead of having to start over if interrupted. This behavior is advantageous for jobs limited by a maximum runtime policy. It is also advantageous for jobs submitted to backfill resources with no runtime guarantee (i.e. jobs on the OSPool) where the compute resources may also be more prone to hardware or networking failures.
 
 For example, checkpointing jobs that are limited by a runtime policy can enable HTCondor to exit a job and automatically requeue it to avoid hitting the maximum runtime limit. By using checkpointing, jobs circumvent hitting the maximum runtime limit and can run for extended periods of time until the completion of the analysis. This behavior avoids costly setbacks that may be caused by loosing results mid-way through an analysis due to hitting a runtime limit. 
 
-# Process of Exit Driven Checkpointing
+## Process of Exit Driven Checkpointing
 
 Using exit driven checkpointing, a job is specified to time out after a user-specified amount of time with an exit code value of 85 (more on this below). Upon hitting this time limit, HTCondor transfers any checkpoint files listed in the submit file attribute `transfer_checkpoint_files` to a directory called `/spool`. This directory acts as a storage location for these files in case the job is interrupted. HTCondor then knows that jobs with exit code `85` should be automatically requeued, and will transfer the checkpoint files in `/spool` to your job's working directory prior to restarting your executable.
 
 The process of exit driven checkpointing relies heavily on the use of exit codes to determine the next appropriate steps for HTCondor to take with a job. In general, exit codes are used to report system responses, such as when an analysis is running, encountered an error, or successfully completes. HTCondor recognizes exit code `85` as checkpointing jobs and therefore will know to handle these jobs differently than non-checkpoiting jobs.
 
 
-# Requirements for Exit Driven Checkpointing
+## Requirements for Exit Driven Checkpointing
 
 Requirements for your code or software: 
 
@@ -45,7 +45,7 @@ Requirements for your code or software:
 Contact a Research Computing Facilitator for help determining if your job is capable of using checkpointing.  
 
 
-# Changes to the Submit File
+## Changes to the Submit File
 
 Several modifications to the submit file are needed to enable HTCondor's checkpointing feature. 
 
@@ -80,7 +80,7 @@ An example submit file for an exit driven checkpointing job looks like:
     queue 1
 
 
-# Example Wrapper Script for Checkpointing Job
+## Example Wrapper Script for Checkpointing Job
 
 As previously described, it may be necessary to use a wrapper script to tell your job when and how to exit as it checkpoints. An example of a wrapper script that tells a job to exit every 4 hours looks like: 
 
@@ -131,13 +131,13 @@ Let's take a moment to understand what each section of this wrapper script is do
 The ideal timeout frequency for a job is every 1-5 hours with a maximum of 10 hours. For jobs that checkpoint and timeout in under an hour, it is possible that a job may spend more time with checkpointing procedures than moving forward with the analysis. After 10 hours, the likelihood of a job being inturrupted on the OSPool is higher. 
 
 
-# Checking the Progress of Checkpointing Jobs
+## Checking the Progress of Checkpointing Jobs
 
 It is possible to investigate checkpoint files once they have been transferred to `/spool`.
 
 You can explore the checkpointed files in `/spool` by navigating to `/home/condor/spool` on an OSG Connect login node. The directories in this folder are the last four digits of a job's cluster ID with leading zeros removed. Sub folders are labeled with the process ID for each job. For example, to investigate the checkpoint files for `17870068.220`, the files in `/spool` would be found in folder `68` in a subdirectory called `220`.
 
 
-# More Information
+### More Information
 
 More information on checkpointing HTCondor jobs can be found in HTCondor's manual: https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html This documentation contains additional features available to checkpointing jobs, as well as additional examples such as a python checkpointing job.

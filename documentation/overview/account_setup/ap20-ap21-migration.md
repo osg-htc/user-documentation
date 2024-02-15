@@ -11,7 +11,7 @@ migrate your account or data during this time, you can likely still access
 the new access points, following these steps. Please contact the facilitation 
 team with any questions. 
 
-# Migration Steps
+## Migration Steps
 
 ## Step 1: Determine Your Assigned Access Point
 
@@ -43,9 +43,8 @@ updated [Data Overview](../../../htc_workloads/managing_data/overview/) and
 [OSDF](../../../htc_workloads/managing_data/osdf/) guides for more information, and contact the 
 Facilitation team with any questions. 
 
-# Get Help
+## Get Help
 
 We understand transitions may raise questions or difficulties. Should you require 
 any assistance, please feel free to reach out to us via email, or join one of 
-our [office hours sessions](../../../support_and_training/support/getting-help-from-RCFs/#virtual-office-hours )
-). 
+our [office hours sessions](../../../support_and_training/support/getting-help-from-RCFs/#virtual-office-hours ).

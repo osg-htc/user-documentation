@@ -11,7 +11,7 @@ There are two ways of using Conda on the OSPool: with [a tarball](../conda-tarba
 custom Apptainer/Singularity container. Either works well, but the container
 solution might be better if your Conda environment contains non-Python tools.
 
-# Overview
+## Overview
 When should you use Miniconda as an installation method in OSG?
 
  * Your software has specific conda-centric installation instructions.

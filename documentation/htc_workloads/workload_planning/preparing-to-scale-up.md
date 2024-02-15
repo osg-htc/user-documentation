@@ -6,13 +6,13 @@ ospool:
 Determining the Amount of Resources to Request in a Submit File 
 ====================================
 
-# Learning Objectives
+## Learning Objectives
 This guide discuses the following: 
 
 - Best practices for testing jobs and scaling up your analysis. 
 - How to determine the amount of resources (CPU, memory, disk space) to request in a submit file.
 
-# Overview
+## Overview
 
 Much of HTCondor's power comes from the ability to run a large number 
 of jobs simultaneously. To optimize your work with a high-throughput computing (HTC)
@@ -30,7 +30,7 @@ Pilot School lecture video:
 <a href="https://youtu.be/oMAvxsFJaw4">
     <img alt="2020 VSP dHTC with HTCondor" src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/2020-vsp-intro-dHTC-HTcondor-thumbnail.png" width="360" height="204"></a>
 
-# Always Start With Test Jobs
+## Always Start With Test Jobs
 
 Submitting test jobs is an important first step for optimizing 
 the resource requests of your jobs. We always recommend submitting a few (3-10)
@@ -56,7 +56,7 @@ and largest inputs to examine the range of resources that these jobs may need.
 - Give your test jobs and associated HTCondor `log`, `error`, `output`, 
 and `submit` files meaningful names so you know which results refer to which tests.
 
-# Requesting CPUs, Memory, and Disk Space in the HTCondor Submit File 
+## Requesting CPUs, Memory, and Disk Space in the HTCondor Submit File 
 
 In the HTCondor submit file, you must explicitly request the number of 
 CPUs (i.e. cores), and the amount of disk and memory that the job needs 
@@ -113,7 +113,7 @@ of these test jobs.**
 batch of jobs, we can assist you with creating dynamic memory requests 
 in your submit files.
 
-# Optimize Job Resource Requests For Subsequent Jobs
+## Optimize Job Resource Requests For Subsequent Jobs
 
 **As always, reviewing the HTCondor `log` file from past jobs is 
 a great way to learn about the resource needs of your jobs.** Optimizing the resources requested for each job may help your job run faster and achieve more throughput. 
@@ -141,7 +141,7 @@ For example:
     Alternatively, `condor_history` can be used to query details from 
     recently completed job submissions. HTCondor's history is continuously updating with information from new jobs, so `condor_history` is best performed shortly after the jobs of interest enter/leave the queue. 
 
-# Submit Multiple Jobs Using A Single Submit File
+## Submit Multiple Jobs Using A Single Submit File
 
 Once you have a single test job that completes successfully, the next 
 step is to submit a small batch of test jobs (e.g. 5 or 10 jobs) 
@@ -151,7 +151,7 @@ desired output, and do not conflict with each other when submitted together. Onc
 you are confident that the jobs will complete as desired, then scale up to submitting 
 the entire set of jobs.
 
-# Monitoring Job Status and Obtaining Run Information
+## Monitoring Job Status and Obtaining Run Information
 
 Gathering information about how, what, and where a job ran can be important for both troubleshooting and optimizing a workflow. The following commands are a great way to learn more about your jobs: 
 
@@ -175,7 +175,7 @@ Additional `condor_q` flags involved in optimizing and troubleshooting jobs incl
 
 More information about the commands and flags above can be found in the [HTCondor manual](https://htcondor.readthedocs.io/en/latest/). 
 
-## Avoid Exceeding Disk Quotas in /home and /protected
+### Avoid Exceeding Disk Quotas in /home and /protected
 
 To prevent errors or workflow interruption, be sure to estimate the 
 input and output needed for all of your concurrently running 
@@ -184,7 +184,7 @@ any new or modified files from the top-level directory where the job ran,
 back to your `/home` directory. Efficiently manage output by including steps 
 to remove intermediate and/or unnecessary files as part of your job. 
 
-# Workflow Management
+## Workflow Management
 
 To help manage complicated workflows, consider a workflow manager such 
 as HTCondor's built-in [DAGman](https://research.cs.wisc.edu/htcondor/dagman/dagman.html)
