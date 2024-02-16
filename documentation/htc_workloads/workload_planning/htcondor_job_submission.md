@@ -117,9 +117,12 @@ faster and are interrupted less, while shorter jobs can run across more of the O
 	
 3. Now, submit your job to HTCondor’s queue using `condor_submit`:
 
-```[alice@ap40]$ condor_submit hello-ospool.sub```
+```
+[alice@ap40]$ condor_submit hello-ospool.sub
+```
 
 The `condor_submit` command actually submits your jobs to HTCondor. If all goes well, you will see output from the `condor_submit` command that appears as:
+
 ```
 Submitting job(s)...
 3 job(s) submitted to cluster 36062145.
@@ -138,7 +141,8 @@ Alice ID: 3606214   4/14 12:31      2     1      _      3 36062145.0-2
 3 jobs; 2 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 ```
 
-You can run the `condor_q` command periodically to see the progress of your jobs. By default, `condor_q` shows jobs grouped into batches by batch name (if provided), or executable name. To show all of your jobs on individual lines, add the -nobatch option. 
+By default, `condor_q` shows jobs grouped into batches by batch name (if provided), or executable name. To show all of your jobs on individual lines, add the `-nobatch` option. 
+To see a live update of the status of your jobs, use the command `condor_watch_q`. (To exit the live view, use the keyboard shortcut `Ctrl`+`C`.)
 
 5. When your jobs complete after a few minutes, they'll leave the queue. If you do a listing of your `/home` directory with the command `ls -l`, you should see something like:
 
@@ -193,6 +197,7 @@ To remove a specific job, use `condor_rm <JobID, ClusterID, Username>`. Example:
 `[alice@ap40]$ condor_rm 845638.0`
 
 **B. Importance of Testing & Resource Optimization** 
+
 1. **Examine Job Success** Within the log file, you can see information about the completion of each job, including a system error code (as seen in "return value 0"). You can use this code, as well as information in your ".err" file and other output files, to determine what issues your job(s) may have had, if any.
 
 2. **Improve Efficiency** Researchers with input and output files greater than 1GB, should store them in their `/protected` directory instead of `/home` to improve file transfer efficiency. See our data transfer guides to learn more. 
