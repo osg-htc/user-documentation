@@ -7,7 +7,7 @@ Use scp To Transfer Files To and From Access Point
 ==================================================
 
 
-# Overview
+## Overview
 
 This tutorial assumes that you will be using a command line application 
 for performing file transfers instead of a GUI-based application such as WinSCP. 
@@ -26,7 +26,7 @@ the copy to end up. For example:
 Files on remote systems (like an OSG Access Point) are indicated using
 `username@machine:/path/to/file`.
 
-# Transfer Files To Access Point
+## Transfer Files To Access Point
 
 Let's say you have a file you wish to transfer named `my_file.txt`.
 
@@ -43,7 +43,7 @@ Large files (>100MB in size) can be uploaded to your `/public` directory also us
 
     $ scp my_large_file.gz username@apXX.xx.osg-htc.org:/public/username/
 
-## Transfer Directories To Access Point
+### Transfer Directories To Access Point
 
 To copy directories using `scp`, add the (recursive) `-r` option to your scp command.
 
@@ -51,7 +51,7 @@ For example:
 
     $ scp -r my_Dir username@apXX.xx.osg-htc.org:/home/username/
 
-## Transfer Files to Another Directory on the Access Point
+### Transfer Files to Another Directory on the Access Point
 
 If you are using the [OSDF]() to stage some of your files, you can upload files directly 
 to that path by replacing `/home/username` in the commands above. If I wanted to 
@@ -60,7 +60,7 @@ I would use the following command:
 
     $ scp my_file.txt username@ap20.uc.osg-htc.org:/ospool/ap20/data/username
 
-# Transfer Files From Access Point
+## Transfer Files From Access Point
 
 To transfer files from the access point back to your laptop or desktop you can use the `scp` 
 command as shown above, 
@@ -74,7 +74,7 @@ Again, you will **not** be logged into the access point when you perform this st
 You can download files from a different directory in the same way as described 
 above when uploading files. 
 
-# Transfer Files Directly Between Access Point and Another Server
+## Transfer Files Directly Between Access Point and Another Server
 
 `scp` can be used to transfer files between the OSG access point and another server that you have 
 `ssh` access to. This means that files don't have to first be transferred to your 

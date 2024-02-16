@@ -24,7 +24,7 @@ which to run your jobs.
 Lastly, there are some custom attributes you can add to your submit file to
 either focus on, or avoid, certain execution sites.
 
-# Requirements
+## Requirements
 
 The `requirements` attribute is formatted as an expression, so you can use logical
 operators to combine multiple requirements where `&&` is used for AND and
@@ -130,7 +130,7 @@ Below is a list of common attributes that you can include in your submit file `r
 - **GPUs_Capability** - For GPU jobs, specifies the GPUs' compute capability.
   See our [GPU guide](../../../htc_workloads/specific_resource/gpu-jobs/) for more details.
 
-# Specifying Sites / Avoiding Sites
+## Specifying Sites / Avoiding Sites
 
 To run your jobs on a list of specific execution sites, or avoid a set of 
 sites, use the `+DESIRED_Sites`/`+UNDESIRED_Sites` attributes in your job

@@ -8,7 +8,7 @@ Roadmap to HTC Workload Submission
 
 
 
-# Overview
+## Overview
 
 This guide lays out the steps needed to go from logging in to an OSG Access Point to running a full scale high throughput computing 
 (HTC) workload on OSG's [Open Science Pool (OSPool)](https://opensciencegrid.org/about/open_science_pool/). 
@@ -25,7 +25,7 @@ Learning how to get started on the OSG does not need to end with this document o
 our guides! Learn about our training opportunities and personal facilitation support 
 in the [Getting Help](#getting-help) section below. 
 
-# 1. Introduction to the OSPool and OSG Resources
+## 1. Introduction to the OSPool and OSG Resources
 
 The OSG's Open Science Pool is best-suited for computing work that can be run as many, independent 
 tasks, in an approach called "high throughput computing." For more information 
@@ -38,7 +38,7 @@ Learn more about the services provided by the OSG in this video:
 
 <!-- Diagram/cartoon showing how jobs are distributed to multiple sites across the U.S.-->
 
-# 2. Log on to an OSG Access Point
+## 2. Log on to an OSG Access Point
 
 If you have not done so, apply for an account [here](https://portal.osg-htc.org/application). A Research Computing Facilitator will contact you within one business day to arrange a meeting to discuss your computational goals and to activate your account. 
 
@@ -61,7 +61,7 @@ If your account is on the OSG Connect Access points (e.g., accounts on ap20.uc.o
 </details>
 
 
-# 3. Learn to Submit HTCondor Jobs
+## 3. Learn to Submit HTCondor Jobs
 
 Computational work is run on the OSPool by submitting it as “jobs” to the
 HTCondor scheduler. Jobs submitted to HTCondor are then scheduled and
@@ -72,14 +72,14 @@ how to submit basic HTCondor jobs.
 
 - [Overview: Submit OSPool Jobs using HTCondor](../../../htc_workloads/workload_planning/htcondor_job_submission/)
 
-# 4. Test a First Job
+## 4. Test a First Job
 
 After learning about the basics of HTCondor job submission, you will
 need to generate your own HTCondor job -- including the software needed
 by the job and the appropriate mechanism to handle the data. We
 recommend doing this using a single test job. 
 
-## Prepare your software
+### Prepare your software
 
 Software is an integral part of your HTC workflow.  Whether you’ve written it yourself, inherited it from your research group, or use common open-source packages, any required executables and libraries will need to be made available to your jobs if they are to run on the OSPool. 
 
@@ -98,7 +98,7 @@ Finally, here are some additional guides specific to some of the most common scr
 
 \*\*This is not a complete list.  Feel free to search for your software in our [Knowledge base](https://support.opensciencegrid.org/support/solutions/). 
 
-## Manage your data
+### Manage your data
 
 The data for your jobs will need to be transferred to each job that runs in the OSPool, 
 and HTCondor has built-in features for getting data to jobs. Our [Data Management](../../../htc_workloads/managing_data/overview/) guide
@@ -112,11 +112,11 @@ discussed the relevant approaches, when to use them, and where to stage data for
 ## Troubleshooting*
 -->
 
-## Assign the Appropriate Job Duration Category
+### Assign the Appropriate Job Duration Category
 
 Jobs running in the OSPool may be interrupted at any time, and will be re-run by HTCondor, unless a single execution of a job exceeds the allowed duration. Jobs expected to take longer than 10 hours will need to identify themselves as 'Long' according to our [Job Duration policies](../../../htc_workloads/workload_planning/jobdurationcategory/). Remember that jobs expected to take longer than 20 hours are not a good fit for the OSPool (see [Is the Open Science Pool for You?](../../../overview/account_setup/is-it-for-you/)) without implementing self-checkpointing (further below).
 
-# 5. Scale Up
+## 5. Scale Up
 
 After you have a sample job running successfully, you’ll want to scale
 up in one or two steps (first run several jobs, before running ALL of them). 
@@ -128,7 +128,7 @@ multiple jobs with the same submit file.
 
 <!-- TODO: Making jobs resilient* -->
 
-# 6. Special Use Cases
+## 6. Special Use Cases
 
 If you think any of the below applies to you, 
 please [get in touch](mailto:support@osg-htc.org)
@@ -143,7 +143,7 @@ and our facilitation team will be happy to discuss your individual case.
 	- Multiple CPUs: [Multicore Jobs](../../../htc_workloads/specific_resource/multicore-jobs/)
 	- Large Memory: [Large Memory Jobs](../../../htc_workloads/specific_resource/large-memory-jobs/)
 
-# Getting Help 
+## Getting Help 
 
 The OSG Facilitation team is here to help with questions and issues that come up as you work 
 through these roadmap steps. We are available via email, office hours, appointments, and offer 

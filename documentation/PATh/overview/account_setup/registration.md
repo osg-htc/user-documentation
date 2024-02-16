@@ -79,7 +79,7 @@ It is also possible to authenticate using an SSH key pair, if you prefer. Loggin
 Full details across multiple configurations are explained in our 
 [SSH Authentication guide](../../overview/account_setup/generate-add-sshkey.md).
 
-# Get Help
+## Get Help
 
 For questions regarding logging in or creating an account, contact us at  
 [support@path-cc.io](mailto:support@path-cc.io).

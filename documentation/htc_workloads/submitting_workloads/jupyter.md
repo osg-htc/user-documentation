@@ -11,7 +11,7 @@ The OSG team supports an OSPool Notebooks service, a Jupyter Lab interface that
 connects with an OSPool Access Point. An OSPool Notebook instance 
 can be used to manage files, submit jobs, summarize results and run tutorials. 
 
-# Quick Start
+## Quick Start
 
 Go to this link to start an OSPool Notebooks instance: 
 
@@ -29,7 +29,7 @@ these instances, see [Working with your OSPool Notebooks Instance](#working-with
 
 To log out of your session, go to the top left corner of the JupyterLab interface and click the "File" tab. Under this tab, click "Log Out".
 
-# Why use OSPool Notebooks? 
+## Why use OSPool Notebooks? 
 
 There are many benefits to using this service: 
 
@@ -50,9 +50,9 @@ above benefits as part of your full OSPool account. If you start with a guest ac
 and then apply for a full account, you can keep 
 using the same interface to work with the full OSPool. 
 
-# Working with your OSPool Notebooks Instance
+## Working with your OSPool Notebooks Instance
 
-## Needed Submit File Options
+### Needed Submit File Options
 
 When submitting jobs from the terminal in the OSPool Notebooks interface, make sure 
 to always include this option in your submit file: 
@@ -61,7 +61,7 @@ to always include this option in your submit file:
 
 This option is needed for jobs to start and run successfully. 
 
-## OSPool Notebook Experience
+### OSPool Notebook Experience
 
 There will be slight differences in your OSPool Notebook instance, depending 
 on whether you have an existing OSPool account and what Access Point it is on. Click on 
