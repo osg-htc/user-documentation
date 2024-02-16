@@ -14,8 +14,8 @@ research using the OSPool.
 A project typically corresponds to a research group headed by a single PI, but can 
 sometimes represent a long-term multi-institutional project or some other grouping. 
 
-You must be a member of a project before you can use OSG Connect to submit jobs. 
-The next section of this guide describes the process for joining an OSG Connect project. 
+You must be a member of a project before you can use an OSPool Access Point to submit jobs. 
+The next section of this guide describes the process for joining a project. 
 
 ## Default Behavior (one project)
 
@@ -38,8 +38,10 @@ the submit file:
 
 ## View Metrics For Your Project
 
-The project's resource usage appears in the OSG accounting system, [GRACC](https://gracc.opensciencegrid.org/d/000000033/osg-project-accounting?orgId=1). 
-You can see the main OSG Connect dashboard here: [Link to OSG Connect Dashboard](https://gracc.opensciencegrid.org/d/000000099/osg-connect-summary-osgconnect-net-submit-hosts-only?orgId=1)
+The project's resource usage appears in the OSG accounting system, [GRACC](https://gracc.opensciencegrid.org/d/000000074/gracc-home?orgId=1), 
+specifically, in this [OSPool Usage 
+Dashboard](https://gracc.opensciencegrid.org/d/000000077/open-science-pool-all-usage)
 
 At the top of that dashboard, there is a set of filters that you can use to examine 
-the number of hours used by your project, or your institution.
+the number of hours used by your project, or your institution. You can adjust the time 
+range displayed on the top right corner. 
