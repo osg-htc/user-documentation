@@ -1,6 +1,6 @@
 ---
 ospool:
-  path: htc_workloads/using_software/requirements.md
+  path: htc_workloads/specific_resource/requirements.md
 ---
 
 Control Where Your Jobs Run / Job Requirements 
@@ -129,6 +129,32 @@ Below is a list of common attributes that you can include in your submit file `r
 
 - **GPUs_Capability** - For GPU jobs, specifies the GPUs' compute capability.
   See our [GPU guide](../../../htc_workloads/specific_resource/gpu-jobs/) for more details.
+
+
+## Non-x86 Based Architechtures
+￼
+Within the computing community, there's a growing interest in exploring
+non-x86 architectures, such as ARM and PowerPC. As of now, the OSPool
+does not host resources based on these architectures; however, it
+is designed to accommodate them once available. The OSPool operates
+under a system where all tasks are configured to execute on the
+same architecture as the host from which they were submitted. This
+compatibility is ensured by HTCondor, which automatically adds the
+appropriate architecture to the job's requirements. By inspecting the
+classad of any given job, one would notice the inclusion of
+`(TARGET.Arch == "X86_64")` among its requirements, indicating the
+system's current architectural preference.
+
+If you do wish to specify a different architechure, just add it to
+your job requirements:
+
+    requirements = Arch == "PPC"
+
+You can get a list of current architechures by running:
+
+    $ condor_status -af Arch | sort | uniq
+    X86_64
+
 
 ## Specifying Sites / Avoiding Sites
 
