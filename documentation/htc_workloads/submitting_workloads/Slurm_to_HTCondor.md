@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/submitting_workloads/Slurm_to_HTCondor.md
 ---
 
-Convert your workflow from Slurm to HTCondor
+Convert Your Workflow From Slurm to HTCondor
 ============================================
 
 
@@ -37,13 +37,13 @@ the OSPool is 10 hours.
 
 A sample Slurm script is presented below with the equivalent HTCondor transformation.    
 
-## Submitting One Job
+### Submitting One Job
 
 The scenario here is submitting one Matlab job, requesting 
 8 cores, 16GB of memory (or RAM), planning 
 to run for 20 hours, specifying where to save standard output and error
 
-### Slurm Example
+#### Slurm Example
 
 <pre>
 #!/bin/bash
@@ -60,7 +60,7 @@ module load matlab/r2020a
 matlab -nodisplay -r "matlab_program(input_arguments),quit"
 </pre>
 
-### HTCondor Example
+#### HTCondor Example
 
 <pre>
 +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-matlab-runtime:R2020a"
@@ -97,12 +97,12 @@ and standard error.
  space for the job's working directory, as it is not 
  running on a shared file system. 
 
-## Submit Multiple Jobs
+### Submit Multiple Jobs
 
 Using the same base example, what options are needed if you wanted to run multiple 
 copies of the same basic job? 
 
-### Slurm Example
+#### Slurm Example
 
 In Slurm, multiple tasks are expressed as an array job: 
 
@@ -114,7 +114,7 @@ module load matlab/r2020a
 matlab -nodisplay -r "matlab_program(input_arguments,$SLURM_ARRAY_TASK_ID),quit"
 </pre>
 
-### HTCondor Example
+#### HTCondor Example
 
 In HTCondor, multiple tasks are submitted as many independent jobs. The 
 `$(ProcID)` variable takes the place of `$SLURM_ARRAY_TASK_ID` above. 

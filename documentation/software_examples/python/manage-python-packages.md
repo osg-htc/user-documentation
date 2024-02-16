@@ -17,7 +17,7 @@ Before getting started, you should know which Python packages you need to run yo
 
 ## Running Base Python on the Open Science Pool
 
-## Create a bash script to run Python 
+### Create a bash script to run Python 
 To submit jobs that use a module to run base Python, first create a bash executable - for
 this example we'll call it `run_py.sh` - which will run our Python script called `myscript.py`.  
 
@@ -31,7 +31,7 @@ For example, `run_py.sh`:
 > If you need to use Python 2, 
 > replace the `python3` above with `python2`.
 
-## Create an HTCondor submit file
+### Create an HTCondor submit file
 
 In order to submit `run_py.sh` as part of a job, we need to create an HTCondor 
 submit file. This should include the following: 
@@ -70,7 +70,7 @@ present in the base Python installations. This portion of the
 guide describes how to install your packages to a custom directory and 
 then include them as part of your jobs. 
 
-## Install Python packages
+### Install Python packages
 
 While connected to your login node, start the base Singularity container that has a 
 copy of Python inside: 
@@ -109,7 +109,7 @@ directory, as follows:
 
 	$ tar -czf my_env.tar.gz my_env
 
-## Create executable script to use installed packages
+### Create executable script to use installed packages
 In addition to loading the appropriate Python module, we will need to add a few
 steps to our bash executable to set-up the virtual environment we
 just created. That will look something like this: 
@@ -124,7 +124,7 @@ just created. That will look something like this:
 	python3 myscript.py
 
 
-## Modify the HTCondor submit file to transfer Python packages
+### Modify the HTCondor submit file to transfer Python packages
 The submit file for this job will be similar to the base Python job submit file shown above
 with one addition - we need to include `my_env.tar.gz` in the list of files specified by `transfer_input_files`.
 As an example: 

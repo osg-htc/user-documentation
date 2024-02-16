@@ -6,8 +6,6 @@ ospool:
 Checkpointing Jobs 
 ====================================
 
-
-
 ## What is Checkpointing?
 
 Checkpointing is a technique that provides fault tolerance for a user's analysis. It consists of saving snapshots of a job's progress so the job can be restarted without losing its progress and having to restart from the beginning. We highly encourage checkpointing as a solution for jobs that will exceed the 10 hour maximum suggested runtime on the OSPool. 
@@ -138,6 +136,6 @@ It is possible to investigate checkpoint files once they have been transferred t
 You can explore the checkpointed files in `/spool` by navigating to `/home/condor/spool` on an OSG Connect login node. The directories in this folder are the last four digits of a job's cluster ID with leading zeros removed. Sub folders are labeled with the process ID for each job. For example, to investigate the checkpoint files for `17870068.220`, the files in `/spool` would be found in folder `68` in a subdirectory called `220`.
 
 
-### More Information
+## More Information
 
 More information on checkpointing HTCondor jobs can be found in HTCondor's manual: https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html This documentation contains additional features available to checkpointing jobs, as well as additional examples such as a python checkpointing job.

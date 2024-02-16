@@ -64,7 +64,7 @@ installation of these packages within a Julia project. A copy of the project
 can then be saved for use in subsequent job submissions. For more details, 
 please see Julia's documentation at [Julia Pkg.jl](https://julialang.github.io/Pkg.jl).
 
-## Download Julia and set up a "project"
+### Download Julia and set up a "project"
 
 If you have not already downloaded a copy of Julia, download the 
 precompiled Julia software from <https://julialang.org/downloads/>. 
@@ -96,7 +96,7 @@ You can choose whatever name to use for this directory \-- if you have
 different projects that you use for different jobs, you could
 use a more descriptive name than "my-project".
 
-## Install Packages
+### Install Packages
 
 We will now use Julia to install any needed packages to the project directory 
 we created in the previous step. 
