@@ -17,7 +17,7 @@ single submit file.**
 
 *Why submit multiple jobs with a single submit file?*
 
-As described in our [Policies for using an OSG Connect submit server](../../../overview/references/policy/), 
+As described in our [Policies for using an OSPool Access Point](../../../overview/references/policy/), 
 users should submit multiple jobs using a single submit file, or where applicable, as few 
 separate submit files as needed. Using HTCondor multi-job submission features is more 
 efficient for users and will help ensure reliable operation of the the login nodes.
@@ -25,7 +25,7 @@ efficient for users and will help ensure reliable operation of the the login nod
 Many options exist for streamlining your submission of multiple jobs, 
 and this guide only covers a few examples of what is truly possible with 
 HTCondor. If you are interested in a particular approach that isn't described here, 
-please contact [OSG Connect support](mailto:support@osg-htc.org) and we will 
+please contact [OSG Facilitators](mailto:support@osg-htc.org) and we will 
 work with you to identify options to meet the needs of your work.
 
 ## Submit Multiple Jobs Using `queue`

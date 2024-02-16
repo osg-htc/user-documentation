@@ -133,7 +133,9 @@ The ideal timeout frequency for a job is every 1-5 hours with a maximum of 10 ho
 
 It is possible to investigate checkpoint files once they have been transferred to `/spool`.
 
-You can explore the checkpointed files in `/spool` by navigating to `/home/condor/spool` on an OSG Connect login node. The directories in this folder are the last four digits of a job's cluster ID with leading zeros removed. Sub folders are labeled with the process ID for each job. For example, to investigate the checkpoint files for `17870068.220`, the files in `/spool` would be found in folder `68` in a subdirectory called `220`.
+You can explore the checkpointed files in `/spool` by navigating to `/home/condor/spool` on an OSPool 
+Access Point. The 
+directories in this folder are the last four digits of a job's cluster ID with leading zeros removed. Sub folders are labeled with the process ID for each job. For example, to investigate the checkpoint files for `17870068.220`, the files in `/spool` would be found in folder `68` in a subdirectory called `220`.
 
 
 ## More Information

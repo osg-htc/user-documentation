@@ -185,16 +185,6 @@ You can transfer data using `scp`, `rsync`, or other common Unix tools. See <a h
 </details>
     
 <details>
-<summary>How public is /public?</summary>
-<br>
-The data under your `/public` location is discoverable and readable by anyone in the world. Data in `/public` is made public over http/https (via https://stash.osgconnect.net/public/) and mirrored to `/cvmfs/stash.osgstorage.org/osgconnect/public/` which is mounted on a large number of systems around the world.
-<br>
-<br>  
-Store data in `/protected` or `/home` if you do not want it to be publicly accessible. 
-<br>
-</details>
-  
-<details>
 <summary>Is there any support for private data?</summary>
 <br>
 Data stored in `/protected` and in `/home` is not publically accessible. <b>Sensitive data, such as HIPAA data, is not allowed to be uploaded or analyzed using OSG resources.</b>

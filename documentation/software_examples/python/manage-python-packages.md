@@ -38,7 +38,7 @@ submit file. This should include the following:
 
 * `run_py.sh` specified as the executable    
 * use `transfer_input_files` to bring our Python script `myscript.py`to wherever the job runs   
-* include a standard OSG Connect Singularity image that has Python installed. 
+* include a standard container image that has Python installed. 
 
 All together, the submit file will look something like this: 
 
