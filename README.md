@@ -259,4 +259,4 @@ The steps to update the tutorial submodules are:
 3. In the blue banner is a "Run workflow" dropdown button. Click the dropdown and then click "Run Workflow" (make sure the action is run on the main branch).
 4. After action has completed, compare `update-submodules-reserved` branch against `main` ([link](https://github.com/osg-htc/user-documentation/compare/main...update-submodules-reserved)), where you should see the changes you made to the tutorial(s).
 5. Click on the "Create Pull Request" button to create the pull request.
-6. Merge the pull request.
+6. Merge the pull request. DO NOT DELETE `update-submodules-reserved` branch!!
