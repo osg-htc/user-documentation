@@ -25,7 +25,7 @@ For example,
 		$ wget https://download.java.net/java/GA/jdk17.0.1/2a2082e5a09d4267845be086888add4f/12/GPL/openjdk-17.0.1_linux-x64_bin.tar.gz
 
 The downloaded file should end up in your 
-home directory on the OSG Connect access point. 
+home directory on the OSPool access point. 
 
 2. **Include Java in Input Files.**  Add the downloaded tar file to the `transfer_input_files` line of your
 submit file, along with the `.jar` file and any other input files the job needs:
