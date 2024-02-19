@@ -206,7 +206,9 @@ Read more [above](#adding-it-to-the-navigation)
 
 #### One top level header per page
 
-Use only one h1 ( # value ) to indicate the title. All other header elements should be >= h2 ( ##... value ).
+Use only one h1 ( # value ) to indicate the title. All other header elements should be >= h2 ( ##... value ). 
+This is important because the nesting of header values is used to parse the information hierarchy on the page 
+by search engines. If everything is a h1, then nothing is a h1.
 
 **Good**
 ```
