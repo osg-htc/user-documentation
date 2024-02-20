@@ -48,5 +48,5 @@ up a time to meet!
 
 The following slides provide an overview about the PATh Facility: why it exists, good use cases, and how to get started: 
 
-* [Slides]([The most recent version of our *OSG Basics* materials are here: ](https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7)
+* [Slides]([The most recent version of our *Introduction to the PATh Facility* materials are here: ](https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7)
 
