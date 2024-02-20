@@ -37,11 +37,11 @@ For a calendar version of these events see:
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com&ctz=America%2FChicago)
 * [Download and add to your calendar app](https://calendar.google.com/calendar/ical/c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com/public/basic.ics)
 
-# Materials
+## Materials
 
 All of our training materials are public, and with recent video recordings available:
 
-## OSPool Basics: Get Running on the OSPool
+### OSPool Basics: Get Running on the OSPool
 
 The most recent version of our *OSG Basics* materials are here: 
 
@@ -49,7 +49,13 @@ The most recent version of our *OSG Basics* materials are here:
 * [Wordcount Frequency Tutorial](../../../software_examples/python/tutorial-wordfreq/)
 * [Interactive Lesson](https://github.com/OSGConnect/lesson-intro-ospool)
 
-## DAGMan: HTCondor's Workflow Manager
+### Learn About the PATh Facility
+
+The most recent version of our *PATh Facility* materials are here: 
+
+* [Slides](https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7)
+
+### DAGMan: HTCondor's Workflow Manager
 
 The most recent version of these training materials are here:
 * [Slides](https://docs.google.com/presentation/d/1FbTo_18LL03D41v6DYOfOOooNAy06Vzm/edit?usp=drive_web&ouid=114892809919385436869&rtpof=true)
