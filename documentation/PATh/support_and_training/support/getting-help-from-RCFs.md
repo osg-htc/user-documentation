@@ -38,12 +38,15 @@ from an RCF.
 
 Click [here](https://docs.google.com/forms/d/e/1FAIpQLSd3K78Xx1Vo-KjqW_2y0YKcUMXrEsKXWk3I1Aww64RL22QpnQ/viewform) to sign-in for office hours, once you arrive in the room. 
 
-
 ## Make an Appointment
 
 We are happy to arrange meetings outside of designated Office Hours, per
 your preference. Simply email us at support@path-cc.io, and we will set
 up a time to meet!
 
+## Learn About the PATh Facility
 
+The following slides provide an overview about the PATh Facility: why it exists, good use cases, and how to get started: 
+
+* [Slides]([The most recent version of our *Introduction to the PATh Facility* materials are here: ](https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7)
 
