@@ -37,7 +37,6 @@ nav:
       - "Use scp To Transfer Files To and From OSG Managed Access Points": htc_workloads/managing_data/scp.md
     - Using Software:
       - "Overview: Software on the Open Science Pool": htc_workloads/using_software/software-overview.md
-      - "Control Where Your Jobs Run/Job Requirements": htc_workloads/using_software/requirements.md
       - "Compiling Software": htc_workloads/using_software/compiling-applications.md
       - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
       - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
@@ -47,6 +46,7 @@ nav:
       - "Monitor and Review Jobs With condor_q and condor_history": htc_workloads/submitting_workloads/monitor_review_jobs.md  
       - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md
     - Considerations For Specific Resource Needs:
+      - "Control Where Your Jobs Run/Job Requirements": htc_workloads/specific_resource/requirements.md
       - "GPU Jobs": htc_workloads/specific_resource/gpu-jobs.md
       - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing-on-OSPool.md
       - "Large Memory Jobs": htc_workloads/specific_resource/large-memory-jobs.md
