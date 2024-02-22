@@ -6,7 +6,7 @@ path:
 Easily Submit Multiple Jobs 
 ====================================
 
-# Overview
+## Overview
 
 HTCondor has several convenient features for streamlining high-throughput 
 job submission. This guide provides several examples 
@@ -19,7 +19,7 @@ Many options exist for streamlining your submission of multiple jobs,
 and this guide only covers a few examples of what is truly possible with 
 HTCondor.
 
-# Submit Multiple Jobs Using `queue`
+## Submit Multiple Jobs Using `queue`
 
 All HTCondor submit files require a `queue` attribute (which must also be 
 the last line of the submit file). By default, `queue` will submit one job, but 
