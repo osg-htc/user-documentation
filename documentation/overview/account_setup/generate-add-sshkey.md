@@ -81,7 +81,7 @@ can use a key without a passphrase, but this is not recommended.
 
 7. Right-click again in the same text field and choose Copy.
 
-![alt text](https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/puttygen_ssh_key.png "PuttyGen Window")
+![alt text](/images/putty_ssh.png "PuttyGen Window")
 
 ## Next Steps
 

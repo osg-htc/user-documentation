@@ -29,7 +29,7 @@ This talk (originally presented at HTCondor Week 2020) gives a good introduction
 to DAGMan and its most useful features: 
 
 <a href="https://www.youtube.com/watch?v=1MvVHxRs7iU">
-<img alt="DAGMan Talk" src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/dagman-talk-screenshot.png" width="360" height="204">
+<img alt="DAGMan Talk" src="/images/dagman-talk-screenshot.png" width="360" height="204">
 </a>
 
 DAGMan can be a powerful tool for creating large and complex HTCondor workflows. 
