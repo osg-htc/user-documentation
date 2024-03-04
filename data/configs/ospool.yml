@@ -24,7 +24,7 @@ nav:
     - How to Use the OSPool:
       - "Roadmap to HTC Workload Submission": htc_workloads/workload_planning/roadmap.md
     - HTC Workload Planning, Testing, and Scaling Up:
-      - "Overview: Submit OSPool Jobs using HTCondor": htc_workloads/workload_planning/htcondor_job_submission.md
+      - "Overview: Submit Jobs to the OSPool using HTCondor": htc_workloads/workload_planning/htcondor_job_submission.md
       - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
       - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
       - "Convert your workflow from Slurm to HTCondor": htc_workloads/submitting_workloads/Slurm_to_HTCondor.md
