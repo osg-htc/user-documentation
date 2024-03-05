@@ -3,10 +3,10 @@ ospool:
   path: htc_workloads/workload_planning/htcondor_job_submission.md
 ---
 
-# Overview: Submit OSPool Jobs using HTCondor
+# Overview: Submit Jobs to the OSPool using HTCondor
 
 ## Purpose
-This guide discusses how to run jobs on the OSPool using HTCondor.
+This guide discusses the mechanics of creating and submitting jobs to the OSPool using HTCondor.
 
 ## OSPool Workflow Overview
 The process of running computational workflows on OSG resources follows the following outline: 
@@ -14,6 +14,7 @@ The process of running computational workflows on OSG resources follows the foll
 <img src="../../../assets/overview_htcondor_job_submission.png" class= "img-fluid"/>
 
 **Terminology:**
+
 - **Access point** is where you login and stage your data, executables/scripts, and software to use in jobs. <br>
 - **HTCondor** is a job scheduling software that will run your jobs out on the OSPool execution points. All jobs must be submitted to HTCondor to run out on the OSPool. <br>
 - The **Open Science Pool (OSPool)** is the set of resources your job runs on. It is composed of execution points, as well as other technologies, that compose the cpus, memory, and disk space that will run the computations of your jobs. 
@@ -144,7 +145,7 @@ To check on the status of your jobs in the queue, run the following command:
 The output of `condor_q` should look like this:
 -- Schedd: ap40.uw.osg-htc.org : <128.104.101.92:9618?... @ 04/14/23 15:35:17
 OWNER     BATCH_NAME     SUBMITTED   DONE   RUN    IDLE  TOTAL JOB_IDS
-Alice ID: 3606214   4/14 12:31      2     1      _      3 36062145.0-2
+Alice ID: 3606214       4/14 12:31      2     1       _      3 36062145.0-2
 
 3 jobs; 2 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 ```

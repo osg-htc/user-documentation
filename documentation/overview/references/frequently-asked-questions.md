@@ -163,7 +163,7 @@ Every job submitted from an OSG-managed access point must be labeled with a Job 
 Jobs with single executions longer than 20 hours in tests on the OSPool should not be submitted, without self-checkpointing.  
 <br>
 <br>
-Details on how to specify +JobDurationCategory can be found in our <a href="https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/htcondor_job_submission/">Overview: Submit OSPool Jobs using HTCondor</a> and <a href="https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/roadmap/">Roadmap to HTC Workload Submission</a> guides. 
+Details on how to specify +JobDurationCategory can be found in our <a href="https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/htcondor_job_submission/">Overview: Submit Jobs to the OSPool using HTCondor</a> and <a href="https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/roadmap/">Roadmap to HTC Workload Submission</a> guides. 
 <br>
 </details>
 

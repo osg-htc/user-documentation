@@ -70,7 +70,7 @@ Before submitting your own computational work, it is important to
 understand how HTCondor job submission works. The following guides show
 how to submit basic HTCondor jobs.
 
-- [Overview: Submit OSPool Jobs using HTCondor](../../../htc_workloads/workload_planning/htcondor_job_submission/)
+- [Overview: Submit Jobs to the OSPool using HTCondor](../../../htc_workloads/workload_planning/htcondor_job_submission/)
 
 ## 4. Test a First Job
 
