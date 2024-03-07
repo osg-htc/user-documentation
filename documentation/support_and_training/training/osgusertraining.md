@@ -47,41 +47,52 @@ All of our training materials are public and provided below:
 <b>Learning Objectives</b>
 <br>
 Topics covered in this workshop include: 
-	1. An Introduction to OSG Services and the OSPool	
-	2. Basics of HTCondor job submission
-	3. Hands-on Practice Submitting HTCondor Jobs 
-<br>
-<br>
+	<ol>
+	<li>An introduction to OSG services and the OSPool</li>	
+	<li>Basics of HTCondor job submission</li> 
+	<li>Hands-on practice submitting HTCondor jobs</li> 
+	</ol>
 <b>Prerequisites/Audience</b>
 <br>
 There are no prerequisites for this workshop. This workshop is designed for new HTCondor and OSPool users. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1z-f81xtk_ZXeJcA1kX60JoScXdGfe-xgsB9g5YemrqI/edit#slide=id.g10662d3fe4f_0_0),
-* [Video](https://www.youtube.com/watch?v=D14eMrkZ2gQ)
-* [Wordcount Frequency Tutorial](../../../software_examples/python/tutorial-wordfreq/)
-* [Interactive Lesson](https://github.com/OSGConnect/lesson-intro-ospool)	
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1z-f81xtk_ZXeJcA1kX60JoScXdGfe-xgsB9g5YemrqI/edit#slide=id.g10662d3fe4f_0_0">Presentation Slides</a> </li>
+	<li> <a href="https://www.youtube.com/watch?v=D14eMrkZ2gQ">Video Recording</a></li>
+	<li> <a href="https://github.com/OSGConnect/tutorial-wordfreq">Wordcount Frequency Tutorial</a></li>
+	<li> <a href="https://github.com/OSGConnect/lesson-intro-ospool">Interactive Lesson</a> </li>	
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Winter 2023
 <br>
 </details>
+
+
 
 <details>
 <summary>[Webinar] Learn About the PATh Facility</summary>
 <br>
 <b>Learning Objectives</b>
 <br>
-The PATh Facility provides dedicated throughput computing capacity to NSF-funded researchers for longer and larger jobs. This training will describe its features and how to get started. **If you have found your jobs need more resources (cores, memory, time, data) than is typically available in the OSPool, this resource might be for you!** 
+The PATh Facility provides dedicated throughput computing capacity to NSF-funded researchers for longer and larger jobs. This training will describe its features and how to get started. <b>If you have found your jobs need more resources (cores, memory, time, data) than is typically available in the OSPool, this resource might be for you!</b>
 <br>
 <br>
 <b>Prerequisites/Audience</b>
 <br>
 There are no prerequisites for this workshop. 	
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7)
 <br>
-**Materials Last Updated**
+<br>
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Winter 2023
 <br>
 </details>
@@ -99,11 +110,15 @@ Presented by an HTCondor DAGMan developer, this workshop is designed for researc
 <br>
 A basic understanding of HTCondor job submission and of an HTCondor submit file is highly recommended for this workshop. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1FbTo_18LL03D41v6DYOfOOooNAy06Vzm/edit?usp=drive_web&ouid=114892809919385436869&rtpof=true)
-* [DAGMan Tutorial](https://github.com/OSGConnect/tutorial-dagman-intro)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1FbTo_18LL03D41v6DYOfOOooNAy06Vzm/edit?usp=drive_web&ouid=114892809919385436869&rtpof=true">Presentation Slides</a></li>
+	<li> <a href="https://github.com/OSGConnect/tutorial-dagman-intro">DAGMan Tutorial</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Winter 2023
 <br>
 </details>
@@ -121,11 +136,16 @@ This workshop will present useful HTCondor features to help researchers automati
 <br>
 There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1auCJfqzc0ZckeTr-QCILaDizsKPsPTli0wTCbluSswY), [Video](https://www.youtube.com/watch?v=0JQ8or3lue0&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=6&ab_channel=OSG)
-* [Wordcount Frequency Tutorial](https://github.com/OSGConnect/tutorial-organizing)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1auCJfqzc0ZckeTr-QCILaDizsKPsPTli0wTCbluSswY">Presentation Slides</a></li>
+	<li> <a href="https://www.youtube.com/watch?v=0JQ8or3lue0&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=6&ab_channel=OSG">Video Recording</a></li>
+	<li> <a href="https://github.com/OSGConnect/tutorial-organizing">Wordcount Frequency Tutorial</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Summer 2023
 <br>
 </details>
@@ -143,11 +163,15 @@ This workshop is designed to introduce software containers such as Docker, Appta
 <br>
 There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing)
-* [Video](https://www.youtube.com/watch?v=vu5EZccxgdo&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=5&ab_channel=OSG)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing">Presentation Slides</a> </li>
+	<li> <a href="https://www.youtube.com/watch?v=vu5EZccxgdo&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=5&ab_channel=OSG">Video Recording</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Fall 2023
 <br>
 </details>
@@ -165,11 +189,15 @@ This workshop is designed to introduce Pegasus Workflow Management System, a use
 <br>
 There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1XQjkq8pxbrXvMYU7zDihkgk2bOy4FNXHINWkhmkNqHQ/edit?usp=sharing)
-* [Video](https://www.youtube.com/watch?v=2NOreG8SS6E&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=7&ab_channel=OSG)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1XQjkq8pxbrXvMYU7zDihkgk2bOy4FNXHINWkhmkNqHQ/edit?usp=sharing">Presentation Slides</a></li>
+	<li> <a href="https://www.youtube.com/watch?v=2NOreG8SS6E&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=7&ab_channel=OSG">Recorded Video</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Fall 2023
 <br>
 </details>
@@ -187,14 +215,21 @@ This workshop is designed to introduce concepts pertaining to software portabili
 <br>
 There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1Ym5piDoEkDPpInnyYgeqUkV-VWQoBTkI0RXJNG7_LK4/edit#slide=id.g120009588c4_0_0), 
-* [List of Commands](https://docs.google.com/document/d/1-lfpv7AO7cLZ2yiZQIuiQbb1lyBqh2CB5Ix51cKZ1bk/edit#)
-* Tutorials (used in part)
-    * [Using Julia on the OSPool](../../../software_examples/other_languages_tools/julia-on-osg/)
-    * [High Throughput BWA Read Mapping](../../../software_examples/bioinformatics/tutorial-bwa/)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1Ym5piDoEkDPpInnyYgeqUkV-VWQoBTkI0RXJNG7_LK4/edit#slide=id.g120009588c4_0_0">Presentation Slides</a></li>
+	<li> <a href="https://docs.google.com/document/d/1-lfpv7AO7cLZ2yiZQIuiQbb1lyBqh2CB5Ix51cKZ1bk/edit#">List of Commands</a></li>
+	<li> Tutorials (used in part)
+	<ul>
+   	<li> <a href="https://github.com/OSGConnect/tutorial-julia">Using Julia on the OSPool</a></li>
+    	<li> <a href="https://github.com/OSGConnect/tutorial-bwa">High Throughput BWA Read Mapping</a></li>
+	</ul>
+	</li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Summer 2023
 <br>
 </details>
@@ -212,10 +247,14 @@ This workshop is designed to introduce researchers to the OSPool's new Jupyter i
 <br>
 There are no prerequisites for this workshop.
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1UCpS1iQ3tTaIIdm2OaF1kYbKaAsFz-vN/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1UCpS1iQ3tTaIIdm2OaF1kYbKaAsFz-vN/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Fall 2023
 <br>
 </details>
@@ -233,10 +272,14 @@ This workshop is designed to show the process of implementing and scaling out a 
 <br>
 There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1_6uI7qG2nHHOynal8tinrHy2MCTkTbac/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1_6uI7qG2nHHOynal8tinrHy2MCTkTbac/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Summer 2023
 <br>
 </details>
@@ -254,10 +297,14 @@ This workshop is designed to introduce researchers to helpful HTCondor tools for
 <br>
 There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1AWAOmtwJ68KBSJPYtp6agnB2d-2iTCG5/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1AWAOmtwJ68KBSJPYtp6agnB2d-2iTCG5/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Spring 2023
 <br>
 </details>
@@ -275,10 +322,14 @@ This workshop is designed for researchers interested in learning about using spe
 <br>
 There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
 <br>
-**Available Materials**
-* [Presentation Slides](https://docs.google.com/presentation/d/1QZnX-VeXHdqWcmgF8EiMac_nl4hHXPvxCvCH-vxBySU/edit?usp=sharing)
 <br>
-**Materials Last Updated**
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1QZnX-VeXHdqWcmgF8EiMac_nl4hHXPvxCvCH-vxBySU/edit?usp=sharing">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
 Spring 2023
 <br>
 </details>
