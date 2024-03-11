@@ -8,7 +8,7 @@ Using conda to Run Python on the PATh Facility
 
 The Anaconda/Miniconda distribution of Python is a common tool for installing and managing Python-based software and other tools. 
 
-# Overview
+## Overview
 
 When should you use Miniconda as an installation method in the PATh Facility?
 * Your software has specific conda-centric installation instructions.
@@ -25,7 +25,7 @@ To create the smallest, most portable Python installation possible, we recommend
 
 To use a Miniconda installation on the PATh Facility, create your installation environment on the Access Point and send a zipped version to your jobs.
 
-# Install Miniconda and Package for Jobs
+## Install Miniconda and Package for Jobs
 
 This section of the guide goes through the steps needed to create a software installation inside Miniconda and then use a tool called `conda pack` to package it up for running jobs.
 
@@ -130,7 +130,7 @@ In your submit file, make sure to have the following:
 * Your executable should be the the bash script you created in [step 5](#5-create-a-job-executable).
 * Remember to transfer your Python script and the environment `tar.gz` file to the job. If the `tar.gz` file is larger than 100MB, please use the `stash:///` file delivery mechanism as described above. 
       
-# Specifying Exact Dependency Versions
+## Specifying Exact Dependency Versions
 
 An important part of improving reproducibility and consistency between runs is to ensure that you use the correct/expected versions of your dependencies.
 
