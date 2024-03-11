@@ -34,7 +34,7 @@ see [Is the Open Science Pool for You?](../../../overview/account_setup/is-it-fo
 
 Learn more about the services provided by the OSG in this video: 
 
-<a href="https://www.youtube.com/watch?v=5FMAFxROGv0"><img alt="OSG Introduction" src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/osg-intro-video-screenshot.png" width="360" height="204"></a>
+<a href="https://www.youtube.com/watch?v=5FMAFxROGv0"><img alt="OSG Introduction" src="/images/osg-intro-video-screenshot.png" width="360" height="204"></a>
 
 <!-- Diagram/cartoon showing how jobs are distributed to multiple sites across the U.S.-->
 

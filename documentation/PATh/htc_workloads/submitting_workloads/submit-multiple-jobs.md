@@ -6,7 +6,7 @@ path:
 Easily Submit Multiple Jobs 
 ====================================
 
-# Overview
+## Overview
 
 HTCondor has several convenient features for streamlining high-throughput 
 job submission. This guide provides several examples 
@@ -19,7 +19,7 @@ Many options exist for streamlining your submission of multiple jobs,
 and this guide only covers a few examples of what is truly possible with 
 HTCondor.
 
-# Submit Multiple Jobs Using `queue`
+## Submit Multiple Jobs Using `queue`
 
 All HTCondor submit files require a `queue` attribute (which must also be 
 the last line of the submit file). By default, `queue` will submit one job, but 
@@ -43,7 +43,7 @@ with user-defined variables. Additional examples and use cases are provided furt
 
 These `queue` options are also described in the following video from HTCondor Week 2020: 
 <a href="https://www.youtube.com/watch?v=m7dQChJH5LU">
-	<img alt="2020 HTCondor Week Presentation" src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/multi-job-submit-video-thumbnail.png" width="360" height="204"></a>
+	<img alt="2020 HTCondor Week Presentation" src="/images/multi-job-submit-video-thumbnail.png" width="360" height="204"></a>
 
 [Submitting Multiple Jobs Using HTCondor Video](https://www.youtube.com/watch?v=m7dQChJH5LU)
 

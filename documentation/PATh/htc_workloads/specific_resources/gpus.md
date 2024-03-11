@@ -9,7 +9,7 @@ GPUs
 The PATh Facility has an increasing number of GPUs available to 
 run jobs. 
 
-# Requesting GPUs
+## Requesting GPUs
 
 To request a GPU for your HTCondor job, you can use the 
 HTCondor *request_gpus* attribute in your submit file (along 
@@ -49,15 +49,15 @@ the submit file requirement would be:
 to you! It's always better to set the minimal possible requirements (ideally, none!) 
 in order to access the greatest amount of computing capacity.**
 
-# Available GPUs
+### Available GPUs
 
 Description of the available CPUs can be found under the 
 [Facility Description](https://path-cc.io/facility/index.html#facility-description).
 Currently, A100 is the main GPU available.
 
-# Software and Data Considerations
+## Software and Data Considerations
 
-## Software for GPUs
+### Software for GPUs
 
 For GPU-enabled machine learning libraries, we recommend using 
 containers to set up your software for jobs: 

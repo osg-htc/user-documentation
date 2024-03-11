@@ -5,13 +5,13 @@ path:
 
 # Data Staging and Transfer to Jobs
 
-# Overview
+## Overview
 
 As a distributed system, jobs in the PATh Facility can run in different physical locations, where the computers that are executing jobs don't have direct access to the files placed on the Access Point (e.g. in a `/home` directory on `ap1.facility.path-cc.io`). In order to run on this kind of distributed system, jobs need to "bring along" the data, code, packages, and other files from the Access Point (where the job is submitted) to the PATh Facility execute points (where the job will run).  HTCondor's file transfer tools and plugins make this possible; input and output files are specified as part of the job submission and then moved to and from the execution location. 
 
 This guide describes where to place files on PATh Facility Access Points, and how to use these files within jobs. 
 
-# Data Spaces on the PATh Facility
+## Data Spaces on the PATh Facility
 
 There are two spaces for placing files on the PATh Facility Access Point, and each has a corresponding transfer method for referencing files in the submit file. 
 
@@ -48,7 +48,7 @@ The examples above are both specific to a single user. If you need to share file
 with other members of your group or project, or need to make files publicly available, 
 please contact the facilitation team to arrange a project folder: [support@path-cc.io](mailto:support@path-cc.io)
 
-# Transferring Data To/From HTCondor Jobs
+## Transferring Data To/From HTCondor Jobs
 
 **Regardless of where data is placed, jobs should only be submitted with `condor_submit` from `/home`.**
 
@@ -135,28 +135,28 @@ Some examples:
 		OSDF_LOCATION = osdf:///path-facility/data/<username>
 		transfer_output_remaps = "file1.txt = $(OSDF_LOCATION)/file1.txt; file2.txt = $(OSDF_LOCATION)/file2.txt; file3.txt = $(OSDF_LOCATION)/file3.txt"
 
-# Moving Data to/from PATh Facility Access Points
+## Moving Data to/from PATh Facility Access Points
 
 In general, common Unix tools such as rsync, scp, PuTTY, WinSCP, gFTP, etc. can be used to upload data from your computer or another server to your PATh Facility Access Point or to download files. Files should be uploaded/created and staged in `/home` or `/path-facility` for preparation to use in jobs (as described above). 
 
-# Check Your Quota and Available Space
+## Check Your Quota and Available Space
 
-## Check your `/home` quota
+### Check your `/home` quota
 
 To check your home quota and usage, run: 
 
 	$ quota -vs
 
-##  Check your `/path-facility/data` quota
+###  Check your `/path-facility/data` quota
 
 For now, contact the facilitation team if you are unsure what your `/path-facility/data` 
 quota is. 
 
-## Request Quota Increase
+### Request Quota Increase
 
 Contact us at support@path-cc.io if you think you need a quota increase. We have space for substantial workloads when communicated with in advance. 
 
-# Data Policies
+## Data Policies
 
 In general, users are responsible for managing data and for using appropriate mechanisms for delivering data to/from jobs. Each space for data is controlled with a quota and should be treated as temporary storage for *active* job execution. The PATh Facility has no routine backup of data in these locations, and users should remove old data after jobs complete. 
 

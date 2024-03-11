@@ -86,7 +86,7 @@ can use a key without a passphrase, but this is not recommended.
 
 6. Click the "Save private key" and "Save public key" buttons to save both keys. **You must save both keys.** You will need them to successfully login from your machine. 
 
-![alt text](https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/puttygen_ssh_key.png "PuttyGen Window")
+![alt text](/images/puttygen_ssh_key.png "PuttyGen Window")
 
 7. In Step 2 below, you will upload your public key to the [PATh Facility registration website](https://registry.cilogon.org/registry/co_petitions/start/coef:263). The expected key is a single line, with three fields looking something like `ssh-rsa ASSFFSAF... user@host`.
 
@@ -147,7 +147,7 @@ should be logged in.
 
 On older versions of Windows, you can use the [Putty program](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to log in. 
 
-<img src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
+<img src="/images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
 
 1. Open the `PutTTY` program. If necessary, you can download PuTTY from the website here [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
