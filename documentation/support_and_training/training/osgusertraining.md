@@ -6,6 +6,20 @@ ospool:
 OSG User Training (regular/monthly) 
 ====================================
 
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="px-2 w-100">
+		<button class="navbar-toggler w-100 mb-2 mb-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<a class="nav-link btn btn-primary text-white mb-2 mb-lg-0 w-100" aria-current="page" href="https://osgfacilitation.setmore.com/bookclass">Register Here</a>
+		</div>
+	</div>
+</nav>
+
+
+
 All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am - 1pm PT)**, on the third Tuesday of the month. 
 
 **Registration opens a month before the training date. You can register for all of our trainings via setmore:**
