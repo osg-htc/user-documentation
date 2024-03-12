@@ -16,6 +16,38 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 
 
 
+    <style> 
+        .GFG { 
+            background-color: white; 
+            border: 2px solid black; 
+            color: green; 
+            padding: 5px 10px; 
+            text-align: center; 
+            display: inline-block; 
+            font-size: 20px; 
+            margin: 10px 30px; 
+            cursor: pointer; 
+        } 
+    </style> 
+
+<body> 
+    <h1>GeeksforGeeks</h1> 
+      
+    <!-- Adding link to the button on the onclick event -->
+    <button class="GFG" 
+    onclick="window.location.href = 'https://ide.geeksforgeeks.org';"> 
+        Click Here 
+    </button> 
+</body> 
+
+
+
+
+
+
+
+
+
 <font size="20">[Register Here](https://osgfacilitation.setmore.com/bookclass)</font>
 
 ## Spring 2024 Training Schedule
