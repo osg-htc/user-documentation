@@ -87,6 +87,7 @@ nav:
       - "Using Julia on the OSPool ": software_examples/other_languages_tools/julia-on-osg.md
       - "Using Java in Jobs ": software_examples/other_languages_tools/java-on-osg.md
     - Bioinformatics:
+      - "FastQC Quality Control": software_examples/bioinformatics/tutorial-fastqc/README.md
       - "High-Throughput BLAST": software_examples/bioinformatics/tutorial-blast-split/README.md
       - "High-Throughput BWA Read Mapping": software_examples/bioinformatics/tutorial-bwa/README.md
     - Freesurfer:
