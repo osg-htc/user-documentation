@@ -39,7 +39,7 @@ at [support@path-cc.io](mailto:support@path-cc.io).
    
       ![](../../assets/PATh/registration/comanage-email-verification-form.png)
 
-## Account Approval by a Research Computing Facilitator¶
+## Account Approval by a Research Computing Facilitator
 
 If a meeting has not already been scheduled with a Research Computing Facilitator, one of the facilitation team will contact you about arranging a short consultation.
 
