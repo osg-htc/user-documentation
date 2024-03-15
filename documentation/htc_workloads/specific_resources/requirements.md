@@ -1,6 +1,6 @@
 ---
 ospool:
-  path: htc_workloads/using_software/requirements.md
+  path: htc_workloads/specific_resource/requirements.md
 ---
 
 Control Where Your Jobs Run / Job Requirements 
@@ -54,27 +54,8 @@ Then the `requirements` would be:
 
     requirements = HAS_oasis_opensciencegrid_org == True
 
-## AVX (segfault / illegal instruction) and Other Hardware Attributes
 
-A common problem in distributed computing infrastructures is a mismatch between
-the executable and the hardware. On OSG, this can happen if you compile a code
-which automatically detects hardware features such as AVX or AVX2. When you then
-run the resulting executable in a job, and that job lands on a maybe slightly
-older execution endpoint, which does not have those hardware features, the
-execution will fail with an error like `segmentation fault` or
-`illegal instruction`. Sometimes it is difficult to determine exactly what
-hardward feature is the cause, but a very common one is AVX and AVX2, both of
-which are advertised and can be matched against. If you are experiencing these
-problems, try:
-
-    requirements = HAS_AVX == True
-
-or
-
-    requirements = HAS_AVX2 == True
-
-
-## x86\_64 Micro Architechture Levels
+## x86\_64 Micro Architecture Levels
 
 The x86\_64 set of CPUs contains a large number of different CPUs with 
 different capabilities. Instead of trying to match on on individual attributes
@@ -86,7 +67,11 @@ is available on [Wikipedia](https://en.wikipedia.org/wiki/X86-64#Microarchitectu
 HTCondor advertises an attribute named `Microarch`. An example on how make jobs
 running on the two highest levels is:
 
-    requirements = (Microarch == "x86_64-v3" || Microarch == "x86_64-v4")
+    requirements = (Microarch >= "x86_64-v3")
+
+Note that in the past, it was recommended to use the `HAS_AVX` and `HAS_AVX2`
+attributes to target CPUs with those capabilities. This is no longer
+recommended, with the replacement being `Microarch >= "x86_64-v3"`.
 
 
 ## Additional Feature-Specific Attributes
@@ -111,8 +96,6 @@ Below is a list of common attributes that you can include in your submit file `r
 
 - **Microarch** - See above. x86\_64-v1, x86\_64-v2, x86\_64-v3, and x86\_64-v4
 
-- **HAS_SINGULARITY** - Boolean specifying the need to use Singularity containers in your job.
-
 - **OSGVO_OS_NAME** - The name of the operating system of the compute node. 
   The most common name is _RHEL_
 
@@ -125,10 +108,38 @@ Below is a list of common attributes that you can include in your submit file `r
   /proc/cpuinfo
 
 - **HAS_CVMFS_oasis_opensciencegrid_org** - Attribute specifying
-  the need to access specific oasis /cvmfs file system repositories.
+  the need to access specific oasis /cvmfs file system repositories. Other
+  common CVMFS repositories are `HAS_CVMFS_singularity_opensciencegrid_org`
+  and project ones like `HAS_CVMFS_xenon_opensciencegrid_org`.
 
-- **GPUs_Capability** - For GPU jobs, specifies the GPUs' compute capability.
-  See our [GPU guide](../../../htc_workloads/specific_resource/gpu-jobs/) for more details.
+For GPU attribtues, such as GPUs' compute capability, see our
+[GPU guide](../../../htc_workloads/specific_resource/gpu-jobs/).
+
+
+## Non-x86 Based Architectures
+
+Within the computing community, there's a growing interest in exploring
+non-x86 architectures, such as ARM and PowerPC. As of now, the OSPool
+does not host resources based on these architectures; however, it
+is designed to accommodate them once available. The OSPool operates
+under a system where all tasks are configured to execute on the
+same architecture as the host from which they were submitted. This
+compatibility is ensured by HTCondor, which automatically adds the
+appropriate architecture to the job's requirements. By inspecting the
+classad of any given job, one would notice the inclusion of
+`(TARGET.Arch == "X86_64")` among its requirements, indicating the
+system's current architectural preference.
+
+If you do wish to specify a different architechure, just add it to
+your job requirements:
+
+    requirements = Arch == "PPC"
+
+You can get a list of current architechures by running:
+
+    $ condor_status -af Arch | sort | uniq
+    X86_64
+
 
 ## Specifying Sites / Avoiding Sites
 

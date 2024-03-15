@@ -21,7 +21,8 @@ We will discuss how to generate a SSH key pair for two cases:
 * Older Windows systems
 
 Please note: The key pair consist of a private key and a public key. You will upload the 
-public key to OSG Connect, but you also need to keep a copy of the private key to log in!  
+public key to the OSG Connect website or COmanage, but you also need to keep a copy of the private key 
+to log in! 
 You should keep the private key on machines that you have 
 direct access to, i.e. your local computer (your laptop or desktop).
 

@@ -32,7 +32,7 @@ There are two spaces for placing files on the PATh Facility Access Point, and ea
   <td>Output: less than 1Gb per job</td>
 </tr>
 <tr>
-  <td rowspan="2"><code>/data/$USER</code></td>
+  <td rowspan="2"><code>/path-facility/data/$USER</code></td>
   <td>greater than 1Gb per job <br> OR shared files used by many jobs </td>
   <td rowspan="2"><code>osdf:///</code> links in <code>transfer_input_files</code></td>
   <td rowspan="2">500GB / 250k items</td>

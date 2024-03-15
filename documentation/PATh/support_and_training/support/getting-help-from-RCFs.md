@@ -16,17 +16,7 @@ To help researchers effectively utilize computing resources, our
 Research Computing Facilitators (RCFs) not only assist you in
 implementing your computational work on PATh compute resources, but can
 also point you to other services related to research computing and data
-needs. For example, RCFs can:
-
-- Assist with planning your computational approach for a research problem
-- Teach you to submit jobs via the OSG Connect service
-- Help you with troubleshooting on OSG systems
-- Connect you with other researchers using similar software or methods
-- Point to learning materials for programming and software development
-- Help you identify applicable non-OSG data storage options
-- Find someone who knows the answer to your question, even if the RCF doesn’t
-- … and other helpful activities to facilitate your use of cyberinfrastructure
-
+needs. 
 
 ## Help via Email
 
@@ -48,12 +38,15 @@ from an RCF.
 
 Click [here](https://docs.google.com/forms/d/e/1FAIpQLSd3K78Xx1Vo-KjqW_2y0YKcUMXrEsKXWk3I1Aww64RL22QpnQ/viewform) to sign-in for office hours, once you arrive in the room. 
 
-
 ## Make an Appointment
 
 We are happy to arrange meetings outside of designated Office Hours, per
 your preference. Simply email us at support@path-cc.io, and we will set
 up a time to meet!
 
+## Learn About the PATh Facility
 
+The following slides provide an overview about the PATh Facility: why it exists, good use cases, and how to get started: 
+
+* [Slides](https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7)
 

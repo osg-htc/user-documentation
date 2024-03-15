@@ -16,7 +16,7 @@ do our best to connect you with another group or service that can.
 We don’t expect that you should be able to address all of your questions by consulting our [documentation](https://portal.osg-htc.org/documentation/), searching online, or just working through things on your own. Please utilize the methods below if you are stuck or have questions.
 
 ## Help via Email
-We provide ongoing support via email to support@osg-htc.org. You can typically expect a first response within a few business hours.
+We provide ongoing support via email to [support@osg-htc.org](mailto:support@osg-htc.org). You can typically expect a first response within a few business hours.
 
 ## Virtual Office Hours
 Drop-in for live help:

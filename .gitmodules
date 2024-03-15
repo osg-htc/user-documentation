@@ -61,3 +61,6 @@
 [submodule "documentation/tutorials/tutorial-dagman-intermediate"]
 	path = documentation/tutorials/tutorial-dagman-intermediate
 	url = https://github.com/OSGConnect/tutorial-dagman-intermediate.git
+[submodule "documentation/tutorials/tutorial-fastqc"]
+	path = documentation/tutorials/tutorial-fastqc
+	url = https://github.com/OSGConnect/tutorial-fastqc

@@ -3,7 +3,7 @@ ospool:
   path: htc_workloads/using_software/available-containers-list.md
 ---
 
-Existing OSPool-Supported Containers 
+Containers - Predefined List of Commonly Used Containers 
 ====================================
 
 This is list of commonly used containers in the Open Science Pool. These can be used

@@ -90,9 +90,10 @@ If you would like your HTCondor jobs to run inside your Jupyter container and no
 </details>
 
 <details>
-<summary>For researchers with accounts on login0N.osgconnect.net access point</summary>
+<summary>For researchers with accounts on ap2*.uc.osg-htc.org access point</summary>
 <br>
-<b>Working in OSPool Notebooks, your account will <b>not</b> be tied to your account on your login0N.osgconnect.net access point.</b> 
+<b>Working in OSPool Notebooks, your account will <b>not</b> be tied to your account on your 
+ap2*.uc.osg-htc.org access point.</b> 
 <br>
 <br>
 OSPool Notebooks are run on only our <code>uw.osg-htc.org access points</code>. This means your OSPool account will not be recognized. Therefore, while you are welcome to upload data to your OSPool Notebooks instance and to use the 8 CPUs and 16 GB memory available to your instance to submit HTCondor jobs and analyze data, <b>we recommend you request an account on a <code>uw.osg-htc.org access points</code> access point to be able to run full OSPool workflows and to avoid having data deleted upon logging out.</b>
