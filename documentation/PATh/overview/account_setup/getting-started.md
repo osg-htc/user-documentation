@@ -58,13 +58,15 @@ your account.
 
 ## Request Credits
 
-All compute time on the PATh Facility is charged using a credit system. Credits 
-are allocated from the NSF via the relevant program officer. See 
-our [Request PATh Facility Credits](../request-credits) guide 
-for detailed information and templates on submitting a credit request. 
+All compute time on the PATh Facility is charged using a credit system. 
 
 If you have not already applied for a credit allocation at the time of requesting 
 an account, PATh staff can provide a small startup allocation for initial testing. 
+
+After start up testing, credits 
+are allocated from the NSF via the relevant program officer. See 
+our [Request PATh Facility Credits](../request-credits) guide 
+for detailed information and templates on submitting a credit request. 
 
 If you have already applied for a credit allocation at the time of requesting 
 an account, let us know that information and we will add credits to your 
@@ -75,4 +77,4 @@ project account.
 If you're not sure where to start or are not sure if the PATh Facility is for you, 
 we recommend either filling out the User 
 Application form linked above or emailing PATh support staff at 
-[credit-accounts@path-cc.io](mailto:credit-accounts@path-cc.io) with any questions. 
+[support@path-cc.io](mailto:support@path-cc.io) with any questions. 
