@@ -91,4 +91,4 @@ We will do our best to help you create a portable installation.
 
 **Watch this video from the 2021 OSG Virtual School** for more information about using software on OSG:
 
-[<img src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/Software_Video_Thumbnail.png" width="500">](https://www.youtube.com/embed/xUeIQbVXOMQ)
+[<img src="/images/Software_Video_Thumbnail.png" width="500">](https://www.youtube.com/embed/xUeIQbVXOMQ)

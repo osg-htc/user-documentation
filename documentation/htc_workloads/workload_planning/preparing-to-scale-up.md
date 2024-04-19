@@ -28,7 +28,7 @@ Additional information is also available from the following "Introduction to Hig
 Pilot School lecture video:
 
 <a href="https://youtu.be/oMAvxsFJaw4">
-    <img alt="2020 VSP dHTC with HTCondor" src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/2020-vsp-intro-dHTC-HTcondor-thumbnail.png" width="360" height="204"></a>
+    <img alt="2020 VSP dHTC with HTCondor" src="/images/2020-vsp-intro-dHTC-HTcondor-thumbnail.png" width="360" height="204"></a>
 
 ## Always Start With Test Jobs
 

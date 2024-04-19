@@ -108,7 +108,7 @@ this information on your profile from the OSG Connect website.
 3. The assigned login nodes are listed in the left side box. Make note of the address of 
 your assigned login node as you will use this to connect to OSG Connect.
 
-![Identify Login Node](https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/find_osgconnect_login_node.png "OSG Connect Profile")
+![Identify Login Node](/images/find_osgconnect_login_node.png "OSG Connect Profile")
 
 ### For Mac, Linux, or newer versions of Windows
 
@@ -128,7 +128,7 @@ NOT appear on the terminal, but the information is being entered!
 
 On older versions of Windows, you can use the [Putty program](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to log in. 
 
-<img src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
+<img src="/images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
 
 1. Open the `PutTTY` program. If necessary, you can download PuTTY from the website here [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 

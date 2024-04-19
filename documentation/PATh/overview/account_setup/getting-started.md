@@ -72,7 +72,7 @@ If you have already applied for a credit allocation at the time of requesting
 an account, let us know that information and we will add credits to your 
 project account. 
 
-# Reach Out
+## Reach Out
 
 If you're not sure where to start or are not sure if the PATh Facility is for you, 
 we recommend either filling out the User 
