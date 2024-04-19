@@ -41,6 +41,32 @@ For a calendar version of these events see:
 
 All of our training materials are public and provided below: 
 
+
+<details>
+<summary>[Webinar] Principles of Distributed High Throughput Computing</summary>
+<br>
+<b>Learning Objectives</b>
+<br>
+Have you ever wondered about the “why” of HTCondor? <b>Join us to hear about the “philosophy” of high throughput computing and how HTCondor has evolved to make throughput computing possible.</b> This workshop will be led by a core HTCondor developer, Greg Thain, and is a perfect opportunity for longer-term OSPool users to learn more about our underlying technology.
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+There are no prerequisites for this webinar. 	
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1H1rC3aZqAB2GmoAEmwHkkY5ZOWWWpYkbsk5A01mM7GA/edit?usp=drive_link">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Spring 2024
+<br>
+</details>
+
+
 <details>
 <summary>[Workshop] OSPool Basics: Get Running on the OSPool</summary>
 <br> 
@@ -83,7 +109,7 @@ The PATh Facility provides dedicated throughput computing capacity to NSF-funded
 <br>
 <b>Prerequisites/Audience</b>
 <br>
-There are no prerequisites for this workshop. 	
+There are no prerequisites for this webinar. 	
 <br>
 <br>
 <b>Available Materials</b>
