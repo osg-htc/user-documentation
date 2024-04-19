@@ -87,3 +87,7 @@ Be sure to use the username assigned to you on the other server and to provide t
 full path on the other server to your file. To transfer files **from** the OSG Access 
 Point **to** the other server, just reverse the order of the two server statements. 
 
+## Other Graphical User Interface (GUI) Tools for transferring files and folders
+Apart from scp, other GUI software such as- [WinSCP](https://winscp.net/eng/index.php), [FileZilla](https://filezilla-project.org/),
+[Cyberduck](https://cyberduck.io/) can be used for transferring files and folders from and to the Access Point. Please remember to add your [private 
+key](https://portal.osg-htc.org/documentation/overview/account_setup/generate-add-sshkey/#generate-ssh-keys) for the authentication method.
