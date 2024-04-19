@@ -90,8 +90,7 @@ nav:
       - "FastQC Quality Control": software_examples/bioinformatics/tutorial-fastqc/README.md
       - "High-Throughput BLAST": software_examples/bioinformatics/tutorial-blast-split/README.md
       - "High-Throughput BWA Read Mapping": software_examples/bioinformatics/tutorial-bwa/README.md
-    - Freesurfer:
-      - "Introduction to FreeSurfer on the OSPool ": software_examples/freesurfer/Introduction.md
+      - "FreeSurfer": software_examples/freesurfer/Introduction.md
     - Drug Discovery:
       - "Running a Molecule Docking Job with AutoDock Vina": software_examples/drug_discovery/tutorial-AutoDockVina/README.md
   - Additional Resources:
