@@ -83,11 +83,11 @@ that your application is built on an environment that is similar to the majority
 of the compute nodes on OSG. Because OSG Access Points currently use the 
 Alma/CentOS Linux 8 operating system (which are similar to the  
 more general Red Hat Enterprise Linux, or RHEL distribution), your software will, generally, only be 
-compatible for execution on RHEL 8 or similar operating systems. You can use the 
+compatible for execution on RHEL 9 or similar operating systems. You can use the 
 `requirements` statement of your HTCondor submit file to direct your jobs to execute 
 nodes with specific operating systems, for instance:
 
-	requirements = (OSGVO_OS_STRING == "RHEL 8")
+	requirements = (OSGVO_OS_STRING == "RHEL 9")
 
 Software installation typically includes three steps: 1.) configuration, 2.) compilation, and 3.) 
 "installation" which places the compiled code in a specific location. In most cases, 
@@ -115,7 +115,7 @@ aware that not all execution endpoints on OSG are the same. If your software pic
 hardware features such as AVX/AVX2, you might have to ensure the jobs are running on
 hardware with those features. For example, if your software requires AVX2:
 
-    requirements = (OSGVO_OS_STRING == "RHEL 8") && (HAS_AVX2 == True)
+    requirements = (OSGVO_OS_STRING == "RHEL 9") && (HAS_AVX2 == True)
 
 Please see [Control Where Your Jobs Run / Job Requirements](../../../htc_workloads/using_software/requirements/)
 

@@ -37,8 +37,8 @@ compiled with the feaures or configuration needed for your work.
 ## Install Software from Source Code
 
 When installing software from source code on an OSPool Access Point, your software will be specifically compiled against 
-the **Red Hat Enterprise Linux (RHEL) 7 operating system** used on these nodes. In most cases, subsequent 
-jobs that use this software will also need to run on a RHEL 7 OS, which can be specified by the 
+the **Red Hat Enterprise Linux (RHEL) 9 operating system** used on these nodes. In most cases, subsequent 
+jobs that use this software will also need to run on a RHEL 9 OS, which can be specified by the 
 `requirements` attribute of your HTCondor submit files as described in the guide linked above. 
 
 ## Use Docker and Apptainer Containers

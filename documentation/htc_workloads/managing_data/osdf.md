@@ -55,8 +55,8 @@ access points. See the list below for the "Local Path" to use, based on your acc
   <td>ap40.uw.osg-htc.org</td>
   <td>Accessible to user only:
       <ul>
-        <li><nobr>Local Path: <code>/mnt/stash/ospool/PROTECTED/[USERNAME]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///ospool/PROTECTED/[USERNAME]</code></nobr></li>
+        <li><nobr>Local Path: <code>/ospool/ap40/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap40/data/[USERNAME]</code></nobr></li>
       </ul>
   <td>
 </tr>

@@ -43,11 +43,6 @@ available operating systems (these are just the default ones, you can create a c
 container image if you want something else):
 
     $ condor_status -autoformat OSGVO_OS_STRING | sort | uniq -c
-        439 DEBIAN 12
-       8479 RHEL 7
-      20666 RHEL 8
-       3407 RHEL 9
-        608 UBUNTU 22
  
 Another common requirement is to land on a node which has CVMFS.
 Then the `requirements` would be:
