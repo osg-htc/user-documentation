@@ -52,6 +52,7 @@ nav:
       - "Large Memory Jobs": htc_workloads/specific_resource/large-memory-jobs.md
       - "Multicore Jobs": htc_workloads/specific_resource/multicore-jobs.md
       - "OpenMPI Jobs": htc_workloads/specific_resource/openmpi-jobs.md
+      - "EL9 Transition": htc_workloads/specific_resource/el9-transition.md
     - Automated Workflows:
       - "Overview: Submit Workflows with HTCondor's DAGMan": htc_workloads/automated_workflows/dagman-workflows.md
       - "Simple Example of a DAGMan Workflow": htc_workloads/automated_workflows/dagman-simple-example.md

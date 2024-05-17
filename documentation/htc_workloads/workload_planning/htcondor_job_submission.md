@@ -76,7 +76,7 @@ output = hello-ospool_$(Cluster)_$(Process).out
 
 # Tell HTCondor requirements (e.g., operating system) your job needs, 
 # what amount of compute resources each job will need on the computer where it runs.
-requirements = (OSGVO_OS_STRING == "RHEL 7")
+requirements = (OSGVO_OS_STRING == "RHEL 9")
 request_cpus = 1
 request_memory = 1GB
 request_disk = 5GB

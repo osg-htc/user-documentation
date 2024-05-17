@@ -142,14 +142,15 @@ error = science_with_conda.err
 output = science_with_conda.out
 
 # Transfer any file needed for our job to complete. 
-transfer_input_files = osdf:///ospool/PROTECTED/alice/env-name.tar.gz, hello.py
+transfer_input_files = osdf:///ospool/apXX/data/alice/env-name.tar.gz, hello.py
 
+In the line above, the `XX` in `apXX` should be replaced with the numbers corresponding to your access point. 
 # Specify Job duration category as "Medium" (expected runtime <10 hr) or "Long" (expected runtime <20 hr). 
 +JobDurationCategory = “Medium”
 
 # Tell HTCondor requirements (e.g., operating system) your job needs, 
 # what amount of compute resources each job will need on the computer where it runs.
-requirements = (OSGVO_OS_STRING == "RHEL 7")
+requirements = (OSGVO_OS_STRING == "RHEL 9")
 request_cpus = 1
 request_memory = 1GB
 request_disk = 5GB

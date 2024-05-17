@@ -41,7 +41,7 @@ To run your code as a job on the Open Science Pool, first create a `wrapper.sh`.
 
 Then, a job submit file:
 
-    Requirements = OSGVO_OS_STRING == "RHEL 7" && TARGET.Arch == "X86_64" && HAS_MODULES == True 
+    Requirements = OSGVO_OS_STRING == "RHEL 9" && TARGET.Arch == "X86_64" && HAS_MODULES == True 
     +has_mpi = true 
     
     request_cpus = 4
