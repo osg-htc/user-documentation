@@ -6,6 +6,9 @@ ospool:
 Annual, Week-Long OSG User School 
 ====================================
 
+![](../../assets/osg-user-school-2023-group.png)
+
+*OSG User School 2023 Group Photo*
 
 ## Overview
 
