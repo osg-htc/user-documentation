@@ -13,6 +13,12 @@ During this week-long training event held at the University of Wisconsin-Madison
 
 The School is ideal for graduate students in any science or research domain where large-scale computing is a vital part of the research process, plus we will consider applications from advanced undergraduates, post-doctoral students, faculty, and staff. Students accepted to this program will receive financial support for basic travel and local costs associated with the School.
 
+### Next OSG User School
+
+The next OSG User School is being held **August 5-9, 2024**.
+The deadline for applications was April 1, 2024.
+For more information on this year's school, see the website here: [osg-htc.org/school-2024/](https://osg-htc.org/school-2024).
+
 ### Open Materials and Recordings
 
 The OSG User School want virtual in 2020 and 2021, which means that we were able to record lectures to complement lecture and exercise materials!
