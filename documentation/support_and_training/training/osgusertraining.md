@@ -8,7 +8,7 @@ OSG User Training (regular/monthly)
 
 All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am - 1pm PT)**, on the third Tuesday of the month. The training's are designed as stand alone subjects. You do not need to bring/have your dataset prepared before the training. The only prerequisites are some familiarities with using command line inteface or [shell](https://swcarpentry.github.io/shell-novice/). Having some familiarities with [HTCondor job submissions](https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/htcondor_job_submission/) are useful but not required.  
 
-**Registration opens a month before the training date. You can register for all of our trainings via setmore:**
+**Registration opens a month before the training date, and closes 24 hours before the event. You can register for all of our trainings via setmore:**
 
 <font size="20">[Register Here](https://osgfacilitation.setmore.com/bookclass)</font>
 
