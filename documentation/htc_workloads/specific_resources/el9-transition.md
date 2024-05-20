@@ -3,8 +3,8 @@ ospool:
   path: htc_workloads/specific_resource/el9-transition.md
 ---
 
-EL9 Transition
-==============
+Operating System Transition to EL9
+==================================
 
 During May 2024, the OSPool will transition to be mostly EL9 based. The
 access points will be upgraded, and the execution points will mostly
