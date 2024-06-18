@@ -12,7 +12,7 @@ this, as long as the core count is small (4 is known to work well, 8 and 16
 becomes more difficult due to the limited number of resources).
 
 
-To get started, first compile your code using the OpenMPI container. You can create your own OpenMPI container or use the one that is available on dockerhub. OSG has a `openmpi` container. To compile your code using the OSG provided image, load the imagae first. 
+To get started, first compile your code using the OpenMPI container. You can create your own OpenMPI container or use the one that is available on dockerhub. OSG has a `openmpi` container. To compile your code using the OSG provided image, start running the container first. 
 
     $ apptainer shell /ospool/uc-shared/public/OSG-Staff/openmpi.sif
     $ mpicc -o hello hello.c 
