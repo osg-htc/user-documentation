@@ -241,7 +241,7 @@ for a job that will use Samtools with a BAM file named `my-sample.bam` which is 
 	should_transfer_files = YES
 	when_to_transfer_output = ON_EXIT
 	
-	requirements = (OSGVO_OS_STRING == "RHEL 7")
+	requirements = (OSGVO_OS_STRING == "RHEL 9")
 	request_memory = 1.3GB
 	request_disk = 1.5GB
 	request_cpus = 1
@@ -437,7 +437,7 @@ for a job that will use Samtools with a Fasta file `genome.fa' and CRAM file nam
 	should_transfer_files = YES
 	when_to_transfer_output = ON_EXIT
 	
-	requirements = (OSGVO_OS_STRING == "RHEL 7")
+	requirements = (OSGVO_OS_STRING == "RHEL 9")
 	request_memory = 1.3GB
 	request_disk = 1.5GB
 	request_cpus = 1

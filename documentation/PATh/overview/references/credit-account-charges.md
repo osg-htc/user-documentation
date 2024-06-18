@@ -11,7 +11,7 @@ are defined by a combination of per-job cores and memory request, while GPU Cred
 of per-job GPU, CPU, and memory request.
 
 
-# CPU Credits
+## CPU Credits
 
 |Cores per job|Credit charge per core hour|
 |--- |--- |
@@ -49,7 +49,7 @@ use 0.375 * 112 = 42 credits total for memory and 1.2 * 8 = 9.6 credits for
 CPU.
 
 
-# GPU Credits
+## GPU Credits
 
 |GPUs per job|Credit charge per GPU hour|
 |--- |--- |

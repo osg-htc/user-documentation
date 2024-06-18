@@ -214,7 +214,7 @@ can be found in our quickstart guide: [Quickstart Tutorial](../../../htc_workloa
 	
 	+JobDurationCategory = "Medium"
 
-	requirements   = (OSGVO_OS_STRING == "RHEL 7")
+	requirements   = (OSGVO_OS_STRING == "RHEL 9")
 	request_cpus   = 1
 	request_memory = 2GB
 	request_disk   = 2GB

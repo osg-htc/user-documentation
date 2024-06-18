@@ -5,10 +5,14 @@ path:
 
 # Request PATh Facility Credits
 
-All compute time on the PATh Facility is charged using a credit system. Credits 
-are allocated from the NSF via the relevant program officer. 
+All compute time on the PATh Facility is charged using a credit system. 
 
-Startup credit allocations are available for initial testing: [apply for access here](https://portal.path-cc.io/application)
+If you have not already applied for a credit allocation at the time of requesting 
+an account, PATh staff can provide a small startup allocation for initial testing. 
+
+After start up testing, credits 
+are granted from the NSF via the relevant program officer. This guide 
+details the process and templates available to request credits. 
 
 ## Requirements
 
@@ -65,9 +69,6 @@ Requests can be submitted to the following program officers, based on domain:
 
 ## PATh Facility Credit Guide
 
-The current credit system is documented on this page: 
-[PATh Facility Credit Charges](../../references/credit-account-charges/). 
-
 For ease of calculating needed credits, the Research Facilitation team has provided 
 an excel worksheet tha can be used to interactively view how many credits are needed 
 for different job sizes. The spreadsheet is in this Google Drive folder: 
@@ -75,6 +76,9 @@ for different job sizes. The spreadsheet is in this Google Drive folder:
 [PATh Facility Allocation Templates][templates]
 
 Download and open the spreadsheet and then follow the instructions. 
+
+The current credit system is documented on this page: 
+[PATh Facility Credit Charges](../../references/credit-account-charges/). 
 
 [dear-colleague]: https://www.nsf.gov/pubs/2022/nsf22051/nsf22051.jsp
 [templates]: https://drive.google.com/drive/u/0/folders/1Cy_tVnmrwLfg5oyZbWsW8VpCctuf14BC

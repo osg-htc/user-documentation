@@ -18,7 +18,7 @@ for US-affiliated academic, government, and non-profit research projects and gro
 
 Learn more about the services provided by the OSG that can support your HTC workload: 
 
-<a href="https://www.youtube.com/watch?v=5FMAFxROGv0"><img alt="OSG Introduction" src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/osg-intro-video-screenshot.png" width="360" height="204"></a>
+<a href="https://www.youtube.com/watch?v=5FMAFxROGv0"><img alt="OSG Introduction" src="/images/osg-intro-video-screenshot.png" width="360" height="204"></a>
 
 For problems that can be run as numerous independent jobs (a high-throughput approach) and have requirements
 represented in the first two columns 
@@ -55,7 +55,7 @@ using its resources include:
 
 **Introduction to OSG the Distributed High Throughput Computing framework** from the annual [OSG User School](https://opensciencegrid.org/outreach/):
 
-[<img src="https://raw.githubusercontent.com/OSGConnect/connectbook/master/images/Intro_OSG_Video_Thumbnail.png" width="500">](https://www.youtube.com/embed/vpJPPjoQ3QU)
+[<img src="/images/Intro_OSG_Video_Thumbnail.png" width="500">](https://www.youtube.com/embed/vpJPPjoQ3QU)
 
 **[Full OSG User Documentation](https://portal.osg-htc.org/documentation/)** including our [Roadmap to HTC Workload Submission](../../../htc_workloads/workload_planning/roadmap/)
 

@@ -8,7 +8,7 @@ Using conda to Run Python on the PATh Facility
 
 The Anaconda/Miniconda distribution of Python is a common tool for installing and managing Python-based software and other tools. 
 
-# Overview
+## Overview
 
 When should you use Miniconda as an installation method in the PATh Facility?
 * Your software has specific conda-centric installation instructions.
@@ -25,7 +25,7 @@ To create the smallest, most portable Python installation possible, we recommend
 
 To use a Miniconda installation on the PATh Facility, create your installation environment on the Access Point and send a zipped version to your jobs.
 
-# Install Miniconda and Package for Jobs
+## Install Miniconda and Package for Jobs
 
 This section of the guide goes through the steps needed to create a software installation inside Miniconda and then use a tool called `conda pack` to package it up for running jobs.
 
@@ -33,8 +33,10 @@ This section of the guide goes through the steps needed to create a software ins
 
 On the Access Point, download the latest Linux [miniconda installer](https://docs.conda.io/en/latest/miniconda.html) and run it.
 
-      [alice@ap1]$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-      [alice@ap1]$ sh Miniconda3-latest-Linux-x86_64.sh
+<pre class="term"><code>
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh
+</code></pre>
       
 Accept the license agreement and default options. At the end, you can choose whether or not to “initialize Miniconda3 by running conda init?” The default is no; you would then run the **eval** command listed by the installer to “activate” Miniconda. If you choose “no” you’ll want to save this command so that you can reactivate the Miniconda installation when needed in the future.
 
@@ -44,21 +46,27 @@ Accept the license agreement and default options. At the end, you can choose whe
 
 Make sure that you’ve activated the base Miniconda environment if you haven’t already. Your prompt should look like this:
 
-      (base)[alice@ap1]$ 
+<pre class="term"><code>(base)[alice@ap1]$</code></pre>
+ 
 To create an environment, use the `conda create` command and then activate the environment:
 
-      (base)[alice@ap1]$ conda create -n env-name
-      (base)[alice@ap1]$ conda activate env-name
+<pre class="term"><code>(base)[alice@ap1]$ conda create -n env-name
+(base)[alice@ap1]$ conda activate env-name
+</code></pre>
+
 Then, run the `conda install` command to install the different packages and software you want to include in the installation. How this should look is often listed in the installation examples for software (e.g. [Qiime2](https://docs.qiime2.org/2020.2/install/native/#install-qiime-2-within-a-conda-environment), [Pytorch](https://pytorch.org/get-started/locally/)).
 
-      (env-name)[alice@ap1]$ conda install pkg1 pkg2
+<pre class="term"><code>(env-name)[alice@ap1]$ conda install pkg1 pkg2
+</code></pre>
+
 Some Conda packages are only available via specific Conda channels which serve as repositories for hosting and managing packages. If Conda is unable to locate the requested packages using the example above, you may need to have Conda search other channels. More detail are available at [https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html.](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)
 
 Packages may also be installed via `pip`, but you should only do this when there is no `conda` package available.
 
 Once everything is installed, deactivate the environment to go back to the Miniconda “base” environment.
 
-      (env-name)[alice@ap1]$ conda deactivate
+<pre class="term"><code>(env-name)[alice@ap1]$ conda deactivate
+</code></pre>
 
 > For example, if you wanted to create an installation with `pandas` and `matplotlib` and > call the environment `py-data-sci`, you would use this sequence of commands:
 > 
@@ -76,17 +84,23 @@ Once everything is installed, deactivate the environment to go back to the Minic
 
 Make sure that your job’s Miniconda environment is created, but deactivated, so that you’re in the “base” Miniconda environment:
 
-      (base)[alice@ap1]$ 
+<pre class="term"><code>(base)[alice@ap1]$ </code></pre>
+ 
 Then, run this command to install the `conda pack` tool:
 
-      (base)[alice@ap1]$ conda install -c conda-forge conda-pack
+<pre class="term"><code>conda install -c conda-forge conda-pack
+</code></pre>
+
 Enter `y` when it asks you to install.
 
 Finally, use `conda pack` to create a zipped tar.gz file of your environment (substitute the name of your conda environment where you see `env-name`), set the proper permissions for this file using `chmod`, and check the size of the final tarball:
 
-      (base)[alice@ap1]$ conda pack -n env-name
-      (base)[alice@ap1]$ chmod 644 env-name.tar.gz
-      (base)[alice@ap1]$ ls -sh env-name.tar.gz
+<pre class="term"><code>
+conda pack -n env-name
+chmod 644 env-name.tar.gz
+ls -sh env-name.tar.gz
+</code></pre>
+
 When this step finishes, you should see a file in your current directory named `env-name.tar.gz`.
 
 ## 4. Check Size of Conda Environment Tar Archive
@@ -103,25 +117,26 @@ More information is available at [File Availability with Squid Web Proxy](../../
 
 The job will need to go through a few steps to use this “packed” conda environment; first, setting the `PATH`, then unzipping the environment, then activating it, and finally running whatever program you like. The script below is an example of what is needed (customize as indicated to match your choices above).
 
-      #!/bin/bash
+<pre class="file"><code>#!/bin/bash
 
-      # have job exit if any command returns with non-zero exit status (aka failure)
-      set -e
+# have job exit if any command returns with non-zero exit status (aka failure)
+set -e
 
-      # replace env-name on the right hand side of this line with the name of your conda environment
-      ENVNAME=env-name
+# replace env-name on the right hand side of this line with the name of your conda environment
+ENVNAME=env-name
 
-      # if you need the environment directory to be named something other than the environment name, change this line
-      ENVDIR=$ENVNAME
+# if you need the environment directory to be named something other than the environment name, change this line
+ENVDIR=$ENVNAME
 
-      # these lines handle setting up the environment; you shouldn't have to modify them
-      export PATH
-      mkdir $ENVDIR
-      tar -xzf $ENVNAME.tar.gz -C $ENVDIR
-      . $ENVDIR/bin/activate
+# these lines handle setting up the environment; you shouldn't have to modify them
+export PATH
+mkdir $ENVDIR
+tar -xzf $ENVNAME.tar.gz -C $ENVDIR
+. $ENVDIR/bin/activate
 
-      # modify this line to run your desired Python script and any other work you need to do
-      python3 hello.py
+# modify this line to run your desired Python script and any other work you need to do
+python3 hello.py
+</code></pre>
 
 ## 6. Submit Jobs
 
@@ -130,7 +145,7 @@ In your submit file, make sure to have the following:
 * Your executable should be the the bash script you created in [step 5](#5-create-a-job-executable).
 * Remember to transfer your Python script and the environment `tar.gz` file to the job. If the `tar.gz` file is larger than 100MB, please use the `stash:///` file delivery mechanism as described above. 
       
-# Specifying Exact Dependency Versions
+## Specifying Exact Dependency Versions
 
 An important part of improving reproducibility and consistency between runs is to ensure that you use the correct/expected versions of your dependencies.
 
@@ -140,15 +155,18 @@ If you want a record of what is installed in your environment, or want to reprod
 
 To create an `environment.yml` file from your currently-activated environment, run
 
-      [alice@ap1]$ conda env export > environment.yml
+<pre class="term"><code>conda env export > environment.yml</code></pre>
+
 This `environment.yml` will pin the exact version of every dependency in your environment. This can sometimes be problematic if you are moving between platforms because a package version may not be available on some other platform, causing an “unsatisfiable dependency” or “inconsistent environment” error. A much less strict pinning is
 
-      [alice@ap1]$ conda env export --from-history > environment.yml
+<pre class="term"><code>conda env export --from-history > environment.yml</code></pre>
+
 which only lists packages that you installed manually, and **does not pin their versions unless you yourself pinned them during installation**. If you need an intermediate solution, it is also possible to manually edit `environment.yml` files; see the [conda environment documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#) for more details about the format and what is possible. In general, exact environment specifications are simply not guaranteed to be transferable between platforms (e.g., between Windows and Linux). **We strongly recommend using the strictest possible pinning available to you**.
 
 To create an environment from an `environment.yml` file, run
 
-      [alice@ap1]$ conda env create -f environment.yml
+<pre class="term"><code>conda env create -f environment.yml</code></pre>
+
 By default, the name of the environment will be whatever the name of the source environment was; you can change the name by adding a `-n \<name>` option to the `conda env create` command.
 
 If you use a source control system like `git`, we recommend checking your `environment.yml` file into source control and making sure to recreate it when you make changes to your environment. Putting your environment under source control gives you a way to track how it changes along with your own code.

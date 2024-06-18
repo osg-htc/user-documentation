@@ -34,7 +34,7 @@ commands to start the container. Nor should the container image
 contain any entrypoint/cmd - the job is the command to be run in the
 container.
 
-### Exploring Images on the Access Points
+## Exploring Images on the Access Points
 
 Just like it is important to test your codes and jobs at a small scale,
 you should make sure that your container is working correctly. One way
