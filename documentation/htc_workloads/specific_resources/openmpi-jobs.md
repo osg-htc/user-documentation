@@ -12,7 +12,8 @@ this, as long as the core count is small (4 is known to work well, 8 and 16
 becomes more difficult due to the limited number of resources).
 
 
-To get started, first compile your code using the OpenMPI container. You can create your own OpenMPI container or use the one that is available on dockerhub. OSG has a `openmpi` container. To compile your code using the OSG provided image, start running the container first. 
+To get started, first compile your code using the OpenMPI container. You can create your own OpenMPI container or use the one that is available on dockerhub. OSG has a `openmpi` container. Please note that the OSG provided container `openmpi.sif` image is available only on the `ap20.uc.osg-htc.org` and `ap21.uc.osg-htc.org`. For the ap40 access point, please use your desired docker [image](https://registry.hub.docker.com/r/mfisherman/openmpi/tags)and do `apptainer pull`. More information about using *apptainer pull* can be found [here](https://apptainer.org/docs/user/main/cli/apptainer_pull.html). To compile your code using the OSG provided image, start running the container first. 
+
 
     $ apptainer shell /ospool/uc-shared/public/OSG-Staff/openmpi.sif
     $ mpicc -o hello hello.c 
@@ -44,7 +45,7 @@ After compiling the code, you can test the executable locally using `mpiexec`:
     Hello world from processor ap21.uc.osg-htc.org, rank 2 out of 4 processors
     Hello world from processor ap21.uc.osg-htc.org, rank 3 out of 4 processors
 
-To run your code as a job on the Open Science Pool, first create a `wrapper.sh`. Example:
+When testing is done be sure to exit from the apptainer shell using `exit`. The next step is to run your code as a job on the Open Science Pool. For this, first create a `wrapper.sh`. Example:
 
     #!/bin/sh
     
@@ -73,4 +74,4 @@ Note how the executable is the `wrapper.sh` script, and that the real executable
 transferred using the `transfer_input_files` mechanism.
 
 Please make sure that the number of cores specified in the submit file via
-`request_cpus` match the `-n` argument in the `wrapper.sh` file.
+`request_cpus` match the `-n` argument in the `wrapper.sh` file. 
