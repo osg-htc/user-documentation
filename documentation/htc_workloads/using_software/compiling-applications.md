@@ -9,8 +9,7 @@ Compiling Software
 ## Introduction
 
 Due to the distributed nature of the Open Science Pool, you will always need to 
-ensure that your jobs have access to the software that will be executed. This guide provides 
-general information for compiling and using your software in the OSPool. A detailed 
+ensure that your jobs have access to the software that will be executed. You have two options for using code on the OSG – transferring the code files by themselves, or putting the code files into a container. Sometimes code is already compiled and they offer a direct executable for the UNIX or Linux system. Those types of software can be directly used on the OSPool. If your software is dependent on different library functions and does not have a `make` or `install` command consider using containers. To learn more about containers please follow the instructions on our [container](https://portal.osg-htc.org/documentation/htc_workloads/using_software/containers-singularity/) guide. If your code is written in C or C++, and has instructions including make-this guide will help you. Moreover, this guide provides general information for compiling and using your software in the OSPool. A detailed 
 example of a specific software compilation process is additionally available 
 at [Example Compilation Guide](../../../htc_workloads/using_software/example-compilation/). 
 
