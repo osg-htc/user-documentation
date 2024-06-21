@@ -32,6 +32,15 @@ you can create your own container or any container image in Docker Hub.
 
 ## Apptainer/Singularity Build
 
+If you are building an image for the first time, the temporary cache directory of the apptainer image needs to be defined. The following commands define the cache location of the apptainer image to be built. Please run the commands in the terminal of your access point.
+
+```
+$mkdir $HOME/tmp
+$export TMPDIR=$HOME/tmp
+$export APPTAINER_TMPDIR=$HOME/tmp
+$export APPTAINER_CACHEDIR=$HOME/tmp
+```
+
 To build a custom a Apptainer/Singularity image, create a folder on your access point. Inside it, create a blank text file
 called `image.def`.
 
