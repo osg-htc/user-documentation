@@ -1,9 +1,11 @@
 ---
 ospool:
   path: htc_workloads/using_software/available-containers-list.md
+path:
+  path: htc_workloads/containers/available-containers-list.md
 ---
 
-Containers - Predefined List of Commonly Used Containers 
+Existing OSPool-Supported Containers 
 ====================================
 
 This is list of commonly used containers in the Open Science Pool. These can be used
@@ -38,13 +40,13 @@ or not described well enough to make this list.
     <br>[Container Definition](https://github.com/opensciencegrid/osgvo-el7)<br>
 
 ??? info "Rocky 8 (htc/rocky:8)"
-    Rocky (Enterprise Linux) 8 base image
+    Rocky Linux 8 base image
     <br>
     <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/rocky:8</span><br>
     <br>[Project Website](https://rockylinux.org/)<br>
-    <br>[Container Definition](https://github.com/ospool-images)<br>
+    <br>[Container Definition](https://github.com/osg-htc/htc-images)<br>
 
 ??? info "Rocky 8 / CUDA 11.0.3 (htc/rocky:8-cuda-11.0.3)"
     Rocky Linux 8 / CUDA 11.0.3 image
@@ -53,7 +55,7 @@ or not described well enough to make this list.
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/rocky:8-cuda-11.0.3</span><br>
     <br>[Project Website](https://rockylinux.org/)<br>
-    <br>[Container Definition](https://github.com/ospool-images)<br>
+    <br>[Container Definition](https://github.com/osg-htc/htc-images)<br>
 
 ??? info "Rocky 9 (htc/rocky:9)"
     Rocky Linux 9 base image
@@ -358,6 +360,24 @@ or not described well enough to make this list.
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-gromacs-gpu:latest</span><br>
     <br>[Project Website](http://www.gromacs.org/)<br>
     <br>[Container Definition](https://github.com/opensciencegrid/osgvo-gromacs-gpu)<br>
+
+??? info "Gromacs 2023.4 (htc/gromacs:2023.4)"
+    Gromacs 2023.4 for use on OSG
+    <br>
+    <br>
+    CVMFS Locations:<br>
+    <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/gromacs:2023.4</span><br>
+    <br>[Project Website](https://www.gromacs.org/)<br>
+    <br>[Container Definition](https://github.com/osg-htc/htc-images)<br>
+
+??? info "Gromacs 2024.2 (htc/gromacs:2024.2)"
+    Gromacs 2024.2 for use on OSG
+    <br>
+    <br>
+    CVMFS Locations:<br>
+    <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/gromacs:2024.2</span><br>
+    <br>[Project Website](https://www.gromacs.org/)<br>
+    <br>[Container Definition](https://github.com/osg-htc/htc-images)<br>
 
 ??? info "Quantum Espresso (opensciencegrid/osgvo-quantum-espresso)"
     A suite for first-principles electronic-structure calculations and materials modeling
