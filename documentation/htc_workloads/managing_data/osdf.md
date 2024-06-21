@@ -125,6 +125,11 @@ Some examples:
 		OSDF_LOCATION = osdf:///ospool/apXX/data/<username>
 		transfer_input_files = $(OSDF_LOCATION)/InputFile.txt, $(OSDF_LOCATION)/database.sql
 
+* Transferring a folder from `/ospool/apXX/data/`
+
+		transfer_input_files = osdf:///ospool/apXX/data/<username>/<folder>?recursive
+
+Please note that for transferring a folder using OSDF `?recursive` needs to added after the folder name. 
 ### Use `transfer_output_remaps` and 'osdf://' URL for Large Output Files
 
 To move output files into an OSDF directory, users should 
