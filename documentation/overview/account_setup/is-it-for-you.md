@@ -62,4 +62,4 @@ using its resources include:
 **[OSG User Training materials](../../../support_and_training/training/osgusertraining/)** . Any researcher affiliated with an academic, non-profit, or government US-based research project is welcome to attend our trainings. 
 
 
-**Learn more and chat with a Research Computing Facilitator by [signing up for OSPool account](../registration-and-login.md)**
+**Learn more and chat with a Research Computing Facilitator by [signing up for OSPool account](https://portal.osg-htc.org/application)**
