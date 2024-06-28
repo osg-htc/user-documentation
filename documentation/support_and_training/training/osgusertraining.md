@@ -84,7 +84,7 @@ There are no prerequisites for this webinar.
 <br>
 <ul>
 	<li> <a href="https://docs.google.com/presentation/d/1G9lpiWXErEqsSXxGzKYq9iz-lmoUiNL5K4h9bK9sy8c/edit#slide=id.g10c0fd09133_0_7">Presentation Slides</a></li>
-	<li> <a href="https://www.youtube.com/watch?v=l7uVX0iB3UI">Video Recording</a></li>
+	<li> <a href="https://www.youtube.com/watch?v=KFg5ApsIGN8">Video Recording</a></li>
 	</ul>
 <b>Materials Last Updated</b>
 <br>
