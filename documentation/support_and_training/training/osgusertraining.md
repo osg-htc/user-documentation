@@ -72,7 +72,7 @@ Spring 2024
 <br>
 <b>Learning Objectives</b>
 <br>
-Pelican is a platform created to enable easier data sharing - within or beyond your institution! This training will cover how Pelican is used to move data within the OSPool and also how you can use Pelican tools to host, upload and download your data. We encourage researchers with large amounts of data, as well as campus representatives, to attend to learn about how Pelican can help with your data movement needs.
+Pelican is a platform created to enable easier data sharing - within or beyond your institution! This training will cover how Pelican is used to move data within the OSPool and also how you can use Pelican tools to host, upload and download your data. This training is relevant for researchers with large amounts of data, as well as campus representatives, to learn about how Pelican can help with your data movement needs.
 <br>
 <br>
 <b>Prerequisites/Audience</b>
