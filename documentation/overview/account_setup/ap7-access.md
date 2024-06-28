@@ -18,7 +18,7 @@ To join and use the `uw.osg-htc.org` Access Points (`ap40.uw.osg-htc.org`), you 
 
 To request access to `ap40.uw.osg-htc.org`, submit an application using the following steps:
 
-1. To request an OSPool account, visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:211). OSG User School 2024 participants should use [this link](https://registry.cilogon.org/registry/co_petitions/start/coef:496). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
+1. To request an OSPool account, visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:211). **OSG User School 2024 participants should use [this link](https://registry.cilogon.org/registry/co_petitions/start/coef:496).** You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
    
    
       <img src="../../../assets/ap7-images/cilogon.png" class= "img-fluid"/>
@@ -98,6 +98,16 @@ The process below describes how to upload a public key to the registration websi
 
 You can now log in to `ap40.uw.osg-htc.org` from the terminal, using `ssh username@ap40.uw.osg-htc.org`. When you log in, instead of being prompted with a web link, you should either authenticate automatically or be asked for your ssh key passphrase to complete logging in.
 
+## Known Issues
+
+* Existing Account
+	* Error message: `SORID "http://cilogon.org/serverA/users/20186" is already associated with EnvSource`
+	* Try logging into [COmanage](https://registry.cilogon.org/). If you can log in, 
+	email us with your name and we will add you to the appropriate group. 
+
+* Privacy enhancing plugins
+	* Error message: `Identifier (SORID) variable "REDIRECT_OIDC CLAIM sub" not set`
+	* We have seen this happen when a user has various "privacy enhancing" plugins installed in the browser and it blocks the necessary flow from fully happening. Try a different web browser without any plugins installed. 
 
 ## Get Help
 
