@@ -68,6 +68,31 @@ Spring 2024
 
 
 <details>
+<summary>[Webinar] Move Your Data with Pelican (and the OSDF)</summary>
+<br>
+<b>Learning Objectives</b>
+<br>
+Pelican is a platform created to enable easier data sharing - within or beyond your institution! This training will cover how Pelican is used to move data within the OSPool and also how you can use Pelican tools to host, upload and download your data. This training is relevant for researchers with large amounts of data, as well as campus representatives, to learn about how Pelican can help with your data movement needs.
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+There are no prerequisites for this webinar. 	
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1G9lpiWXErEqsSXxGzKYq9iz-lmoUiNL5K4h9bK9sy8c/edit#slide=id.g10c0fd09133_0_7">Presentation Slides</a></li>
+	<li> <a href="https://www.youtube.com/watch?v=KFg5ApsIGN8">Video Recording</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Summer 2024
+<br>
+</details>
+
+<details>
 <summary>[Workshop] OSPool Basics: Get Running on the OSPool</summary>
 <br> 
 <b>Learning Objectives</b>
