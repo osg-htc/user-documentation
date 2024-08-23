@@ -92,6 +92,8 @@ To run this TensorFlow script, create an HTCondor submit file to tell HTCondor h
     
     executable = run-tf.py
     #arguments = 
+
+    +JobDurationCategory = "Medium"
    
     # specify both general requirements and gpu requirements if needed
     # requirements = True

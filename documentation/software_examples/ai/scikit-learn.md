@@ -59,6 +59,8 @@ An example scikit-learn machine learning executable is:
     # specify both general requirements and gpu requirements if there are any
     # requirements = True
     # require_gpus = 
+
+    +JobDurationCategory = "Medium"
     
     request_gpus = 0
     request_cpus = 1

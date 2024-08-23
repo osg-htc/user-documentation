@@ -54,6 +54,8 @@ All together, the submit file will look something like this:
 	output      = job.out
 	error       = job.error
 
+	+JobDurationCategory = "Medium"
+
 	request_cpus 	= 1 
 	request_memory 	= 2GB
 	request_disk 	= 2GB
@@ -140,6 +142,8 @@ As an example:
 	log         = job.log
 	output      = job.out
 	error       = job.error
+
+	+JobDurationCategory = "Medium"
 
 	request_cpus 	= 1 
 	request_memory 	= 2GB

@@ -70,6 +70,8 @@ An example submit file for an exit driven checkpointing job looks like:
     output                      = example.out
     error                       = example.err
     log                         = example.log
+
+    +JobDurationCategory = "Medium"
     
     cpu                         = 1
     request_disk                = 2 GB
