@@ -10,29 +10,49 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 
 **Registration opens a month before the training date, and closes 24 hours before the event. You can register for all of our trainings via setmore:**
 
-<font size="20">[Register Here](https://osgfacilitation.setmore.com/bookclass)</font>
+<font size="15">[Register Here](https://osgfacilitation.setmore.com/#classes)</font>
 
-## Spring 2024 Training Schedule
+## Fall 2024 Training Schedule
 
-* Tuesday, January 16 - OSPool Basics: Get Running on the OSPool
+<table>
+  <tr>
+      <td>Tuesday, September 17</td>
+      <td><b>OSPool Basics: Get Running on the OSPool</b>
+        <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
+        <ul>
+            <li>An introduction to OSG services and the OSPool
+            <li>Basics of HTCondor job submission
+            <li>Hands-on practice submitting HTCondor jobs
+        </ul>
+        <p>If you’re new to the OSPool (or been away for awhile) and want to get started, <b>this is an ideal opportunity to go through core concepts and practice hands-on skills.</b></p>
+        <p><i>Prerequisites/Audience:</i> There are no prerequisites for this workshop. This workshop is designed for new HTCondor and OSPool users.</p>
+      </td>
+  </tr>
+  <tr>
+      <td>Tuesday, October 15</td>
+      <td><b>Workflows with Pegasus</b>
+        <p>
+        <i>Learning Objectives:</i> An introduction to the Pegasus Workflow Management System, which is a useful tool for researchers needing to execute a large number of jobs or complex workflows. Attendees will learn how to construct and manage workflows, capabilities like automatic data transfers, and higher level tooling to analyze the workflow performance.
+        </p>
+        <p>
+        <i>Prerequisites/Audience:</i> There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented.
+        </p>
+      </td>
+  </tr>
+  <tr>
+      <td>Tuesday, November 19</td>
+      <td><b>DAGMan: HTCondor’s Workflow Manager</b>
+        <p>
+        <i>Learning Objectives:</i> In this training, you will be guided through hands-on exercises to learn how to use DAGMan to automate your HTCondor job submissions. This training is especially useful for anyone who has constructed different job types and wants to be able to run them in a certain order.
+        </p>
+        <p>
+        <i>Prerequisites/Audience:</i> A basic understanding of HTCondor job submission
+        </p>
+      </td>
+  </tr>
+</table>
 
-* Tuesday, February 20 - Learn About the PATh Facility
-	* The PATh Facility provides dedicated throughput computing capacity to NSF-funded researchers for longer and larger jobs. This training will describe its features and how to get started. **If you have found your jobs need more resources (cores, memory, time, data) than is typically available in the OSPool, this resource might be for you!**
-
-* Tuesday, March 19 - GPUs and the OSPool: Best Practices
-	* This training will cover what you need to consider when transitioning your existing GPU-based code from another system to the OSPool. **This is a great workshop for those who are newer to GPU computing as we will review important GPU concepts and terminology, and requesting GPUs on the OSPool.**
-
-* Tuesday, April 16 - Principles of Distributed High Throughput Computing
-	* Have you ever wondered about the “why” of HTCondor? **Join us to hear about the “philosophy” of high throughput computing and how HTCondor has evolved to make throughput computing possible.** This workshop will be led by a core HTCondor developer, Greg Thain, and is a perfect opportunity for longer-term OSPool users to learn more about our underlying technology. 
-
-
-* Tuesday, May 21 - OSPool Basics: Get Running on the OSPool 
-
-* Tuesday, June 18 - Move Your Data With Pelican
-	*  OSG Services is excited to introduce Pelican, a platform created to enable easier data sharing - within or beyond your institution! This training will cover how Pelican is used to move data within the OSPool and also how you can use Pelican tools to host, upload and download your data. **We encourage researchers with large amounts of data, as well as campus representatives, to attend to learn about how Pelican can help with your data movement needs.**
-
-
-For a calendar version of these events see: 
+For a calendar version of these events see:
 
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com&ctz=America%2FChicago)
 * [Download and add to your calendar app](https://calendar.google.com/calendar/ical/c_f786e9455a56e4b1ea7aca0d15c88178fd0e309e92c3cf4767c268ea3e2fc884%40group.calendar.google.com/public/basic.ics)
