@@ -29,7 +29,7 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
   </tr>
   <tr>
       <td>Tuesday, October 15</td>
-      <td><b>Pegasus Workflow Management System</b>
+      <td><b>Workflows with Pegasus</b>
         <p>
         <i>Learning Objectives:</i> An introduction to the Pegasus Workflow Management System, which is a useful tool for researchers needing to execute a large number of jobs or complex workflows. Attendees will learn how to construct and manage workflows, capabilities like automatic data transfers, and higher level tooling to analyze the workflow performance.
         </p>
