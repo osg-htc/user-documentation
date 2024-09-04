@@ -24,6 +24,7 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
             <li>Basics of HTCondor job submission
             <li>Hands-on practice submitting HTCondor jobs
         </ul>
+        <p>If you’re new to the OSPool (or been away for awhile) and want to get started, <b>this is an ideal opportunity to go through core concepts and practice hands-on skills.</b></p>
         <p><i>Prerequisites/Audience:</i> There are no prerequisites for this workshop. This workshop is designed for new HTCondor and OSPool users.</p>
       </td>
   </tr>
