@@ -40,7 +40,7 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
   </tr>
   <tr>
       <td>Tuesday, November 19</td>
-      <td><b>Introduction to DAGman</b>
+      <td><b>DAGMan: HTCondor’s Workflow Manager</b>
         <p>
         <i>Learning Objectives:</i> In this training, you will be guided through hands-on exercises to learn how to use DAGMan to automate your HTCondor job submissions.
         </p>
