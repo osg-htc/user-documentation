@@ -18,7 +18,7 @@ To join and use the `uw.osg-htc.org` Access Points (`ap40.uw.osg-htc.org`), you 
 
 To request access to `ap40.uw.osg-htc.org`, submit an application using the following steps:
 
-1. To request an OSPool account, visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:211). OSG User School 2024 participants should use [this link](https://registry.cilogon.org/registry/co_petitions/start/coef:496). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
+1. To request an OSPool account, visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:211). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step. 
    
    
       <img src="../../../assets/ap7-images/cilogon.png" class= "img-fluid"/>
@@ -78,7 +78,7 @@ It is also possible to authenticate using an SSH key pair, if you prefer. Loggin
 
 The process below describes how to upload a public key to the registration website. It assumes that a private/public key pair has already been generated. If you need to generate a key pair, see this [OSG guide](../generate-add-sshkey). 
 
-1. Return to the [Registration Page](https://registry.cilogon.org/registry/co_petitions/start/coef:211) and login using your institutional credentials if prompted.
+1. Return to the [Registration Page](https://registry.cilogon.org/registry/auth/logout) and login using your institutional credentials if prompted.
 
 2. Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button.
 
