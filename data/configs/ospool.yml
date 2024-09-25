@@ -7,7 +7,7 @@ nav:
       - "Frequently Asked Questions": overview/references/frequently-asked-questions.md
     - Account Setup:
       - "Start Here: Overview of Requesting OSPool Access": overview/account_setup/registration-and-login.md
-      - "Log In to uw.osg-htc.org Access Points": overview/account_setup/ap7-access.md
+      - "Log In to uw.osg-htc.org Access Points": overview/account_setup/comanage-access.md
       - "Log In to OSG Connect Access Points": overview/account_setup/connect-access.md
       - "Generate SSH Keys": overview/account_setup/generate-add-sshkey.md
       - "Set and View Project Usage": overview/account_setup/starting-project.md
