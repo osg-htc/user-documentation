@@ -1,0 +1,1 @@
+../../../../../documentation/overview/account_setup/comanage-access.md
