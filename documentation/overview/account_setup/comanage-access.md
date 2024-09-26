@@ -1,6 +1,6 @@
 ---
 ospool:
-  path: overview/account_setup/ap7-access.md
+  path: overview/account_setup/comanage-access.md
 ---
 
 # Log In to `uw.osg-htc.org` Access Points
