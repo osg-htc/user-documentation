@@ -8,7 +8,7 @@ Annual, Week-Long OSG User School
 
 ![](../../assets/osg-school-2024-attendees.jpeg)
 
-*OSG User School 2024 Group Photo*
+*OSG School 2024 Group Photo*
 
 ## Overview
 
@@ -19,7 +19,7 @@ The School is ideal for graduate students in any science or research domain wher
 ### Next OSG User School
 
 The next OSG User School will be held in the summer of 2025. 
-Applications will likely open in February of 2025. 
+Applications will likely open in early 2025.
 
 ### Open Materials and Recordings
 
