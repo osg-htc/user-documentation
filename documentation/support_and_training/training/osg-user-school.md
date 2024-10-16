@@ -6,9 +6,9 @@ ospool:
 Annual, Week-Long OSG User School 
 ====================================
 
-![](../../assets/osg-user-school-2023-group.png)
+![](../../assets/osg-school-2024-attendees.jpeg)
 
-*OSG User School 2023 Group Photo*
+*OSG User School 2024 Group Photo*
 
 ## Overview
 
@@ -18,9 +18,8 @@ The School is ideal for graduate students in any science or research domain wher
 
 ### Next OSG User School
 
-The next OSG User School is being held **August 5-9, 2024**.
-The deadline for applications was April 1, 2024.
-For more information on this year's school, see the website here: [osg-htc.org/school-2024/](https://osg-htc.org/school-2024).
+The next OSG User School will be held in the summer of 2025. 
+Applications will likely open in February of 2025. 
 
 ### Open Materials and Recordings
 
@@ -29,7 +28,9 @@ The OSG User School want virtual in 2020 and 2021, which means that we were able
 * [OSG Virtual School Pilot, August 2021](https://osg-htc.org/virtual-school-2021/materials/)
 * [OSG Virtual School Pilot, July 2020](https://osg-htc.org/virtual-school-pilot-2020/#materials/)
 
-### Past OSG User Schools
+### Past OSG Schools
+
+* [OSG School, August 5-9, 2024](https://osg-htc.org/school-2024)
 * [OSG User School, August 7-11, 2023](https://osg-htc.org/user-school-2023/) 
 * [OSG User School, July 25-29, 2022](https://osg-htc.org/user-school-2022/)
 * [OSG User School, July 15-19, 2019](https://opensciencegrid.org/user-school-2019/)
