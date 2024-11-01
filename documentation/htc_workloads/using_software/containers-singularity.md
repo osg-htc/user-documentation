@@ -54,14 +54,36 @@ Then there is a section called `%post` where you put the additional
 commands to make the image just like you need it. For example:
 
     %post
+    
+        # system packages
         apt-get update -y
         apt-get install -y \
                 build-essential \
                 cmake \
-                g++ \
-                r-base-dev
+                g++
+    
+        # install miniconda
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+        bash Miniconda3-latest-Linux-x86_64.sh -b -f -p /opt/conda
+        rm Miniconda3-latest-Linux-x86_64.sh
+    
+        # install conda components - add the packages you need here
+        . /opt/conda/etc/profile.d/conda.sh
+        conda create -y -n "myenv" python=3.9
+        conda activate myenv
+        conda update --all
+        conda install -y -n "myenv" -c conda-forge pytorch
 
-        R -e "install.packages('cowsay', dependencies=TRUE, repos='http://cran.rstudio.com/')"
+
+Another good section to include is `%environment`. This is executed before
+your job and lets the container configure the environment. Example:
+
+    %environment
+    
+        # set up environment for when using the container
+        . /opt/conda/etc/profile.d/conda.sh
+        conda activate myenv
+
 
 See the [Apptainer documentation](https://apptainer.org/user-docs/master/definition_files.html)
 for a full reference on how to specify build specs. Note that the `%runscript`
@@ -73,14 +95,31 @@ The final `image.def` looks like:
     From: hub.opensciencegrid.org/htc/ubuntu:22.04
 
     %post
+
+        # system packages
         apt-get update -y
         apt-get install -y \
                 build-essential \
-                cmake \
-                g++ \
-                r-base-dev
+                wget
 
-        R -e "install.packages('cowsay', dependencies=TRUE, repos='http://cran.rstudio.com/')"
+        # install miniconda
+        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+        bash Miniconda3-latest-Linux-x86_64.sh -b -f -p /opt/conda
+        rm Miniconda3-latest-Linux-x86_64.sh
+
+        # install conda components - add the packages you need here
+        . /opt/conda/etc/profile.d/conda.sh
+        conda create -y -n "myenv" python=3.9
+        conda activate myenv
+        conda update --all
+        conda install -y -n "myenv" -c conda-forge pytorch
+
+    %environment
+
+        # set up environment for when using the container
+        . /opt/conda/etc/profile.d/conda.sh
+        conda activate myenv
+
 
 Once your build spec is ready, you can "build" the container image by running this command:
 
@@ -88,6 +127,7 @@ Once your build spec is ready, you can "build" the container image by running th
 
 Once the image is built, test it on an OSG-managed access point,
 and use it in your HTCondor jobs.
+
 
 ### Exploring Apptainer/Singularity Images on the Access Points
 
