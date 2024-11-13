@@ -23,9 +23,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__debian__12.sif</span><br>
-    Debian 12 base image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/debian:12</span><br>
     <br>[Project Website](https://debian.org/)<br>
@@ -37,9 +34,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__centos__7.sif</span><br>
-    Enterprise Linux (CentOS) 7 base image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/centos:7</span><br>
     <br>[Project Website](https://www.centos.org/)<br>
@@ -51,9 +45,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__rocky__8.sif</span><br>
-    Rocky Linux 8 base image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/rocky:8</span><br>
     <br>[Project Website](https://rockylinux.org/)<br>
@@ -65,9 +56,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__rocky__8-cuda-11.0.3.sif</span><br>
-    Rocky Linux 8 / CUDA 11.0.3 image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/rocky:8-cuda-11.0.3</span><br>
     <br>[Project Website](https://rockylinux.org/)<br>
@@ -79,9 +67,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__rocky__9.sif</span><br>
-    Rocky Linux 9 base image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/rocky:9</span><br>
     <br>[Project Website](https://rockylinux.org/)<br>
@@ -93,9 +78,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__rocky__9-cuda-12.6.0.sif</span><br>
-    Rocky Linux 9 / CUDA 12.6.0 image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/rocky:9-cuda-12.6.0</span><br>
     <br>[Project Website](https://rockylinux.org/)<br>
@@ -107,9 +89,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__ubuntu__20.04.sif</span><br>
-    Ubuntu 20.04 (Focal) base image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/ubuntu:20.04</span><br>
     <br>[Project Website](https://www.ubuntu.com)<br>
@@ -121,9 +100,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__ubuntu__22.04.sif</span><br>
-    Ubuntu 22.04 (Jammy Jellyfish) base image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/ubuntu:22.04</span><br>
     <br>[Project Website](https://www.ubuntu.com)<br>
@@ -135,9 +111,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__ubuntu__24.04.sif</span><br>
-    Ubuntu 24.04 (Nobel Numbat) base image
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/ubuntu:24.04</span><br>
     <br>[Project Website](https://www.ubuntu.com)<br>
@@ -152,9 +125,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__tensorflow__2.15.sif</span><br>
-    Tensorflow image from the Tensorflow project, with OSG additions
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/tensorflow:2.15</span><br>
     <br>[Project Website](https://www.tensorflow.org/)<br>
@@ -166,9 +136,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__scikit-learn__1.3.sif</span><br>
-    scikit-learn, configured for execution on OSG
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/scikit-learn:1.3</span><br>
     <br>[Project Website](https://scikit-learn.org/)<br>
@@ -186,9 +153,6 @@ for detailed instructions on how to use containers.
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-julia__1.5.3.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-julia__1.7.3.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-julia__latest.sif</span><br>
-    Ubuntu based image with Julia
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-julia:1.0.3</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-julia:1.5.3</span><br>
@@ -203,9 +167,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/m8zeng__julia-packages__latest.sif</span><br>
-    Ubuntu based image with Julia
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/m8zeng/julia-packages:latest</span><br>
     <br>[Project Website](https://julialang.org/)<br>
@@ -224,9 +185,6 @@ for detailed instructions on how to use containers.
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-matlab-runtime__R2021b.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-matlab-runtime__R2022b.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-matlab-runtime__R2023a.sif</span><br>
-    This is the Matlab runtime component you can use to execute compiled Matlab codes
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-matlab-runtime:R2018b</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-matlab-runtime:R2019a</span><br>
@@ -245,9 +203,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__matlab-runtime__R2023a.sif</span><br>
-    This is the Matlab runtime component you can use to execute compiled Matlab codes
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/matlab-runtime:R2023a</span><br>
     <br>[Project Website](https://www.mathworks.com/products/compiler/matlab-runtime.html)<br>
@@ -261,9 +216,6 @@ for detailed instructions on how to use containers.
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-r__3.5.0.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-r__4.0.2.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-r__latest.sif</span><br>
-    Example for building R images
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-r:3.5.0</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-r:4.0.2</span><br>
@@ -277,9 +229,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/clkwisconsin__spacetimer__latest.sif</span><br>
-    Example for building R images
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/clkwisconsin/spacetimer:latest</span><br>
     <br>[Project Website](https://www.r-project.org/)<br>
@@ -354,9 +303,6 @@ for detailed instructions on how to use containers.
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-xenon__straxen_v100.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-xenon__switch_deployhq_user.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-xenon__upgrade-boost.sif</span><br>
-    Base software environment for XENONnT, including Python 3.6 and data management tools
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-xenon:2020.11.06</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-xenon:2020.11.25</span><br>
@@ -489,9 +435,6 @@ for detailed instructions on how to use containers.
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/xenonnt__base-environment__switch_deployhq_user.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/xenonnt__base-environment__testing.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/xenonnt__base-environment__upgrade-boost.sif</span><br>
-    Base software environment for XENONnT, including Python 3.6 and data management tools
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/xenonnt/base-environment:2020.11.06</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/xenonnt/base-environment:2020.11.25</span><br>
@@ -564,9 +507,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/xenonnt__osg_dev__latest.sif</span><br>
-    Base software environment for XENONnT, including Python 3.6 and data management tools
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/xenonnt/osg_dev:latest</span><br>
     <br>[Project Website](http://www.xenon1t.org/)<br>
@@ -581,9 +521,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__deeplabcut__3.0.0rc4.sif</span><br>
-    A software package for animal pose estimation
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/deeplabcut:3.0.0rc4</span><br>
     <br>[Project Website](https://www.mackenziemathislab.org/deeplabcut)<br>
@@ -599,9 +536,6 @@ for detailed instructions on how to use containers.
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-freesurfer__7.0.0.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-freesurfer__7.1.1.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-freesurfer__latest.sif</span><br>
-    A software package for the analysis and visualization of structural and functional neuroimaging data from cross-sectional or longitudinal studies
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-freesurfer:6.0.0</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-freesurfer:6.0.1</span><br>
@@ -619,9 +553,6 @@ for detailed instructions on how to use containers.
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-gromacs__2018.4.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-gromacs__2020.2.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-gromacs__latest.sif</span><br>
-    A versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-gromacs:2018.4</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-gromacs:2020.2</span><br>
@@ -635,9 +566,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-gromacs-gpu__latest.sif</span><br>
-    A versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles. This is a GPU enabled version.
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-gromacs-gpu:latest</span><br>
     <br>[Project Website](http://www.gromacs.org/)<br>
@@ -649,9 +577,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__gromacs__2023.4.sif</span><br>
-    Gromacs 2023.4 for use on OSG
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/gromacs:2023.4</span><br>
     <br>[Project Website](https://www.gromacs.org/)<br>
@@ -663,9 +588,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__gromacs__2024.2.sif</span><br>
-    Gromacs 2024.2 for use on OSG
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/gromacs:2024.2</span><br>
     <br>[Project Website](https://www.gromacs.org/)<br>
@@ -677,9 +599,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__minimal__0.sif</span><br>
-    Minimal image - used for testing
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/minimal:0</span><br>
     <br>[Project Website](https://osg-htc.org/)<br>
@@ -691,9 +610,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__pytorch__2.3.1-cuda11.8.sif</span><br>
-    A rich ecosystem of tools and libraries extends PyTorch and supports development in computer vision, NLP and more.
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/htc/pytorch:2.3.1-cuda11.8</span><br>
     <br>[Project Website](https://pytorch.org/)<br>
@@ -706,9 +622,6 @@ for detailed instructions on how to use containers.
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-quantum-espresso__6.6.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-quantum-espresso__6.8.sif</span><br>
-    A suite for first-principles electronic-structure calculations and materials modeling
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-quantum-espresso:6.6</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-quantum-espresso:6.8</span><br>
@@ -721,9 +634,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__osgvo-raspa2__2.0.41.sif</span><br>
-    General purpose classical simulation package. It can be used for the simulation of molecules in gases, fluids, zeolites, aluminosilicates, metal-organic frameworks, carbon nanotubes and external fields.
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-raspa2:2.0.41</span><br>
     <br>[Project Website](https://github.com/iraspa/RASPA2)<br>
@@ -736,9 +646,6 @@ for detailed instructions on how to use containers.
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__tensorflow__2.3.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__tensorflow__latest.sif</span><br>
-    TensorFlow image (CPU only)
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/tensorflow:2.3</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/tensorflow:latest</span><br>
@@ -751,9 +658,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/rynge__tensorflow-cowsay__latest.sif</span><br>
-    TensorFlow image (CPU only)
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/rynge/tensorflow-cowsay:latest</span><br>
     <br>[Project Website](https://www.tensorflow.org/)<br>
@@ -765,9 +669,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/jiahe58__tensorflow__latest.sif</span><br>
-    TensorFlow image (CPU only)
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/jiahe58/tensorflow:latest</span><br>
     <br>[Project Website](https://www.tensorflow.org/)<br>
@@ -781,9 +682,6 @@ for detailed instructions on how to use containers.
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__tensorflow-gpu__2.2-cuda-10.1.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__tensorflow-gpu__2.3-cuda-10.1.sif</span><br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/opensciencegrid__tensorflow-gpu__latest.sif</span><br>
-    TensorFlow image with GPU support
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/tensorflow-gpu:2.2-cuda-10.1</span><br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/opensciencegrid/tensorflow-gpu:2.3-cuda-10.1</span><br>
@@ -797,9 +695,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/efajardo__astroflow__latest.sif</span><br>
-    TensorFlow image with GPU support
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/efajardo/astroflow:latest</span><br>
     <br>[Project Website](https://www.tensorflow.org/)<br>
@@ -811,9 +706,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/ssrujanaa__catsanddogs__latest.sif</span><br>
-    TensorFlow image with GPU support
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/ssrujanaa/catsanddogs:latest</span><br>
     <br>[Project Website](https://www.tensorflow.org/)<br>
@@ -825,9 +717,6 @@ for detailed instructions on how to use containers.
     <br>
     OSDF Locations:<br>
     <span style="white-space: nowrap">osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/weiphy__skopt__latest.sif</span><br>
-    TensorFlow image with GPU support
-    <br>
-    <br>
     CVMFS Locations:<br>
     <span style="white-space: nowrap">/cvmfs/singularity.opensciencegrid.org/weiphy/skopt:latest</span><br>
     <br>[Project Website](https://www.tensorflow.org/)<br>
