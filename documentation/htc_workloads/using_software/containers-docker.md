@@ -162,7 +162,7 @@ Apptainer to convert it to a SIF image:
 
 After converting the Docker image to a sif format, you can use the 
 image in your job as described in the
-[Apptainer/Singularity Guide](../containers-singularity). 
+[Apptainer/Singularity Guide](../containers-singularity#using-singularity-or-apptainer-images-in-an-htcondor-job). 
 
 ## Special Cases
 
