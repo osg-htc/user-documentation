@@ -23,6 +23,9 @@ Docker image from the Docker Hub.
 
 ## Building Your Own Docker Image
 
+If you already have an existing Docker container image, skip
+to [Preparing Docker Containers for HTCondor Jobs](#preparing-docker-containers-for-htcondor-jobs). Otherwise, continue reading. 
+
 ### Identify Components
 
 What software do you want to install? Make sure that you have either the source 
@@ -85,7 +88,6 @@ is `alice` and I created an image with the NCBI `blast` tool, I might use this n
 
     $ docker build -t alice/NCBI-blast .
 
-
 #### Editing an Image Interactively
 
 You can also build an image interactively, without a Dockerfile. First, get 
@@ -121,7 +123,23 @@ You can also use the session's hash as found in the command prompt (`740b9db736a
 in the above example) in place of the docker session name. 
 
 
-## Converting from Docker to Apptainer/Singularity SIF format
+## Preparing Docker Containers for HTCondor Jobs
+
+Once you have a Docker container image, whether created by you or found 
+on DockerHub, you should convert it to the "sif" image format for 
+the best experience on the OSpool. 
+
+### Convert Docker containers on Docker Hub or online
+
+If the Docker container you want to use is online, on a site like Docker Hub, you can 
+log in to your Access Point and run a single command to convert it to a `.sif` image: 
+
+	$ apptainer build my-container.sif docker://owner/repository:tag
+
+Where the path at the end of the command is customized to be the container image
+you want to use. 
+
+### Convert Docker containers on your computer
 
 If you have built a Docker image on your own host, you can save it as a 
 tar file and then convert it to an Apptainer/Singularity SIF image. First
@@ -140,66 +158,11 @@ Apptainer to convert it to a SIF image:
 
     $ apptainer build my-container.sif docker-archive://my-container.tar
 
-You may now use the image in your job as described in the
-[Apptainer/Singularity Guide](../containers-singularity)
+## Using Containers in HTCondor Jobs
 
-
-## Syncronize from Docker Hub to /cvmfs (deprecated)
-
-OSG provide a mechanism for synchronizing images from Docker Hub to
-the global /cvmfs filesystem. The method is still available, but the
-preferred approach is now to save/import the image as desribed in the
-previous section.
-
-### Register Container with the OSG CVMFS Repository
-
-When you have found an image on Docker Hub,
-it needs to be submitted to the OSG Singularity repository
-(`/cvmfs/singularity.opensciencegrid.org/`), which also hosts the
-OSG-provided default images.
-
-To get your images included, please create a git pull request with the
-container identifier in `docker_images.txt` in the
-[cvmfs-singularity-sync repository](https://github.com/opensciencegrid/cvmfs-singularity-sync),
-or contact
-[support@osg-htc.org](mailto:support@osg-htc.org)
-and we can help you.
-
-Once your submission has been accepted, it will be automatically
-converted to a Singularity image and pushed to the OSG Singularity
-repository (see further above). Note: some common Dockerfile features,
-like ENV and ENTRYPOINT, are ignored when the Docker image is converted
-to a Singularity image.
-
-Once your container has been added to CVMFS, if you update your original
-Docker image, new versions pushed to Docker Hub will automatically be
-detected and the version on the OSG (in the CVMFS filesystem) will be
-updated accordingly.
-
-### Using /cvmfs based Images in Jobs
-
-Once your Docker image is pushed to the OSG Singularity repository and converted to a Singularity/Apptainer image, a synchronized copy of the Singularity/Apptainer image will be distributed by CVMFS and available under
-`/cvmfs/singularity.opensciencegrid.org/` which is cached and available
-to the execution nodes.
-
-To run a job with a Docker image, use the `+SingularityImage` to
-specify the image the job should be using. Example:
-
-    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/htc/rocky:9"
-
-    <other usual submit file lines>
-    queue
-
-Another example would be if your Docker Hub username is `alice` and you
-created a container called `ncbi-blast`, and tag `v1`, added to the OSG
-Singularity repository, your submit file will include:
-
-    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/alice/ncbi-blast:v1"
-
-    <other usual submit file lines>
-    queue
-
-
+After converting the Docker image to a sif format, you can use the 
+image in your job as described in the
+[Apptainer/Singularity Guide](../containers-singularity#using-singularity-or-apptainer-images-in-an-htcondor-job). 
 
 ## Special Cases
 
