@@ -14,6 +14,18 @@ HTCondor allows for [submitting multiple jobs from a single submit file](../subm
 
 This guide will walk through the basics of submitting and rerunning jobs with multiple variables by leveraging bash scripting. To fully utilize this guide, users should be familiar with using [`queue <var> from <list>` in submitting multiple jobs](../submit-multiple-jobs/#2-submit-multiple-jobs-with-one-or-more-distinct-variables-per-job).
 
+## Before you start: Consider your own workflow
+
+Every user's workflow is different and has varying needs. You will need to evaluate your own workflow and come up with a strategy for writing scripts for submitting and resubmitting jobs. Here are some questions to consider when strategizing how to automate your workflow:
+
+1. What is common between the list of jobs that I need to submit?
+2. How do correctly loop through the list of input files and/or arguments in my submit file?
+3. How can I uniquely name my outputs so that they don't overwrite each other?
+4. If my some of my jobs fail, what in their output files (including error, out, and log files) distinguishes them from successful jobs?  How can I utilize this difference in rerunning my jobs?
+
+!!! tip
+    In this guide, we will walk through one detailed example on how to leverage bash scripting and the `queue` statement to submit multiple jobs. However, your needs may differ from what's presented. We encourage you to consider how to integrate or modify these methods into your own workflow as you read this guide.
+
 ## Submit multiple jobs matching a filename or file extension
 
 Consider a pipeline in which a researcher needs to analyze hundreds of .mp4 video files saved in multiple directories under different names. Below is a snippet of a tree diagram of what their file directory structure might look like. Their data is stored in subdirectories in `videos/`, and they have created separate directories for their standard error (`err/`), standard output (`out/`), and final analysis (`analysis/`).
@@ -362,22 +374,11 @@ Submitting job(s)..
 2 job(s) submitted to cluster 800458.
 ```
 
-## Strategies for automating submission
-
-While the scenario presented above can be a powerful way to submit and resubmit jobs, the scripts presented may not be compatible with your workflow. You will need to evaluate your own workflow and come up with a strategy for writing scripts for submitting and resubmitting jobs.
-
-### Consider your own workflow
-
-1. What is common between the list of jobs that I need to submit?
-2. How do correctly loop through the list of input files and/or arguments in my submit file?
-3. How can I uniquely name my outputs so that they don't overwrite each other?
-4. If my some of my jobs fail, what in their output files (including error, out, and log files) distinguishes them from successful jobs?  How can I utilize this difference in rerunning my jobs?
-
-### Other tips and techniques
-#### Useful commands
+## Other tips and techniques
+### Useful commands
 Often your bash scripts will use commands like `find`, `grep`, `ls`, and `awk`. Exploring these commands will widen your toolkit for writing automated scripts.
 
-#### Arguments
+### Arguments
 You can generalize your scripts further by using arguments in your Bash scripts. For example, we could change the first few lines of `create_list.sh` to accept arguments:
 
 ```
@@ -400,7 +401,7 @@ updated_videos/dataset2/2024-10-31-mouse1.mp4 added to new_list.txt
 updated_videos/dataset2/2024-10-31-mouse2.mp4 added to new_list.txt
 ```
 
-#### Using variables in the `condor_submit` command
+### Using variables in the `condor_submit` command
 In the above example, we copied `job.sub` to `job_rerun.sub` and needed to edit the queue statement to refer to `rerun_list.txt`. Instead of doing this, we can use a variable in the `queue` statement.
 
 ```
