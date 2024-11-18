@@ -70,6 +70,8 @@ Then, a job submit file:
 
     executable = wrapper.sh
     transfer_input_files = hello
+
+    +JobDurationCategory = "Medium"
     
     request_cpus = 4
     request_memory = 1 GB
