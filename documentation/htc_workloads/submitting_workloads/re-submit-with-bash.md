@@ -18,13 +18,18 @@ This guide will walk through the basics of submitting and rerunning jobs with mu
 
 Every user's workflow is different and has varying needs. You will need to evaluate your own workflow and come up with a strategy for writing scripts for submitting and resubmitting jobs. Here are some questions to consider when strategizing how to automate your workflow:
 
-1. What is common between the list of jobs that I need to submit?
+1. What are common elements within the list of jobs that I need to submit?
 2. How do correctly loop through the list of input files and/or arguments in my submit file?
 3. How can I uniquely name my outputs so that they don't overwrite each other?
-4. If my some of my jobs fail, what in their output files (including error, out, and log files) distinguishes them from successful jobs?  How can I utilize this difference in rerunning my jobs?
+4. If my some of my jobs fail, what parts of their output files (including standard error, output, and log files) distinguishes them from successful jobs?  How can I utilize this difference in rerunning my jobs?
 
-!!! tip
-    In this guide, we will walk through one detailed example on how to leverage bash scripting and the `queue` statement to submit multiple jobs. However, your needs may differ from what's presented. We encourage you to consider how to integrate or modify these methods into your own workflow as you read this guide.
+
+!!! tip "General strategy"
+    1. Write a bash script to create a list of variables. (e.g. `ls *.mp4 > input_list.txt`).
+    2. Use `queue <var> from <list>` to submit multiple jobs based on the variables.
+    3. To resubmit multiple jobs, write a bash script to update your list of variables.
+    
+In this guide, we will walk through one detailed example on how to leverage bash scripting and the `queue` statement to submit multiple jobs. However, your needs may differ from what's presented. We encourage you to consider how to integrate or modify these methods into your own workflow as you read this guide.
 
 ## Submit multiple jobs matching a filename or file extension
 
