@@ -73,9 +73,11 @@ On older versions of Windows, you can use the [Putty program](https://www.chiark
 
 5. Click "Browse" and specify the private key file you previously generated.
 
-6. Return to "Session".    
-&nbsp;&nbsp;&nbsp;&nbsp;a. Name your session    
-&nbsp;&nbsp;&nbsp;&nbsp;b. Save session for future use    
+6. Return to "Session". Then   
+
+   * Name your session 
+
+   * Save session for future use    
 
 7. Click "Open" to launch shell. Provide your ssh-key passphrase (created at Step 4 in PuTTYgen) when prompted to do so.
 
