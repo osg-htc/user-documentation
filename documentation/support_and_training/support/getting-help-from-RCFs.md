@@ -18,6 +18,8 @@ We don’t expect that you should be able to address all of your questions by co
 ## Help via Email
 We provide ongoing support via email to [support@osg-htc.org](mailto:support@osg-htc.org). You can typically expect a first response within a few business hours.
 
+[support@osg-htc.org](mailto:support@osg-htc.org){.md-button .md-button--primary}
+
 ## Virtual Office Hours
 Drop-in for live help:
 
@@ -26,7 +28,9 @@ Drop-in for live help:
 
 You can find the URL to the Virtual Office Hours meeting room in the welcome message when you log into an OSG-managed Access Point, or in the signature of a support email from an RCF. 
 
-Click [here](https://docs.google.com/forms/d/e/1FAIpQLSd3K78Xx1Vo-KjqW_2y0YKcUMXrEsKXWk3I1Aww64RL22QpnQ/viewform) to sign-in for office hours, once you arrive in the room. 
+Once you arrive in the room, please sign in.
+
+[Sign-in for office hours](https://docs.google.com/forms/d/e/1FAIpQLSd3K78Xx1Vo-KjqW_2y0YKcUMXrEsKXWk3I1Aww64RL22QpnQ/viewform){.md-button .md-button--primary}
 
 Cancellations will be announced via email. If the times above don’t work for you, please email us at our usual support address to schedule a separate meeting.
 
@@ -34,8 +38,9 @@ Cancellations will be announced via email. If the times above don’t work for y
 ## Make an Appointment
 We are happy to arrange meetings outside of designated Office Hours. Email us to schedule a time to meet!
 
+[support@osg-htc.org](mailto:support@osg-htc.org){.md-button .md-button--primary}
 
 ## Training Opportunities
-The RCF team runs regular new user training on the first Tuesday of the month and a special topic training on the third Tuesday of the month. See upcoming training dates, registration information, and materials on the [OSPool Training page](../../../support_and_training/training/osgusertraining/).
+The RCF team runs regular new user training on the first Tuesday of the month and a special topic training on the third Tuesday of the month. See upcoming training dates, registration information, and materials on our training page.
 
- 
+[OSPool Training page](../../../support_and_training/training/osgusertraining/){.md-button .md-button--primary}
