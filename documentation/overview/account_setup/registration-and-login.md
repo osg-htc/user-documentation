@@ -43,7 +43,7 @@ for an account on a specific OSPool Access Point. The current default are
 
 To register for the `ap40.uw.osg-htc.org` access point, submit an application using the following steps:
 
-1. Visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:211). **OSG User School 2024 participants should use [this link](https://registry.cilogon.org/registry/co_petitions/start/coef:496).** You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step.
+1. Visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:211). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step.
    
    
       <img src="../../../assets/ap7-images/cilogon.png" class= "img-fluid"/>

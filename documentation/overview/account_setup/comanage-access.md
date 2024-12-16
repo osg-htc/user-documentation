@@ -44,7 +44,7 @@ To authenticate using this approach:
    ```
 
 2. Open your unique `https://` link in your web browser. 
-   With some terminals, you may be able to click on the link to open it.
+   When using some terminal applications, you may be able to click on the link to open it.
    Otherwise, copy the link and paste it into a web browser, and hit enter.  
 
 3. You will be redirected to a new page where you will be prompted to login using your institutional credentials. 

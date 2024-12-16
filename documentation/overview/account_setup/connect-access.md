@@ -46,7 +46,7 @@ NOT appear on the terminal, but the information is being entered!
 > Before you can connect, you will need to know your username and which login node your account is assigned to. 
 > You can find this information on your profile from the OSG Connect website.
 > 
-> 1. Go to www.osgconnect.net and sign in with your institution credentials that you used to request an account. 
+> 1. Go to [https://www.osgconnect.net](https://www.osgconnect.net) and sign in with your institution credentials that you used to request an account. 
 > 
 > 2. Click "Profile" in the top right corner.
 > 
