@@ -34,23 +34,24 @@ To authenticate using this approach:
    ```
    
    Upon hitting enter, the following text should appear with a unique URL, similar to the one in the example below: 
+   <!-- Because there are many hyphens in the code block, need to indent with 4 spaces instead of using the backticks
+   in order for them to be interpreted literally by Markdown instead of as a horizontal line -->
    
-   ```
-   Authenticate at
-   -----------------
-   https://cilogon.org/device/?user_code=FF4-ZX6-9LK
-   -----------------
-   Type 'Enter' when you authenticate.
-   ```
+       Authenticate at
+       -----------------
+       https://cilogon.org/device/?user_code=FF4-ZX6-9LK
+       -----------------
+       Type 'Enter' when you authenticate.
+   
 
-2. Open your unique `https://` link in your web browser. 
+3. Open your unique `https://` link in your web browser. 
    When using some terminal applications, you may be able to click on the link to open it.
    Otherwise, copy the link and paste it into a web browser, and hit enter.  
 
-3. You will be redirected to a new page where you will be prompted to login using your institutional credentials. 
+4. You will be redirected to a new page where you will be prompted to login using your institutional credentials. 
    Once you have done so, a new page will appear with the following text: `"You have successfully approved the user code. Please return to your device for further instructions."`
 
-4. Return to your terminal, and press the 'Enter' key to complete the login process. 
+5. Return to your terminal, and press the 'Enter' key to complete the login process. 
 
 
 ### Option 2: Log in via SSH Key Pair Authentication
