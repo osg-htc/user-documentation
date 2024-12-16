@@ -3,33 +3,89 @@ ospool:
   path: overview/account_setup/connect-access.md
 ---
 
-# Log In to "OSG Connect" Access Points
+# Log In to `uc.osg-htc.org` Access Points
 
 **This guide is for users who were notified by a member of the OSG team that they 
 will be using the "OSG Connect" Access Points. Do not go through the steps of this 
 guide until advised to by a Research Computing Facilitator**
 
-To join and use the "OSG Connect" Access Points (`ap20.uc.osg-htc.org`, 
-`ap21.uc.osg-htc.org`), you will go through the following steps: 
+> To use the "OSG Connect" Access Points (`ap20.uc.osg-htc.org`, 
+> `ap21.uc.osg-htc.org`), you must have first registered and have your account approved
+> as described [here](../registration-and-login).
 
-1. Apply for an OSG Connect Access Point account 
-2. Have your account approved by an OSG Team member
-3. Generate an ssh key and add it to your web profile
-4. Log in to the appropriate Access Point
+* If this is your first time logging in using OSG Connect, you'll need to first [set up multi factor authentication](#add-multi-factor-authentication-to-your-web-profile).
 
-## Apply for an OSG Connect Access Point account 
+* If this is your first time logging in from your current device, 
+you'll need to [add an SSH key to your web profile](#add-a-public-ssh-key-to-your-web-profile).
 
-If prompted by a Research Computing Facilitator, you can apply for OSG Connect Access Points here: 
+* If you've already set up an SSH key on your current device, you are ready to [log in](#log-in)!
 
-[OSG Connect Account Request](https://www.osgconnect.net/signup)
+## Log In
 
-## Account Approval by a Research Computing Facilitator
+If you have recently [set up multi factor authentication](#add-multi-factor-authentication-to-your-web-profile)
+or [set up an SSH key for your current device](#add-a-public-ssh-key-to-your-web-profile), 
+please wait 15 minutes before trying to log in.
 
-If a meeting has not already been scheduled with a Research Computing Facilitator, one of the facilitation team will contact you about arranging a short consultation. 
+### For Mac, Linux, or newer versions of Windows
 
-Following the meeting, the Facilitator will approve your account and add your profile to 
-any relevant OSG ‘project’ names. Once your account is ready, the Facilitator will email 
-you with your account details. 
+Open a terminal and type the following command, where you replace `your_osg_connect_username` and `your_osg_login_node`
+with the appropriate values for your account: 
+
+    ssh your_osg_connect_username@your_osg_login_node
+
+It will ask for the passphrase for your ssh key (if you set one), then for 
+a "Verification code" which you should get by going to the TOTP client you 
+used to set up multi factor authentication. After entering the six digit 
+code, you should be logged in. 
+
+Note that when you are typing your passphrase and verification code, your typing will 
+NOT appear on the terminal, but the information is being entered! 
+
+> ### Finding your account information
+> 
+> Before you can connect, you will need to know your username and which login node your account is assigned to. 
+> You can find this information on your profile from the OSG Connect website.
+> 
+> 1. Go to [https://www.osgconnect.net](https://www.osgconnect.net) and sign in with your institution credentials that you used to request an account. 
+> 
+> 2. Click "Profile" in the top right corner.
+> 
+> 3. The box on the left side contains your login information. 
+>    The login node address should be listed in the top right of this box.
+>    The `UNIX User Name` on the left side of this box is your username.
+> 
+> ![Identify Login Node](/images/find_osgconnect_login_node.png "OSG Connect Profile")
+> 
+
+### For older versions of Windows
+
+On older versions of Windows, you can use the [Putty program](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to log in. 
+
+<img src="/images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
+
+1. Open the `PutTTY` program. If necessary, you can download PuTTY from the website here [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
+
+2. Type the address of your assigned login node as the hostname (see "Determine which login node to use" above).
+
+3. In the left hand menu, click the "+" next to "SSH" to expand the menu.
+
+4. Click "Auth" in the "SSH" menu.
+
+5. Click "Browse" and specify the private key file you previously generated.
+
+6. Return to "Session". Then   
+
+   * Name your session 
+
+   * Save session for future use    
+
+7. Click "Open" to launch shell. Provide your ssh-key passphrase (created at Step 4 in PuTTYgen) when prompted to do so.
+
+8. When prompted for a "Verification Code", go to the TOTP client you used to set up 
+two-factor authentication, above, and enter the six digit code from the client into 
+your PuTTY terminal prompt. 
+
+The following video demonstrates the key generation and login process from the [Putty](https://www.youtube.com/watch?v=zk1uo1nA2HA&t=210s&ab_channel=OSG) 
 
 ## Add a public SSH key to your web profile
 
@@ -91,61 +147,3 @@ Once you have a TOTP client, configure it to be used with OSG Connect:
 **Important: after setting up multi-factor authentication using your TOTP client, you will 
 need to wait 15 minutes before logging in.**
 
-## Logging In
-
-After following the steps above to upload your key and set up multi factor authentication, once 
-about fifteen minutes have passed, you should be able to log in to OSG Connect. 
-
-### Determine which login node to use
-
-Before you can connect, you will need to know which login node your account is assigned to. You can find 
-this information on your profile from the OSG Connect website.
-
-1. Go to www.osgconnect.net and sign in with your institution credentials that you used to request an account. 
-
-2. Click "Profile" in the top right corner.
-
-3. The assigned login nodes are listed in the left side box. Make note of the address of 
-your assigned login node as you will use this to connect to OSG Connect.
-
-![Identify Login Node](/images/find_osgconnect_login_node.png "OSG Connect Profile")
-
-### For Mac, Linux, or newer versions of Windows
-
-Open a terminal and type in: 
-
-    ssh <your_osg_connect_username>@<your_osg_login_node>
-
-It will ask for the passphrase for your ssh key (if you set one), then for 
-a "Verification code" which you should get by going to the TOTP client you 
-used to set up two factor authentication above. After entering the six digit 
-code, you should be logged in. 
-
-Note that when you are typing your passphrase and verification code, your typing will 
-NOT appear on the terminal, but the information is being entered! 
-
-### For older versions of Windows
-
-On older versions of Windows, you can use the [Putty program](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to log in. 
-
-<img src="/images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
-
-1. Open the `PutTTY` program. If necessary, you can download PuTTY from the website here [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
-
-2. Type the address of your assigned login node as the hostname (see "Determine which login node to use" above).
-
-3. In the left hand menu, click the "+" next to "SSH" to expand the menu.
-
-4. Click "Auth" in the "SSH" menu.
-
-5. Click "Browse" and specify the private key file you saved in step 5 above.
-
-6. Return to "Session".    
-&nbsp;&nbsp;&nbsp;&nbsp;a. Name your session    
-&nbsp;&nbsp;&nbsp;&nbsp;b. Save session for future use     
-7. Click "Open" to launch shell. Provide your ssh-key passphrase (created at Step 4 in PuTTYgen) when prompted to do so.
-8. When prompted for a "Verification Code", go to the TOTP client you used to set up 
-two-factor authentication, above, and enter the six digit code from the client into 
-your PuTTY terminal prompt. 
-
-The following video demonstrates the key generation and login process from the [Putty](https://www.youtube.com/watch?v=zk1uo1nA2HA&t=210s&ab_channel=OSG) 
