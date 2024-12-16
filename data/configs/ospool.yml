@@ -16,7 +16,8 @@ nav:
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
     - Education And Training:
-      - "Monthly OSG User Training (registration+materials)": support_and_training/training/osgusertraining.md
+      - "Monthly OSG User Training": support_and_training/training/osgusertraining.md
+      - "Past Training Materials": support_and_training/training/materials.md
       - "Annual, Week-Long OSG User School ": support_and_training/training/osg-user-school.md
       - "Other Past Training Events ": support_and_training/training/previous-training-events.md
       - "OSPool Resources for Teaching & Education": support_and_training/training/ospool_for_education.md
