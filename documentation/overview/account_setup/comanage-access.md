@@ -34,14 +34,15 @@ To authenticate using this approach:
    ```
    
    Upon hitting enter, the following text should appear with a unique URL, similar to the one in the example below: 
+   <!-- Because there are many hyphens in the code block, need to indent with 4 spaces instead of using the backticks
+   in order for them to be interpreted literally by Markdown instead of as a horizontal line -->
    
-   ```
-   Authenticate at
-   -----------------
-   https://cilogon.org/device/?user_code=FF4-ZX6-9LK
-   -----------------
-   Type 'Enter' when you authenticate.
-   ```
+       Authenticate at
+       -----------------
+       https://cilogon.org/device/?user_code=FF4-ZX6-9LK
+       -----------------
+       Type 'Enter' when you authenticate.
+   
 
 2. Open your unique `https://` link in your web browser. 
    When using some terminal applications, you may be able to click on the link to open it.

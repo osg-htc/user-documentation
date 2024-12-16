@@ -54,14 +54,14 @@ NOT appear on the terminal, but the information is being entered!
 >    The login node address should be listed in the top right of this box.
 >    The `UNIX User Name` on the left side of this box is your username.
 > 
-> ![Identify Login Node](/images/find_osgconnect_login_node.png "OSG Connect Profile")
+> ![Identify Login Node](../../assets/ap7-images/find_osgconnect_login_node.png "OSG Connect Profile")
 > 
 
 ### For older versions of Windows
 
 On older versions of Windows, you can use the [Putty program](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to log in. 
 
-<img src="/images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
+<img src="../../assets/ap7-images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
 
 1. Open the `PutTTY` program. If necessary, you can download PuTTY from the website here [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
