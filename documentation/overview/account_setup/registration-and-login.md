@@ -39,6 +39,9 @@ Before or during the orientation meeting, you will be prompted to register
 for an account on a specific OSPool Access Point. The current default are
 `uw.osg-htc.org` Access Points. 
 
+***Please do not register for an Access Point until you have been instructed
+to do so by a Research Computing Facilitator!***
+
 ### Register for `uw.osg-htc.org` Access Points
 
 To register for the `ap40.uw.osg-htc.org` access point, submit an application using the following steps:
