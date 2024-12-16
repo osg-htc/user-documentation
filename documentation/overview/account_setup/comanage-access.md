@@ -44,14 +44,14 @@ To authenticate using this approach:
        Type 'Enter' when you authenticate.
    
 
-3. Open your unique `https://` link in your web browser. 
+2. Open your unique `https://` link in your web browser. 
    When using some terminal applications, you may be able to click on the link to open it.
    Otherwise, copy the link and paste it into a web browser, and hit enter.  
 
-4. You will be redirected to a new page where you will be prompted to login using your institutional credentials. 
+3. You will be redirected to a new page where you will be prompted to login using your institutional credentials. 
    Once you have done so, a new page will appear with the following text: `"You have successfully approved the user code. Please return to your device for further instructions."`
 
-5. Return to your terminal, and press the 'Enter' key to complete the login process. 
+4. Return to your terminal, and press the 'Enter' key to complete the login process. 
 
 
 ### Option 2: Log in via SSH Key Pair Authentication
