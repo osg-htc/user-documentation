@@ -6,7 +6,7 @@ ospool:
 Submit and Resubmit Multiple Jobs using Bash Scripting
 ====================================
 
-This guide is based on Jarryd Ramborger's original scripts, presented at HTC'24, with his permission.
+This guide is based on the original scripts from Jarryd Ramborger at the George Lab at UC San Diego, presented at HTC'24 ([watch the presentation](https://youtu.be/YrCLBf6ATmE?si=Scu4TSt7VlRpzUVL)). You can reach Jarryd at [jkramborger@health.ucsd.edu](mailto:jkramborger@health.ucsd.edu)
 
 ## Overview
 
