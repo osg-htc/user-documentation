@@ -10,13 +10,30 @@ This guide is meant to accompany the instructions for using containers
 in the PATh Facility.  You can use your own custom container to run jobs in the 
 PATh Facility, and we assume that those containers are built using Docker.  This 
 guide describes how to create your own Docker container "image" (the blueprint for 
-the container). Once you have created your custom image, 
-you will need to register the image as described further down in this guide.
+the container) and how to convert it to a Singularity/Apptainer image. 
 
 For an overview and how to execute images in PATh, please see
 [Containers - Overview][osg-containers]
 
-## Install Docker and Get a Docker Hub Account
+## Use an Existing Docker Container
+
+If a Docker container image already exists with the software you need, it can 
+be converted to a Singularity/Apptainer image format using this command: 
+
+	apptainer build my-custom-image.sif docker://owner/repo:tag
+
+Replace `my-custom-image.sif` with a name of your choice (keeping the `.sif` suffix) 
+and the `docker://owner/repo:tag` can be the identifier for any publicly hosted 
+Docker image, including those on `quay.io` and the NVIDIA NGC Catalog `nvcr.io`. 
+
+Once the `.sif` file is created, you can copy it to a data directory, 
+test it on the Access Point,
+and use it in your HTCondor jobs as described in
+[Containers - Overview][osg-containers].
+
+## Build a Docker Container
+
+### Install Docker and Get a Docker Hub Account
 
 You'll need a Docker Hub account in order to download Docker and share your 
 Docker container images: [DockerHub](https://hub.docker.com/)
@@ -24,7 +41,7 @@ Docker container images: [DockerHub](https://hub.docker.com/)
 Install Docker Desktop to your computer using the appropriate version for your 
 operating system. Note that PATh does not provide any Docker build hosts.
 
-## Identify Components
+### Identify Components
 
 What software do you want to install? Make sure that you have either the source 
 code or a command that can be used to install it through Linux (like `apt-get` or 
@@ -36,21 +53,17 @@ See the available containers on Docker Hub here:
 [OSG Docker Containers](https://hub.docker.com/u/opensciencegrid)
 The best candidates for you will be containers that have "osgvo" in the name. 
 
-If you prefer, you can base your image on images not already published 
-by PATh, but if you do this, we recommend that as one of the creation steps you 
-create the `/cvmfs` directory. See [Special Cases](#special-cases) below. 
+### Build the Image
 
-## Build a Container
+There are two ways to build a Docker container image: 
 
-There are two main methods for generating your own container image. 
-
-1. Editing the `Dockerfile`
-2. Editing the default image using local Docker
+1. Edit a `Dockerfile` and use it to produce an image
+2. Edit a default image using local Docker
 
 We recommend the first option, as it is more reproducible, but the second option 
 can be useful for troubleshooting or especially tricky installs. 
 
-### Editing the `Dockerfile`
+#### Option 1: Editing the `Dockerfile`
 
 Create a folder on your computer and inside it, create a blank text file 
 called `Dockerfile`.  
@@ -96,7 +109,7 @@ is `alice` and I created an image with the NCBI `blast` tool, I might use this n
     $ docker build -t alice/NCBI-blast .
 
 
-### Editing the default image using local Docker
+#### Option 2: Editing the default image using local Docker
 
 You can also build an image interactively, without a Dockerfile. First, get 
 the desired starting image from Docker Hub. Again, we will
@@ -130,7 +143,7 @@ Now you can commit the changes to the image and give it a name:
 You can also use the session's hash as found in the command prompt (`740b9db736a1` 
 in the above example) in place of the docker session name. 
 
-## Upload Docker Container to Docker Hub
+### Upload Docker Container to Docker Hub
 
 Once your container is complete and tagged, it should appear in the list of local Docker 
 container images, which you can see by running:
@@ -142,34 +155,8 @@ command:
 
 	$ docker push namespace/repository_name
 
-From here, if you're planning to use this container in OSG, return to our 
-[Containers in OSG Guide][osg-containers] to learn how to upload your container to the OSG's container repository. 
-
-
-## Submit your Docker Container to the OSG Repository
-
-Once your Docker image has been published on Docker Hub,
-it needs to be submitted to the shared Singularity repository
-(`/cvmfs/singularity.opensciencegrid.org/`), which also hosts the
-OSG/PATh-provided default images.
-
-To get your images included, please create a git pull request with the
-container identifier in `docker_images.txt` in the
-[cvmfs-singularity-sync repository](https://github.com/opensciencegrid/cvmfs-singularity-sync),
-or contact
-[support@path-cc.io](mailto:support@path-cc.io)
-and we can help you.
-
-Once your submission has been accepted, it will be automatically
-converted to a Singularity image and pushed to the OSG Singularity
-repository. Note: some common Dockerfile features,
-like ENV and ENTRYPOINT, are ignored when the Docker image is converted
-to a Singularity image.
-
-Once your container has been added to CVMFS, if you update your original
-Docker image, new versions pushed to Docker Hub will automatically be
-detected and the version in the CVMFS filesystem will be
-updated accordingly.
+From here, if you're planning to use this container in OSG, see the 
+[first section of this guide](use-an-existing-docker-container). 
 
 ## Special Cases
 
@@ -198,4 +185,4 @@ default command are `ENTRYPOINT` and `ENV`. Unfortunately, both of these
 aspects of the Docker container are deleted when it is converted to a 
 Singularity image in the Open Science Pool.
 
-[osg-containers]: ../../../htc_workloads/using_software/containers/
+[osg-containers]: containers
