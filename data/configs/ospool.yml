@@ -28,6 +28,7 @@ nav:
       - "Overview: Submit Jobs to the OSPool using HTCondor": htc_workloads/workload_planning/htcondor_job_submission.md
       - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
       - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
+      - "Job Duration Categories": htc_workloads/workload_planning/jobdurationcategory.md
       - "Convert your workflow from Slurm to HTCondor": htc_workloads/submitting_workloads/Slurm_to_HTCondor.md
       - "Launch a JupyterLab Instance": htc_workloads/submitting_workloads/jupyter.md            
     - Managing Data For Jobs:
