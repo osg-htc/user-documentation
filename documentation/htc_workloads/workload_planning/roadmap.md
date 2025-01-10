@@ -50,7 +50,7 @@ access point your account belongs to:
 <summary>Log In to "uw.osg-htc.org" Access Points (e.g., ap40.uw.osg-htc.org)</summary>
 <br>
 If your account is on the uw.osg-htc.org Access Points (e.g., accounts on ap40.uw.osg-htc.org), follow instructions in this guide for logging in:
-<a href="https://portal.osg-htc.org/documentation/overview/account_setup/ap7-access/">Log In to uw.osg-htc.org Access Points</a>
+<a href="https://portal.osg-htc.org/documentation/overview/account_setup/comanage-access/">Log In to uw.osg-htc.org Access Points</a>
 </details>
 
 <details>
