@@ -91,7 +91,7 @@ Finally, use `conda pack` to create a zipped tar.gz file of your environment (su
 When this step finishes, you should see a file in your current directory named `env-name.tar.gz`.
 
 ### 4. Check Size of Conda Environment Tar Archive
-The tar archive, `env-name.tar.gz`, created in the previous step will be used as input for subsequent job submission. As with all job input files, you should check the size of this Conda environment file. **If >1GB in size, you should move the file to either your `/public` or `/protected` folder, and transfer it to/from jobs using the `osdf:///` link, as described in [Overview: Data Staging and Transfer to Jobs](../../../htc_workloads/managing_data/overview.md).** This is the most efficient way to transfer large files to/from jobs. 
+The tar archive, `env-name.tar.gz`, created in the previous step will be used as input for subsequent job submission. As with all job input files, you should check the size of this Conda environment file. **If >1GB in size, you should move the file to either your `/public` or `/protected` folder, and transfer it to/from jobs using the `osdf:///` link, as described in [Overview: Data Staging and Transfer to Jobs](../../htc_workloads/managing_data/overview.md).** This is the most efficient way to transfer large files to/from jobs. 
 
 ### 5. Create a Job Executable
 The job will need to go through a few steps to use this “packed” conda environment; first, setting the `PATH`, then unzipping the environment, then activating it, and finally running whatever program you like. The script below is an example of what is needed (customize as indicated to match your choices above). For future reference, let's call this executable `conda_science.sh`. 
