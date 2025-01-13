@@ -5,9 +5,7 @@ path:
 
 # Apptainer/Singularity Container Images
 
-This guide is meant to accompany the instructions for using containers
-under the PATh Facility. You can use your own custom container to run
-jobs. This guide describes how to create your
+This guide describes how to create your
 own Apptainer/Singularity container "image" (the blueprint for the container).
 
 For an overview and how to execute images on the PATh Facility, please see
@@ -76,5 +74,5 @@ Once the image is built, you can copy it to a data directory, test it on the Acc
 and use it in your HTCondor jobs. This is all described in
 [Containers - Overview][osg-containers].
 
-[osg-containers]: ../../../htc_workloads/using_software/containers/
+[osg-containers]: containers
 
