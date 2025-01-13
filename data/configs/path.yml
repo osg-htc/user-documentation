@@ -1,14 +1,15 @@
 nav:
   - "Home": index.md
   - Overview:
-    - Welcome And Account Setup:
+    - Welcome:
       - "Getting Started": overview/account_setup/getting-started.md
-      - "Register for a PATh Facility Account": overview/account_setup/registration.md
-      - "Log in with SSH Keys": overview/account_setup/generate-add-sshkey.md
       - "Request PATh Facility Credits": overview/account_setup/request-credits.md
-    - References:
       - "Credit Account Charges": overview/references/credit-account-charges.md
       - "PATh Facility vs. OSG's Open Science Pool": overview/references/PATh_vs_OSPool.md
+    - Account Setup:
+      - "Register for a PATh Facility Account": overview/account_setup/registration.md
+      - "Log in with SSH Keys": overview/account_setup/generate-add-sshkey.md
+
   - Support And Training Resources:
     - Get Help!:
       - "Email, Office Hours, and Individual Consultations": support_and_training/support/getting-help-from-RCFs.md
