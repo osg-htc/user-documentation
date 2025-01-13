@@ -69,75 +69,55 @@ the `condor_submit` command with the name of the submit file.
 
 It's likely that you'll need additional Python packages that are not
 present in the base Python installations. This portion of the
-guide describes how to install your packages to a custom directory and 
+guide describes how to install your packages using [Apptainer](https://apptainer.org/documentation/) and 
 then include them as part of your jobs. 
 
 ### Install Python packages
 
-While connected to your login node, start the base Singularity container that has a 
-copy of Python inside: 
+Apptainer is installed on the access point and users can use Apptainer to either build an image from the definition file or use apptainer pull to create a `.sif` file from Docker images.**Please note that the docker build will not work on the access point.** More details about the apptainer or building a container image can be found in our [container guide](https://portal.osg-htc.org/documentation/htc_workloads/using_software/containers-singularity/) Before building a container image it is a good practice to set up the cache directory of Apptainer. Run the following command while connected to your login node
 
-     $ singularity shell /cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-20.04:latest
+     [user@ap]$ mkdir $HOME/tmp
+	 [user@ap]$ export TMPDIR=$HOME/tmp
+	 [user@ap]$ export APPTAINER_TMPDIR=$HOME/tmp
+	 [user@ap]$ export APPTAINER_CACHEDIR=$HOME/tmp$ 
 
-Next, create a directory for your files and set the `PYTHONPATH`
+Next, create a definition file for your python package. For this example we are using `python 3.13` and we are installing the `numpy` package using `pip` install. The definition file is given below
 
-     Singularity> mkdir my_env
-     Singularity> export PYTHONPATH=$PWD/my_env
+    BootStrap: docker
+    From: python:3.13
+
+	%post
+        # Update the system package index
+        apt-get update
+        # Install pip if its not already included
+        apt-get install -y python3-pip
+        # Upgrade pip
+        pip3 install --upgrade pip
+        # Install NumPy
+        pip3 install numpy
      
-> You can swap out `my_env` for a more descriptive name like `scipy` or `word-analysis`.
-
-Now we can use `pip` to install Python packages. 
-
-    Singularity> pip3 install --target=$PWD/my_env numpy
-    ......some download message...
-    Installing collected packages: numpy
-	Installing collected packages: numpy
-	Successfully installed numpy-1.16.3
-
-Install each package that you need for your job using the `pip install` command.  
-
-> If you would like to test the package installation, you can run the `python3` command 
+> You can install each package that you need for your job using the `pip3 install <packagename>` command in your definition file. Save the definition file as `python_3p13.def`. Now, we need to create the container image using `apptainer build python_3p13.sif python_3p13.def`. Feel free to use a name that best describes your python software. 
+> If you would like to test the package installation, you can invoke the container using the `apptainer shell` command. To invoke this container please run `apptainer shell python_3p13.sif` and afterwards run the `python3` command 
 > and then try importing the packages you just installed. To exit the Python console, 
 > type "quit()"
 
-Once you are done, you can leave the virtual environment: 
+Once you are done, you can close the virtual environment: 
 
     Singularity> exit
 
-All of the packages that were just installed should be contained in a sub-directory 
-of the `my_env` directory.  To use these packages in a job, the  entire `my_env` directory
-will be transfered as a tar.gz file.  So our final step is to compress the 
-directory, as follows: 
-
-	$ tar -czf my_env.tar.gz my_env
-
-### Create executable script to use installed packages
-In addition to loading the appropriate Python module, we will need to add a few
-steps to our bash executable to set-up the virtual environment we
-just created. That will look something like this: 
-
-	#!/bin/bash
-
-	# Unpack your envvironment (with your packages), and activate it
-	tar -xzf my_env.tar.gz
-	export PYTHONPATH=$PWD/my_env
-
-	# Run the Python script 
-	python3 myscript.py
-
-
 ### Modify the HTCondor submit file to transfer Python packages
 The submit file for this job will be similar to the base Python job submit file shown above
-with one addition - we need to include `my_env.tar.gz` in the list of files specified by `transfer_input_files`.
+with one change - we need to modify the `+SingularityImage` expression so that it uses our newly built `python_3p13.sif` image. For that we need to upload the Container Image to the [OSDF](https://portal.osg-htc.org/documentation/htc_workloads/managing_data/osdf/)
+The image will be resused for each job, and thus the preferred transfer method is OSDF. Store the .sif file under your personal data area on your access point (see table [here](https://portal.osg-htc.org/documentation/htc_workloads/managing_data/osdf/#where-to-put-your-files)).
 As an example: 
 
 	universe 	= vanilla
 	
-	+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-20.04:latest"
+	+SingularityImage = "osdf:///ospool/apXX/data/USERNAME/python_3p13.sif"
 	
 	executable 	= run_py.sh
 
-	transfer_input_files = myscript.py, my_env.tar.gz
+	transfer_input_files = myscript.py
 
 	log         = job.log
 	output      = job.out
@@ -156,7 +136,7 @@ As an example:
 This guide mainly focuses on the nuts and bolts of running Python, but it's important 
 to remember that additional files needed for your jobs (input data, setting files, etc.) 
 need to be transferred with the job as well. See our [Introduction to Data Management 
-on OSG][data-intro] for details on the different ways to deliver inputs to your jobs. 
+on OSG](https://portal.osg-htc.org/documentation/htc_workloads/managing_data/overview/) for details on the different ways to deliver inputs to your jobs. 
 
 When you've prepared a real job submission, make sure to run a test job and then check 
 the `log` file for disk and memory usage; if you're using significantly more or less 
