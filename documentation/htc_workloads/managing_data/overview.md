@@ -22,29 +22,24 @@ This guide describes where to place files on the access
 points, and how to use these files within jobs, with links to a more 
 detailed guide for each use case. 
 
-## Always Submit From `/home`
+!!! danger "Jobs should always be submitted from the `/home` directory"
 
-**Regardless of where data is placed, jobs should only be submitted with 
-`condor_submit` from `/home`**
+    Regardless of where your data is placed, you should only submit jobs (`condor_submit`) from the `/home` directory.
 
-## Use HTCondor File Transfer for Smaller Job Files
+## Use `/home` for Smaller Files
 
-You should use your `/home` directory to stage job files where:
+You should use your `/home` directory to stage input and output files where:
 
   * individual input files per job are less than 1GB per file, and if there 
     are multiple files, they total less than 1GB
   * output files per job are less than 1GB per file
 
-Files can to be transferred to and from the `/home` directory
-using HTCondor's file transfer mechanism.  Input files can be 
-specified in the submit file and by default, 
-files created by your job will automatically be returned
-to your `/home` directory. 
+Files can to be transferred to and from the `/home` directory using HTCondor's file transfer mechanism, which can easily handle smaller files (<1GB). By default, files created by your job will automatically be returned to your `/home` directory. 
 
 See our [Transfer Files To and From /home guide](../file-transfer-via-htcondor/)
 for complete details on managing your files this way. 
 
-## Use OSDF for Larger Files and Containers
+## Use the OSDF for Larger Files and Containers
 
 You should use the OSDF ([Open Science Data Federation](https://osg-htc.org/services/osdf.html))
 to stage job files where:
@@ -52,37 +47,31 @@ to stage job files where:
   * individual input files per job are greater than 1GB per file
   * an input file (of any size) is used by many jobs
   * output files per job are greater than 1GB per file
+  * a Singularity/Apptainer container image (`.sif`) is used
 
-You should also always use the OSDF to stage Singularity/Apptainer container 
-files (with the ending `.sif`) for jobs. 
+!!! warning "Important Note"
 
-> **Important Note:**
-> Files in OSDF are cached, so it is important to use a
-> descriptive file name (possibly using version names or dates within the file name), or
-> a directory structure with unique names to
-> ensure you know what version of the file you are using within your job.
+    Files in OSDF are **cached**, so it is important to use a descriptive file name (i.e. version, dates) or a directory structure with unique names to ensure you know what version of the file you are using within your job.
 
-To use the OSDF, files are placed (or returned to) a local path, and moved to 
-and from the job using a URL notation in the submit file. 
+See our guide on where to place your files in the OSDF and how to use 
+OSDF URLs in `transfer_input_files`/`transfer_output_files`.
 
-To see where to place your files in the OSDF and how to use 
-OSDF URLs in `transfer_input_files`/`transfer_output_files`, 
-please see the [OSDF](../osdf) guide.
+[OSDF guide](../osdf#where-to-put-your-files){.md-button .md-button--primary}
 
 ## Quotas
 
-`/home` and OSDF origins all have quota limits. `/home` is usually
-limited to 50 GBs, while OSDF limits vary. You can find out your current
-usage by running `quota` or `quota -vs`
+The `/home` directory and OSDF origins all have quota limits. The `/home` directory is
+limited to 50 GBs, while OSDF limits vary. You can view your current
+usage on the access point with the command `quota` or `quota -vs`.
 
-Note that jobs will go on hold if quotas are exceeded.
+Jobs will go on hold if quotas are exceeded.
 
-If you want an increase in your quota, please send a request with
-justification to the ticket system [support@osg-htc.org](mailto:support@osg-htc.org)
+To request an increase in your quota, please send a request with
+justification to the ticket system at [support@osg-htc.org](mailto:support@osg-htc.org).
 
 ## External Data Transfer to/from Access Point
 
-In general, common Unix tools such as `rsync`, `scp`, Putty, WinSCP,
+Most common Unix tools or file transfer programs such as `rsync`, `scp`, Putty, WinSCP,
 `gFTP`, etc. can be used to upload data from your computer to access
 point, or to download files from the access point.
 

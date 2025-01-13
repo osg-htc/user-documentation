@@ -3,13 +3,11 @@ ospool:
   path: htc_workloads/submitting_workloads/jupyter.md
 ---
 
-# OSPool Notebooks: Access the OSPool via Jupyter Lab
+# OSPool Notebooks: Access the OSPool via JupyterLab
 
-[TOC]
-
-The OSG team supports an OSPool Notebooks service, a Jupyter Lab interface that 
+The OSG team supports an OSPool Notebooks service, a JupyterLab interface that 
 connects with an OSPool Access Point. An OSPool Notebook instance 
-can be used to manage files, submit jobs, summarize results and run tutorials. 
+can be used to manage files, submit jobs, summarize results, and run tutorials. 
 
 ## Quick Start
 
@@ -25,7 +23,7 @@ If you have an existing account on the `ap40.uw.osg-htc.org` Access Point, the
 started Jupyter instance will connect to your account on that Access Point. If you don't have 
 an existing OSPool account, your Jupyter instance will be running on a temporary 
 Access Point as the "joyvan" user.  For more details on the differences between 
-these instances, see [Working with your OSPool Notebooks Instance](#working-with-your-ospool-notebooks-instance)
+these instances, see [Working with your OSPool Notebooks Instance](#working-with-your-ospool-notebooks-instance).
 
 To log out of your session, go to the top left corner of the JupyterLab interface and click the "File" tab. Under this tab, click "Log Out".
 

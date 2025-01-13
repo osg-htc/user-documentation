@@ -18,7 +18,9 @@ for US-affiliated academic, government, and non-profit research projects and gro
 
 Learn more about the services provided by the OSG that can support your HTC workload: 
 
-<a href="https://www.youtube.com/watch?v=5FMAFxROGv0"><img alt="OSG Introduction" src="/images/osg-intro-video-screenshot.png" width="360" height="204"></a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5FMAFxROGv0?si=brAswQEWy_VDLuIz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Computational Fit on the OSPool
 
 For problems that can be run as numerous independent jobs (a high-throughput approach) and have requirements
 represented in the first two columns 
@@ -39,8 +41,7 @@ to take advantage, and we'd love to discuss options with you!**
 | Output	| 	< 1GB		|	< 10 GB	|	> 10 GB**		|
 | Software	| pre-compiled binaries, containers | Most other than ---> | Licensed software, non-Linux |
 
-\* or checkpointable
-
+\* or checkpointable<br>
 \** per job; you can work with a multi-TB dataset on the OSPool if it can be split into pieces!
 
 Some examples of work that have been a good fit for the OSPool and benefited from 
@@ -51,15 +52,15 @@ using its resources include:
 - hyper/parameter sweeps
 - Monte Carlo methods and other model optimization
 
-## Resources to Quickly Learn More
+## Quickstart Resources
 
 **Introduction to OSG the Distributed High Throughput Computing framework** from the annual [OSG User School](https://opensciencegrid.org/outreach/):
 
-[<img src="/images/Intro_OSG_Video_Thumbnail.png" width="500">](https://www.youtube.com/embed/vpJPPjoQ3QU)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vpJPPjoQ3QU?si=nIqhW8_mgdlKVpUZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 **[Full OSG User Documentation](https://portal.osg-htc.org/documentation/)** including our [Roadmap to HTC Workload Submission](../../../htc_workloads/workload_planning/roadmap/)
 
-**[OSG User Training materials](../../../support_and_training/training/osgusertraining/)** . Any researcher affiliated with an academic, non-profit, or government US-based research project is welcome to attend our trainings. 
+**[OSG User Training materials](../../../support_and_training/training/osgusertraining/)**. Any researcher affiliated with an academic, non-profit, or government US-based research project is welcome to attend our trainings. 
 
 
 **Learn more and chat with a Research Computing Facilitator by [signing up for OSPool account](https://portal.osg-htc.org/application)**

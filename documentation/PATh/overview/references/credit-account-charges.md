@@ -5,11 +5,14 @@ path:
 
 # Credit Account Charges
 
+This page describes the specific credit charges for certain resources on the 
+[PATh Facility](https://path-cc.io/facility/). For details on how to request 
+credits for your project, see [Request PATh Facility Credits](../account-setup/request-credits)
+
 Credits may be requested and used under the CPU Credit category or the GPU Credit category. Credits are
 specific to each node type – CPU Credits are not transferable to GPU Credits, and vice-versa. CPU Credit charges
 are defined by a combination of per-job cores and memory request, while GPU Credit charges are defined by a combination
 of per-job GPU, CPU, and memory request.
-
 
 ## CPU Credits
 

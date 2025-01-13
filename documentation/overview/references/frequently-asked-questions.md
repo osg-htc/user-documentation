@@ -129,7 +129,7 @@ Jobs are submitted via HTCondor scheduler. Please see our <a href="https://porta
 </details>
 
 <details>
-<summary>How many jobs can I have in the queue?</summary>
+<summary id="max_idle">How many jobs can I have in the queue?</summary>
 <br>
 The number of jobs that are submitted to the queue by any one user cannot not exceed 10,000 without adding a special statement to the submit file. If you have more jobs than that, we ask that you include the following statement in your submit file: 
 <br>

@@ -16,7 +16,8 @@ nav:
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
     - Education And Training:
-      - "Monthly OSG User Training (registration+materials)": support_and_training/training/osgusertraining.md
+      - "Monthly OSG User Training": support_and_training/training/osgusertraining.md
+      - "Past Training Materials": support_and_training/training/materials.md
       - "Annual, Week-Long OSG User School ": support_and_training/training/osg-user-school.md
       - "Other Past Training Events ": support_and_training/training/previous-training-events.md
       - "OSPool Resources for Teaching & Education": support_and_training/training/ospool_for_education.md
@@ -28,6 +29,7 @@ nav:
       - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
       - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
       - "Submit and Resubmit Multiple Jobs using Bash Scripting": htc_workloads/submitting_workloads/re-submit-with-bash.md
+      - "Job Duration Categories": htc_workloads/workload_planning/jobdurationcategory.md
       - "Convert your workflow from Slurm to HTCondor": htc_workloads/submitting_workloads/Slurm_to_HTCondor.md
       - "Launch a JupyterLab Instance": htc_workloads/submitting_workloads/jupyter.md            
     - Managing Data For Jobs:
@@ -49,6 +51,7 @@ nav:
     - Considerations For Specific Resource Needs:
       - "Control Where Your Jobs Run/Job Requirements": htc_workloads/specific_resource/requirements.md
       - "GPU Jobs": htc_workloads/specific_resource/gpu-jobs.md
+      - "ARM64": htc_workloads/specific_resource/arm64.md
       - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing-on-OSPool.md
       - "Large Memory Jobs": htc_workloads/specific_resource/large-memory-jobs.md
       - "Multicore Jobs": htc_workloads/specific_resource/multicore-jobs.md
