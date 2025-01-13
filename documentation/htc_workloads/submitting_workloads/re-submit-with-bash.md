@@ -74,7 +74,9 @@ job_list=job_list.txt
 videos_directory=videos
 
 # Remove the job list file, if it exists, for a clean start
-rm -f ${job_list}
+if [ -f "${job_list}" ] ; then
+    rm "${job_list}"
+fi
 
 # Append list of videos with .mp4 extension to the job list file
 for video in $(find ${videos_directory} -type f -name "*.mp4"); do
@@ -242,7 +244,10 @@ rerun_list=rerun_list.txt
 analysis_dir=analysis
 
 # Remove the rerun list file, if it exists, for a clean start
-rm -f ${rerun_list}
+rerun_list="rerun_list.txt"
+if [ -f "${rerun_list}" ] ; then
+    rm "${rerun_list}"
+fi
 
 # Loop through input_list and finds the basename: 
 #    If there is no match, add it to rerun_list
