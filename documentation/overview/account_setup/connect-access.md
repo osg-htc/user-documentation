@@ -61,7 +61,7 @@ NOT appear on the terminal, but the information is being entered!
 
 On older versions of Windows, you can use the [Putty program](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to log in. 
 
-<img src="../../assets/ap7-images/putty-screenshots.png" alt="PuTTY Intructions Screenshot">
+![PuTTY Intructions Screenshot](../../assets/ap7-images/putty-screenshots.png)
 
 1. Open the `PutTTY` program. If necessary, you can download PuTTY from the website here [PuTTY download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
 
@@ -85,7 +85,9 @@ On older versions of Windows, you can use the [Putty program](https://www.chiark
 two-factor authentication, above, and enter the six digit code from the client into 
 your PuTTY terminal prompt. 
 
-The following video demonstrates the key generation and login process from the [Putty](https://www.youtube.com/watch?v=zk1uo1nA2HA&t=210s&ab_channel=OSG) 
+> The following video demonstrates the key generation and login process from Putty:
+>
+> <iframe width="100%" height="400" src="https://www.youtube.com/embed/zk1uo1nA2HA?si=Ju576bpJaZNaPPcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Add a public SSH key to your web profile
 

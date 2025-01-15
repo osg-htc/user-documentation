@@ -55,7 +55,10 @@ following:
      ...
 
 The part you want to upload is the content of the `.pub` file (~/.ssh/id_rsa.pub)
-The following video demonstrates the key generation process from the [terminal](https://www.youtube.com/watch?v=sKXqRjKm4bM&t=114s&ab_channel=OSG) 
+
+> The following video demonstrates the key generation process from the terminal:
+>
+> <iframe width="100%" height="400" src="https://www.youtube.com/embed/sKXqRjKm4bM?si=jwlMhruXmx6CY68k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Windows, using Putty to log in
 
@@ -82,7 +85,7 @@ can use a key without a passphrase, but this is not recommended.
 
 7. Right-click again in the same text field and choose Copy.
 
-![alt text](/images/puttygen_ssh_key.png.png "PuttyGen Window")
+![alt text](../../assets/puttygen_ssh_key.png)
 
 ## Next Steps
 
