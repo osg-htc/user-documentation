@@ -1,1 +1,0 @@
-../../../../../documentation/overview/account_setup/ap20-ap21-migration.md
