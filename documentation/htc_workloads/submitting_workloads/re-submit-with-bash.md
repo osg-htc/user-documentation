@@ -244,7 +244,6 @@ rerun_list=rerun_list.txt
 analysis_dir=analysis
 
 # Remove the rerun list file, if it exists, for a clean start
-rerun_list="rerun_list.txt"
 if [ -f "${rerun_list}" ] ; then
     rm "${rerun_list}"
 fi
