@@ -10,7 +10,8 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 
 **Registration opens a month before the training date, and closes 24 hours before the event. You can register for all of our trainings via setmore:**
 
-<font size="15">[Register Here](https://osgfacilitation.setmore.com/#classes)</font>
+<!-- <font size="15">[Register Here](https://osgfacilitation.setmore.com/#classes)</font> -->
+[Register Here](https://osgfacilitation.setmore.com/#classes){.md-button .md-button--primary}
 
 ## Fall 2024 Training Schedule
 
