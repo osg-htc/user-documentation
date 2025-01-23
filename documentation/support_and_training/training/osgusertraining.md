@@ -15,6 +15,24 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 
 ## Fall 2024 Training Schedule
 
+<!-- Template for adding training row to the following table
+
+  <tr>
+      <td> Tuesday, __DATE_OF_TRAINING__</td>
+      <td><b>__TITLE_OF_TRAINING__</b>
+        <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
+        <ul>
+            <li>__TOPIC_1__
+            <li>__TOPIC_2__
+            <li>__TOPIC_3__
+        </ul>
+        <p>__TRAINING_DESCRIPTION__</b></p>
+        <p><i>Prerequisites/Audience:</i> __PREREQUISITES__</p>
+      </td>
+  </tr>
+
+-->
+
 <table>
   <tr>
       <td>Tuesday, September 17</td>
