@@ -10,44 +10,93 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 
 **Registration opens a month before the training date, and closes 24 hours before the event. You can register for all of our trainings via setmore:**
 
-<font size="15">[Register Here](https://osgfacilitation.setmore.com/#classes)</font>
+<!-- <font size="15">[Register Here](https://osgfacilitation.setmore.com/#classes)</font> -->
+[Register Here](https://osgfacilitation.setmore.com/#classes){.md-button .md-button--primary}
 
-## Fall 2024 Training Schedule
+## Spring 2025 Training Schedule
+
+<!-- Template for adding training row to the following table
+
+  <tr>
+      <td> Tuesday, __DATE_OF_TRAINING__</td>
+      <td><b>__TITLE_OF_TRAINING__</b>
+        <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
+        <ul>
+            <li>__TOPIC_1__
+            <li>__TOPIC_2__
+            <li>__TOPIC_3__
+        </ul>
+        <p>__TRAINING_DESCRIPTION__</b></p>
+        <p><i>Prerequisites/Audience:</i> __PREREQUISITES__</p>
+      </td>
+  </tr>
+
+-->
 
 <table>
   <tr>
-      <td>Tuesday, September 17</td>
-      <td><b>OSPool Basics: Get Running on the OSPool</b>
+      <td>Tuesday, January 21</td>
+      <td><b>Troubleshooting on the OSPool</b>
         <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
         <ul>
-            <li>An introduction to OSG services and the OSPool
-            <li>Basics of HTCondor job submission
-            <li>Hands-on practice submitting HTCondor jobs
+            <li>Categories of job problems
+            <li>How to get more information about a job problem
+            <li>Strategies and considerations for troubleshooting
         </ul>
-        <p>If you’re new to the OSPool (or been away for awhile) and want to get started, <b>this is an ideal opportunity to go through core concepts and practice hands-on skills.</b></p>
-        <p><i>Prerequisites/Audience:</i> There are no prerequisites for this workshop. This workshop is designed for new HTCondor and OSPool users.</p>
+        <p>This session will focus on learning the concepts of debugging and troubleshooting on the OSPool. It will cover some strategies, tips, and tricks that you can use to answer questions such as "Why are my jobs on hold?" and "Why are my jobs stuck on idle?". At the end of the session is an optional hands-on portion.</b></p>
+        <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Some familiarity with shell commands (such as how to edit files, copy/paste in the terminal) and HTCondor commands (such as condor_submit, condor_q) is recommended.</p>
       </td>
   </tr>
   <tr>
-      <td>Tuesday, October 15</td>
-      <td><b>Workflows with Pegasus</b>
-        <p>
-        <i>Learning Objectives:</i> An introduction to the Pegasus Workflow Management System, which is a useful tool for researchers needing to execute a large number of jobs or complex workflows. Attendees will learn how to construct and manage workflows, capabilities like automatic data transfers, and higher level tooling to analyze the workflow performance.
-        </p>
-        <p>
-        <i>Prerequisites/Audience:</i> There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented.
-        </p>
+      <td>Tuesday, February 18</td>
+      <td><b>Building and Using Containers on the OSPool</b>
+        <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
+        <ul>
+            <li>Introduction to containers
+            <li>How to install software in a container
+            <li>How to use a container to deploy your software in an OSPool job
+        </ul>
+        <p>Getting your computational program to run on someone else's computer can be a difficult process, especially on the OSPool, where there are many different operating systems with a variety of programs (and versions) installed and you don't have admin permissions. But what if there was a way to make sure your job always ran using your desired operating system, programs, and versions that you chose? In this training, we'll show you how you can achieve this very thing through the use of "container" technology.</b></p>
+        <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal).</p>
       </td>
   </tr>
   <tr>
-      <td>Tuesday, November 19</td>
-      <td><b>DAGMan: HTCondor’s Workflow Manager</b>
-        <p>
-        <i>Learning Objectives:</i> In this training, you will be guided through hands-on exercises to learn how to use DAGMan to automate your HTCondor job submissions. This training is especially useful for anyone who has constructed different job types and wants to be able to run them in a certain order.
-        </p>
-        <p>
-        <i>Prerequisites/Audience:</i> A basic understanding of HTCondor job submission
-        </p>
+      <td>Tuesday, March 18</td>
+      <td><b>GPUs in the OSPool</b>
+        <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
+        <ul>
+            <li>The type and availabitity of GPUs on the OSPool
+            <li>How to run OSPool jobs that use GPUs
+            <li>Recommendations and strategies for using GPUs
+        </ul>
+        <p>This session will focus on GPUs in the OSPool, emphasizing their capabilities, availability, and best practices for accessing and utilizing them effectively. The discussion will include common examples and codes to provide practical insights and demonstrate their application.</b></p>
+        <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal). Some familiarity with containers is also recommended.</p>
+      </td>
+  </tr>
+  <tr>
+      <td>Tuesday, April 15</td>
+      <td><b>Use Your Data Anywhere</b>
+        <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
+        <ul>
+            <li>Overview of data movement on the OSPool
+            <li>How to stage data using the OSDF
+            <li>Using the OSDF in you OSPool jobs
+        </ul>
+        <p>In this training, we will introduce attendees to the Open Science Data Federation (OSDF), a data platform that allows you to stage data for both distributed computing (such as on the OSPool) and sharing your data with others. It's even possible to connect your own storage to the OSDF directly, to both share and use yourself. Join us for an overview of the OSDF and hands-on examples of using it. </b></p>
+        <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal).</p>
+      </td>
+  </tr>
+  <tr>
+      <td>Tuesday, May 20</td>
+      <td><b>Adapting Workflows for High Throughput Bioinformatics</b>
+        <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
+        <ul>
+            <li>Setting up software for the OSPool
+            <li>Organizing your work environment
+            <li>Useful HTCondor submit options
+        </ul>
+        <p>In this training, we will create and scale up a BWA bioinformations workflow using HTCondor on the OSPool. In doing so, participants will learn how to set up and use software on the OSPool, how to keep their work environment organized, and strategies for HTCondor job submission. Though the training covers a bioinformatic example, the lessons are applicable to anyone interested in scaling up their OSPool computing.</b></p>
+        <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal).</p>
       </td>
   </tr>
 </table>
