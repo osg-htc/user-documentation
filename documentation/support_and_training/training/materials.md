@@ -88,6 +88,32 @@ Spring 2024
 <br>
 </details>
 
+<details>
+<summary>Troubleshooting on the OSPool</summary>
+<br>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/azA7-4cPYEY?si=l19FL6k6xgozWB1A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<b>Learning Objectives</b>
+<br>
+This session will focus on learning the concepts of debugging and troubleshooting on the OSPool. It will cover some strategies, tips, and tricks that you can use to answer questions such as "Why are my jobs on hold?" and "Why are my jobs stuck on idle?". At the end of the session is an optional hands-on portion.
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Some familiarity with shell commands (such as how to edit files, copy/paste in the terminal) and HTCondor commands (such as condor_submit, condor_q) is recommended.
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://www.youtube.com/watch?v=azA7-4cPYEY">Video Recording</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Spring 2025
+<br>
+</details>
+
 
 <details>
 <summary>Access the OSPool via Jupyter Interface</summary>

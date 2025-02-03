@@ -45,6 +45,7 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
         </ul>
         <p>This session will focus on learning the concepts of debugging and troubleshooting on the OSPool. It will cover some strategies, tips, and tricks that you can use to answer questions such as "Why are my jobs on hold?" and "Why are my jobs stuck on idle?". At the end of the session is an optional hands-on portion.</b></p>
         <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Some familiarity with shell commands (such as how to edit files, copy/paste in the terminal) and HTCondor commands (such as condor_submit, condor_q) is recommended.</p>
+        <a class="md-button md-button--primary" href="https://www.youtube.com/watch?v=azA7-4cPYEY">Video Recording</a>
       </td>
   </tr>
   <tr>
