@@ -1,12 +1,14 @@
 ---
 ospool:
   path: htc_workloads/using_software/available-containers-list.md
+path:
+  path: htc_workloads/containers/available-containers-list.md
 ---
 
 Existing OSPool-Supported Containers 
 ====================================
 
-This is list of commonly used containers in the Open Science Pool. These can be used
+This is list of commonly used containers in the Open Science Pool and PATh Facility. These can be used
 directly in your jobs or as base images if you want to define your own. Please
 see the pages on [Apptainer containers][container-apptainer] and [Docker containers][container-docker]
 for detailed instructions on how to use containers.

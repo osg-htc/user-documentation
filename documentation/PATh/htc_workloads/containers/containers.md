@@ -13,7 +13,7 @@ that your submitted jobs run within one of these.
 
 For jobs on the PATh Facility, it does not matter whether you provide a Docker or
 Apptainer/Singularity image. Either is compatible with our system and can be
-used with little to no modification. Determining factors on when to
+used with minimal to no modification. Determining factors on when to
 use Apptainer/Singularity images over Docker images include if an image already
 exists, external to PATh distribution preferences, and if you have
 experience building images in one for format and not the other.
@@ -34,24 +34,6 @@ commands to start the container. Nor should the container image
 contain any entrypoint/cmd - the job is the command to be run in the
 container.
 
-## Exploring Images on the Access Points
-
-Just like it is important to test your codes and jobs at a small scale,
-you should make sure that your container is working correctly. One way
-to explore how PATh Facility sees your container images, is to explore them on
-the PATh Facility access points. Start an interactive session with the
-Apptainer/Singularity "shell" mode. The recommended command line, similar
-to how containers are started for jobs, is:
-
-    apptainer shell \
-                /cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-20.04:latest/
-
-This will give you an interactive shell in an Ubuntu 20.04 container,
-with your current working directory mounted under /srv. You can explore
-the container and test your code with for example your own inputs from
-your home directory. Once you are down exploring, exit the container
-by running `exit` or with `CTRL+D`
-
 ## PATh-Provided Images
 
 The Facilition Team maintains a set of images that are already in a shared 
@@ -63,7 +45,7 @@ you can use your own container or any container image in Docker Hub
 Apptainer/Singularity repository, your can submit jobs that run within a
 particular container by listing the container image in the submit file.
 
-    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-el8:latest"
+    +SingularityImage = "osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__rocky__9.sif"
 
     <other usual submit file lines>
     queue
@@ -99,46 +81,9 @@ by creating a new file named with v2.
 More information on how to create Apptainer/Singularity images can be found
 in the [Apptainer Images Guide][singularity-guide].
 
-## Custom Docker Images
+If you already have a Docker image, or want to build one, see 
+our [Docker Images Guide][docker-guide]. 
 
-If you would prefer to create or use an existing Docker Hub container,
-for example an authoritative container for your software which
-already exists in Docker Hub, PATh can distribute the image for you
-via CVMFS. The result is a synchronized copy of the image under
-`/cvmfs/singularity.opensciencegrid.org/` which is cached and available
-to the execution nodes. Creating and/or registering a Docker
-image is described in the [Docker Images Guide][docker-guide].
-
-To run a job with a Docker image, use the `+SingularityImage` to
-specify the image the job should be using. Example:
-
-    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-el8:latest"
-
-    <other usual submit file lines>
-    queue
-
-Another example would be if your Docker Hub username is `alice` and you
-created a container called `ncbi-blast`, and tag `v1`, added to the shared
-Singularity repository, your submit file will include:
-
-    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/alice/ncbi-blast:v1"
-
-    <other usual submit file lines>
-    queue
-
-## Frequently Asked Questions / Common Issues
-
-### FATAL: kernel too old
-
-If you get a *FATAL: kernel too old* error, it means that the glibc version in the
-image is too new for the kernel on the host. You can work around this problem by
-specifying the minimum host kernel. For example, if you want to run the Ubuntu 18.04
-image, specfy a minimum host kernel of 3.10.0, formatted as 31000
-(major * 10000 + minor * 100 + patch):
-
-    Requirements = HAS_SINGULARITY == True && OSG_HOST_KERNEL_VERSION >= 31000
-
-
-[container-list]: ../../../htc_workloads/using_software/available-containers-list/
-[docker-guide]: ../../../htc_workloads/using_software/new_modules_list/
-[singularity-guide]: ../../../htc_workloads/using_software/containers/
+[container-list]: available-containers-list
+[docker-guide]: containers-docker
+[singularity-guide]: containers-singularity
