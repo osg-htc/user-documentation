@@ -41,9 +41,10 @@ nav:
       - "Overview: Software on the Open Science Pool": htc_workloads/using_software/software-overview.md
       - "Compiling Software": htc_workloads/using_software/compiling-applications.md
       - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
-      - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
-      - "Containers - Docker": htc_workloads/using_software/containers-docker.md
-      - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
+      - "Containers - Overview": htc_workloads/containers/overview.md
+      - "Containers - Apptainer/Singularity": htc_workloads/containers/apptainer.md
+      - "Containers - Docker": htc_workloads/containers/docker.md
+      - "Containers - Predefined List": htc_workloads/containers/predefined.md
     - Monitor, Review, and Troubleshoot Jobs:
       - "Monitor and Review Jobs With condor_q and condor_history": htc_workloads/submitting_workloads/monitor_review_jobs.md  
       - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md
