@@ -1,1 +1,1 @@
-../../../../../documentation/PATh/htc_workloads/containers/available-containers-list.md
+../../../../../documentation/htc_workloads/using_software/available-containers-list.md
