@@ -22,16 +22,15 @@ nav:
     - Accessing Your OSPool Account:
       - "Log In to uw.osg-htc.org Access Points": overview/account_setup/comanage-access.md
       - "Log In to OSG Connect Access Points": overview/account_setup/connect-access.md
+      - "Launch a JupyterLab Instance": htc_workloads/submitting_workloads/jupyter.md            
       - "Generate SSH Keys": overview/account_setup/generate-add-sshkey.md
       - "Set and View Project Usage": overview/account_setup/starting-project.md
     - HTC Workload Planning, Testing, and Scaling Up:
       - "Overview: Submit Jobs to the OSPool using HTCondor": htc_workloads/workload_planning/htcondor_job_submission.md
-      - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
       - "Easily Submit Multiple Jobs": htc_workloads/submitting_workloads/submit-multiple-jobs.md
-      - "Submit and Resubmit Multiple Jobs using Bash Scripting": htc_workloads/submitting_workloads/re-submit-with-bash.md
+      - "Determining the Amount of Resources to Request in a Submit File ": htc_workloads/workload_planning/preparing-to-scale-up.md
       - "Job Duration Categories": htc_workloads/workload_planning/jobdurationcategory.md
       - "Convert your workflow from Slurm to HTCondor": htc_workloads/submitting_workloads/Slurm_to_HTCondor.md
-      - "Launch a JupyterLab Instance": htc_workloads/submitting_workloads/jupyter.md            
     - Managing Data For Jobs:
       - "Overview: Data Staging and Transfer to Jobs": htc_workloads/managing_data/overview.md
       - "Transfer Smaller Job Files to and from /home": htc_workloads/managing_data/file-transfer-via-htcondor.md
@@ -73,6 +72,7 @@ nav:
     - Job Submission and Organization Tutorials: 
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/tutorial-quickstart/README.md
       - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
+      - "Submit and Resubmit Multiple Jobs using Bash Scripting": htc_workloads/submitting_workloads/re-submit-with-bash.md
       - "Scaling Up With HTCondor’s Queue Command": software_examples/python/tutorial-ScalingUp-Python/README.md
       - "Scaling up compute resources": software_examples/r/tutorial-ScalingUp-R/README.md
       - "Intermediate DAGMan: Uses and Features": htc_workloads/automated_workflows/tutorial-dagman-intermediate/README.md
