@@ -1,23 +1,15 @@
 nav:
   - "Home": index.md
-  - Quick Reference: 
-      - Welcome:
+  - Welcome: 
+    - Get Started:
       - "Test Drive the OSPool": overview/test-drive.md
-      - "Computation on the Open Science Pool": overview/account_setup/is-it-for-you.md
       - "Start Here: Overview of Requesting OSPool Access": overview/account_setup/registration-and-login.md
       - "Roadmap to HTC Workload Submission": htc_workloads/workload_planning/roadmap.md
-      - "OSPool Resources for Teaching & Education": support_and_training/training/ospool_for_education.md
-    - Reference and Policies: 
-      - "Policies for Using OSG Services and the OSPool ": overview/references/policy.md
-      - "Acknowledge the OSG": overview/references/acknowledgeOSG.md
-      - "Frequently Asked Questions": overview/references/frequently-asked-questions.md
-      - "OSG Accounting (GRACC)": overview/references/gracc.md
-  - Support And Training Resources:
-    - Get Help!:
-      - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
     - Education And Training:
       - "Monthly OSG User Training": support_and_training/training/osgusertraining.md
       - "Past Training Materials": support_and_training/training/materials.md
+    - Get Help!:
+      - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
   - Docs:
     - Accessing Your OSPool Account:
       - "Log In to uw.osg-htc.org Access Points": overview/account_setup/comanage-access.md
@@ -69,13 +61,6 @@ nav:
       - "Finding OSG Locations": htc_workloads/submitting_workloads/tutorial-osg-locations/README.md
       - "Wordcount Tutorial for Submitting Multiple Jobs": software_examples/python/tutorial-wordfreq/README.md
       - "Basics of compiled MATLAB applications - Hello World example": software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md
-    - Job Submission and Organization Tutorials: 
-      - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/tutorial-quickstart/README.md
-      - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
-      - "Submit and Resubmit Multiple Jobs using Bash Scripting": htc_workloads/submitting_workloads/re-submit-with-bash.md
-      - "Scaling Up With HTCondor’s Queue Command": software_examples/python/tutorial-ScalingUp-Python/README.md
-      - "Scaling up compute resources": software_examples/r/tutorial-ScalingUp-R/README.md
-      - "Intermediate DAGMan: Uses and Features": htc_workloads/automated_workflows/tutorial-dagman-intermediate/README.md
     - Software Examples and Tutorials: 
       - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
       - "Use External Packages in your R Jobs": software_examples/r/tutorial-R-addlibSNA/README.md
@@ -87,3 +72,19 @@ nav:
       - "Conda with Containers": software_examples/other_languages_tools/conda-container.md
       - "Run R scripts on the OSPool": software_examples/r/tutorial-R/README.md
       - "Analyzing .csv Data with R": software_examples/r/tutorial-spills-R/README.md
+    - Job Submission and Organization Tutorials: 
+      - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/tutorial-quickstart/README.md
+      - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
+      - "Submit and Resubmit Multiple Jobs using Bash Scripting": htc_workloads/submitting_workloads/re-submit-with-bash.md
+      - "Scaling Up With HTCondor’s Queue Command": software_examples/python/tutorial-ScalingUp-Python/README.md
+      - "Scaling up compute resources": software_examples/r/tutorial-ScalingUp-R/README.md
+      - "Intermediate DAGMan: Uses and Features": htc_workloads/automated_workflows/tutorial-dagman-intermediate/README.md
+  - Reference: 
+    - Overviews:
+      - "Computation on the Open Science Pool": overview/account_setup/is-it-for-you.md
+      - "OSPool Resources for Teaching & Education": support_and_training/training/ospool_for_education.md
+    - Reference and Policies: 
+      - "Policies for Using OSG Services and the OSPool ": overview/references/policy.md
+      - "Acknowledge the OSG": overview/references/acknowledgeOSG.md
+      - "Frequently Asked Questions": overview/references/frequently-asked-questions.md
+      - "OSG Accounting (GRACC)": overview/references/gracc.md
