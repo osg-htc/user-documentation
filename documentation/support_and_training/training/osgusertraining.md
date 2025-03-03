@@ -59,6 +59,7 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
         </ul>
         <p>Getting your computational program to run on someone else's computer can be a difficult process, especially on the OSPool, where there are many different operating systems with a variety of programs (and versions) installed and you don't have admin permissions. But what if there was a way to make sure your job always ran using your desired operating system, programs, and versions that you chose? In this training, we'll show you how you can achieve this very thing through the use of "container" technology.</b></p>
         <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal).</p>
+        <a class="md-button md-button--primary" href="https://www.youtube.com/watch?v=awSLTflAIJ8">Video Recording</a>
       </td>
   </tr>
   <tr>
