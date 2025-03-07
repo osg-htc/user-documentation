@@ -11,22 +11,22 @@ an OSPool notebook - and you don't even need an account!
 
 1. Go to [OSPool Notebooks](https://osg-htc.org/notebooks)
 
-	![](assets/notebooks/01-notebooks-welcome.png)
+	![](../assets/notebooks/01-notebooks-welcome.png)
 
 1. Log in with your institutional identity. If it isn't listed, use Google or Microsoft 
 (depending on which your institution uses for email) and then use your 
 institutional ID to log in. 
 
-	![](assets/notebooks/02-notebooks-login.png)
+	![](../assets/notebooks/02-notebooks-login.png)
 
 1. Choose the "Guest notebook"
 
-	![](assets/notebooks/03-notebooks-options.png)
+	![](../assets/notebooks/03-notebooks-options.png)
 
 
 1. You should see something like this: 
 
-	![](assets/notebooks/04-notebooks-lab.png)
+	![](../assets/notebooks/04-notebooks-lab.png)
 
 	On the left, click on one of the tutorial folders to try -- we recommend starting 
 	with the `tutorial-fastqc` example. 
@@ -34,13 +34,13 @@ institutional ID to log in.
 1. Once you have selected a tutorial, open the notebook associated with that 
 tutorial. Look for the orange square next to the file name. 
 
-	![](assets/notebooks/05-notebooks-folder.png)
+	![](../assets/notebooks/05-notebooks-folder.png)
 
 1. Once the tutorial is open, you can read about it and run each code cell 
 (with bash commands) using either the play icon (see below) or the keyboard 
 shortcut `SHIFT` + `ENTER`
 
-	![](assets/notebooks/06-notebooks-tutorial.png)
+	![](../assets/notebooks/06-notebooks-tutorial.png)
 
 1. As the tutorial progresses, you'll submit real jobs and produce real results! 
 
