@@ -2,12 +2,14 @@ nav:
   - "Home": index.md
   - Welcome: 
     - Get Started:
-      - "Test Drive the OSPool": overview/test-drive.md
+      - "Test Drive the OSPool": overview/test-drive-ospool.md
+      - "Computation on the Open Science Pool": overview/account_setup/is-it-for-you.md
       - "Start Here: Overview of Requesting OSPool Access": overview/account_setup/registration-and-login.md
       - "Roadmap to HTC Workload Submission": htc_workloads/workload_planning/roadmap.md
     - Education And Training:
       - "Monthly OSG User Training": support_and_training/training/osgusertraining.md
       - "Past Training Materials": support_and_training/training/materials.md
+      - "OSPool Resources for Teaching & Education": support_and_training/training/ospool_for_education.md
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
   - Docs:
@@ -52,26 +54,26 @@ nav:
       - "Simple Example of a DAGMan Workflow": htc_workloads/automated_workflows/dagman-simple-example.md
       - "Use Pegasus to Manage Workflows on OSPool Access Points": htc_workloads/automated_workflows/tutorial-pegasus/README.md
   - Tutorials and Software Examples:
-    - Workflow Examples: 
-      - "PyTorch": software_examples/ai/tutorial-pytorch/README.md
-      - "Run Python Scripts on the OSPool ": software_examples/python/manage-python-packages.md
+    - Research Examples: 
       - "FastQC Quality Control": software_examples/bioinformatics/tutorial-fastqc/README.md
       - "FreeSurfer": software_examples/freesurfer/Introduction.md
       - "Running a Molecule Docking Job with AutoDock Vina": software_examples/drug_discovery/tutorial-AutoDockVina/README.md
       - "Finding OSG Locations": htc_workloads/submitting_workloads/tutorial-osg-locations/README.md
+      - "Analyzing .csv Data with R": software_examples/r/tutorial-spills-R/README.md
       - "Wordcount Tutorial for Submitting Multiple Jobs": software_examples/python/tutorial-wordfreq/README.md
-      - "Basics of compiled MATLAB applications - Hello World example": software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md
-    - Software Examples and Tutorials: 
-      - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
-      - "Use External Packages in your R Jobs": software_examples/r/tutorial-R-addlibSNA/README.md
+      - "PyTorch": software_examples/ai/tutorial-pytorch/README.md
       - "scikit-learn": software_examples/ai/scikit-learn.md
       - "TensorFlow": software_examples/ai/tensorflow.md
+    - Software Examples and Tutorials: 
+      - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
+      - "Basics of compiled MATLAB applications - Hello World example": software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md
+      - "Run Python Scripts on the OSPool ": software_examples/python/manage-python-packages.md
+      - "Run R scripts on the OSPool": software_examples/r/tutorial-R/README.md
+      - "Use External Packages in your R Jobs": software_examples/r/tutorial-R-addlibSNA/README.md
       - "Using Julia on the OSPool ": software_examples/other_languages_tools/julia-on-osg.md
       - "Using Java in Jobs ": software_examples/other_languages_tools/java-on-osg.md
-      - "Conda with Tarballs": software_examples/other_languages_tools/conda-tarball.md
       - "Conda with Containers": software_examples/other_languages_tools/conda-container.md
-      - "Run R scripts on the OSPool": software_examples/r/tutorial-R/README.md
-      - "Analyzing .csv Data with R": software_examples/r/tutorial-spills-R/README.md
+      - "Conda with Tarballs": software_examples/other_languages_tools/conda-tarball.md
     - Job Submission and Organization Tutorials: 
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/tutorial-quickstart/README.md
       - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
@@ -80,9 +82,6 @@ nav:
       - "Scaling up compute resources": software_examples/r/tutorial-ScalingUp-R/README.md
       - "Intermediate DAGMan: Uses and Features": htc_workloads/automated_workflows/tutorial-dagman-intermediate/README.md
   - Reference: 
-    - Overviews:
-      - "Computation on the Open Science Pool": overview/account_setup/is-it-for-you.md
-      - "OSPool Resources for Teaching & Education": support_and_training/training/ospool_for_education.md
     - Reference and Policies: 
       - "Policies for Using OSG Services and the OSPool ": overview/references/policy.md
       - "Acknowledge the OSG": overview/references/acknowledgeOSG.md
