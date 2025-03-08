@@ -106,6 +106,7 @@ Intended for OSPool users who are familiar with logging in and submitting HTCond
 <b>Available Materials</b>
 <br>
 <ul>
+	<li> <a href="https://docs.google.com/presentation/d/1CExmSIfQKFJfHRGWXu2lMuQJjtDHHXY8mykaaTvBw0s/edit#slide=id.g32e10b440d6_0_346">Presentation Slides</a></li>
 	<li> <a href="https://www.youtube.com/watch?v=azA7-4cPYEY">Video Recording</a></li>
 	</ul>
 <b>Materials Last Updated</b>
