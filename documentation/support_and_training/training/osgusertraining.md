@@ -64,14 +64,13 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
   </tr>
   <tr>
       <td>Tuesday, March 18</td>
-      <td><b>GPUs in the OSPool</b>
+      <td><b>GPUs and Machine Learning in the OSPool</b>
         <p><i>Learning Objectives:</i> Topics covered in this workshop include:</p>
         <ul>
-            <li>The type and availabitity of GPUs on the OSPool
+            <li>How to think about a machine learning workflow
             <li>How to run OSPool jobs that use GPUs
-            <li>Recommendations and strategies for using GPUs
         </ul>
-        <p>This session will focus on GPUs in the OSPool, emphasizing their capabilities, availability, and best practices for accessing and utilizing them effectively. The discussion will include common examples and codes to provide practical insights and demonstrate their application.</b></p>
+        <p> The training will include a step by step demonstration showing how to build up a machine learning workflow (scripting, containerization, data) and then how to run that workflow with HTCondor, using GPUs.</p>
         <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal). Some familiarity with containers is also recommended.</p>
       </td>
   </tr>
