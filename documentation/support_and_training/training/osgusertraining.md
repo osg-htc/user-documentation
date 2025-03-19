@@ -72,6 +72,7 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
         </ul>
         <p> The training will include a step by step demonstration showing how to build up a machine learning workflow (scripting, containerization, data) and then how to run that workflow with HTCondor, using GPUs.</p>
         <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal). Some familiarity with containers is also recommended.</p>
+        <a class="md-button md-button--primary" href="https://www.youtube.com/watch?v=igU0RQFkR20">Video Recording</a>
       </td>
   </tr>
   <tr>
