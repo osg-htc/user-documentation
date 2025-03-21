@@ -142,6 +142,48 @@ Fall 2023
 
 
 <details>
+<summary>GPUs in the OSPool</summary>
+<br>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/igU0RQFkR20?si=2odwXnHXoly_TZfq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<b>Learning Objectives</b>
+<br>
+Topics covered include:
+
+<ul>
+<li>The type and availabitity of GPUs on the OSPool
+<li>How to run OSPool jobs that use GPUs
+<li>Recommendations and strategies for using GPUs
+</ul>
+
+Focus on GPUs in the OSPool, emphasizing their capabilities,
+availability, and best practices for accessing and utilizing them
+effectively. Also included are common examples and codes to provide
+practical insights and demonstrate their application.
+
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+Intended for OSPool users who are familiar with logging in and
+submitting HTCondor jobs to the OSPool. Participants should have some
+familiarity with shell commands (such as how to edit files, copy/paste
+in the terminal). Some familiarity with containers is also recommended.
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1yM3kIyV4LXA_KVsbeuDkuuBpoPUTVMmip5w1670V4-s/edit?usp=sharing">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Spring 2025
+<br>
+</details>
+
+
+<details>
 <summary>Learn About the PATh Facility</summary>
 <br>
 <b>Learning Objectives</b>
@@ -368,29 +410,3 @@ Fall 2023
 </details>
 
 
-
-## Special Environments 
-
-<details>
-<summary>Special Environments, GPUs</summary>
-<br>
-<b>Learning Objectives</b>
-<br>
-This workshop is designed for researchers interested in learning about using special environments, architectures, or resources such as GPUs.
-<br>
-<br>
-<b>Prerequisites/Audience</b>
-<br>
-There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
-<br>
-<br>
-<b>Available Materials</b>
-<br>
-	<ul>
-	<li> <a href="https://docs.google.com/presentation/d/1QZnX-VeXHdqWcmgF8EiMac_nl4hHXPvxCvCH-vxBySU/edit?usp=sharing">Presentation Slides</a></li>
-	</ul>
-<b>Materials Last Updated</b>
-<br>
-Spring 2023
-<br>
-</details>
