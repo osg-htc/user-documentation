@@ -106,6 +106,7 @@ Intended for OSPool users who are familiar with logging in and submitting HTCond
 <b>Available Materials</b>
 <br>
 <ul>
+	<li> <a href="https://docs.google.com/presentation/d/1CExmSIfQKFJfHRGWXu2lMuQJjtDHHXY8mykaaTvBw0s/edit#slide=id.g32e10b440d6_0_346">Presentation Slides</a></li>
 	<li> <a href="https://www.youtube.com/watch?v=azA7-4cPYEY">Video Recording</a></li>
 	</ul>
 <b>Materials Last Updated</b>
@@ -231,7 +232,7 @@ Summer 2023
 <details>
 <summary>Using Containerized Software on the Open Science Pool</summary>
 <br>
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/vu5EZccxgdo?si=AdY6smlO1xiLicCr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/0JQ8or3lue0?si=mU1VVmUEoEhaz3-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <b>Learning Objectives</b>
 <br>
@@ -247,11 +248,11 @@ There are no prerequisites for this workshop, however, a basic understanding of 
 <br>
 <ul>
 	<li> <a href="https://docs.google.com/presentation/d/15jhYzlfzyTaTTEylTW8rD728_GLOSIp5pd6wL3eZBZk/edit?usp=sharing">Presentation Slides</a> </li>
-	<li> <a href="https://www.youtube.com/watch?v=vu5EZccxgdo&list=PLIeB7asuU4W5FuqFdyqThCf18vTd_1tfu&index=5&ab_channel=OSG">Video Recording</a></li>
+	<li> <a href="https://www.youtube.com/watch?v=awSLTflAIJ8">Video Recording</a></li>
 	</ul>
 <b>Materials Last Updated</b>
 <br>
-Fall 2023
+Spring 2025
 <br>
 </details>
 
