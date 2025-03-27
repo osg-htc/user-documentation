@@ -39,7 +39,7 @@ Apptainer/Singularity repository. *[A list of available containers can be found 
 If the software you need isn't already supported in a listed container,
 you can use your own container or any container image in Docker Hub
 (see sections further below). Once the container you need is in the
-Apptainer/Singularity repository, your can submit jobs that run within a
+Apptainer/Singularity format, your can submit jobs that run within a
 particular container by listing the container image in the submit file.
 
     +SingularityImage = "osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__rocky__9.sif"
