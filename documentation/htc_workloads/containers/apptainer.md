@@ -65,7 +65,6 @@ commands to make the image just like you need it. For example:
         . /opt/conda/etc/profile.d/conda.sh
         conda activate myenv
 
-    From: hub.opensciencegrid.org/htc/ubuntu:24.04
 
 
 See the [Apptainer documentation](https://apptainer.org/user-docs/master/definition_files.html)
