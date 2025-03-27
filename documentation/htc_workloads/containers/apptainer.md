@@ -29,7 +29,7 @@ hub.opensciencegrid.org/htc/ubuntu:24.04
 
 ## Editing the Build Spec
 
-Create a folder on your computer and inside it, create a blank text file
+Create a folder in your home directory and inside it, create a blank text file
 called `image.def`.
 
 The first lines of this file should include where to get the base image
