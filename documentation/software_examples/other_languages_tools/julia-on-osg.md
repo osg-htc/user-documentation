@@ -22,46 +22,127 @@ If you are using many Julia packages or have other software dependencies as
 part of your job, you may want to manage your software via a container instead 
 of using the tar.gz file method described in this guide. The Research Computing Facilitation (RCF) team 
 maintains a [Julia container](../../../htc_workloads/using_software/available-containers-list/) that can be used as a starting point 
-for creating a customized container with added packages. See 
-our [Docker and Singularity/Apptainer Guide](../../../htc_workloads/using_software/containers-docker/) for more details. 
+for creating a customized container with added packages, or you can build your container from scratch.
 
-## Quickstart Instructions
+## Option 1: Build a Container
 
-1. Download the precompiled Julia software from <https://julialang.org/downloads/>. 
-You will need the 64-bit, tarball compiled for general use on a Linux x86 system. The 
-file name will resemble something like `julia-#.#.#-linux-x86_64.tar.gz`.
+[Containers](htc_workloads/using_software/software-overview/#use-docker-and-apptainer-containers) are an efficient way of ensuring a consistent software environment across different machines.
 
-    * Tip: use `wget` to download directly to your `/home` directory on the 
-access point, **OR** use `transfer_input_files = url` in your HTCondor submit files.
+### Identify Components
 
-1. Install your Julia packages on the access point, else skip to the next step.
+* A list of your Julia packages or the Project.toml and Manifest.toml
+* A list of other dependencies, such as.
+   * System packages/libraries
+   * Git repositories
 
-    * For more details, see the section on installing Julia 
-    packages below: [Installing Julia Packages](#install-julia-packages)
 
-1. Submit a job that executes a Julia script using the Julia precompiled binary
-with base Julia and Standard Library, via a shell script like the following as 
-the job's executable: 
+### Build Julia in Apptainer
 
-		#!/bin/bash
+To build an Apptainer image, follow [our general guide](../../../htc_workloads/using_software/containers-singularity/#building-your-own-apptainersingularity-container) and use one of the definition files listed below as a starting point. You can edit the definition file to create your custom software environment.
 
-		# extract Julia tar.gz file
-		tar -xzf julia-#.#.#-linux-x86_64.tar.gz
+**Example definition file: installing from a list of packages**
 
-		# add Julia binary to PATH
-		export PATH=$_CONDOR_SCRATCH_DIR/julia-#-#-#/bin:$PATH
+```
+Bootstrap: docker
+From: julia:1.10
 
-		# run Julia script
-		julia my-script.jl
+%post
+	# Install any needed system packages first
+	apt-get update -y
+	apt-get install -y wget \
+			git \
+			cmake \
+			g++
 
-    * For more details on the job submission, see the section 
-    below: [Submit Julia Jobs](#submit-julia-jobs)
+	# Install Julia packages
+	export JULIA_DEPOT_PATH="/opt/julia"
+	julia -e 'using Pkg; Pkg.add(["DifferentialEquations", "DataFrames", "StaticArrays"]); Pkg.instantiate(); Pkg.precompile()'
 
-## Install Julia Packages
+%environment
+	export JULIA_DEPOT_PATH=":/opt/julia"
+```
 
-If your work requires additional Julia packages, you will need to peform a one-time 
-installation of these packages within a Julia project. A copy of the project 
-can then be saved for use in subsequent job submissions. For more details, 
+**Example definition file: installing from a Project.toml and Manifest.toml**
+
+```
+Bootstrap: docker
+From: julia:1.10
+
+%files
+   Project.toml /opt/julia/environments/v1.10/
+   Manifest.toml /opt/julia/environments/v1.10/
+
+%post
+	# Install any needed system packages first
+	apt-get update -y
+	apt-get install -y wget \
+			git \
+			cmake \
+			g++
+
+	# Install Julia packages
+	export JULIA_DEPOT_PATH="/opt/julia"
+	julia -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
+
+%environment
+	export JULIA_DEPOT_PATH=":/opt/julia"
+```
+
+### Build Julia in Docker
+
+The OSPool uses Apptainer/Singularity to execute containers. It is recommended that if you are building your own custom container, you use the Apptainer/Singularity image defintion format, as Docker images will need to be converted to Apptainer/Singularity images. However, you can still build a Julia environment within a Docker image for use on the OSPool, following [this guide](../../../htc_workloads/using_software/containers-docker/#building-your-own-docker-image). Edit the Dockerfile to create your custom software environment.
+
+**Example Dockerfile: installing a list of packages**
+
+```
+FROM julia:1.10
+
+RUN apt-get update -y
+RUN apt-get install -y wget git cmake g++
+
+ENV JULIA_DEPOT_PATH=":/opt/julia"
+
+RUN julia -e 'using Pkg; Pkg.add(["DifferentialEquations", "DataFrames", "StaticArrays"]); Pkg.instantiate(); Pkg.precompile()'
+```
+
+**Example Dockerfile: installing from a Project.toml or Manifest.toml**
+
+```
+FROM julia:1.10
+
+RUN apt-get update -y
+RUN apt-get install -y wget git cmake g++
+
+ENV JULIA_DEPOT_PATH=":/opt/julia"
+
+ADD Project.toml Manifest.toml /opt/julia/environments/v1.10/
+
+RUN julia -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
+```
+
+### Submit Jobs with Julia Container Images
+
+To use a Julia container in a job, you'll need to move the container to your OSPool `data` directory, and specify the container image in your job's submit file, like below:
+
+```
++SingularityImage = "osdf:///ospool/[AP]/data/username/julia.sif"
+```
+
+Read more about [submitting container jobs](../../../htc_workloads/using_software/containers-singularity/#using-singularity-or-apptainer-images-in-an-htcondor-job).
+
+HTCondor will launch your job inside the software environment you built. You can run Julia code normally without any special considerations.
+
+Example executable script:
+```
+#!/bin/bash
+
+# Execute Julia code
+julia -e 'using DataFrames; x = DataFrame(a=1:4, b=["M", "F", "F", "M"]); show(x)'
+```
+
+## Option 2: Build a Portable Project
+
+You can opt for a one-time installation of packages within a Julia project. A copy of the project can then be saved for use in subsequent job submissions. For more details, 
 please see Julia's documentation at [Julia Pkg.jl](https://julialang.github.io/Pkg.jl).
 
 ### Download Julia and set up a "project"
@@ -139,7 +220,7 @@ to compress this folder so that it is easier to copy to jobs.
 
 	$ tar -czf my-project.tar.gz my-project/
 
-## Submit Julia Jobs
+### Submit Julia Jobs
 
 To submit a job that runs a Julia script, create a bash 
 script and HTCondor submit file following the examples in this section. These 
@@ -147,7 +228,7 @@ example assume that you have downloaded a copy of Julia for Linux as a `tar.gz`
 file and if using packages, you have gone through the steps above to install them 
 and create an additional `tar.gz` file of the installed packages. 
 
-## Create Executable Bash Script
+### Create Executable Bash Script
 
 Your job will use a bash script as the HTCondor `executable`. This script 
 will contain all the steps needed to unpack the Julia binaries and 
@@ -155,7 +236,7 @@ execute your Julia script (`script.jl` below). What follows are two example bash
 one which can be used to execute a script with base Julia only, and one that 
 will use packages you installed to a project directory (see [Install Julia Packages](#install-julia-packages)).
 
-### Example Bash Script For Base Julia Only
+#### Example Bash Script For Base Julia Only
 
 If your Julia script can run without additional packages (other than base Julia and 
 the Julia Standard library) use the example script directly below.
@@ -174,7 +255,7 @@ the Julia Standard library) use the example script directly below.
 	julia script.jl
 
 
-### Example Bash Script For Julia With Installed Packages
+#### Example Bash Script For Julia With Installed Packages
 
 	#!/bin/bash
 
@@ -193,7 +274,7 @@ the Julia Standard library) use the example script directly below.
 	julia --project=my-project script.jl
 
 
-## Create HTCondor Submit File 
+### Create HTCondor Submit File 
 
 After creating a bash script named `julia-job.sh` to run Julia, then create a submit file to submit the job. 
 
