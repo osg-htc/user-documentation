@@ -26,7 +26,7 @@ for creating a customized container with added packages, or you can build your c
 
 ## Option 1: Build a Container
 
-[Containers](htc_workloads/using_software/software-overview/#use-docker-and-apptainer-containers) are an efficient way of ensuring a consistent software environment across different machines.
+[Containers](../../../htc_workloads/using_software/software-overview/#use-docker-and-apptainer-containers) are an efficient way of ensuring a consistent software environment across different machines.
 
 ### Identify Components
 
