@@ -14,6 +14,7 @@ own Apptainer/Singularity container "image" (the blueprint for the container).
 
 If there is an existing Docker container or Apptainer/Singularity container with 
 the software you need, you can proceed with using these options to submit a job. 
+
 * [See OSPool-provided containers here](../available-containers-list/)
 * [Using an existing Docker container](../containers-docker/)
 * [Using an existing Apptainer/Singularity container](#using-singularity-or-apptainer-images-in-an-htcondor-job)
