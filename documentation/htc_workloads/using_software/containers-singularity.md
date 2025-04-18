@@ -47,10 +47,16 @@ The best candidates for you will be containers that have "osgvo" in the name.
 
 ### Apptainer/Singularity Build
 
-If you are building an image for the first time, the temporary cache directory of the apptainer image needs to be defined. The following commands define the cache location of the apptainer image to be built. Please run the commands in the terminal of your access point.
+When you are building an Apptainer container image, the temporary cache directory of the apptainer image needs to be defined. The following commands define the cache location of the apptainer image to be built. Please run the commands in the terminal of your access point.
+
+!!! danger "Run These Commands Each Time Before Proceeding"
+
+    Building Apptainer containers on the Access Point without first running the commands below 
+    places excessive strain on shared storage resources and **violates OSPool usage policies**. 
+    Failure to follow these steps may result in restricted access to the system.
 
 ```
-$mkdir $HOME/tmp
+$mkdir -p $HOME/tmp
 $export TMPDIR=$HOME/tmp
 $export APPTAINER_TMPDIR=$HOME/tmp
 $export APPTAINER_CACHEDIR=$HOME/tmp
