@@ -1,6 +1,6 @@
 ---
 ospool:
-  path: htc_workloads/containers/apptainer.md
+  path: htc_workloads/using_software/containers-singularity.md
 ---
 
 This guide describes how to create your
