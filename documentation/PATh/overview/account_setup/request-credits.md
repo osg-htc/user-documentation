@@ -74,51 +74,49 @@ domain:
 * [Computational and Data-Enabled Science and
 Engineering](https://beta.nsf.gov/funding/opportunities/computational-
 and-data-enabled-science-and-engineering-cdse-0) (CDS&E), NSF, PO:
-Christina Payne, [cpayne@nsf.gov](mailto:cpayne@nsf.gov) *
-[Cyberinfrastructure for Sustained Scientific
+Christina Payne, [cpayne@nsf.gov](mailto:cpayne@nsf.gov)
+* [Cyberinfrastructure for Sustained Scientific
 Innovation](https://beta.nsf.gov/funding/opportunities/
 cyberinfrastructure-sustained-scientific-innovation-cssi) (CSSI),
-CISE/OAC, PO: Tevfik Kosar, [tkosar@nsf.gov](mailto:tkosar@nsf.gov) *
-[Innovation:
+CISE/OAC, PO: Tevfik Kosar, [tkosar@nsf.gov](mailto:tkosar@nsf.gov)
+* [Innovation:
 Bioinformatics](https://beta.nsf.gov/funding/opportunities/innovation-
 bioinformatics), BIO/DBI, PO: Jean X. Gao,
-[jgao@nsf.gov](mailto:jgao@nsf.gov) * [Neural
-Systems](https://beta.nsf.gov/funding/opportunities/neural-systems-0),
-BIO/IOS, PO: Evan Balaban, [ebalaban@nsf.gov](mailto:ebalaban@nsf.gov) *
-[Collaborative Research in Computational
+[jgao@nsf.gov](mailto:jgao@nsf.gov)
+* [Neural Systems](https://beta.nsf.gov/funding/opportunities/neural-systems-0),
+BIO/IOS, PO: Evan Balaban, [ebalaban@nsf.gov](mailto:ebalaban@nsf.gov)
+* [Collaborative Research in Computational
 Neuroscience](https://beta.nsf.gov/funding/opportunities/collaborative-
 research-computational-neuroscience-crcns) (CRCNS), CISE/IIS, PO:
 Kenneth Whang, [kwhang@nsf.gov](mailto:kwhang@nsf.gov) ‒ see also [NSF
-DCL
-22-022](https://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf22022)
+DCL 22-022](https://www.nsf.gov/publications/pub_summ.jsp?ods_key=nsf22022)
 * [Astronomy and Astrophysics Research
 Grants](https://beta.nsf.gov/funding/opportunities/astronomy-and-
 astrophysics-research-grants-aag) (AAG), MPS/AST, PO: Andreas Berlind,
-[aberlind@nsf.gov](mailto:aberlind@nsf.gov) * [Chemical Theory, Models,
-and Computational
+[aberlind@nsf.gov](mailto:aberlind@nsf.gov)
+* [Chemical Theory, Models, and Computational
 Methods](https://beta.nsf.gov/funding/opportunities/chemical-theory-
 models-and-computational-methods-ctmc-0) (CTMC), MPS/CHE, PO: Richard
-Dawes, [rdawes@nsf.gov](mailto:rdawes@nsf.gov) * [Condensed Matter and
-Materials
+Dawes, [rdawes@nsf.gov](mailto:rdawes@nsf.gov)
+* [Condensed Matter and Materials
 Theory](https://beta.nsf.gov/funding/opportunities/condensed-matter-and-
 materials-theory-cmmt-0) (CMMT), MPS/DMR, PO: Daryl Hess,
-[dhess@nsf.gov](mailto:dhess@nsf.gov) * [Atomic, Molecular and Optical
-Physics ‒
+[dhess@nsf.gov](mailto:dhess@nsf.gov)
+* [Atomic, Molecular and Optical Physics ‒
 Theory](https://beta.nsf.gov/funding/opportunities/atomic-molecular-and-
 optical-physics-theory-0), MPS/PHY, PO: Robert Forrey,
-[rforrey@nsf.gov](mailto:rforrey@nsf.gov) * [Nuclear Physics ‒
-Theory](https://beta.nsf.gov/funding/opportunities/nuclear-physics-
+[rforrey@nsf.gov](mailto:rforrey@nsf.gov)
+* [Nuclear Physics ‒ Theory](https://beta.nsf.gov/funding/opportunities/nuclear-physics-
 theory-0), MPS/PHY, PO: Bogdan Mihaila, MPS/PHY,
-[bmihaila@nsf.gov](mailto:bmihaila@nsf.gov) * [Geoinformatics
-(GI),](https://beta.nsf.gov/funding/opportunities/geoinformatics-gi)
+[bmihaila@nsf.gov](mailto:bmihaila@nsf.gov)
+* [Geoinformatics (GI),](https://beta.nsf.gov/funding/opportunities/geoinformatics-gi)
 GEO/EAR, PO: Raleigh Martin, [ramartin@nsf.gov](mailto:ramartin@nsf.gov)
 * [Geophysics
 (PH)](https://beta.nsf.gov/funding/opportunities/geophysics-ph-0),
 GEO/EAR, PO: Eva Zanzerkia, [ezanzerk@nsf.gov](mailto:ezanzerk@nsf.gov)
-* [Arctic Research
-Opportunities](https://beta.nsf.gov/funding/opportunities/arctic-
+* [Arctic Research Opportunities](https://beta.nsf.gov/funding/opportunities/arctic-
 research-opportunities), GEO/OPP, POs: Marc Stieglitz,
 [mstiegli@nsf.gov](mailto:mstiegli@nsf.gov), Allen Pope,
-[apope@nsf.gov](mailto:apope@nsf.gov) * [Antarctic
-Research](https://beta.nsf.gov/funding/opportunities/antarctic-research)
+[apope@nsf.gov](mailto:apope@nsf.gov)
+* [Antarctic Research](https://beta.nsf.gov/funding/opportunities/antarctic-research)
 , GEO/OPP, PO: Allen Pope, [apope@nsf.gov](mailto:apope@nsf.gov)

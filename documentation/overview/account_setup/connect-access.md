@@ -22,9 +22,8 @@ you'll need to [add an SSH key to your web profile](#add-a-public-ssh-key-to-you
 
 ## Log In
 
-If you have recently [set up multi factor authentication](#add-multi-factor-authentication-to-your-web-profile)
-or [set up an SSH key for your current device](#add-a-public-ssh-key-to-your-web-profile), 
-please wait 15 minutes before trying to log in.
+!!! note "Note"
+    If you have recently [set up multi factor authentication](#add-multi-factor-authentication-to-your-web-profile) or [set up an SSH key for your current device](#add-a-public-ssh-key-to-your-web-profile), please wait 15 minutes before trying to log in.
 
 ### For Mac, Linux, or newer versions of Windows
 
