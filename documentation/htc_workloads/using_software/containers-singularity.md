@@ -57,10 +57,10 @@ When you are building an Apptainer container image, the temporary cache director
     Failure to follow these steps may result in restricted access to the system.
 
 ```
-$mkdir -p $HOME/tmp
-$export TMPDIR=$HOME/tmp
-$export APPTAINER_TMPDIR=$HOME/tmp
-$export APPTAINER_CACHEDIR=$HOME/tmp
+mkdir -p $HOME/tmp
+export TMPDIR=$HOME/tmp
+export APPTAINER_TMPDIR=$HOME/tmp
+export APPTAINER_CACHEDIR=$HOME/tmp
 ```
 
 To build a custom a Apptainer/Singularity image, create a folder on your access point. Inside it, create a blank text file
