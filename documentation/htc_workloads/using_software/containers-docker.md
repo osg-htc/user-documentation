@@ -173,4 +173,4 @@ default command are `ENTRYPOINT` and `ENV`. Unfortunately, both of these
 aspects of the Docker container are deleted when it is converted to a 
 Singularity image in the Open Science Pool.
 
-[overview]: ../overview
+[overview]: ../containers/

@@ -34,8 +34,7 @@ nav:
     - Using Software:
       - "Overview: Software on the Open Science Pool": htc_workloads/using_software/software-overview.md
       - "Compiling Software": htc_workloads/using_software/compiling-applications.md
-      - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
-      - "Containers - Overview": htc_workloads/containers/overview.md
+      - "Containers - Overview": htc_workloads/using_software/containers.md
       - "Containers - Apptainer/Singularity": htc_workloads/using_software/containers-singularity.md
       - "Containers - Docker": htc_workloads/using_software/containers-docker.md
       - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md

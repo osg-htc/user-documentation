@@ -1,6 +1,6 @@
 ---
 ospool:
-    path: htc_workloads/containers/overview.md
+    path: htc_workloads/using_software/containers.md
 ---
 
 Docker and Apptainer/Singularity are container systems that allow users full
@@ -82,8 +82,8 @@ in the [Apptainer Images Guide][apptainer].
 If you already have a Docker image, or want to build one, see 
 our [Docker Images Guide][docker]. 
 
-[predefined]: ../predefined
-[docker]: ../docker
-[apptainer]: ../apptainer
-[osdf]: ../../managing_data/osdf
+[predefined]: ../available-containers-list/
+[docker]: ../containers-docker/
+[apptainer]: ../containers-singularity/
+[osdf]: ../../managing_data/osdf/
 

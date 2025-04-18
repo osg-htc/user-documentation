@@ -79,4 +79,4 @@ Once the image is built, you can copy it to a data directory, test it on the Acc
 and use it in your HTCondor jobs. This is all described in
 [Containers - Overview][overview].
 
-[overview]: ../overview
+[overview]: ../containers/
