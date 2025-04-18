@@ -26,6 +26,11 @@ Docker image from the Docker Hub.
 If you already have an existing Docker container image, skip
 to [Preparing Docker Containers for HTCondor Jobs](#preparing-docker-containers-for-htcondor-jobs). Otherwise, continue reading. 
 
+!!! warning "Warning: Build Docker containers on your local machine"
+
+    The steps below must be run **on your local computer**, not on the OSPool Access Point.  
+    Docker is not available on the Access Point, and these commands will fail if run there.
+
 ### Identify Components
 
 What software do you want to install? Make sure that you have either the source 
@@ -41,7 +46,7 @@ There are two main methods for generating your own container image.
 2. Editing the default image using local Docker
 
 We recommend the first option, as it is more reproducible, but the second option 
-can be useful for troubleshooting or especially tricky installs. 
+can be useful for troubleshooting or especially tricky installs.
 
 #### Dockerfile
 
@@ -131,6 +136,12 @@ the best experience on the OSpool.
 
 ### Convert Docker containers on Docker Hub or online
 
+!!! note "Note: Complete on the AP"
+
+    The steps below should be completed on the OSPool Access Point. As we will
+    prepare our Docker container to be converted to an Apptainer container and ran
+    on the OSPool infrastructure. 
+
 If the Docker container you want to use is online, on a site like Docker Hub, you can 
 log in to your Access Point and run a single command to convert it to a `.sif` image: 
 
@@ -140,6 +151,12 @@ Where the path at the end of the command is customized to be the container image
 you want to use. 
 
 ### Convert Docker containers on your computer
+
+!!! note "Note: On Your Computer"
+
+    The steps below should be completed on the OSPool Access Point. As we will
+    prepare our Docker container to be converted to an Apptainer container and ran
+    on the OSPool infrastructure. 
 
 If you have built a Docker image on your own host, you can save it as a 
 tar file and then convert it to an Apptainer/Singularity SIF image. First
@@ -152,6 +169,12 @@ find the image id:
 Using the image id, save the image to a tar file:
 
     $ docker save f1e7972c55bc -o my-container.tar
+
+!!! note "Note: On The Access Point"
+
+    The steps below should be completed on the OSPool Access Point. As we will
+    prepare our Docker container to be converted to an Apptainer container and ran
+    on the OSPool infrastructure. 
 
 Transfer `my-container.tar` to the OSPool access point, and use
 Apptainer to convert it to a SIF image:
