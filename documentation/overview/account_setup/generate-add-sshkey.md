@@ -56,7 +56,7 @@ following:
 
 The part you want to upload is the content of the `.pub` file (~/.ssh/id_rsa.pub)
 
-> The following video demonstrates the key generation process from the terminal:
+> The following video demonstrates the key generation process from the terminal. A point to be noted is that the **last portion of the video showing uploading public key is applicable only to "OSG Connect" Access Points (account created through https://www.osgconnect.net/)**:
 >
 > <iframe width="100%" height="400" src="https://www.youtube.com/embed/sKXqRjKm4bM?si=jwlMhruXmx6CY68k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
