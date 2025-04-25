@@ -156,7 +156,7 @@ command:
 	$ docker push namespace/repository_name
 
 From here, if you're planning to use this container in OSG, see the 
-[first section of this guide](use-an-existing-docker-container). 
+[first section of this guide](#use-an-existing-docker-container). 
 
 ## Special Cases
 
@@ -185,4 +185,4 @@ default command are `ENTRYPOINT` and `ENV`. Unfortunately, both of these
 aspects of the Docker container are deleted when it is converted to a 
 Singularity image in the Open Science Pool.
 
-[osg-containers]: containers
+[osg-containers]: ../containers
