@@ -1,6 +1,6 @@
 ---
 ospool:
-    path: htc_workloads/using_software/containers-docker.md
+  path: htc_workloads/using_software/containers-docker.md
 ---
 
 ## Create/Register a Docker Container Image 
@@ -164,7 +164,7 @@ command:
 	$ docker push namespace/repository_name
 
 From here, if you're planning to use this container in OSG, see the 
-[first section of this guide][overview]. 
+[first section of this guide](#use-an-existing-docker-container) to turn it into a `.sif` file. 
 
 ### ENTRYPOINT and ENV
 
