@@ -3,28 +3,45 @@ ospool:
   path: htc_workloads/using_software/containers-docker.md
 ---
 
-Containers - Docker
-===================
+## Create/Register a Docker Container Image 
 
-The OSPool is using Apptainer/Singularity to execute containers. It is recommended
-that if you are building your own custom container, you use the 
-[Apptainer/Singularity image defintion format](../containers-singularity). 
-However, Docker images can also be used on the OSPool and a Docker image is 
-sometimes the more appropriate choice. For example:
+This guide is meant to accompany the instructions for using containers 
+in the OSPool.  You can use your own custom container to run jobs in the 
+OSPool, and we assume that those containers are built using Docker.  This 
+guide describes how to create your own Docker container "image" (the blueprint for 
+the container) and how to convert it to a Singularity/Apptainer image. 
 
- * There is an existing image on Docker Hub
- * You found a Dockerfile which meets your requirements
- * You have Docker installed on your own machine and want to 
-   develop the code/image locally before using it on the OSPool
+For an overview and how to execute images , please see
+[Containers - Overview][overview]
 
-This guide contains examples on how to build your own Docker image, how
-to convert a Docker image to Apptainer/Singularity, and how to import a
-Docker image from the Docker Hub.
+## Use an Existing Docker Container
 
-## Building Your Own Docker Image
+If a Docker container image already exists with the software you need, it can 
+be converted to a Singularity/Apptainer image format using this command: 
 
-If you already have an existing Docker container image, skip
-to [Preparing Docker Containers for HTCondor Jobs](#preparing-docker-containers-for-htcondor-jobs). Otherwise, continue reading. 
+	apptainer build my-custom-image.sif docker://owner/repo:tag
+
+Replace `my-custom-image.sif` with a name of your choice (keeping the `.sif` suffix) 
+and the `docker://owner/repo:tag` can be the identifier for any publicly hosted 
+Docker image, including those on `quay.io` and the NVIDIA NGC Catalog `nvcr.io`. 
+
+Once the `.sif` file is created, you can copy it to a data directory, 
+test it on the Access Point,
+and use it in your HTCondor jobs as described in
+[Containers - Overview][overview].
+
+## Build a Docker Container
+
+### Install Docker and Get a Docker Hub Account
+
+You'll need a Docker Hub account in order to download Docker and share your 
+Docker container images: [DockerHub](https://hub.docker.com/)
+
+Install Docker Desktop to your computer using the appropriate version for your 
+operating system. **Note that OSPool does not provide any Docker build hosts.**
+
+**Note that Apple silicon Macs has to be configured specifically to produce
+x86_64 Docker containers.**
 
 !!! warning "Warning: Build Docker containers on your local machine"
 
@@ -35,37 +52,48 @@ to [Preparing Docker Containers for HTCondor Jobs](#preparing-docker-containers-
 
 What software do you want to install? Make sure that you have either the source 
 code or a command that can be used to install it through Linux (like `apt-get` or 
-`yum`). You'll also need to choose a "base" container, on which to add your particular 
-software or tools.
+`yum`). 
 
-### Building
+You'll also need to choose a "base" container, on which to add your particular 
+software or tools. 
 
-There are two main methods for generating your own container image. 
+We suggest using one of the following as base containers - these have common
+packages installed as well as some OSPool specifics like OSDF:
 
-1. Editing the `Dockerfile`
-2. Editing the default image using local Docker
+```
+hub.opensciencegrid.org/htc/debian:12
+hub.opensciencegrid.org/htc/rocky:9
+hub.opensciencegrid.org/htc/ubuntu:24.04
+```
+
+### Build the Image
+
+There are two ways to build a Docker container image: 
+
+1. Edit a `Dockerfile` and use it to produce an image
+2. Edit a default image using local Docker
 
 We recommend the first option, as it is more reproducible, but the second option 
 can be useful for troubleshooting or especially tricky installs.
 
-#### Dockerfile
+#### Option 1: Editing the `Dockerfile`
 
 Create a folder on your computer and inside it, create a blank text file 
 called `Dockerfile`.  
 
 The first line of this file should include the keyword `FROM` and then 
 the name of a Docker image (from Docker Hub) you want 
-to use as your starting point. If using the OSG's Ubuntu 22.04 image that 
+to use as your starting point. If using the OSG's Ubuntu 24.04 image that 
 would look like this: 
 
-	FROM hub.opensciencegrid.org/htc/ubuntu:22.04
+	FROM hub.opensciencegrid.org/htc/ubuntu:24.04
 
 Then, for each command you want to run to add libraries or software, use the 
 keyword `RUN` and then the command. Sometimes it makes sense to string 
 commands together using the `&&` operator and line breaks `\`, like so:
 
-	RUN apt-get update -y && \
-	    apt-get install -y build-essentials
+	RUN apt-get update && \
+	    apt-get install -yy build-essentials
 
 or
 
@@ -93,17 +121,18 @@ is `alice` and I created an image with the NCBI `blast` tool, I might use this n
 
     $ docker build -t alice/NCBI-blast .
 
-#### Editing an Image Interactively
+
+#### Option 2: Editing the default image using local Docker
 
 You can also build an image interactively, without a Dockerfile. First, get 
 the desired starting image from Docker Hub. Again, we will
-look at the OSG Ubuntu 22.04 image. 
+look at the OSG Ubuntu 24.04 image. 
 
-    $ docker pull hub.opensciencegrid.org/htc/ubuntu:22.04
+    $ docker pull hub.opensciencegrid.org/htc/ubuntu:24.04
 
 We will run the image in a docker interactive session
 
-    $ docker run -it --name <docker_session_name_here> hub.opensciencegrid.org/htc/ubuntu:22.04 /bin/bash
+    $ docker run -it --name <docker_session_name_here> hub.opensciencegrid.org/htc/ubuntu:24.04 /bin/bash
 
 Giving the session a name is important because it will make it easier to 
 reattach the session later and commit the changes later on. Now you will 
@@ -127,65 +156,20 @@ Now you can commit the changes to the image and give it a name:
 You can also use the session's hash as found in the command prompt (`740b9db736a1` 
 in the above example) in place of the docker session name. 
 
+### Upload Docker Container to Docker Hub
 
-## Preparing Docker Containers for HTCondor Jobs
+Once your container is complete and tagged, it should appear in the list of local Docker 
+container images, which you can see by running:
 
-Once you have a Docker container image, whether created by you or found 
-on DockerHub, you should convert it to the "sif" image format for 
-the best experience on the OSpool. 
+	$ docker images
 
-### Convert Docker containers on Docker Hub or online
+From there, you need to put it in Docker Hub, which can be done via the `docker push` 
+command:
 
-!!! note "Note: Complete on the AP"
+	$ docker push namespace/repository_name
 
-    The steps below should be completed on the OSPool Access Point. As we will
-    prepare our Docker container to be converted to an Apptainer container and ran
-    on the OSPool infrastructure. 
-
-If the Docker container you want to use is online, on a site like Docker Hub, you can 
-log in to your Access Point and run a single command to convert it to a `.sif` image: 
-
-	$ apptainer build my-container.sif docker://owner/repository:tag
-
-Where the path at the end of the command is customized to be the container image
-you want to use. 
-
-### Convert Docker containers on your computer
-
-!!! note "Note: On Your Computer"
-
-    The steps below should be completed on the OSPool Access Point. As we will
-    prepare our Docker container to be converted to an Apptainer container and ran
-    on the OSPool infrastructure. 
-
-If you have built a Docker image on your own host, you can save it as a 
-tar file and then convert it to an Apptainer/Singularity SIF image. First
-find the image id:
-
-    $ docker image list
-    REPOSITORY              IMAGE ID
-    awesome/science         f1e7972c55bc
-
-Using the image id, save the image to a tar file:
-
-    $ docker save f1e7972c55bc -o my-container.tar
-
-!!! note "Note: On The Access Point"
-
-    The steps below should be completed on the OSPool Access Point. As we will
-    prepare our Docker container to be converted to an Apptainer container and ran
-    on the OSPool infrastructure. 
-
-Transfer `my-container.tar` to the OSPool access point, and use
-Apptainer to convert it to a SIF image:
-
-    $ apptainer build my-container.sif docker-archive://my-container.tar
-
-## Using Containers in HTCondor Jobs
-
-After converting the Docker image to a sif format, you can use the 
-image in your job as described in the
-[Apptainer/Singularity Guide](../containers-singularity#using-singularity-or-apptainer-images-in-an-htcondor-job). 
+From here, if you're planning to use this container in OSG, see the 
+[first section of this guide](#use-an-existing-docker-container) to turn it into a `.sif` file. 
 
 ## Special Cases
 
@@ -196,19 +180,4 @@ default command are `ENTRYPOINT` and `ENV`. Unfortunately, both of these
 aspects of the Docker container are deleted when it is converted to a 
 Singularity image in the Open Science Pool.
 
-### Apptainer/Singularity Environment
-
-One approach for setting up the environment for an image which will
-be converted to Apptainer/Singularity, is to put a file under
-`/.singularity.d/env/`. These files will be sourced when the container
-get instantiated. For example, if you have Conda environment, add this
-to the end of your Dockerfile:
-
-    # set up environment for when using the container, this is for when 
-    # we invoke the container with Apptainer/Singularity
-    RUN mkdir -p /.singularity.d/env && \
-        echo ". /opt/conda/etc/profile.d/conda.sh" >>/.singularity.d/env/91-environment.sh && \
-        echo "conda activate" >>/.singularity.d/env/91-environment.sh
-
-
-[osg-containers]: ../../../htc_workloads/using_software/available-containers-list/
+[overview]: ../containers/
