@@ -71,7 +71,27 @@ See the [Apptainer documentation](https://apptainer.org/user-docs/master/definit
 for a full reference on how to specify build specs. Note that the `%runscript`
 section is ignored when the container is executed in the OSPool.
 
-Once your build spec is ready, you can "build" the container image by running this command:
+## Build a Container
+
+Once the build spec is ready, you can build the container. 
+
+When you are building an Apptainer container image, the temporary cache directory of the apptainer image needs to be defined. The following commands define the cache location of the apptainer image to be built. Please run the commands in the terminal of your access point.
+
+!!! danger "Run These Commands Each Time Before Proceeding"
+
+    Building Apptainer containers on the Access Point without first running the commands below 
+    places excessive strain on shared storage resources and **violates OSPool usage policies**. 
+    Failure to follow these steps may result in restricted access to the system.
+
+```
+mkdir -p $HOME/tmp
+export TMPDIR=$HOME/tmp
+export APPTAINER_TMPDIR=$HOME/tmp
+export APPTAINER_CACHEDIR=$HOME/tmp
+```
+
+Once these commands have been run once, 
+you can "build" the container image by running this command:
 
     $ apptainer build my-container.sif image.def
 

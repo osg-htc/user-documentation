@@ -43,6 +43,11 @@ operating system. **Note that OSPool does not provide any Docker build hosts.**
 **Note that Apple silicon Macs has to be configured specifically to produce
 x86_64 Docker containers.**
 
+!!! warning "Warning: Build Docker containers on your local machine"
+
+    The steps below must be run **on your local computer**, not on the OSPool Access Point.  
+    Docker is not available on the Access Point, and these commands will fail if run there.
+
 ### Identify Components
 
 What software do you want to install? Make sure that you have either the source 
@@ -69,7 +74,7 @@ There are two ways to build a Docker container image:
 2. Edit a default image using local Docker
 
 We recommend the first option, as it is more reproducible, but the second option 
-can be useful for troubleshooting or especially tricky installs. 
+can be useful for troubleshooting or especially tricky installs.
 
 #### Option 1: Editing the `Dockerfile`
 
@@ -165,6 +170,8 @@ command:
 
 From here, if you're planning to use this container in OSG, see the 
 [first section of this guide](#use-an-existing-docker-container) to turn it into a `.sif` file. 
+
+## Special Cases
 
 ### ENTRYPOINT and ENV
 
