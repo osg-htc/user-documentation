@@ -86,6 +86,8 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
         </ul>
         <p>In this training, we will introduce attendees to the Open Science Data Federation (OSDF), a data platform that allows you to stage data for both distributed computing (such as on the OSPool) and sharing your data with others. It's even possible to connect your own storage to the OSDF directly, to both share and use yourself. Join us for an overview of the OSDF and hands-on examples of using it. </b></p>
         <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal).</p>
+        <a class="md-button md-button--primary" href="https://www.youtube.com/watch?v=x155qX6NClw">Video Recording</a>
+        <a class="md-button md-button--primary" href="https://docs.google.com/presentation/d/1uh1SI1LgSOvPaMESPMwAbdrK8Dep4xunoE08JRrWWv4/edit?usp=sharing">Slides</a>
       </td>
   </tr>
   <tr>
