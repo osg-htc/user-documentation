@@ -42,8 +42,7 @@ ARM64, add the following to your `requirements`.
 ## Software Considerations
 
 Since ARM64 is a different architecture, x86_64 binaries and containers
-are incompatible. Additionally, OSPool's container synchronization is
-not yet ARM64-compatible. Therefore, the options for software on ARM64
+are incompatible. Therefore, the options for software on ARM64
 resources are limited to the following:
 
  * **Simple Python codes.** If you have a simple Python script which runs
@@ -57,13 +56,11 @@ resources are limited to the following:
    the job lands on. Please the the [HTCondor documentation](https://htcondor.readthedocs.io/en/latest/users-manual/submitting-a-job.html#vanilla-universe-example-for-execution-on-differing-architectures)
    for more details.
 
- * **Multiarch containers.** If you are able to build multiarch
-   containers (for example, with `docker buildx build --platform linux/amd64,linux/arm64`),
-   you can specify which container to use similar to the pre-built
-   binaries case. However, the image synchronization is still a 
-   manual process, so please contact support@osg-htc.org for help
-   with this setup.
-
-
-
+ * **Multiarch Containers.** If you can build containers for multiple
+   architectures, you can configure your jobs to automatically select
+   the appropriate image. Please see the
+   [example on GitHub](https://github.com/osg-htc/multiarch-apptainer),
+   for how to build Apptainer images for different architectures and how
+   to set up a HTCondor job that chooses the correct image based on the
+   architecture of the matched execution point.
 
