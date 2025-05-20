@@ -184,6 +184,40 @@ Spring 2025
 
 
 <details>
+<summary>Genomics on the OSPool</summary>
+<br>
+<b>Learning Objectives</b>
+<br>
+This tutorial will walk you through a long-read mapping analysis workflow using Oxford Nanopore data from the C. elegans CB4856 and C. elegans N2 strain Reference Genomes on the OSPool high-throughput computing ecosystem. You'll learn how to:
+
+* Map your reads to a reference genome using Minimap2
+* Breakdown massive bioinformatics workflows into many independent smaller tasks
+* Submit hundreds to thousands of jobs with a few simple commands
+* Use the Open Science Data Federation (OSDF) to manage file transfer during job submission 
+
+All of these steps are distributed across hundreds (or thousands!) of jobs using the HTCondor workload manager and Apptainer containers to run your software reliably and reproducibly at scale. The tutorial is built around realistic genomics use cases and emphasizes performance, reproducibility, and portability. You'll work with real data and see how high-throughput computing (HTC) can accelerate your genomics workflows.
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+If you're brand new to running jobs on the OSPool, we recommend completing the HTCondor ["Hello World"](https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/htcondor_job_submission/) exercise before diving into this tutorial.
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://github.com/osg-htc/tutorial-ospool-minimap">Github Repo Tutorial</a></li>
+	</ul>
+<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1lx10jYsRAhAi5KnF9o6ocI-uP2UitgHk/edit?usp=sharing&ouid=106914497753645232843&rtpof=true&sd=true">Presentation Slides</a></li>
+	</ul>
+
+<b>Materials Last Updated</b>
+<br>
+May 2025
+<br>
+</details>
+<details>
 <summary>Learn About the PATh Facility</summary>
 <br>
 <b>Learning Objectives</b>
@@ -206,7 +240,6 @@ There are no prerequisites for this webinar.
 Winter 2023
 <br>
 </details>
-
 
 ## Data
 
