@@ -45,7 +45,7 @@ you can use your own container or any container image in Docker Hub
 Apptainer/Singularity repository, your can submit jobs that run within a
 particular container by listing the container image in the submit file.
 
-    +SingularityImage = "osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__rocky__9.sif"
+    container_image = osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/htc__rocky__9.sif
 
     <other usual submit file lines>
     queue
@@ -56,17 +56,19 @@ If you already have software in the form of a `.sif` Apptainer/Singuilarity file
 you can stage the .sif file with your job. For small workloads, sending
 the file with the job is ok:
 
-    transfer_input_files = my-custom-image-v1.sif
-    +SingularityImage = "my-custom-image-v1.sif"
+    container_image = my-custom-image-v1.sif
+
+There is no need to list the image under `transfer_input_files` - the submit process
+will do this, just like it does for your executable.
 
 For larger workloads, the image will be resused for
 each job, and thus the preferred transfer method is an OSDF tool.
 Store the .sif file under `/path-facility/data/$USER/`, and then use the OSDF
-url directly in the `+SingularityImage` attribute. Note that you can not
+url directly in the `container_image` attribute. Note that you can not
 use shell variable expansion in the submit file - be sure to replace the
 username with your actual PATh Facility username. Example:
 
-    +SingularityImage = "osdf:///path-facility/data/USERNAME/my-custom-image-v1.sif"
+    container_image = osdf:///path-facility/data/USERNAME/my-custom-image-v1.sif
 
     <other usual submit file lines>
     queue
@@ -83,6 +85,20 @@ in the [Apptainer Images Guide][singularity-guide].
 
 If you already have a Docker image, or want to build one, see 
 our [Docker Images Guide][docker-guide]. 
+
+
+## Migrating from +SingularityImage
+
+Historically, the PATh Facility used the custom attribute `+SingularityImage` to specify
+container images. This has now been replaced by the standard `container_image`
+attribute.
+
+When migrating, note a key difference in syntax:
+
+ * `+SingularityImage` **requires** the image path to be enclosed in double quotes.
+
+ * `container_image` **must** be specified **without** quotes.
+
 
 [container-list]: available-containers-list
 [docker-guide]: containers-docker

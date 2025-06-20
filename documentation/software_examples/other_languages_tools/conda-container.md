@@ -94,7 +94,7 @@ An example submit file could look like:
 # File Name: conda_submission.sub
 
 # specify the newly built image
-+SingularityImage = "osdf:///ospool/protected/<username>/my-container-v1.sif"
+container_image = osdf:///ospool/protected/<username>/my-container-v1.sif
 
 # Specify your executable (single binary or a script that runs several
 #  commands) and arguments to be passed to jobs. 

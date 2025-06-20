@@ -42,9 +42,7 @@ submit file. This should include the following:
 
 All together, the submit file will look something like this: 
 
-	universe 	= vanilla  
-	
-	+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-20.04:latest"
+	container_image = /cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-ubuntu-20.04:latest
 	   
 	executable 	= run_py.sh
 
@@ -107,13 +105,11 @@ Once you are done, you can close the virtual environment:
 
 ### Modify the HTCondor submit file to transfer Python packages
 The submit file for this job will be similar to the base Python job submit file shown above
-with one change - we need to modify the `+SingularityImage` expression so that it uses our newly built `python_3p13.sif` image. For that we need to upload the Container Image to the [OSDF](https://portal.osg-htc.org/documentation/htc_workloads/managing_data/osdf/)
+with one change - we need to modify the `container_image` expression so that it uses our newly built `python_3p13.sif` image. For that we need to upload the Container Image to the [OSDF](https://portal.osg-htc.org/documentation/htc_workloads/managing_data/osdf/)
 The image will be resused for each job, and thus the preferred transfer method is OSDF. Store the .sif file under your personal data area on your access point (see table [here](https://portal.osg-htc.org/documentation/htc_workloads/managing_data/osdf/#where-to-put-your-files)).
 As an example: 
 
-	universe 	= vanilla
-	
-	+SingularityImage = "osdf:///ospool/apXX/data/USERNAME/python_3p13.sif"
+	container_image = osdf:///ospool/apXX/data/USERNAME/python_3p13.sif
 	
 	executable 	= run_py.sh
 

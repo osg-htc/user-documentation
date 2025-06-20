@@ -39,8 +39,7 @@ The following example job has three files: `job.submit`, `freesurfer-wrapper.sh`
 
 `job.submit` contents:
 
-    Requirements = HAS_SINGULARITY == True 
-    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-freesurfer:latest"
+    container_image = /cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-freesurfer:latest
     
     executable = freesurfer-wrapper.sh
     transfer_input_files = license.txt, sub-THP0001_ses-THP0001UCI1_run-01_T1w.nii.gz

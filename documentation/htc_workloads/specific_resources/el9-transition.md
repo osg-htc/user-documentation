@@ -76,10 +76,10 @@ system.
 
 Alternativly, you can make your job run in a provided base OS
 container. For example, if you want your job to always run in RHEL 8,
-remove the `requirements` and add `+SingularityImage` in your submit
+remove the `requirements` and add `container_image` in your submit
 file. Example:
 
-    +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/htc/rocky:8"
+    container_image = /cvmfs/singularity.opensciencegrid.org/htc/rocky:8
     requirements = True
 
 
