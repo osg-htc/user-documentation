@@ -66,7 +66,7 @@ The next step is to run your code as a job on the Open Science Pool. For this, f
 Then, a job submit file:
 
 
-    +SingularityImage = "osdf:///ospool/uc-shared/public/OSG-Staff/openmpi.sif"
+    container_image = osdf:///ospool/uc-shared/public/OSG-Staff/openmpi.sif
 
     executable = wrapper.sh
     transfer_input_files = hello

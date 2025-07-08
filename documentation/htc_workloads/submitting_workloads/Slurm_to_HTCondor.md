@@ -63,7 +63,7 @@ matlab -nodisplay -r "matlab_program(input_arguments),quit"
 #### HTCondor Example
 
 <pre>
-+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-matlab-runtime:R2020a"
+container_image = /cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-matlab-runtime:R2020a
 executable = matlab_program
 arguments = input_arguments
 

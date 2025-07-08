@@ -125,7 +125,7 @@ RUN julia -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
 To use a Julia container in a job, you'll need to move the container to your OSPool `data` directory, and specify the container image in your job's submit file, like below:
 
 ```
-+SingularityImage = "osdf:///ospool/[AP]/data/username/julia.sif"
+container_image = osdf:///ospool/[AP]/data/[USERNAME]/julia.sif
 ```
 
 Read more about [submitting container jobs](../../../htc_workloads/using_software/containers-singularity/#using-singularity-or-apptainer-images-in-an-htcondor-job).
