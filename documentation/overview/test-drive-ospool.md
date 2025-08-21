@@ -9,6 +9,8 @@ Test Drive the Open Science Pool
 Want to see what it's like to use the OSPool? You can do so with 
 an OSPool notebook - and you don't even need an account! 
 
+See a video of this process below: [OSPool Notebook Walkthrough](#ospool-notebook-walkthrough)
+
 1. Go to [OSPool Notebooks](https://osg-htc.org/notebooks)
 
 	![](../assets/notebooks/01-notebooks-welcome.png)
@@ -46,6 +48,10 @@ shortcut `SHIFT` + `ENTER`
 
 If you have questions or run into any difficulties, contact the 
 facilitation team at support@osg-htc.org
+
+### OSPool Notebook Walkthrough
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/ydYUj6Iah_s?si=iE13ICE74x1YqAjh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Quickstart Resources
 
