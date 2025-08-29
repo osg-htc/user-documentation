@@ -7,7 +7,7 @@ nav:
       - "Start Here: Overview of Requesting OSPool Access": overview/account_setup/registration-and-login.md
       - "Roadmap to HTC Workload Submission": htc_workloads/workload_planning/roadmap.md
     - Education And Training:
-      - "Monthly OSG User Training": support_and_training/training/osgusertraining.md
+      - "Monthly OSG User Training": https://osg-htc.org/services/facilitation/monthly-training
       - "Past Training Materials": support_and_training/training/materials.md
       - "OSPool Resources for Teaching & Education": support_and_training/training/ospool_for_education.md
     - Get Help!:
