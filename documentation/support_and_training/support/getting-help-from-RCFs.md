@@ -23,7 +23,7 @@ We provide ongoing support via email to [support@osg-htc.org](mailto:support@osg
 ## Virtual Office Hours
 Drop-in for live help:
 
-- <span style="text-decoration: line-through;"> Tuesdays, 4-5:30pm ET / 1-2:30pm PT </span>(Canceled during the summer season)
+- Tuesdays, 4-5:30pm ET / 1-2:30pm PT
 - Thursdays, 11:30am-1pm ET / 8:30-10am PT
 
 You can find the URL to the Virtual Office Hours meeting room in the welcome message when you log into an OSG-managed Access Point, or in the signature of a support email from an RCF. 
