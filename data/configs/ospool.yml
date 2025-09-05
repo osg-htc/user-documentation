@@ -40,7 +40,6 @@ nav:
       - "Containers - Predefined List": htc_workloads/using_software/available-containers-list.md
     - Monitor, Review, and Troubleshoot Jobs:
       - "Monitor and Review Jobs With condor_q and condor_history": htc_workloads/submitting_workloads/monitor_review_jobs.md  
-      - "Troubleshooting Job Errors": htc_workloads/submitting_workloads/tutorial-error101/README.md
     - Considerations For Specific Resource Needs:
       - "Control Where Your Jobs Run/Job Requirements": htc_workloads/specific_resource/requirements.md
       - "GPU Jobs": htc_workloads/specific_resource/gpu-jobs.md
@@ -59,7 +58,6 @@ nav:
       - "FastQC Quality Control": software_examples/bioinformatics/tutorial-fastqc/README.md
       - "FreeSurfer": software_examples/freesurfer/Introduction.md
       - "Running a Molecule Docking Job with AutoDock Vina": software_examples/drug_discovery/tutorial-AutoDockVina/README.md
-      - "Finding OSG Locations": htc_workloads/submitting_workloads/tutorial-osg-locations/README.md
       - "Analyzing .csv Data with R": software_examples/r/tutorial-spills-R/README.md
       - "Wordcount Tutorial for Submitting Multiple Jobs": software_examples/python/tutorial-wordfreq/README.md
       - "PyTorch": software_examples/ai/tutorial-pytorch/README.md
@@ -77,10 +75,7 @@ nav:
       - "Conda with Tarballs": software_examples/other_languages_tools/conda-tarball.md
     - Job Submission and Organization Tutorials: 
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/tutorial-quickstart/README.md
-      - "Organizing and Submitting HTC Workloads": htc_workloads/submitting_workloads/tutorial-organizing/README.md
       - "Submit and Resubmit Multiple Jobs using Bash Scripting": htc_workloads/submitting_workloads/re-submit-with-bash.md
-      - "Scaling Up With HTCondor’s Queue Command": software_examples/python/tutorial-ScalingUp-Python/README.md
-      - "Scaling up compute resources": software_examples/r/tutorial-ScalingUp-R/README.md
       - "Intermediate DAGMan: Uses and Features": htc_workloads/automated_workflows/tutorial-dagman-intermediate/README.md
   - Reference: 
     - Reference and Policies: 
