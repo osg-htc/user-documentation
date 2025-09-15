@@ -8,10 +8,11 @@ OSG User Training (regular/monthly)
 
 All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am - 1pm PT)**, on the third Tuesday of the month. The training's are designed as stand alone subjects. You do not need to bring/have your dataset prepared before the training. The only prerequisites are some familiarities with using command line inteface or [shell](https://swcarpentry.github.io/shell-novice/). Having some familiarities with [HTCondor job submissions](https://portal.osg-htc.org/documentation/htc_workloads/workload_planning/htcondor_job_submission/) are useful but not required.  
 
-**Registration opens a month before the training date, and closes 24 hours before the event. You can register for all of our trainings via setmore:**
+**Registration opens a month before the training date, and closes 24 hours before the event.**
 
 <!-- <font size="15">[Register Here](https://osgfacilitation.setmore.com/#classes)</font> -->
-[Register Here](https://osgfacilitation.setmore.com/#classes){.md-button .md-button--primary}
+<!--[Register Here](https://osgfacilitation.setmore.com/#classes){.md-button .md-button--primary}-->
+[See our training events](osg-htc.org/services/facilitation/monthly-training){.md-button .md-button--primary}
 
 ## Spring 2025 Training Schedule
 
@@ -32,6 +33,8 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
   </tr>
 
 -->
+
+<!-- Commenting out. We plan to only update the front-facing training page on the main osg-htc site.
 
 <table>
   <tr>
@@ -103,7 +106,7 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
         <p><i>Prerequisites/Audience:</i> Intended for OSPool users who are familiar with logging in and submitting HTCondor jobs to the OSPool. Participants should have some familiarity with shell commands (such as how to edit files, copy/paste in the terminal).</p>
       </td>
   </tr>
-</table>
+</table> -->
 
 For a calendar version of these events see:
 
