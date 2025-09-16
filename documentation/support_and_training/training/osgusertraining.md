@@ -12,9 +12,7 @@ All User Training sessions are offered on **Tuesdays from 2:30-4pm ET (11:30am -
 
 <!-- <font size="15">[Register Here](https://osgfacilitation.setmore.com/#classes)</font> -->
 <!--[Register Here](https://osgfacilitation.setmore.com/#classes){.md-button .md-button--primary}-->
-[See our training events](osg-htc.org/services/facilitation/monthly-training){.md-button .md-button--primary}
-
-## Spring 2025 Training Schedule
+[See our training events](https://osg-htc.org/services/facilitation/monthly-training){.md-button .md-button--primary}
 
 <!-- Template for adding training row to the following table
 
