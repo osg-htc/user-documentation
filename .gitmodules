@@ -33,7 +33,7 @@
 	url = https://github.com/OSGConnect/tutorial-spills-R
 [submodule "documentation/tutorials/tutorial-dagman-intermediate"]
 	path = documentation/tutorials/tutorial-dagman-intermediate
-	url = https://github.com/OSGConnect/tutorial-dagman-intermediate.git
+	url = https://github.com/osg-htc/tutorial-dagman-intermediate.git
 [submodule "documentation/tutorials/tutorial-fastqc"]
 	path = documentation/tutorials/tutorial-fastqc
 	url = https://github.com/OSGConnect/tutorial-fastqc
