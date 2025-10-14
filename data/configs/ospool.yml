@@ -45,6 +45,7 @@ nav:
       - "GPU Jobs": htc_workloads/specific_resource/gpu-jobs.md
       - "ARM64": htc_workloads/specific_resource/arm64.md
       - "Checkpointing Jobs": htc_workloads/submitting_workloads/checkpointing-on-OSPool.md
+      - "Automatically Rerunning a Job That Used Too Much Memory": htc_workloads/specific_resource/retry-request-memory.md
       - "Large Memory Jobs": htc_workloads/specific_resource/large-memory-jobs.md
       - "Multicore Jobs": htc_workloads/specific_resource/multicore-jobs.md
       - "OpenMPI Jobs": htc_workloads/specific_resource/openmpi-jobs.md
