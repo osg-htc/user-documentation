@@ -21,7 +21,12 @@ Use this feature only if a small fraction (typically less than 20%) of
 your jobs require additional memory. If the majority of jobs exceed the
 baseline, you should instead increase the default `request_memory` value.
 
-Example submit file using `retry_request_memory`:
+For example, using the submit file below, the initial job execution
+requests 2 GBs of memory. If the job exceeds this limit, HTCondor will
+place it on hold with the reason `memory usage exceeded request_memory`.
+The job will then be automatically released, and the subsequent
+execution (and any further retries) will run with a memory limit of 6
+GBs.
 
 ```
 executable = my-job.sh
