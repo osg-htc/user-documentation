@@ -23,8 +23,8 @@ baseline, you should instead increase the default `request_memory` value.
 
 For example, using the submit file below, the initial job execution
 requests 2 GBs of memory. If the job exceeds this limit, HTCondor will
-place it on hold with the reason `memory usage exceeded request_memory`.
-The job will then be automatically released, and the subsequent
+will evict the job with the reason `memory usage exceeded request_memory`.
+The job will return to the queue to run again, and this time the
 execution (and any further retries) will run with a memory limit of 6
 GBs.
 
