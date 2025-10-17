@@ -12,7 +12,7 @@
 	url = https://github.com/OSGConnect/tutorial-matlab-HelloWorld
 [submodule "tutorials/tutorial-wordfreq"]
 	path = documentation/tutorials/tutorial-wordfreq
-	url = https://github.com/OSGConnect/tutorial-wordfreq
+	url = https://github.com/osg-htc/tutorial-wordfreq
 [submodule "tutorials/tutorial-R-addlibSNA"]
 	path = documentation/tutorials/tutorial-R-addlibSNA
 	url = https://github.com/OSGConnect/tutorial-R-addlibSNA
