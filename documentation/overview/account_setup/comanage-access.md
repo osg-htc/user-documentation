@@ -57,7 +57,9 @@ To authenticate using this approach:
 ### Option 2: Log in via SSH Key Pair Authentication
 
 It is also possible to authenticate using an SSH key pair, if you prefer. 
-Logging in using SSH keys does not require access to an internet browser.. 
+Logging in using SSH keys does not require access to an internet browser; however, you will also need to enroll in multi-factor authentication.
+
+#### Upload your SSH public key. 
 
 The process below describes how to upload a public key to the registration website. 
 It assumes that a private/public key pair has already been generated. 
@@ -89,7 +91,51 @@ ssh username@ap40.uw.osg-htc.org
 ```
 
 When you run this command, you may be asked for your SSH key passphrase.
-Enter your corresponding passphrase and you should be logged in to `ap40.uw.osg-htc.org`.
+Enter your corresponding passphrase to log in to `ap40.uw.osg-htc.org`.
+
+#### Enroll in Duo Multi-factor authentication
+
+When you log in for the first time using an SSH key, you will need to enroll in multi-factor authentication.
+
+Log into your access point using the SSH command.
+
+```
+ssh username@ap40.uw.osg-htc.org 
+```
+
+You will receive a link to enroll in Duo, which should look something like below:
+
+```
+ssh username@ap40.uw.osg-htc.org 
+Enter passphrase for key '/home/user/.ssh/id_rsa':
+Please enroll at https://api-c20d97d0.duosecurity.com/frame/portal/v4/enroll?code=...
+```
+
+Use `CTRL` + click on the link you see to open the enrollment page in your browser. You should see a page that looks like this:
+
+<img src="../../../assets/ap7-images/ap41-duo-enroll-1-start.png" class= "img-fluid"/>
+
+Click on "Get Started" and select an authentication method. We recommend using Duo Mobile, which is a multi-factor authentication application you can install on your phone. If you'd like, you may use other methods.
+
+<img src="../../../assets/ap7-images/ap41-duo-enroll-3-add-device-select-duo-mobile.png" class= "img-fluid"/>
+
+Follow the instructions on the page to set up multi-factor authentication. For the Duo Mobile method, you will need to enter your phone number, download the app, and scan a QR code, as shown in the screenshots below.
+
+<img src="../../../assets/ap7-images/ap41-duo-enroll-4-add-duo-mobile.png" class= "img-fluid"/>
+<img src="../../../assets/ap7-images/ap41-duo-enroll-5-add-duo-mobile-confirm-number.png" class= "img-fluid"/>
+<img src="../../../assets/ap7-images/ap41-duo-enroll-6-add-duo-mobile-download.png" class= "img-fluid"/>
+<img src="../../../assets/ap7-images/ap41-duo-enroll-6-add-duo-mobile-qr-code.png" class= "img-fluid"/>
+<img src="../../../assets/ap7-images/ap41-duo-enroll-8-confirm-enrollment.png" class= "img-fluid"/>
+
+After you've added Duo mobile, click on the "Continue" button. This will bring you back to the Duo portal.
+
+<img src="../../../assets/ap7-images/ap41-duo-enroll-9-add-more-devices.png" class= "img-fluid"/>
+
+When you're done adding your device(s), click on "I don't want to add anymore devices". You will see a page saying "Setup completed!" You may now return to your terminal and continue logging in with ssh.
+
+<img src="../../../assets/ap7-images/ap41-duo-enroll-10-setup-complete.png" class= "img-fluid"/>
+
+After enrolling, log in again using ssh. You will be asked to authenticate. If you enrolled in Duo mobile, type "1" and press `ENTER` to send a push to your phone. Use your phone to verify, and you will be able to continue logging in.
 
 ## Known Issues
 
