@@ -15,13 +15,13 @@ The Open Science Pool (OSPool) is migrating certain OSPool and OSDF services to 
 
 ➡️ [What you should do](#what-you-should-do)
 
-> **If your account is not on `AP20-23`** (for example, [ap40.uw.osg-htc.org](http://ap40.uw.osg-htc.org) or [ap1.facility.path-cc.io](http://ap1.facility.path-cc.io)), there will be **no changes** to your account. 
+> **If your account is not on `ap20-23`** (for example, `ap40.uw.osg-htc.org` or `ap1.facility.path-cc.io`), there will be **no changes** to your account. 
 
 
-> **If you have accounts on both ap40 and ap20 or ap21**, there will be no changes to your ap40 account; contact [support@osg-htc.org](mailto:support@osg-htc.org) to coordinate consolidating your account information. 
+> **If you have accounts on one of `ap20-23` AND another Access Point like `ap40.uw.osg-htc.org`** there will be no changes to your `ap40` account; contact [support@osg-htc.org](mailto:support@osg-htc.org) to coordinate consolidating your account information. 
 
 
-> **Some groups on [ap23.uc.osg-htc.org](http://ap23.uc.osg-htc.org)** will be migrating to new Access Points; others may not. If you have not yet received an email about a migration process, you do not need to follow any steps in this guide. 
+> **Some groups on `ap23.uc.osg-htc.org`** will be migrating to new Access Points; others may not. If you have not yet received an email about a migration process, you do not need to follow any steps in this guide. 
 
 ## Migration timeline
 
