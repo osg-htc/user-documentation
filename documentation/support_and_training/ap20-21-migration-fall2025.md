@@ -1,6 +1,6 @@
 ---
 ospool:
-  path: support_and_training/ap20-21-transition-fall2025.md
+  path: support_and_training/ap20-21-migration-fall2025.md
 ---
 
 # OSPool service migration for ap20-21
@@ -72,7 +72,7 @@ More instructions will be added once we are closer to the migration dates.
 We will post migration updates, downtime notifications, and access instructions in the following places: 
 
 * **This migration page**  
-  ➡️ [OSPool service migration for ap20-21](documentation/support_and_training/ap20-21-transition-fall2025/)   
+  ➡️ [OSPool service migration for ap20-21](documentation/support_and_training/ap20-21-migration-fall2025/)   
 * On the **OSPool Status Page:**  
   ➡️ [https://status.opensciencegrid.org](https://status.opensciencegrid.org)  
     * Subscribe for email updates to receive the latest information.  
