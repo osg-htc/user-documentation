@@ -3,11 +3,11 @@ ospool:
   path: support_and_training/ap20-21-transition-fall2025.md
 ---
 
-# OSPool service transition for ap20-21
+# OSPool service migration for ap20-21
 
 The Open Science Pool (OSPool) is migrating certain OSPool and OSDF services to new physical / institutional locations. This transition is part of a larger service migration that will streamline and simplify how we run our services, positioning ourselves for long-term sustainability. 
 
-**If your account is on Access Points ap20 or ap21** **(with the suffix `uc.osg-htc.org`)** you will be moving to a new Access Point in early December. Please read below for the migration timeline, downtime dates, and post-transition steps. 
+**If your account is on Access Points ap20 or ap21** **(with the suffix `uc.osg-htc.org`) you will be moving to a new Access Point in early December.** Please read below for the migration timeline, downtime dates, and post-transition steps. 
 
 ➡️ [Timeline](#migration-timeline)
 
@@ -15,10 +15,10 @@ The Open Science Pool (OSPool) is migrating certain OSPool and OSDF services to 
 
 ➡️ [What you should do](#what-you-should-do)
 
-> **If your account is not on `ap20-23`** (for example, `ap40.uw.osg-htc.org` or `ap1.facility.path-cc.io`), there will be **no changes** to your account. 
+> **If your account is NOT on ap20-21** (for example, `ap40.uw.osg-htc.org` or `ap1.facility.path-cc.io`), there will be **no changes** to your account. 
 
 
-> **If you have accounts on one of `ap20-23` AND another Access Point like `ap40.uw.osg-htc.org`** there will be no changes to your `ap40` account; contact [support@osg-htc.org](mailto:support@osg-htc.org) to coordinate consolidating your account information. 
+> **If you have accounts on one of ap20-21 AND another Access Point like ap40.uw.osg-htc.org** there will be no changes to your `ap40` account; contact [support@osg-htc.org](mailto:support@osg-htc.org) to coordinate consolidating your account information. 
 
 
 > **Some groups on `ap23.uc.osg-htc.org`** will be migrating to new Access Points; others may not. If you have not yet received an email about a migration process, you do not need to follow any steps in this guide. 
@@ -71,10 +71,11 @@ More instructions will be added once we are closer to the migration dates.
 
 We will post migration updates, downtime notifications, and access instructions in the following places: 
 
-* On this doc page: [https://portal.osg-htc.org/documentation/ap20-21-transition](https://portal.osg-htc.org/documentation/ap20-21-transition)   
+* **This migration page**  
+  ➡️ [OSPool service migration for ap20-21](documentation/support_and_training/ap20-21-transition-fall2025/)   
 * On the **OSPool Status Page:**  
   ➡️ [https://status.opensciencegrid.org](https://status.opensciencegrid.org)  
-  * Subscribe for email updates to receive the latest information.  
+    * Subscribe for email updates to receive the latest information.  
 * Via emails and updates to the log in "Message of the Day"
 
 ### Get Help in Office Hours
