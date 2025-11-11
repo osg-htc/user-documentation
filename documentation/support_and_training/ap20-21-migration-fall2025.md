@@ -55,23 +55,23 @@ Please read below for the migration timeline, downtime dates, and post-transitio
  <tr>
   <td></td>
   <th>December 11-15, 2025</th>
-  <td>All ap20-21 data will be synced to a temporary location (`/migrated`).  All ap23 `/home` and `/scratch` data from users moving to the new infrastructure will be synced to the same temporary location as above.</td>
-  <td>All ap23 /home and /scratch data from users moving to the new infrastructure will be synced to the same temporary location as above.</td>
+  <td>All ap20-21 data will be synced to a temporary location (<code>/migrated</code>).  </td>
+  <td>All ap23 <code>/home</code> and <code>/scratch</code> data from users moving to the new infrastructure will be synced to the same temporary location as on left.</td>
  </tr>
  <tr>
   <th>December 15, 2025</th>
   <td colspan="3">
     <ul><li>You can submit jobs from the new Access Points.  
      <ul>
-    <li>ap20-21 users: You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
-    <li>ap23 users who move to the new infrastructure: You should copy your data from/migrated to your new /home, including data that used to be on /scratch.
-    <li>Collaboration shared data in `/ospool/uc-shared/projects/<project>` and `/ospool/uc-shared/public/<project>` will be migrated to a set of new Pelican origins on behalf of the collaboration.</li>
+    <li>ap20-21 users: You should copy your data (<code>/migrated</code>) to new <code>/home</code> and <code>/ospool/data</code> locations.  
+    <li>ap23 users who move to the new infrastructure: You should copy your data from <code>/migrated</code> to your new <code>/home</code>, including data that used to be on <code>/scratch</code>.
+    <li>Collaboration shared data in <code>/ospool/uc-shared/projects/<project></code> and <code>/ospool/uc-shared/public/<project></code> will be migrated to a set of new Pelican origins on behalf of the collaboration.</li>
     </ul>
     </li></ul>
   </td>
  </tr>
  <tr>
-  <th>December 15 \- January 22, 2026</th>
+  <th>December 15 - January 22, 2026</th>
   <td colspan="3">We will have dedicated office hours for helping users with the migration.</td>
  </tr>
  <tr>
