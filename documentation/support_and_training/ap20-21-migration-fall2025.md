@@ -30,34 +30,37 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 <table>
  <tr>
   <th>November 30, 2025</th>
-  <td colspan="2'">We recommend submitting jobs to ap20-21-23 no later than this date.  </td>
+  <td colspan="3">We recommend submitting jobs to ap20-21-23 no later than this date.  </td>
  </tr>
  <tr>
   <th>December 8, 2025</th>
-  <td colspan="2'">You may test login to the new Access Points. You will not be able to submit jobs.  </td>
+  <td colspan="3">You may test login to the new Access Points. You will not be able to submit jobs.  </td>
  </tr> 
  <tr>
   <th>December 8-15, 2025</th>
-  <td colspan="2'">Main migration period</td>
+  <th colspan="3">Main migration period</th>
  </tr> 
  <tr>
+  <td></td>
   <th>December 8, 2025</th>
   <td>Job submission is disabled on ap20-21.</td>
   <td>Job submission on ap23 will not be disabled. </td>
  </tr>
  <tr>
+    <td></td>
   <th>December 11, 2025</th>
   <td>Logins to ap20–21 are disabled; all remaining jobs are put on hold.</td>
   <td>Logins for ap23 users who are migrating to the new infrastructure will have their logins disabled.</td>
  </tr>
  <tr>
+  <td></td>
   <th>December 11-15, 2025</th>
   <td>All ap20-21 data will be synced to a temporary location (`/migrated`).  All ap23 `/home` and `/scratch` data from users moving to the new infrastructure will be synced to the same temporary location as above.</td>
   <td>All ap23 /home and /scratch data from users moving to the new infrastructure will be synced to the same temporary location as above.</td>
  </tr>
  <tr>
   <th>December 15, 2025</th>
-  <td colspan="2'">
+  <td colspan="3">
     <ul><li>You can submit jobs from the new Access Points.  
      <ul>
     <li>ap20-21 users: You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
@@ -69,7 +72,7 @@ Please read below for the migration timeline, downtime dates, and post-transitio
  </tr>
  <tr>
   <th>December 15 \- January 22, 2026</th>
-  <td colspan="2">We will have dedicated office hours for helping users with the migration.</td>
+  <td colspan="3">We will have dedicated office hours for helping users with the migration.</td>
  </tr>
  <tr>
   <th>May 2026</th>
