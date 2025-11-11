@@ -27,58 +27,35 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 
 ## Migration timeline
 
-<table>
- <tr>
-  <th>November 30, 2025</th>
-  <td colspan="3">We recommend submitting jobs to ap20-21-23 no later than this date.  </td>
- </tr>
- <tr>
-  <th>December 8, 2025</th>
-  <td colspan="3">You may test login to the new Access Points. You will not be able to submit jobs.  </td>
- </tr> 
- <tr>
-  <th>December 8-15, 2025</th>
-  <th colspan="3">Main migration period</th>
- </tr> 
- <tr>
-  <td></td>
-  <th>December 8, 2025</th>
-  <td>Job submission is disabled on ap20-21.</td>
-  <td>Job submission on ap23 will not be disabled. </td>
- </tr>
- <tr>
-    <td></td>
-  <th>December 11, 2025</th>
-  <td>Logins to ap20–21 are disabled; all remaining jobs are put on hold.</td>
-  <td>Logins for ap23 users who are migrating to the new infrastructure will have their logins disabled.</td>
- </tr>
- <tr>
-  <td></td>
-  <th>December 11-15, 2025</th>
-  <td>All ap20-21 data will be synced to a temporary location (<code>/migrated</code>).  </td>
-  <td>All ap23 <code>/home</code> and <code>/scratch</code> data from users moving to the new infrastructure will be synced to the same temporary location as on left.</td>
- </tr>
- <tr>
-  <th>December 15, 2025</th>
-  <td colspan="3">
-    <ul><li>You can submit jobs from the new Access Points.  
-     <ul>
-    <li>ap20-21 users: You should copy your data (<code>/migrated</code>) to new <code>/home</code> and <code>/ospool/data</code> locations.  
-    <li>ap23 users who move to the new infrastructure: You should copy your data from <code>/migrated</code> to your new <code>/home</code>, including data that used to be on <code>/scratch</code>.
-    <li>Collaboration shared data in <code>/ospool/uc-shared/projects/<project></code> and <code>/ospool/uc-shared/public/<project></code> will be migrated to a set of new Pelican origins on behalf of the collaboration.</li>
-    </ul>
-    </li></ul>
-  </td>
- </tr>
- <tr>
-  <th>December 15 - January 22, 2026</th>
-  <td colspan="3">We will have dedicated office hours for helping users with the migration.</td>
- </tr>
- <tr>
-  <th>May 2026</th>
-  <td colspan="2'">Access to `/migrated` data will be turned off.</td>
- </tr>
-</table>
+* For ap20-21 users: Go here
+* For ap23 users who are migrating: Go here
+
+### Timeline for ap20-21 users
+
+* **November 30, 2025:** We recommend submitting jobs to ap20-21 no later than this date.  
+* **December 8, 2025:** You may test login to the new Access Points. You will not be able to submit jobs.  
+* **December 8-15, 2025:** ap20-21 will be shut down during these dates.   
+    * **December 8, 2025:** Job submission is disabled on ap20-21.  
+    * **December 11, 2025:** Logins to ap20–21 are disabled; all remaining jobs are put on hold.   
+    * **December 11-15, 2025:** All ap20-21 data will be synced to a temporary location (`/migrated`).  
+* **December 15, 2025:** You can submit jobs from the new Access Points.  
+    * You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
+* **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
+* **May 2026:** Access to `/migrated` data will be turned off. 
+
+### Timeline for ap23 users who are migrating
+
+* **November 30, 2025:** We recommend submitting jobs to ap23 no later than this date.  
+* **December 8, 2025:** You may test login to the new Access Points. You will not be able to submit jobs.  
+* **December 8-15, 2025:** Migration window   
+    * **December 8, 2025:** Job submission is disabled for migrating users on ap23. 
+    * **December 11, 2025:** ap23 users who are migrating to the new infrastructure will have their logins disabled.
+    * **December 11-15, 2025:** All ap23 `/home` and `/scratch` data from users moving to the new infrastructure will be synced to a temporary location: `/migrated`.  
+* **December 15, 2025:** You can submit jobs from the new Access Points.  
+    * You should copy your data from `/migrated` to your new `/home`, including data that used to be on `/scratch.`
+    * Collaboration shared data in `/ospool/uc-shared/projects/<project>` and `/ospool/uc-shared/public/<project>` will be migrated to a set of new Pelican origins on behalf of the collaboration 
+* **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
+* **May 2026:** Access to `/migrated` data will be turned off. 
 
 ## What to expect
 
