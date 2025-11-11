@@ -27,8 +27,8 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 
 ## Migration timeline
 
-* For ap20-21 users: Go here
-* For ap23 users who are migrating: Go here
+* For ap20-21 users: [Go here](#timeline-for-ap20-21-users)
+* For ap23 users who are migrating: [Go here](#timeline-for-ap23-users-who-are-migrating)
 
 ### Timeline for ap20-21 users
 
@@ -64,8 +64,8 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * You may submit jobs on the new Access Points **after Dec. 15**.  
 * What happens to your data:  
     * We will copy all user data from ap20, 21 (`/home`, `/ospool`) to a temporary **`/migrated`** directory.  
-    * We will copy all user data from ap23 (/home, /scratch) to a temporary /migrated directory.
-    * We will copy all shared data in /ospool/uc-shared to a new shared location, which will be accessible by the new access point.
+    * We will copy all user data from ap23 (`/home`, `/scratch`) to a temporary /migrated directory.
+    * We will copy all shared data in `/ospool/uc-shared` to a new shared location, which will be accessible by the new access point.
     * After Dec 15, **you are responsible for copying any data you want to keep** from `/migrated` into your new `/home` or `/ospool` directories.  
     * Your data in `/migrated` will remain available **until May 2026**.
 
@@ -96,7 +96,7 @@ More instructions will be added once we are closer to the migration dates.
 We will post migration updates, downtime notifications, and access instructions in the following places: 
 
 * **This migration page**  
-  ➡️ [OSPool service migration for ap20-21](/documentation/support_and_training/ap20-21-migration-fall2025/)   
+  ➡️ [OSPool service migration for ap20-21-23](/documentation/support_and_training/ap20-21-migration-fall2025/)   
 * On the **OSPool Status Page:**  
   ➡️ [https://status.opensciencegrid.org](https://status.opensciencegrid.org)  
     * Subscribe for email updates to receive the latest information.  
@@ -121,4 +121,4 @@ We appreciate your patience and cooperation as we complete this important transi
 
 ---
 
-*Last updated: November 6th 2025*  
+*Last updated: November 11th 2025*  
