@@ -3,11 +3,15 @@ ospool:
   path: support_and_training/ap20-21-migration-fall2025.md
 ---
 
-# OSPool service migration for ap20-21
+# OSPool service migration for ap20-21-23
 
 The Open Science Pool (OSPool) is migrating certain OSPool and OSDF services to new physical / institutional locations. This transition is part of a larger service migration that will streamline and simplify how we run our services, positioning ourselves for long-term sustainability. 
 
-**If your account is on Access Points ap20 or ap21** **(with the suffix `uc.osg-htc.org`) you will be moving to a new Access Point in early December.** Please read below for the migration timeline, downtime dates, and post-transition steps. 
+**If your account is on Access Points ap20 or ap21** **(with the suffix `uc.osg-htc.org`) you will be moving to a new Access Point in early December.** 
+
+**Some projects on Access Point ap23.uc.osg-htc.org, the OSG Collab AP, will also be moving to a new Access Point in early December. The users for those projects will be individually notified.**
+
+Please read below for the migration timeline, downtime dates, and post-transition steps. 
 
 ➡️ [Timeline](#migration-timeline)
 
@@ -15,26 +19,63 @@ The Open Science Pool (OSPool) is migrating certain OSPool and OSDF services to 
 
 ➡️ [What you should do](#what-you-should-do)
 
-> **If your account is NOT on ap20-21** (for example, `ap40.uw.osg-htc.org` or `ap1.facility.path-cc.io`), there will be **no changes** to your account. 
+> **If your account is NOT on ap20-21-23** (for example, `ap40.uw.osg-htc.org` or `ap1.facility.path-cc.io`), there will be **no changes** to your account. 
 
 
-> **If you have accounts on one of ap20-21 AND another Access Point like ap40.uw.osg-htc.org** there will be no changes to your `ap40` account; contact [support@osg-htc.org](mailto:support@osg-htc.org) to coordinate consolidating your account information. 
+> **If you have accounts on one of ap20-21-23 AND another Access Point like ap40.uw.osg-htc.org** there will be no changes to your `ap40` account; contact [support@osg-htc.org](mailto:support@osg-htc.org) to coordinate consolidating your account information. 
 
-
-> **Some groups on `ap23.uc.osg-htc.org`** will be migrating to new Access Points; others may not. If you have not yet received an email about a migration process, you do not need to follow any steps in this guide. 
 
 ## Migration timeline
 
-* **November 30, 2025:** We recommend submitting jobs to ap20-21 no later than this date.  
-* **December 8, 2025:** You may test login to the new Access Points. You will not be able to submit jobs.  
-* **December 8-15, 2025:** ap20-21 will be shut down during these dates.   
-    * **December 8, 2025:** Job submission is disabled on ap20-21.  
-    * **December 11, 2025:** Logins to ap20–21 are disabled; all remaining jobs are put on hold.   
-    * **December 11-15, 2025:** All ap20-21 data will be synced to a temporary location (`/migrated`).  
-* **December 15, 2025:** You can submit jobs from the new Access Points.  
-    * You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
-* **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
-* **May 2026:** Access to `/migrated` data will be turned off. 
+<table>
+ <tr>
+  <th>November 30, 2025</th>
+  <td colspan="2'">We recommend submitting jobs to ap20-21-23 no later than this date.  </td>
+ </tr>
+ <tr>
+  <th>December 8, 2025</th>
+  <td colspan="2'">You may test login to the new Access Points. You will not be able to submit jobs.  </td>
+ </tr> 
+ <tr>
+  <th>December 8-15, 2025</th>
+  <td colspan="2'">Main migration period</td>
+ </tr> 
+ <tr>
+  <th>December 8, 2025</th>
+  <td>Job submission is disabled on ap20-21.</td>
+  <td>Job submission on ap23 will not be disabled. </td>
+ </tr>
+ <tr>
+  <th>December 11, 2025</th>
+  <td>Logins to ap20–21 are disabled; all remaining jobs are put on hold.</td>
+  <td>Logins for ap23 users who are migrating to the new infrastructure will have their logins disabled.</td>
+ </tr>
+ <tr>
+  <th>December 11-15, 2025</th>
+  <td>All ap20-21 data will be synced to a temporary location (`/migrated`).  All ap23 `/home` and `/scratch` data from users moving to the new infrastructure will be synced to the same temporary location as above.</td>
+  <td>All ap23 /home and /scratch data from users moving to the new infrastructure will be synced to the same temporary location as above.</td>
+ </tr>
+ <tr>
+  <th>December 15, 2025</th>
+  <td colspan="2'">
+    <ul><li>You can submit jobs from the new Access Points.  
+     <ul>
+    <li>ap20-21 users: You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
+    <li>ap23 users who move to the new infrastructure: You should copy your data from/migrated to your new /home, including data that used to be on /scratch.
+    <li>Collaboration shared data in `/ospool/uc-shared/projects/<project>` and `/ospool/uc-shared/public/<project>` will be migrated to a set of new Pelican origins on behalf of the collaboration.</li>
+    </ul>
+    </li></ul>
+  </td>
+ </tr>
+ <tr>
+  <th>December 15 \- January 22, 2026</th>
+  <td colspan="2">We will have dedicated office hours for helping users with the migration.</td>
+ </tr>
+ <tr>
+  <th>May 2026</th>
+  <td colspan="2'">Access to `/migrated` data will be turned off.</td>
+ </tr>
+</table>
 
 ## What to expect
 
@@ -43,6 +84,8 @@ The Open Science Pool (OSPool) is migrating certain OSPool and OSDF services to 
 * You may submit jobs on the new Access Points **after Dec. 15**.  
 * What happens to your data:  
     * We will copy all user data from ap20, 21 (`/home`, `/ospool`) to a temporary **`/migrated`** directory.  
+    * We will copy all user data from ap23 (/home, /scratch) to a temporary /migrated directory.
+    * We will copy all shared data in /ospool/uc-shared to a new shared location, which will be accessible by the new access point.
     * After Dec 15, **you are responsible for copying any data you want to keep** from `/migrated` into your new `/home` or `/ospool` directories.  
     * Your data in `/migrated` will remain available **until May 2026**.
 
@@ -51,7 +94,8 @@ The Open Science Pool (OSPool) is migrating certain OSPool and OSDF services to 
 ### 1\. General preparation (November)
 
 * **If you are concerned about interrupted work** during the downtime period (Dec 8-15), please contact OSG staff (support@osg-htc.org) **immediately** to make alternative arrangements.   
-* Go through both your `/home` and `/ospool/ap2*/data` spaces and **remove files that are no longer needed for your current work.** 
+* ap20-21 users: Go through both your `/home` and `/ospool/ap2*/data` spaces and **remove files that are no longer needed for your current work.** 
+* ap23 users who are moving: Go through your `/home` `/scratch`, `/ospool/uc-shared/public/<project>`, and `/ospool/u-shared/project/<project>` and **remove files that are no longer needed for your current work**.
 
 ### 2\. Pre-migration window (Dec 1 \- 8\)
 
