@@ -115,9 +115,9 @@ def main():
         details = entry['description'] + "\n<br>\n<br>\n"
 
         # osdf
-        details += "OSDF Locations:<br>\n"
-        for tag in sorted(entry['tags']):
-            details += '<span style="white-space: nowrap">{}</span><br>\n'.format("osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/" + sif_file(entry["identifier"], tag))
+        #details += "OSDF Locations:<br>\n"
+        #for tag in sorted(entry['tags']):
+        #    details += '<span style="white-space: nowrap">{}</span><br>\n'.format("osdf:///ospool/uc-shared/public/OSG-Staff/images/repo/x86_64/" + sif_file(entry["identifier"], tag))
 
         # cvmfs
         details += "CVMFS Locations:<br>\n"
