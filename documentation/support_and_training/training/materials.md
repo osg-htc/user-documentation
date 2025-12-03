@@ -357,6 +357,33 @@ Summer 2023
 </details>
 
 
+<details>
+<summary>Deploying Python Programs on the OSPool</summary>
+<br>
+<iframe width="100%" height="315" src="https://youtu.be/irLSBwTNK20?si=b6XE7Og36A-khlke" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<b>Learning Objectives</b>
+<br>
+This training covers the practical considerations for deploying Python programs on the OSPool, including: how to deploy your Python dependencies, how to adapt your existing code, and how to deploy code under active development.
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+There are no prerequisites for this workshop. Some familiarity with Python code and basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1Cw8jkScA7q4QHuM1Hyhl2FDFb2s7k1GIXQTsUL8-d6c/edit?usp=sharing">Presentation Slides</a> </li>
+	<li> <a href="https://youtu.be/irLSBwTNK20?si=b6XE7Og36A-khlke">Video Recording</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Fall 2025
+<br>
+</details>
+
 
 ## Workflows / Advanced Workloads
 
