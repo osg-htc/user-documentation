@@ -360,7 +360,7 @@ Summer 2023
 <details>
 <summary>Deploying Python Programs on the OSPool</summary>
 <br>
-<iframe width="100%" height="315" src="https://youtu.be/irLSBwTNK20?si=b6XE7Og36A-khlke" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/irLSBwTNK20?si=_0qkywyMlFbnUvO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <b>Learning Objectives</b>
 <br>
