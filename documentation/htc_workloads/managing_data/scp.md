@@ -53,12 +53,14 @@ For example:
 
 ### Transfer Files to Another Directory on the Access Point
 
-If you are using the [OSDF]() to stage some of your files, you can upload files directly 
-to that path by replacing `/home/username` in the commands above. If I wanted to 
-upload files to the OSDF location on `ap20`, which is `/ospool/ap20/data/username`, 
-I would use the following command: 
+If you are using the [OSDF](https://portal.osg-htc.org/documentation/htc_workloads/managing_data/osdf) to stage some of your files, you can upload files directly 
+to that path by replacing `/home/username` in the commands above. If you wanted to 
+upload files to the OSDF location on `ap##`, which is `/ospool/ap##/data/username`, 
+you would use the following command: 
 
-    $ scp my_file.txt username@ap20.uc.osg-htc.org:/ospool/ap20/data/username
+    $ scp my_file.txt username@ap##.uw.osg-htc.org:/ospool/ap##/data/username
+
+Make sure to update the `ap##` to **your** assigned Access Point (for example, `ap40`). 
 
 ## Transfer Files From Access Point
 
