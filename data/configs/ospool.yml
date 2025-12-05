@@ -18,7 +18,6 @@ nav:
   - Docs:
     - Accessing Your OSPool Account:
       - "Log In to uw.osg-htc.org Access Points": overview/account_setup/comanage-access.md
-      - "Log In to OSG Connect Access Points": overview/account_setup/connect-access.md
       - "Launch a JupyterLab Instance": htc_workloads/submitting_workloads/jupyter.md            
       - "Generate SSH Keys": overview/account_setup/generate-add-sshkey.md
       - "Set and View Project Usage": overview/account_setup/starting-project.md
