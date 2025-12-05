@@ -97,11 +97,4 @@ If your account is on the <code>uw.osg-htc.org</code> Access Points (e.g., accou
 <a href="https://portal.osg-htc.org/documentation/overview/account_setup/comanage-access/">Log In to <code>uw.osg-htc.org</code> Access Points</a>
 </details>
 
-<details>
-<summary>Log In to <code>uc.osg-htc.org</code> Access Points (e.g., <code>ap20.uc.osg-htc.org</code>)</summary>
-<br>
-If your account is on the <code>uc.osg-htc.org</code> Access Points (e.g., accounts on <code>ap20.uc.osg-htc.org</code>, <code>ap21.uc.osg-htc.org</code>), follow instructions in this guide for logging in:
-<a href="https://portal.osg-htc.org/documentation/overview/account_setup/connect-access/">Log In to <code>uc.osg-htc.org</code> Access Points</a>
-</details>
-
 
