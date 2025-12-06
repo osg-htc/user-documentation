@@ -47,12 +47,9 @@ If your account is on the uw.osg-htc.org Access Points (e.g., accounts on ap40.u
 <a href="https://portal.osg-htc.org/documentation/overview/account_setup/comanage-access/">Log In to uw.osg-htc.org Access Points</a>
 </details>
 
-<details>
-<summary>Log In to "OSG Connect" Access Points (e.g., ap20.uc.osg-htc.org)</summary>
-<br>
-If your account is on the OSG Connect Access points (e.g., accounts on ap20.uc.osg-htc.org, ap21.uc.osg-htc.org), follow instructions in this guide for logging in:
-<a href="https://portal.osg-htc.org/documentation/overview/account_setup/connect-access/">Log In to OSG Connect Access Points</a>
-</details>
+!!! warning "AP20, AP21, and AP23 Accounts Have Been Migrated!"
+
+    If your account is on the OSG Connect Access points (e.g., accounts on ap20.uc.osg-htc.org, ap21.uc.osg-htc.org), your account has moved! For more information on how to re-gain access to your account, refer to: [OSPool Service Migration for AP20, AP21, and AP23](https://portal.osg-htc.org/documentation/support_and_training/ap20-21-migration-fall2025)
 
 
 ## 3. Learn to Submit HTCondor Jobs
