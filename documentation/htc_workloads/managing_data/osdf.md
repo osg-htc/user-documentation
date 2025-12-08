@@ -89,7 +89,7 @@ access points. See the list below for the "Local Path" to use, based on your acc
 
 !!! warning "The uw-shared Public directory is currently unavailable"
 
-    As part of the AP20/21 → AP41 migration process, this directory is currently being setup. It may be inaccessible for a short period while setup is underway.
+    As part of the AP20/21 → AP41 migration process, this directory is currently being set up. It may be inaccessible for a short period while setup is underway.
 
 ## Transfer Files To/From Jobs Using the OSDF
 
