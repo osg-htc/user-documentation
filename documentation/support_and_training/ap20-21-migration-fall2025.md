@@ -105,7 +105,7 @@ Your username will remain the same; however, **your AP’s SSH address will chan
 | :---- | :---- |
 | ap20.uc.osg-htc.org | ap41.uw.osg-htc.org |
 | ap21.uc.osg-htc.org | ap41.uw.osg-htc.org |
-| ap23.uc.osg-htc.org<br>*Only notified users will be migrated* | ap42.uw.osg-htc.org |
+| ap23.uc.osg-htc.org<br>*Only notified users will be migrated* | ap43.uw.osg-htc.org |
 
 #### 📁 Data Migration Begins This Week
 
