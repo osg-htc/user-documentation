@@ -8,7 +8,7 @@ ospool:
 **This guide is for users who were notified by a member of the OSG team that they 
 will be using the `uw.osg-htc.org` Access Points.**
 
-> To use the `uw.osg-htc.org` Access Points (`ap40.uw.osg-htc.org`), 
+> To use the `uw.osg-htc.org` Access Points (`ap40.uw.osg-htc.org`, `ap41.uw.osg-htc.org`, or `ap43.uw.osg-htc.org`), 
 > you must have first registered and have your account approved
 > as described [here](../registration-and-login).
 
@@ -16,48 +16,13 @@ will be using the `uw.osg-htc.org` Access Points.**
 
 To log in, you can authenticate using one of two methods:
 
-1. [Browser-based web authentication](#option-1-log-in-via-web-authentication) (requires access to web browser)
+1. [SSH key pair authentication](#option-2-log-in-via-ssh-key-pair-authentication) (requires uploading an SSH key)
 
-2. [SSH key pair authentication](#option-2-log-in-via-ssh-key-pair-authentication) (requires uploading an SSH key)
+2. [Browser-based web authentication](#option-1-log-in-via-web-authentication) (requires access to web browser)
 
-### Option 1: Log in via Web Authentication
+### Option 1: Log in via SSH Key Pair Authentication
 
-Logging in via web authentication requires no preparatory steps beyond having access to an internet browser. 
-
-To authenticate using this approach: 
-
-1. Open a terminal and enter the following command, 
-   being sure to replace `username` with your `uw.osg-htc.org` username:
-   
-   ```
-   ssh username@ap40.uw.osg-htc.org
-   ```
-   
-   Upon hitting enter, the following text should appear with a unique URL, similar to the one in the example below: 
-   <!-- Because there are many hyphens in the code block, need to indent with 4 spaces instead of using the backticks
-   in order for them to be interpreted literally by Markdown instead of as a horizontal line -->
-   
-       Authenticate at
-       -----------------
-       https://cilogon.org/device/?user_code=FF4-ZX6-9LK
-       -----------------
-       Type 'Enter' when you authenticate.
-   
-
-2. Open your unique `https://` link in your web browser. 
-   When using some terminal applications, you may be able to click on the link to open it.
-   Otherwise, copy the link and paste it into a web browser, and hit enter.  
-
-3. You will be redirected to a new page where you will be prompted to login using your institutional credentials. 
-   Once you have done so, a new page will appear with the following text: `"You have successfully approved the user code. Please return to your device for further instructions."`
-
-4. Return to your terminal, and press the 'Enter' key to complete the login process. 
-
-
-### Option 2: Log in via SSH Key Pair Authentication
-
-It is also possible to authenticate using an SSH key pair, if you prefer. 
-Logging in using SSH keys does not require access to an internet browser.. 
+You can login to the OSPool Access Point by uploading an SSH key to your [COmanage account](registry.cilogon.org).
 
 The process below describes how to upload a public key to the registration website. 
 It assumes that a private/public key pair has already been generated. 
@@ -81,15 +46,49 @@ If you need to generate a key pair, see this [guide](../generate-add-sshkey).
 
       <img src="../../../assets/ap7-images/ssh-key-list.png" class= "img-fluid"/>
 
-You can now log in to `ap40.uw.osg-htc.org` from the terminal using the following command, 
-being sure to replace `username` with your `uw.osg-htc.org` username:
+You can now log in to your `ap4#.uw.osg-htc.org` Access Point from the terminal using the following command, 
+being sure to replace `username` with your `uw.osg-htc.org` username and specifying the assigned ap4# in your Welcome Email (for example: `ap41`):
    
 ```
-ssh username@ap40.uw.osg-htc.org
+ssh username@ap4#.uw.osg-htc.org
 ```
 
 When you run this command, you may be asked for your SSH key passphrase.
-Enter your corresponding passphrase and you should be logged in to `ap40.uw.osg-htc.org`.
+Enter your corresponding passphrase and you should be logged in to `ap4#.uw.osg-htc.org`.
+
+### Option 2: Log in via Web Authentication
+
+Logging in via web authentication requires no preparatory steps beyond having access to an internet browser. 
+
+To authenticate using this approach: 
+
+1. Open a terminal and enter the following command, 
+   being sure to replace `username` with your `uw.osg-htc.org` username:
+   
+   ```
+   ssh username@ap4#.uw.osg-htc.org
+   ```
+   
+   Upon hitting enter, the following text should appear with a unique URL, similar to the one in the example below: 
+   <!-- Because there are many hyphens in the code block, need to indent with 4 spaces instead of using the backticks
+   in order for them to be interpreted literally by Markdown instead of as a horizontal line -->
+   
+       Authenticate at
+       -----------------
+       https://cilogon.org/device/?user_code=FF4-ZX6-9LK
+       -----------------
+       Type 'Enter' when you authenticate.
+   
+
+2. Open your unique `https://` link in your web browser. 
+   When using some terminal applications, you may be able to click on the link to open it.
+   Otherwise, copy the link and paste it into a web browser, and hit enter.  
+
+3. You will be redirected to a new page where you will be prompted to login using your institutional credentials. 
+   Once you have done so, a new page will appear with the following text: `"You have successfully approved the user code. Please return to your device for further instructions."`
+
+4. Return to your terminal, and press the 'Enter' key to complete the login process. 
+
 
 ## Known Issues
 
@@ -101,6 +100,17 @@ Enter your corresponding passphrase and you should be logged in to `ap40.uw.osg-
 * Privacy enhancing plugins
 	* Error message: `Identifier (SORID) variable "REDIRECT_OIDC CLAIM sub" not set`
 	* We have seen this happen when a user has various "privacy enhancing" plugins installed in the browser and it blocks the necessary flow from fully happening. Try a different web browser without any plugins installed. 
+
+* CILogon Code Challege Repeats
+	* Error message: 
+      ```
+      (user.name@ap41.uw.osg-htc.org) Authenticate at
+      -----------------
+      https://cilogon.org/device/?user_code=AAA-BBB-CCC
+      -----------------
+      Hit enter when the website tells you to return to your device
+      ```
+	* CILogon code-based authentication can, at times, fail to authenticate after you login on your browser. To avoid this, we recommend generating a SSH key-pair and uploading the your **public key** to your COmanage account as outlined in [Option 1: Log in via SSH Key Pair Authentication](#option-1-log-in-via-ssh-key-pair-authentication). We are working on resolving this issue. 
 
 ## Get Help
 

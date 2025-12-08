@@ -58,47 +58,38 @@ access points. See the list below for the "Local Path" to use, based on your acc
         <li><nobr>Local Path: <code>/ospool/ap40/data/[USERNAME]</code></nobr></li>
         <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap40/data/[USERNAME]</code></nobr></li>
       </ul>
-  <td>
 </tr>
 <tr>
-  <td>ap20.uc.osg-htc.org</td>
+  <td>ap41.uw.osg-htc.org</td>
   <td>Accessible to user only:
       <ul>
-        <li><nobr>Local Path: <code>/ospool/ap20/data/[USERNAME]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap20/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Local Path: <code>/ospool/ap41/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap41/data/[USERNAME]</code></nobr></li>
+      </ul>
+</tr>
+<tr>
+  <td>All ap##.uw.osg-htc.org</td>
+  <td>Accessible to user only:
+      <ul>
+        <li><nobr>Local Path: <code>/ospool/ap##/data/[USERNAME]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap##/data/[USERNAME]</code></nobr></li>
       </ul>
       Accessible to project group only:
       <ul>
-        <li><nobr>Local Path: <code>/ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
+        <li><nobr>Local Path: <code>/ospool/uw-shared/projects/[PROJECT]</code></nobr></li>
         <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/projects/[PROJECT]</code></nobr></li>
       </ul>
       Public space for projects:
       <ul>
-        <li><nobr>Local Path: <code>/ospool/uc-shared/public/[PROJECT]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/public/[PROJECT]</code></nobr></li>
+        <li><nobr>Local Path: <code>/ospool/uw-shared/public/[PROJECT]</code></nobr></li>
+        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uw-shared/public/[PROJECT]</code></nobr></li>
       </ul>
-  <td>
-</tr>
-<tr>
-  <td>ap21.uc.osg-htc.org</td>
-  <td>Accessible to user only:
-      <ul>
-        <li><nobr>Local Path: <code>/ospool/ap21/data/[USERNAME]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///ospool/ap21/data/[USERNAME]</code></nobr></li>
-      </ul>
-      Accessible to project group only:
-      <ul>
-        <li><nobr>Local Path: <code>/ospool/uc-shared/project/[PROJECT]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/project/[PROJECT]</code></nobr></li>
-      </ul>
-      Public space for projects:
-      <ul>
-        <li><nobr>Local Path: <code>/ospool/uc-shared/public/[PROJECT]</code></nobr></li>
-        <li><nobr>Base OSDF URL: <code>osdf:///ospool/uc-shared/public/[PROJECT]</code></nobr></li>
-      </ul>
-  <td>
 </tr>
 </table>
+
+!!! warning "The uw-shared Public directory is currently unavailable"
+
+    As part of the AP20/21 → AP41 migration process, this directory is currently being set up. It may be inaccessible for a short period while setup is underway.
 
 ## Transfer Files To/From Jobs Using the OSDF
 
