@@ -24,7 +24,7 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 
 > **If you have accounts on one of ap20-21-23 AND another Access Point like ap40.uw.osg-htc.org** there will be no changes to your `ap40` account; contact [support@osg-htc.org](mailto:support@osg-htc.org) to coordinate consolidating your account information. 
 
-### [⏭️ Jump to the Current Timeframe in the Transition](#3-migration-process-dec-8---15)
+### [⏭️ Jump to the Current Timeframe in the Transition](#3-migration-process-dec-8-15)
 
 ## Migration timeline
 
