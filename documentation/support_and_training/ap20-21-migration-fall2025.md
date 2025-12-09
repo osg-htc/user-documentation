@@ -44,19 +44,6 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
 * **May 2026:** Access to `/migrated` data will be turned off. 
 
-
-#### 📁 Data Migration Begins This Week
-
-Between **Dec 11–15**, we will copy all user data from ap20–21 to the temporary `/migrated` directory on the new Access Points.
-
-During this period:
-
-* You will **not** be able to modify your data on ap20–21.
-* No jobs will run.
-* Data transfer is handled entirely by OSG staff.
-
-You will begin moving your own data from `/migrated` into your new `/home` and `/ospool` locations starting **Dec 15**. We will send you a ***Welcome to Your New OSPool Account*** email on Dec 15th with additional information.
-
 ### Timeline for ap23 users who are migrating
 
 * **November 30, 2025:** We recommend submitting jobs to ap23 no later than this date.  
