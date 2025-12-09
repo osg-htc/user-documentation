@@ -36,8 +36,8 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **November 30, 2025:** We recommend submitting jobs to ap20-21 no later than this date.  
 * **December 8, 2025:** You may test login to the new Access Points. You will not be able to submit jobs.  
 * **December 8-15, 2025:** ap20-21 will be shut down during these dates.   
-    * **December 8, 2025:** Job submission is disabled on ap20-21.  
-    * **December 11, 2025:** Logins to ap20–21 are disabled; all remaining jobs are put on hold.   
+    * **December 8, 2025:** Job submission is disabled on ap20-21. You can no longer submit new jobs through these Access Points
+    * **December 11, 2025:** Logins to ap20–21 are disabled; any jobs still in the queue after Dec 11 will be removed.
     * **December 11-15, 2025:** All ap20-21 data will be synced to a temporary location (`/migrated`).  
 * **December 15, 2025:** You can submit jobs from the new Access Points.  
     * You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
@@ -83,21 +83,20 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **Download or back up** any critical data you may need access to during the downtime (Dec. 8-15).  
 * **Avoid submitting new jobs and remove idle jobs** that are unlikely to complete by Dec 8. This will allow for cleaner data migration.
 
-### 3\. Migration process (Dec 8 - 15)
+### 3\. Get ready for new Access Points (Dec 8 - 15)
 
-As of today, December 8th, the migration of OSPool Access Points ap20 and ap21 (and some groups on ap23) is officially underway. This message outlines what has changed today and what you can expect during the week-long migration period.
+The AP41 access points are almost ready to take over as your primary gateway to the OSPool—and this upgrade brings improved stability, performance, and a cleaner, modernized identity system. Now is the perfect time to explore the new environment and make sure your workflows are ready for launch day.
 
-* **Job submission on ap20–21 has been disabled**<br>You can no longer submit new jobs through these Access Points.
+Here’s how you can prepare:
 
-* **Jobs still running will be held on Dec 11**<br>Any jobs still in the queue after Dec 11 will be removed.
+- **Log in to your new Access Point.**
+- **Try out your new Access Point with small test jobs** to confirm that your scripts, containers, and input/output paths behave as expected in the upgraded environment.
+- **Update any automation or hard-coded references** to AP20/21, as these will be retired after the transition.
+- **Verify your new account** in the [OSPool Account Portal](registry.cilogon.org) to ensure your identity and group memberships are set up correctly.
 
-* **You may now test\* login on your new Access Point**
+We will send you a ***Welcome to Your New OSPool Account*** email on Dec 15th with additional information when the Access Points are fully ready for launch. 
 
-  \*While full services on the new Access Points may not be available until **December 15**, you *can* log in today to ensure:
-
-  * Your new credentials are working  
-  * Your SSH keys are recognized  
-  * Your account is active in the [CILogon Registry (COmanage)](https://registry.cilogon.org) system
+#### Where to log in
 
 Your username will remain the same; however, **your AP’s SSH address will change**. See below for your new address.
 
@@ -107,36 +106,20 @@ Your username will remain the same; however, **your AP’s SSH address will chan
 | ap21.uc.osg-htc.org | ap41.uw.osg-htc.org |
 | ap23.uc.osg-htc.org<br>*Only notified users will be migrated* | ap43.uw.osg-htc.org |
 
-#### 📁 Data Migration Begins This Week
+#### Test-Driving your new access point
 
-Between **Dec 11–15**, we will copy all user data from ap20–21 to the temporary `/migrated` directory on the new Access Points.
+We encourage you to take your new AP41 account for a spin during the migration period! This is a great time to confirm that your workflows submit and run as expected in the new environment. Please keep these early submissions limited to small, lightweight test jobs, since services and data paths are still coming online. 
 
-During this period:
-
-* You will **not** be able to modify your data on ap20–21.
-* No jobs will run.
-* Data transfer is handled entirely by OSG staff.
-
-You will begin moving your own data from `/migrated` into your new `/home` and `/ospool` locations starting **Dec 15**. We will send you a ***Welcome to Your New OSPool Account*** email on Dec 15th with additional information.
-
-##### New Data Paths
+##### Updating data paths
 
 Your `/ospool` directories have changed. 
 
 * Your new `/home` $HOME path will be in the same path (`/home/<user.name>/`)  
 * Your `/ospool/` $DATA path is now `/ospool/ap41/data/<user.name>/`
 
-#### Test-Driving Your New AP41 Account
-
-We encourage you to take your new AP41 account for a spin during the migration period! This is a great time to confirm that your workflows submit and run as expected in the new environment.
-
-Please keep these early submissions limited to small, lightweight test jobs, since services and data paths are still coming online. Data availability may be intermittent through December 15th, so hold off on production-scale work until everything is fully stabilized.
-
-Your testing now helps us ensure a smoother experience once the migration is complete. Thank you for trying it out!
-
 #### Login to Your New OSPool Account Portal (registry.cilogon.org)
 
-As part of the migration to the AP41 access points, you have access to a new identity/account management portal within the OSPool ecosystem. You can review and manage your identity/account through the OSPool Account Portal at [registry.cilogon.org](https://registry.cilogon.org).
+As part of the migration to the AP41 access points, you have access to a new identity/account management portal within the OSPool ecosystem. You can review and manage your identity/account through the OSPool Account Portal at [registry.cilogon.org](https://registry.cilogon.org/registry/co_dashboards/dashboard/co:7).
 
 When you log in with your campus credentials, you’ll be able to:
 
@@ -145,20 +128,6 @@ When you log in with your campus credentials, you’ll be able to:
 * **Ensure your institutional identity is linked correctly**, which is required for job submission under AP41.
 * **Upload new SSH keys** to your profile to expedite the login process on AP41.
   * Previously uploaded SSH keys to OSGConnect have also been migrated your new [registry.cilogon.org](https://registry.cilogon.org) account and are ready for use on AP41! 
-
-Visiting this portal during the migration provides a quick way to make sure everything is aligned with the new infrastructure before you begin submitting jobs. If something looks incorrect or incomplete, you can let us know early so we can correct any issues to your access ahead of the full transition.
-
-## Get Ready and Excited for the Hard Launch of AP41
-
-The AP41 access points are almost ready to take over as your primary gateway to the OSPool—and this upgrade brings improved stability, performance, and a cleaner, modernized identity system. Now is the perfect time to explore the new environment and make sure your workflows are ready for launch day.
-
-Here’s how you can prepare:
-
-- **Verify your new account** in the [OSPool Account Portal](registry.cilogon.org) to ensure your identity and group memberships are set up correctly.
-- **Try out AP41 with small test jobs** to confirm that your scripts, containers, and input/output paths behave as expected in the upgraded environment.
-- **Update any automation or hard-coded references** to AP20/21, as these will be retired after the transition.
-
-Your early testing helps ensure a smooth, confident shift into AP41. We’re excited for you to experience the improvements coming with this next-generation access point—thank you for helping us prepare for a successful launch!
 
 ## Why are we doing the migration? 
 
