@@ -70,7 +70,7 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 
 ## What you should do
 
-### 3\. Get ready for new Access Points (Dec 8 - 15)
+### Get ready for new Access Points (Dec 8 - 15)
 
 The AP41 access points are almost ready to take over as your primary gateway to the OSPool—and this upgrade brings improved stability, performance, and a cleaner, modernized identity system. Now is the perfect time to explore the new environment and make sure your workflows are ready for launch day.
 
@@ -104,7 +104,7 @@ Your `/ospool` directories have changed.
 * Your new `/home` $HOME path will be in the same path (`/home/<user.name>/`)  
 * Your `/ospool/` $DATA path is now `/ospool/ap41/data/<user.name>/`
 
-#### Login to your new OSPool account portal (registry.cilogon.org)
+#### Log in to your new OSPool account portal (registry.cilogon.org)
 
 As part of the migration to the AP41 access points, you have access to a new identity/account management portal within the OSPool ecosystem. You can review and manage your identity/account through the OSPool Account Portal at [registry.cilogon.org](https://registry.cilogon.org/registry/co_dashboards/dashboard/co:7).
 
