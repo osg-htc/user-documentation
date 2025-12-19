@@ -70,20 +70,7 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 
 ## What you should do
 
-### Get ready for new Access Points (Dec 8 - 15)
-
-The AP41 access points are almost ready to take over as your primary gateway to the OSPool—and this upgrade brings improved stability, performance, and a cleaner, modernized identity system. Now is the perfect time to explore the new environment and make sure your workflows are ready for launch day.
-
-Here’s how you can prepare:
-
-- **Log in to your new Access Point.**
-- **Try out your new Access Point with small test jobs** to confirm that your scripts, containers, and input/output paths behave as expected in the upgraded environment.
-- **Update any automation or hard-coded references** to AP20/21 or old data paths, as these will be retired after the transition.
-- **Verify your new account** in the [OSPool Account Portal](registry.cilogon.org) to ensure your identity and group memberships are set up correctly.
-
-Details on all these steps are below. We will send you a ***Welcome to Your New OSPool Account*** email on Dec 15th with additional information when the Access Points are fully ready for launch. 
-
-#### Where to log in
+### Log in to your new access point
 
 Your username will remain the same; however, **your AP’s SSH address will change**. See below for your new address.
 
@@ -93,19 +80,7 @@ Your username will remain the same; however, **your AP’s SSH address will chan
 | ap21.uc.osg-htc.org | ap41.uw.osg-htc.org |
 | ap23.uc.osg-htc.org<br>*Only notified users will be migrated* | ap43.uw.osg-htc.org |
 
-
-#### Test-drive your new access point
-
-We encourage you to take your new AP41 account for a spin during the migration period! This is a great time to confirm that your workflows submit and run as expected in the new environment. Please keep these early submissions limited to small, lightweight test jobs, since services and data paths are still coming online. 
-
-#### Update data paths
-
-Your `/ospool` directories have changed. 
-
-* Your new `/home` $HOME path will be in the same path (`/home/<user.name>/`)  
-* Your `/ospool/` $DATA path is now `/ospool/ap41/data/<user.name>/`
-
-### Transfer your data from `/migration`
+### Copy your data from `/migration`
 
 Your data from ap20–21 has been copied into the temporary **`/migration`** directory on your new Access Point.
 
@@ -172,17 +147,18 @@ We **highly recommend taking this time to clean-up the migrated scratch director
 
 📅 Data in `/migration` will remain available **until May 2026**, but we recommend moving important data as soon as possible.
 
-#### Test-Driving Your New AP41 Account
 
-We encourage you to take your new AP41 account for a spin during the migration period! This is a great time to confirm that your workflows submit and run as expected in the new environment.
+### Update data paths
 
-Please keep these early submissions limited to small, lightweight test jobs, since services and data paths are still coming online. Data availability may be intermittent through December 22nd, so hold off on production-scale work until everything is fully stabilized.
+Your `/ospool` directories have changed. 
 
-Your testing now helps us ensure a smoother experience once the migration is complete. Thank you for trying it out!
+* Your new `/home` $HOME path will be in the same path (`/home/<user.name>/`)  
+* Your `/ospool/` $DATA path is now `/ospool/ap41/data/<user.name>/`
 
-#### Log in to your new OSPool account portal (registry.cilogon.org)
 
-As part of the migration to the AP41 access points, you have access to a new identity/account management portal within the OSPool ecosystem. You can review and manage your identity/account through the OSPool Account Portal at [registry.cilogon.org](https://registry.cilogon.org/registry/co_dashboards/dashboard/co:7).
+### Log in to your new OSPool account portal (registry.cilogon.org)
+
+As part of the migration to the AP41 and AP43 access points, you have access to a new identity/account management portal within the OSPool ecosystem. You can review and manage your identity/account through the OSPool Account Portal at [registry.cilogon.org](https://registry.cilogon.org/registry/co_dashboards/dashboard/co:7).
 
 When you log in with your campus credentials, you’ll be able to:
 
@@ -212,11 +188,7 @@ We will post migration updates, downtime notifications, and access instructions 
 
 We will be hosting a series of office hours following the initial migration window. We **highly recommend** you attend one of these office hour sessions to learn more about these changes.
 
-- December 16th \- 3:00pm \- 4:30pm (Central Time) \- Use our normal office hours link
-
-- December 18th \- 10:30am \- 12pm (Central Time) \- Use our normal office hours link
-
-- January 6th \- 3:00pm \- 4:30pm (Central Time) \- Use our normal office hours link
+- January 13th \- 3:00pm \- 4:30pm (Central Time) \- Use our normal office hours link
 
 ## Contact us
 
