@@ -93,38 +93,33 @@ Your data from ap20-21 has been copied into the temporary **`/migration`** direc
 
 Your `/home` directory has been migrated to your new UW-Madison AP (ap4x). Your home directory was tarred to expedite migration to the new AP and you will need to untar the migrated directory into a subdirectory of your new `/home` path. You can do this by running the following commands:
 
-1. **Make a new subdirectory** under \`/home  
-   ```bash
-   mkdir -p ~/migration_temp/
-   ```
+1. **Make a new subdirectory** under `/home`
+    
+        mkdir -p ~/migration_temp/
 
 2. **Untar** your `/home` directory:   
-   ```bash
-   tar -xzf /migration/ap2x/home/<username>.tar.gz -C ~/migration_temp/
-   ```
+    
+        tar -xzf /migration/ap2x/home/<username>.tar.gz -C ~/migration_temp/
 
 3. **Review** data in `~/migration_temp/` and **move** files you’d like to keep  
-   ```bash
-   ls ~/migration_temp/
-   mv ~/migration_temp/kept_file.txt ~/
-   ```
-
-   ⚠️ **Warning: Be wary of moving hidden files**, as this may overwrite hidden files important account services (such as Git and OSDF). 
+    
+        ls ~/migration_temp/
+        mv ~/migration_temp/kept_file.txt ~/
+    
+    ⚠️ **Warning: Be wary of moving hidden files**, as this may overwrite hidden files important account services (such as Git and OSDF). 
 
 #### Copying your migrated /ospool data
 
 Your `/ospool` directory has been migrated to your new UW-Madison AP (ap4x). You’ll need to move the contents of your migrated data to your new directory: `/ospool/ap41/data/<username>/`. 
 
 1. **Navigate** to your migrated `/ospool` directory (changing `ap2x` to the right value):  
-   ```bash
-   cd /migration/ap2x/data/<username>/
-   ```
+    
+        cd /migration/ap2x/data/<username>/
 
 2. **Review and Move** and review data and move files you’d like to keep  
-   ```bash
-   ls /migration/ap2x/data/<username>/
-   mv /migration/ap2x/data/<username>/kept_file.txt /ospool/ap41/data/<username>/
-   ```
+    
+        ls /migration/ap2x/data/<username>/
+        mv /migration/ap2x/data/<username>/kept_file.txt /ospool/ap41/data/<username>/
 
 > ### Checking for completed data transfer
 > 
@@ -132,11 +127,11 @@ Your `/ospool` directory has been migrated to your new UW-Madison AP (ap4x). You
 > a subset of users. These users have been emailed directly, but you can also 
 > check if you data has been transferred successfully by checking the ownership of the folder using the following commands:
 > 
-> 	ls -lh /migration/ap2x/data/<username>
+>     ls -lh /migration/ap2x/data/<username>
 > 
 > If the output shows:
 > 
-> 	ls: cannot access '/migration/ap2x/data/<username>/': Permission denied
+>     ls: cannot access '/migration/ap2x/data/<username>/': Permission denied
 > 
 > This indicates that your transfer/verification is still in progress. If you are able to list the directory content, then your data have been fully migrated and ready for copying to your new `/ospool` directory as above. 
 
@@ -144,23 +139,20 @@ Your `/ospool` directory has been migrated to your new UW-Madison AP (ap4x). You
 
 Your migrated `/scratch` directory has been compressed into a `.tar.gz` file at the following path (changing `<username>` to your username):  
 
-	/migration/ap23/scratch/<username>.tar.gz
+    /migration/ap23/scratch/<username>.tar.gz
 
 1. **Make a temporary directory** in your new `/home/` directory and untar the contents of your home directory tarball (`<username>.tar.gz`) using the following commands:
-  ```bash
-  mkdir -p ~/migration_scratch
-  ```  
+    
+        mkdir -p ~/migration_scratch
 
-3. **Untar** your `/home` directory: Your home directory was tarred to expedite migration to the new AP. You should untar it using the following command: 
-  ```bash
-  tar -xzvf /migration/ap23/scratch/<username>.tar.gz -C ~/migration_scratch/
-  ```
+2. **Untar** your `/home` directory: Your home directory was tarred to expedite migration to the new AP. You should untar it using the following command: 
+    
+        tar -xzvf /migration/ap23/scratch/<username>.tar.gz -C ~/migration_scratch/
 
-4. **Review data** in `~/migration_scratch/` and **move** files you’d like to keep  
-   ```bash
-   ls ~/migration_scratch/
-   mv ~/migration_scratch/kept_file.txt ~/
-   ```
+3. **Review data** in `~/migration_scratch/` and **move** files you’d like to keep  
+    
+        ls ~/migration_scratch/
+        mv ~/migration_scratch/kept_file.txt ~/
 
 We **highly recommend taking this time to clean-up the migrated scratch directory** and copy only the files you need to keep to your main home directory. 
 
