@@ -31,21 +31,17 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 
 ### Timeline for ap20-21 users
 
-* **November 30, 2025:** We recommend submitting jobs to ap20-21 no later than this date.  
-* **December 8, 2025:** You may test login to the new Access Points. You will not be able to submit jobs.  
 * **December 8-15, 2025:** ap20-21 will be shut down during these dates.   
     * **December 8, 2025:** Job submission is disabled on ap20-21.  
     * **December 11, 2025:** Logins to ap20–21 are disabled; all remaining jobs are put on hold.   
     * **December 11-22, 2025:** All ap20-21 data will be synced to a temporary location (`/migration`).  
 * **December 22, 2025:** You can submit jobs from the new Access Points.  
-    * You should copy your data (`/migration`) to new `/home` and `/ospool/data` locations.  
+    * You should copy your data (`/migration`) to new `/home` and `/ospool` locations.  
 * **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
 * **May 2026:** Access to `/migration` data will be turned off. 
 
 ### Timeline for ap23 users who are migrating
 
-* **November 30, 2025:** We recommend submitting jobs to ap23 no later than this date.  
-* **December 8, 2025:** You may test login to the new Access Points. You will not be able to submit jobs.  
 * **December 8-15, 2025:** Migration window   
     * **December 8, 2025:** Job submission is disabled for migrating users on ap23. 
     * **December 11, 2025:** ap23 users who are migrating to the new infrastructure will have their logins disabled.
@@ -80,37 +76,46 @@ Your username will remain the same; however, **your AP’s SSH address will chan
 | ap21.uc.osg-htc.org | ap41.uw.osg-htc.org |
 | ap23.uc.osg-htc.org<br>*Only notified users will be migrated* | ap43.uw.osg-htc.org |
 
+### Update data paths
+
+Your `/ospool` directories have changed. Update your scripts or submit files accordingly. 
+
+* Your new `/home` $HOME path will be in the same path (`/home/<user.name>/`)  
+* Your `/ospool/` $DATA path is now `/ospool/ap41/data/<user.name>/`
+
 ### Copy your data from `/migration`
 
-Your data from ap20–21 has been copied into the temporary **`/migration`** directory on your new Access Point.
+Your data from ap20-21 has been copied into the temporary **`/migration`** directory on your new Access Point, and should be copied into your new `/home` and `/ospool` directories. 
 
-#### Transferring your migrated /home data
+📅 Data in `/migration` will remain available **until May 2026**, but we recommend moving important data as soon as possible.
 
-Your `/home` directory has been migrated to your new UW-Madison AP (ap4x). You will need to untar the migrated directory into a subdirectory of your new `/home` path. You can do this by running the following commands:
+#### Copying your migrated /home data
 
-1. **Make** a new subdirectory under \`/home  
+Your `/home` directory has been migrated to your new UW-Madison AP (ap4x). Your home directory was tarred to expedite migration to the new AP and you will need to untar the migrated directory into a subdirectory of your new `/home` path. You can do this by running the following commands:
+
+1. **Make a new subdirectory** under \`/home  
    ```bash
    mkdir -p ~/migration_temp/
    ```
 
-2. **Untar** your `/home` directory: Your home directory was tarred to expedite migration to the new AP. You should untar it using the following command:  
+2. **Untar** your `/home` directory:   
    ```bash
    tar -xzf /migration/ap2x/home/<username>.tar.gz -C ~/migration_temp/
    ```
 
-3. **Review and Move** and review data in `~/migration_temp/` and move files you’d like to keep  
+3. **Review** data in `~/migration_temp/` and **move** files you’d like to keep  
    ```bash
    ls ~/migration_temp/
    mv ~/migration_temp/kept_file.txt ~/
    ```
 
-   ⚠️ **Warning: Be weary of moving hidden files**, as this may overwrite hidden files important account services (such as Git and OSDF). 
+   ⚠️ **Warning: Be wary of moving hidden files**, as this may overwrite hidden files important account services (such as Git and OSDF). 
 
-#### Transferring your migrated /ospool data
+#### Copying your migrated /ospool data
 
-Your `/ospool` directory has been migrated to your new UW-Madison AP (ap4x). You will need to untar the migrated directory into a subdirectory of your new `/ospool/ap4x/data` path. You can do this by running the following commands:
+Your `/ospool` directory has been migrated to your new UW-Madison AP (ap4x). You’ll need to move the contents of your migrated data to your new directory: `/ospool/ap41/data/<username>/`. 
 
-1. **Navigate** to your migrated `/ospool` directory  
+1. **Navigate** to your migrated `/ospool` directory (changing `ap2x` to the right value):  
    ```bash
    cd /migration/ap2x/data/<username>/
    ```
@@ -118,16 +123,30 @@ Your `/ospool` directory has been migrated to your new UW-Madison AP (ap4x). You
 2. **Review and Move** and review data and move files you’d like to keep  
    ```bash
    ls /migration/ap2x/data/<username>/
-   mv /migration/ap2x/data/<username>/kept_file.txt /ospool/ap4x/data/<username>/
+   mv /migration/ap2x/data/<username>/kept_file.txt /ospool/ap41/data/<username>/
    ```
 
-#### **For ap23→43 users ONLY: your /scratch directory is available**
+> ### Checking for completed data transfer
+> 
+> As of December 19, 2025, we are still completing the transfer of `/ospool` files for 
+> a subset of users. These users have been emailed directly, but you can also 
+> check if you data has been transferred successfully by checking the ownership of the folder using the following commands:
+> 
+> 	ls -lh /migration/ap2x/data/<username>
+> 
+> If the output shows:
+> 
+> 	ls: cannot access '/migration/ap2x/data/<username>/': Permission denied
+> 
+> This indicates that your transfer/verification is still in progress. If you are able to list the directory content, then your data have been fully migrated and ready for copying to your new `/ospool` directory as above. 
 
-Your migrated `/scratch` directory has been compressed into a `.tar.gz` file at the following path, changing `<username>` to your username:  
+#### For ap23→43 users ONLY: copy your /scratch directory
 
-`/migration/ap23/scratch/<username>.tar.gz`
+Your migrated `/scratch` directory has been compressed into a `.tar.gz` file at the following path (changing `<username>` to your username):  
 
-1. **Make** a temporary directory in your new `/home/` directory and untar the contents of your home directory tarball (`<username>.tar.gz`) using the following commands:
+	/migration/ap23/scratch/<username>.tar.gz
+
+1. **Make a temporary directory** in your new `/home/` directory and untar the contents of your home directory tarball (`<username>.tar.gz`) using the following commands:
   ```bash
   mkdir -p ~/migration_scratch
   ```  
@@ -137,24 +156,13 @@ Your migrated `/scratch` directory has been compressed into a `.tar.gz` file at 
   tar -xzvf /migration/ap23/scratch/<username>.tar.gz -C ~/migration_scratch/
   ```
 
-4. **Review and Move** and review data in `~/migration_scratch/` and move files you’d like to keep  
+4. **Review data** in `~/migration_scratch/` and **move** files you’d like to keep  
    ```bash
    ls ~/migration_scratch/
    mv ~/migration_scratch/kept_file.txt ~/
    ```
 
 We **highly recommend taking this time to clean-up the migrated scratch directory** and copy only the files you need to keep to your main home directory. 
-
-📅 Data in `/migration` will remain available **until May 2026**, but we recommend moving important data as soon as possible.
-
-
-### Update data paths
-
-Your `/ospool` directories have changed. 
-
-* Your new `/home` $HOME path will be in the same path (`/home/<user.name>/`)  
-* Your `/ospool/` $DATA path is now `/ospool/ap41/data/<user.name>/`
-
 
 ### Log in to your new OSPool account portal (registry.cilogon.org)
 
