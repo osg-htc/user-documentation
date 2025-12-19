@@ -24,8 +24,6 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 
 > **If you have accounts on one of ap20-21-23 AND another Access Point like ap40.uw.osg-htc.org** there will be no changes to your `ap40` account; contact [support@osg-htc.org](mailto:support@osg-htc.org) to coordinate consolidating your account information. 
 
-### [⏭️ Jump to the Current Timeframe in the Transition](#3-migration-process-dec-8---15)
-
 ## Migration timeline
 
 * For ap20-21 users: [Go here](#timeline-for-ap20-21-users)
@@ -36,11 +34,19 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **November 30, 2025:** We recommend submitting jobs to ap20-21 no later than this date.  
 * **December 8, 2025:** You may test login to the new Access Points. You will not be able to submit jobs.  
 * **December 8-15, 2025:** ap20-21 will be shut down during these dates.   
+<<<<<<< HEAD
     * **December 8, 2025:** Job submission is disabled on ap20-21.  
     * **December 11, 2025:** Logins to ap20–21 are disabled; all remaining jobs are put on hold.   
     * **December 11-22, 2025:** All ap20-21 data will be synced to a temporary location (`/migration`).  
 * **December 22, 2025:** You can submit jobs from the new Access Points.  
     * You should copy your data (`/migration`) to new `/home` and `/ospool/data` locations.  
+=======
+    * **December 8, 2025:** Job submission is disabled on ap20-21. You can no longer submit new jobs through these Access Points
+    * **December 11, 2025:** Logins to ap20–21 are disabled; any jobs still in the queue after Dec 11 will be removed.
+    * **December 11-15, 2025:** All ap20-21 data will be synced to a temporary location (`/migrated`).  
+* **December 15, 2025:** You can submit jobs from the new Access Points.  
+    * You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
+>>>>>>> main
 * **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
 * **May 2026:** Access to `/migration` data will be turned off. 
 
@@ -72,32 +78,20 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 
 ## What you should do
 
-### 1\. General preparation (November)
+### Get ready for new Access Points (Dec 8 - 15)
 
-* **If you are concerned about interrupted work** during the downtime period (Dec 8-15), please contact OSG staff (support@osg-htc.org) **immediately** to make alternative arrangements.   
-* ap20-21 users: Go through both your `/home` and `/ospool/ap2*/data` spaces and **remove files that are no longer needed for your current work.** 
-* ap23 users who are moving: Go through your `/home` `/scratch`, `/ospool/uc-shared/public/<project>`, and `/ospool/u-shared/project/<project>` and **remove files that are no longer needed for your current work**.
+The AP41 access points are almost ready to take over as your primary gateway to the OSPool—and this upgrade brings improved stability, performance, and a cleaner, modernized identity system. Now is the perfect time to explore the new environment and make sure your workflows are ready for launch day.
 
-### 2\. Pre-migration window (Dec 1 \- 8\)
+Here’s how you can prepare:
 
-* **Download or back up** any critical data you may need access to during the downtime (Dec. 8-15).  
-* **Avoid submitting new jobs and remove idle jobs** that are unlikely to complete by Dec 8. This will allow for cleaner data migration.
+- **Log in to your new Access Point.**
+- **Try out your new Access Point with small test jobs** to confirm that your scripts, containers, and input/output paths behave as expected in the upgraded environment.
+- **Update any automation or hard-coded references** to AP20/21 or old data paths, as these will be retired after the transition.
+- **Verify your new account** in the [OSPool Account Portal](registry.cilogon.org) to ensure your identity and group memberships are set up correctly.
 
-### 3\. Migration process (Dec 8 - In Progress)
+Details on all these steps are below. We will send you a ***Welcome to Your New OSPool Account*** email on Dec 15th with additional information when the Access Points are fully ready for launch. 
 
-As of December 8th, the migration of OSPool Access Points ap20 and ap21 (and some groups on ap23) is officially underway. This message outlines what has changed today and what you can expect during the week-long migration period.
-
-* **Job submission on ap20–21 has been disabled**<br>You can no longer submit new jobs through these Access Points.
-
-* **Jobs still running will be held on Dec 11**<br>Any jobs still in the queue after Dec 11 will be removed.
-
-* **You may now test\* login on your new Access Point**
-
-  \*While full services on the new Access Points may not be available until **December 15**, you *can* log in today to ensure:
-
-  * Your new credentials are working  
-  * Your SSH keys are recognized  
-  * Your account is active in the [CILogon Registry (COmanage)](https://registry.cilogon.org) system
+#### Where to log in
 
 Your username will remain the same; however, **your AP’s SSH address will change**. See below for your new address.
 
@@ -105,21 +99,14 @@ Your username will remain the same; however, **your AP’s SSH address will chan
 | :---- | :---- |
 | ap20.uc.osg-htc.org | ap41.uw.osg-htc.org |
 | ap21.uc.osg-htc.org | ap41.uw.osg-htc.org |
-| ap23.uc.osg-htc.org<br>*Only notified users will be migrated* | ap42.uw.osg-htc.org |
+| ap23.uc.osg-htc.org<br>*Only notified users will be migrated* | ap43.uw.osg-htc.org |
 
-### 📁 Data Migration (In Progress)
 
-Starting **Dec 11**, we will copy all user data from ap20–21 to the temporary `/migration` directory on the new Access Points.
+#### Test-drive your new access point
 
-During this period:
+We encourage you to take your new AP41 account for a spin during the migration period! This is a great time to confirm that your workflows submit and run as expected in the new environment. Please keep these early submissions limited to small, lightweight test jobs, since services and data paths are still coming online. 
 
-* You will **not** be able to modify your data on ap20–21.
-* No jobs will run.
-* Data transfer is handled entirely by OSG staff.
-
-Once the data has been fully migrated to the new AP, you will receive a ***Welcome to Your New OSPool Account*** email with additional information about how to access your migrated data. You will need to copy it from the `/migration` path, once it is available. 
-
-##### New Data Paths
+#### Update data paths
 
 Your `/ospool` directories have changed. 
 
@@ -201,9 +188,9 @@ Please keep these early submissions limited to small, lightweight test jobs, sin
 
 Your testing now helps us ensure a smoother experience once the migration is complete. Thank you for trying it out!
 
-#### Login to Your New OSPool Account Portal (registry.cilogon.org)
+#### Log in to your new OSPool account portal (registry.cilogon.org)
 
-As part of the migration to the AP41 access points, you have access to a new identity/account management portal within the OSPool ecosystem. You can review and manage your identity/account through the OSPool Account Portal at [registry.cilogon.org](https://registry.cilogon.org).
+As part of the migration to the AP41 access points, you have access to a new identity/account management portal within the OSPool ecosystem. You can review and manage your identity/account through the OSPool Account Portal at [registry.cilogon.org](https://registry.cilogon.org/registry/co_dashboards/dashboard/co:7).
 
 When you log in with your campus credentials, you’ll be able to:
 
@@ -212,8 +199,6 @@ When you log in with your campus credentials, you’ll be able to:
 * **Ensure your institutional identity is linked correctly**, which is required for job submission under AP41.
 * **Upload new SSH keys** to your profile to expedite the login process on AP41.
   * Previously uploaded SSH keys to OSGConnect have also been migrated your new [registry.cilogon.org](https://registry.cilogon.org) account and are ready for use on AP41! 
-
-Visiting this portal during the migration provides a quick way to make sure everything is aligned with the new infrastructure before you begin submitting jobs. If something looks incorrect or incomplete, you can let us know early so we can correct any issues to your access ahead of the full transition.
 
 ## Why are we doing the migration? 
 
@@ -250,4 +235,4 @@ We appreciate your patience and cooperation as we complete this important transi
 
 ---
 
-*Last updated: November 11th 2025*  
+*Last updated: December 19, 2025*  
