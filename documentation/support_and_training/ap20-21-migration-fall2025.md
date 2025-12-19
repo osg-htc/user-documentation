@@ -38,8 +38,8 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **December 8-15, 2025:** ap20-21 will be shut down during these dates.   
     * **December 8, 2025:** Job submission is disabled on ap20-21.  
     * **December 11, 2025:** Logins to ap20–21 are disabled; all remaining jobs are put on hold.   
-    * **December 11-15, 2025:** All ap20-21 data will be synced to a temporary location (`/migrated`).  
-* **December 15, 2025:** You can submit jobs from the new Access Points.  
+    * **December 11-22, 2025:** All ap20-21 data will be synced to a temporary location (`/migrated`).  
+* **December 22, 2025:** You can submit jobs from the new Access Points.  
     * You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
 * **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
 * **May 2026:** Access to `/migrated` data will be turned off. 
@@ -51,8 +51,8 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **December 8-15, 2025:** Migration window   
     * **December 8, 2025:** Job submission is disabled for migrating users on ap23. 
     * **December 11, 2025:** ap23 users who are migrating to the new infrastructure will have their logins disabled.
-    * **December 11-15, 2025:** All ap23 `/home` and `/scratch` data from users moving to the new infrastructure will be synced to a temporary location: `/migrated`.  
-* **December 15, 2025:** You can submit jobs from the new Access Points.  
+    * **December 11-22, 2025:** All ap23 `/home` and `/scratch` data from users moving to the new infrastructure will be synced to a temporary location: `/migrated`.  
+* **December 22, 2025:** You can submit jobs from the new Access Points.  
     * You should copy your data from `/migrated` to your new `/home`, including data that used to be on `/scratch.`
     * Collaboration shared data in `/ospool/uc-shared/projects/<project>` and `/ospool/uc-shared/public/<project>` will be migrated to a set of new Pelican origins on behalf of the collaboration 
 * **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
@@ -83,9 +83,9 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **Download or back up** any critical data you may need access to during the downtime (Dec. 8-15).  
 * **Avoid submitting new jobs and remove idle jobs** that are unlikely to complete by Dec 8. This will allow for cleaner data migration.
 
-### 3\. Migration process (Dec 8 - 15)
+### 3\. Migration process (Dec 8 - In Progress)
 
-As of today, December 8th, the migration of OSPool Access Points ap20 and ap21 (and some groups on ap23) is officially underway. This message outlines what has changed today and what you can expect during the week-long migration period.
+As of December 8th, the migration of OSPool Access Points ap20 and ap21 (and some groups on ap23) is officially underway. This message outlines what has changed today and what you can expect during the week-long migration period.
 
 * **Job submission on ap20–21 has been disabled**<br>You can no longer submit new jobs through these Access Points.
 
@@ -107,9 +107,9 @@ Your username will remain the same; however, **your AP’s SSH address will chan
 | ap21.uc.osg-htc.org | ap41.uw.osg-htc.org |
 | ap23.uc.osg-htc.org<br>*Only notified users will be migrated* | ap42.uw.osg-htc.org |
 
-#### 📁 Data Migration Begins This Week
+### 📁 Data Migration (In Progress)
 
-Between **Dec 11–15**, we will copy all user data from ap20–21 to the temporary `/migrated` directory on the new Access Points.
+Starting **Dec 11**, we will copy all user data from ap20–21 to the temporary `/migrated` directory on the new Access Points.
 
 During this period:
 
@@ -117,7 +117,7 @@ During this period:
 * No jobs will run.
 * Data transfer is handled entirely by OSG staff.
 
-You will begin moving your own data from `/migrated` into your new `/home` and `/ospool` locations starting **Dec 15**. We will send you a ***Welcome to Your New OSPool Account*** email on Dec 15th with additional information.
+Once the data has been fully migrated to the new AP, you will receive a ***Welcome to Your New OSPool Account*** email with additional information about how to access your migrated data. You will need to copy it from the `/migration` path, once it is available. 
 
 ##### New Data Paths
 
@@ -126,11 +126,74 @@ Your `/ospool` directories have changed.
 * Your new `/home` $HOME path will be in the same path (`/home/<user.name>/`)  
 * Your `/ospool/` $DATA path is now `/ospool/ap41/data/<user.name>/`
 
+### Transfer your data from `/migration`
+
+Your data from ap20–21 has been copied into the temporary **`/migration`** directory on your new Access Point.
+
+#### Transferring your migrated /home data
+
+Your `/home` directory has been migrated to your new UW-Madison AP (ap4x). You will need to untar the migrated directory into a subdirectory of your new `/home` path. You can do this by running the following commands:
+
+1. **Make** a new subdirectory under \`/home  
+   ```bash
+   mkdir -p ~/migration_temp/
+   ```
+
+2. **Untar** your `/home` directory: Your home directory was tarred to expedite migration to the new AP. You should untar it using the following command:  
+   ```bash
+   tar -xzf /migration/ap2x/home/<username>/<username>.tar.gz -C ~/migration_temp/
+   ```
+
+3. **Review and Move** and review data in `~/migration_temp/` and move files you’d like to keep  
+   ```bash
+   ls ~/migration_temp/
+   mv ~/migration_temp/kept_file.txt ~/
+   ```
+
+   ⚠️ **Warning: Be weary of moving hidden files**, as this may overwrite hidden files important account services (such as Git and OSDF). 
+
+#### Transferring your migrated /ospool data
+
+Your `/ospool` directory has been migrated to your new UW-Madison AP (ap4x). You will need to untar the migrated directory into a subdirectory of your new `/ospool/ap4x/data` path. You can do this by running the following commands:
+
+1. **Navigate** to your migrated `/ospool` directory  
+   ```bash
+   cd /migration/ap2x/data/<username>/
+   ```
+
+2. **Review and Move** and review data and move files you’d like to keep  
+   ```
+   ls /migration/ap2x/data/<username>/
+   mv /migration/ap2x/data/<username>/kept_file.txt /ospool/ap4x/data/<username>/
+   ```
+
+#### Transferring your migrated /scratch data – AP43 Users Only
+
+Your `/scratch` directory has been migrated to your new UW-Madison AP (ap43). You will need to untar the migrated directory into a subdirectory of your new `/home/<username>/` path. You can do this by running the following commands:
+
+1. **Make** a `/scratch` directory under your `/home/<username>` path  
+   ```bash
+   mkdir -p ~/scratch
+   ```
+
+2. **Navigate** to your migrated `/scratch` directory  
+   ```bash
+   cd /migration/ap23/scratch/<username>/
+   ```
+
+3. **Review and Move** and review data and move files you’d like to keep  
+   ```bash
+   ls /migration/ap23/scratch/<username>/ 
+   mv /migration/ap23/scratch/<username>/kept_file.txt ~/scratch/
+   ```
+
+📅 Data in `/migration` will remain available **until May 2026**, but we recommend moving important data as soon as possible.
+
 #### Test-Driving Your New AP41 Account
 
 We encourage you to take your new AP41 account for a spin during the migration period! This is a great time to confirm that your workflows submit and run as expected in the new environment.
 
-Please keep these early submissions limited to small, lightweight test jobs, since services and data paths are still coming online. Data availability may be intermittent through December 15th, so hold off on production-scale work until everything is fully stabilized.
+Please keep these early submissions limited to small, lightweight test jobs, since services and data paths are still coming online. Data availability may be intermittent through December 22nd, so hold off on production-scale work until everything is fully stabilized.
 
 Your testing now helps us ensure a smoother experience once the migration is complete. Thank you for trying it out!
 
@@ -147,18 +210,6 @@ When you log in with your campus credentials, you’ll be able to:
   * Previously uploaded SSH keys to OSGConnect have also been migrated your new [registry.cilogon.org](https://registry.cilogon.org) account and are ready for use on AP41! 
 
 Visiting this portal during the migration provides a quick way to make sure everything is aligned with the new infrastructure before you begin submitting jobs. If something looks incorrect or incomplete, you can let us know early so we can correct any issues to your access ahead of the full transition.
-
-## Get Ready and Excited for the Hard Launch of AP41
-
-The AP41 access points are almost ready to take over as your primary gateway to the OSPool—and this upgrade brings improved stability, performance, and a cleaner, modernized identity system. Now is the perfect time to explore the new environment and make sure your workflows are ready for launch day.
-
-Here’s how you can prepare:
-
-- **Verify your new account** in the [OSPool Account Portal](registry.cilogon.org) to ensure your identity and group memberships are set up correctly.
-- **Try out AP41 with small test jobs** to confirm that your scripts, containers, and input/output paths behave as expected in the upgraded environment.
-- **Update any automation or hard-coded references** to AP20/21, as these will be retired after the transition.
-
-Your early testing helps ensure a smooth, confident shift into AP41. We’re excited for you to experience the improvements coming with this next-generation access point—thank you for helping us prepare for a successful launch!
 
 ## Why are we doing the migration? 
 
