@@ -34,19 +34,11 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **November 30, 2025:** We recommend submitting jobs to ap20-21 no later than this date.  
 * **December 8, 2025:** You may test login to the new Access Points. You will not be able to submit jobs.  
 * **December 8-15, 2025:** ap20-21 will be shut down during these dates.   
-<<<<<<< HEAD
     * **December 8, 2025:** Job submission is disabled on ap20-21.  
     * **December 11, 2025:** Logins to ap20–21 are disabled; all remaining jobs are put on hold.   
     * **December 11-22, 2025:** All ap20-21 data will be synced to a temporary location (`/migration`).  
 * **December 22, 2025:** You can submit jobs from the new Access Points.  
     * You should copy your data (`/migration`) to new `/home` and `/ospool/data` locations.  
-=======
-    * **December 8, 2025:** Job submission is disabled on ap20-21. You can no longer submit new jobs through these Access Points
-    * **December 11, 2025:** Logins to ap20–21 are disabled; any jobs still in the queue after Dec 11 will be removed.
-    * **December 11-15, 2025:** All ap20-21 data will be synced to a temporary location (`/migrated`).  
-* **December 15, 2025:** You can submit jobs from the new Access Points.  
-    * You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
->>>>>>> main
 * **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
 * **May 2026:** Access to `/migration` data will be turned off. 
 
