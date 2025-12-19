@@ -103,7 +103,7 @@ the top-level directory. For example, if there is an output file that
 needs to be transferred back to the login node named `job_output.txt` 
 written to `job_output/`:
 
-	#! /bin/bash
+	#!/bin/bash
 	
 	# various commands needed to run your job
 	
@@ -119,7 +119,7 @@ node. To create a compressed tar archive, include commands in your your
 bash executable script to create a new subdirectory, move all of the
 output to this new subdirectory, and create a tar archive. For example:
 
-	#! /bin/bash
+	#!/bin/bash
 	
 	# various commands needed to run your job
 	
