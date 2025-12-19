@@ -38,11 +38,11 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **December 8-15, 2025:** ap20-21 will be shut down during these dates.   
     * **December 8, 2025:** Job submission is disabled on ap20-21.  
     * **December 11, 2025:** Logins to ap20–21 are disabled; all remaining jobs are put on hold.   
-    * **December 11-22, 2025:** All ap20-21 data will be synced to a temporary location (`/migrated`).  
+    * **December 11-22, 2025:** All ap20-21 data will be synced to a temporary location (`/migration`).  
 * **December 22, 2025:** You can submit jobs from the new Access Points.  
-    * You should copy your data (`/migrated`) to new `/home` and `/ospool/data` locations.  
+    * You should copy your data (`/migration`) to new `/home` and `/ospool/data` locations.  
 * **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
-* **May 2026:** Access to `/migrated` data will be turned off. 
+* **May 2026:** Access to `/migration` data will be turned off. 
 
 ### Timeline for ap23 users who are migrating
 
@@ -51,12 +51,12 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * **December 8-15, 2025:** Migration window   
     * **December 8, 2025:** Job submission is disabled for migrating users on ap23. 
     * **December 11, 2025:** ap23 users who are migrating to the new infrastructure will have their logins disabled.
-    * **December 11-22, 2025:** All ap23 `/home` and `/scratch` data from users moving to the new infrastructure will be synced to a temporary location: `/migrated`.  
+    * **December 11-22, 2025:** All ap23 `/home` and `/scratch` data from users moving to the new infrastructure will be synced to a temporary location: `/migration`.  
 * **December 22, 2025:** You can submit jobs from the new Access Points.  
-    * You should copy your data from `/migrated` to your new `/home`, including data that used to be on `/scratch.`
+    * You should copy your data from `/migration` to your new `/home`, including data that used to be on `/scratch.`
     * Collaboration shared data in `/ospool/uc-shared/projects/<project>` and `/ospool/uc-shared/public/<project>` will be migrated to a set of new Pelican origins on behalf of the collaboration 
 * **December 15 \- January 22, 2026:** We will have dedicated office hours for helping users with the migration.   
-* **May 2026:** Access to `/migrated` data will be turned off. 
+* **May 2026:** Access to `/migration` data will be turned off. 
 
 ## What to expect
 
@@ -64,11 +64,11 @@ Please read below for the migration timeline, downtime dates, and post-transitio
 * You may log into your new Access Point **after Dec. 8**.  
 * You may submit jobs on the new Access Points **after Dec. 15**.  
 * What happens to your data:  
-    * We will copy all user data from ap20, 21 (`/home`, `/ospool`) to a temporary **`/migrated`** directory.  
-    * We will copy all user data from ap23 (`/home`, `/scratch`) to a temporary /migrated directory.
+    * We will copy all user data from ap20, 21 (`/home`, `/ospool`) to a temporary **`/migration`** directory.  
+    * We will copy all user data from ap23 (`/home`, `/scratch`) to a temporary `/migration` directory.
     * We will copy all shared data in `/ospool/uc-shared` to a new shared location, which will be accessible by the new access point.
-    * After Dec 15, **you are responsible for copying any data you want to keep** from `/migrated` into your new `/home` or `/ospool` directories.  
-    * Your data in `/migrated` will remain available **until May 2026**.
+    * After Dec 15, **you are responsible for copying any data you want to keep** from `/migration` into your new `/home` or `/ospool` directories.  
+    * Your data in `/migration` will remain available **until May 2026**.
 
 ## What you should do
 
@@ -109,7 +109,7 @@ Your username will remain the same; however, **your AP’s SSH address will chan
 
 ### 📁 Data Migration (In Progress)
 
-Starting **Dec 11**, we will copy all user data from ap20–21 to the temporary `/migrated` directory on the new Access Points.
+Starting **Dec 11**, we will copy all user data from ap20–21 to the temporary `/migration` directory on the new Access Points.
 
 During this period:
 
