@@ -141,7 +141,7 @@ Your `/home` directory has been migrated to your new UW-Madison AP (ap4x). You w
 
 2. **Untar** your `/home` directory: Your home directory was tarred to expedite migration to the new AP. You should untar it using the following command:  
    ```bash
-   tar -xzf /migration/ap2x/home/<username>/<username>.tar.gz -C ~/migration_temp/
+   tar -xzf /migration/ap2x/home/<username>.tar.gz -C ~/migration_temp/
    ```
 
 3. **Review and Move** and review data in `~/migration_temp/` and move files you’d like to keep  
@@ -162,30 +162,34 @@ Your `/ospool` directory has been migrated to your new UW-Madison AP (ap4x). You
    ```
 
 2. **Review and Move** and review data and move files you’d like to keep  
-   ```
+   ```bash
    ls /migration/ap2x/data/<username>/
    mv /migration/ap2x/data/<username>/kept_file.txt /ospool/ap4x/data/<username>/
    ```
 
-#### Transferring your migrated /scratch data – AP43 Users Only
+#### **For ap23→43 users ONLY: your /scratch directory is available**
 
-Your `/scratch` directory has been migrated to your new UW-Madison AP (ap43). You will need to untar the migrated directory into a subdirectory of your new `/home/<username>/` path. You can do this by running the following commands:
+Your migrated `/scratch` directory has been compressed into a `.tar.gz` file at the following path, changing `<username>` to your username:  
 
-1. **Make** a `/scratch` directory under your `/home/<username>` path  
+`/migration/ap23/scratch/<username>.tar.gz`
+
+1. **Make** a temporary directory in your new `/home/` directory and untar the contents of your home directory tarball (`<username>.tar.gz`) using the following commands:
+  ```bash
+  mkdir -p ~/migration_scratch
+  ```  
+
+3. **Untar** your `/home` directory: Your home directory was tarred to expedite migration to the new AP. You should untar it using the following command: 
+  ```bash
+  tar -xzvf /migration/ap23/scratch/<username>.tar.gz -C ~/migration_scratch/
+  ```
+
+4. **Review and Move** and review data in `~/migration_scratch/` and move files you’d like to keep  
    ```bash
-   mkdir -p ~/scratch
+   ls ~/migration_scratch/
+   mv ~/migration_scratch/kept_file.txt ~/
    ```
 
-2. **Navigate** to your migrated `/scratch` directory  
-   ```bash
-   cd /migration/ap23/scratch/<username>/
-   ```
-
-3. **Review and Move** and review data and move files you’d like to keep  
-   ```bash
-   ls /migration/ap23/scratch/<username>/ 
-   mv /migration/ap23/scratch/<username>/kept_file.txt ~/scratch/
-   ```
+We **highly recommend taking this time to clean-up the migrated scratch directory** and copy only the files you need to keep to your main home directory. 
 
 📅 Data in `/migration` will remain available **until May 2026**, but we recommend moving important data as soon as possible.
 
