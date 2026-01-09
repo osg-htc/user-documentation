@@ -56,7 +56,7 @@ following:
 
 The part you want to upload is the content of the `.pub` file (~/.ssh/id_rsa.pub)
 
-> The following video demonstrates the key generation process from the terminal. A point to be noted is that the **last portion of the video showing uploading public key is applicable only to "OSG Connect" Access Points (account created through https://www.osgconnect.net/)**:
+> The following video demonstrates the key generation process from the terminal. A point to be noted is that the **last portion of the video showing uploading public key is deprecated.**:
 >
 > <iframe width="100%" height="400" src="https://www.youtube.com/embed/sKXqRjKm4bM?si=jwlMhruXmx6CY68k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -90,10 +90,7 @@ can use a key without a passphrase, but this is not recommended.
 ## Next Steps
 
 After generating the key, you will need to upload it to a web profile to use it 
-for log in. 
-
-* If you have an account on an `uw.osg-htc.org` Access Point (account created through https://registry.cilogon.org/registry/) follow the instructions here: [Log In to `uw.osg-htc.org` Access Points](../comanage-access)
-* If you have an account on "OSG Connect" Access Points (account created through https://www.osgconnect.net/), follow the instructions here: [Log In to OSG Connect Access Points](../connect-access#log-in)
+for log in. Follow the instructions here: [Log In to `uw.osg-htc.org` Access Points](../comanage-access)
 
 
 ## Getting Help 
