@@ -36,15 +36,12 @@ fit on the OSPool, and some practical next steps for getting started.
 ![](../../assets/Access-Point.svg)
 
 Before or during the orientation meeting, you will be prompted to register 
-for an account on a specific OSPool Access Point. The current default are
-`uw.osg-htc.org` Access Points. 
+for an account on a specific OSPool Access Point.
 
 ***Please do not register for an Access Point until you have been instructed
 to do so by a Research Computing Facilitator!***
 
-### Register for `uw.osg-htc.org` Access Points
-
-To register for the `ap40.uw.osg-htc.org` access point, submit an application using the following steps:
+Submit an application using the following steps:
 
 1. Visit this account [registration page](https://registry.cilogon.org/registry/co_petitions/start/coef:211). You will be redirected to the CILogon sign in page. Select your institution and use your institutional credentials to login. You will use these credentials later to login so it is important to remember the institution you use at this step.
    
@@ -64,14 +61,7 @@ To register for the `ap40.uw.osg-htc.org` access point, submit an application us
 
 
       <img src="../../../assets/ap7-images/comanage-email-verification-form.png" class= "img-fluid"/>
-   
-### Register for `uc.osg-htc.org` Access Points
 
-You can register for OSG Connect Access Points here: 
-
-[OSG Connect Account Registration](https://www.osgconnect.net/signup)
-
-**Only do this if you have been instructed to do so by a Research Computing Facilitator!**
 
 ## Account Approval by a Research Computing Facilitator
 
@@ -86,15 +76,4 @@ you with your account details.
 Once you've gone through the steps above, you should have an account on 
 on OSPool Access Point! 
 
-Follow the instructions below to learn how to log in to you OSPool Access Point. 
-
-**Accounts for all new users are created on `uw.osg-htc.org` Access Points unless otherwise specified.** 
-
-<details>
-<summary>Log In to <code>uw.osg-htc.org</code> Access Points (e.g., <code>ap40.uw.osg-htc.org</code>)</summary>
-<br>
-If your account is on the <code>uw.osg-htc.org</code> Access Points (e.g., accounts on <code>ap40.uw.osg-htc.org</code>), follow instructions in this guide for logging in:
-<a href="https://portal.osg-htc.org/documentation/overview/account_setup/comanage-access/">Log In to <code>uw.osg-htc.org</code> Access Points</a>
-</details>
-
-
+[Follow this guide to learn how to log in to you OSPool Access Point.](https://portal.osg-htc.org/documentation/overview/account_setup/comanage-access/)

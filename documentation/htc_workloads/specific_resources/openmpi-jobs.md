@@ -13,13 +13,13 @@ becomes more difficult due to the limited number of resources).
 
 ## Find an MPI-based Container
 
-To get started, first compile your code using an OpenMPI container. You can create your own OpenMPI container or use the one that is available on DockerHub. OSG also has an `openmpi` container that can be used for compiling. Please note that the OSG provided container `openmpi.sif` image is available only on the `ap20.uc.osg-htc.org` and `ap21.uc.osg-htc.org` access points. For the ap40 access point, please use your desired docker [image](https://registry.hub.docker.com/r/mfisherman/openmpi/tags)and do `apptainer pull`. More information about using *apptainer pull* can be found [here](https://apptainer.org/docs/user/main/cli/apptainer_pull.html). 
+To get started, first compile your code using an OpenMPI container. You can create your own OpenMPI container or use the one that is available on DockerHub. Use your desired Docker [image](https://registry.hub.docker.com/r/mfisherman/openmpi/tags)and do `apptainer pull`. More information about using *apptainer pull* can be found [here](https://apptainer.org/docs/user/main/cli/apptainer_pull.html). 
 
 ## Compile the Code
 
-To compile your code using the OSG provided image, start running the container first. Then run `mpicc` to compile the code: 
+To compile your code, start running the container first. Then run `mpicc` to compile the code: 
 
-    $ apptainer shell /ospool/uc-shared/public/OSG-Staff/openmpi.sif
+    $ apptainer shell /ospool/ap40/data/username/openmpi.sif
     Apptainer> mpicc -o hello hello.c 
 
 The `hello.c` is an example hello world code that can be executed using multiple processors. The code is given below:
@@ -45,10 +45,10 @@ int main(int argc, char** argv) {
 After compiling the code, you can test the executable locally using `mpiexec`:
 
     Apptainer> mpiexec -n 4 hello
-    Hello world from processor ap21.uc.osg-htc.org, rank 0 out of 4 processors
-    Hello world from processor ap21.uc.osg-htc.org, rank 1 out of 4 processors
-    Hello world from processor ap21.uc.osg-htc.org, rank 2 out of 4 processors
-    Hello world from processor ap21.uc.osg-htc.org, rank 3 out of 4 processors
+    Hello world from processor ap40.uw.osg-htc.org, rank 0 out of 4 processors
+    Hello world from processor ap40.uw.osg-htc.org, rank 1 out of 4 processors
+    Hello world from processor ap40.uw.osg-htc.org, rank 2 out of 4 processors
+    Hello world from processor ap40.uw.osg-htc.org, rank 3 out of 4 processors
 
 When testing is done be sure to exit from the apptainer shell using `exit`. 
 
@@ -66,7 +66,7 @@ The next step is to run your code as a job on the Open Science Pool. For this, f
 Then, a job submit file:
 
 
-    container_image = osdf:///ospool/uc-shared/public/OSG-Staff/openmpi.sif
+    container_image = osdf:///ospool/ap40/data/username/openmpi.sif
 
     executable = wrapper.sh
     transfer_input_files = hello

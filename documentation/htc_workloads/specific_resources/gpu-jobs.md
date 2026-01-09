@@ -139,7 +139,3 @@ software containers to set up your software for jobs:
   * [Containers - Apptainer/Singularity](../../../htc_workloads/using_software/containers-singularity/)
   * [Sample TensorFlow GPU Container Image Definition](https://github.com/opensciencegrid/osgvo-tensorflow-gpu/blob/master/Dockerfile)
   * [TensorFlow Example Job](../../../software_examples/machine_learning/tutorial-tensorflow-containers/)
-
-
-See our [Data Staging and Transfer guide](../../../htc_workloads/managing_data/osgconnect-storage/) for
-details and contact the Research Computing Facilitation team with questions.
