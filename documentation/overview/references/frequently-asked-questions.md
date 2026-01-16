@@ -201,7 +201,7 @@ Our data storage locations are not backed up nor are they intended for long-term
 <details>
 <summary>Can I get a quota increase?</summary>
 <br>
-Yes. Contact support@osg-htc.org if you think you'll need a quota increase for `/home`, `/public`, or `/protected` to accommodate a set of concurrently-running jobs. We can suppport very large amounts of data, the default quotas are just a starting point.
+Yes. Fill out [this form](http://osg-htc.org/ospool-quota-increase.html) if you think you'll need a quota increase for `/home`, or `/ospool` to accommodate a set of concurrently-running jobs. We can suppport very large amounts of data, the default quotas are just a starting point.
 <br>
 </details>
   
