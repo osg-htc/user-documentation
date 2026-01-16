@@ -60,14 +60,22 @@ OSDF URLs in `transfer_input_files`/`transfer_output_files`.
 
 ## Quotas
 
-The `/home` directory and OSDF origins all have quota limits. The `/home` directory is
-limited to 50 GBs, while OSDF limits vary. You can view your current
-usage on the access point with the command `quota` or `quota -vs`.
+The `/home` directory and OSDF origins all have quota limits. 
 
-Jobs will go on hold if quotas are exceeded.
+| Directory | Default Quota |
+| :---- | :---- |
+| `/home` | 50GB |
+| `/ospool/*/data` | 100GB |
+| `/ospool/*/projects` | varies |
 
-To request an increase in your quota, please send a request with
-justification to the ticket system at [support@osg-htc.org](mailto:support@osg-htc.org).
+Jobs will go on hold if quotas are exceeded. The best place to see your quota status is in the login message.
+
+Quotas are NOT meant to limit your work! To request an increase in your quota, please fill out the following form: 
+
+[Quota Request Form](http://osg-htc.org/ospool-quota-increase.html)
+
+If you have any issues with the form or do not get a reply within 1-2 business days, 
+follow up with us at [support@osg-htc.org](mailto:support@osg-htc.org).
 
 ## External Data Transfer to/from Access Point
 

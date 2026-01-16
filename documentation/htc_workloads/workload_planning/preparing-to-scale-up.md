@@ -175,7 +175,7 @@ Additional `condor_q` flags involved in optimizing and troubleshooting jobs incl
 
 More information about the commands and flags above can be found in the [HTCondor manual](https://htcondor.readthedocs.io/en/latest/). 
 
-### Avoid Exceeding Disk Quotas in /home and /protected
+### Avoid Exceeding Disk Quotas in /home and /ospool Directories
 
 To prevent errors or workflow interruption, be sure to estimate the 
 input and output needed for all of your concurrently running 
