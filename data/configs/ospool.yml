@@ -69,6 +69,7 @@ nav:
     - Software Examples and Tutorials: 
       - "Example Software Compilation": htc_workloads/using_software/example-compilation.md
       - "Basics of compiled MATLAB applications - Hello World example": software_examples/matlab_runtime/tutorial-matlab-HelloWorld/README.md
+      - "Scaling up Compute Resources using MATLAB": /software_examples/matlab_runtime/tutorial-Matlab-ScalingUp/README.md
       - "Run Python Scripts on the OSPool ": software_examples/python/manage-python-packages.md
       - "Run R scripts on the OSPool": software_examples/r/tutorial-R/README.md
       - "Use External Packages in your R Jobs": software_examples/r/tutorial-R-addlibSNA/README.md
