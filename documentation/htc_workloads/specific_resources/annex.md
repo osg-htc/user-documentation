@@ -87,8 +87,9 @@ You must also have **permission to launch jobs on that system**.
 | perlmutter     | NERSC Users     | regular<br>debug<br>shared                                                                                          | This resource may be available to users with CLI access to NERSC's Perlmutter system.                  |
 | spark          | CHTC@UW-Madison | shared<br>int<br>pre                                                                                                | This resource is specific to the [University of Wisconsin-Madison Community](https://chtc.cs.wisc.edu) |
 
-If you have access to other resources and want to use them with the HTCondor Annex, please contact us at [support@osg-htc.org](mailto:support@osg-htc.org) to discuss potential integration.
+!!! question "Don't see **your** resource listed?"
 
+    We are actively working to expand the list of supported resources for HTCondor Annex. If you have access to an HPC cluster, cloud environment, or other computing resource that you would like to use with the OSPool, please reach out to us at [support@osg-htc.org](mailto:support@osg-htc.org) to discuss potential integration.
 
 # Basic Annex Workflow
 
