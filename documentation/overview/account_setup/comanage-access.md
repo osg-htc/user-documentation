@@ -22,7 +22,7 @@ To log in, you can authenticate using one of two methods:
 
 ### Option 1: Log in via SSH Key Pair Authentication
 
-You can login to the OSPool Access Point by uploading an SSH key to your [COmanage account](registry.cilogon.org).
+You can login to the OSPool Access Point by uploading an SSH key to your [COmanage account](https://registry.cilogon.org).
 
 The process below describes how to upload a public key to the registration website. 
 It assumes that a private/public key pair has already been generated. 
@@ -103,6 +103,7 @@ To authenticate using this approach:
 
 * CILogon Code Challege Repeats
 	* Error message: 
+      
       ```
       (user.name@ap41.uw.osg-htc.org) Authenticate at
       -----------------
@@ -110,6 +111,7 @@ To authenticate using this approach:
       -----------------
       Hit enter when the website tells you to return to your device
       ```
+
 	* CILogon code-based authentication can, at times, fail to authenticate after you login on your browser. To avoid this, we recommend generating a SSH key-pair and uploading the your **public key** to your COmanage account as outlined in [Option 1: Log in via SSH Key Pair Authentication](#option-1-log-in-via-ssh-key-pair-authentication). We are working on resolving this issue. 
 
 ## Get Help
