@@ -22,13 +22,13 @@ To log in, you can authenticate using one of two methods:
 
 ### Option 1: Log in via SSH Key Pair Authentication
 
-You can login to the OSPool Access Point by uploading an SSH key to your [COmanage account](https://registry.cilogon.org).
+You can login to the OSPool Access Point by uploading an SSH key to your [COmanage account](https://registry.cilogon.org/registry/co_dashboards/dashboard/co:7).
 
 The process below describes how to upload a public key to the registration website. 
 It assumes that a private/public key pair has already been generated. 
 If you need to generate a key pair, see this [guide](../generate-add-sshkey). 
 
-1. Return to the [Registration Page](https://registry.cilogon.org/registry/) and login using your institutional credentials, if prompted.
+1. Return to the [Registration Page](https://registry.cilogon.org/registry/co_dashboards/dashboard/co:7) and login using your institutional credentials, if prompted.
 
 2. Click your name at the top right. In the dropdown box, click "My Profile (OSG)" button.
 
@@ -94,7 +94,7 @@ To authenticate using this approach:
 
 * Existing Account
 	* Error message: `SORID "http://cilogon.org/serverA/users/20186" is already associated with EnvSource`
-	* Try logging into [COmanage](https://registry.cilogon.org/). If you can log in, 
+	* Try logging into [COmanage](https://registry.cilogon.org/registry/co_dashboards/dashboard/co:7). If you can log in,
 	email us with your name and we will add you to the appropriate group. 
 
 * Privacy enhancing plugins
