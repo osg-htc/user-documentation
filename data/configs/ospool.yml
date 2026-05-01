@@ -13,7 +13,9 @@ nav:
     - Get Help!:
       - "Email, Office Hours, and 1-1 Meetings ": support_and_training/support/getting-help-from-RCFs.md
       - "Cybersecurity Practices": support_and_training/cybersecurity.md
-  - Access Point Transition:
+  - Announcements:
+    - Major System Outages/Interruptions: 
+      - "OSG/PATh Major Outage - April 29 - May 1": support_and_training/copyfail26.md
     - Access Point Changes for ap20-21-23: 
       - "Access Point Migration": support_and_training/ap20-21-migration-fall2025.md
   - Docs:
