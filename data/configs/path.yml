@@ -13,6 +13,7 @@ nav:
   - Support And Training Resources:
     - Get Help!:
       - "Email, Office Hours, and Individual Consultations": support_and_training/support/getting-help-from-RCFs.md
+      - "Cybersecurity Practices": support_and_training/cybersecurity.md
   - Managing HTC Workloads On the PATh Facility:
     - Submitting HTC Workloads With HTCondor:
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/quickstart.md
