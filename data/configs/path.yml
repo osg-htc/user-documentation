@@ -14,6 +14,9 @@ nav:
     - Get Help!:
       - "Email, Office Hours, and Individual Consultations": support_and_training/support/getting-help-from-RCFs.md
       - "Cybersecurity Practices": support_and_training/cybersecurity.md
+  - Announcements:
+    - Major System Outages/Interruptions: 
+      - "OSG/PATh Major Outage - April 29 - May 1": support_and_training/copyfail26.md
   - Managing HTC Workloads On the PATh Facility:
     - Submitting HTC Workloads With HTCondor:
       - "Quickstart-Submit Example HTCondor Jobs": htc_workloads/submitting_workloads/quickstart.md
