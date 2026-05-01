@@ -12,10 +12,11 @@ Our mission is to protect OSG users and site resources from security breaches an
 
 If you suspect a security problem, please **report it immediately**. 
 
-!!! note Examples of security problems include:   
-  * compromised login credentials, including ssh keys  
-  * compromised software (e.g. bitcoin miners)  
-  * security vulnerabilities reported by other entities
+!!! danger "Examples of security problems include"
+
+    * compromised login credentials, including ssh keys
+    * compromised software (e.g. bitcoin miners)  
+    * security vulnerabilities reported by other entities
 
 Please promptly report security incidents involving OSG resources via email to [support@osg-htc.org](mailto:support@osg-htc.org) **and CC the [security@osg-htc.org](mailto:security@osg-htc.org)**. Please include the following information in your report:
 
@@ -28,7 +29,7 @@ Please promptly report security incidents involving OSG resources via email to [
 
 When in doubt, report the issue. Early reporting helps us respond quickly, limit potential impact, and protect both users and shared computing resources.
 
-!!! note Report security incidents to your **local/home organization's** incident response team in addition to the OSG Security team if applicable. 
+!!! note "Report security incidents to your **local/home organization's** incident response team in addition to the OSG Security team if applicable."
 
 ## Suspected Vulnerabilities and Exposures
 
