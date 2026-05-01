@@ -43,4 +43,4 @@ Our goal is to make OSPool resources convenient and effective for advancing rese
 
 Please **never attempt to test suspected vulnerabilities on OSPool systems**, even in good faith. Suspected vulnerabilities, exposures, or unusual system behavior should be reported directly to the OSPool team.
 
-Learn more about our reporting process at: [https://portal.osg-htc.org/documentation/support\_and\_training/support/security](https://portal.osg-htc.org/documentation/support_and_training/support/security)   
+Learn more about our reporting process at: [https://portal.osg-htc.org/documentation/support_and_training/cybersecurity](https://portal.osg-htc.org/documentation/support_and_training/cybersecurity)   
