@@ -25,9 +25,7 @@
 [submodule "documentation/tutorials/ACE-wordfreq"]
 	path = documentation/tutorials/ACE-wordfreq
 	url = https://github.com/OSGConnect/ACE-wordfreq
-[submodule "documentation/tutorials/tutorial-pytorch-catdog"]
-	path = documentation/tutorials/tutorial-pytorch-catdog
-	url = https://github.com/osg-htc/tutorial-pytorch-catdog.git
+[submodule "documentation/tutorials/tutorial-spills-R"]
 	path = documentation/tutorials/tutorial-spills-R
 	url = https://github.com/OSGConnect/tutorial-spills-R
 [submodule "documentation/tutorials/tutorial-dagman-intermediate"]
@@ -36,3 +34,6 @@
 [submodule "documentation/tutorials/tutorial-fastqc"]
 	path = documentation/tutorials/tutorial-fastqc
 	url = https://github.com/OSGConnect/tutorial-fastqc
+[submodule "documentation/tutorials/tutorial-pytorch-catdog"]
+	path = documentation/tutorials/tutorial-pytorch-catdog
+	url = https://github.com/osg-htc/tutorial-pytorch-catdog.git
