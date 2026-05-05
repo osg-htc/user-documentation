@@ -1,1 +1,1 @@
-../../../../../../documentation/tutorials/tutorial-pytorch/README.md
+../../../../../../documentation/tutorials/tutorial-pytorch-catdog/README.md
