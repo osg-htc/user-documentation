@@ -93,7 +93,12 @@ export APPTAINER_CACHEDIR=$HOME/tmp
 Once these commands have been run once, 
 you can "build" the container image by running this command:
 
-    $ apptainer build my-container.sif image.def
+    $ apptainer build --ignore-proot my-container.sif image.def
+
+!!! info "--ignore-proot is a required argument, for now"
+
+    Due to security settings on the OSPool APs, --ignore-proot is a required arguement.
+    This might change in the future.
 
 Once the image is built, you can copy it to a data directory, test it on the Access Point,
 and use it in your HTCondor jobs. This is all described in
