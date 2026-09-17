@@ -228,7 +228,7 @@ There are no prerequisites for this workshop. This workshop is designed for new 
 <br>
 	<ul>
 	<li> <a href="https://docs.google.com/presentation/d/1geQ5ADFjXlwyAZJCjRCj_2tC0E6xfpw6LSKxtodhy6s/edit?slide=id.g10c0fd09133_0_7#slide=id.g10c0fd09133_0_7">Presentation Slides</a> </li>
-	<li> <a href="github.com/osg-htc/tutorial-r-analyze-csv">R Example Tutorial</a></li>
+	<li> <a href="https://github.com/osg-htc/tutorial-r-analyze-csv">R Example Tutorial</a></li>
 	</ul>
 <b>Materials Last Updated</b>
 <br>
