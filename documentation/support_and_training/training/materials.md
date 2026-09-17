@@ -182,6 +182,60 @@ Spring 2025
 <br>
 </details>
 
+<details>
+<summary>Learn About the PATh Facility</summary>
+<br>
+<b>Learning Objectives</b>
+<br>
+The PATh Facility provides dedicated throughput computing capacity to NSF-funded researchers for longer and larger jobs. This training will describe its features and how to get started. <b>If you have found your jobs need more resources (cores, memory, time, data) than is typically available in the OSPool, this resource might be for you!</b>
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+There are no prerequisites for this webinar. 	
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+<ul>
+	<li> <a href="https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Winter 2023
+<br>
+</details>
+
+## Examples
+
+<details>
+<summary>Get Started on the OSPool: Convert your data analysis into jobs</summary>
+</br>
+<b>Learning Objectives</b>
+<br>
+Topics covered in this workshop include: 
+	<ol>
+	<li>How to change a script to run on the Open Science Pool</li>	
+	<li>Basics of HTCondor job submission</li> 
+	<li>Hands-on practice submitting HTCondor jobs</li> 
+	</ol>
+<b>Prerequisites/Audience</b>
+<br>
+There are no prerequisites for this workshop. This workshop is designed for new HTCondor and OSPool users. 
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1geQ5ADFjXlwyAZJCjRCj_2tC0E6xfpw6LSKxtodhy6s/edit?slide=id.g10c0fd09133_0_7#slide=id.g10c0fd09133_0_7">Presentation Slides</a> </li>
+	<li> <a href="github.com/osg-htc/tutorial-r-analyze-csv">R Example Tutorial</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Fall 2026
+<br>
+</details>
+
 
 <details>
 <summary>Genomics on the OSPool</summary>
@@ -217,29 +271,59 @@ If you're brand new to running jobs on the OSPool, we recommend completing the H
 May 2025
 <br>
 </details>
+
 <details>
-<summary>Learn About the PATh Facility</summary>
+<summary>Bioinformatics Analyses on the OSPool: A BWA Example</summary>
 <br>
 <b>Learning Objectives</b>
 <br>
-The PATh Facility provides dedicated throughput computing capacity to NSF-funded researchers for longer and larger jobs. This training will describe its features and how to get started. <b>If you have found your jobs need more resources (cores, memory, time, data) than is typically available in the OSPool, this resource might be for you!</b>
+This workshop is designed to show the process of implementing and scaling out a bioinformatics workflow using HTCondor. 
 <br>
 <br>
 <b>Prerequisites/Audience</b>
 <br>
-There are no prerequisites for this webinar. 	
+There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://docs.google.com/presentation/d/1_6uI7qG2nHHOynal8tinrHy2MCTkTbac/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true">Presentation Slides</a></li>
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Summer 2023
+<br>
+</details>
+
+
+<details>
+<summary>Deploying Python Programs on the OSPool</summary>
+<br>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/irLSBwTNK20?si=_0qkywyMlFbnUvO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+<b>Learning Objectives</b>
+<br>
+This training covers the practical considerations for deploying Python programs on the OSPool, including: how to deploy your Python dependencies, how to adapt your existing code, and how to deploy code under active development.
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+There are no prerequisites for this workshop. Some familiarity with Python code and basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
 <br>
 <br>
 <b>Available Materials</b>
 <br>
 <ul>
-	<li> <a href="https://docs.google.com/presentation/d/10Axe-Y1Mh_-fZrRXOjhvaOVTHybbHdW39PXxydb8-Qs/edit#slide=id.g10c0fd09133_0_7">Presentation Slides</a></li>
+	<li> <a href="https://docs.google.com/presentation/d/1Cw8jkScA7q4QHuM1Hyhl2FDFb2s7k1GIXQTsUL8-d6c/edit?usp=sharing">Presentation Slides</a> </li>
+	<li> <a href="https://youtu.be/irLSBwTNK20?si=b6XE7Og36A-khlke">Video Recording</a></li>
 	</ul>
 <b>Materials Last Updated</b>
 <br>
-Winter 2023
+Fall 2025
 <br>
 </details>
+
 
 ## Data
 
@@ -269,7 +353,6 @@ There are no prerequisites for this webinar.
 Summer 2024
 <br>
 </details>
-
 
 ## Software
 
@@ -330,60 +413,6 @@ There are no prerequisites for this workshop, however, a basic understanding of 
 Spring 2025
 <br>
 </details>
-
-
-<details>
-<summary>Bioinformatics Analyses on the OSPool: A BWA Example</summary>
-<br>
-<b>Learning Objectives</b>
-<br>
-This workshop is designed to show the process of implementing and scaling out a bioinformatics workflow using HTCondor. 
-<br>
-<br>
-<b>Prerequisites/Audience</b>
-<br>
-There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
-<br>
-<br>
-<b>Available Materials</b>
-<br>
-	<ul>
-	<li> <a href="https://docs.google.com/presentation/d/1_6uI7qG2nHHOynal8tinrHy2MCTkTbac/edit?usp=sharing&ouid=114892809919385436869&rtpof=true&sd=true">Presentation Slides</a></li>
-	</ul>
-<b>Materials Last Updated</b>
-<br>
-Summer 2023
-<br>
-</details>
-
-
-<details>
-<summary>Deploying Python Programs on the OSPool</summary>
-<br>
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/irLSBwTNK20?si=_0qkywyMlFbnUvO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<br>
-<b>Learning Objectives</b>
-<br>
-This training covers the practical considerations for deploying Python programs on the OSPool, including: how to deploy your Python dependencies, how to adapt your existing code, and how to deploy code under active development.
-<br>
-<br>
-<b>Prerequisites/Audience</b>
-<br>
-There are no prerequisites for this workshop. Some familiarity with Python code and basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
-<br>
-<br>
-<b>Available Materials</b>
-<br>
-<ul>
-	<li> <a href="https://docs.google.com/presentation/d/1Cw8jkScA7q4QHuM1Hyhl2FDFb2s7k1GIXQTsUL8-d6c/edit?usp=sharing">Presentation Slides</a> </li>
-	<li> <a href="https://youtu.be/irLSBwTNK20?si=b6XE7Og36A-khlke">Video Recording</a></li>
-	</ul>
-<b>Materials Last Updated</b>
-<br>
-Fall 2025
-<br>
-</details>
-
 
 ## Workflows / Advanced Workloads
 
