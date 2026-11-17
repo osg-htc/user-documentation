@@ -33,10 +33,13 @@
 	url = https://github.com/osg-htc/tutorial-dagman-intermediate.git
 [submodule "documentation/tutorials/tutorial-fastqc"]
 	path = documentation/tutorials/tutorial-fastqc
-	url = https://github.com/OSGConnect/tutorial-fastqc
+	url = https://github.com/osg-htc/tutorial-fastqc
 [submodule "documentation/tutorials/tutorial-pytorch-catdog"]
 	path = documentation/tutorials/tutorial-pytorch-catdog
 	url = https://github.com/osg-htc/tutorial-pytorch-catdog.git
 [submodule "documentation/tutorials/tutorial-sleap"]
 	path = documentation/tutorials/tutorial-sleap
 	url = https://github.com/osg-htc/tutorial-sleap.git
+[submodule "documentation/tutorials/tutorial-r-analyze-csv"]
+	path = documentation/tutorials/tutorial-r-analyze-csv
+	url = https://github.com/osg-htc/tutorial-r-analyze-csv
