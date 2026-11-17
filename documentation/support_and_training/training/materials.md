@@ -470,3 +470,29 @@ Fall 2023
 </details>
 
 
+<details>
+<summary>Self-checkpointing jobs</summary>
+<br>
+<!--<iframe width="100%" height="315" src="https://www.youtube.com/embed/rCDrPBki7ps?si=9XVzYvfiSBbc8TQV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+<br>
+<b>Learning Objectives</b>
+<br>
+Learn how to run workflows with checkpointing capabilities on the OSPool. In this training, we will walk through a hands-on example using GROMACS, a popular molecular dynamics simulation software.
+<br>
+<br>
+<b>Prerequisites/Audience</b>
+<br>
+There are no prerequisites for this workshop, however, a basic understanding of HTCondor job submission and HTCondor submit files will make it easier to understand the content presented. 
+<br>
+<br>
+<b>Available Materials</b>
+<br>
+	<ul>
+	<li> <a href="https://drive.google.com/file/d/1MbRzvMzSWxK8pKZD8gXmLyDzPtffRatc/view?usp=sharing">Presentation Slides</a></li>
+	<!--<li> <a href="https://www.youtube.com/watch?v=rCDrPBki7ps">Recorded Video</a></li>-->
+	</ul>
+<b>Materials Last Updated</b>
+<br>
+Fall 2026
+<br>
+</details>
