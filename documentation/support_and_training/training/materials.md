@@ -502,7 +502,7 @@ Fall 2023
 <details>
 <summary>Self-checkpointing jobs</summary>
 <br>
-<iframe width="100%" height="315" src="https://youtu.be/22Hslg7NJGg?si=WMFSOKO4ornaBxHD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/22Hslg7NJGg?si=s9E0b-IDI9eJm83C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <br>
 <b>Learning Objectives</b>
 <br>
